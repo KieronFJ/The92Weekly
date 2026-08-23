@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The clubs everyone stopped watching are where the season is actually being decided — 92 Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14171C;
+    --panel: #1C2027;
+    --line: #3A4048;
+    --line-soft: #262B33;
+    --ink: #E8E6DF;
+    --ink-muted: #8B909B;
+    --gold: #C9A227;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .display {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 6vw 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nameplate {
+    font-size: clamp(30px, 4.4vw, 40px);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+
+  .nameplate span { color: var(--gold); }
+
+  nav {
+    display: flex;
+    gap: 24px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    letter-spacing: 0.06em;
+    padding-bottom: 4px;
+  }
+
+  nav a { color: var(--ink-muted); border-bottom: 2px solid transparent; padding-bottom: 4px; transition: color .15s, border-color .15s; }
+  nav a:hover { color: var(--ink); border-color: var(--gold); }
+
+  .breadcrumb {
+    max-width: 68ch;
+    margin: 32px auto 0;
+    padding: 0 6vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+  }
+
+  .breadcrumb a:hover { color: var(--gold); }
+
+  article {
+    max-width: 68ch;
+    margin: 0 auto;
+    padding: 24px 6vw 0;
+  }
+
+  .article-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--bg);
+    background: var(--gold);
+    padding: 4px 9px;
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: clamp(28px, 4.6vw, 46px);
+    line-height: 1.12;
+    margin-bottom: 20px;
+  }
+
+  .dek {
+    font-size: 19px;
+    color: var(--ink-muted);
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  .byline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+
+  .byline b { color: var(--ink); }
+
+  .article-body p {
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+
+  .article-body p.drop::first-letter {
+    font-family: 'Oswald', sans-serif;
+    font-size: 58px;
+    font-weight: 600;
+    color: var(--gold);
+    float: left;
+    line-height: 0.8;
+    margin: 8px 10px 0 0;
+  }
+
+  .article-body h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    margin: 44px 0 18px;
+  }
+
+  .pull-quote {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.35;
+    color: var(--gold);
+    border-left: 3px solid var(--gold);
+    padding: 4px 0 4px 28px;
+    margin: 40px 0;
+  }
+
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 36px 0;
+  }
+
+  .stat-cell {
+    background: var(--panel);
+    padding: 22px 20px;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .author-box {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 28px;
+    margin: 56px 0 0;
+  }
+
+  .author-avatar {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .author-box h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .author-box p { font-size: 14.5px; color: var(--ink-muted); margin: 0; }
+
+  .newsletter-inline {
+    margin: 56px 0 0;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 36px 6vw;
+    text-align: center;
+  }
+
+  .newsletter-inline h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+    text-transform: none;
+  }
+
+  .newsletter-inline p { color: var(--ink-muted); font-size: 15px; margin-bottom: 20px; }
+
+  .newsletter-form {
+    display: inline-flex;
+  }
+
+  .newsletter-form input {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13.5px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-right: none;
+    color: var(--ink);
+    padding: 14px 16px;
+    width: 240px;
+    outline: none;
+  }
+
+  .newsletter-form input:focus { border-color: var(--gold); }
+
+  .newsletter-form button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--gold);
+    color: #14171C;
+    border: 1px solid var(--gold);
+    padding: 0 22px;
+    cursor: pointer;
+  }
+
+  .newsletter-form button:hover { background: #dcb52f; }
+
+  footer {
+    max-width: 68ch;
+    margin: 0 auto;
+    padding: 40px 6vw 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+  .footer-links a:hover { color: var(--gold); }
+
+  @media (max-width: 600px) {
+    .stat-strip { grid-template-columns: 1fr; }
+    .newsletter-form { display: flex; width: 100%; }
+    .newsletter-form input { flex: 1; width: auto; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a href="index.html"><div class="nameplate display"><span>92</span> WEEKLY</div></a>
+    </div>
+    <nav>
+      <a href="index.html#latest">Latest</a>
+      <a href="index.html#pl">Premier League</a>
+      <a href="index.html#efl">EFL</a>
+      <a href="about.html">About</a>
+      <a href="index.html#newsletter">Subscribe</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb"><a href="index.html">Home</a> / Pyramid Notes</div>
+
+  <article>
+    <span class="article-tag">Pyramid Notes</span>
+    <h1>The clubs everyone stopped watching are where the season is actually being decided</h1>
+    <p class="dek">While the national press covers six Premier League clubs on repeat, the stories that shape English football — the promotions, the financial collapses, the players who'll be worth ten times more in eighteen months — are happening two divisions down.</p>
+
+    <div class="byline">
+      <span><b>92 Weekly</b></span>
+      <span>8 min read</span>
+      <span>Pyramid Notes</span>
+    </div>
+
+    <div class="article-body">
+      <p class="drop">Every August, the same six clubs get previewed to death. Their signings are dissected transfer by transfer, their pre-season friendlies treated as evidence, their manager's press conferences quoted in full. Meanwhile, two divisions down, a Championship side is quietly building a squad that will be worth three times its current value by January — and almost nobody outside its own fanbase is watching closely enough to notice.</p>
+
+      <p>This is the structural blind spot in English football coverage. Attention follows the Premier League's top six with a gravity that distorts everything else, while the actual mechanics of the English game — promotion, relegation, the financial trapdoor between divisions, the pipeline of players moving both up and down — happen mostly in the dark.</p>
+
+      <div class="pull-quote">The gap between the Premier League and the Championship isn't a gap in quality. It's a gap in money — and that gap is the real story of English football.</div>
+
+      <h2>Where the money actually goes</h2>
+      <p>Parachute payments alone can hand a relegated club a financial advantage over the rest of the Championship that lasts two or three seasons. Clubs that plan around this — rather than panic-spending the moment they go down — tend to bounce back up. Clubs that don't can spiral for a decade.</p>
+
+      <p>That single mechanic explains more about the Championship table on any given October than form, morale, or managerial reputation combined. It's also almost never mentioned in mainstream previews, because it doesn't fit neatly into a weekend build-up segment.</p>
+
+      <div class="stat-strip">
+        <div class="stat-cell">
+          <span class="stat-num">£40m+</span>
+          <span class="stat-label">Typical parachute payment, yr 1</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">3 yrs</span>
+          <span class="stat-label">Payments taper over</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">~50%</span>
+          <span class="stat-label">Promoted sides that go straight back down</span>
+        </div>
+      </div>
+
+      <h2>The pyramid moves both ways</h2>
+      <p>The same blind spot applies to players. Everyone tracks the striker moving from the Championship to the Premier League for £30m. Almost nobody tracks the reverse: the promising academy player sent on loan two divisions down to actually play first-team football, the kind of move that quietly shapes a career more than any single transfer ever gets credit for.</p>
+
+      <p>Follow both directions at once, and the picture changes. The story isn't "Premier League" or "Championship" — it's one connected system, constantly redistributing talent and money between its tiers. Miss that, and you're only ever seeing half the sport.</p>
+    </div>
+
+    <div class="author-box">
+      <div class="author-avatar"></div>
+      <div>
+        <h3>92 Weekly</h3>
+        <p>Football across the pyramid — Premier League and EFL, connected. Written by an Ipswich Town supporter who thinks the good stuff happens outside the top six too.</p>
+      </div>
+    </div>
+  </article>
+
+  <div class="newsletter-inline">
+    <h2 class="display">Get the next one first</h2>
+    <p>One weekly send. The stories connecting the Premier League to the EFL.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>92 WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hello@92weekly.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

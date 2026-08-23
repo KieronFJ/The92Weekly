@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>92 Weekly — Football Across the Pyramid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14171C;
+    --panel: #1C2027;
+    --panel-hover: #21262F;
+    --line: #3A4048;
+    --line-soft: #262B33;
+    --ink: #E8E6DF;
+    --ink-muted: #8B909B;
+    --gold: #C9A227;
+    --gold-dim: #8A7020;
+    --pl-tag: #37003C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .display {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ---------- Ticker ---------- */
+  .ticker-wrap {
+    background: #0C0E11;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .ticker-wrap::before {
+    content: 'RESULTS';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: var(--gold);
+    color: #14171C;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    z-index: 2;
+  }
+
+  .ticker-track {
+    display: inline-flex;
+    padding-left: 110px;
+    animation: scroll-ticker 38s linear infinite;
+  }
+
+  .ticker-track span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    padding: 10px 28px 10px 0;
+    letter-spacing: 0.02em;
+  }
+
+  .ticker-track span b { color: var(--ink); font-weight: 700; }
+
+  @keyframes scroll-ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; overflow-x: auto; }
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 6vw 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nameplate {
+    font-size: clamp(38px, 6vw, 58px);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+
+  .nameplate span { color: var(--gold); }
+
+  .tagline {
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    color: var(--ink-muted);
+    margin-top: 8px;
+  }
+
+  nav {
+    display: flex;
+    gap: 24px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    letter-spacing: 0.06em;
+    padding-bottom: 4px;
+  }
+
+  nav a { color: var(--ink-muted); border-bottom: 2px solid transparent; padding-bottom: 4px; transition: color .15s, border-color .15s; }
+  nav a:hover { color: var(--ink); border-color: var(--gold); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 64px 6vw 56px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    width: 22px; height: 2px;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: clamp(30px, 4.4vw, 52px);
+    line-height: 1.08;
+    max-width: 16ch;
+    margin-bottom: 22px;
+  }
+
+  .hero h1 a:hover { color: var(--gold); }
+
+  .hero p {
+    font-size: 18px;
+    color: var(--ink-muted);
+    max-width: 56ch;
+    margin-bottom: 28px;
+  }
+
+  .hero-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta b { color: var(--ink); }
+
+  /* ---------- Pyramid split ---------- */
+  .pyramid-label {
+    text-align: center;
+    padding: 34px 6vw 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0;
+    padding: 22px 6vw 20px;
+  }
+
+  .split-col { padding: 0 32px; }
+  .split-col:first-child { padding-left: 0; }
+  .split-col:last-child { padding-right: 0; }
+  .split-divider { background: var(--line); }
+
+  .col-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .col-head h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+  }
+
+  .col-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--bg);
+    background: var(--gold);
+    padding: 3px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+  }
+
+  .row {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line-soft);
+    transition: padding-left .15s;
+  }
+
+  .row:hover { padding-left: 6px; }
+  .row:last-child { border-bottom: none; }
+
+  .row-pos {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    padding-top: 3px;
+    min-width: 22px;
+  }
+
+  .row-body h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .row-body h3 a:hover { color: var(--gold); }
+
+  .row-body p {
+    font-size: 14.5px;
+    color: var(--ink-muted);
+    line-height: 1.5;
+  }
+
+  .row-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-muted);
+    margin-top: 8px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ---------- Newsletter ---------- */
+  .newsletter {
+    margin: 40px 6vw 0;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 44px 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .newsletter h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 8px;
+  }
+
+  .newsletter p {
+    color: var(--ink-muted);
+    font-size: 15px;
+    max-width: 44ch;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 0;
+    flex: 0 0 auto;
+  }
+
+  .newsletter-form input {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13.5px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-right: none;
+    color: var(--ink);
+    padding: 14px 16px;
+    width: 240px;
+    outline: none;
+  }
+
+  .newsletter-form input:focus { border-color: var(--gold); }
+
+  .newsletter-form button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--gold);
+    color: #14171C;
+    border: 1px solid var(--gold);
+    padding: 0 22px;
+    cursor: pointer;
+    transition: background .15s;
+  }
+
+  .newsletter-form button:hover { background: #dcb52f; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 60px;
+    padding: 28px 6vw 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+    border-bottom: 1px solid transparent;
+  }
+  .footer-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 780px) {
+    .split { grid-template-columns: 1fr; }
+    .split-divider { display: none; }
+    .split-col { padding: 0; }
+    .split-col + .split-divider + .split-col { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); }
+    .newsletter { flex-direction: column; align-items: flex-start; }
+    .newsletter-form { width: 100%; }
+    .newsletter-form input { flex: 1; width: auto; }
+    nav { font-size: 12px; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span><b>Ipswich Town 2–1 Millwall</b> · FT</span>
+      <span><b>Man City 3–0 Brentford</b> · FT</span>
+      <span><b>Leeds 1–1 Burnley</b> · FT</span>
+      <span><b>Sunderland 0–0 Coventry</b> · FT</span>
+      <span><b>Arsenal 2–2 Newcastle</b> · FT</span>
+      <span><b>Wrexham 4–1 Bolton</b> · FT</span>
+      <span><b>Portsmouth 1–0 Derby</b> · FT</span>
+      <span><b>Chelsea 1–3 Villa</b> · FT</span>
+      <span><b>Ipswich Town 2–1 Millwall</b> · FT</span>
+      <span><b>Man City 3–0 Brentford</b> · FT</span>
+      <span><b>Leeds 1–1 Burnley</b> · FT</span>
+      <span><b>Sunderland 0–0 Coventry</b> · FT</span>
+      <span><b>Arsenal 2–2 Newcastle</b> · FT</span>
+      <span><b>Wrexham 4–1 Bolton</b> · FT</span>
+      <span><b>Portsmouth 1–0 Derby</b> · FT</span>
+      <span><b>Chelsea 1–3 Villa</b> · FT</span>
+    </div>
+  </div>
+
+  <header>
+    <div>
+      <div class="nameplate display"><span>92</span> WEEKLY</div>
+      <div class="tagline">Every division. One pyramid. Every week.</div>
+    </div>
+    <nav>
+      <a href="#latest">Latest</a>
+      <a href="#pl">Premier League</a>
+      <a href="#efl">EFL</a>
+      <a href="about.html">About</a>
+      <a href="#newsletter">Subscribe</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-eyebrow">Lead story</div>
+    <h1><a href="article.html">The clubs everyone stopped watching are where the season is actually being decided.</a></h1>
+    <p>While the national press covers six Premier League clubs on repeat, the stories that shape English football — the promotions, the financial collapses, the players who'll be worth ten times more in eighteen months — are happening two divisions down. This is where we look.</p>
+    <div class="hero-meta">
+      <span><b>8 min read</b></span>
+      <span>Pyramid Notes</span>
+      <span>Updated weekly</span>
+    </div>
+  </section>
+
+  <div class="pyramid-label">— The Pyramid, Split In Two —</div>
+
+  <section class="split" id="latest">
+    <div class="split-col" id="pl">
+      <div class="col-head">
+        <h2 class="display">Premier League</h2>
+        <span class="col-tag">Tier 1</span>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">01</div>
+        <div class="row-body">
+          <h3><a href="#">Why the newly promoted side's back three is quietly the best defensive system outside the top six</a></h3>
+          <p>The numbers say relegation candidates. The underlying shape says something else entirely.</p>
+          <div class="row-meta">Tactics · 6 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">02</div>
+        <div class="row-body">
+          <h3><a href="#">The loan system is quietly reshaping who actually wins the title race</a></h3>
+          <p>Six first-team regulars across the top four were EFL loanees eighteen months ago.</p>
+          <div class="row-meta">Analysis · 5 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">03</div>
+        <div class="row-body">
+          <h3><a href="#">A mid-table club's recruitment model, explained in four transfers</a></h3>
+          <p>No galacticos. No panic buys. Just a spreadsheet nobody else seems to have.</p>
+          <div class="row-meta">Finance · 7 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-divider"></div>
+
+    <div class="split-col" id="efl">
+      <div class="col-head">
+        <h2 class="display">EFL</h2>
+        <span class="col-tag">Tiers 2–4</span>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">01</div>
+        <div class="row-body">
+          <h3><a href="#">Inside the Championship's most sustainable rebuild — and the one nobody's copying</a></h3>
+          <p>No parachute payment. No billionaire. Just recruitment done properly.</p>
+          <div class="row-meta">Deep Dive · 9 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">02</div>
+        <div class="row-body">
+          <h3><a href="#">League One's points-per-game table looks completely different once you adjust for fixture difficulty</a></h3>
+          <p>The team everyone's written off has played the hardest run in the division.</p>
+          <div class="row-meta">Data · 6 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">03</div>
+        <div class="row-body">
+          <h3><a href="#">Three League Two forwards who'll be playing Championship football by January</a></h3>
+          <p>Scouted, watched, and cross-checked against last season's biggest EFL-to-EFL moves.</p>
+          <div class="row-meta">Scouting · 5 min</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter" id="newsletter">
+    <div>
+      <h2 class="display">Get the full breakdown</h2>
+      <p>One weekly send. The stories connecting the Premier League to the EFL — before anyone else joins the dots.</p>
+    </div>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>92 WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

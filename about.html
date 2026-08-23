@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — 92 Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14171C;
+    --panel: #1C2027;
+    --line: #3A4048;
+    --line-soft: #262B33;
+    --ink: #E8E6DF;
+    --ink-muted: #8B909B;
+    --gold: #C9A227;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .display {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 6vw 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nameplate {
+    font-size: clamp(30px, 4.4vw, 40px);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+
+  .nameplate span { color: var(--gold); }
+
+  nav {
+    display: flex;
+    gap: 24px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    letter-spacing: 0.06em;
+    padding-bottom: 4px;
+  }
+
+  nav a { color: var(--ink-muted); border-bottom: 2px solid transparent; padding-bottom: 4px; transition: color .15s, border-color .15s; }
+  nav a:hover, nav a.active { color: var(--ink); border-color: var(--gold); }
+
+  main {
+    max-width: 68ch;
+    margin: 0 auto;
+    padding: 72px 6vw 80px;
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 22px; height: 2px;
+    background: var(--gold);
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.1;
+    margin-bottom: 28px;
+  }
+
+  main p {
+    font-size: 17.5px;
+    color: var(--ink);
+    margin-bottom: 22px;
+  }
+
+  main p.lead {
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 44px 0;
+  }
+
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+
+  ul.principles {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 8px;
+  }
+
+  ul.principles li {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  ul.principles li:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .p-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    padding-top: 3px;
+    min-width: 22px;
+  }
+
+  .p-body h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .p-body p { font-size: 15px; color: var(--ink-muted); margin-bottom: 0; }
+
+  .contact-box {
+    margin-top: 48px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 32px;
+  }
+
+  .contact-box p { font-size: 15px; color: var(--ink-muted); margin-bottom: 16px; }
+  .contact-box p:last-child { margin-bottom: 0; }
+
+  .contact-box a.email {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gold);
+    font-size: 15px;
+  }
+
+  .contact-box a.email:hover { border-bottom: 1px solid var(--gold); }
+
+  footer {
+    padding: 28px 6vw 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+  .footer-links a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a href="index.html"><div class="nameplate display"><span>92</span> WEEKLY</div></a>
+    </div>
+    <nav>
+      <a href="index.html#latest">Latest</a>
+      <a href="index.html#pl">Premier League</a>
+      <a href="index.html#efl">EFL</a>
+      <a href="about.html" class="active">About</a>
+      <a href="index.html#newsletter">Subscribe</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="eyebrow">About</div>
+    <h1>Most football coverage stops at the Premier League's edge. This doesn't.</h1>
+
+    <p class="lead">92 Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
+
+    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
+
+    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
+
+    <hr class="divider">
+
+    <h2>What This Is</h2>
+    <ul class="principles">
+      <li>
+        <div class="p-num">01</div>
+        <div class="p-body">
+          <h3>Every division treated as one story</h3>
+          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
+        </div>
+      </li>
+      <li>
+        <div class="p-num">02</div>
+        <div class="p-body">
+          <h3>Depth over speed</h3>
+          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
+        </div>
+      </li>
+      <li>
+        <div class="p-num">03</div>
+        <div class="p-body">
+          <h3>Written by a fan, not a wire service</h3>
+          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="contact-box">
+      <p>Have a story from your own division that deserves wider attention? Get in touch.</p>
+      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>92 WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hello@92weekly.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
