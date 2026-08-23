@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>92 Weekly — Football Across the Pyramid</title>
+<title>The92Weekly — Football Across the Pyramid</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #14171C;
-    --panel: #1C2027;
-    --panel-hover: #21262F;
-    --line: #3A4048;
-    --line-soft: #262B33;
-    --ink: #E8E6DF;
-    --ink-muted: #8B909B;
-    --gold: #C9A227;
-    --gold-dim: #8A7020;
+    --bg: #FFFFFF;
+    --panel: #F6F5F1;
+    --panel-hover: #EFEDE7;
+    --line: #E3E0D8;
+    --line-soft: #EDEAE3;
+    --ink: #2E3136;
+    --ink-muted: #74787E;
+    --gold: #C8102E;
+    --gold-dim: #A00D25;
     --pl-tag: #37003C;
   }
 
@@ -36,9 +36,8 @@
   a { color: inherit; text-decoration: none; }
 
   .display {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.01em;
   }
 
   .mono {
@@ -47,7 +46,7 @@
 
   /* ---------- Ticker ---------- */
   .ticker-wrap {
-    background: #0C0E11;
+    background: var(--panel);
     border-bottom: 1px solid var(--line);
     overflow: hidden;
     white-space: nowrap;
@@ -62,7 +61,7 @@
     align-items: center;
     padding: 0 14px;
     background: var(--gold);
-    color: #14171C;
+    color: #FFFFFF;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
     font-size: 11px;
@@ -111,15 +110,15 @@
     font-weight: 700;
     letter-spacing: 0.01em;
     line-height: 1;
+    text-transform: uppercase;
   }
 
   .nameplate span { color: var(--gold); }
 
   .tagline {
     font-family: 'JetBrains Mono', monospace;
-    text-transform: uppercase;
-    font-size: 11.5px;
-    letter-spacing: 0.12em;
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
     color: var(--ink-muted);
     margin-top: 8px;
   }
@@ -127,15 +126,109 @@
   nav {
     display: flex;
     gap: 24px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 13.5px;
-    letter-spacing: 0.06em;
     padding-bottom: 4px;
   }
 
-  nav a { color: var(--ink-muted); border-bottom: 2px solid transparent; padding-bottom: 4px; transition: color .15s, border-color .15s; }
-  nav a:hover { color: var(--ink); border-color: var(--gold); }
+  nav a, .nav-trigger {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    color: var(--ink-muted);
+    border-bottom: 2px solid transparent;
+    padding: 0 0 4px 0;
+    margin: 0;
+    background: none;
+    border-top: none; border-left: none; border-right: none;
+    cursor: pointer;
+    transition: color .15s, border-color .15s;
+  }
+  nav a:hover, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
+
+  .nav-item { position: relative; }
+  .nav-trigger {
+    display: flex; align-items: center; gap: 5px;
+  }
+  .nav-trigger::after { content: '▾'; font-size: 8px; position: relative; top: 1px; }
+
+  .dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 26px; min-width: 620px; max-width: min(90vw, 700px);
+    grid-template-columns: repeat(4, 1fr); gap: 22px;
+    z-index: 60; max-height: 68vh; overflow-y: auto;
+  }
+  .nav-item:hover .dropdown-panel, .nav-item.open .dropdown-panel { display: grid; }
+
+  .dropdown-col h4 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+    margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  .dropdown-col a {
+    display: block; font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
+    color: var(--ink); padding: 6px 8px 6px 10px; margin-bottom: 3px;
+    border-radius: 3px; transition: filter .12s, transform .12s;
+  }
+  .dropdown-col a:hover { filter: brightness(0.94); transform: translateX(2px); }
+  .dropdown-footer {
+    grid-column: 1 / -1; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+  }
+  .dropdown-footer a { color: var(--gold); }
+  .dropdown-footer a:hover { border-bottom: 1px solid var(--gold); }
+
+  @media (max-width: 780px) {
+    .dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      border-left: none; border-right: none;
+      max-height: 60vh;
+    }
+  }
+
+  /* ---------- Spotlight (homepage) ---------- */
+  .spotlight-section { padding: 20px 6vw 10px; }
+
+  .spotlight-head {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 24px; flex-wrap: wrap; gap: 10px;
+  }
+  .spotlight-head h2 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px;
+    letter-spacing: 0.01em;
+  }
+  .spotlight-archive-link {
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted);
+  }
+  .spotlight-archive-link:hover { color: var(--gold); }
+
+  .spotlight-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line);
+  }
+
+  .spot-card { background: var(--panel); padding: 26px; }
+  .spot-tag-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .spot-category {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase; padding: 3px 9px; border-radius: 2px;
+  }
+  .tag-rising { background: #2E5C8A; color: #DCEBFA; }
+  .tag-form { background: var(--gold); color: #FFFFFF; }
+  .tag-backing { background: #4C9A5B; color: #0d1a10; }
+  .spot-division { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink-muted); }
+
+  .spot-name { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 19px; margin-bottom: 2px; }
+  .spot-club { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gold); margin-bottom: 12px; }
+  .spot-card p { font-size: 14.5px; color: var(--ink-muted); line-height: 1.55; }
+
+  @media (max-width: 780px) {
+    .spotlight-grid { grid-template-columns: 1fr; }
+  }
 
   /* ---------- Hero ---------- */
   .hero {
@@ -145,10 +238,9 @@
 
   .hero-eyebrow {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.1em;
+    font-size: 13px;
+    letter-spacing: 0.03em;
     color: var(--gold);
-    text-transform: uppercase;
     margin-bottom: 18px;
     display: flex;
     align-items: center;
@@ -162,7 +254,7 @@
   }
 
   .hero h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: none;
     letter-spacing: 0;
@@ -197,10 +289,9 @@
     text-align: center;
     padding: 34px 6vw 0;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    letter-spacing: 0.14em;
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
     color: var(--ink-muted);
-    text-transform: uppercase;
   }
 
   .split {
@@ -225,7 +316,7 @@
   }
 
   .col-head h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.05em;
@@ -261,7 +352,7 @@
   }
 
   .row-body h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-transform: none;
     letter-spacing: 0;
@@ -300,7 +391,7 @@
   }
 
   .newsletter h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 0.01em;
@@ -334,13 +425,13 @@
   .newsletter-form input:focus { border-color: var(--gold); }
 
   .newsletter-form button {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 13px;
     font-weight: 600;
     background: var(--gold);
-    color: #14171C;
+    color: #FFFFFF;
     border: 1px solid var(--gold);
     padding: 0 22px;
     cursor: pointer;
@@ -413,14 +504,16 @@
 
   <header>
     <div>
-      <div class="nameplate display"><span>92</span> WEEKLY</div>
+      <div class="nameplate display"><span>THE92</span>WEEKLY</div>
       <div class="tagline">Every division. One pyramid. Every week.</div>
     </div>
     <nav>
       <a href="#latest">Latest</a>
-      <a href="teams.html">All 92</a>
-      <a href="#pl">Premier League</a>
-      <a href="#efl">EFL</a>
+      <div class="nav-item" id="teams-nav-item">
+        <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
+        <div class="dropdown-panel" id="teams-dropdown-panel"></div>
+      </div>
+      <a href="#spotlight">Spotlight</a>
       <a href="about.html">About</a>
       <a href="#newsletter">Subscribe</a>
     </nav>
@@ -437,7 +530,7 @@
     </div>
   </section>
 
-  <div class="pyramid-label">— The Pyramid, Split In Two —</div>
+  <div class="pyramid-label">Two divisions, one story</div>
 
   <section class="split" id="latest">
     <div class="split-col" id="pl">
@@ -511,9 +604,45 @@
     </div>
   </section>
 
+  <section class="spotlight-section" id="spotlight">
+    <div class="spotlight-head">
+      <h2 class="display">This week's player spotlight</h2>
+      <a class="spotlight-archive-link" href="spotlight.html">Full spotlight archive →</a>
+    </div>
+    <div class="spotlight-grid">
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-rising">On The Rise</span>
+          <span class="spot-division">Championship</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-form">In Form</span>
+          <span class="spot-division">League One</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-backing">One To Back</span>
+          <span class="spot-division">Premier League</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
+      </div>
+    </div>
+  </section>
+
   <div class="newsletter" id="newsletter">
     <div>
-      <h2 class="display">Get the full breakdown</h2>
+      <h2 class="display">Never miss an edition</h2>
       <p>One weekly send. The stories connecting the Premier League to the EFL — before anyone else joins the dots.</p>
     </div>
     <form class="newsletter-form" onsubmit="return false;">
@@ -523,13 +652,58 @@
   </div>
 
   <footer>
-    <p>92 WEEKLY — Football across the pyramid.</p>
+    <p>THE92WEEKLY — Football across the pyramid.</p>
     <div class="footer-links">
       <a href="#">X / Twitter</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
   </footer>
+  <script>
+    const clubsByDiv = {
+      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
+      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
+      3: ["Barnsley","Blackpool","Bradford City","Doncaster Rovers","Huddersfield Town","Leyton Orient","Luton Town","Mansfield Town","Peterborough United","Plymouth Argyle","Reading","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers","Burton Albion","AFC Wimbledon","Oxford United","Leicester City","Sheffield Wednesday","Bromley","Milton Keynes Dons","Cambridge United","Notts County"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","Exeter City","Port Vale","Rotherham United","Northampton Town","York City","Rochdale"]
+    };
+    const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
+
+    const clubColors = {
+      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#1D428A","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#00A650","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+      "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
+      "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Morecambe":"#D2122E","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
+    };
+
+    const panel = document.getElementById('teams-dropdown-panel');
+    if (panel) {
+      let html = '';
+      for (const div in clubsByDiv) {
+        html += `<div class="dropdown-col"><h4>${divNames[div]}</h4>`;
+        clubsByDiv[div].forEach(name => {
+          const c = clubColors[name] || '#C8102E';
+          html += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:color-mix(in srgb, ${c} 34%, white); border-left:3px solid ${c};">${name}</a>`;
+        });
+        html += `</div>`;
+      }
+      html += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
+      panel.innerHTML = html;
+    }
+
+    // Tap-to-toggle for touch devices (hover alone doesn't work on mobile)
+    const teamsItem = document.getElementById('teams-nav-item');
+    const teamsTrigger = document.getElementById('teams-trigger');
+    if (teamsItem && teamsTrigger) {
+      teamsTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        teamsItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        teamsItem.classList.remove('open');
+      });
+      panel.addEventListener('click', function(e) { e.stopPropagation(); });
+    }
+  </script>
 
 </body>
 </html>
