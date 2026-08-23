@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All 92 Clubs — 92 Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14171C;
+    --panel: #1C2027;
+    --line: #3A4048;
+    --line-soft: #262B33;
+    --ink: #E8E6DF;
+    --ink-muted: #8B909B;
+    --gold: #C9A227;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .display { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.02em; }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 6vw 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; letter-spacing: 0.01em; line-height: 1; }
+  .nameplate span { color: var(--gold); }
+  nav {
+    display: flex; gap: 24px;
+    font-family: 'Oswald', sans-serif; text-transform: uppercase;
+    font-size: 13.5px; letter-spacing: 0.06em; padding-bottom: 4px;
+  }
+  nav a { color: var(--ink-muted); border-bottom: 2px solid transparent; padding-bottom: 4px; }
+  nav a:hover, nav a.active { color: var(--ink); border-color: var(--gold); }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 56px 6vw 80px; }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--gold); }
+
+  h1 {
+    font-family: 'Oswald', sans-serif; font-weight: 600; text-transform: none;
+    font-size: clamp(28px, 4vw, 42px); margin-bottom: 12px;
+  }
+  main > p.sub { color: var(--ink-muted); font-size: 16px; margin-bottom: 44px; max-width: 60ch; }
+
+  .division-block { margin-bottom: 48px; }
+  .division-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  }
+  .division-head h2 {
+    font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.02em;
+  }
+  .division-count { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+
+  .club-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .club-tile {
+    background: var(--panel);
+    padding: 16px 18px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background .12s, color .12s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .club-tile::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--ink-muted);
+    flex-shrink: 0;
+    transition: background .12s;
+  }
+  .club-tile:hover { background: #23282f; color: var(--gold); }
+  .club-tile:hover::before { background: var(--gold); }
+
+  footer {
+    padding: 28px 6vw 40px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line);
+  }
+  footer p { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+  <header>
+    <div><a href="index.html"><div class="nameplate display"><span>92</span> WEEKLY</div></a></div>
+    <nav>
+      <a href="index.html#latest">Latest</a>
+      <a href="teams.html" class="active">All 92</a>
+      <a href="about.html">About</a>
+      <a href="index.html#newsletter">Subscribe</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="eyebrow">Club Directory</div>
+    <h1>Every club. Every division.</h1>
+    <p class="sub">Tap any club to see their most recent result, pulled straight from the current season's fixtures. Organised Premier League down to League Two — the full 92.</p>
+
+    <div class="division-block">
+      <div class="division-head">
+        <h2 class="display">Premier League</h2>
+        <span class="division-count">20 clubs</span>
+      </div>
+      <div class="club-grid" id="div-1"></div>
+    </div>
+
+    <div class="division-block">
+      <div class="division-head">
+        <h2 class="display">Championship</h2>
+        <span class="division-count">24 clubs</span>
+      </div>
+      <div class="club-grid" id="div-2"></div>
+    </div>
+
+    <div class="division-block">
+      <div class="division-head">
+        <h2 class="display">League One</h2>
+        <span class="division-count">24 clubs</span>
+      </div>
+      <div class="club-grid" id="div-3"></div>
+    </div>
+
+    <div class="division-block">
+      <div class="division-head">
+        <h2 class="display">League Two</h2>
+        <span class="division-count">24 clubs</span>
+      </div>
+      <div class="club-grid" id="div-4"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>92 WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hello@92weekly.com">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Club lists by division. Update these each season if clubs are promoted/relegated —
+    // this list controls the directory; the fixture data itself is fetched live per team.
+    const clubs = {
+      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
+      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
+      3: ["Barnsley","Blackpool","Bradford City","Doncaster Rovers","Huddersfield Town","Leyton Orient","Luton Town","Mansfield Town","Peterborough United","Plymouth Argyle","Reading","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers","Burton Albion","AFC Wimbledon","Oxford United","Leicester City","Sheffield Wednesday","Bromley","Milton Keynes Dons","Cambridge United","Notts County"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","Exeter City","Port Vale","Rotherham United","Northampton Town","York City","Rochdale"]
+    };
+
+    for (const div in clubs) {
+      const grid = document.getElementById('div-' + div);
+      clubs[div].forEach(name => {
+        const a = document.createElement('a');
+        a.href = 'team.html?team=' + encodeURIComponent(name) + '&div=' + div;
+        a.className = 'club-tile';
+        a.textContent = name;
+        grid.appendChild(a);
+      });
+    }
+  </script>
+
+</body>
+</html>

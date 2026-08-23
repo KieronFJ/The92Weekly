@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — 92 Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14171C;
+    --panel: #1C2027;
+    --line: #3A4048;
+    --line-soft: #262B33;
+    --ink: #E8E6DF;
+    --ink-muted: #8B909B;
+    --gold: #C9A227;
+    --win: #4C9A5B;
+    --loss: #B5504B;
+    --draw: #8B909B;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .display { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.02em; }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 6vw 24px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; }
+  .nameplate span { color: var(--gold); }
+  nav {
+    display: flex; gap: 24px;
+    font-family: 'Oswald', sans-serif; text-transform: uppercase;
+    font-size: 13.5px; letter-spacing: 0.06em; padding-bottom: 4px;
+  }
+  nav a { color: var(--ink-muted); border-bottom: 2px solid transparent; padding-bottom: 4px; }
+  nav a:hover { color: var(--ink); border-color: var(--gold); }
+
+  .breadcrumb {
+    max-width: 68ch; margin: 32px auto 0; padding: 0 6vw;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
+  }
+  .breadcrumb a:hover { color: var(--gold); }
+
+  main { max-width: 68ch; margin: 0 auto; padding: 24px 6vw 80px; }
+
+  .team-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--bg);
+    background: var(--gold); padding: 4px 9px; border-radius: 2px;
+    letter-spacing: 0.06em; display: inline-block; margin-bottom: 18px;
+  }
+  h1 {
+    font-family: 'Oswald', sans-serif; font-weight: 600; text-transform: none;
+    font-size: clamp(30px, 5vw, 48px); margin-bottom: 36px; line-height: 1.1;
+  }
+
+  .result-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 32px;
+    margin-bottom: 20px;
+  }
+  .result-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px;
+  }
+  .result-teams {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .result-team { font-family: 'Oswald', sans-serif; font-size: 19px; font-weight: 500; flex: 1; }
+  .result-team.us { color: var(--gold); }
+  .result-score {
+    font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700;
+    padding: 6px 18px; border: 1px solid var(--line);
+  }
+  .result-meta {
+    font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--ink-muted);
+    display: flex; gap: 20px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid var(--line-soft);
+  }
+  .result-outcome {
+    display: inline-block; padding: 3px 10px; border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.04em; margin-bottom: 20px;
+  }
+  .outcome-win { background: var(--win); color: #0d1a10; }
+  .outcome-loss { background: var(--loss); color: #1a0d0d; }
+  .outcome-draw { background: var(--draw); color: #14171C; }
+
+  .status-box {
+    font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--ink-muted);
+    padding: 40px 0; text-align: center;
+  }
+
+  .division-note {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
+    margin-top: 24px;
+  }
+
+  footer {
+    max-width: 68ch; margin: 0 auto; padding: 40px 6vw 56px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  footer p { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+  <header>
+    <div><a href="index.html"><div class="nameplate display"><span>92</span> WEEKLY</div></a></div>
+    <nav>
+      <a href="index.html#latest">Latest</a>
+      <a href="teams.html">All 92</a>
+      <a href="about.html">About</a>
+      <a href="index.html#newsletter">Subscribe</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="teams.html">All 92</a> / <span id="crumb-team">Team</span></div>
+
+  <main>
+    <span class="team-tag" id="division-tag">Division</span>
+    <h1 id="team-name">Loading…</h1>
+
+    <div id="content">
+      <div class="status-box">Fetching latest result…</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>92 WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hello@92weekly.com">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const teamName = params.get('team') || '';
+    const div = params.get('div') || '1';
+    const divisionNames = { 1: 'Premier League', 2: 'Championship', 3: 'League One', 4: 'League Two' };
+
+    document.getElementById('team-name').textContent = teamName;
+    document.getElementById('crumb-team').textContent = teamName;
+    document.getElementById('division-tag').textContent = divisionNames[div] || 'Division';
+
+    const SEASON = '2025-26';
+    const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+
+    function normalize(s) {
+      return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    }
+
+    function matchesTeam(fixtureName, target) {
+      const a = normalize(fixtureName);
+      const b = normalize(target);
+      return a.includes(b) || b.includes(a);
+    }
+
+    fetch(dataUrl)
+      .then(r => {
+        if (!r.ok) throw new Error('Fetch failed: ' + r.status);
+        return r.json();
+      })
+      .then(data => {
+        const matches = (data.matches || []).filter(m =>
+          m.score && m.score.ft &&
+          (matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName))
+        );
+
+        if (matches.length === 0) {
+          document.getElementById('content').innerHTML =
+            '<div class="status-box">No completed matches found yet this season for ' + teamName + '.<br><br>' +
+            'This can happen early in a season, or if the club name doesn\'t match the data source exactly — ' +
+            'try checking the club appears correctly at the source: <a href="' + dataUrl + '" style="color:var(--gold)">raw data</a>.</div>';
+          return;
+        }
+
+        matches.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const last = matches[0];
+
+        const isHome = matchesTeam(last.team1, teamName);
+        const us = isHome ? last.team1 : last.team2;
+        const them = isHome ? last.team2 : last.team1;
+        const usScore = isHome ? last.score.ft[0] : last.score.ft[1];
+        const themScore = isHome ? last.score.ft[1] : last.score.ft[0];
+
+        let outcomeClass = 'outcome-draw', outcomeText = 'DRAW';
+        if (usScore > themScore) { outcomeClass = 'outcome-win'; outcomeText = 'WIN'; }
+        else if (usScore < themScore) { outcomeClass = 'outcome-loss'; outcomeText = 'LOSS'; }
+
+        document.getElementById('content').innerHTML = `
+          <div class="result-card">
+            <div class="result-label">Last Result — ${last.round || ''}</div>
+            <span class="result-outcome ${outcomeClass}">${outcomeText}</span>
+            <div class="result-teams">
+              <div class="result-team us">${us}</div>
+              <div class="result-score">${usScore} – ${themScore}</div>
+              <div class="result-team">${them}</div>
+            </div>
+            <div class="result-meta">
+              <span>${last.date}</span>
+              <span>${isHome ? 'Home' : 'Away'}</span>
+              <span>${divisionNames[div]}</span>
+            </div>
+          </div>
+          <div class="division-note">Data via football.json, updated as results come in. ${matches.length} completed match${matches.length !== 1 ? 'es' : ''} found this season.</div>
+        `;
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML =
+          '<div class="status-box">Couldn\'t load live results right now (' + err.message + ').<br><br>' +
+          'Try refreshing, or check back shortly.</div>';
+      });
+  </script>
+
+</body>
+</html>
