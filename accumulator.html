@@ -15,7 +15,7 @@
     --line-soft: #EDEAE3;
     --ink: #2E3136;
     --ink-muted: #74787E;
-    --gold: #C8102E;
+    --gold: #149954;
     --win: #3E8A4D;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -37,6 +37,75 @@
   }
   .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; }
   .nameplate span { color: var(--gold); }
+
+  nav {
+    display: flex; gap: 18px;
+    padding-bottom: 4px;
+  }
+  nav a, .nav-trigger {
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
+    color: var(--ink-muted); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
+    background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
+  }
+  nav a:hover, nav a.active, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
+
+  .nav-item { position: relative; }
+  .nav-trigger { display: flex; align-items: center; gap: 5px; }
+  .nav-trigger::after { content: '▾'; font-size: 8px; position: relative; top: 1px; }
+
+  .dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 26px; min-width: 620px; max-width: min(90vw, 700px);
+    grid-template-columns: repeat(4, 1fr); gap: 22px;
+    z-index: 60; max-height: 68vh; overflow-y: auto;
+  }
+  .nav-item:hover .dropdown-panel, .nav-item.open .dropdown-panel { display: grid; }
+  .dropdown-col h4 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+    margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  .dropdown-col a {
+    display: block; font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
+    color: #FFFFFF; padding: 7px 10px; margin-bottom: 3px;
+    border-radius: 3px; transition: filter .12s, transform .12s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  }
+  .dropdown-col a:hover { filter: brightness(1.1); transform: translateX(2px); }
+  .dropdown-footer {
+    grid-column: 1 / -1; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+  }
+  .dropdown-footer a { color: var(--gold); }
+  .dropdown-footer a:hover { border-bottom: 1px solid var(--gold); }
+
+  .league-dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 10px; min-width: 200px;
+    flex-direction: column; gap: 2px;
+    z-index: 60;
+  }
+  .nav-item:hover .league-dropdown-panel, .nav-item.open .league-dropdown-panel { display: flex; }
+  .league-dropdown-panel a {
+    display: block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px;
+    color: var(--ink); padding: 10px 14px; border-radius: 4px;
+  }
+  .league-dropdown-panel a:hover { background: var(--bg); color: var(--gold); }
+
+  @media (max-width: 780px) {
+    .dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      border-left: none; border-right: none;
+      max-height: 60vh;
+    }
+  }
+
   .member-badge {
     font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
     letter-spacing: 0.05em; text-transform: uppercase;
@@ -101,6 +170,28 @@
   .acca-summary-value { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 22px; }
   .acca-summary-odds { font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 700; color: var(--gold); }
 
+  .locked-wrapper {
+    position: relative;
+    max-height: 320px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .locked-fade {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 200px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.97) 65%);
+    display: flex; align-items: flex-end; justify-content: center; padding-bottom: 28px;
+  }
+  .locked-unlock-btn {
+    background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px;
+    padding: 13px 30px; border-radius: 6px; text-align: center;
+  }
+  .locked-unlock-btn:hover { filter: brightness(1.08); }
+  .locked-note {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
+    text-align: center; margin: 8px 0 32px;
+  }
+
   .responsible-box {
     margin-top: 48px;
     padding: 24px 28px;
@@ -139,8 +230,28 @@
 <body>
 
   <header>
-    <div><a href="index.html"><div class="nameplate display"><span>THE92</span>WEEKLY</div></a></div>
-    <span class="member-badge">Members Only</span>
+    <div><a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a></div>
+    <nav>
+      <a href="membership.html">Membership</a>
+      <a href="index.html#latest">Latest</a>
+      <div class="nav-item" id="teams-nav-item">
+        <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
+        <div class="dropdown-panel" id="teams-dropdown-panel"></div>
+      </div>
+      <div class="nav-item" id="tables-nav-item">
+        <button class="nav-trigger" type="button" id="tables-trigger">Tables</button>
+        <div class="league-dropdown-panel" id="tables-dropdown-panel">
+          <a href="tables.html?div=1">Premier League</a>
+          <a href="tables.html?div=2">Championship</a>
+          <a href="tables.html?div=3">League One</a>
+          <a href="tables.html?div=4">League Two</a>
+        </div>
+      </div>
+      <a href="index.html#spotlight">Spotlight</a>
+      <a href="ins-and-outs.html">Ins &amp; Outs</a>
+      <a href="accumulator.html" class="active">This Week's Acca Picks</a>
+      <a href="about.html">About</a>
+    </nav>
   </header>
 
   <main>
@@ -152,7 +263,7 @@
     <div class="acca-block">
       <div class="acca-block-head">
         <h2 class="display">The Safe Acca</h2>
-        <span class="acca-tier-tag tier-safe">Lower Return</span>
+        <span class="acca-tier-tag tier-safe">Lower Return · Free This Week</span>
       </div>
       <p class="acca-block-desc">Four short-priced results we're genuinely confident in — built for a steady return, not a big swing.</p>
 
@@ -198,6 +309,7 @@
       </div>
     </div>
 
+    <div class="locked-wrapper">
     <div class="acca-block">
       <div class="acca-block-head">
         <h2 class="display">The Balanced Acca</h2>
@@ -319,6 +431,11 @@
         <div class="acca-summary-odds">[XXX/X]</div>
       </div>
     </div>
+      <div class="locked-fade">
+        <a href="membership.html" class="locked-unlock-btn">Unlock with Membership</a>
+      </div>
+    </div>
+    <div class="locked-note">The Balanced and Rogue accas are members-only. The Safe Acca above is free, every week.</div>
 
     <div class="responsible-box">
       <p><span class="age-tag">18+</span>This is our opinion, not financial or betting advice. Odds and availability may change — always check with your bookmaker before placing a bet.</p>
@@ -333,6 +450,61 @@
       <a href="mailto:hello@92weekly.com">Contact</a>
     </div>
   </footer>
+  <script>
+    const clubColors = {
+      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+      "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
+      "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Morecambe":"#D2122E","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
+    };
+    const clubsByDiv = {
+      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
+      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
+      3: ["AFC Wimbledon","Barnsley","Blackpool","Bradford City","Bromley","Burton Albion","Cambridge United","Doncaster Rovers","Huddersfield Town","Leicester City","Leyton Orient","Luton Town","Mansfield Town","Milton Keynes Dons","Notts County","Oxford United","Peterborough United","Plymouth Argyle","Reading","Sheffield Wednesday","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Northampton Town","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
+    };
+    const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
+
+    const panel = document.getElementById('teams-dropdown-panel');
+    if (panel) {
+      let html = '';
+      for (const div in clubsByDiv) {
+        html += `<div class="dropdown-col"><h4>${divNames[div]}</h4>`;
+        clubsByDiv[div].forEach(name => {
+          const c = clubColors[name] || '#149954';
+          html += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:${c};">${name}</a>`;
+        });
+        html += `</div>`;
+      }
+      html += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
+      panel.innerHTML = html;
+    }
+
+    const teamsItem = document.getElementById('teams-nav-item');
+    const teamsTrigger = document.getElementById('teams-trigger');
+    if (teamsItem && teamsTrigger) {
+      teamsTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        teamsItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        teamsItem.classList.remove('open');
+      });
+      panel.addEventListener('click', function(e) { e.stopPropagation(); });
+    }
+
+    const tablesItem = document.getElementById('tables-nav-item');
+    const tablesTrigger = document.getElementById('tables-trigger');
+    if (tablesItem && tablesTrigger) {
+      tablesTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        tablesItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        tablesItem.classList.remove('open');
+      });
+    }
+  </script>
 
 </body>
 </html>

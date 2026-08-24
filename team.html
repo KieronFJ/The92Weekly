@@ -15,7 +15,7 @@
     --line-soft: #EDEAE3;
     --ink: #2E3136;
     --ink-muted: #74787E;
-    --gold: #C8102E;
+    --gold: #149954;
     --win: #3E8A4D;
     --loss: #B5504B;
     --draw: #74787E;
@@ -40,13 +40,13 @@
   .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; }
   .nameplate span { color: var(--gold); }
   nav {
-    display: flex; gap: 24px;
+    display: flex; gap: 18px;
     padding-bottom: 4px;
   }
   nav a, .nav-trigger {
-    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
     color: var(--ink-muted); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
-    background: none; border-top: none; border-left: none; border-right: none; cursor: pointer;
+    background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
   }
   nav a:hover, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
 
@@ -83,6 +83,21 @@
   }
   .dropdown-footer a { color: var(--gold); }
   .dropdown-footer a:hover { border-bottom: 1px solid var(--gold); }
+
+  .league-dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 10px; min-width: 200px;
+    flex-direction: column; gap: 2px;
+    z-index: 60;
+  }
+  .nav-item:hover .league-dropdown-panel, .nav-item.open .league-dropdown-panel { display: flex; }
+  .league-dropdown-panel a {
+    display: block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px;
+    color: var(--ink); padding: 10px 14px; border-radius: 4px;
+  }
+  .league-dropdown-panel a:hover { background: var(--bg); color: var(--gold); }
 
   @media (max-width: 780px) {
     .dropdown-panel {
@@ -150,6 +165,42 @@
     padding: 40px 0; text-align: center;
   }
 
+  .section-tabs { display: flex; gap: 8px; margin: 36px 0 20px; }
+  .section-tab {
+    font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 13.5px;
+    padding: 9px 18px; border-radius: 20px; border: 1px solid var(--line);
+    color: var(--ink-muted); cursor: pointer; background: #FFFFFF;
+  }
+  .section-tab.active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
+  .section-panel { display: none; }
+  .section-panel.active { display: block; }
+
+  .list-item {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 14px 0; border-bottom: 1px solid var(--line-soft);
+  }
+  .list-item:last-child { border-bottom: none; }
+  .list-item-main { font-family: 'Poppins', sans-serif; font-size: 14.5px; color: var(--ink); }
+  .list-item-meta { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); margin-top: 2px; }
+  .list-item-score { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 15px; color: var(--ink); flex-shrink: 0; }
+
+  .goalscorers { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
+  .goalscorers h4 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 12.5px;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); margin-bottom: 10px;
+  }
+  .scorer-col { display: flex; gap: 32px; flex-wrap: wrap; }
+  .scorer-list { font-size: 13.5px; color: var(--ink); line-height: 1.7; }
+  .scorer-list b { display: block; font-family: 'Poppins', sans-serif; font-size: 12px; color: var(--gold); margin-bottom: 4px; }
+
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); margin-top: 18px;
+  }
+  .stat-box { background: var(--panel); padding: 16px; text-align: center; }
+  .stat-box .val { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px; color: var(--ink); }
+  .stat-box .lbl { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-muted); text-transform: uppercase; margin-top: 2px; }
+
   .division-note {
     font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
     margin-top: 24px;
@@ -192,17 +243,26 @@
 <body>
 
   <header>
-    <div><a href="index.html"><div class="nameplate display"><span>THE92</span>WEEKLY</div></a></div>
+    <div><a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a></div>
     <nav>
+      <a href="membership.html">Membership</a>
       <a href="index.html#latest">Latest</a>
       <div class="nav-item" id="teams-nav-item">
         <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
         <div class="dropdown-panel" id="teams-dropdown-panel"></div>
       </div>
+      <div class="nav-item" id="tables-nav-item">
+        <button class="nav-trigger" type="button" id="tables-trigger">Tables</button>
+        <div class="league-dropdown-panel" id="tables-dropdown-panel">
+          <a href="tables.html?div=1">Premier League</a>
+          <a href="tables.html?div=2">Championship</a>
+          <a href="tables.html?div=3">League One</a>
+          <a href="tables.html?div=4">League Two</a>
+        </div>
+      </div>
       <a href="index.html#spotlight">Spotlight</a>
-      <a href="ins-and-outs.html">Ins &amp; Outs (Transfer Centre)</a>
-      <a href="tables.html">Tables</a>
-      <a href="membership.html">Membership</a>
+      <a href="ins-and-outs.html">Ins &amp; Outs</a>
+      <a href="accumulator.html">This Week's Acca Picks</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -215,7 +275,19 @@
     <div id="club-profile"></div>
 
     <div id="content">
-      <div class="status-box">Fetching latest result…</div>
+      <div class="status-box">Hang on, checking how they got on…</div>
+    </div>
+
+    <div class="section-tabs">
+      <div class="section-tab active" data-panel="fixtures-panel">Fixtures</div>
+      <div class="section-tab" data-panel="results-panel">Results</div>
+    </div>
+
+    <div class="section-panel active" id="fixtures-panel">
+      <div class="status-box">Loading fixtures…</div>
+    </div>
+    <div class="section-panel" id="results-panel">
+      <div class="status-box">Loading results…</div>
     </div>
 
     <div class="fan-views-section">
@@ -245,8 +317,8 @@
 
   <script>
     const clubColors = {
-      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
-      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#149954","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
       "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
       "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Morecambe":"#D2122E","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
     };
@@ -263,7 +335,7 @@
     const div = params.get('div') || '1';
     const divisionNames = { 1: 'Premier League', 2: 'Championship', 3: 'League One', 4: 'League Two' };
 
-    const teamColor = clubColors[teamName] || '#C8102E';
+    const teamColor = clubColors[teamName] || '#149954';
     document.documentElement.style.setProperty('--team-color', teamColor);
     document.body.style.background = `color-mix(in srgb, ${teamColor} 22%, white)`;
 
@@ -284,8 +356,23 @@
       `;
     }
 
-    const SEASON = '2025-26';
-    const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+    const ESPN_LEAGUE = { 1: 'eng.1', 2: 'eng.2', 3: 'eng.3', 4: 'eng.4' };
+
+    // Tries corsproxy.io first (fast, github.io whitelisted), falls back to
+    // allorigins if that's ever down, so one dead proxy can't break the page.
+    function fetchViaProxy(targetUrl) {
+      const proxies = [
+        u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
+      ];
+      function tryProxy(i) {
+        if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
+        return fetch(proxies[i](targetUrl))
+          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
+          .catch(() => tryProxy(i + 1));
+      }
+      return tryProxy(0);
+    }
 
     function normalize(s) {
       return s.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -297,61 +384,194 @@
       return a.includes(b) || b.includes(a);
     }
 
-    fetch(dataUrl)
-      .then(r => {
-        if (!r.ok) throw new Error('Fetch failed: ' + r.status);
-        return r.json();
-      })
-      .then(data => {
-        const matches = (data.matches || []).filter(m =>
-          m.score && m.score.ft &&
-          (matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName))
-        );
+    const league = ESPN_LEAGUE[div];
 
-        if (matches.length === 0) {
+    // Step 1: find this team's ESPN ID by matching name against the division's team list
+    fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=50`)
+      .then(data => {
+        const teamList = (data.sports?.[0]?.leagues?.[0]?.teams || []).map(t => t.team);
+        const match = teamList.find(t => matchesTeam(t.displayName, teamName) || matchesTeam(t.name, teamName));
+        if (!match) throw new Error('team-not-found');
+        return match.id;
+      })
+      .then(teamId => {
+        // Step 2: fetch full schedule (past results + upcoming fixtures) for this team
+        return fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${teamId}/schedule`)
+          .then(data => ({ teamId, events: data.events || [] }));
+      })
+      .then(({ teamId, events }) => {
+        const completed = events.filter(ev => ev.competitions?.[0]?.status?.type?.completed)
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+        const upcoming = events.filter(ev => !ev.competitions?.[0]?.status?.type?.completed)
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        renderFixtures(upcoming);
+        renderResults(completed);
+
+        if (completed.length === 0) {
           document.getElementById('content').innerHTML =
-            '<div class="status-box">We don\'t have a completed match for ' + teamName + ' yet this season.<br><br>' +
-            'That can happen early on, or if the club name doesn\'t quite match our data source — ' +
-            'you can check the raw feed here: <a href="' + dataUrl + '" style="color:var(--gold)">raw data</a>.</div>';
+            `<div class="status-box">No completed match for ${teamName} yet this season. Check the Fixtures tab below for what's coming up.</div>`;
           return;
         }
 
-        matches.sort((a, b) => new Date(b.date) - new Date(a.date));
-        const last = matches[0];
-
-        const isHome = matchesTeam(last.team1, teamName);
-        const us = isHome ? last.team1 : last.team2;
-        const them = isHome ? last.team2 : last.team1;
-        const usScore = isHome ? last.score.ft[0] : last.score.ft[1];
-        const themScore = isHome ? last.score.ft[1] : last.score.ft[0];
-
-        let outcomeClass = 'outcome-draw', outcomeText = 'DRAW';
-        if (usScore > themScore) { outcomeClass = 'outcome-win'; outcomeText = 'WIN'; }
-        else if (usScore < themScore) { outcomeClass = 'outcome-loss'; outcomeText = 'LOSS'; }
-
-        document.getElementById('content').innerHTML = `
-          <div class="result-card">
-            <div class="result-label">Last Result — ${last.round || ''}</div>
-            <span class="result-outcome ${outcomeClass}">${outcomeText}</span>
-            <div class="result-teams">
-              <div class="result-team us">${us}</div>
-              <div class="result-score">${usScore} – ${themScore}</div>
-              <div class="result-team">${them}</div>
-            </div>
-            <div class="result-meta">
-              <span>${last.date}</span>
-              <span>${isHome ? 'Home' : 'Away'}</span>
-              <span>${divisionNames[div]}</span>
-            </div>
-          </div>
-          <div class="division-note">Data via football.json, updated as results come in. ${matches.length} completed match${matches.length !== 1 ? 'es' : ''} found this season.</div>
-        `;
+        renderLastResult(completed[0], teamId, league);
       })
       .catch(err => {
         document.getElementById('content').innerHTML =
-          '<div class="status-box">Couldn\'t load live results right now (' + err.message + ').<br><br>' +
-          'Try refreshing, or check back shortly.</div>';
+          `<div class="status-box">Couldn't load live data right now.<br><br>Try refreshing, or check back shortly.</div>`;
+        document.getElementById('fixtures-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
+        document.getElementById('results-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
       });
+
+    function teamSide(ev) {
+      const comps = ev.competitions[0].competitors;
+      const home = comps.find(c => c.homeAway === 'home');
+      const away = comps.find(c => c.homeAway === 'away');
+      const isHome = matchesTeam(home.team.displayName, teamName);
+      const us = isHome ? home : away;
+      const them = isHome ? away : home;
+      return { isHome, us, them };
+    }
+
+    function renderResults(events) {
+      const panel = document.getElementById('results-panel');
+      if (events.length === 0) {
+        panel.innerHTML = '<div class="status-box">No results yet this season.</div>';
+        return;
+      }
+      let html = '';
+      events.forEach(ev => {
+        const { isHome, us, them } = teamSide(ev);
+        const dateStr = new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+        html += `
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">${isHome ? teamName + ' vs ' + them.team.displayName : them.team.displayName + ' vs ' + teamName}</div>
+              <div class="list-item-meta">${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
+            </div>
+            <div class="list-item-score">${us.score}–${them.score}</div>
+          </div>`;
+      });
+      panel.innerHTML = html;
+    }
+
+    function renderFixtures(events) {
+      const panel = document.getElementById('fixtures-panel');
+      if (events.length === 0) {
+        panel.innerHTML = '<div class="status-box">No upcoming fixtures scheduled yet.</div>';
+        return;
+      }
+      let html = '';
+      events.slice(0, 10).forEach(ev => {
+        const comps = ev.competitions[0].competitors;
+        const home = comps.find(c => c.homeAway === 'home');
+        const away = comps.find(c => c.homeAway === 'away');
+        const isHome = matchesTeam(home.team.displayName, teamName);
+        const opponent = isHome ? away.team.displayName : home.team.displayName;
+        const dateStr = new Date(ev.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+        html += `
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">${isHome ? teamName + ' vs ' + opponent : opponent + ' vs ' + teamName}</div>
+              <div class="list-item-meta">${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
+            </div>
+          </div>`;
+      });
+      panel.innerHTML = html;
+    }
+
+    function renderLastResult(ev, teamId, league) {
+      const { isHome, us, them } = teamSide(ev);
+      const usScore = parseInt(us.score), themScore = parseInt(them.score);
+      let outcomeClass = 'outcome-draw', outcomeText = 'DRAW';
+      if (usScore > themScore) { outcomeClass = 'outcome-win'; outcomeText = 'WIN'; }
+      else if (usScore < themScore) { outcomeClass = 'outcome-loss'; outcomeText = 'LOSS'; }
+
+      const dateStr = new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+      document.getElementById('content').innerHTML = `
+        <div class="result-card">
+          <div class="result-label">Last Result</div>
+          <span class="result-outcome ${outcomeClass}">${outcomeText}</span>
+          <div class="result-teams">
+            <div class="result-team us">${us.team.displayName}</div>
+            <div class="result-score">${us.score} – ${them.score}</div>
+            <div class="result-team">${them.team.displayName}</div>
+          </div>
+          <div class="result-meta">
+            <span>${dateStr}</span>
+            <span>${isHome ? 'Home' : 'Away'}</span>
+            <span>${divisionNames[div]}</span>
+          </div>
+          <div id="match-detail-extra"></div>
+        </div>
+      `;
+
+      // Fetch full match summary for goalscorers + stats
+      fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/summary?event=${ev.id}`)
+        .then(data => renderMatchDetail(data, us.team.displayName, them.team.displayName))
+        .catch(() => { /* goalscorer/stat detail is a bonus — fail silently if unavailable */ });
+    }
+
+    function renderMatchDetail(data, usName, themName) {
+      const container = document.getElementById('match-detail-extra');
+      if (!container) return;
+
+      let html = '';
+
+      // Goalscorers
+      const keyEvents = (data.header?.competitions?.[0]?.details || []).filter(d => d.type?.text === 'Goal' || d.scoringPlay);
+      if (keyEvents.length > 0) {
+        const homeAbbrev = data.header?.competitions?.[0]?.competitors?.find(c => c.homeAway === 'home')?.team?.displayName;
+        const usGoals = [], themGoals = [];
+        keyEvents.forEach(k => {
+          const scorer = k.athletesInvolved?.[0]?.displayName || k.text || 'Goal';
+          const minute = k.clock?.displayValue || '';
+          const line = `${scorer} ${minute}`;
+          if (k.team?.displayName === usName || (!k.team && homeAbbrev === usName)) usGoals.push(line);
+          else themGoals.push(line);
+        });
+        if (usGoals.length || themGoals.length) {
+          html += `
+            <div class="goalscorers">
+              <h4>Goalscorers</h4>
+              <div class="scorer-col">
+                <div class="scorer-list"><b>${usName}</b>${usGoals.length ? usGoals.join('<br>') : '—'}</div>
+                <div class="scorer-list"><b>${themName}</b>${themGoals.length ? themGoals.join('<br>') : '—'}</div>
+              </div>
+            </div>`;
+        }
+      }
+
+      // Match stats
+      const stats = data.boxscore?.teams;
+      if (stats && stats.length === 2) {
+        const findStat = (teamStats, name) => teamStats?.statistics?.find(s => s.name === name)?.displayValue || '—';
+        const usStats = stats.find(s => s.team?.displayName === usName) || stats[0];
+        const possession = findStat(usStats, 'possessionPct');
+        const shots = findStat(usStats, 'totalShots');
+        const corners = findStat(usStats, 'wonCorners');
+        if (possession !== '—' || shots !== '—') {
+          html += `
+            <div class="stats-grid">
+              <div class="stat-box"><div class="val">${possession}</div><div class="lbl">Possession</div></div>
+              <div class="stat-box"><div class="val">${shots}</div><div class="lbl">Shots</div></div>
+              <div class="stat-box"><div class="val">${corners}</div><div class="lbl">Corners</div></div>
+            </div>`;
+        }
+      }
+
+      if (html) container.innerHTML = html;
+    }
+
+    document.querySelectorAll('.section-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.section-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.panel).classList.add('active');
+      });
+    });
   </script>
   <script>
     const dropdownClubsByDiv = {
@@ -368,7 +588,7 @@
       for (const div in dropdownClubsByDiv) {
         navHtml += `<div class="dropdown-col"><h4>${dropdownDivNames[div]}</h4>`;
         dropdownClubsByDiv[div].forEach(name => {
-          const c = clubColors[name] || '#C8102E';
+          const c = clubColors[name] || '#149954';
           navHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:${c};">${name}</a>`;
         });
         navHtml += `</div>`;
@@ -388,6 +608,18 @@
         teamsItem.classList.remove('open');
       });
       navPanel.addEventListener('click', function(e) { e.stopPropagation(); });
+    }
+
+    const tablesItem = document.getElementById('tables-nav-item');
+    const tablesTrigger = document.getElementById('tables-trigger');
+    if (tablesItem && tablesTrigger) {
+      tablesTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        tablesItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        tablesItem.classList.remove('open');
+      });
     }
   </script>
 
