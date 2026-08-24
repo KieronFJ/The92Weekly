@@ -193,6 +193,37 @@
   /* ---------- Spotlight (homepage) ---------- */
   .spotlight-section { padding: 20px 6vw 10px; }
 
+  /* ---------- Ins & Outs preview (homepage) ---------- */
+  .ins-outs-section { padding: 48px 6vw 10px; }
+  .ins-outs-head {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 24px; flex-wrap: wrap; gap: 10px;
+  }
+  .ins-outs-head h2 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px;
+  }
+  .ins-outs-archive-link { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .ins-outs-archive-link:hover { color: var(--gold); }
+
+  .io-preview-list { border: 1px solid var(--line); }
+  .io-preview-item {
+    display: flex; align-items: center; gap: 18px;
+    padding: 16px 22px; border-bottom: 1px solid var(--line-soft);
+    flex-wrap: wrap;
+  }
+  .io-preview-item:last-child { border-bottom: none; }
+  .io-status {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 2px;
+    flex-shrink: 0; min-width: 72px; text-align: center;
+  }
+  .io-status.confirmed { background: #3E8A4D; color: #FFFFFF; }
+  .io-status.loan { background: #2E5C8A; color: #FFFFFF; }
+  .io-status.rumour { background: var(--panel); color: var(--ink-muted); border: 1px solid var(--line); }
+  .io-preview-main { flex: 1; min-width: 200px; font-size: 14.5px; }
+  .io-preview-main b { font-family: 'Poppins', sans-serif; font-weight: 600; }
+  .io-preview-division { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-muted); flex-shrink: 0; }
+
   .spotlight-head {
     display: flex; justify-content: space-between; align-items: flex-end;
     margin-bottom: 24px; flex-wrap: wrap; gap: 10px;
@@ -296,15 +327,14 @@
 
   .split {
     display: grid;
-    grid-template-columns: 1fr 1px 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 0;
     padding: 22px 6vw 20px;
   }
 
-  .split-col { padding: 0 32px; }
-  .split-col:first-child { padding-left: 0; }
+  .split-col { padding: 0 22px; border-left: 1px solid var(--line); }
+  .split-col:first-child { padding-left: 0; border-left: none; }
   .split-col:last-child { padding-right: 0; }
-  .split-divider { background: var(--line); }
 
   .col-head {
     display: flex;
@@ -356,8 +386,8 @@
     font-weight: 500;
     text-transform: none;
     letter-spacing: 0;
-    font-size: 17px;
-    line-height: 1.3;
+    font-size: 15.5px;
+    line-height: 1.32;
     margin-bottom: 6px;
   }
 
@@ -469,13 +499,17 @@
   /* ---------- Responsive ---------- */
   @media (max-width: 780px) {
     .split { grid-template-columns: 1fr; }
-    .split-divider { display: none; }
-    .split-col { padding: 0; }
-    .split-col + .split-divider + .split-col { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); }
+    .split-col { padding: 0; border-left: none; }
+    .split-col:not(:first-child) { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); }
     .newsletter { flex-direction: column; align-items: flex-start; }
     .newsletter-form { width: 100%; }
     .newsletter-form input { flex: 1; width: auto; }
     nav { font-size: 12px; gap: 16px; }
+  }
+  @media (min-width: 781px) and (max-width: 1000px) {
+    .split { grid-template-columns: 1fr 1fr; }
+    .split-col:nth-child(3) { border-left: none; padding-left: 0; margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); grid-column: 1; }
+    .split-col:nth-child(4) { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); }
   }
 </style>
 </head>
@@ -514,8 +548,9 @@
         <div class="dropdown-panel" id="teams-dropdown-panel"></div>
       </div>
       <a href="#spotlight">Spotlight</a>
+      <a href="ins-and-outs.html">Ins &amp; Outs (Transfer Centre)</a>
+      <a href="membership.html">Membership</a>
       <a href="about.html">About</a>
-      <a href="#newsletter">Subscribe</a>
     </nav>
   </header>
 
@@ -530,7 +565,7 @@
     </div>
   </section>
 
-  <div class="pyramid-label">Two divisions, one story</div>
+  <div class="pyramid-label">Four divisions, one story</div>
 
   <section class="split" id="latest">
     <div class="split-col" id="pl">
@@ -567,12 +602,10 @@
       </div>
     </div>
 
-    <div class="split-divider"></div>
-
-    <div class="split-col" id="efl">
+    <div class="split-col" id="championship">
       <div class="col-head">
-        <h2 class="display">EFL</h2>
-        <span class="col-tag">Tiers 2–4</span>
+        <h2 class="display">Championship</h2>
+        <span class="col-tag">Tier 2</span>
       </div>
 
       <div class="row">
@@ -587,6 +620,31 @@
       <div class="row">
         <div class="row-pos mono">02</div>
         <div class="row-body">
+          <h3><a href="#">The parachute payment gap, explained in one table</a></h3>
+          <p>Why the same three or four clubs keep bouncing straight back up — and who's next.</p>
+          <div class="row-meta">Finance · 6 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">03</div>
+        <div class="row-body">
+          <h3><a href="#">The manager under more pressure than his table position suggests</a></h3>
+          <p>Results look fine. The underlying performances tell a very different story.</p>
+          <div class="row-meta">Analysis · 5 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-col" id="league-one">
+      <div class="col-head">
+        <h2 class="display">League One</h2>
+        <span class="col-tag">Tier 3</span>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">01</div>
+        <div class="row-body">
           <h3><a href="#">League One's points-per-game table looks completely different once you adjust for fixture difficulty</a></h3>
           <p>The team everyone's written off has played the hardest run in the division.</p>
           <div class="row-meta">Data · 6 min</div>
@@ -594,11 +652,54 @@
       </div>
 
       <div class="row">
+        <div class="row-pos mono">02</div>
+        <div class="row-body">
+          <h3><a href="#">The promoted side quietly built for a top-half finish, not just survival</a></h3>
+          <p>Their summer business barely made headlines. It should have.</p>
+          <div class="row-meta">Recruitment · 5 min</div>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="row-pos mono">03</div>
+        <div class="row-body">
+          <h3><a href="#">Three League One captains carrying more than their armband suggests</a></h3>
+          <p>Leadership numbers that don't show up in a normal match report.</p>
+          <div class="row-meta">Profile · 6 min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-col" id="league-two">
+      <div class="col-head">
+        <h2 class="display">League Two</h2>
+        <span class="col-tag">Tier 4</span>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">01</div>
         <div class="row-body">
           <h3><a href="#">Three League Two forwards who'll be playing Championship football by January</a></h3>
           <p>Scouted, watched, and cross-checked against last season's biggest EFL-to-EFL moves.</p>
           <div class="row-meta">Scouting · 5 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">02</div>
+        <div class="row-body">
+          <h3><a href="#">The non-league promotion that's already paying off</a></h3>
+          <p>A newly promoted side sitting comfortably mid-table — and building for more.</p>
+          <div class="row-meta">Analysis · 5 min</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-pos mono">03</div>
+        <div class="row-body">
+          <h3><a href="#">Inside the tightest relegation battle in the pyramid</a></h3>
+          <p>Four points separate six clubs. None of them are playing it safe.</p>
+          <div class="row-meta">Deep Dive · 7 min</div>
         </div>
       </div>
     </div>
@@ -640,15 +741,38 @@
     </div>
   </section>
 
+  <section class="ins-outs-section">
+    <div class="ins-outs-head">
+      <h2 class="display">Ins &amp; Outs — Latest Moves</h2>
+      <a class="ins-outs-archive-link" href="ins-and-outs.html">Full transfer centre →</a>
+    </div>
+    <div class="io-preview-list">
+      <div class="io-preview-item">
+        <span class="io-status confirmed">Confirmed</span>
+        <div class="io-preview-main"><b>[Player Name]</b> — [Selling Club] → [Buying Club]</div>
+        <div class="io-preview-division">Premier League</div>
+      </div>
+      <div class="io-preview-item">
+        <span class="io-status loan">Loan</span>
+        <div class="io-preview-main"><b>[Player Name]</b> — [Parent Club] → [Loan Club]</div>
+        <div class="io-preview-division">Championship</div>
+      </div>
+      <div class="io-preview-item">
+        <span class="io-status rumour">Rumour</span>
+        <div class="io-preview-main"><b>[Player Name]</b> — [Current Club] → [Linked Club]</div>
+        <div class="io-preview-division">League One</div>
+      </div>
+    </div>
+  </section>
+
   <div class="newsletter" id="newsletter">
     <div>
       <h2 class="display">Never miss an edition</h2>
-      <p>One weekly send. The stories connecting the Premier League to the EFL — before anyone else joins the dots.</p>
+      <p>Every Friday: the full breakdown across all four divisions, the Weekend Accumulator, rumour grading, and one deep-dive that never runs anywhere else. Members only.</p>
     </div>
-    <form class="newsletter-form" onsubmit="return false;">
-      <input type="email" placeholder="your@email.com" required>
-      <button type="submit">Subscribe</button>
-    </form>
+    <a href="membership.html" class="newsletter-form" style="display:inline-flex; align-items:center; justify-content:center; text-decoration:none;">
+      <span style="font-family:'Poppins',sans-serif; font-weight:600; font-size:14px; background:var(--gold); color:#FFFFFF; padding:14px 30px; border-radius:6px;">Join for £5/month</span>
+    </a>
   </div>
 
   <footer>

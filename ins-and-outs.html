@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All 92 Clubs — The92Weekly</title>
+<title>Ins & Outs — The92Weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,13 +31,10 @@
   header {
     border-bottom: 1px solid var(--line);
     padding: 28px 6vw 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 12px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 12px;
   }
-  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; letter-spacing: 0.01em; line-height: 1; text-transform: uppercase; }
+  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; }
   .nameplate span { color: var(--gold); }
   nav {
     display: flex; gap: 24px;
@@ -53,6 +50,7 @@
   .nav-item { position: relative; }
   .nav-trigger { display: flex; align-items: center; gap: 5px; }
   .nav-trigger::after { content: '▾'; font-size: 8px; position: relative; top: 1px; }
+
   .dropdown-panel {
     display: none;
     position: absolute; top: calc(100% + 21px); right: 0;
@@ -91,7 +89,7 @@
     }
   }
 
-  main { max-width: 1100px; margin: 0 auto; padding: 56px 6vw 80px; }
+  main { max-width: 900px; margin: 0 auto; padding: 56px 6vw 80px; }
 
   .eyebrow {
     font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.03em;
@@ -101,49 +99,65 @@
   .eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--gold); }
 
   h1 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; text-transform: none;
-    font-size: clamp(28px, 4vw, 42px); margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: clamp(28px, 4.4vw, 44px);
+    margin-bottom: 12px; line-height: 1.1;
   }
-  main > p.sub { color: var(--ink-muted); font-size: 16px; margin-bottom: 44px; max-width: 60ch; }
+  main > p.sub { color: var(--ink-muted); font-size: 16px; margin-bottom: 12px; max-width: 60ch; }
+  .week-tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted); margin-bottom: 40px; display: block; }
 
-  .division-block { margin-bottom: 48px; }
-  .division-head {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  .filter-row { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
+  .filter-pill {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.02em;
+    padding: 6px 14px; border: 1px solid var(--line); border-radius: 20px; color: var(--ink-muted);
   }
-  .division-head h2 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.02em;
-  }
-  .division-count { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .filter-pill.active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
 
-  .club-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
+  .transfer-item {
+    display: flex; align-items: center; gap: 20px;
+    padding: 20px 0; border-bottom: 1px solid var(--line-soft);
+    flex-wrap: wrap;
   }
-  .club-tile {
-    padding: 16px 18px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--ink);
-    transition: filter .12s, transform .12s;
-    display: flex;
-    align-items: center;
+  .transfer-item:last-child { border-bottom: none; }
+
+  .status-chip {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px;
+    flex-shrink: 0; min-width: 78px; text-align: center;
   }
-  .club-tile:hover { filter: brightness(0.95); transform: translateX(2px); }
+  .status-confirmed { background: #3E8A4D; color: #FFFFFF; }
+  .status-loan { background: #2E5C8A; color: #FFFFFF; }
+  .status-rumour { background: var(--panel); color: var(--ink-muted); border: 1px solid var(--line); }
+
+  .transfer-main { flex: 1; min-width: 220px; }
+  .transfer-player { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px; margin-bottom: 3px; }
+  .transfer-move { font-size: 14.5px; color: var(--ink-muted); }
+  .transfer-move b { color: var(--ink); font-weight: 600; }
+
+  .transfer-fee {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink-muted);
+    text-align: right; min-width: 90px; flex-shrink: 0;
+  }
+
+  .division-heading {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px;
+    margin: 44px 0 4px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  }
+  .division-heading:first-of-type { margin-top: 0; }
 
   footer {
-    padding: 28px 6vw 40px;
+    max-width: 900px; margin: 0 auto; padding: 40px 6vw 56px;
     display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line);
+    flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); margin-top: 40px;
   }
   footer p { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
   .footer-links { display: flex; gap: 18px; }
   .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
   .footer-links a:hover { color: var(--gold); }
+
+  @media (max-width: 600px) {
+    .transfer-item { gap: 12px; }
+    .transfer-fee { text-align: left; margin-top: 4px; }
+  }
 </style>
 </head>
 <body>
@@ -157,47 +171,71 @@
         <div class="dropdown-panel" id="teams-dropdown-panel"></div>
       </div>
       <a href="index.html#spotlight">Spotlight</a>
-      <a href="ins-and-outs.html">Ins &amp; Outs (Transfer Centre)</a>
+      <a href="ins-and-outs.html" class="active">Ins &amp; Outs (Transfer Centre)</a>
       <a href="membership.html">Membership</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <div class="eyebrow">Club directory</div>
-    <h1>Every club, every division</h1>
-    <p class="sub">Tap a club to see their most recent result, straight from this season's fixtures. From the Premier League down to League Two — the full 92.</p>
+    <div class="eyebrow">Ins &amp; Outs</div>
+    <h1>Who's moving, across all four divisions</h1>
+    <p class="sub">Confirmed deals, loans, and the rumours worth taking seriously — from the Premier League down to League Two.</p>
+    <span class="week-tag">Updated weekly</span>
 
-    <div class="division-block">
-      <div class="division-head">
-        <h2 class="display">Premier League</h2>
-        <span class="division-count">20 clubs</span>
-      </div>
-      <div class="club-grid" id="div-1"></div>
+    <div class="filter-row">
+      <span class="filter-pill active">All</span>
+      <span class="filter-pill">Confirmed</span>
+      <span class="filter-pill">Loan</span>
+      <span class="filter-pill">Rumour</span>
     </div>
 
-    <div class="division-block">
-      <div class="division-head">
-        <h2 class="display">Championship</h2>
-        <span class="division-count">24 clubs</span>
+    <div class="division-heading">Premier League</div>
+    <div class="transfer-item">
+      <span class="status-chip status-confirmed">Confirmed</span>
+      <div class="transfer-main">
+        <div class="transfer-player">[Player Name]</div>
+        <div class="transfer-move">[Selling Club] → <b>[Buying Club]</b></div>
       </div>
-      <div class="club-grid" id="div-2"></div>
+      <div class="transfer-fee">[£Xm]</div>
+    </div>
+    <div class="transfer-item">
+      <span class="status-chip status-rumour">Rumour</span>
+      <div class="transfer-main">
+        <div class="transfer-player">[Player Name]</div>
+        <div class="transfer-move">[Current Club] → <b>[Linked Club]</b></div>
+      </div>
+      <div class="transfer-fee">[Est. £Xm]</div>
     </div>
 
-    <div class="division-block">
-      <div class="division-head">
-        <h2 class="display">League One</h2>
-        <span class="division-count">24 clubs</span>
+    <div class="division-heading">Championship</div>
+    <div class="transfer-item">
+      <span class="status-chip status-loan">Loan</span>
+      <div class="transfer-main">
+        <div class="transfer-player">[Player Name]</div>
+        <div class="transfer-move">[Parent Club] → <b>[Loan Club]</b></div>
       </div>
-      <div class="club-grid" id="div-3"></div>
+      <div class="transfer-fee">Season-long</div>
     </div>
 
-    <div class="division-block">
-      <div class="division-head">
-        <h2 class="display">League Two</h2>
-        <span class="division-count">24 clubs</span>
+    <div class="division-heading">League One</div>
+    <div class="transfer-item">
+      <span class="status-chip status-confirmed">Confirmed</span>
+      <div class="transfer-main">
+        <div class="transfer-player">[Player Name]</div>
+        <div class="transfer-move">[Selling Club] → <b>[Buying Club]</b></div>
       </div>
-      <div class="club-grid" id="div-4"></div>
+      <div class="transfer-fee">Free</div>
+    </div>
+
+    <div class="division-heading">League Two</div>
+    <div class="transfer-item">
+      <span class="status-chip status-rumour">Rumour</span>
+      <div class="transfer-main">
+        <div class="transfer-player">[Player Name]</div>
+        <div class="transfer-move">[Current Club] → <b>[Linked Club]</b></div>
+      </div>
+      <div class="transfer-fee">Undisclosed</div>
     </div>
   </main>
 
@@ -211,44 +249,26 @@
   </footer>
 
   <script>
-    // Club lists by division. Update these each season if clubs are promoted/relegated —
-    // this list controls the directory; the fixture data itself is fetched live per team.
-    const clubs = {
-      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
-      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
-      3: ["Barnsley","Blackpool","Bradford City","Doncaster Rovers","Huddersfield Town","Leyton Orient","Luton Town","Mansfield Town","Peterborough United","Plymouth Argyle","Reading","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers","Burton Albion","AFC Wimbledon","Oxford United","Leicester City","Sheffield Wednesday","Bromley","Milton Keynes Dons","Cambridge United","Notts County"],
-      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","Exeter City","Port Vale","Rotherham United","Northampton Town","York City","Rochdale"]
-    };
-
     const clubColors = {
       "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#1D428A","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
       "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#00A650","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
       "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
       "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Morecambe":"#D2122E","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
     };
-
-    for (const div in clubs) {
-      const grid = document.getElementById('div-' + div);
-      clubs[div].forEach(name => {
-        const a = document.createElement('a');
-        a.href = 'team.html?team=' + encodeURIComponent(name) + '&div=' + div;
-        a.className = 'club-tile';
-        a.textContent = name;
-        const c = clubColors[name] || '#C8102E';
-        a.style.background = `color-mix(in srgb, ${c} 34%, white)`;
-        a.style.borderLeft = `3px solid ${c}`;
-        grid.appendChild(a);
-      });
-    }
-  </script>
-  <script>
+    const clubsByDiv = {
+      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
+      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
+      3: ["Barnsley","Blackpool","Bradford City","Doncaster Rovers","Huddersfield Town","Leyton Orient","Luton Town","Mansfield Town","Peterborough United","Plymouth Argyle","Reading","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers","Burton Albion","AFC Wimbledon","Oxford United","Leicester City","Sheffield Wednesday","Bromley","Milton Keynes Dons","Cambridge United","Notts County"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","Exeter City","Port Vale","Rotherham United","Northampton Town","York City","Rochdale"]
+    };
     const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
+
     const panel = document.getElementById('teams-dropdown-panel');
     if (panel) {
       let html = '';
-      for (const div in clubs) {
+      for (const div in clubsByDiv) {
         html += `<div class="dropdown-col"><h4>${divNames[div]}</h4>`;
-        clubs[div].forEach(name => {
+        clubsByDiv[div].forEach(name => {
           const c = clubColors[name] || '#C8102E';
           html += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:color-mix(in srgb, ${c} 34%, white); border-left:3px solid ${c};">${name}</a>`;
         });
