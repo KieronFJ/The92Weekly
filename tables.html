@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Membership — The92Weekly</title>
+<title>League Tables — The92Weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -91,7 +91,7 @@
     }
   }
 
-  main { max-width: 900px; margin: 0 auto; padding: 56px 6vw 80px; }
+  main { max-width: 800px; margin: 0 auto; padding: 56px 6vw 80px; }
 
   .eyebrow {
     font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.03em;
@@ -101,115 +101,52 @@
   .eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--gold); }
 
   h1 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: clamp(28px, 4.6vw, 46px);
-    margin-bottom: 16px; line-height: 1.1; max-width: 18ch;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: clamp(28px, 4.4vw, 42px);
+    margin-bottom: 12px; line-height: 1.1;
   }
-  main > p.sub { color: var(--ink-muted); font-size: 17.5px; margin-bottom: 48px; max-width: 58ch; }
+  main > p.sub { color: var(--ink-muted); font-size: 16px; margin-bottom: 32px; max-width: 60ch; }
 
-  .pricing-card {
-    background: var(--ink);
-    color: #FFFFFF;
-    border-radius: 8px;
-    padding: 40px;
-    margin-bottom: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
+  .division-tabs { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+  .division-tab {
+    font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 13.5px;
+    padding: 9px 18px; border-radius: 20px; border: 1px solid var(--line);
+    color: var(--ink-muted); cursor: pointer; background: #FFFFFF;
   }
-  .pricing-left h2 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 22px; margin-bottom: 8px;
-  }
-  .pricing-left p { color: #C7C9CC; font-size: 15px; max-width: 40ch; }
-  .price-tag {
-    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 42px;
-    display: flex; align-items: baseline; gap: 6px; flex-shrink: 0;
-  }
-  .price-tag span { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 400; color: #C7C9CC; }
-  .join-btn {
-    display: inline-block;
-    background: var(--gold); color: #FFFFFF;
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px;
-    padding: 14px 30px; border-radius: 6px; margin-top: 16px;
-    text-align: center;
-  }
-  .join-btn:hover { filter: brightness(1.08); }
+  .division-tab.active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
 
-  .perks-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
-    background: var(--line); border: 1px solid var(--line);
-    margin-bottom: 56px;
+  table.standings {
+    width: 100%; border-collapse: collapse; font-size: 13.5px;
   }
-  .perk-card { background: #FFFFFF; padding: 28px; }
-  .perk-card h3 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16.5px; margin-bottom: 8px;
-    display: flex; align-items: center; gap: 8px;
+  table.standings th {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--ink-muted); text-align: center; padding: 10px 6px;
+    border-bottom: 1px solid var(--line);
   }
-  .perk-card h3::before { content: '✓'; color: var(--gold); font-weight: 700; }
-  .perk-card p { font-size: 14.5px; color: var(--ink-muted); }
+  table.standings th:first-child, table.standings th:nth-child(2) { text-align: left; }
+  table.standings td {
+    padding: 10px 6px; text-align: center; border-bottom: 1px solid var(--line-soft);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  table.standings td.team-cell {
+    text-align: left; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px; color: var(--ink);
+  }
+  table.standings td.pos-cell { font-weight: 700; color: var(--ink-muted); width: 28px; }
+  table.standings td.pts-cell { font-weight: 700; color: var(--ink); }
+  table.standings tr:hover { background: var(--panel); }
+  table.standings tr.promotion td.pos-cell { color: #3E8A4D; }
+  table.standings tr.relegation td.pos-cell { color: var(--gold); }
 
-  @media (max-width: 700px) { .perks-grid { grid-template-columns: 1fr; } }
-
-  .demo-label {
-    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
-    margin-bottom: 16px;
+  .table-note {
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted);
+    margin-top: 18px;
   }
-  .article-preview {
-    border: 1px solid var(--line); position: relative; overflow: hidden;
-    margin-bottom: 56px;
+  .status-box {
+    font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--ink-muted);
+    padding: 40px 0; text-align: center;
   }
-  .article-preview-inner { padding: 32px; }
-  .article-preview h2 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 22px; margin-bottom: 14px;
-  }
-  .article-preview p { font-size: 16px; margin-bottom: 16px; }
-  .fade-mask {
-    position: absolute; bottom: 0; left: 0; right: 0; height: 160px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.96) 70%);
-    display: flex; align-items: flex-end; justify-content: center; padding-bottom: 24px;
-  }
-  .unlock-btn {
-    background: var(--gold); color: #FFFFFF;
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px;
-    padding: 12px 26px; border-radius: 6px;
-  }
-
-  h2.section-head {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 20px; margin-bottom: 20px;
-  }
-
-  .request-box {
-    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
-    padding: 36px; margin-bottom: 56px;
-  }
-  .request-box p.lead { font-size: 15.5px; color: var(--ink-muted); margin-bottom: 24px; max-width: 60ch; }
-  .request-form { display: flex; flex-direction: column; gap: 14px; max-width: 480px; }
-  .request-form label {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13.5px; margin-bottom: -6px;
-  }
-  .request-form input, .request-form select, .request-form textarea {
-    font-family: 'Source Serif 4', serif; font-size: 15px;
-    background: #FFFFFF; border: 1px solid var(--line); border-radius: 5px;
-    padding: 12px 14px; color: var(--ink); outline: none;
-  }
-  .request-form input:focus, .request-form select:focus, .request-form textarea:focus { border-color: var(--gold); }
-  .request-form textarea { resize: vertical; min-height: 90px; font-family: 'Source Serif 4', serif; }
-  .request-submit {
-    align-self: flex-start;
-    background: var(--gold); color: #FFFFFF;
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px;
-    padding: 12px 28px; border: none; border-radius: 6px; cursor: pointer; margin-top: 4px;
-  }
-  .request-submit:hover { filter: brightness(1.08); }
-  .request-note { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); margin-top: 16px; }
-  .faq-item { padding: 18px 0; border-bottom: 1px solid var(--line-soft); }
-  .faq-item:last-child { border-bottom: none; }
-  .faq-item h4 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px; margin-bottom: 6px; }
-  .faq-item p { font-size: 14.5px; color: var(--ink-muted); }
 
   footer {
-    max-width: 900px; margin: 0 auto; padding: 40px 6vw 56px;
+    max-width: 800px; margin: 0 auto; padding: 40px 6vw 56px;
     display: flex; justify-content: space-between; align-items: center;
     flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); margin-top: 40px;
   }
@@ -217,6 +154,11 @@
   .footer-links { display: flex; gap: 18px; }
   .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
   .footer-links a:hover { color: var(--gold); }
+
+  @media (max-width: 600px) {
+    table.standings { font-size: 12px; }
+    table.standings th, table.standings td { padding: 8px 3px; }
+  }
 </style>
 </head>
 <body>
@@ -231,109 +173,28 @@
       </div>
       <a href="index.html#spotlight">Spotlight</a>
       <a href="ins-and-outs.html">Ins &amp; Outs (Transfer Centre)</a>
-      <a href="tables.html">Tables</a>
-      <a href="membership.html" class="active">Membership</a>
+      <a href="tables.html" class="active">Tables</a>
+      <a href="membership.html">Membership</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <div class="eyebrow">Membership</div>
-    <h1>The stories that don't make it anywhere else</h1>
-    <p class="sub">Everything on the free site stays free — results, headlines, the weekly Spotlight picks. Membership is for the extra layer underneath: the analysis, the rumour grading, and the one piece a week we don't publish anywhere else.</p>
+    <div class="eyebrow">League Tables</div>
+    <h1>Live standings, all four divisions</h1>
+    <p class="sub">Computed from this season's completed results. Tap a division to switch.</p>
 
-    <div class="pricing-card">
-      <div class="pricing-left">
-        <h2 class="display">The92Weekly Membership</h2>
-        <p>Cancel anytime. Founding members keep this price for as long as they stay subscribed.</p>
-        <a href="#" class="join-btn">Join for £5/month</a>
-      </div>
-      <div class="price-tag">£5<span>/ month</span></div>
+    <div class="division-tabs">
+      <div class="division-tab active" data-div="1">Premier League</div>
+      <div class="division-tab" data-div="2">Championship</div>
+      <div class="division-tab" data-div="3">League One</div>
+      <div class="division-tab" data-div="4">League Two</div>
     </div>
 
-    <h2 class="section-head display">What you get on top of the free site</h2>
-    <div class="perks-grid">
-      <div class="perk-card">
-        <h3>The full breakdown, every article</h3>
-        <p>Free readers get a real preview — the story and the first few paragraphs. Members get the whole thing, every time, no exceptions.</p>
-      </div>
-      <div class="perk-card">
-        <h3>Rumour grading in Ins &amp; Outs</h3>
-        <p>Confirmed deals stay free for everyone. Members get our read on which rumours are actually credible — and which are paper talk.</p>
-      </div>
-      <div class="perk-card">
-        <h3>One deep-dive a week, members only</h3>
-        <p>A proper long-read that never runs free — the actual reason to join, not a locked version of something you'd already get.</p>
-      </div>
-      <div class="perk-card">
-        <h3>A 4th Spotlight pick</h3>
-        <p>Free gets three players a week. Members get a fourth, plus the reasoning and stats behind all four picks.</p>
-      </div>
-      <div class="perk-card">
-        <h3>Early access</h3>
-        <p>Members get the weekly edition on Friday. Everyone else gets it the following Tuesday.</p>
-      </div>
-      <div class="perk-card">
-        <h3>Founding member pricing</h3>
-        <p>Join now and this price is locked in for as long as you stay subscribed, even if it rises for new members later.</p>
-      </div>
-      <div class="perk-card">
-        <h3>The Weekend Accumulator</h3>
-        <p>A five-fold pick every weekend, built across all four divisions, with our reasoning behind each leg. 18+, gamble responsibly. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See a sample →</a></p>
-      </div>
+    <div id="table-container">
+      <div class="status-box">Loading table…</div>
     </div>
-
-    <div class="demo-label">Here's what a members-only article looks like on the site:</div>
-    <div class="article-preview">
-      <div class="article-preview-inner">
-        <h2 class="display">Inside the Championship's most sustainable rebuild — and the one nobody's copying</h2>
-        <p>No parachute payment. No billionaire owner. Just a recruitment model built on data most Championship clubs still don't use properly — and it's working.</p>
-        <p>Three signings this summer tell the story. Each one was flagged by the same internal model eighteen months before the move happened, and each one cost under £2m. The pattern behind them is the real story here...</p>
-      </div>
-      <div class="fade-mask">
-        <a href="#" class="unlock-btn">Unlock with membership</a>
-      </div>
-    </div>
-
-    <h2 class="section-head display">Request what you want covered</h2>
-    <div class="request-box">
-      <p class="lead">Members-only. Want a deep-dive on a specific player, a tactical breakdown of your club, or something else entirely? Tell us — requests directly shape what we cover next.</p>
-      <form class="request-form" onsubmit="return false;">
-        <label for="req-name">Your name</label>
-        <input type="text" id="req-name" placeholder="Your name" required>
-
-        <label for="req-club">Your club (optional)</label>
-        <input type="text" id="req-club" placeholder="e.g. Ipswich Town">
-
-        <label for="req-type">What kind of request is this?</label>
-        <select id="req-type">
-          <option>Player deep-dive</option>
-          <option>Tactical breakdown</option>
-          <option>Club finances / ownership</option>
-          <option>Something else</option>
-        </select>
-
-        <label for="req-details">Tell us more</label>
-        <textarea id="req-details" placeholder="What would you like us to cover?" required></textarea>
-
-        <button type="submit" class="request-submit">Submit request</button>
-      </form>
-      <div class="request-note">This form isn't wired up to collect submissions yet — plug in a free Google Form or Tally.so form here once you're ready to start taking requests.</div>
-    </div>
-
-    <h2 class="section-head display">A few questions</h2>
-    <div class="faq-item">
-      <h4>Will the free site ever feel like it's missing something?</h4>
-      <p>No — results, headlines, and the weekly Spotlight picks stay fully free, always. Membership adds a layer on top rather than taking anything away.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Can I cancel anytime?</h4>
-      <p>Yes, whenever you like — no minimum term.</p>
-    </div>
-    <div class="faq-item">
-      <h4>How do I sign up?</h4>
-      <p>Tap "Join for £5/month" above — you'll be taken to a secure checkout page to complete your membership.</p>
-    </div>
+    <div class="table-note">Table computed live from completed results this season. P = played, GD = goal difference, Pts = points.</div>
   </main>
 
   <footer>
@@ -359,6 +220,7 @@
       4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Northampton Town","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
     };
     const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
+    const SEASON = '2025-26';
 
     const panel = document.getElementById('teams-dropdown-panel');
     if (panel) {
@@ -374,7 +236,6 @@
       html += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
       panel.innerHTML = html;
     }
-
     const teamsItem = document.getElementById('teams-nav-item');
     const teamsTrigger = document.getElementById('teams-trigger');
     if (teamsItem && teamsTrigger) {
@@ -382,11 +243,95 @@
         e.stopPropagation();
         teamsItem.classList.toggle('open');
       });
-      document.addEventListener('click', function() {
-        teamsItem.classList.remove('open');
-      });
+      document.addEventListener('click', function() { teamsItem.classList.remove('open'); });
       panel.addEventListener('click', function(e) { e.stopPropagation(); });
     }
+
+    function normalize(s) { return s.toLowerCase().replace(/[^a-z0-9]/g, ''); }
+    function matchesTeam(fixtureName, target) {
+      const a = normalize(fixtureName), b = normalize(target);
+      return a.includes(b) || b.includes(a);
+    }
+
+    const tableCache = {};
+
+    function buildTable(div) {
+      const container = document.getElementById('table-container');
+      if (tableCache[div]) { renderTable(div, tableCache[div]); return; }
+      container.innerHTML = '<div class="status-box">Loading table…</div>';
+      const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+
+      fetch(dataUrl)
+        .then(r => r.json())
+        .then(data => {
+          const matches = (data.matches || []).filter(m => m.score && m.score.ft);
+          const table = {};
+          clubsByDiv[div].forEach(name => {
+            table[name] = { team: name, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
+          });
+
+          matches.forEach(m => {
+            const home = clubsByDiv[div].find(n => matchesTeam(m.team1, n)) || m.team1;
+            const away = clubsByDiv[div].find(n => matchesTeam(m.team2, n)) || m.team2;
+            const hs = m.score.ft[0], as = m.score.ft[1];
+            if (!table[home]) table[home] = { team: home, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
+            if (!table[away]) table[away] = { team: away, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
+
+            table[home].p++; table[away].p++;
+            table[home].gf += hs; table[home].ga += as;
+            table[away].gf += as; table[away].ga += hs;
+
+            if (hs > as) { table[home].w++; table[home].pts += 3; table[away].l++; }
+            else if (hs < as) { table[away].w++; table[away].pts += 3; table[home].l++; }
+            else { table[home].d++; table[away].d++; table[home].pts++; table[away].pts++; }
+          });
+
+          const rows = Object.values(table).map(r => ({ ...r, gd: r.gf - r.ga }));
+          rows.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf);
+
+          tableCache[div] = rows;
+          renderTable(div, rows);
+        })
+        .catch(err => {
+          container.innerHTML = '<div class="status-box">Couldn\'t load the table right now. Try refreshing.</div>';
+        });
+    }
+
+    function renderTable(div, rows) {
+      const container = document.getElementById('table-container');
+      const promoLine = div === '1' ? 0 : (div === '4' ? 3 : 2);
+      const relLine = div === '1' ? 17 : (div === '4' ? rows.length : rows.length - 4);
+
+      let html = `<table class="standings"><thead><tr>
+        <th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th>
+      </tr></thead><tbody>`;
+
+      rows.forEach((r, i) => {
+        const pos = i + 1;
+        let cls = '';
+        if (pos <= promoLine) cls = 'promotion';
+        else if (pos > relLine) cls = 'relegation';
+        html += `<tr class="${cls}">
+          <td class="pos-cell">${pos}</td>
+          <td class="team-cell">${r.team}</td>
+          <td>${r.p}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td>
+          <td>${r.gd > 0 ? '+' : ''}${r.gd}</td>
+          <td class="pts-cell">${r.pts}</td>
+        </tr>`;
+      });
+      html += `</tbody></table>`;
+      container.innerHTML = html;
+    }
+
+    document.querySelectorAll('.division-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.division-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        buildTable(tab.dataset.div);
+      });
+    });
+
+    buildTable('1');
   </script>
 
 </body>

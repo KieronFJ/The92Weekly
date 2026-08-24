@@ -59,34 +59,47 @@
   main > p.sub { color: var(--ink-muted); font-size: 16.5px; margin-bottom: 8px; max-width: 58ch; }
   .week-tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted); margin-bottom: 36px; display: block; }
 
+  .acca-block { margin-bottom: 48px; }
+  .acca-block-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 6px; flex-wrap: wrap; gap: 8px;
+  }
+  .acca-block-head h2 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 21px;
+  }
+  .acca-tier-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px;
+  }
+  .tier-safe { background: #3E8A4D; color: #FFFFFF; }
+  .tier-balanced { background: #2E5C8A; color: #FFFFFF; }
+  .tier-rogue { background: var(--gold); color: #FFFFFF; }
+  .acca-block-desc { font-size: 14.5px; color: var(--ink-muted); margin-bottom: 20px; }
+
   .pick-item {
-    display: flex; align-items: center; gap: 18px;
-    padding: 22px 0; border-bottom: 1px solid var(--line-soft);
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 0; border-bottom: 1px solid var(--line-soft);
   }
   .pick-item:last-of-type { border-bottom: none; }
-  .pick-num {
-    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 22px; color: var(--gold);
-    min-width: 30px;
-  }
   .pick-body { flex: 1; }
-  .pick-fixture { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px; margin-bottom: 4px; }
-  .pick-bet { font-size: 14.5px; color: var(--ink); margin-bottom: 6px; }
+  .pick-fixture { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; margin-bottom: 3px; }
+  .pick-bet { font-size: 14px; color: var(--ink); margin-bottom: 4px; }
   .pick-bet b { color: var(--gold); }
-  .pick-reason { font-size: 14px; color: var(--ink-muted); }
+  .pick-reason { font-size: 13.5px; color: var(--ink-muted); }
   .pick-odds {
-    font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700;
-    color: var(--ink); flex-shrink: 0; text-align: right;
+    font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700;
+    color: var(--ink); flex-shrink: 0; text-align: right; min-width: 46px;
   }
 
   .acca-summary {
-    margin-top: 32px;
+    margin-top: 18px;
     background: var(--ink); color: #FFFFFF;
-    border-radius: 8px; padding: 28px 32px;
+    border-radius: 8px; padding: 22px 28px;
     display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
   }
-  .acca-summary-label { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #C7C9CC; margin-bottom: 6px; }
-  .acca-summary-value { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 28px; }
-  .acca-summary-odds { font-family: 'JetBrains Mono', monospace; font-size: 30px; font-weight: 700; color: var(--gold); }
+  .acca-summary-label { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #C7C9CC; margin-bottom: 5px; }
+  .acca-summary-value { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 22px; }
+  .acca-summary-odds { font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 700; color: var(--gold); }
 
   .responsible-box {
     margin-top: 48px;
@@ -118,8 +131,8 @@
   .footer-links a:hover { color: var(--gold); }
 
   @media (max-width: 600px) {
-    .pick-item { flex-wrap: wrap; }
-    .pick-odds { margin-left: 48px; }
+    .pick-item { flex-wrap: wrap; gap: 10px; }
+    .pick-odds { text-align: left; }
   }
 </style>
 </head>
@@ -132,66 +145,179 @@
 
   <main>
     <div class="eyebrow">The Weekend Accumulator</div>
-    <h1>This week's five-fold</h1>
-    <p class="sub">Our picks across the pyramid, building to one accumulator. Our view, not advice — always gamble responsibly and never stake more than you can afford to lose.</p>
+    <h1>Three accas, three risk levels</h1>
+    <p class="sub">A safe acca for steady returns, a balanced one for a bit more reward, and a rogue one for the shouts we're genuinely backing. Our view, not advice — always gamble responsibly and never stake more than you can afford to lose.</p>
     <span class="week-tag">Week of [date]</span>
 
-    <div class="pick-item">
-      <div class="pick-num">1</div>
-      <div class="pick-body">
-        <div class="pick-fixture">[Home Team] vs [Away Team]</div>
-        <div class="pick-bet">Pick: <b>[e.g. Home Win / Over 2.5 Goals]</b></div>
-        <div class="pick-reason">[Why — form, injuries, head-to-head, whatever's driving the pick.]</div>
+    <div class="acca-block">
+      <div class="acca-block-head">
+        <h2 class="display">The Safe Acca</h2>
+        <span class="acca-tier-tag tier-safe">Lower Return</span>
       </div>
-      <div class="pick-odds">[X/X]</div>
+      <p class="acca-block-desc">Four short-priced results we're genuinely confident in — built for a steady return, not a big swing.</p>
+
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+
+      <div class="acca-summary">
+        <div>
+          <div class="acca-summary-label">Safe Acca — 4-fold</div>
+          <div class="acca-summary-value">Combined odds</div>
+        </div>
+        <div class="acca-summary-odds">[X/X]</div>
+      </div>
     </div>
 
-    <div class="pick-item">
-      <div class="pick-num">2</div>
-      <div class="pick-body">
-        <div class="pick-fixture">[Home Team] vs [Away Team]</div>
-        <div class="pick-bet">Pick: <b>[Selection]</b></div>
-        <div class="pick-reason">[Reasoning.]</div>
+    <div class="acca-block">
+      <div class="acca-block-head">
+        <h2 class="display">The Balanced Acca</h2>
+        <span class="acca-tier-tag tier-balanced">Middle Return</span>
       </div>
-      <div class="pick-odds">[X/X]</div>
+      <p class="acca-block-desc">Five results — a mix of confident picks and slightly bigger prices for a reasonable return without going reckless.</p>
+
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[X/X]</div>
+      </div>
+
+      <div class="acca-summary">
+        <div>
+          <div class="acca-summary-label">Balanced Acca — 5-fold</div>
+          <div class="acca-summary-value">Combined odds</div>
+        </div>
+        <div class="acca-summary-odds">[XX/X]</div>
+      </div>
     </div>
 
-    <div class="pick-item">
-      <div class="pick-num">3</div>
-      <div class="pick-body">
-        <div class="pick-fixture">[Home Team] vs [Away Team]</div>
-        <div class="pick-bet">Pick: <b>[Selection]</b></div>
-        <div class="pick-reason">[Reasoning.]</div>
+    <div class="acca-block">
+      <div class="acca-block-head">
+        <h2 class="display">The Rogue Acca</h2>
+        <span class="acca-tier-tag tier-rogue">Bigger Return</span>
       </div>
-      <div class="pick-odds">[X/X]</div>
-    </div>
+      <p class="acca-block-desc">Six results, including the shouts — longer prices we're genuinely backing, not filler. A small stake, big potential return.</p>
 
-    <div class="pick-item">
-      <div class="pick-num">4</div>
-      <div class="pick-body">
-        <div class="pick-fixture">[Home Team] vs [Away Team]</div>
-        <div class="pick-bet">Pick: <b>[Selection]</b></div>
-        <div class="pick-reason">[Reasoning.]</div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[XX/X]</div>
       </div>
-      <div class="pick-odds">[X/X]</div>
-    </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[XX/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[XX/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[XX/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[XX/X]</div>
+      </div>
+      <div class="pick-item">
+        <div class="pick-body">
+          <div class="pick-fixture">[Home Team] vs [Away Team]</div>
+          <div class="pick-bet">Pick: <b>[Team] to Win</b></div>
+          <div class="pick-reason">[Reasoning.]</div>
+        </div>
+        <div class="pick-odds">[XX/X]</div>
+      </div>
 
-    <div class="pick-item">
-      <div class="pick-num">5</div>
-      <div class="pick-body">
-        <div class="pick-fixture">[Home Team] vs [Away Team]</div>
-        <div class="pick-bet">Pick: <b>[Selection]</b></div>
-        <div class="pick-reason">[Reasoning.]</div>
+      <div class="acca-summary">
+        <div>
+          <div class="acca-summary-label">Rogue Acca — 6-fold</div>
+          <div class="acca-summary-value">Combined odds</div>
+        </div>
+        <div class="acca-summary-odds">[XXX/X]</div>
       </div>
-      <div class="pick-odds">[X/X]</div>
-    </div>
-
-    <div class="acca-summary">
-      <div>
-        <div class="acca-summary-label">Five-fold accumulator</div>
-        <div class="acca-summary-value">All five selections combined</div>
-      </div>
-      <div class="acca-summary-odds">[XX/X]</div>
     </div>
 
     <div class="responsible-box">

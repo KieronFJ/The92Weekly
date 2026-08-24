@@ -69,11 +69,14 @@
     margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
   }
   .dropdown-col a {
-    display: block; font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
-    color: var(--ink); padding: 6px 8px 6px 10px; margin-bottom: 3px;
+    display: block; position: relative; overflow: hidden;
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 600;
+    color: #FFFFFF; padding: 7px 10px; margin-bottom: 3px;
     border-radius: 3px; transition: filter .12s, transform .12s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
   }
-  .dropdown-col a:hover { filter: brightness(0.94); transform: translateX(2px); }
+  .dropdown-col a:hover { filter: brightness(1.1); transform: translateX(2px); }
+
   .dropdown-footer {
     grid-column: 1 / -1; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line);
     font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
@@ -152,6 +155,29 @@
     margin-top: 24px;
   }
 
+  .profile-strip {
+    display: flex; gap: 28px; flex-wrap: wrap;
+    margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line);
+  }
+  .profile-item { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--ink-muted); }
+  .profile-item b { display: block; font-family: 'Poppins', sans-serif; font-size: 14.5px; color: var(--ink); margin-top: 2px; }
+
+  .fan-views-section { margin-top: 48px; }
+  .fan-views-head { margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .fan-views-head h2 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; }
+  .fan-tweet-placeholder {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 20px; margin-bottom: 14px; font-size: 14px; color: var(--ink-muted);
+  }
+  .fan-submit-box {
+    margin-top: 18px; padding: 18px 22px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+  }
+  .fan-submit-box p { font-size: 14px; color: var(--ink-muted); margin: 0; }
+  .fan-submit-box a { color: var(--gold); font-weight: 600; font-size: 14px; }
+  .fan-submit-box a:hover { border-bottom: 1px solid var(--gold); }
+
   footer {
     max-width: 68ch; margin: 0 auto; padding: 40px 6vw 56px;
     display: flex; justify-content: space-between; align-items: center;
@@ -175,6 +201,7 @@
       </div>
       <a href="index.html#spotlight">Spotlight</a>
       <a href="ins-and-outs.html">Ins &amp; Outs (Transfer Centre)</a>
+      <a href="tables.html">Tables</a>
       <a href="membership.html">Membership</a>
       <a href="about.html">About</a>
     </nav>
@@ -185,9 +212,25 @@
   <main>
     <span class="team-tag" id="division-tag">Division</span>
     <h1 id="team-name">Loading…</h1>
+    <div id="club-profile"></div>
 
     <div id="content">
       <div class="status-box">Fetching latest result…</div>
+    </div>
+
+    <div class="fan-views-section">
+      <div class="fan-views-head">
+        <h2 class="display">What fans are saying</h2>
+      </div>
+      <div id="fan-tweets">
+        <div class="fan-tweet-placeholder">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">[Paste a real embedded post here via X's "Embed post" option — this is a placeholder]</p>&mdash; Fan account (@handle)</blockquote>
+        </div>
+      </div>
+      <div class="fan-submit-box">
+        <p>Got a take on your club? We feature genuine fan voices here every week.</p>
+        <a href="membership.html">Submit yours →</a>
+      </div>
     </div>
   </main>
 
@@ -202,10 +245,17 @@
 
   <script>
     const clubColors = {
-      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#1D428A","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
-      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#00A650","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
       "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
       "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Morecambe":"#D2122E","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
+    };
+
+    const clubProfiles = {
+      "Arsenal":{nickname:"The Gunners",stadium:"Emirates Stadium",founded:"1886"},"Aston Villa":{nickname:"The Villans",stadium:"Villa Park",founded:"1874"},"Bournemouth":{nickname:"The Cherries",stadium:"Vitality Stadium",founded:"1899"},"Brentford":{nickname:"The Bees",stadium:"Gtech Community Stadium",founded:"1889"},"Brighton & Hove Albion":{nickname:"The Seagulls",stadium:"Amex Stadium",founded:"1901"},"Chelsea":{nickname:"The Blues",stadium:"Stamford Bridge",founded:"1905"},"Coventry City":{nickname:"The Sky Blues",stadium:"Coventry Building Society Arena",founded:"1883"},"Crystal Palace":{nickname:"The Eagles",stadium:"Selhurst Park",founded:"1905"},"Everton":{nickname:"The Toffees",stadium:"Goodison Park",founded:"1878"},"Fulham":{nickname:"The Cottagers",stadium:"Craven Cottage",founded:"1879"},"Hull City":{nickname:"The Tigers",stadium:"MKM Stadium",founded:"1904"},"Ipswich Town":{nickname:"The Tractor Boys",stadium:"Portman Road",founded:"1878"},"Leeds United":{nickname:"The Whites",stadium:"Elland Road",founded:"1919"},"Liverpool":{nickname:"The Reds",stadium:"Anfield",founded:"1892"},"Manchester City":{nickname:"The Citizens",stadium:"Etihad Stadium",founded:"1880"},"Manchester United":{nickname:"The Red Devils",stadium:"Old Trafford",founded:"1878"},"Newcastle United":{nickname:"The Magpies",stadium:"St James' Park",founded:"1892"},"Nottingham Forest":{nickname:"The Tricky Trees",stadium:"City Ground",founded:"1865"},"Sunderland":{nickname:"The Black Cats",stadium:"Stadium of Light",founded:"1879"},"Tottenham Hotspur":{nickname:"Spurs",stadium:"Tottenham Hotspur Stadium",founded:"1882"},
+      "Birmingham City":{nickname:"The Blues",stadium:"St Andrew's",founded:"1875"},"Blackburn Rovers":{nickname:"Rovers",stadium:"Ewood Park",founded:"1875"},"Bolton Wanderers":{nickname:"The Trotters",stadium:"Toughsheet Community Stadium",founded:"1874"},"Bristol City":{nickname:"The Robins",stadium:"Ashton Gate",founded:"1894"},"Burnley":{nickname:"The Clarets",stadium:"Turf Moor",founded:"1882"},"Cardiff City":{nickname:"The Bluebirds",stadium:"Cardiff City Stadium",founded:"1899"},"Charlton Athletic":{nickname:"The Addicks",stadium:"The Valley",founded:"1905"},"Derby County":{nickname:"The Rams",stadium:"Pride Park",founded:"1884"},"Lincoln City":{nickname:"The Imps",stadium:"LNER Stadium",founded:"1884"},"Middlesbrough":{nickname:"Boro",stadium:"Riverside Stadium",founded:"1876"},"Millwall":{nickname:"The Lions",stadium:"The Den",founded:"1885"},"Norwich City":{nickname:"The Canaries",stadium:"Carrow Road",founded:"1902"},"Portsmouth":{nickname:"Pompey",stadium:"Fratton Park",founded:"1898"},"Preston North End":{nickname:"The Lilywhites",stadium:"Deepdale",founded:"1880"},"Queens Park Rangers":{nickname:"The Hoops",stadium:"Loftus Road",founded:"1882"},"Sheffield United":{nickname:"The Blades",stadium:"Bramall Lane",founded:"1889"},"Southampton":{nickname:"The Saints",stadium:"St Mary's Stadium",founded:"1885"},"Stoke City":{nickname:"The Potters",stadium:"bet365 Stadium",founded:"1863"},"Swansea City":{nickname:"The Swans",stadium:"Swansea.com Stadium",founded:"1912"},"Watford":{nickname:"The Hornets",stadium:"Vicarage Road",founded:"1881"},"West Bromwich Albion":{nickname:"The Baggies",stadium:"The Hawthorns",founded:"1878"},"West Ham United":{nickname:"The Hammers",stadium:"London Stadium",founded:"1895"},"Wolverhampton Wanderers":{nickname:"Wolves",stadium:"Molineux",founded:"1877"},"Wrexham":{nickname:"The Red Dragons",stadium:"Racecourse Ground",founded:"1864"},
+      "Barnsley":{nickname:"The Tykes",stadium:"Oakwell",founded:"1887"},"Blackpool":{nickname:"The Seasiders",stadium:"Bloomfield Road",founded:"1887"},"Bradford City":{nickname:"The Bantams",stadium:"Valley Parade",founded:"1903"},"Doncaster Rovers":{nickname:"Rovers",stadium:"Eco-Power Stadium",founded:"1879"},"Huddersfield Town":{nickname:"The Terriers",stadium:"John Smith's Stadium",founded:"1908"},"Leyton Orient":{nickname:"The O's",stadium:"Brisbane Road",founded:"1881"},"Luton Town":{nickname:"The Hatters",stadium:"Kenilworth Road",founded:"1885"},"Mansfield Town":{nickname:"The Stags",stadium:"One Call Stadium",founded:"1897"},"Peterborough United":{nickname:"Posh",stadium:"Weston Homes Stadium",founded:"1934"},"Plymouth Argyle":{nickname:"The Pilgrims",stadium:"Home Park",founded:"1886"},"Reading":{nickname:"The Royals",stadium:"Select Car Leasing Stadium",founded:"1871"},"Stevenage":{nickname:"Boro",stadium:"Lamex Stadium",founded:"1976"},"Stockport County":{nickname:"The Hatters",stadium:"Edgeley Park",founded:"1883"},"Wigan Athletic":{nickname:"The Latics",stadium:"Brick Community Stadium",founded:"1932"},"Wycombe Wanderers":{nickname:"The Chairboys",stadium:"Adams Park",founded:"1887"},"Burton Albion":{nickname:"The Brewers",stadium:"Pirelli Stadium",founded:"1950"},"AFC Wimbledon":{nickname:"The Dons",stadium:"Cherry Red Records Stadium",founded:"2002"},"Oxford United":{nickname:"The U's",stadium:"Kassam Stadium",founded:"1893"},"Leicester City":{nickname:"The Foxes",stadium:"King Power Stadium",founded:"1884"},"Sheffield Wednesday":{nickname:"The Owls",stadium:"Hillsborough",founded:"1867"},"Bromley":{nickname:"The Ravens",stadium:"Hayes Lane",founded:"1892"},"Milton Keynes Dons":{nickname:"The Dons",stadium:"Stadium MK",founded:"2004"},"Cambridge United":{nickname:"The U's",stadium:"Cledara Abbey Stadium",founded:"1919"},"Notts County":{nickname:"The Magpies",stadium:"Meadow Lane",founded:"1862"},
+      "Accrington Stanley":{nickname:"Stanley",stadium:"Wham Stadium",founded:"1968"},"Barnet":{nickname:"The Bees",stadium:"The Hive",founded:"1888"},"Bristol Rovers":{nickname:"The Gas",stadium:"Memorial Stadium",founded:"1883"},"Cheltenham Town":{nickname:"The Robins",stadium:"Completely-Suzuki Stadium",founded:"1892"},"Chesterfield":{nickname:"The Spireites",stadium:"SMH Group Stadium",founded:"1866"},"Colchester United":{nickname:"The U's",stadium:"JobServe Community Stadium",founded:"1937"},"Crawley Town":{nickname:"The Reds",stadium:"Broadfield Stadium",founded:"1896"},"Crewe Alexandra":{nickname:"The Railwaymen",stadium:"Mornflake Stadium",founded:"1877"},"Fleetwood Town":{nickname:"The Cod Army",stadium:"Highbury Stadium",founded:"1997"},"Gillingham":{nickname:"The Gills",stadium:"Priestfield Stadium",founded:"1893"},"Grimsby Town":{nickname:"The Mariners",stadium:"Blundell Park",founded:"1878"},"Morecambe":{nickname:"The Shrimps",stadium:"Mazuma Stadium",founded:"1920"},"Newport County":{nickname:"The Exiles",stadium:"Rodney Parade",founded:"1912"},"Salford City":{nickname:"The Ammies",stadium:"Peninsula Stadium",founded:"1940"},"Shrewsbury Town":{nickname:"The Shrews",stadium:"Croud Meadow",founded:"1886"},"Swindon Town":{nickname:"The Robins",stadium:"County Ground",founded:"1879"},"Tranmere Rovers":{nickname:"Rovers",stadium:"Prenton Park",founded:"1884"},"Walsall":{nickname:"The Saddlers",stadium:"Bescot Stadium",founded:"1888"},"Exeter City":{nickname:"The Grecians",stadium:"St James Park",founded:"1904"},"Port Vale":{nickname:"The Valiants",stadium:"Vale Park",founded:"1876"},"Rotherham United":{nickname:"The Millers",stadium:"New York Stadium",founded:"1925"},"Northampton Town":{nickname:"The Cobblers",stadium:"Sixfields Stadium",founded:"1897"},"York City":{nickname:"The Minstermen",stadium:"LNER Community Stadium",founded:"1922"},"Rochdale":{nickname:"Dale",stadium:"Crown Oil Arena",founded:"1907"}
     };
 
     const params = new URLSearchParams(window.location.search);
@@ -222,6 +272,17 @@
     document.getElementById('division-tag').textContent = divisionNames[div] || 'Division';
     document.getElementById('division-tag').style.background = teamColor;
     document.getElementById('division-tag').style.color = '#FFFFFF';
+
+    const profile = clubProfiles[teamName];
+    if (profile) {
+      document.getElementById('club-profile').innerHTML = `
+        <div class="profile-strip">
+          <div class="profile-item">Nickname<b>${profile.nickname}</b></div>
+          <div class="profile-item">Stadium<b>${profile.stadium}</b></div>
+          <div class="profile-item">Founded<b>${profile.founded}</b></div>
+        </div>
+      `;
+    }
 
     const SEASON = '2025-26';
     const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
@@ -296,8 +357,8 @@
     const dropdownClubsByDiv = {
       1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
       2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
-      3: ["Barnsley","Blackpool","Bradford City","Doncaster Rovers","Huddersfield Town","Leyton Orient","Luton Town","Mansfield Town","Peterborough United","Plymouth Argyle","Reading","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers","Burton Albion","AFC Wimbledon","Oxford United","Leicester City","Sheffield Wednesday","Bromley","Milton Keynes Dons","Cambridge United","Notts County"],
-      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","Exeter City","Port Vale","Rotherham United","Northampton Town","York City","Rochdale"]
+      3: ["AFC Wimbledon","Barnsley","Blackpool","Bradford City","Bromley","Burton Albion","Cambridge United","Doncaster Rovers","Huddersfield Town","Leicester City","Leyton Orient","Luton Town","Mansfield Town","Milton Keynes Dons","Notts County","Oxford United","Peterborough United","Plymouth Argyle","Reading","Sheffield Wednesday","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Northampton Town","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
     };
     const dropdownDivNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
 
@@ -308,7 +369,7 @@
         navHtml += `<div class="dropdown-col"><h4>${dropdownDivNames[div]}</h4>`;
         dropdownClubsByDiv[div].forEach(name => {
           const c = clubColors[name] || '#C8102E';
-          navHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:color-mix(in srgb, ${c} 34%, white); border-left:3px solid ${c};">${name}</a>`;
+          navHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:${c};">${name}</a>`;
         });
         navHtml += `</div>`;
       }
