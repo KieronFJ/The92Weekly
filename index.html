@@ -31,6 +31,8 @@
     font-family: 'Source Serif 4', serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   a { color: inherit; text-decoration: none; }
@@ -72,7 +74,7 @@
   .ticker-track {
     display: inline-flex;
     padding-left: 110px;
-    animation: scroll-ticker 64s linear infinite;
+    animation: scroll-ticker 150s linear infinite;
   }
 
   .ticker-track a {
@@ -99,7 +101,7 @@
   /* ---------- Header ---------- */
   header {
     border-bottom: 1px solid var(--line);
-    padding: 28px 6vw 24px;
+    padding: 28px 6vw 8px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -122,13 +124,14 @@
     font-size: 12.5px;
     letter-spacing: 0.02em;
     color: var(--ink-muted);
-    margin-top: 8px;
+    margin-top: 12px;
   }
 
   nav {
     display: flex;
     gap: 18px;
     padding-bottom: 4px;
+    flex-wrap: wrap;
   }
 
   nav a, .nav-trigger {
