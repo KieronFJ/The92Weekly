@@ -40,6 +40,7 @@
   .nameplate {
     font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase;
     display: inline-block; background: #FFFFFF; padding: 10px 18px; border-radius: 8px;
+    border: 1.5px solid #000000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.12);
   }
   .nameplate span { color: var(--gold); }
@@ -48,11 +49,12 @@
     padding-bottom: 4px;
   }
   nav a, .nav-trigger {
-    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
-    color: var(--ink-muted); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 600; letter-spacing: 0.01em; line-height: 1;
+    color: #1A1D22; border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
     background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
+    -webkit-text-stroke: 0.35px #FFFFFF; text-shadow: 0 1px 2px rgba(255,255,255,0.4);
   }
-  nav a:hover, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
+  nav a:hover, .nav-trigger:hover, .nav-item.open .nav-trigger { color: #1A1D22; border-bottom-color: var(--gold); }
 
   .nav-item { position: relative; }
   .nav-trigger { display: flex; align-items: center; gap: 5px; }
@@ -115,12 +117,11 @@
 
   .breadcrumb {
     max-width: 68ch; margin: 32px auto 0; padding: 0 6vw;
-    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #FFFFFF;
-    opacity: 0.9;
-    -webkit-text-stroke: 0.5px #000000;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1A1D22;
+    -webkit-text-stroke: 0.5px #FFFFFF;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.4);
   }
-  .breadcrumb a:hover { color: #FFFFFF; opacity: 1; text-decoration: underline; }
+  .breadcrumb a:hover { color: #1A1D22; text-decoration: underline; }
 
   main { max-width: 68ch; margin: 0 auto; padding: 24px 6vw 80px; }
 
@@ -132,9 +133,9 @@
   h1 {
     font-family: 'Poppins', sans-serif; font-weight: 600; text-transform: none;
     font-size: clamp(30px, 5vw, 48px); margin-bottom: 36px; line-height: 1.1;
-    color: #FFFFFF;
-    -webkit-text-stroke: 0.75px #000000;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    color: #1A1D22;
+    -webkit-text-stroke: 0.75px #FFFFFF;
+    text-shadow: 0 1px 4px rgba(255,255,255,0.4);
   }
 
   .result-card {
@@ -179,10 +180,10 @@
   .outcome-draw { background: var(--draw); color: #14171C; }
 
   .status-box {
-    font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #FFFFFF; opacity: 0.9;
+    font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #1A1D22;
     padding: 40px 0; text-align: center;
-    -webkit-text-stroke: 0.4px #000000;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    -webkit-text-stroke: 0.4px #FFFFFF;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.4);
   }
 
   .section-tabs { display: flex; gap: 8px; margin: 36px 0 20px; }
@@ -239,12 +240,12 @@
     margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.35);
   }
   .profile-item {
-    font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: #FFFFFF; opacity: 0.9;
-    -webkit-text-stroke: 0.4px #000000; text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: #1A1D22;
+    -webkit-text-stroke: 0.4px #FFFFFF; text-shadow: 0 1px 2px rgba(255,255,255,0.4);
   }
   .profile-item b {
-    display: block; font-family: 'Poppins', sans-serif; font-size: 14.5px; color: #FFFFFF; margin-top: 2px;
-    -webkit-text-stroke: 0.5px #000000; text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    display: block; font-family: 'Poppins', sans-serif; font-size: 14.5px; color: #1A1D22; margin-top: 2px;
+    -webkit-text-stroke: 0.5px #FFFFFF; text-shadow: 0 1px 2px rgba(255,255,255,0.4);
   }
 
   .full-fixtures-button-wrap {
@@ -268,8 +269,8 @@
 }
   .fan-views-head { margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.35); }
   .fan-views-head h2 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; color: #FFFFFF;
-    -webkit-text-stroke: 0.5px #000000; text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; color: #1A1D22;
+    -webkit-text-stroke: 0.5px #FFFFFF; text-shadow: 0 1px 2px rgba(255,255,255,0.4);
   }
   .fan-tweet-placeholder {
     background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
@@ -392,7 +393,7 @@
 
     const teamColor = clubColors[teamName] || '#149954';
     document.documentElement.style.setProperty('--team-color', teamColor);
-    document.body.style.background = `color-mix(in srgb, ${teamColor} 92%, white)`;
+    document.body.style.background = `color-mix(in srgb, ${teamColor} 70%, white)`;
 
     document.getElementById('team-name').textContent = teamName;
     document.getElementById('crumb-team').textContent = teamName;
