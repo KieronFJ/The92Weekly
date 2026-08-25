@@ -71,23 +71,23 @@ function convertMatch(event, competition) {
     status: event.status?.type?.name || null,
     statusDetail: event.status?.type?.detail || null,
 
-    home: {
-      id: home.team?.id || null,
-      name: home.team?.displayName || home.team?.name || "",
-      score:
-        home.score !== undefined
-          ? Number(home.score)
-          : null
-    },
+home: {
+  id: home.team?.id || null,
+  name: home.team?.displayName || home.team?.name || "",
+  score:
+    event.status?.type?.completed && home.score !== undefined
+      ? Number(home.score)
+      : null
+},
 
-    away: {
-      id: away.team?.id || null,
-      name: away.team?.displayName || away.team?.name || "",
-      score:
-        away.score !== undefined
-          ? Number(away.score)
-          : null
-    },
+away: {
+  id: away.team?.id || null,
+  name: away.team?.displayName || away.team?.name || "",
+  score:
+    event.status?.type?.completed && away.score !== undefined
+      ? Number(away.score)
+      : null
+},
 
     venue: game.venue?.fullName || null,
     source: "ESPN"
