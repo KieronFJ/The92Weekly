@@ -621,30 +621,64 @@
     }
 
     function renderFixtures(matches) {
-      const panel = document.getElementById('fixtures-panel');
-      if (matches.length === 0) {
-        panel.innerHTML = '<div class="status-box">No upcoming fixtures scheduled yet.</div>';
-        return;
-      }
-      let html = '';
-      matches.slice(0, 10).forEach(m => {
-        const isHome = matchesTeam(m.team1, teamName);
-        const opponent = isHome ? m.team2 : m.team1;
-        const dateStr = new Date(m.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
-        const comp = m.competition ? `${m.competition} · ` : '';
-        html += `
-          <div class="list-item">
-            <div>
-              <div class="list-item-main">${isHome ? teamName + ' vs ' + opponent : opponent + ' vs ' + teamName}</div>
-              <div class="list-item-meta">${comp}${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
-            </div>
-          </div>`;
-      });
-      html += '<div class="status-box" style="padding:20px 0 0;"><a href="fixtures.html?team='
-        + encodeURIComponent(teamName) + '&div=' + encodeURIComponent(div)
-        + '" style="color:var(--gold);font-family:Poppins,sans-serif;font-weight:600;">View full-season fixtures →</a></div>';
-      panel.innerHTML = html;
-    }
+  const panel = document.getElementById('fixtures-panel');
+
+  if (matches.length === 0) {
+    panel.innerHTML =
+      '<div class="status-box">No upcoming fixtures scheduled yet.</div>';
+    return;
+  }
+
+  const m = matches[0];
+
+  const isHome = matchesTeam(m.team1, teamName);
+  const opponent = isHome ? m.team2 : m.team1;
+
+  const dateStr = new Date(m.date).toLocaleDateString('en-GB', {
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short'
+  });
+
+  const timeStr = new Date(m.date).toLocaleTimeString('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
+  const comp = m.competition ? `${m.competition} · ` : '';
+
+  const fixtureHTML = `
+    <div class="list-item">
+      <div>
+        <div class="list-item-main">
+          ${isHome
+            ? teamName + ' vs ' + opponent
+            : opponent + ' vs ' + teamName}
+        </div>
+
+        <div class="list-item-meta">
+          ${comp}${dateStr} · ${timeStr} · ${isHome ? 'Home' : 'Away'}
+        </div>
+      </div>
+    </div>
+  `;
+
+  const fullFixturesURL =
+    `fixtures.html?team=${encodeURIComponent(teamName)}`;
+
+  panel.innerHTML = `
+    ${fixtureHTML}
+
+    <div class="full-fixtures-button-wrap">
+      <a
+        class="full-fixtures-button"
+        href="${fullFixturesURL}"
+      >
+        View full season fixtures →
+      </a>
+    </div>
+  `;
+}
 
     function renderLastResult(m) {
       const { isHome, usName, themName, usScore, themScore } = teamSide(m);
