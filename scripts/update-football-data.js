@@ -15,11 +15,11 @@ const competitions = [
 ];
 
 function dateString(date) {
-  return date.toISOString().slice(0, 10).replace(/-/g, "");
+  return date.toISOString().slice(0, 10);
 }
 
-function daysFromNow(days) {
-  const d = new Date();
+function addDays(date, days) {
+  const d = new Date(date);
   d.setUTCDate(d.getUTCDate() + days);
   return d;
 }
@@ -35,8 +35,11 @@ async function getJson(url) {
 
       return await response.json();
     } catch (error) {
-      if (attempt === 4) throw error;
-      await new Promise(resolve => setTimeout(resolve, attempt * 1000));
+      if (attempt === 4) {
+        throw error;
+      }
+
+      await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
     }
   }
 }
@@ -68,16 +71,20 @@ function convertMatch(event, competition) {
 
     home: {
       id: home.team?.id || null,
-      name: home.team?.displayName || home.team?.name || null,
+      name: home.team?.displayName || home.team?.name || "",
       score:
-        home.score !== undefined ? Number(home.score) : null
+        home.score !== undefined
+          ? Number(home.score)
+          : null
     },
 
     away: {
       id: away.team?.id || null,
-      name: away.team?.displayName || away.team?.name || null,
+      name: away.team?.displayName || away.team?.name || "",
       score:
-        away.score !== undefined ? Number(away.score) : null
+        away.score !== undefined
+          ? Number(away.score)
+          : null
     },
 
     venue: game.venue?.fullName || null,
@@ -85,28 +92,58 @@ function convertMatch(event, competition) {
   };
 }
 
-async function main() {
-  const start = daysFromNow(-3);
-  const end = daysFromNow(2);
+async function fetchCompetitionSeason(competition) {
+  const start = new Date("2026-07-01T00:00:00Z");
+  const end = new Date("2027-06-30T23:59:59Z");
 
+  const matches = [];
+
+  for (
+    let day = new Date(start);
+    day <= end;
+    day = addDays(day, 1)
+  ) {
+    const date = dateString(day);
+
+    const url =
+      `${BASE}/${competition[0]}/scoreboard?dates=${date}`;
+
+    try {
+      const data = await getJson(url);
+
+      const dayMatches = (data.events || [])
+        .map(event => convertMatch(event, competition))
+        .filter(Boolean);
+
+      matches.push(...dayMatches);
+
+      if (dayMatches.length) {
+        console.log(
+          `${competition[1]} ${date}: ${dayMatches.length} matches`
+        );
+      }
+    } catch (error) {
+      console.error(
+        `${competition[1]} ${date} failed: ${error.message}`
+      );
+    }
+  }
+
+  return matches;
+}
+
+async function main() {
   const output = {
     updatedAt: new Date().toISOString(),
     source: "ESPN",
+    season: "2026/27",
     matches: [],
     competitions: {}
   };
 
   for (const competition of competitions) {
     try {
-      const url =
-        `${BASE}/${competition[0]}/scoreboard` +
-        `?dates=${dateString(start)}-${dateString(end)}`;
-
-      const data = await getJson(url);
-
-      const matches = (data.events || [])
-        .map(event => convertMatch(event, competition))
-        .filter(Boolean);
+      const matches = await fetchCompetitionSeason(competition);
 
       output.matches.push(...matches);
 
@@ -132,6 +169,21 @@ async function main() {
     }
   }
 
+  // Remove duplicate events.
+  const seen = new Set();
+
+  output.matches = output.matches.filter(match => {
+    const key = match.id;
+
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+    return true;
+  });
+
+  // Sort chronologically.
   output.matches.sort((a, b) =>
     (a.date || "").localeCompare(b.date || "")
   );
@@ -152,7 +204,7 @@ async function main() {
   );
 
   console.log(
-    `Saved ${output.matches.length} matches`
+    `Saved ${output.matches.length} matches to ${file}`
   );
 }
 
