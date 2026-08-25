@@ -279,7 +279,7 @@
     </div>
 
     <div class="section-tabs">
-      <div class="section-tab active" data-panel="fixtures-panel">Fixtures</div>
+      <a class="section-tab active" id="full-fixtures-link" href="#">Fixtures</a>
       <div class="section-tab" data-panel="results-panel">Results</div>
     </div>
 
@@ -344,6 +344,11 @@
     document.getElementById('division-tag').textContent = divisionNames[div] || 'Division';
     document.getElementById('division-tag').style.background = teamColor;
     document.getElementById('division-tag').style.color = '#FFFFFF';
+
+    const fullFixturesLink = document.getElementById('full-fixtures-link');
+    if (fullFixturesLink) {
+      fullFixturesLink.href = `fixtures.html?team=${encodeURIComponent(teamName)}&div=${encodeURIComponent(div)}`;
+    }
 
     const profile = clubProfiles[teamName];
     if (profile) {
@@ -435,10 +440,9 @@
     // if that doesn't succeed quickly, show an honest message rather than hang.
     function loadForL1L2() {
       const manual = MANUAL_L1L2_MATCHES[teamName];
-      if (manual && manual.length > 0) {
-        return Promise.resolve(manual);
-      }
-      return withTimeoutMatches(loadFromESPN(), 12000);
+      return withTimeoutMatches(loadFromESPN(), 12000)
+        .then(matches => matches && matches.length ? matches : (manual || []))
+        .catch(() => manual || []);
     }
 
     // MANUAL LEAGUE ONE / LEAGUE TWO MATCHES — no reliable free automated source
@@ -636,6 +640,9 @@
             </div>
           </div>`;
       });
+      html += '<div class="status-box" style="padding:20px 0 0;"><a href="fixtures.html?team='
+        + encodeURIComponent(teamName) + '&div=' + encodeURIComponent(div)
+        + '" style="color:var(--gold);font-family:Poppins,sans-serif;font-weight:600;">View full-season fixtures →</a></div>';
       panel.innerHTML = html;
     }
 
@@ -755,9 +762,9 @@
       if (html) container.innerHTML = html;
     }
 
-    document.querySelectorAll('.section-tab').forEach(tab => {
+    document.querySelectorAll('.section-tab[data-panel]').forEach(tab => {
       tab.addEventListener('click', function() {
-        document.querySelectorAll('.section-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.section-tab[data-panel]').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
         tab.classList.add('active');
         document.getElementById(tab.dataset.panel).classList.add('active');
