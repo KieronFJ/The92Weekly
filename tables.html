@@ -291,10 +291,37 @@
 
     const tableCache = {};
 
+    function fetchViaProxy(targetUrl) {
+      const proxies = [
+        u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
+      ];
+      function tryProxy(i) {
+        if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
+        return fetch(proxies[i](targetUrl))
+          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
+          .catch(() => tryProxy(i + 1));
+      }
+      return tryProxy(0);
+    }
+
     function buildTable(div) {
       const container = document.getElementById('table-container');
       if (tableCache[div]) { renderTable(div, tableCache[div]); return; }
       container.innerHTML = '<div class="status-box">Loading table…</div>';
+
+      // openfootball has Premier League and Championship data for this season.
+      // It doesn't have League One/Two yet — those come from ESPN instead,
+      // which can take a little longer via the proxy.
+      if (div === '3' || div === '4') {
+        buildTableFromESPN(div);
+      } else {
+        buildTableFromOpenFootball(div);
+      }
+    }
+
+    function buildTableFromOpenFootball(div) {
+      const container = document.getElementById('table-container');
       const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
 
       fetch(dataUrl)
@@ -330,6 +357,49 @@
         })
         .catch(err => {
           container.innerHTML = '<div class="status-box">Couldn\'t load the table right now. Try refreshing.</div>';
+        });
+    }
+
+    function buildTableFromESPN(div) {
+      const container = document.getElementById('table-container');
+      const league = { 3: 'eng.3', 4: 'eng.4' }[div];
+
+      fetchViaProxy(`https://site.api.espn.com/apis/v2/sports/soccer/${league}/standings`)
+        .then(data => {
+          // ESPN's standings shape varies — try the common paths defensively
+          let entries = data?.standings?.entries
+            || data?.children?.[0]?.standings?.entries
+            || data?.groups?.[0]?.standings?.entries
+            || [];
+
+          if (!entries.length) throw new Error('no standings entries found');
+
+          function stat(entry, names) {
+            for (const n of names) {
+              const found = entry.stats?.find(s => s.name === n || s.abbreviation === n);
+              if (found) return found.value;
+            }
+            return 0;
+          }
+
+          const rows = entries.map(e => ({
+            team: e.team?.displayName || e.team?.name || 'Unknown',
+            p: stat(e, ['gamesPlayed', 'GP']),
+            w: stat(e, ['wins', 'W']),
+            d: stat(e, ['ties', 'draws', 'D']),
+            l: stat(e, ['losses', 'L']),
+            gf: stat(e, ['pointsFor', 'goalsFor', 'GF']),
+            ga: stat(e, ['pointsAgainst', 'goalsAgainst', 'GA']),
+            gd: stat(e, ['pointDifferential', 'goalDifferential', 'GD']),
+            pts: stat(e, ['points', 'PTS'])
+          }));
+
+          rows.sort((a, b) => b.pts - a.pts || b.gd - a.gd);
+          tableCache[div] = rows;
+          renderTable(div, rows);
+        })
+        .catch(err => {
+          container.innerHTML = '<div class="status-box">Couldn\'t load this table right now — the League One/Two source can be slower. Try refreshing in a moment.</div>';
         });
     }
 

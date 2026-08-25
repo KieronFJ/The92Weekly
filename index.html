@@ -820,28 +820,82 @@
       ).join('');
 
       const SEASON = '2026-27';
-      const fetches = [1, 2, 3, 4].map(div =>
+
+      // Fast, reliable source for the top two divisions
+      const ofFetches = [1, 2].map(div =>
         fetch(`https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`)
           .then(r => r.ok ? r.json() : { matches: [] })
-          .then(data => (data.matches || []).filter(m => m.score && m.score.ft))
+          .then(data => (data.matches || [])
+            .filter(m => m.score && m.score.ft)
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .slice(0, 8)
+            .map(m => `<span><b>${m.team1} ${m.score.ft[0]}–${m.score.ft[1]} ${m.team2}</b> · FT</span>`)
+          )
           .catch(() => [])
       );
 
-      Promise.all(fetches).then(results => {
-        let allMatches = results.flat();
-        allMatches.sort((a, b) => new Date(b.date) - new Date(a.date));
-        const recentLive = allMatches.slice(0, 16).map(m =>
-          `<span><b>${m.team1} ${m.score.ft[0]}–${m.score.ft[1]} ${m.team2}</b> · FT</span>`
-        ).join('');
-
-        const combinedHtml = manualHtml + recentLive;
-
-        if (!combinedHtml) {
-          track.innerHTML = '<span>No completed results yet this season — check back soon.</span>';
-          return;
+      // openfootball doesn't have League One/Two data for this season yet —
+      // ESPN does, but via a proxy that can be slow, so give it real time to respond.
+      function fetchViaProxy(targetUrl) {
+        const proxies = [
+          u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+          u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
+        ];
+        function tryProxy(i) {
+          if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
+          return fetch(proxies[i](targetUrl))
+            .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
+            .catch(() => tryProxy(i + 1));
         }
-        // Duplicate once for seamless scroll loop
-        track.innerHTML = combinedHtml + combinedHtml;
+        return tryProxy(0);
+      }
+
+      function espnDatePart(d) {
+        const pad = n => n < 10 ? '0' + n : n;
+        return d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+      }
+
+      const today = new Date();
+      const past = new Date(today);
+      past.setDate(past.getDate() - 10);
+      const dateRange = `${espnDatePart(past)}-${espnDatePart(today)}`;
+
+      const espnFetches = ['eng.3', 'eng.4'].map(lg =>
+        fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${dateRange}&limit=100`)
+          .then(data => (data.events || [])
+            .filter(ev => ev.status && ev.status.type && ev.status.type.completed)
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .slice(0, 8)
+            .map(ev => {
+              const comps = ev.competitions[0].competitors;
+              const home = comps.find(c => c.homeAway === 'home');
+              const away = comps.find(c => c.homeAway === 'away');
+              return `<span><b>${home.team.displayName} ${home.score}–${away.score} ${away.team.displayName}</b> · FT</span>`;
+            })
+          )
+          .catch(() => [])
+      );
+
+      // Show PL/Championship immediately — don't make people wait on the slower L1/L2 source
+      Promise.all(ofFetches).then(ofResults => {
+        const ofHtml = ofResults.flat().join('');
+        const initialHtml = manualHtml + ofHtml;
+        if (initialHtml) {
+          track.innerHTML = initialHtml + initialHtml;
+        } else {
+          track.innerHTML = '<span>Loading latest results…</span>';
+        }
+
+        // Once League One/Two come through (can take a little while), add them in
+        Promise.all(espnFetches).then(espnResults => {
+          const espnHtml = espnResults.flat().join('');
+          const combinedHtml = manualHtml + ofHtml + espnHtml;
+          if (!combinedHtml) {
+            track.innerHTML = '<span>No completed results yet this season — check back soon.</span>';
+            return;
+          }
+          track.innerHTML = combinedHtml + combinedHtml;
+        }).catch(() => { /* L1/L2 unavailable — PL/Championship results still show above */ });
       }).catch(() => {
         // Live source failed entirely — fall back to manual results only, if any
         if (manualHtml) {

@@ -366,18 +366,78 @@
       return a.includes(b) || b.includes(a);
     }
 
-    const SEASON = '2026-27';
-    const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+    function fetchViaProxy(targetUrl) {
+      const proxies = [
+        u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
+      ];
+      function tryProxy(i) {
+        if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
+        return fetch(proxies[i](targetUrl))
+          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
+          .catch(() => tryProxy(i + 1));
+      }
+      return tryProxy(0);
+    }
 
-    fetch(dataUrl)
-      .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
-      .then(data => {
-        const allMatches = (data.matches || []).filter(m =>
-          matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName)
+    const ESPN_LEAGUE = { 1: 'eng.1', 2: 'eng.2', 3: 'eng.3', 4: 'eng.4' };
+    const SEASON = '2026-27';
+
+    // Common shape both sources get converted to: { date, team1, team2, score1, score2 }
+    // score1/score2 are null for matches not yet played.
+
+    function loadFromOpenFootball() {
+      const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+      return fetch(dataUrl)
+        .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+        .then(data => (data.matches || [])
+          .filter(m => matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName))
+          .map(m => ({
+            date: m.date,
+            team1: m.team1,
+            team2: m.team2,
+            score1: m.score && m.score.ft ? m.score.ft[0] : null,
+            score2: m.score && m.score.ft ? m.score.ft[1] : null
+          }))
         );
-        const completed = allMatches.filter(m => m.score && m.score.ft)
+    }
+
+    // openfootball doesn't have League One/Two data for this season yet — ESPN does,
+    // via a proxy that can take a little while, so this path is slower but reliable.
+    function loadFromESPN() {
+      const league = ESPN_LEAGUE[div];
+      return fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=50`)
+        .then(data => {
+          const teamList = (data.sports?.[0]?.leagues?.[0]?.teams || []).map(t => t.team);
+          const match = teamList.find(t => matchesTeam(t.displayName, teamName) || matchesTeam(t.name, teamName));
+          if (!match) throw new Error('team-not-found');
+          return match.id;
+        })
+        .then(teamId =>
+          fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${teamId}/schedule`)
+        )
+        .then(data => (data.events || []).map(ev => {
+          const comps = ev.competitions[0].competitors;
+          const home = comps.find(c => c.homeAway === 'home');
+          const away = comps.find(c => c.homeAway === 'away');
+          const completed = !!(ev.competitions?.[0]?.status?.type?.completed);
+          return {
+            date: ev.date,
+            team1: home.team.displayName,
+            team2: away.team.displayName,
+            score1: completed ? parseInt(home.score) : null,
+            score2: completed ? parseInt(away.score) : null
+          };
+        }));
+    }
+
+    const loadMatches = (div === '3' || div === '4') ? loadFromESPN() : loadFromOpenFootball();
+
+    loadMatches
+      .then(allMatches => {
+        const completed = allMatches.filter(m => m.score1 !== null && m.score2 !== null)
           .sort((a, b) => new Date(b.date) - new Date(a.date));
-        const upcoming = allMatches.filter(m => !(m.score && m.score.ft))
+        const upcoming = allMatches.filter(m => m.score1 === null)
           .sort((a, b) => new Date(a.date) - new Date(b.date));
 
         renderFixtures(upcoming);
@@ -402,8 +462,8 @@
       const isHome = matchesTeam(m.team1, teamName);
       const usName = isHome ? m.team1 : m.team2;
       const themName = isHome ? m.team2 : m.team1;
-      const usScore = m.score && m.score.ft ? (isHome ? m.score.ft[0] : m.score.ft[1]) : null;
-      const themScore = m.score && m.score.ft ? (isHome ? m.score.ft[1] : m.score.ft[0]) : null;
+      const usScore = isHome ? m.score1 : m.score2;
+      const themScore = isHome ? m.score2 : m.score1;
       return { isHome, usName, themName, usScore, themScore };
     }
 
@@ -480,22 +540,6 @@
       // Bonus only: try to find goalscorers/stats via ESPN. This can fail for any
       // reason (proxy down, name mismatch, data shape) without affecting the page above.
       tryLoadMatchDetail(usName, themName, m.date);
-    }
-
-    const ESPN_LEAGUE = { 1: 'eng.1', 2: 'eng.2', 3: 'eng.3', 4: 'eng.4' };
-
-    function fetchViaProxy(targetUrl) {
-      const proxies = [
-        u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
-        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
-      ];
-      function tryProxy(i) {
-        if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
-        return fetch(proxies[i](targetUrl))
-          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
-          .catch(() => tryProxy(i + 1));
-      }
-      return tryProxy(0);
     }
 
     function withTimeout(promise, ms) {
