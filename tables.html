@@ -291,10 +291,18 @@
 
     const tableCache = {};
 
-    function fetchViaProxy(targetUrl) {
-      const workerUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-      return fetch(workerUrl)
-        .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); });
+    // Reliable source: a static JSON file kept up to date automatically by a
+    // GitHub Actions workflow (runs every 10 minutes, fetches from ESPN
+    // server-side, so no browser CORS issues at all). Covers every division.
+    const DATA_URL = 'data/football-data.json';
+    const divCode = { '1': 'eng.1', '2': 'eng.2', '3': 'eng.3', '4': 'eng.4' };
+    let cachedData = null;
+
+    function loadDataFile() {
+      if (cachedData) return Promise.resolve(cachedData);
+      return fetch(DATA_URL)
+        .then(r => { if (!r.ok) throw new Error('data file fetch failed'); return r.json(); })
+        .then(data => { cachedData = data; return data; });
     }
 
     function buildTable(div) {
@@ -302,33 +310,23 @@
       if (tableCache[div]) { renderTable(div, tableCache[div]); return; }
       container.innerHTML = '<div class="status-box">Loading table…</div>';
 
-      // openfootball has Premier League and Championship data for this season.
-      // League One and Two are computed from manually-entered results above,
-      // since no reliable free live source exists for them yet.
-      if (div === '3' || div === '4') {
-        buildTableFromManual(div);
-      } else {
-        buildTableFromOpenFootball(div);
-      }
-    }
-
-    function buildTableFromOpenFootball(div) {
-      const container = document.getElementById('table-container');
-      const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
-
-      fetch(dataUrl)
-        .then(r => r.json())
+      loadDataFile()
         .then(data => {
-          const matches = (data.matches || []).filter(m => m.score && m.score.ft);
+          const code = divCode[div];
+          const matches = (data.matches || []).filter(m =>
+            m.competitionCode === code && m.type === 'league' && m.completed &&
+            m.home && m.away && m.home.score !== null && m.away.score !== null
+          );
+
           const table = {};
           clubsByDiv[div].forEach(name => {
             table[name] = { team: name, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
           });
 
           matches.forEach(m => {
-            const home = clubsByDiv[div].find(n => matchesTeam(m.team1, n)) || m.team1;
-            const away = clubsByDiv[div].find(n => matchesTeam(m.team2, n)) || m.team2;
-            const hs = m.score.ft[0], as = m.score.ft[1];
+            const home = clubsByDiv[div].find(n => matchesTeam(m.home.name, n)) || m.home.name;
+            const away = clubsByDiv[div].find(n => matchesTeam(m.away.name, n)) || m.away.name;
+            const hs = m.home.score, as = m.away.score;
             if (!table[home]) table[home] = { team: home, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
             if (!table[away]) table[away] = { team: away, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
 
@@ -349,148 +347,6 @@
         })
         .catch(err => {
           container.innerHTML = '<div class="status-box">Couldn\'t load the table right now. Try refreshing.</div>';
-        });
-    }
-
-    // MANUAL LEAGUE ONE / LEAGUE TWO RESULTS — used to compute a real table
-    // since no reliable free live source exists for these two divisions yet.
-    // Add each new matchweek's results here as the season goes on.
-    const MANUAL_L1_MATCHES = [
-      { team1: "Notts County", team2: "Leicester City", score1: 1, score2: 1 },
-      { team1: "Luton Town", team2: "Notts County", score1: 2, score2: 2 },
-      { team1: "Leicester City", team2: "Burton Albion", score1: 1, score2: 2 },
-      { team1: "Oxford United", team2: "Milton Keynes Dons", score1: 2, score2: 2 },
-      { team1: "Stevenage", team2: "Oxford United", score1: 1, score2: 2 },
-      { team1: "Milton Keynes Dons", team2: "Huddersfield Town", score1: 1, score2: 1 },
-      { team1: "Reading", team2: "Luton Town", score1: 3, score2: 4 },
-      { team1: "AFC Wimbledon", team2: "Reading", score1: 0, score2: 0 },
-      { team1: "Barnsley", team2: "Bromley", score1: 0, score2: 1 },
-      { team1: "Doncaster Rovers", team2: "Barnsley", score1: 0, score2: 0 },
-      { team1: "Bromley", team2: "Cambridge United", score1: 1, score2: 1 },
-      { team1: "Blackpool", team2: "Wycombe Wanderers", score1: 1, score2: 1 },
-      { team1: "Stockport County", team2: "Blackpool", score1: 1, score2: 2 },
-      { team1: "Wycombe Wanderers", team2: "Plymouth Argyle", score1: 1, score2: 1 },
-      { team1: "Bradford City", team2: "Peterborough United", score1: 2, score2: 0 },
-      { team1: "Sheffield Wednesday", team2: "Bradford City", score1: 0, score2: 1 },
-      { team1: "Peterborough United", team2: "Mansfield Town", score1: 2, score2: 1 },
-      { team1: "Burton Albion", team2: "Stevenage", score1: 1, score2: 1 },
-      { team1: "Cambridge United", team2: "Wigan Athletic", score1: 3, score2: 2 },
-      { team1: "Wigan Athletic", team2: "Leyton Orient", score1: 0, score2: 2 },
-      { team1: "Huddersfield Town", team2: "AFC Wimbledon", score1: 3, score2: 0 },
-      { team1: "Leyton Orient", team2: "Sheffield Wednesday", score1: 1, score2: 2 },
-      { team1: "Mansfield Town", team2: "Doncaster Rovers", score1: 2, score2: 1 },
-      { team1: "Plymouth Argyle", team2: "Stockport County", score1: 1, score2: 3 },
-    ];
-    const MANUAL_L2_MATCHES = [
-      { team1: "Newport County", team2: "Rochdale", score1: 3, score2: 0 },
-      { team1: "Bristol Rovers", team2: "Newport County", score1: 5, score2: 3 },
-      { team1: "Rochdale", team2: "Crawley Town", score1: 1, score2: 2 },
-      { team1: "Oldham Athletic", team2: "Port Vale", score1: 2, score2: 0 },
-      { team1: "Colchester United", team2: "Oldham Athletic", score1: 2, score2: 1 },
-      { team1: "Port Vale", team2: "Tranmere Rovers", score1: 1, score2: 1 },
-      { team1: "Accrington Stanley", team2: "Colchester United", score1: 2, score2: 2 },
-      { team1: "Exeter City", team2: "Accrington Stanley", score1: 2, score2: 0 },
-      { team1: "Barnet", team2: "Salford City", score1: 3, score2: 1 },
-      { team1: "Shrewsbury Town", team2: "Barnet", score1: 1, score2: 3 },
-      { team1: "Salford City", team2: "Chesterfield", score1: 0, score2: 1 },
-      { team1: "Cheltenham Town", team2: "Rotherham United", score1: 2, score2: 1 },
-      { team1: "Swindon Town", team2: "Cheltenham Town", score1: 2, score2: 1 },
-      { team1: "Rotherham United", team2: "York City", score1: 1, score2: 1 },
-      { team1: "Chesterfield", team2: "Fleetwood Town", score1: 0, score2: 1 },
-      { team1: "Fleetwood Town", team2: "Gillingham", score1: 0, score2: 0 },
-      { team1: "Crawley Town", team2: "Crewe Alexandra", score1: 0, score2: 1 },
-      { team1: "Crewe Alexandra", team2: "Northampton Town", score1: 1, score2: 0 },
-      { team1: "Gillingham", team2: "Walsall", score1: 0, score2: 3 },
-      { team1: "Walsall", team2: "Grimsby Town", score1: 0, score2: 0 },
-      { team1: "Grimsby Town", team2: "Exeter City", score1: 1, score2: 0 },
-      { team1: "Northampton Town", team2: "Swindon Town", score1: 0, score2: 0 },
-      { team1: "Tranmere Rovers", team2: "Shrewsbury Town", score1: 2, score2: 0 },
-      { team1: "York City", team2: "Bristol Rovers", score1: 3, score2: 2 },
-    ];
-
-    function buildTableFromManual(div) {
-      const container = document.getElementById('table-container');
-      const matches = div === '3' ? MANUAL_L1_MATCHES : MANUAL_L2_MATCHES;
-
-      if (!matches || matches.length === 0) {
-        container.innerHTML = '<div class="status-box">No results entered yet for this division.</div>';
-        return;
-      }
-
-      const table = {};
-      clubsByDiv[div].forEach(name => {
-        table[name] = { team: name, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
-      });
-
-      matches.forEach(m => {
-        const home = m.team1, away = m.team2, hs = m.score1, as = m.score2;
-        if (!table[home]) table[home] = { team: home, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
-        if (!table[away]) table[away] = { team: away, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 };
-
-        table[home].p++; table[away].p++;
-        table[home].gf += hs; table[home].ga += as;
-        table[away].gf += as; table[away].ga += hs;
-
-        if (hs > as) { table[home].w++; table[home].pts += 3; table[away].l++; }
-        else if (hs < as) { table[away].w++; table[away].pts += 3; table[home].l++; }
-        else { table[home].d++; table[away].d++; table[home].pts++; table[away].pts++; }
-      });
-
-      const rows = Object.values(table).map(r => ({ ...r, gd: r.gf - r.ga }));
-      rows.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf);
-
-      tableCache[div] = rows;
-      renderTable(div, rows);
-    }
-
-    function buildTableFromESPN(div) {
-      const container = document.getElementById('table-container');
-      const league = { 3: 'eng.3', 4: 'eng.4' }[div];
-
-      function withTimeoutTable(promise, ms) {
-        return Promise.race([
-          promise,
-          new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
-        ]);
-      }
-
-      withTimeoutTable(fetchViaProxy(`https://site.api.espn.com/apis/v2/sports/soccer/${league}/standings`), 15000)
-        .then(data => {
-          // ESPN's standings shape varies — try the common paths defensively
-          let entries = data?.standings?.entries
-            || data?.children?.[0]?.standings?.entries
-            || data?.groups?.[0]?.standings?.entries
-            || [];
-
-          if (!entries.length) throw new Error('no standings entries found');
-
-          function stat(entry, names) {
-            for (const n of names) {
-              const found = entry.stats?.find(s => s.name === n || s.abbreviation === n);
-              if (found) return found.value;
-            }
-            return 0;
-          }
-
-          const rows = entries.map(e => ({
-            team: e.team?.displayName || e.team?.name || 'Unknown',
-            p: stat(e, ['gamesPlayed', 'GP']),
-            w: stat(e, ['wins', 'W']),
-            d: stat(e, ['ties', 'draws', 'D']),
-            l: stat(e, ['losses', 'L']),
-            gf: stat(e, ['pointsFor', 'goalsFor', 'GF']),
-            ga: stat(e, ['pointsAgainst', 'goalsAgainst', 'GA']),
-            gd: stat(e, ['pointDifferential', 'goalDifferential', 'GD']),
-            pts: stat(e, ['points', 'PTS'])
-          }));
-
-          rows.sort((a, b) => b.pts - a.pts || b.gd - a.gd);
-          tableCache[div] = rows;
-          renderTable(div, rows);
-        })
-        .catch(err => {
-          const divName = { '3': 'League One', '4': 'League Two' }[div];
-          container.innerHTML = `<div class="status-box">We don't have automated ${divName} standings set up reliably yet.<br><br>Check <a href="https://www.bbc.co.uk/sport/football" style="color:var(--gold)">BBC Sport</a> or the <a href="https://www.efl.com" style="color:var(--gold)">EFL site</a> for the current table in the meantime.</div>`;
         });
     }
 

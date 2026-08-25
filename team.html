@@ -389,152 +389,31 @@
       return a.includes(b) || b.includes(a);
     }
 
-    function fetchViaProxy(targetUrl) {
-      const workerUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-      return fetch(workerUrl)
-        .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); });
-    }
+    // Reliable source: a static JSON file kept up to date automatically by a
+    // GitHub Actions workflow (runs every 10 minutes, fetches from ESPN
+    // server-side, so no browser CORS issues at all). Covers every division
+    // plus FA Cup, Carabao Cup and EFL Trophy in one file.
+    const DATA_URL = 'data/football-data.json';
 
-    const ESPN_LEAGUE = { 1: 'eng.1', 2: 'eng.2', 3: 'eng.3', 4: 'eng.4' };
-    const SEASON = '2026-27';
-
-    // Common shape both sources get converted to: { date, team1, team2, score1, score2 }
-    // score1/score2 are null for matches not yet played.
-
-    function loadFromOpenFootball() {
-      const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
-      return fetch(dataUrl)
-        .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+    function loadFromDataFile() {
+      return fetch(DATA_URL)
+        .then(r => { if (!r.ok) throw new Error('data file fetch failed'); return r.json(); })
         .then(data => (data.matches || [])
-          .filter(m => matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName))
+          .filter(m => m.home && m.away &&
+            (matchesTeam(m.home.name, teamName) || matchesTeam(m.away.name, teamName)))
           .map(m => ({
             date: m.date,
-            team1: m.team1,
-            team2: m.team2,
-            score1: m.score && m.score.ft ? m.score.ft[0] : null,
-            score2: m.score && m.score.ft ? m.score.ft[1] : null
+            team1: m.home.name,
+            team2: m.away.name,
+            score1: m.completed ? m.home.score : null,
+            score2: m.completed ? m.away.score : null,
+            competition: m.type === 'cup' ? m.competition : undefined
           }))
         );
     }
 
-    // openfootball doesn't have League One/Two data for this season yet — ESPN does,
-    // via a proxy that can take a little while, so this path is slower but reliable.
-    function loadFromESPN() {
-      const league = ESPN_LEAGUE[div];
-      return fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=50`)
-        .then(data => {
-          const teamList = (data.sports?.[0]?.leagues?.[0]?.teams || []).map(t => t.team);
-          const match = teamList.find(t => matchesTeam(t.displayName, teamName) || matchesTeam(t.name, teamName));
-          if (!match) throw new Error('team-not-found');
-          return match.id;
-        })
-        .then(teamId =>
-          fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${teamId}/schedule`)
-        )
-        .then(data => (data.events || []).map(ev => {
-          const comps = ev.competitions[0].competitors;
-          const home = comps.find(c => c.homeAway === 'home');
-          const away = comps.find(c => c.homeAway === 'away');
-          const completed = !!(ev.competitions?.[0]?.status?.type?.completed);
-          return {
-            date: ev.date,
-            team1: home.team.displayName,
-            team2: away.team.displayName,
-            score1: completed ? parseInt(home.score) : null,
-            score2: completed ? parseInt(away.score) : null
-          };
-        }));
-    }
+    const loadMatches = loadFromDataFile();
 
-    function withTimeoutMatches(promise, ms) {
-      return Promise.race([
-        promise,
-        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
-      ]);
-    }
-
-    // For League One/Two: use manual data if it's been added for this club (instant,
-    // guaranteed correct). Otherwise make one time-limited attempt at the live source —
-    // if that doesn't succeed quickly, show an honest message rather than hang.
-    function loadForL1L2() {
-      const manual = MANUAL_L1L2_MATCHES[teamName];
-      return withTimeoutMatches(loadFromESPN(), 12000)
-        .then(matches => matches && matches.length ? matches : (manual || []))
-        .catch(() => manual || []);
-    }
-
-    // MANUAL LEAGUE ONE / LEAGUE TWO MATCHES — no reliable free automated source
-    // exists for these two divisions yet. Add match data here for a club and it
-    // will be used instantly instead of trying (and possibly failing) live sources.
-    // Format per club: { date: "YYYY-MM-DD", team1, team2, score1, score2 }
-    // score1/score2 as null means the match hasn't been played (a fixture).
-    // Example:
-    // "Barnsley": [
-    //   { date: "2026-08-23", team1: "Barnsley", team2: "Bolton Wanderers", score1: 2, score2: 1 },
-    //   { date: "2026-08-30", team1: "Wycombe Wanderers", team2: "Barnsley", score1: null, score2: null }
-    // ],
-    const MANUAL_L1L2_MATCHES = {
-      "AFC Wimbledon": [ { date: "2026-08-15", team1: "Huddersfield Town", team2: "AFC Wimbledon", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "AFC Wimbledon", team2: "Reading", score1: 0, score2: 0 }, { date: "2026-08-30", team1: "AFC Wimbledon", team2: "Wigan Athletic", score1: null, score2: null } ],
-      "Accrington Stanley": [ { date: "2026-08-15", team1: "Accrington Stanley", team2: "Colchester United", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Exeter City", team2: "Accrington Stanley", score1: 2, score2: 0 }, { date: "2026-08-29", team1: "Walsall", team2: "Accrington Stanley", score1: null, score2: null } ],
-      "Barnet": [ { date: "2026-08-15", team1: "Barnet", team2: "Salford City", score1: 3, score2: 1 }, { date: "2026-08-22", team1: "Shrewsbury Town", team2: "Barnet", score1: 1, score2: 3 }, { date: "2026-08-29", team1: "Barnet", team2: "Cheltenham Town", score1: null, score2: null } ],
-      "Barnsley": [ { date: "2026-08-15", team1: "Barnsley", team2: "Bromley", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Doncaster Rovers", team2: "Barnsley", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Leyton Orient", team2: "Barnsley", score1: null, score2: null } ],
-      "Blackpool": [ { date: "2026-08-15", team1: "Blackpool", team2: "Wycombe Wanderers", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Stockport County", team2: "Blackpool", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Blackpool", team2: "Peterborough United", score1: null, score2: null } ],
-      "Bradford City": [ { date: "2026-08-15", team1: "Bradford City", team2: "Peterborough United", score1: 2, score2: 0 }, { date: "2026-08-20", team1: "Sheffield Wednesday", team2: "Bradford City", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Plymouth Argyle", team2: "Bradford City", score1: null, score2: null } ],
-      "Bristol Rovers": [ { date: "2026-08-15", team1: "York City", team2: "Bristol Rovers", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Bristol Rovers", team2: "Newport County", score1: 5, score2: 3 }, { date: "2026-08-29", team1: "Crawley Town", team2: "Bristol Rovers", score1: null, score2: null } ],
-      "Bromley": [ { date: "2026-08-15", team1: "Barnsley", team2: "Bromley", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Bromley", team2: "Cambridge United", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Sheffield Wednesday", team2: "Bromley", score1: null, score2: null } ],
-      "Burton Albion": [ { date: "2026-08-15", team1: "Burton Albion", team2: "Stevenage", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Leicester City", team2: "Burton Albion", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Notts County", team2: "Burton Albion", score1: null, score2: null } ],
-      "Cambridge United": [ { date: "2026-08-15", team1: "Cambridge United", team2: "Wigan Athletic", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Bromley", team2: "Cambridge United", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Cambridge United", team2: "Huddersfield Town", score1: null, score2: null } ],
-      "Cheltenham Town": [ { date: "2026-08-15", team1: "Cheltenham Town", team2: "Rotherham United", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Swindon Town", team2: "Cheltenham Town", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Barnet", team2: "Cheltenham Town", score1: null, score2: null } ],
-      "Chesterfield": [ { date: "2026-08-15", team1: "Chesterfield", team2: "Fleetwood Town", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Salford City", team2: "Chesterfield", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Rotherham United", team2: "Chesterfield", score1: null, score2: null } ],
-      "Colchester United": [ { date: "2026-08-15", team1: "Accrington Stanley", team2: "Colchester United", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Colchester United", team2: "Oldham Athletic", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Colchester United", team2: "Rochdale", score1: null, score2: null } ],
-      "Crawley Town": [ { date: "2026-08-15", team1: "Crawley Town", team2: "Crewe Alexandra", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Rochdale", team2: "Crawley Town", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Crawley Town", team2: "Bristol Rovers", score1: null, score2: null } ],
-      "Crewe Alexandra": [ { date: "2026-08-15", team1: "Crawley Town", team2: "Crewe Alexandra", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Crewe Alexandra", team2: "Northampton Town", score1: 1, score2: 0 }, { date: "2026-08-29", team1: "Port Vale", team2: "Crewe Alexandra", score1: null, score2: null } ],
-      "Doncaster Rovers": [ { date: "2026-08-15", team1: "Mansfield Town", team2: "Doncaster Rovers", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Doncaster Rovers", team2: "Barnsley", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Stevenage", team2: "Doncaster Rovers", score1: null, score2: null } ],
-      "Exeter City": [ { date: "2026-08-15", team1: "Grimsby Town", team2: "Exeter City", score1: 1, score2: 0 }, { date: "2026-08-22", team1: "Exeter City", team2: "Accrington Stanley", score1: 2, score2: 0 }, { date: "2026-08-29", team1: "York City", team2: "Exeter City", score1: null, score2: null } ],
-      "Fleetwood Town": [ { date: "2026-08-15", team1: "Chesterfield", team2: "Fleetwood Town", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Fleetwood Town", team2: "Gillingham", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Grimsby Town", team2: "Fleetwood Town", score1: null, score2: null } ],
-      "Gillingham": [ { date: "2026-08-15", team1: "Gillingham", team2: "Walsall", score1: 0, score2: 3 }, { date: "2026-08-22", team1: "Fleetwood Town", team2: "Gillingham", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Gillingham", team2: "Northampton Town", score1: null, score2: null } ],
-      "Grimsby Town": [ { date: "2026-08-15", team1: "Grimsby Town", team2: "Exeter City", score1: 1, score2: 0 }, { date: "2026-08-22", team1: "Walsall", team2: "Grimsby Town", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Grimsby Town", team2: "Fleetwood Town", score1: null, score2: null } ],
-      "Huddersfield Town": [ { date: "2026-08-15", team1: "Huddersfield Town", team2: "AFC Wimbledon", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "Milton Keynes Dons", team2: "Huddersfield Town", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Cambridge United", team2: "Huddersfield Town", score1: null, score2: null }, { date: "2026-09-01", team1: "Huddersfield Town", team2: "Oxford United", score1: null, score2: null } ],
-      "Leicester City": [ { date: "2026-08-15", team1: "Notts County", team2: "Leicester City", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Leicester City", team2: "Burton Albion", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Milton Keynes Dons", team2: "Leicester City", score1: null, score2: null } ],
-      "Leyton Orient": [ { date: "2026-08-15", team1: "Leyton Orient", team2: "Sheffield Wednesday", score1: 1, score2: 2 }, { date: "2026-08-22", team1: "Wigan Athletic", team2: "Leyton Orient", score1: 0, score2: 2 }, { date: "2026-08-29", team1: "Leyton Orient", team2: "Barnsley", score1: null, score2: null } ],
-      "Luton Town": [ { date: "2026-08-15", team1: "Reading", team2: "Luton Town", score1: 3, score2: 4 }, { date: "2026-08-22", team1: "Luton Town", team2: "Notts County", score1: 2, score2: 2 }, { date: "2026-08-30", team1: "Mansfield Town", team2: "Luton Town", score1: null, score2: null } ],
-      "Mansfield Town": [ { date: "2026-08-15", team1: "Mansfield Town", team2: "Doncaster Rovers", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Peterborough United", team2: "Mansfield Town", score1: 2, score2: 1 }, { date: "2026-08-30", team1: "Mansfield Town", team2: "Luton Town", score1: null, score2: null }, { date: "2026-09-02", team1: "Reading", team2: "Mansfield Town", score1: null, score2: null } ],
-      "Milton Keynes Dons": [ { date: "2026-08-15", team1: "Oxford United", team2: "Milton Keynes Dons", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Milton Keynes Dons", team2: "Huddersfield Town", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Milton Keynes Dons", team2: "Leicester City", score1: null, score2: null } ],
-      "Newport County": [ { date: "2026-08-15", team1: "Newport County", team2: "Rochdale", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "Bristol Rovers", team2: "Newport County", score1: 5, score2: 3 }, { date: "2026-08-29", team1: "Newport County", team2: "Tranmere Rovers", score1: null, score2: null } ],
-      "Northampton Town": [ { date: "2026-08-15", team1: "Northampton Town", team2: "Swindon Town", score1: 0, score2: 0 }, { date: "2026-08-22", team1: "Crewe Alexandra", team2: "Northampton Town", score1: 1, score2: 0 }, { date: "2026-08-29", team1: "Gillingham", team2: "Northampton Town", score1: null, score2: null } ],
-      "Notts County": [ { date: "2026-08-15", team1: "Notts County", team2: "Leicester City", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Luton Town", team2: "Notts County", score1: 2, score2: 2 }, { date: "2026-08-29", team1: "Notts County", team2: "Burton Albion", score1: null, score2: null } ],
-      "Oldham Athletic": [ { date: "2026-08-15", team1: "Oldham Athletic", team2: "Port Vale", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Colchester United", team2: "Oldham Athletic", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Oldham Athletic", team2: "Swindon Town", score1: null, score2: null } ],
-      "Oxford United": [ { date: "2026-08-15", team1: "Oxford United", team2: "Milton Keynes Dons", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Stevenage", team2: "Oxford United", score1: 1, score2: 2 }, { date: "2026-09-01", team1: "Huddersfield Town", team2: "Oxford United", score1: null, score2: null } ],
-      "Peterborough United": [ { date: "2026-08-15", team1: "Bradford City", team2: "Peterborough United", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Peterborough United", team2: "Mansfield Town", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Blackpool", team2: "Peterborough United", score1: null, score2: null } ],
-      "Plymouth Argyle": [ { date: "2026-08-15", team1: "Plymouth Argyle", team2: "Stockport County", score1: 1, score2: 3 }, { date: "2026-08-22", team1: "Wycombe Wanderers", team2: "Plymouth Argyle", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Plymouth Argyle", team2: "Bradford City", score1: null, score2: null } ],
-      "Port Vale": [ { date: "2026-08-15", team1: "Oldham Athletic", team2: "Port Vale", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Port Vale", team2: "Tranmere Rovers", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Port Vale", team2: "Crewe Alexandra", score1: null, score2: null } ],
-      "Reading": [ { date: "2026-08-15", team1: "Reading", team2: "Luton Town", score1: 3, score2: 4 }, { date: "2026-08-22", team1: "AFC Wimbledon", team2: "Reading", score1: 0, score2: 0 }, { date: "2026-09-02", team1: "Reading", team2: "Mansfield Town", score1: null, score2: null } ],
-      "Rochdale": [ { date: "2026-08-15", team1: "Newport County", team2: "Rochdale", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "Rochdale", team2: "Crawley Town", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Colchester United", team2: "Rochdale", score1: null, score2: null } ],
-      "Rotherham United": [ { date: "2026-08-15", team1: "Cheltenham Town", team2: "Rotherham United", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Rotherham United", team2: "York City", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Rotherham United", team2: "Chesterfield", score1: null, score2: null } ],
-      "Salford City": [ { date: "2026-08-15", team1: "Barnet", team2: "Salford City", score1: 3, score2: 1 }, { date: "2026-08-22", team1: "Salford City", team2: "Chesterfield", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Shrewsbury Town", team2: "Salford City", score1: null, score2: null } ],
-      "Sheffield Wednesday": [ { date: "2026-08-15", team1: "Leyton Orient", team2: "Sheffield Wednesday", score1: 1, score2: 2 }, { date: "2026-08-20", team1: "Sheffield Wednesday", team2: "Bradford City", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Sheffield Wednesday", team2: "Bromley", score1: null, score2: null } ],
-      "Shrewsbury Town": [ { date: "2026-08-15", team1: "Tranmere Rovers", team2: "Shrewsbury Town", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Shrewsbury Town", team2: "Barnet", score1: 1, score2: 3 }, { date: "2026-08-29", team1: "Shrewsbury Town", team2: "Salford City", score1: null, score2: null } ],
-      "Stevenage": [ { date: "2026-08-15", team1: "Burton Albion", team2: "Stevenage", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Stevenage", team2: "Oxford United", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Stevenage", team2: "Doncaster Rovers", score1: null, score2: null } ],
-      "Stockport County": [ { date: "2026-08-15", team1: "Plymouth Argyle", team2: "Stockport County", score1: 1, score2: 3 }, { date: "2026-08-22", team1: "Stockport County", team2: "Blackpool", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Stockport County", team2: "Wycombe Wanderers", score1: null, score2: null } ],
-      "Swindon Town": [ { date: "2026-08-15", team1: "Northampton Town", team2: "Swindon Town", score1: 0, score2: 0 }, { date: "2026-08-22", team1: "Swindon Town", team2: "Cheltenham Town", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Oldham Athletic", team2: "Swindon Town", score1: null, score2: null } ],
-      "Tranmere Rovers": [ { date: "2026-08-15", team1: "Tranmere Rovers", team2: "Shrewsbury Town", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Port Vale", team2: "Tranmere Rovers", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Newport County", team2: "Tranmere Rovers", score1: null, score2: null } ],
-      "Walsall": [ { date: "2026-08-15", team1: "Gillingham", team2: "Walsall", score1: 0, score2: 3 }, { date: "2026-08-22", team1: "Walsall", team2: "Grimsby Town", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Walsall", team2: "Accrington Stanley", score1: null, score2: null } ],
-      "Wigan Athletic": [ { date: "2026-08-15", team1: "Cambridge United", team2: "Wigan Athletic", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Wigan Athletic", team2: "Leyton Orient", score1: 0, score2: 2 }, { date: "2026-08-30", team1: "AFC Wimbledon", team2: "Wigan Athletic", score1: null, score2: null } ],
-      "Wycombe Wanderers": [ { date: "2026-08-15", team1: "Blackpool", team2: "Wycombe Wanderers", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Wycombe Wanderers", team2: "Plymouth Argyle", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Stockport County", team2: "Wycombe Wanderers", score1: null, score2: null } ],
-      "York City": [ { date: "2026-08-15", team1: "York City", team2: "Bristol Rovers", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Rotherham United", team2: "York City", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "York City", team2: "Exeter City", score1: null, score2: null } ],
-    };
-
-    // MANUAL CUP MATCHES — covers FA Cup, Carabao Cup, and EFL Trophy for any
-    // of the 92 clubs. Works alongside the automatic league data (Premier League/
-    // Championship) and the manual league data above (League One/Two) — cup
-    // matches merge in regardless of division. Add entries the same way as
-    // above, but include a "competition" field.
-    // Format: { date, competition, team1, team2, score1, score2 }
-    // score1/score2 as null means the match hasn't been played (a fixture).
-    // Example:
-    // "Barnsley": [
-    //   { date: "2026-08-26", competition: "Carabao Cup", team1: "Barnsley", team2: "Wigan Athletic", score1: 1, score2: 1 }
-    // ],
     const MANUAL_CUP_MATCHES = {
       "Barnsley": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Barnsley", team2: "Crewe Alexandra", score1: null, score2: null } ],
       "Birmingham City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Birmingham City", team2: "Brentford", score1: null, score2: null } ],
@@ -571,8 +450,6 @@
       "West Ham United": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Southampton", team2: "West Ham United", score1: null, score2: null } ],
       "Wolverhampton Wanderers": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Sheffield Wednesday", team2: "Wolverhampton Wanderers", score1: null, score2: null } ],
     };
-
-    const loadMatches = (div === '3' || div === '4') ? loadForL1L2() : loadFromOpenFootball();
 
     loadMatches
       .then(allMatches => {
@@ -720,99 +597,11 @@
             <span>${isHome ? 'Home' : 'Away'}</span>
             <span>${m.competition ? m.competition : divisionNames[div]}</span>
           </div>
-          <div id="match-detail-extra"></div>
         </div>
       `;
 
-      // Bonus only: try to find goalscorers/stats via ESPN. This can fail for any
-      // reason (proxy down, name mismatch, data shape) without affecting the page above.
-      tryLoadMatchDetail(usName, themName, m.date);
     }
 
-    function withTimeout(promise, ms) {
-      return Promise.race([
-        promise,
-        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
-      ]);
-    }
-
-    function tryLoadMatchDetail(usName, themName, dateStr) {
-      const league = ESPN_LEAGUE[div];
-      const d = new Date(dateStr);
-      const pad = n => n < 10 ? '0' + n : n;
-      const espnDateStr = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
-
-      withTimeout(
-        fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/scoreboard?dates=${espnDateStr}&limit=100`),
-        6000
-      )
-        .then(data => {
-          const events = data.events || [];
-          const match = events.find(ev => {
-            const comps = ev.competitions[0].competitors;
-            const names = comps.map(c => c.team.displayName);
-            return names.some(n => matchesTeam(n, usName)) && names.some(n => matchesTeam(n, themName));
-          });
-          if (!match) throw new Error('not found');
-          return withTimeout(
-            fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/summary?event=${match.id}`),
-            6000
-          );
-        })
-        .then(data => renderMatchDetail(data, usName, themName))
-        .catch(() => { /* bonus only — main page already rendered fine either way */ });
-    }
-
-    function renderMatchDetail(data, usName, themName) {
-      const container = document.getElementById('match-detail-extra');
-      if (!container) return;
-
-      let html = '';
-
-      // Goalscorers
-      const keyEvents = (data.header?.competitions?.[0]?.details || []).filter(d => d.type?.text === 'Goal' || d.scoringPlay);
-      if (keyEvents.length > 0) {
-        const homeAbbrev = data.header?.competitions?.[0]?.competitors?.find(c => c.homeAway === 'home')?.team?.displayName;
-        const usGoals = [], themGoals = [];
-        keyEvents.forEach(k => {
-          const scorer = k.athletesInvolved?.[0]?.displayName || k.text || 'Goal';
-          const minute = k.clock?.displayValue || '';
-          const line = `${scorer} ${minute}`;
-          if (k.team?.displayName === usName || (!k.team && homeAbbrev === usName)) usGoals.push(line);
-          else themGoals.push(line);
-        });
-        if (usGoals.length || themGoals.length) {
-          html += `
-            <div class="goalscorers">
-              <h4>Goalscorers</h4>
-              <div class="scorer-col">
-                <div class="scorer-list"><b>${usName}</b>${usGoals.length ? usGoals.join('<br>') : '—'}</div>
-                <div class="scorer-list"><b>${themName}</b>${themGoals.length ? themGoals.join('<br>') : '—'}</div>
-              </div>
-            </div>`;
-        }
-      }
-
-      // Match stats
-      const stats = data.boxscore?.teams;
-      if (stats && stats.length === 2) {
-        const findStat = (teamStats, name) => teamStats?.statistics?.find(s => s.name === name)?.displayValue || '—';
-        const usStats = stats.find(s => s.team?.displayName === usName) || stats[0];
-        const possession = findStat(usStats, 'possessionPct');
-        const shots = findStat(usStats, 'totalShots');
-        const corners = findStat(usStats, 'wonCorners');
-        if (possession !== '—' || shots !== '—') {
-          html += `
-            <div class="stats-grid">
-              <div class="stat-box"><div class="val">${possession}</div><div class="lbl">Possession</div></div>
-              <div class="stat-box"><div class="val">${shots}</div><div class="lbl">Shots</div></div>
-              <div class="stat-box"><div class="val">${corners}</div><div class="lbl">Corners</div></div>
-            </div>`;
-        }
-      }
-
-      if (html) container.innerHTML = html;
-    }
 
     document.querySelectorAll('.section-tab[data-panel]').forEach(tab => {
       tab.addEventListener('click', function() {
