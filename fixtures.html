@@ -1,228 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fixtures — The92Weekly</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Fixtures — The92Weekly</title>
 
-<style>
-:root{
-  --bg:#fff;
-  --panel:#f6f5f1;
-  --line:#e3e0d8;
-  --line-soft:#edeae3;
-  --ink:#2e3136;
-  --muted:#74787e;
-  --gold:#149954;
-}
+  <style>
+    :root {
+      --bg: #ffffff;
+      --panel: #f6f5f1;
+      --line: #e3e0d8;
+      --ink: #2e3136;
+      --muted: #74787e;
+      --green: #42985b;
+    }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family:'Source Serif 4',serif;
-  line-height:1.6;
-}
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
 
-a{
-  color:inherit;
-  text-decoration:none;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.display{
-  font-family:Poppins,sans-serif;
-}
+    header {
+      padding: 42px 6% 36px;
+      border-bottom: 1px solid var(--line);
+    }
 
-header{
-  border-bottom:1px solid var(--line);
-  padding:28px 6vw 24px;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  flex-wrap:wrap;
-  gap:12px;
-}
+    .logo {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
 
-.nameplate{
-  font:700 clamp(30px,4.4vw,40px)/1 Poppins,sans-serif;
-  text-transform:uppercase;
-}
+    .logo .green {
+      color: var(--green);
+    }
 
-.nameplate span{
-  color:var(--gold);
-}
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 18px;
+    }
 
-nav{
-  display:flex;
-  gap:18px;
-  padding-bottom:4px;
-}
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 6% 80px;
+    }
 
-nav a{
-  font:500 14.5px Poppins,sans-serif;
-  color:var(--muted);
-  border-bottom:2px solid transparent;
-  padding-bottom:4px;
-}
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
 
-nav a:hover{
-  color:var(--ink);
-  border-bottom-color:var(--gold);
-}
+    .back {
+      display: inline-block;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 24px;
+      font-size: 17px;
+    }
 
-main{
-  max-width:760px;
-  margin:0 auto;
-  padding:32px 6vw 80px;
-}
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
 
-.breadcrumb{
-  font:12px 'JetBrains Mono',monospace;
-  color:var(--muted);
-  margin-bottom:28px;
-}
+    .intro {
+      color: var(--muted);
+      font-size: 19px;
+      margin-bottom: 35px;
+    }
 
-.breadcrumb a:hover{
-  color:var(--gold);
-}
+    .controls {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 20px;
+      margin-bottom: 42px;
+    }
 
-.tag{
-  font:10.5px 'JetBrains Mono',monospace;
-  color:#fff;
-  background:var(--gold);
-  padding:4px 9px;
-  border-radius:2px;
-  letter-spacing:.06em;
-  display:inline-block;
-  margin-bottom:16px;
-}
+    .controls label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
 
-h1{
-  font:600 clamp(30px,5vw,48px)/1.1 Poppins,sans-serif;
-  margin-bottom:8px;
-}
+    select {
+      width: 100%;
+      max-width: 500px;
+      padding: 13px 14px;
+      border: 1px solid #ccc;
+      background: white;
+      color: var(--ink);
+      font-size: 17px;
+      border-radius: 4px;
+    }
 
-.subtitle{
-  font:14px 'JetBrains Mono',monospace;
-  color:var(--muted);
-  margin-bottom:30px;
-}
+    .loading,
+    .error,
+    .empty {
+      padding: 35px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 18px;
+    }
 
-.back{
-  display:inline-block;
-  margin-bottom:26px;
-  font:600 13px Poppins,sans-serif;
-  color:var(--gold);
-}
+    .error {
+      border: 1px solid #ddd;
+      background: var(--panel);
+    }
 
-.month{
-  margin-top:32px;
-}
+    .month {
+      margin-bottom: 42px;
+    }
 
-.month h2{
-  font:600 16px Poppins,sans-serif;
-  padding-bottom:10px;
-  border-bottom:1px solid var(--line);
-  margin-bottom:2px;
-}
+    .month-title {
+      font-size: 28px;
+      font-weight: 800;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 0;
+    }
 
-.match{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  padding:15px 0;
-  border-bottom:1px solid var(--line-soft);
-}
+    .fixture {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
 
-.match-main{
-  min-width:0;
-  flex:1;
-}
+    .fixture-main {
+      min-width: 0;
+    }
 
-.teams{
-  font:500 14.5px Poppins,sans-serif;
-}
+    .teams {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
 
-.meta{
-  font:11.5px 'JetBrains Mono',monospace;
-  color:var(--muted);
-  margin-top:3px;
-}
+    .details {
+      color: var(--muted);
+      font-size: 15px;
+    }
 
-.score{
-  font:700 15px 'JetBrains Mono',monospace;
-  white-space:nowrap;
-  text-align:right;
-}
+    .score {
+      font-size: 24px;
+      font-weight: 800;
+      white-space: nowrap;
+      align-self: start;
+    }
 
-.status{
-  padding:40px 0;
-  text-align:center;
-  font:14px 'JetBrains Mono',monospace;
-  color:var(--muted);
-}
+    .upcoming {
+      color: var(--green);
+    }
 
-.note{
-  margin-top:30px;
-  padding:16px 18px;
-  background:var(--panel);
-  border:1px solid var(--line);
-  font:12px 'JetBrains Mono',monospace;
-  color:var(--muted);
-}
+    .status {
+      color: var(--green);
+      font-weight: 700;
+    }
 
-.error{
-  color:#a33;
-}
+    .venue {
+      display: inline-block;
+      margin-left: 8px;
+    }
 
-@media(max-width:650px){
+    .source {
+      margin-top: 45px;
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+    }
 
-  nav{
-    gap:10px;
-    flex-wrap:wrap;
-  }
+    @media (max-width: 700px) {
+      header {
+        padding: 32px 6% 28px;
+      }
 
-  .match{
-    align-items:flex-start;
-  }
+      .logo {
+        font-size: 38px;
+      }
 
-  .teams{
-    font-size:13.5px;
-  }
+      nav {
+        gap: 15px;
+        font-size: 16px;
+      }
 
-  .meta{
-    line-height:1.5;
-  }
+      main {
+        padding: 42px 6% 60px;
+      }
 
-  .score{
-    font-size:14px;
-  }
-}
-</style>
+      h1 {
+        font-size: 42px;
+      }
+
+      .fixture {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+      }
+
+      .teams {
+        font-size: 18px;
+      }
+
+      .details {
+        font-size: 14px;
+      }
+
+      .score {
+        font-size: 21px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <div>
-    <a href="index.html">
-      <div class="nameplate">THE<span>92</span>WEEKLY</div>
-    </a>
+  <div class="logo">
+    THE<span class="green">92</span>WEEKLY
   </div>
 
   <nav>
-    <a href="membership.html">Membership</a>
-    <a href="index.html#latest">Latest</a>
+    <a href="index.html">Membership</a>
+    <a href="article.html">Latest</a>
     <a href="teams.html">Teams</a>
     <a href="tables.html">Tables</a>
     <a href="about.html">About</a>
@@ -232,534 +255,609 @@ h1{
 <main>
 
   <div class="breadcrumb">
-    <a href="index.html">Home</a>
-    /
-    <a href="teams.html">All 92</a>
-    /
-    <span id="crumb">Fixtures</span>
+    Home &nbsp;/&nbsp; Fixtures
   </div>
 
-  <a id="back-link" class="back" href="#">
-    ← Back to team
-  </a>
+  <a class="back" href="teams.html">← Back to teams</a>
 
-  <span id="division-tag" class="tag">
-    DIVISION
-  </span>
+  <h1 id="pageTitle">Fixtures</h1>
 
-  <h1 id="team-name">
-    Loading…
-  </h1>
+  <div class="intro" id="pageIntro">
+    All scheduled matches
+  </div>
 
-  <div id="subtitle" class="subtitle">
-    Full-season fixtures
+  <div class="controls">
+    <label for="teamSelect">Select a team</label>
+
+    <select id="teamSelect">
+      <option value="">Loading teams…</option>
+    </select>
   </div>
 
   <div id="fixtures">
-    <div class="status">
+    <div class="loading">
       Loading fixtures…
     </div>
+  </div>
+
+  <div class="source">
+    Fixture data supplied from The92Weekly football data feed.
   </div>
 
 </main>
 
 <script>
 
-const params = new URLSearchParams(location.search);
+const DATA_URL = "data/football-data.json";
 
-const teamName = params.get('team') || '';
-const div = params.get('div') || '1';
-
-const divisionNames = {
-  '1':'Premier League',
-  '2':'Championship',
-  '3':'League One',
-  '4':'League Two'
-};
-
-const competitionCodes = {
-  '1':'eng.1',
-  '2':'eng.2',
-  '3':'eng.3',
-  '4':'eng.4'
-};
-
-const divisionName =
-  divisionNames[div] || 'English football';
-
-const competitionCode =
-  competitionCodes[div] || '';
-
-document.getElementById('team-name').textContent =
-  teamName || 'Team';
-
-document.getElementById('crumb').textContent =
-  teamName || 'Fixtures';
-
-document.getElementById('division-tag').textContent =
-  divisionName;
-
-document.getElementById('subtitle').textContent =
-  `2026/27 · ${divisionName} · all scheduled matches`;
-
-const back = document.getElementById('back-link');
-
-back.href =
-  `team.html?team=${encodeURIComponent(teamName)}&div=${encodeURIComponent(div)}`;
+let allMatches = [];
+let allTeams = [];
 
 
-/* -------------------------------------------------------
-   TEAM NAME MATCHING
-------------------------------------------------------- */
+/* -------------------------------------------------
+   Helpers
+------------------------------------------------- */
 
-function normalize(value){
+function getTeamFromURL() {
+  const params = new URLSearchParams(window.location.search);
 
-  return String(value || '')
-    .toLowerCase()
-    .replace(/&/g,'and')
-    .replace(/[^a-z0-9]/g,'');
-
-}
-
-function teamMatches(name){
-
-  const a = normalize(name);
-  const b = normalize(teamName);
-
-  if(!a || !b) return false;
-
-  return (
-    a === b ||
-    a.includes(b) ||
-    b.includes(a)
-  );
-
+  return {
+    name: params.get("team"),
+    id: params.get("teamId")
+  };
 }
 
 
-/* -------------------------------------------------------
-   DATE HELPERS
-------------------------------------------------------- */
+function formatDate(dateString) {
+  const date = new Date(dateString);
 
-function dateObject(value){
+  return date.toLocaleDateString("en-GB", {
+    weekday: "short",
+    day: "2-digit",
+    month: "short"
+  });
+}
 
-  if(!value) return null;
 
-  const d = new Date(value);
+function formatTime(dateString) {
+  const date = new Date(dateString);
 
-  if(Number.isNaN(d.getTime())) {
-    return null;
+  return date.toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit"
+  });
+}
+
+
+function monthName(dateString) {
+  const date = new Date(dateString);
+
+  return date.toLocaleDateString("en-GB", {
+    month: "long",
+    year: "numeric"
+  });
+}
+
+
+function isTeamInMatch(match, teamName, teamId) {
+
+  if (!match.home || !match.away) {
+    return false;
   }
 
-  return d;
-
-}
-
-function monthLabel(value){
-
-  const d = dateObject(value);
-
-  if(!d) return 'Date TBC';
-
-  return d.toLocaleDateString('en-GB',{
-    month:'long',
-    year:'numeric'
-  });
-
-}
-
-function matchDate(value){
-
-  const d = dateObject(value);
-
-  if(!d){
-    return 'Date TBC';
-  }
-
-  return d.toLocaleDateString('en-GB',{
-    weekday:'short',
-    day:'numeric',
-    month:'short'
-  });
-
-}
-
-function matchTime(value){
-
-  const d = dateObject(value);
-
-  if(!d){
-    return 'TBC';
-  }
-
-  return d.toLocaleTimeString('en-GB',{
-    hour:'2-digit',
-    minute:'2-digit'
-  });
-
-}
-
-
-/* -------------------------------------------------------
-   ESCAPE HTML
-------------------------------------------------------- */
-
-function escapeHtml(value){
-
-  return String(value ?? '')
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;')
-    .replace(/'/g,'&#039;');
-
-}
-
-
-/* -------------------------------------------------------
-   LOAD DATA
-------------------------------------------------------- */
-
-async function loadFootballData(){
-
-  const response =
-    await fetch('data/football-data.json',{
-      cache:'no-store'
-    });
-
-  if(!response.ok){
-    throw new Error(
-      `Could not load football-data.json (${response.status})`
+  if (teamId) {
+    return (
+      String(match.home.id) === String(teamId) ||
+      String(match.away.id) === String(teamId)
     );
   }
 
-  const data = await response.json();
+  if (teamName) {
+    const wanted = teamName.toLowerCase();
 
-  if(!data || !Array.isArray(data.matches)){
-    throw new Error(
-      'football-data.json does not contain a matches array'
+    return (
+      String(match.home.name).toLowerCase() === wanted ||
+      String(match.away.name).toLowerCase() === wanted
     );
   }
 
-  return data;
-
+  return true;
 }
 
 
-/* -------------------------------------------------------
-   FILTER TEAM FIXTURES
-------------------------------------------------------- */
+function getScore(match) {
 
-function getTeamFixtures(data){
+  /*
+    ESPN gives scores for completed/live games.
+    Future games may not have scores.
+  */
 
-  const matches = data.matches || [];
+  const homeScore = match.home && match.home.score;
+  const awayScore = match.away && match.away.score;
 
-  const filtered = matches.filter(match => {
+  const hasHomeScore =
+    homeScore !== undefined &&
+    homeScore !== null &&
+    homeScore !== "";
 
-    if(!match) return false;
+  const hasAwayScore =
+    awayScore !== undefined &&
+    awayScore !== null &&
+    awayScore !== "";
 
-    const home =
-      match.home?.name ||
-      match.homeTeam ||
-      '';
+  if (hasHomeScore && hasAwayScore) {
+    return `${homeScore}–${awayScore}`;
+  }
 
-    const away =
-      match.away?.name ||
-      match.awayTeam ||
-      '';
+  return "";
+}
 
-    if(!teamMatches(home) && !teamMatches(away)){
-      return false;
-    }
+
+function getStatus(match) {
+
+  if (match.completed === true) {
+    return "FT";
+  }
+
+  if (match.statusDetail) {
 
     /*
-      Keep the team's division fixtures and cups.
-
-      League fixtures have the selected competition code:
-        eng.1
-        eng.2
-        eng.3
-        eng.4
-
-      Cup fixtures use codes such as:
-        eng.league_cup
-        eng.fa
+      Examples from ESPN:
+      39
+      HT
+      FT
+      STATUS_FIRST_HALF
     */
 
-    const code =
-      String(match.competitionCode || '')
-        .toLowerCase();
-
-    const type =
-      String(match.type || '')
-        .toLowerCase();
-
-    const competition =
-      String(match.competition || '')
-        .toLowerCase();
-
-    const isLeague =
-      code === competitionCode;
-
-    const isCup =
-      type === 'cup' ||
-      code.includes('cup') ||
-      competition.includes('cup');
-
-    return isLeague || isCup;
-
-  });
-
-  /*
-    Remove duplicate match IDs.
-  */
-
-  const seen = new Set();
-
-  const unique = filtered.filter(match => {
-
-    const key =
-      match.id ||
-      [
-        match.date,
-        match.home?.name,
-        match.away?.name
-      ].join('|');
-
-    if(seen.has(key)){
-      return false;
+    if (match.statusDetail === "HT") {
+      return "HT";
     }
+  }
 
-    seen.add(key);
-    return true;
+  if (match.status === "STATUS_FIRST_HALF") {
+    return "LIVE";
+  }
 
-  });
+  if (match.status === "STATUS_SECOND_HALF") {
+    return "LIVE";
+  }
 
-  /*
-    Sort from oldest to newest.
-  */
+  if (match.status === "STATUS_HALFTIME") {
+    return "HT";
+  }
 
-  unique.sort((a,b)=>{
-
-    const da =
-      dateObject(a.date)?.getTime() ||
-      Number.MAX_SAFE_INTEGER;
-
-    const db =
-      dateObject(b.date)?.getTime() ||
-      Number.MAX_SAFE_INTEGER;
-
-    return da - db;
-
-  });
-
-  return unique;
-
+  return "";
 }
 
 
-/* -------------------------------------------------------
-   RENDER
-------------------------------------------------------- */
+function sortMatches(matches) {
 
-function renderFixtures(data){
+  return matches.sort((a, b) => {
+    return new Date(a.date) - new Date(b.date);
+  });
+}
 
-  const root =
-    document.getElementById('fixtures');
 
-  const fixtures =
-    getTeamFixtures(data);
+/* -------------------------------------------------
+   Build team list
+------------------------------------------------- */
 
-  console.log(
-    'The92Weekly fixture data:',
-    data.matches.length,
-    'total matches'
+function buildTeams() {
+
+  const map = new Map();
+
+  allMatches.forEach(match => {
+
+    if (match.home && match.home.name) {
+
+      const key = String(match.home.id || match.home.name);
+
+      if (!map.has(key)) {
+        map.set(key, {
+          id: match.home.id,
+          name: match.home.name
+        });
+      }
+    }
+
+    if (match.away && match.away.name) {
+
+      const key = String(match.away.id || match.away.name);
+
+      if (!map.has(key)) {
+        map.set(key, {
+          id: match.away.id,
+          name: match.away.name
+        });
+      }
+    }
+
+  });
+
+  allTeams = Array.from(map.values()).sort((a, b) =>
+    a.name.localeCompare(b.name)
   );
 
-  console.log(
-    `${teamName}:`,
-    fixtures.length,
-    'fixtures found'
+
+  const select = document.getElementById("teamSelect");
+
+  select.innerHTML = "";
+
+  const allOption = document.createElement("option");
+
+  allOption.value = "";
+  allOption.textContent = "All teams";
+
+  select.appendChild(allOption);
+
+
+  allTeams.forEach(team => {
+
+    const option = document.createElement("option");
+
+    option.value = team.id || team.name;
+    option.textContent = team.name;
+
+    select.appendChild(option);
+
+  });
+}
+
+
+/* -------------------------------------------------
+   Render fixtures
+------------------------------------------------- */
+
+function renderFixtures(teamName = "", teamId = "") {
+
+  const container = document.getElementById("fixtures");
+
+  let matches = allMatches.filter(match =>
+    isTeamInMatch(match, teamName, teamId)
   );
 
-  if(!fixtures.length){
+  matches = sortMatches(matches);
 
-    root.innerHTML = `
-      <div class="status">
-        No fixtures were found for ${escapeHtml(teamName)}.
+
+  if (!matches.length) {
+
+    container.innerHTML = `
+      <div class="empty">
+        No fixtures found for this team.
       </div>
     `;
 
     return;
-
   }
 
+
   /*
-    Group fixtures by month.
+    Group EVERY match by month.
+    Nothing is limited to August or to the first
+    few results.
   */
 
   const groups = {};
 
-  fixtures.forEach(match => {
+  matches.forEach(match => {
 
-    const label =
-      monthLabel(match.date);
+    const month = monthName(match.date);
 
-    if(!groups[label]){
-      groups[label] = [];
+    if (!groups[month]) {
+      groups[month] = [];
     }
 
-    groups[label].push(match);
+    groups[month].push(match);
 
   });
 
-  let html = '';
 
-  Object.entries(groups).forEach(
-    ([month,matches]) => {
+  let html = "";
 
-      html += `
-        <section class="month">
 
-          <h2>
-            ${escapeHtml(month)}
-          </h2>
-      `;
+  Object.keys(groups).forEach(month => {
 
-      matches.forEach(match => {
+    html += `
+      <section class="month">
+        <h2 class="month-title">${month}</h2>
+    `;
 
-        const home =
-          match.home?.name ||
-          match.homeTeam ||
-          'Home';
 
-        const away =
-          match.away?.name ||
-          match.awayTeam ||
-          'Away';
+    groups[month].forEach(match => {
 
-        const competition =
-          match.competition ||
-          'Football';
+      const home = match.home?.name || "TBC";
+      const away = match.away?.name || "TBC";
 
-        const date =
-          matchDate(match.date);
+      const competition =
+        match.competition || "Football";
 
-        const time =
-          match.completed
-            ? 'FT'
-            : match.date
-              ? matchTime(match.date)
-              : 'TBC';
+      const date = formatDate(match.date);
+      const time = formatTime(match.date);
 
-        let score = '';
+      const venue =
+        match.venue ? match.venue : "";
 
-        const homeScore =
-          match.home?.score;
+      const score = getScore(match);
+      const status = getStatus(match);
 
-        const awayScore =
-          match.away?.score;
+      const completed = match.completed === true;
 
-        if(
-          homeScore !== undefined &&
-          homeScore !== null &&
-          awayScore !== undefined &&
-          awayScore !== null
-        ){
+      let scoreHTML = "";
 
-          score =
-            `${homeScore}–${awayScore}`;
+      if (score) {
 
-        } else if(
-          match.statusDetail
-        ){
-
-          const status =
-            String(match.statusDetail);
-
-          if(
-            /postponed|cancelled|abandoned|tbc|suspended/i
-              .test(status)
-          ){
-
-            score = status;
-
-          }
-
-        }
-
-        html += `
-          <div class="match">
-
-            <div class="match-main">
-
-              <div class="teams">
-                ${escapeHtml(home)}
-                vs
-                ${escapeHtml(away)}
-              </div>
-
-              <div class="meta">
-                ${escapeHtml(competition)}
-                ·
-                ${escapeHtml(date)}
-                ·
-                ${escapeHtml(time)}
-
-                ${
-                  match.venue
-                    ? ` · ${escapeHtml(match.venue)}`
-                    : ''
-                }
-              </div>
-
-            </div>
-
-            <div class="score">
-              ${escapeHtml(score)}
-            </div>
-
+        scoreHTML = `
+          <div class="score">
+            ${score}
           </div>
         `;
 
-      });
+      } else {
+
+        scoreHTML = `
+          <div class="score upcoming">
+            ${time}
+          </div>
+        `;
+
+      }
+
 
       html += `
-        </section>
+        <article class="fixture">
+
+          <div class="fixture-main">
+
+            <div class="teams">
+              ${home} vs ${away}
+            </div>
+
+            <div class="details">
+
+              ${competition}
+              &nbsp;·&nbsp;
+              ${date}
+              ${completed && status ? ` · ${status}` : ""}
+              ${!completed ? ` · ${time}` : ""}
+
+              ${venue
+                ? `<span class="venue">· ${venue}</span>`
+                : ""
+              }
+
+            </div>
+
+          </div>
+
+          ${scoreHTML}
+
+        </article>
       `;
 
+    });
+
+
+    html += `
+      </section>
+    `;
+
+  });
+
+
+  container.innerHTML = html;
+}
+
+
+/* -------------------------------------------------
+   Update URL
+------------------------------------------------- */
+
+function updateURL(team) {
+
+  const url = new URL(window.location.href);
+
+  if (!team) {
+
+    url.searchParams.delete("team");
+    url.searchParams.delete("teamId");
+
+  } else {
+
+    url.searchParams.delete("team");
+
+    if (team.id) {
+
+      url.searchParams.set("teamId", team.id);
+
+    } else {
+
+      url.searchParams.set("team", team.name);
+
     }
-  );
 
-  html += `
-    <div class="note">
-      Fixture data supplied from The92Weekly football data feed.
-    </div>
-  `;
+  }
 
-  root.innerHTML = html;
+  window.history.replaceState({}, "", url);
 
 }
 
 
-/* -------------------------------------------------------
-   START
-------------------------------------------------------- */
+/* -------------------------------------------------
+   Team selector
+------------------------------------------------- */
 
-loadFootballData()
-  .then(renderFixtures)
-  .catch(error => {
+document
+  .getElementById("teamSelect")
+  .addEventListener("change", function() {
+
+    const value = this.value;
+
+    if (!value) {
+
+      document.getElementById("pageTitle").textContent =
+        "Fixtures";
+
+      document.getElementById("pageIntro").textContent =
+        "All scheduled matches";
+
+      renderFixtures();
+
+      updateURL(null);
+
+      return;
+    }
+
+
+    const team = allTeams.find(t =>
+      String(t.id || t.name) === String(value)
+    );
+
+
+    if (!team) {
+      return;
+    }
+
+
+    document.getElementById("pageTitle").textContent =
+      team.name;
+
+    document.getElementById("pageIntro").textContent =
+      "2026/27 · all scheduled matches";
+
+
+    renderFixtures(
+      team.name,
+      team.id
+    );
+
+
+    updateURL(team);
+
+  });
+
+
+/* -------------------------------------------------
+   Load JSON
+------------------------------------------------- */
+
+async function loadData() {
+
+  const container = document.getElementById("fixtures");
+
+  try {
+
+    const response = await fetch(
+      DATA_URL + "?v=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        "Could not load football-data.json"
+      );
+    }
+
+
+    const data = await response.json();
+
+
+    if (!data.matches || !Array.isArray(data.matches)) {
+      throw new Error(
+        "football-data.json does not contain a matches array."
+      );
+    }
+
+
+    allMatches = data.matches;
+
+
+    /*
+      IMPORTANT:
+      We do NOT slice the data.
+      We do NOT limit it to one month.
+      We do NOT take only the first few fixtures.
+
+      Every match in football-data.json is available.
+    */
+
+
+    buildTeams();
+
+
+    const selected = getTeamFromURL();
+
+
+    if (selected.name || selected.id) {
+
+      let team = null;
+
+
+      if (selected.id) {
+
+        team = allTeams.find(t =>
+          String(t.id) === String(selected.id)
+        );
+
+      }
+
+
+      if (!team && selected.name) {
+
+        team = allTeams.find(t =>
+          t.name.toLowerCase() ===
+          selected.name.toLowerCase()
+        );
+
+      }
+
+
+      if (team) {
+
+        document.getElementById("teamSelect").value =
+          team.id || team.name;
+
+        document.getElementById("pageTitle").textContent =
+          team.name;
+
+        document.getElementById("pageIntro").textContent =
+          "2026/27 · all scheduled matches";
+
+
+        renderFixtures(
+          team.name,
+          team.id
+        );
+
+        return;
+      }
+
+    }
+
+
+    /*
+      If no team is specified in the URL,
+      show every fixture.
+    */
+
+    renderFixtures();
+
+  } catch (error) {
 
     console.error(error);
 
-    document.getElementById('fixtures').innerHTML = `
-      <div class="status error">
-        We could not load the fixture list right now.
-        Please refresh the page in a moment.
+    container.innerHTML = `
+      <div class="error">
+        <strong>We could not load the fixture list.</strong>
+        <br><br>
+        ${error.message}
       </div>
     `;
 
-  });
+  }
+
+}
+
+
+loadData();
 
 </script>
 
