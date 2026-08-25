@@ -4,43 +4,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fixtures — The92Weekly</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#fff;--panel:#f6f5f1;--line:#e3e0d8;--line-soft:#edeae3;--ink:#2e3136;--muted:#74787e;--gold:#149954}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font-family:'Source Serif 4',serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-.display{font-family:Poppins,sans-serif}
-header{border-bottom:1px solid var(--line);padding:28px 6vw 24px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px}
-.nameplate{font:700 clamp(30px,4.4vw,40px)/1 Poppins,sans-serif;text-transform:uppercase}
-.nameplate span{color:var(--gold)}
-nav{display:flex;gap:18px;padding-bottom:4px}
-nav a{font:500 14.5px Poppins,sans-serif;color:var(--muted);border-bottom:2px solid transparent;padding-bottom:4px}
-nav a:hover{color:var(--ink);border-bottom-color:var(--gold)}
-main{max-width:760px;margin:0 auto;padding:32px 6vw 80px}
-.breadcrumb{font:12px 'JetBrains Mono',monospace;color:var(--muted);margin-bottom:28px}
-.breadcrumb a:hover{color:var(--gold)}
-.tag{font:10.5px 'JetBrains Mono',monospace;color:#fff;background:var(--gold);padding:4px 9px;border-radius:2px;letter-spacing:.06em;display:inline-block;margin-bottom:16px}
-h1{font:600 clamp(30px,5vw,48px)/1.1 Poppins,sans-serif;margin-bottom:8px}
-.subtitle{font:14px 'JetBrains Mono',monospace;color:var(--muted);margin-bottom:30px}
-.back{display:inline-block;margin-bottom:26px;font:600 13px Poppins,sans-serif;color:var(--gold)}
-.month{margin-top:32px}
-.month h2{font:600 16px Poppins,sans-serif;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:2px}
-.match{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line-soft)}
-.match-main{min-width:0}
-.teams{font:500 14.5px Poppins,sans-serif}
-.meta{font:11.5px 'JetBrains Mono',monospace;color:var(--muted);margin-top:3px}
-.score{font:700 15px 'JetBrains Mono',monospace;white-space:nowrap}
-.status{padding:40px 0;text-align:center;font:14px 'JetBrains Mono',monospace;color:var(--muted)}
-.note{margin-top:30px;padding:16px 18px;background:var(--panel);border:1px solid var(--line);font:12px 'JetBrains Mono',monospace;color:var(--muted)}
-@media(max-width:650px){nav{gap:10px;flex-wrap:wrap}.match{align-items:flex-start}.teams{font-size:13.5px}}
+:root{
+  --bg:#fff;
+  --panel:#f6f5f1;
+  --line:#e3e0d8;
+  --line-soft:#edeae3;
+  --ink:#2e3136;
+  --muted:#74787e;
+  --gold:#149954;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Source Serif 4',serif;
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.display{
+  font-family:Poppins,sans-serif;
+}
+
+header{
+  border-bottom:1px solid var(--line);
+  padding:28px 6vw 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.nameplate{
+  font:700 clamp(30px,4.4vw,40px)/1 Poppins,sans-serif;
+  text-transform:uppercase;
+}
+
+.nameplate span{
+  color:var(--gold);
+}
+
+nav{
+  display:flex;
+  gap:18px;
+  padding-bottom:4px;
+}
+
+nav a{
+  font:500 14.5px Poppins,sans-serif;
+  color:var(--muted);
+  border-bottom:2px solid transparent;
+  padding-bottom:4px;
+}
+
+nav a:hover{
+  color:var(--ink);
+  border-bottom-color:var(--gold);
+}
+
+main{
+  max-width:760px;
+  margin:0 auto;
+  padding:32px 6vw 80px;
+}
+
+.breadcrumb{
+  font:12px 'JetBrains Mono',monospace;
+  color:var(--muted);
+  margin-bottom:28px;
+}
+
+.breadcrumb a:hover{
+  color:var(--gold);
+}
+
+.tag{
+  font:10.5px 'JetBrains Mono',monospace;
+  color:#fff;
+  background:var(--gold);
+  padding:4px 9px;
+  border-radius:2px;
+  letter-spacing:.06em;
+  display:inline-block;
+  margin-bottom:16px;
+}
+
+h1{
+  font:600 clamp(30px,5vw,48px)/1.1 Poppins,sans-serif;
+  margin-bottom:8px;
+}
+
+.subtitle{
+  font:14px 'JetBrains Mono',monospace;
+  color:var(--muted);
+  margin-bottom:30px;
+}
+
+.back{
+  display:inline-block;
+  margin-bottom:26px;
+  font:600 13px Poppins,sans-serif;
+  color:var(--gold);
+}
+
+.month{
+  margin-top:32px;
+}
+
+.month h2{
+  font:600 16px Poppins,sans-serif;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:2px;
+}
+
+.match{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:15px 0;
+  border-bottom:1px solid var(--line-soft);
+}
+
+.match-main{
+  min-width:0;
+}
+
+.teams{
+  font:500 14.5px Poppins,sans-serif;
+}
+
+.meta{
+  font:11.5px 'JetBrains Mono',monospace;
+  color:var(--muted);
+  margin-top:3px;
+}
+
+.score{
+  font:700 15px 'JetBrains Mono',monospace;
+  white-space:nowrap;
+}
+
+.status{
+  padding:40px 0;
+  text-align:center;
+  font:14px 'JetBrains Mono',monospace;
+  color:var(--muted);
+}
+
+.note{
+  margin-top:30px;
+  padding:16px 18px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  font:12px 'JetBrains Mono',monospace;
+  color:var(--muted);
+}
+
+@media(max-width:650px){
+  nav{
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  .match{
+    align-items:flex-start;
+  }
+
+  .teams{
+    font-size:13.5px;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div><a href="index.html"><div class="nameplate">THE<span>92</span>WEEKLY</div></a></div>
+  <div>
+    <a href="index.html">
+      <div class="nameplate">THE<span>92</span>WEEKLY</div>
+    </a>
+  </div>
+
   <nav>
     <a href="membership.html">Membership</a>
     <a href="index.html#latest">Latest</a>
@@ -51,139 +215,591 @@ h1{font:600 clamp(30px,5vw,48px)/1.1 Poppins,sans-serif;margin-bottom:8px}
 </header>
 
 <main>
-  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="teams.html">All 92</a> / <span id="crumb">Fixtures</span></div>
-  <a id="back-link" class="back" href="#">← Back to team</a>
-  <span id="division-tag" class="tag">DIVISION</span>
-  <h1 id="team-name">Loading…</h1>
-  <div id="subtitle" class="subtitle">Full-season fixtures</div>
-  <div id="fixtures"><div class="status">Loading the full season…</div></div>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="teams.html">All 92</a> /
+    <span id="crumb">Fixtures</span>
+  </div>
+
+  <a id="back-link" class="back" href="#">
+    ← Back to team
+  </a>
+
+  <span id="division-tag" class="tag">
+    DIVISION
+  </span>
+
+  <h1 id="team-name">
+    Loading…
+  </h1>
+
+  <div id="subtitle" class="subtitle">
+    Full-season fixtures
+  </div>
+
+  <div id="fixtures">
+    <div class="status">
+      Loading the full 2026/27 season…
+    </div>
+  </div>
+
 </main>
 
 <script>
+
 const params = new URLSearchParams(location.search);
+
 const teamName = params.get('team') || '';
 const div = params.get('div') || '1';
 
-const divisionNames = {1:'Premier League',2:'Championship',3:'League One',4:'League Two'};
-const espnLeagues = {1:'eng.1',2:'eng.2',3:'eng.3',4:'eng.4'};
+const divisionNames = {
+  1:'Premier League',
+  2:'Championship',
+  3:'League One',
+  4:'League Two'
+};
 
-document.getElementById('team-name').textContent = teamName || 'Team';
-document.getElementById('crumb').textContent = teamName || 'Fixtures';
-document.getElementById('division-tag').textContent = divisionNames[div] || 'Division';
-document.getElementById('subtitle').textContent = `2026/27 · ${divisionNames[div] || 'English football'} · all scheduled matches`;
+const espnLeagues = {
+  1:'eng.1',
+  2:'eng.2',
+  3:'eng.3',
+  4:'eng.4'
+};
 
-const back = document.getElementById('back-link');
-back.href = `team.html?team=${encodeURIComponent(teamName)}&div=${encodeURIComponent(div)}`;
+const divisionName =
+  divisionNames[div] || 'English football';
 
-function normalize(s){return (s||'').toLowerCase().replace(/[^a-z0-9]/g,'')}
-function matchesTeam(a,b){const x=normalize(a),y=normalize(b);return x.includes(y)||y.includes(x)}
-function proxy(url){
-  const worker = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(url)}`;
-  return fetch(worker).then(r=>{if(!r.ok)throw new Error('Proxy error');return r.json()});
+const league =
+  espnLeagues[div] || 'eng.1';
+
+document.getElementById('team-name').textContent =
+  teamName || 'Team';
+
+document.getElementById('crumb').textContent =
+  teamName || 'Fixtures';
+
+document.getElementById('division-tag').textContent =
+  divisionName;
+
+document.getElementById('subtitle').textContent =
+  `2026/27 · ${divisionName} · all scheduled matches`;
+
+const back =
+  document.getElementById('back-link');
+
+back.href =
+  `team.html?team=${encodeURIComponent(teamName)}&div=${encodeURIComponent(div)}`;
+
+
+/* -----------------------------
+   TEAM NAME HELPERS
+----------------------------- */
+
+function normalize(value){
+  return String(value || '')
+    .toLowerCase()
+    .replace(/&/g,'and')
+    .replace(/[^a-z0-9]/g,'');
 }
 
+function matchesTeam(a,b){
+
+  const x = normalize(a);
+  const y = normalize(b);
+
+  if(!x || !y) return false;
+
+  return (
+    x === y ||
+    x.includes(y) ||
+    y.includes(x)
+  );
+}
+
+
+/* -----------------------------
+   PROXY
+----------------------------- */
+
+function proxy(url){
+
+  const worker =
+    'https://the92weekly-proxyv2.the92weekly.workers.dev/?url='
+    + encodeURIComponent(url);
+
+  return fetch(worker)
+    .then(response => {
+
+      if(!response.ok){
+        throw new Error(
+          `Proxy error (${response.status})`
+        );
+      }
+
+      return response.json();
+    });
+}
+
+
+/* -----------------------------
+   FIND TEAM ID
+----------------------------- */
+
 async function getTeamId(){
-  const league=espnLeagues[div];
-  const data=await proxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=50`);
-  const teams=data.sports?.[0]?.leagues?.[0]?.teams||[];
-  const found=teams.map(x=>x.team).find(t=>matchesTeam(t.displayName,t.name||'') && matchesTeam(t.displayName,teamName));
-  if(!found) throw new Error('Team not found');
+
+  const url =
+    `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=100`;
+
+  const data =
+    await proxy(url);
+
+  const teams =
+    data.sports?.[0]?.leagues?.[0]?.teams || [];
+
+  const teamObjects =
+    teams.map(item => item.team).filter(Boolean);
+
+  let found =
+    teamObjects.find(team =>
+      matchesTeam(
+        team.displayName,
+        teamName
+      )
+    );
+
+  if(!found){
+
+    found =
+      teamObjects.find(team =>
+        matchesTeam(
+          team.name,
+          teamName
+        )
+      );
+  }
+
+  if(!found){
+    throw new Error(
+      `Team "${teamName}" could not be found`
+    );
+  }
+
   return found.id;
 }
 
+
+/* -----------------------------
+   NORMALISE ESPN FIXTURE
+----------------------------- */
+
 function normaliseEvent(ev){
-  const c=ev.competitions?.[0];
-  const teams=c?.competitors||[];
-  const home=teams.find(x=>x.homeAway==='home');
-  const away=teams.find(x=>x.homeAway==='away');
-  if(!home||!away)return null;
-  const status=ev.status?.type||c?.status?.type||{};
+
+  const competition =
+    ev.competitions?.[0];
+
+  const competitors =
+    competition?.competitors || [];
+
+  const home =
+    competitors.find(
+      x => x.homeAway === 'home'
+    );
+
+  const away =
+    competitors.find(
+      x => x.homeAway === 'away'
+    );
+
+  if(!home || !away){
+    return null;
+  }
+
+  const status =
+    ev.status?.type ||
+    competition?.status?.type ||
+    {};
+
+  const homeScore =
+    home.score != null
+      ? Number(home.score)
+      : null;
+
+  const awayScore =
+    away.score != null
+      ? Number(away.score)
+      : null;
+
   return {
-    id:String(ev.id),
-    date:ev.date,
-    competition:c?.type?.text || ev.season?.displayName || '',
-    competitionName:c?.type?.text || '',
-    completed:Boolean(status.completed),
-    statusDetail:status.detail||'',
-    home:home.team?.displayName||home.team?.name||'',
-    away:away.team?.displayName||away.team?.name||'',
-    homeScore:home.score!=null?Number(home.score):null,
-    awayScore:away.score!=null?Number(away.score):null
+
+    id:String(ev.id || ''),
+
+    date:ev.date || '',
+
+    season:
+      ev.season?.year ??
+      null,
+
+    competition:'',
+    
+    completed:
+      Boolean(status.completed),
+
+    statusDetail:
+      status.detail || '',
+
+    home:
+      home.team?.displayName ||
+      home.team?.name ||
+      '',
+
+    away:
+      away.team?.displayName ||
+      away.team?.name ||
+      '',
+
+    homeScore,
+
+    awayScore
   };
 }
 
+
+/* -----------------------------
+   COMPETITION NAME
+----------------------------- */
+
 function competitionName(ev){
-  const c=ev.competitions?.[0];
-  const text=c?.type?.text||'';
-  if(text && !/^regular season$/i.test(text)) return text;
-  const season=ev.season?.displayName||'';
-  return season || divisionNames[div] || 'Football';
+
+  const competition =
+    ev.competitions?.[0];
+
+  const typeText =
+    competition?.type?.text || '';
+
+  if(
+    typeText &&
+    !/^regular season$/i.test(typeText)
+  ){
+    return typeText;
+  }
+
+  const seasonName =
+    ev.season?.displayName || '';
+
+  if(seasonName){
+    return seasonName;
+  }
+
+  return divisionName;
 }
 
+
+/* -----------------------------
+   LOAD FULL SEASON
+----------------------------- */
+
 async function loadSeason(){
-  const id=await getTeamId();
-  const league=espnLeagues[div];
-  const data=await proxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${id}/schedule`);
-  let events=(data.events||[]).map(ev=>{
-    const m=normaliseEvent(ev);
-    if(!m)return null;
-    m.competition=competitionName(ev);
-    return m;
-  }).filter(Boolean);
 
-  // Keep the current 2026/27 season only and remove duplicates.
-  const seen=new Set();
-  events=events.filter(m=>{
-    const key=m.id||`${m.date}|${m.home}|${m.away}`;
-    if(seen.has(key))return false;
-    seen.add(key);
-    return true;
-  });
+  const id =
+    await getTeamId();
 
-  events.sort((a,b)=>new Date(a.date)-new Date(b.date));
+  /*
+    IMPORTANT:
+
+    Explicitly request the 2026 season
+    and a large number of events.
+
+    This prevents the page from relying
+    on ESPN's default result limit.
+  */
+
+  const scheduleUrl =
+    `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${id}/schedule?season=2026&limit=500`;
+
+  const data =
+    await proxy(scheduleUrl);
+
+  let events =
+    (data.events || [])
+      .map(ev => {
+
+        const match =
+          normaliseEvent(ev);
+
+        if(!match){
+          return null;
+        }
+
+        match.competition =
+          competitionName(ev);
+
+        return match;
+      })
+      .filter(Boolean);
+
+
+  /*
+    Keep the 2026/27 season.
+
+    ESPN normally returns the correct season
+    from the season parameter, but we also
+    protect against unrelated events.
+  */
+
+  events =
+    events.filter(match => {
+
+      if(
+        match.season === null ||
+        match.season === undefined
+      ){
+        return true;
+      }
+
+      return Number(match.season) === 2026;
+    });
+
+
+  /*
+    Remove duplicate fixtures.
+  */
+
+  const seen =
+    new Set();
+
+  events =
+    events.filter(match => {
+
+      const key =
+        match.id ||
+        `${match.date}|${match.home}|${match.away}`;
+
+      if(seen.has(key)){
+        return false;
+      }
+
+      seen.add(key);
+
+      return true;
+    });
+
+
+  /*
+    Sort chronologically.
+  */
+
+  events.sort(
+    (a,b) =>
+      new Date(a.date) -
+      new Date(b.date)
+  );
+
+
   return events;
 }
 
+
+/* -----------------------------
+   MONTH LABEL
+----------------------------- */
+
 function monthLabel(date){
-  return new Date(date).toLocaleDateString('en-GB',{month:'long',year:'numeric'});
+
+  return new Date(date)
+    .toLocaleDateString(
+      'en-GB',
+      {
+        month:'long',
+        year:'numeric'
+      }
+    );
 }
 
+
+/* -----------------------------
+   RENDER FIXTURES
+----------------------------- */
+
 function render(events){
-  const root=document.getElementById('fixtures');
+
+  const root =
+    document.getElementById('fixtures');
+
+
   if(!events.length){
-    root.innerHTML='<div class="status">No season fixtures were returned by the football data source.</div>';
+
+    root.innerHTML = `
+      <div class="status">
+        No 2026/27 fixtures were returned
+        for this team.
+      </div>
+    `;
+
     return;
   }
 
-  const groups={};
-  events.forEach(m=>(groups[monthLabel(m.date)]??=[]).push(m));
 
-  let html='';
-  for(const [month,matches] of Object.entries(groups)){
-    html+=`<section class="month"><h2>${month}</h2>`;
-    matches.forEach(m=>{
-      const d=new Date(m.date);
-      const date=d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
-      const time=d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
-      const score=(m.homeScore!==null&&m.awayScore!==null)?`${m.homeScore}–${m.awayScore}`:'';
-      html+=`<div class="match">
-        <div class="match-main">
-          <div class="teams">${m.home} vs ${m.away}</div>
-          <div class="meta">${m.competition} · ${date} · ${time}</div>
+  /*
+    Group fixtures by month.
+  */
+
+  const groups = {};
+
+  events.forEach(match => {
+
+    const month =
+      monthLabel(match.date);
+
+    if(!groups[month]){
+      groups[month] = [];
+    }
+
+    groups[month].push(match);
+  });
+
+
+  let html = '';
+
+
+  for(
+    const [month,matches]
+    of Object.entries(groups)
+  ){
+
+    html += `
+      <section class="month">
+        <h2>${month}</h2>
+    `;
+
+
+    matches.forEach(match => {
+
+      const date =
+        new Date(match.date);
+
+      const dateText =
+        date.toLocaleDateString(
+          'en-GB',
+          {
+            weekday:'short',
+            day:'numeric',
+            month:'short'
+          }
+        );
+
+
+      const timeText =
+        date.toLocaleTimeString(
+          'en-GB',
+          {
+            hour:'2-digit',
+            minute:'2-digit'
+          }
+        );
+
+
+      const hasScore =
+        match.homeScore !== null &&
+        match.awayScore !== null;
+
+
+      const score =
+        hasScore
+          ? `${match.homeScore}–${match.awayScore}`
+          : '';
+
+
+      html += `
+        <div class="match">
+
+          <div class="match-main">
+
+            <div class="teams">
+              ${match.home}
+              vs
+              ${match.away}
+            </div>
+
+            <div class="meta">
+              ${match.competition}
+              ·
+              ${dateText}
+              ·
+              ${timeText}
+            </div>
+
+          </div>
+
+          <div class="score">
+            ${score}
+          </div>
+
         </div>
-        <div class="score">${score}</div>
-      </div>`;
+      `;
     });
-    html+='</section>';
+
+
+    html += `
+      </section>
+    `;
   }
-  root.innerHTML=html;
+
+
+  /*
+    Add a small information note.
+  */
+
+  html += `
+    <div class="note">
+      Full 2026/27 scheduled fixture list.
+      Completed matches display their scores;
+      upcoming matches display their scheduled
+      date and time.
+    </div>
+  `;
+
+
+  root.innerHTML =
+    html;
 }
 
-loadSeason().then(render).catch(err=>{
-  console.error(err);
-  document.getElementById('fixtures').innerHTML=
-    '<div class="status">We could not load the full fixture list right now. Please refresh in a moment.</div>';
-});
+
+/* -----------------------------
+   START
+----------------------------- */
+
+loadSeason()
+
+  .then(render)
+
+  .catch(error => {
+
+    console.error(
+      'Fixture loading error:',
+      error
+    );
+
+    document.getElementById(
+      'fixtures'
+    ).innerHTML = `
+
+      <div class="status">
+
+        We could not load the full
+        2026/27 fixture list right now.
+
+        <br><br>
+
+        Please refresh the page
+        in a moment.
+
+      </div>
+
+    `;
+  });
+
 </script>
+
 </body>
 </html>
