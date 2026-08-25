@@ -813,64 +813,25 @@
       // { team1: "Arsenal", score1: 2, score2: 1, team2: "Chelsea" },
     ];
 
-    // Tries corsproxy.io first (fast, github.io whitelisted), falls back to
-    // allorigins if that's ever down, so one dead proxy can't break the site.
-    function fetchViaProxy(targetUrl) {
-      const proxies = [
-        u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
-        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
-      ];
-      function tryProxy(i) {
-        if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
-        return fetch(proxies[i](targetUrl))
-          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
-          .catch(() => tryProxy(i + 1));
-      }
-      return tryProxy(0);
-    }
-
-    function espnDate(d) {
-      const pad = n => n < 10 ? '0' + n : n;
-      return d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
-    }
-
     function loadTickerResults() {
       const track = document.getElementById('ticker-track');
       const manualHtml = MANUAL_RESULTS.map(m =>
         `<span><b>${m.team1} ${m.score1}–${m.score2} ${m.team2}</b> · FT</span>`
       ).join('');
 
-      const today = new Date();
-      const past = new Date(today);
-      past.setDate(past.getDate() - 10);
-      const dateRange = `${espnDate(past)}-${espnDate(today)}`;
-
-      const espnLeagues = ['eng.1', 'eng.2', 'eng.3', 'eng.4'];
-      const fetches = espnLeagues.map(lg => {
-        const espnUrl = `https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${dateRange}&limit=100`;
-        return fetchViaProxy(espnUrl)
-          .then(data => (data.events || [])
-            .filter(ev => ev.status && ev.status.type && ev.status.type.completed)
-            .map(ev => {
-              const comps = ev.competitions[0].competitors;
-              const home = comps.find(c => c.homeAway === 'home');
-              const away = comps.find(c => c.homeAway === 'away');
-              return {
-                date: ev.date,
-                team1: home.team.displayName,
-                team2: away.team.displayName,
-                score1: home.score,
-                score2: away.score
-              };
-            }))
-          .catch(() => []);
-      });
+      const SEASON = '2026-27';
+      const fetches = [1, 2, 3, 4].map(div =>
+        fetch(`https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`)
+          .then(r => r.ok ? r.json() : { matches: [] })
+          .then(data => (data.matches || []).filter(m => m.score && m.score.ft))
+          .catch(() => [])
+      );
 
       Promise.all(fetches).then(results => {
         let allMatches = results.flat();
         allMatches.sort((a, b) => new Date(b.date) - new Date(a.date));
         const recentLive = allMatches.slice(0, 16).map(m =>
-          `<span><b>${m.team1} ${m.score1}–${m.score2} ${m.team2}</b> · FT</span>`
+          `<span><b>${m.team1} ${m.score.ft[0]}–${m.score.ft[1]} ${m.team2}</b> · FT</span>`
         ).join('');
 
         const combinedHtml = manualHtml + recentLive;

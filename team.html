@@ -356,10 +356,134 @@
       `;
     }
 
+    function normalize(s) {
+      return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    }
+
+    function matchesTeam(fixtureName, target) {
+      const a = normalize(fixtureName);
+      const b = normalize(target);
+      return a.includes(b) || b.includes(a);
+    }
+
+    const SEASON = '2026-27';
+    const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+
+    fetch(dataUrl)
+      .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+      .then(data => {
+        const allMatches = (data.matches || []).filter(m =>
+          matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName)
+        );
+        const completed = allMatches.filter(m => m.score && m.score.ft)
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+        const upcoming = allMatches.filter(m => !(m.score && m.score.ft))
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        renderFixtures(upcoming);
+        renderResults(completed);
+
+        if (completed.length === 0) {
+          document.getElementById('content').innerHTML =
+            `<div class="status-box">No completed match for ${teamName} yet this season. Check the Fixtures tab below for what's coming up.</div>`;
+          return;
+        }
+
+        renderLastResult(completed[0]);
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML =
+          `<div class="status-box">Couldn't load results right now.<br><br>Try refreshing, or check back shortly.</div>`;
+        document.getElementById('fixtures-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
+        document.getElementById('results-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
+      });
+
+    function teamSide(m) {
+      const isHome = matchesTeam(m.team1, teamName);
+      const usName = isHome ? m.team1 : m.team2;
+      const themName = isHome ? m.team2 : m.team1;
+      const usScore = m.score && m.score.ft ? (isHome ? m.score.ft[0] : m.score.ft[1]) : null;
+      const themScore = m.score && m.score.ft ? (isHome ? m.score.ft[1] : m.score.ft[0]) : null;
+      return { isHome, usName, themName, usScore, themScore };
+    }
+
+    function renderResults(matches) {
+      const panel = document.getElementById('results-panel');
+      if (matches.length === 0) {
+        panel.innerHTML = '<div class="status-box">No results yet this season.</div>';
+        return;
+      }
+      let html = '';
+      matches.forEach(m => {
+        const { isHome, usName, themName, usScore, themScore } = teamSide(m);
+        const dateStr = new Date(m.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+        html += `
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">${isHome ? teamName + ' vs ' + themName : themName + ' vs ' + teamName}</div>
+              <div class="list-item-meta">${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
+            </div>
+            <div class="list-item-score">${usScore}–${themScore}</div>
+          </div>`;
+      });
+      panel.innerHTML = html;
+    }
+
+    function renderFixtures(matches) {
+      const panel = document.getElementById('fixtures-panel');
+      if (matches.length === 0) {
+        panel.innerHTML = '<div class="status-box">No upcoming fixtures scheduled yet.</div>';
+        return;
+      }
+      let html = '';
+      matches.slice(0, 10).forEach(m => {
+        const isHome = matchesTeam(m.team1, teamName);
+        const opponent = isHome ? m.team2 : m.team1;
+        const dateStr = new Date(m.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+        html += `
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">${isHome ? teamName + ' vs ' + opponent : opponent + ' vs ' + teamName}</div>
+              <div class="list-item-meta">${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
+            </div>
+          </div>`;
+      });
+      panel.innerHTML = html;
+    }
+
+    function renderLastResult(m) {
+      const { isHome, usName, themName, usScore, themScore } = teamSide(m);
+      let outcomeClass = 'outcome-draw', outcomeText = 'DRAW';
+      if (usScore > themScore) { outcomeClass = 'outcome-win'; outcomeText = 'WIN'; }
+      else if (usScore < themScore) { outcomeClass = 'outcome-loss'; outcomeText = 'LOSS'; }
+
+      const dateStr = new Date(m.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+      document.getElementById('content').innerHTML = `
+        <div class="result-card">
+          <div class="result-label">Last Result</div>
+          <span class="result-outcome ${outcomeClass}">${outcomeText}</span>
+          <div class="result-teams">
+            <div class="result-team us">${usName}</div>
+            <div class="result-score">${usScore} – ${themScore}</div>
+            <div class="result-team">${themName}</div>
+          </div>
+          <div class="result-meta">
+            <span>${dateStr}</span>
+            <span>${isHome ? 'Home' : 'Away'}</span>
+            <span>${divisionNames[div]}</span>
+          </div>
+          <div id="match-detail-extra"></div>
+        </div>
+      `;
+
+      // Bonus only: try to find goalscorers/stats via ESPN. This can fail for any
+      // reason (proxy down, name mismatch, data shape) without affecting the page above.
+      tryLoadMatchDetail(usName, themName, m.date);
+    }
+
     const ESPN_LEAGUE = { 1: 'eng.1', 2: 'eng.2', 3: 'eng.3', 4: 'eng.4' };
 
-    // Tries corsproxy.io first (fast, github.io whitelisted), falls back to
-    // allorigins if that's ever down, so one dead proxy can't break the page.
     function fetchViaProxy(targetUrl) {
       const proxies = [
         u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
@@ -374,143 +498,38 @@
       return tryProxy(0);
     }
 
-    function normalize(s) {
-      return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    function withTimeout(promise, ms) {
+      return Promise.race([
+        promise,
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+      ]);
     }
 
-    function matchesTeam(fixtureName, target) {
-      const a = normalize(fixtureName);
-      const b = normalize(target);
-      return a.includes(b) || b.includes(a);
-    }
+    function tryLoadMatchDetail(usName, themName, dateStr) {
+      const league = ESPN_LEAGUE[div];
+      const d = new Date(dateStr);
+      const pad = n => n < 10 ? '0' + n : n;
+      const espnDateStr = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
 
-    const league = ESPN_LEAGUE[div];
-
-    // Step 1: find this team's ESPN ID by matching name against the division's team list
-    fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=50`)
-      .then(data => {
-        const teamList = (data.sports?.[0]?.leagues?.[0]?.teams || []).map(t => t.team);
-        const match = teamList.find(t => matchesTeam(t.displayName, teamName) || matchesTeam(t.name, teamName));
-        if (!match) throw new Error('team-not-found');
-        return match.id;
-      })
-      .then(teamId => {
-        // Step 2: fetch full schedule (past results + upcoming fixtures) for this team
-        return fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${teamId}/schedule`)
-          .then(data => ({ teamId, events: data.events || [] }));
-      })
-      .then(({ teamId, events }) => {
-        const completed = events.filter(ev => ev.competitions?.[0]?.status?.type?.completed)
-          .sort((a, b) => new Date(b.date) - new Date(a.date));
-        const upcoming = events.filter(ev => !ev.competitions?.[0]?.status?.type?.completed)
-          .sort((a, b) => new Date(a.date) - new Date(b.date));
-
-        renderFixtures(upcoming);
-        renderResults(completed);
-
-        if (completed.length === 0) {
-          document.getElementById('content').innerHTML =
-            `<div class="status-box">No completed match for ${teamName} yet this season. Check the Fixtures tab below for what's coming up.</div>`;
-          return;
-        }
-
-        renderLastResult(completed[0], teamId, league);
-      })
-      .catch(err => {
-        document.getElementById('content').innerHTML =
-          `<div class="status-box">Couldn't load live data right now.<br><br>Try refreshing, or check back shortly.</div>`;
-        document.getElementById('fixtures-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
-        document.getElementById('results-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
-      });
-
-    function teamSide(ev) {
-      const comps = ev.competitions[0].competitors;
-      const home = comps.find(c => c.homeAway === 'home');
-      const away = comps.find(c => c.homeAway === 'away');
-      const isHome = matchesTeam(home.team.displayName, teamName);
-      const us = isHome ? home : away;
-      const them = isHome ? away : home;
-      return { isHome, us, them };
-    }
-
-    function renderResults(events) {
-      const panel = document.getElementById('results-panel');
-      if (events.length === 0) {
-        panel.innerHTML = '<div class="status-box">No results yet this season.</div>';
-        return;
-      }
-      let html = '';
-      events.forEach(ev => {
-        const { isHome, us, them } = teamSide(ev);
-        const dateStr = new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-        html += `
-          <div class="list-item">
-            <div>
-              <div class="list-item-main">${isHome ? teamName + ' vs ' + them.team.displayName : them.team.displayName + ' vs ' + teamName}</div>
-              <div class="list-item-meta">${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
-            </div>
-            <div class="list-item-score">${us.score}–${them.score}</div>
-          </div>`;
-      });
-      panel.innerHTML = html;
-    }
-
-    function renderFixtures(events) {
-      const panel = document.getElementById('fixtures-panel');
-      if (events.length === 0) {
-        panel.innerHTML = '<div class="status-box">No upcoming fixtures scheduled yet.</div>';
-        return;
-      }
-      let html = '';
-      events.slice(0, 10).forEach(ev => {
-        const comps = ev.competitions[0].competitors;
-        const home = comps.find(c => c.homeAway === 'home');
-        const away = comps.find(c => c.homeAway === 'away');
-        const isHome = matchesTeam(home.team.displayName, teamName);
-        const opponent = isHome ? away.team.displayName : home.team.displayName;
-        const dateStr = new Date(ev.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
-        html += `
-          <div class="list-item">
-            <div>
-              <div class="list-item-main">${isHome ? teamName + ' vs ' + opponent : opponent + ' vs ' + teamName}</div>
-              <div class="list-item-meta">${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
-            </div>
-          </div>`;
-      });
-      panel.innerHTML = html;
-    }
-
-    function renderLastResult(ev, teamId, league) {
-      const { isHome, us, them } = teamSide(ev);
-      const usScore = parseInt(us.score), themScore = parseInt(them.score);
-      let outcomeClass = 'outcome-draw', outcomeText = 'DRAW';
-      if (usScore > themScore) { outcomeClass = 'outcome-win'; outcomeText = 'WIN'; }
-      else if (usScore < themScore) { outcomeClass = 'outcome-loss'; outcomeText = 'LOSS'; }
-
-      const dateStr = new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-
-      document.getElementById('content').innerHTML = `
-        <div class="result-card">
-          <div class="result-label">Last Result</div>
-          <span class="result-outcome ${outcomeClass}">${outcomeText}</span>
-          <div class="result-teams">
-            <div class="result-team us">${us.team.displayName}</div>
-            <div class="result-score">${us.score} – ${them.score}</div>
-            <div class="result-team">${them.team.displayName}</div>
-          </div>
-          <div class="result-meta">
-            <span>${dateStr}</span>
-            <span>${isHome ? 'Home' : 'Away'}</span>
-            <span>${divisionNames[div]}</span>
-          </div>
-          <div id="match-detail-extra"></div>
-        </div>
-      `;
-
-      // Fetch full match summary for goalscorers + stats
-      fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/summary?event=${ev.id}`)
-        .then(data => renderMatchDetail(data, us.team.displayName, them.team.displayName))
-        .catch(() => { /* goalscorer/stat detail is a bonus — fail silently if unavailable */ });
+      withTimeout(
+        fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/scoreboard?dates=${espnDateStr}&limit=100`),
+        6000
+      )
+        .then(data => {
+          const events = data.events || [];
+          const match = events.find(ev => {
+            const comps = ev.competitions[0].competitors;
+            const names = comps.map(c => c.team.displayName);
+            return names.some(n => matchesTeam(n, usName)) && names.some(n => matchesTeam(n, themName));
+          });
+          if (!match) throw new Error('not found');
+          return withTimeout(
+            fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/summary?event=${match.id}`),
+            6000
+          );
+        })
+        .then(data => renderMatchDetail(data, usName, themName))
+        .catch(() => { /* bonus only — main page already rendered fine either way */ });
     }
 
     function renderMatchDetail(data, usName, themName) {
