@@ -44,7 +44,7 @@
     font-family: 'JetBrains Mono', monospace;
   }
 
-  /* ---------- Ticker ---------- */
+  /* ---------- Article Ticker ---------- */
   .ticker-wrap {
     background: var(--panel);
     border-bottom: 1px solid var(--line);
@@ -54,7 +54,7 @@
   }
 
   .ticker-wrap::before {
-    content: 'RESULTS';
+    content: 'LATEST';
     position: absolute;
     left: 0; top: 0; bottom: 0;
     display: flex;
@@ -72,18 +72,20 @@
   .ticker-track {
     display: inline-flex;
     padding-left: 110px;
-    animation: scroll-ticker 38s linear infinite;
+    animation: scroll-ticker 64s linear infinite;
   }
 
-  .ticker-track span {
+  .ticker-track a {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12.5px;
-    color: var(--ink-muted);
-    padding: 10px 28px 10px 0;
+    font-weight: 400;
+    color: var(--ink);
+    padding: 10px 40px 10px 0;
     letter-spacing: 0.02em;
+    text-decoration: none;
   }
 
-  .ticker-track span b { color: var(--ink); font-weight: 700; }
+  .ticker-track a:hover { color: var(--gold); }
 
   @keyframes scroll-ticker {
     0% { transform: translateX(0); }
@@ -535,8 +537,33 @@
 <body>
 
   <div class="ticker-wrap">
-    <div class="ticker-track" id="ticker-track">
-      <span>Loading latest results…</span>
+    <div class="ticker-track">
+      <a href="article.html">The clubs everyone stopped watching are where the season is actually being decided</a>
+      <a href="article.html">Why the newly promoted side's back three is quietly the best defensive system outside the top six</a>
+      <a href="article.html">The loan system is quietly reshaping who actually wins the title race</a>
+      <a href="article.html">A mid-table club's recruitment model, explained in four transfers</a>
+      <a href="article.html">Inside the Championship's most sustainable rebuild — and the one nobody's copying</a>
+      <a href="article.html">The parachute payment gap, explained in one table</a>
+      <a href="article.html">The manager under more pressure than his table position suggests</a>
+      <a href="article.html">League One's points-per-game table looks completely different once you adjust for fixture difficulty</a>
+      <a href="article.html">The promoted side quietly built for a top-half finish, not just survival</a>
+      <a href="article.html">Three League One captains carrying more than their armband suggests</a>
+      <a href="article.html">Three League Two forwards who'll be playing Championship football by January</a>
+      <a href="article.html">The non-league promotion that's already paying off</a>
+      <a href="article.html">Inside the tightest relegation battle in the pyramid</a>
+      <a href="article.html">The clubs everyone stopped watching are where the season is actually being decided</a>
+      <a href="article.html">Why the newly promoted side's back three is quietly the best defensive system outside the top six</a>
+      <a href="article.html">The loan system is quietly reshaping who actually wins the title race</a>
+      <a href="article.html">A mid-table club's recruitment model, explained in four transfers</a>
+      <a href="article.html">Inside the Championship's most sustainable rebuild — and the one nobody's copying</a>
+      <a href="article.html">The parachute payment gap, explained in one table</a>
+      <a href="article.html">The manager under more pressure than his table position suggests</a>
+      <a href="article.html">League One's points-per-game table looks completely different once you adjust for fixture difficulty</a>
+      <a href="article.html">The promoted side quietly built for a top-half finish, not just survival</a>
+      <a href="article.html">Three League One captains carrying more than their armband suggests</a>
+      <a href="article.html">Three League Two forwards who'll be playing Championship football by January</a>
+      <a href="article.html">The non-league promotion that's already paying off</a>
+      <a href="article.html">Inside the tightest relegation battle in the pyramid</a>
     </div>
   </div>
 
@@ -802,118 +829,15 @@
       1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
       2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
       3: ["AFC Wimbledon","Barnsley","Blackpool","Bradford City","Bromley","Burton Albion","Cambridge United","Doncaster Rovers","Huddersfield Town","Leicester City","Leyton Orient","Luton Town","Mansfield Town","Milton Keynes Dons","Notts County","Oxford United","Peterborough United","Plymouth Argyle","Reading","Sheffield Wednesday","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers"],
-      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Morecambe","Newport County","Northampton Town","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Newport County","Northampton Town","Oldham Athletic","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
     };
     const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
-
-    // MANUAL RESULTS — add this matchweek's results here yourself if you ever want
-    // instant certainty without waiting on the live feed. These always show first.
-    // Format: { team1, score1, score2, team2 }
-    const MANUAL_RESULTS = [
-      // { team1: "Arsenal", score1: 2, score2: 1, team2: "Chelsea" },
-    ];
-
-    function loadTickerResults() {
-      const track = document.getElementById('ticker-track');
-      const manualHtml = MANUAL_RESULTS.map(m =>
-        `<span><b>${m.team1} ${m.score1}–${m.score2} ${m.team2}</b> · FT</span>`
-      ).join('');
-
-      const SEASON = '2026-27';
-
-      // Fast, reliable source for the top two divisions
-      const ofFetches = [1, 2].map(div =>
-        fetch(`https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`)
-          .then(r => r.ok ? r.json() : { matches: [] })
-          .then(data => (data.matches || [])
-            .filter(m => m.score && m.score.ft)
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .slice(0, 8)
-            .map(m => `<span><b>${m.team1} ${m.score.ft[0]}–${m.score.ft[1]} ${m.team2}</b> · FT</span>`)
-          )
-          .catch(() => [])
-      );
-
-      // openfootball doesn't have League One/Two data for this season yet —
-      // ESPN does, but via a proxy that can be slow, so give it real time to respond.
-      function fetchViaProxy(targetUrl) {
-        const workerUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-        return fetch(workerUrl)
-          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); });
-      }
-
-      function espnDatePart(d) {
-        const pad = n => n < 10 ? '0' + n : n;
-        return d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
-      }
-
-      const today = new Date();
-      const past = new Date(today);
-      past.setDate(past.getDate() - 10);
-      const dateRange = `${espnDatePart(past)}-${espnDatePart(today)}`;
-
-      function withTimeoutTicker(promise, ms) {
-        return Promise.race([
-          promise,
-          new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
-        ]);
-      }
-
-      const espnFetches = ['eng.3', 'eng.4'].map(lg =>
-        withTimeoutTicker(
-          fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${dateRange}&limit=100`),
-          15000
-        )
-          .then(data => (data.events || [])
-            .filter(ev => ev.status && ev.status.type && ev.status.type.completed)
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .slice(0, 8)
-            .map(ev => {
-              const comps = ev.competitions[0].competitors;
-              const home = comps.find(c => c.homeAway === 'home');
-              const away = comps.find(c => c.homeAway === 'away');
-              return `<span><b>${home.team.displayName} ${home.score}–${away.score} ${away.team.displayName}</b> · FT</span>`;
-            })
-          )
-          .catch(() => [])
-      );
-
-      // Show PL/Championship immediately — don't make people wait on the slower L1/L2 source
-      Promise.all(ofFetches).then(ofResults => {
-        const ofHtml = ofResults.flat().join('');
-        const initialHtml = manualHtml + ofHtml;
-        if (initialHtml) {
-          track.innerHTML = initialHtml + initialHtml;
-        } else {
-          track.innerHTML = '<span>Loading latest results…</span>';
-        }
-
-        // Once League One/Two come through (can take a little while), add them in
-        Promise.all(espnFetches).then(espnResults => {
-          const espnHtml = espnResults.flat().join('');
-          const combinedHtml = manualHtml + ofHtml + espnHtml;
-          if (!combinedHtml) {
-            track.innerHTML = '<span>No completed results yet this season — check back soon.</span>';
-            return;
-          }
-          track.innerHTML = combinedHtml + combinedHtml;
-        }).catch(() => { /* L1/L2 unavailable — PL/Championship results still show above */ });
-      }).catch(() => {
-        // Live source failed entirely — fall back to manual results only, if any
-        if (manualHtml) {
-          track.innerHTML = manualHtml + manualHtml;
-        } else {
-          track.innerHTML = '<span>Results unavailable right now — check back soon.</span>';
-        }
-      });
-    }
-    loadTickerResults();
 
     const clubColors = {
       "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
       "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#149954","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
       "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
-      "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Morecambe":"#D2122E","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
+      "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Oldham Athletic":"#004996","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
     };
 
     const panel = document.getElementById('teams-dropdown-panel');
