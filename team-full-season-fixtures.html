@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — The92Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --panel: #F6F5F1;
+    --line: #E3E0D8;
+    --line-soft: #EDEAE3;
+    --ink: #2E3136;
+    --ink-muted: #74787E;
+    --gold: #149954;
+    --win: #3E8A4D;
+    --loss: #B5504B;
+    --draw: #74787E;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .display { font-family: 'Poppins', sans-serif; letter-spacing: 0.01em; }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 6vw 24px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; }
+  .nameplate span { color: var(--gold); }
+  nav {
+    display: flex; gap: 18px;
+    padding-bottom: 4px;
+  }
+  nav a, .nav-trigger {
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
+    color: var(--ink-muted); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
+    background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
+  }
+  nav a:hover, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
+
+  .nav-item { position: relative; }
+  .nav-trigger { display: flex; align-items: center; gap: 5px; }
+  .nav-trigger::after { content: '▾'; font-size: 8px; position: relative; top: 1px; }
+  .dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 26px; min-width: 620px; max-width: min(90vw, 700px);
+    grid-template-columns: repeat(4, 1fr); gap: 22px;
+    z-index: 60; max-height: 68vh; overflow-y: auto;
+  }
+  .nav-item:hover .dropdown-panel, .nav-item.open .dropdown-panel { display: grid; }
+
+  .dropdown-col h4 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+    margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  .dropdown-col a {
+    display: block; position: relative; overflow: hidden;
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 600;
+    color: #FFFFFF; padding: 7px 10px; margin-bottom: 3px;
+    border-radius: 3px; transition: filter .12s, transform .12s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  }
+  .dropdown-col a:hover { filter: brightness(1.1); transform: translateX(2px); }
+
+  .dropdown-footer {
+    grid-column: 1 / -1; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+  }
+  .dropdown-footer a { color: var(--gold); }
+  .dropdown-footer a:hover { border-bottom: 1px solid var(--gold); }
+
+  .league-dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 10px; min-width: 200px;
+    flex-direction: column; gap: 2px;
+    z-index: 60;
+  }
+  .nav-item:hover .league-dropdown-panel, .nav-item.open .league-dropdown-panel { display: flex; }
+  .league-dropdown-panel a {
+    display: block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px;
+    color: var(--ink); padding: 10px 14px; border-radius: 4px;
+  }
+  .league-dropdown-panel a:hover { background: var(--bg); color: var(--gold); }
+
+  @media (max-width: 780px) {
+    .dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      border-left: none; border-right: none;
+      max-height: 60vh;
+    }
+  }
+
+  .breadcrumb {
+    max-width: 68ch; margin: 32px auto 0; padding: 0 6vw;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
+  }
+  .breadcrumb a:hover { color: var(--gold); }
+
+  main { max-width: 68ch; margin: 0 auto; padding: 24px 6vw 80px; }
+
+  .team-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--bg);
+    background: var(--gold); padding: 4px 9px; border-radius: 2px;
+    letter-spacing: 0.06em; display: inline-block; margin-bottom: 18px;
+  }
+  h1 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; text-transform: none;
+    font-size: clamp(30px, 5vw, 48px); margin-bottom: 36px; line-height: 1.1;
+  }
+
+  .result-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 32px;
+    margin-bottom: 20px;
+  }
+  .result-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px;
+  }
+  .result-teams {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .result-team { font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 500; flex: 1; }
+  .result-team.us { color: var(--team-color, var(--gold)); font-weight: 600; }
+  .result-score {
+    font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700;
+    padding: 6px 18px; border: 1px solid var(--line);
+  }
+  .result-meta {
+    font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--ink-muted);
+    display: flex; gap: 20px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid var(--line-soft);
+  }
+  .result-outcome {
+    display: inline-block; padding: 3px 10px; border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.04em; margin-bottom: 20px;
+  }
+  .outcome-win { background: var(--win); color: #0d1a10; }
+  .outcome-loss { background: var(--loss); color: #1a0d0d; }
+  .outcome-draw { background: var(--draw); color: #14171C; }
+
+  .status-box {
+    font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--ink-muted);
+    padding: 40px 0; text-align: center;
+  }
+
+  .section-tabs { display: flex; gap: 8px; margin: 36px 0 20px; }
+  .section-tab {
+    font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 13.5px;
+    padding: 9px 18px; border-radius: 20px; border: 1px solid var(--line);
+    color: var(--ink-muted); cursor: pointer; background: #FFFFFF;
+  }
+  .section-tab.active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
+  .section-panel { display: none; }
+  .section-panel.active { display: block; }
+
+  .list-item {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 14px 0; border-bottom: 1px solid var(--line-soft);
+  }
+  .list-item:last-child { border-bottom: none; }
+  .list-item-main { font-family: 'Poppins', sans-serif; font-size: 14.5px; color: var(--ink); }
+  .list-item-meta { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); margin-top: 2px; }
+  .list-item-score { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 15px; color: var(--ink); flex-shrink: 0; }
+
+  .goalscorers { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
+  .goalscorers h4 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 12.5px;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); margin-bottom: 10px;
+  }
+  .scorer-col { display: flex; gap: 32px; flex-wrap: wrap; }
+  .scorer-list { font-size: 13.5px; color: var(--ink); line-height: 1.7; }
+  .scorer-list b { display: block; font-family: 'Poppins', sans-serif; font-size: 12px; color: var(--gold); margin-bottom: 4px; }
+
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line); margin-top: 18px;
+  }
+  .stat-box { background: var(--panel); padding: 16px; text-align: center; }
+  .stat-box .val { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px; color: var(--ink); }
+  .stat-box .lbl { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-muted); text-transform: uppercase; margin-top: 2px; }
+
+  .division-note {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
+    margin-top: 24px;
+  }
+
+  .profile-strip {
+    display: flex; gap: 28px; flex-wrap: wrap;
+    margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line);
+  }
+  .profile-item { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--ink-muted); }
+  .profile-item b { display: block; font-family: 'Poppins', sans-serif; font-size: 14.5px; color: var(--ink); margin-top: 2px; }
+
+  .fan-views-section { margin-top: 48px; }
+  .fan-views-head { margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .fan-views-head h2 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; }
+  .fan-tweet-placeholder {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 20px; margin-bottom: 14px; font-size: 14px; color: var(--ink-muted);
+  }
+  .fan-submit-box {
+    margin-top: 18px; padding: 18px 22px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+  }
+  .fan-submit-box p { font-size: 14px; color: var(--ink-muted); margin: 0; }
+  .fan-submit-box a { color: var(--gold); font-weight: 600; font-size: 14px; }
+  .fan-submit-box a:hover { border-bottom: 1px solid var(--gold); }
+
+  footer {
+    max-width: 68ch; margin: 0 auto; padding: 40px 6vw 56px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  footer p { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+  <header>
+    <div><a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a></div>
+    <nav>
+      <a href="membership.html">Membership</a>
+      <a href="index.html#latest">Latest</a>
+      <div class="nav-item" id="teams-nav-item">
+        <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
+        <div class="dropdown-panel" id="teams-dropdown-panel"></div>
+      </div>
+      <div class="nav-item" id="tables-nav-item">
+        <button class="nav-trigger" type="button" id="tables-trigger">Tables</button>
+        <div class="league-dropdown-panel" id="tables-dropdown-panel">
+          <a href="tables.html?div=1">Premier League</a>
+          <a href="tables.html?div=2">Championship</a>
+          <a href="tables.html?div=3">League One</a>
+          <a href="tables.html?div=4">League Two</a>
+        </div>
+      </div>
+      <a href="index.html#spotlight">Spotlight</a>
+      <a href="ins-and-outs.html">Ins &amp; Outs</a>
+      <a href="accumulator.html">This Week's Acca Picks</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="teams.html">All 92</a> / <span id="crumb-team">Team</span></div>
+
+  <main>
+    <span class="team-tag" id="division-tag">Division</span>
+    <h1 id="team-name">Loading…</h1>
+    <div id="club-profile"></div>
+
+    <div id="content">
+      <div class="status-box">Hang on, checking how they got on…</div>
+    </div>
+
+    <div class="section-tabs">
+      <a class="section-tab active" id="full-fixtures-link" href="#">Fixtures</a>
+      <div class="section-tab" data-panel="results-panel">Results</div>
+    </div>
+
+    <div class="section-panel active" id="fixtures-panel">
+      <div class="status-box">Loading fixtures…</div>
+    </div>
+    <div class="section-panel" id="results-panel">
+      <div class="status-box">Loading results…</div>
+    </div>
+
+    <div class="fan-views-section">
+      <div class="fan-views-head">
+        <h2 class="display">What fans are saying</h2>
+      </div>
+      <div id="fan-tweets">
+        <div class="fan-tweet-placeholder">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">[Paste a real embedded post here via X's "Embed post" option — this is a placeholder]</p>&mdash; Fan account (@handle)</blockquote>
+        </div>
+      </div>
+      <div class="fan-submit-box">
+        <p>Got a take on your club? We feature genuine fan voices here every week.</p>
+        <a href="membership.html">Submit yours →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>THE92WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hello@92weekly.com">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const clubColors = {
+      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#149954","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+      "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
+      "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Oldham Athletic":"#004996","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
+    };
+
+    const clubProfiles = {
+      "Arsenal":{nickname:"The Gunners",stadium:"Emirates Stadium",founded:"1886"},"Aston Villa":{nickname:"The Villans",stadium:"Villa Park",founded:"1874"},"Bournemouth":{nickname:"The Cherries",stadium:"Vitality Stadium",founded:"1899"},"Brentford":{nickname:"The Bees",stadium:"Gtech Community Stadium",founded:"1889"},"Brighton & Hove Albion":{nickname:"The Seagulls",stadium:"Amex Stadium",founded:"1901"},"Chelsea":{nickname:"The Blues",stadium:"Stamford Bridge",founded:"1905"},"Coventry City":{nickname:"The Sky Blues",stadium:"Coventry Building Society Arena",founded:"1883"},"Crystal Palace":{nickname:"The Eagles",stadium:"Selhurst Park",founded:"1905"},"Everton":{nickname:"The Toffees",stadium:"Goodison Park",founded:"1878"},"Fulham":{nickname:"The Cottagers",stadium:"Craven Cottage",founded:"1879"},"Hull City":{nickname:"The Tigers",stadium:"MKM Stadium",founded:"1904"},"Ipswich Town":{nickname:"The Tractor Boys",stadium:"Portman Road",founded:"1878"},"Leeds United":{nickname:"The Whites",stadium:"Elland Road",founded:"1919"},"Liverpool":{nickname:"The Reds",stadium:"Anfield",founded:"1892"},"Manchester City":{nickname:"The Citizens",stadium:"Etihad Stadium",founded:"1880"},"Manchester United":{nickname:"The Red Devils",stadium:"Old Trafford",founded:"1878"},"Newcastle United":{nickname:"The Magpies",stadium:"St James' Park",founded:"1892"},"Nottingham Forest":{nickname:"The Tricky Trees",stadium:"City Ground",founded:"1865"},"Sunderland":{nickname:"The Black Cats",stadium:"Stadium of Light",founded:"1879"},"Tottenham Hotspur":{nickname:"Spurs",stadium:"Tottenham Hotspur Stadium",founded:"1882"},
+      "Birmingham City":{nickname:"The Blues",stadium:"St Andrew's",founded:"1875"},"Blackburn Rovers":{nickname:"Rovers",stadium:"Ewood Park",founded:"1875"},"Bolton Wanderers":{nickname:"The Trotters",stadium:"Toughsheet Community Stadium",founded:"1874"},"Bristol City":{nickname:"The Robins",stadium:"Ashton Gate",founded:"1894"},"Burnley":{nickname:"The Clarets",stadium:"Turf Moor",founded:"1882"},"Cardiff City":{nickname:"The Bluebirds",stadium:"Cardiff City Stadium",founded:"1899"},"Charlton Athletic":{nickname:"The Addicks",stadium:"The Valley",founded:"1905"},"Derby County":{nickname:"The Rams",stadium:"Pride Park",founded:"1884"},"Lincoln City":{nickname:"The Imps",stadium:"LNER Stadium",founded:"1884"},"Middlesbrough":{nickname:"Boro",stadium:"Riverside Stadium",founded:"1876"},"Millwall":{nickname:"The Lions",stadium:"The Den",founded:"1885"},"Norwich City":{nickname:"The Canaries",stadium:"Carrow Road",founded:"1902"},"Portsmouth":{nickname:"Pompey",stadium:"Fratton Park",founded:"1898"},"Preston North End":{nickname:"The Lilywhites",stadium:"Deepdale",founded:"1880"},"Queens Park Rangers":{nickname:"The Hoops",stadium:"Loftus Road",founded:"1882"},"Sheffield United":{nickname:"The Blades",stadium:"Bramall Lane",founded:"1889"},"Southampton":{nickname:"The Saints",stadium:"St Mary's Stadium",founded:"1885"},"Stoke City":{nickname:"The Potters",stadium:"bet365 Stadium",founded:"1863"},"Swansea City":{nickname:"The Swans",stadium:"Swansea.com Stadium",founded:"1912"},"Watford":{nickname:"The Hornets",stadium:"Vicarage Road",founded:"1881"},"West Bromwich Albion":{nickname:"The Baggies",stadium:"The Hawthorns",founded:"1878"},"West Ham United":{nickname:"The Hammers",stadium:"London Stadium",founded:"1895"},"Wolverhampton Wanderers":{nickname:"Wolves",stadium:"Molineux",founded:"1877"},"Wrexham":{nickname:"The Red Dragons",stadium:"Racecourse Ground",founded:"1864"},
+      "Barnsley":{nickname:"The Tykes",stadium:"Oakwell",founded:"1887"},"Blackpool":{nickname:"The Seasiders",stadium:"Bloomfield Road",founded:"1887"},"Bradford City":{nickname:"The Bantams",stadium:"Valley Parade",founded:"1903"},"Doncaster Rovers":{nickname:"Rovers",stadium:"Eco-Power Stadium",founded:"1879"},"Huddersfield Town":{nickname:"The Terriers",stadium:"John Smith's Stadium",founded:"1908"},"Leyton Orient":{nickname:"The O's",stadium:"Brisbane Road",founded:"1881"},"Luton Town":{nickname:"The Hatters",stadium:"Kenilworth Road",founded:"1885"},"Mansfield Town":{nickname:"The Stags",stadium:"One Call Stadium",founded:"1897"},"Peterborough United":{nickname:"Posh",stadium:"Weston Homes Stadium",founded:"1934"},"Plymouth Argyle":{nickname:"The Pilgrims",stadium:"Home Park",founded:"1886"},"Reading":{nickname:"The Royals",stadium:"Select Car Leasing Stadium",founded:"1871"},"Stevenage":{nickname:"Boro",stadium:"Lamex Stadium",founded:"1976"},"Stockport County":{nickname:"The Hatters",stadium:"Edgeley Park",founded:"1883"},"Wigan Athletic":{nickname:"The Latics",stadium:"Brick Community Stadium",founded:"1932"},"Wycombe Wanderers":{nickname:"The Chairboys",stadium:"Adams Park",founded:"1887"},"Burton Albion":{nickname:"The Brewers",stadium:"Pirelli Stadium",founded:"1950"},"AFC Wimbledon":{nickname:"The Dons",stadium:"Cherry Red Records Stadium",founded:"2002"},"Oxford United":{nickname:"The U's",stadium:"Kassam Stadium",founded:"1893"},"Leicester City":{nickname:"The Foxes",stadium:"King Power Stadium",founded:"1884"},"Sheffield Wednesday":{nickname:"The Owls",stadium:"Hillsborough",founded:"1867"},"Bromley":{nickname:"The Ravens",stadium:"Hayes Lane",founded:"1892"},"Milton Keynes Dons":{nickname:"The Dons",stadium:"Stadium MK",founded:"2004"},"Cambridge United":{nickname:"The U's",stadium:"Cledara Abbey Stadium",founded:"1919"},"Notts County":{nickname:"The Magpies",stadium:"Meadow Lane",founded:"1862"},
+      "Accrington Stanley":{nickname:"Stanley",stadium:"Wham Stadium",founded:"1968"},"Barnet":{nickname:"The Bees",stadium:"The Hive",founded:"1888"},"Bristol Rovers":{nickname:"The Gas",stadium:"Memorial Stadium",founded:"1883"},"Cheltenham Town":{nickname:"The Robins",stadium:"Completely-Suzuki Stadium",founded:"1892"},"Chesterfield":{nickname:"The Spireites",stadium:"SMH Group Stadium",founded:"1866"},"Colchester United":{nickname:"The U's",stadium:"JobServe Community Stadium",founded:"1937"},"Crawley Town":{nickname:"The Reds",stadium:"Broadfield Stadium",founded:"1896"},"Crewe Alexandra":{nickname:"The Railwaymen",stadium:"Mornflake Stadium",founded:"1877"},"Fleetwood Town":{nickname:"The Cod Army",stadium:"Highbury Stadium",founded:"1997"},"Gillingham":{nickname:"The Gills",stadium:"Priestfield Stadium",founded:"1893"},"Grimsby Town":{nickname:"The Mariners",stadium:"Blundell Park",founded:"1878"},"Oldham Athletic":{nickname:"The Latics",stadium:"Boundary Park",founded:"1895"},"Newport County":{nickname:"The Exiles",stadium:"Rodney Parade",founded:"1912"},"Salford City":{nickname:"The Ammies",stadium:"Peninsula Stadium",founded:"1940"},"Shrewsbury Town":{nickname:"The Shrews",stadium:"Croud Meadow",founded:"1886"},"Swindon Town":{nickname:"The Robins",stadium:"County Ground",founded:"1879"},"Tranmere Rovers":{nickname:"Rovers",stadium:"Prenton Park",founded:"1884"},"Walsall":{nickname:"The Saddlers",stadium:"Bescot Stadium",founded:"1888"},"Exeter City":{nickname:"The Grecians",stadium:"St James Park",founded:"1904"},"Port Vale":{nickname:"The Valiants",stadium:"Vale Park",founded:"1876"},"Rotherham United":{nickname:"The Millers",stadium:"New York Stadium",founded:"1925"},"Northampton Town":{nickname:"The Cobblers",stadium:"Sixfields Stadium",founded:"1897"},"York City":{nickname:"The Minstermen",stadium:"LNER Community Stadium",founded:"1922"},"Rochdale":{nickname:"Dale",stadium:"Crown Oil Arena",founded:"1907"}
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const teamName = params.get('team') || '';
+    const div = params.get('div') || '1';
+    const divisionNames = { 1: 'Premier League', 2: 'Championship', 3: 'League One', 4: 'League Two' };
+
+    const teamColor = clubColors[teamName] || '#149954';
+    document.documentElement.style.setProperty('--team-color', teamColor);
+    document.body.style.background = `color-mix(in srgb, ${teamColor} 22%, white)`;
+
+    document.getElementById('team-name').textContent = teamName;
+    document.getElementById('crumb-team').textContent = teamName;
+    document.getElementById('division-tag').textContent = divisionNames[div] || 'Division';
+    document.getElementById('division-tag').style.background = teamColor;
+    document.getElementById('division-tag').style.color = '#FFFFFF';
+
+    const fullFixturesLink = document.getElementById('full-fixtures-link');
+    if (fullFixturesLink) {
+      fullFixturesLink.href = `fixtures.html?team=${encodeURIComponent(teamName)}&div=${encodeURIComponent(div)}`;
+    }
+
+    const profile = clubProfiles[teamName];
+    if (profile) {
+      document.getElementById('club-profile').innerHTML = `
+        <div class="profile-strip">
+          <div class="profile-item">Nickname<b>${profile.nickname}</b></div>
+          <div class="profile-item">Stadium<b>${profile.stadium}</b></div>
+          <div class="profile-item">Founded<b>${profile.founded}</b></div>
+        </div>
+      `;
+    }
+
+    function normalize(s) {
+      return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    }
+
+    function matchesTeam(fixtureName, target) {
+      const a = normalize(fixtureName);
+      const b = normalize(target);
+      return a.includes(b) || b.includes(a);
+    }
+
+    function fetchViaProxy(targetUrl) {
+      const workerUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+      return fetch(workerUrl)
+        .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); });
+    }
+
+    const ESPN_LEAGUE = { 1: 'eng.1', 2: 'eng.2', 3: 'eng.3', 4: 'eng.4' };
+    const SEASON = '2026-27';
+
+    // Common shape both sources get converted to: { date, team1, team2, score1, score2 }
+    // score1/score2 are null for matches not yet played.
+
+    function loadFromOpenFootball() {
+      const dataUrl = `https://raw.githubusercontent.com/openfootball/football.json/master/${SEASON}/en.${div}.json`;
+      return fetch(dataUrl)
+        .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+        .then(data => (data.matches || [])
+          .filter(m => matchesTeam(m.team1, teamName) || matchesTeam(m.team2, teamName))
+          .map(m => ({
+            date: m.date,
+            team1: m.team1,
+            team2: m.team2,
+            score1: m.score && m.score.ft ? m.score.ft[0] : null,
+            score2: m.score && m.score.ft ? m.score.ft[1] : null
+          }))
+        );
+    }
+
+    // openfootball doesn't have League One/Two data for this season yet — ESPN does,
+    // via a proxy that can take a little while, so this path is slower but reliable.
+    function loadFromESPN() {
+      const league = ESPN_LEAGUE[div];
+      return fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=50`)
+        .then(data => {
+          const teamList = (data.sports?.[0]?.leagues?.[0]?.teams || []).map(t => t.team);
+          const match = teamList.find(t => matchesTeam(t.displayName, teamName) || matchesTeam(t.name, teamName));
+          if (!match) throw new Error('team-not-found');
+          return match.id;
+        })
+        .then(teamId =>
+          fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${teamId}/schedule`)
+        )
+        .then(data => (data.events || []).map(ev => {
+          const comps = ev.competitions[0].competitors;
+          const home = comps.find(c => c.homeAway === 'home');
+          const away = comps.find(c => c.homeAway === 'away');
+          const completed = !!(ev.competitions?.[0]?.status?.type?.completed);
+          return {
+            date: ev.date,
+            team1: home.team.displayName,
+            team2: away.team.displayName,
+            score1: completed ? parseInt(home.score) : null,
+            score2: completed ? parseInt(away.score) : null
+          };
+        }));
+    }
+
+    function withTimeoutMatches(promise, ms) {
+      return Promise.race([
+        promise,
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+      ]);
+    }
+
+    // For League One/Two: use manual data if it's been added for this club (instant,
+    // guaranteed correct). Otherwise make one time-limited attempt at the live source —
+    // if that doesn't succeed quickly, show an honest message rather than hang.
+    function loadForL1L2() {
+      const manual = MANUAL_L1L2_MATCHES[teamName];
+      return withTimeoutMatches(loadFromESPN(), 12000)
+        .then(matches => matches && matches.length ? matches : (manual || []))
+        .catch(() => manual || []);
+    }
+
+    // MANUAL LEAGUE ONE / LEAGUE TWO MATCHES — no reliable free automated source
+    // exists for these two divisions yet. Add match data here for a club and it
+    // will be used instantly instead of trying (and possibly failing) live sources.
+    // Format per club: { date: "YYYY-MM-DD", team1, team2, score1, score2 }
+    // score1/score2 as null means the match hasn't been played (a fixture).
+    // Example:
+    // "Barnsley": [
+    //   { date: "2026-08-23", team1: "Barnsley", team2: "Bolton Wanderers", score1: 2, score2: 1 },
+    //   { date: "2026-08-30", team1: "Wycombe Wanderers", team2: "Barnsley", score1: null, score2: null }
+    // ],
+    const MANUAL_L1L2_MATCHES = {
+      "AFC Wimbledon": [ { date: "2026-08-15", team1: "Huddersfield Town", team2: "AFC Wimbledon", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "AFC Wimbledon", team2: "Reading", score1: 0, score2: 0 }, { date: "2026-08-30", team1: "AFC Wimbledon", team2: "Wigan Athletic", score1: null, score2: null } ],
+      "Accrington Stanley": [ { date: "2026-08-15", team1: "Accrington Stanley", team2: "Colchester United", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Exeter City", team2: "Accrington Stanley", score1: 2, score2: 0 }, { date: "2026-08-29", team1: "Walsall", team2: "Accrington Stanley", score1: null, score2: null } ],
+      "Barnet": [ { date: "2026-08-15", team1: "Barnet", team2: "Salford City", score1: 3, score2: 1 }, { date: "2026-08-22", team1: "Shrewsbury Town", team2: "Barnet", score1: 1, score2: 3 }, { date: "2026-08-29", team1: "Barnet", team2: "Cheltenham Town", score1: null, score2: null } ],
+      "Barnsley": [ { date: "2026-08-15", team1: "Barnsley", team2: "Bromley", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Doncaster Rovers", team2: "Barnsley", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Leyton Orient", team2: "Barnsley", score1: null, score2: null } ],
+      "Blackpool": [ { date: "2026-08-15", team1: "Blackpool", team2: "Wycombe Wanderers", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Stockport County", team2: "Blackpool", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Blackpool", team2: "Peterborough United", score1: null, score2: null } ],
+      "Bradford City": [ { date: "2026-08-15", team1: "Bradford City", team2: "Peterborough United", score1: 2, score2: 0 }, { date: "2026-08-20", team1: "Sheffield Wednesday", team2: "Bradford City", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Plymouth Argyle", team2: "Bradford City", score1: null, score2: null } ],
+      "Bristol Rovers": [ { date: "2026-08-15", team1: "York City", team2: "Bristol Rovers", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Bristol Rovers", team2: "Newport County", score1: 5, score2: 3 }, { date: "2026-08-29", team1: "Crawley Town", team2: "Bristol Rovers", score1: null, score2: null } ],
+      "Bromley": [ { date: "2026-08-15", team1: "Barnsley", team2: "Bromley", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Bromley", team2: "Cambridge United", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Sheffield Wednesday", team2: "Bromley", score1: null, score2: null } ],
+      "Burton Albion": [ { date: "2026-08-15", team1: "Burton Albion", team2: "Stevenage", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Leicester City", team2: "Burton Albion", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Notts County", team2: "Burton Albion", score1: null, score2: null } ],
+      "Cambridge United": [ { date: "2026-08-15", team1: "Cambridge United", team2: "Wigan Athletic", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Bromley", team2: "Cambridge United", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Cambridge United", team2: "Huddersfield Town", score1: null, score2: null } ],
+      "Cheltenham Town": [ { date: "2026-08-15", team1: "Cheltenham Town", team2: "Rotherham United", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Swindon Town", team2: "Cheltenham Town", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Barnet", team2: "Cheltenham Town", score1: null, score2: null } ],
+      "Chesterfield": [ { date: "2026-08-15", team1: "Chesterfield", team2: "Fleetwood Town", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Salford City", team2: "Chesterfield", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Rotherham United", team2: "Chesterfield", score1: null, score2: null } ],
+      "Colchester United": [ { date: "2026-08-15", team1: "Accrington Stanley", team2: "Colchester United", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Colchester United", team2: "Oldham Athletic", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Colchester United", team2: "Rochdale", score1: null, score2: null } ],
+      "Crawley Town": [ { date: "2026-08-15", team1: "Crawley Town", team2: "Crewe Alexandra", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Rochdale", team2: "Crawley Town", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Crawley Town", team2: "Bristol Rovers", score1: null, score2: null } ],
+      "Crewe Alexandra": [ { date: "2026-08-15", team1: "Crawley Town", team2: "Crewe Alexandra", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Crewe Alexandra", team2: "Northampton Town", score1: 1, score2: 0 }, { date: "2026-08-29", team1: "Port Vale", team2: "Crewe Alexandra", score1: null, score2: null } ],
+      "Doncaster Rovers": [ { date: "2026-08-15", team1: "Mansfield Town", team2: "Doncaster Rovers", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Doncaster Rovers", team2: "Barnsley", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Stevenage", team2: "Doncaster Rovers", score1: null, score2: null } ],
+      "Exeter City": [ { date: "2026-08-15", team1: "Grimsby Town", team2: "Exeter City", score1: 1, score2: 0 }, { date: "2026-08-22", team1: "Exeter City", team2: "Accrington Stanley", score1: 2, score2: 0 }, { date: "2026-08-29", team1: "York City", team2: "Exeter City", score1: null, score2: null } ],
+      "Fleetwood Town": [ { date: "2026-08-15", team1: "Chesterfield", team2: "Fleetwood Town", score1: 0, score2: 1 }, { date: "2026-08-22", team1: "Fleetwood Town", team2: "Gillingham", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Grimsby Town", team2: "Fleetwood Town", score1: null, score2: null } ],
+      "Gillingham": [ { date: "2026-08-15", team1: "Gillingham", team2: "Walsall", score1: 0, score2: 3 }, { date: "2026-08-22", team1: "Fleetwood Town", team2: "Gillingham", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Gillingham", team2: "Northampton Town", score1: null, score2: null } ],
+      "Grimsby Town": [ { date: "2026-08-15", team1: "Grimsby Town", team2: "Exeter City", score1: 1, score2: 0 }, { date: "2026-08-22", team1: "Walsall", team2: "Grimsby Town", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Grimsby Town", team2: "Fleetwood Town", score1: null, score2: null } ],
+      "Huddersfield Town": [ { date: "2026-08-15", team1: "Huddersfield Town", team2: "AFC Wimbledon", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "Milton Keynes Dons", team2: "Huddersfield Town", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Cambridge United", team2: "Huddersfield Town", score1: null, score2: null }, { date: "2026-09-01", team1: "Huddersfield Town", team2: "Oxford United", score1: null, score2: null } ],
+      "Leicester City": [ { date: "2026-08-15", team1: "Notts County", team2: "Leicester City", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Leicester City", team2: "Burton Albion", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Milton Keynes Dons", team2: "Leicester City", score1: null, score2: null } ],
+      "Leyton Orient": [ { date: "2026-08-15", team1: "Leyton Orient", team2: "Sheffield Wednesday", score1: 1, score2: 2 }, { date: "2026-08-22", team1: "Wigan Athletic", team2: "Leyton Orient", score1: 0, score2: 2 }, { date: "2026-08-29", team1: "Leyton Orient", team2: "Barnsley", score1: null, score2: null } ],
+      "Luton Town": [ { date: "2026-08-15", team1: "Reading", team2: "Luton Town", score1: 3, score2: 4 }, { date: "2026-08-22", team1: "Luton Town", team2: "Notts County", score1: 2, score2: 2 }, { date: "2026-08-30", team1: "Mansfield Town", team2: "Luton Town", score1: null, score2: null } ],
+      "Mansfield Town": [ { date: "2026-08-15", team1: "Mansfield Town", team2: "Doncaster Rovers", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Peterborough United", team2: "Mansfield Town", score1: 2, score2: 1 }, { date: "2026-08-30", team1: "Mansfield Town", team2: "Luton Town", score1: null, score2: null }, { date: "2026-09-02", team1: "Reading", team2: "Mansfield Town", score1: null, score2: null } ],
+      "Milton Keynes Dons": [ { date: "2026-08-15", team1: "Oxford United", team2: "Milton Keynes Dons", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Milton Keynes Dons", team2: "Huddersfield Town", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Milton Keynes Dons", team2: "Leicester City", score1: null, score2: null } ],
+      "Newport County": [ { date: "2026-08-15", team1: "Newport County", team2: "Rochdale", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "Bristol Rovers", team2: "Newport County", score1: 5, score2: 3 }, { date: "2026-08-29", team1: "Newport County", team2: "Tranmere Rovers", score1: null, score2: null } ],
+      "Northampton Town": [ { date: "2026-08-15", team1: "Northampton Town", team2: "Swindon Town", score1: 0, score2: 0 }, { date: "2026-08-22", team1: "Crewe Alexandra", team2: "Northampton Town", score1: 1, score2: 0 }, { date: "2026-08-29", team1: "Gillingham", team2: "Northampton Town", score1: null, score2: null } ],
+      "Notts County": [ { date: "2026-08-15", team1: "Notts County", team2: "Leicester City", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Luton Town", team2: "Notts County", score1: 2, score2: 2 }, { date: "2026-08-29", team1: "Notts County", team2: "Burton Albion", score1: null, score2: null } ],
+      "Oldham Athletic": [ { date: "2026-08-15", team1: "Oldham Athletic", team2: "Port Vale", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Colchester United", team2: "Oldham Athletic", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Oldham Athletic", team2: "Swindon Town", score1: null, score2: null } ],
+      "Oxford United": [ { date: "2026-08-15", team1: "Oxford United", team2: "Milton Keynes Dons", score1: 2, score2: 2 }, { date: "2026-08-22", team1: "Stevenage", team2: "Oxford United", score1: 1, score2: 2 }, { date: "2026-09-01", team1: "Huddersfield Town", team2: "Oxford United", score1: null, score2: null } ],
+      "Peterborough United": [ { date: "2026-08-15", team1: "Bradford City", team2: "Peterborough United", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Peterborough United", team2: "Mansfield Town", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Blackpool", team2: "Peterborough United", score1: null, score2: null } ],
+      "Plymouth Argyle": [ { date: "2026-08-15", team1: "Plymouth Argyle", team2: "Stockport County", score1: 1, score2: 3 }, { date: "2026-08-22", team1: "Wycombe Wanderers", team2: "Plymouth Argyle", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Plymouth Argyle", team2: "Bradford City", score1: null, score2: null } ],
+      "Port Vale": [ { date: "2026-08-15", team1: "Oldham Athletic", team2: "Port Vale", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Port Vale", team2: "Tranmere Rovers", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Port Vale", team2: "Crewe Alexandra", score1: null, score2: null } ],
+      "Reading": [ { date: "2026-08-15", team1: "Reading", team2: "Luton Town", score1: 3, score2: 4 }, { date: "2026-08-22", team1: "AFC Wimbledon", team2: "Reading", score1: 0, score2: 0 }, { date: "2026-09-02", team1: "Reading", team2: "Mansfield Town", score1: null, score2: null } ],
+      "Rochdale": [ { date: "2026-08-15", team1: "Newport County", team2: "Rochdale", score1: 3, score2: 0 }, { date: "2026-08-22", team1: "Rochdale", team2: "Crawley Town", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Colchester United", team2: "Rochdale", score1: null, score2: null } ],
+      "Rotherham United": [ { date: "2026-08-15", team1: "Cheltenham Town", team2: "Rotherham United", score1: 2, score2: 1 }, { date: "2026-08-22", team1: "Rotherham United", team2: "York City", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Rotherham United", team2: "Chesterfield", score1: null, score2: null } ],
+      "Salford City": [ { date: "2026-08-15", team1: "Barnet", team2: "Salford City", score1: 3, score2: 1 }, { date: "2026-08-22", team1: "Salford City", team2: "Chesterfield", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Shrewsbury Town", team2: "Salford City", score1: null, score2: null } ],
+      "Sheffield Wednesday": [ { date: "2026-08-15", team1: "Leyton Orient", team2: "Sheffield Wednesday", score1: 1, score2: 2 }, { date: "2026-08-20", team1: "Sheffield Wednesday", team2: "Bradford City", score1: 0, score2: 1 }, { date: "2026-08-29", team1: "Sheffield Wednesday", team2: "Bromley", score1: null, score2: null } ],
+      "Shrewsbury Town": [ { date: "2026-08-15", team1: "Tranmere Rovers", team2: "Shrewsbury Town", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Shrewsbury Town", team2: "Barnet", score1: 1, score2: 3 }, { date: "2026-08-29", team1: "Shrewsbury Town", team2: "Salford City", score1: null, score2: null } ],
+      "Stevenage": [ { date: "2026-08-15", team1: "Burton Albion", team2: "Stevenage", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Stevenage", team2: "Oxford United", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Stevenage", team2: "Doncaster Rovers", score1: null, score2: null } ],
+      "Stockport County": [ { date: "2026-08-15", team1: "Plymouth Argyle", team2: "Stockport County", score1: 1, score2: 3 }, { date: "2026-08-22", team1: "Stockport County", team2: "Blackpool", score1: 1, score2: 2 }, { date: "2026-08-29", team1: "Stockport County", team2: "Wycombe Wanderers", score1: null, score2: null } ],
+      "Swindon Town": [ { date: "2026-08-15", team1: "Northampton Town", team2: "Swindon Town", score1: 0, score2: 0 }, { date: "2026-08-22", team1: "Swindon Town", team2: "Cheltenham Town", score1: 2, score2: 1 }, { date: "2026-08-29", team1: "Oldham Athletic", team2: "Swindon Town", score1: null, score2: null } ],
+      "Tranmere Rovers": [ { date: "2026-08-15", team1: "Tranmere Rovers", team2: "Shrewsbury Town", score1: 2, score2: 0 }, { date: "2026-08-22", team1: "Port Vale", team2: "Tranmere Rovers", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Newport County", team2: "Tranmere Rovers", score1: null, score2: null } ],
+      "Walsall": [ { date: "2026-08-15", team1: "Gillingham", team2: "Walsall", score1: 0, score2: 3 }, { date: "2026-08-22", team1: "Walsall", team2: "Grimsby Town", score1: 0, score2: 0 }, { date: "2026-08-29", team1: "Walsall", team2: "Accrington Stanley", score1: null, score2: null } ],
+      "Wigan Athletic": [ { date: "2026-08-15", team1: "Cambridge United", team2: "Wigan Athletic", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Wigan Athletic", team2: "Leyton Orient", score1: 0, score2: 2 }, { date: "2026-08-30", team1: "AFC Wimbledon", team2: "Wigan Athletic", score1: null, score2: null } ],
+      "Wycombe Wanderers": [ { date: "2026-08-15", team1: "Blackpool", team2: "Wycombe Wanderers", score1: 1, score2: 1 }, { date: "2026-08-22", team1: "Wycombe Wanderers", team2: "Plymouth Argyle", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "Stockport County", team2: "Wycombe Wanderers", score1: null, score2: null } ],
+      "York City": [ { date: "2026-08-15", team1: "York City", team2: "Bristol Rovers", score1: 3, score2: 2 }, { date: "2026-08-22", team1: "Rotherham United", team2: "York City", score1: 1, score2: 1 }, { date: "2026-08-29", team1: "York City", team2: "Exeter City", score1: null, score2: null } ],
+    };
+
+    // MANUAL CUP MATCHES — covers FA Cup, Carabao Cup, and EFL Trophy for any
+    // of the 92 clubs. Works alongside the automatic league data (Premier League/
+    // Championship) and the manual league data above (League One/Two) — cup
+    // matches merge in regardless of division. Add entries the same way as
+    // above, but include a "competition" field.
+    // Format: { date, competition, team1, team2, score1, score2 }
+    // score1/score2 as null means the match hasn't been played (a fixture).
+    // Example:
+    // "Barnsley": [
+    //   { date: "2026-08-26", competition: "Carabao Cup", team1: "Barnsley", team2: "Wigan Athletic", score1: 1, score2: 1 }
+    // ],
+    const MANUAL_CUP_MATCHES = {
+      "Barnsley": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Barnsley", team2: "Crewe Alexandra", score1: null, score2: null } ],
+      "Birmingham City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Birmingham City", team2: "Brentford", score1: null, score2: null } ],
+      "Blackburn Rovers": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Blackburn Rovers", team2: "Sheffield United", score1: null, score2: null } ],
+      "Blackpool": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Blackpool", team2: "Lincoln City", score1: null, score2: null } ],
+      "Brentford": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Birmingham City", team2: "Brentford", score1: null, score2: null } ],
+      "Cambridge United": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Cambridge United", team2: "Millwall", score1: null, score2: null } ],
+      "Cardiff City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Cardiff City", team2: "Norwich City", score1: null, score2: null } ],
+      "Coventry City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Plymouth Argyle", team2: "Coventry City", score1: null, score2: null } ],
+      "Crewe Alexandra": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Barnsley", team2: "Crewe Alexandra", score1: null, score2: null } ],
+      "Doncaster Rovers": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Doncaster Rovers", team2: "Middlesbrough", score1: null, score2: null } ],
+      "Fleetwood Town": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Fleetwood Town", team2: "Shrewsbury Town", score1: null, score2: null } ],
+      "Hull City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Stoke City", team2: "Hull City", score1: null, score2: null } ],
+      "Ipswich Town": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Ipswich Town", team2: "Leicester City", score1: null, score2: null } ],
+      "Leeds United": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Nottingham Forest", team2: "Leeds United", score1: null, score2: null } ],
+      "Leicester City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Ipswich Town", team2: "Leicester City", score1: null, score2: null } ],
+      "Leyton Orient": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Walsall", team2: "Leyton Orient", score1: null, score2: null } ],
+      "Lincoln City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Blackpool", team2: "Lincoln City", score1: null, score2: null } ],
+      "Middlesbrough": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Doncaster Rovers", team2: "Middlesbrough", score1: null, score2: null } ],
+      "Millwall": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Cambridge United", team2: "Millwall", score1: null, score2: null } ],
+      "Norwich City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Cardiff City", team2: "Norwich City", score1: null, score2: null } ],
+      "Nottingham Forest": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Nottingham Forest", team2: "Leeds United", score1: null, score2: null } ],
+      "Peterborough United": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Watford", team2: "Peterborough United", score1: null, score2: null } ],
+      "Plymouth Argyle": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Plymouth Argyle", team2: "Coventry City", score1: null, score2: null } ],
+      "Reading": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Stevenage", team2: "Reading", score1: null, score2: null } ],
+      "Sheffield United": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Blackburn Rovers", team2: "Sheffield United", score1: null, score2: null } ],
+      "Sheffield Wednesday": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Sheffield Wednesday", team2: "Wolverhampton Wanderers", score1: null, score2: null } ],
+      "Shrewsbury Town": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Fleetwood Town", team2: "Shrewsbury Town", score1: null, score2: null } ],
+      "Southampton": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Southampton", team2: "West Ham United", score1: null, score2: null } ],
+      "Stevenage": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Stevenage", team2: "Reading", score1: null, score2: null } ],
+      "Stoke City": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Stoke City", team2: "Hull City", score1: null, score2: null } ],
+      "Walsall": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Walsall", team2: "Leyton Orient", score1: null, score2: null } ],
+      "Watford": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Watford", team2: "Peterborough United", score1: null, score2: null } ],
+      "West Ham United": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Southampton", team2: "West Ham United", score1: null, score2: null } ],
+      "Wolverhampton Wanderers": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Sheffield Wednesday", team2: "Wolverhampton Wanderers", score1: null, score2: null } ],
+    };
+
+    const loadMatches = (div === '3' || div === '4') ? loadForL1L2() : loadFromOpenFootball();
+
+    loadMatches
+      .then(allMatches => {
+        // Cup matches apply to every club, regardless of division or league data source
+        const cupMatches = MANUAL_CUP_MATCHES[teamName] || [];
+        allMatches = allMatches.concat(cupMatches);
+
+        const completed = allMatches.filter(m => m.score1 !== null && m.score2 !== null)
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+        const upcoming = allMatches.filter(m => m.score1 === null)
+          .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        renderFixtures(upcoming);
+        renderResults(completed);
+
+        if (completed.length === 0) {
+          document.getElementById('content').innerHTML =
+            `<div class="status-box">No completed match for ${teamName} yet this season. Check the Fixtures tab below for what's coming up.</div>`;
+          return;
+        }
+
+        renderLastResult(completed[0]);
+      })
+      .catch(err => {
+        const isL1L2 = (div === '3' || div === '4');
+        const message = isL1L2
+          ? `We don't have automated League One/League Two results set up reliably yet.<br><br>Check <a href="https://www.bbc.co.uk/sport/football" style="color:var(--gold)">BBC Sport</a> or the <a href="https://www.efl.com" style="color:var(--gold)">EFL site</a> for ${teamName}'s latest results in the meantime.`
+          : `Couldn't load results right now.<br><br>Try refreshing, or check back shortly.`;
+        document.getElementById('content').innerHTML = `<div class="status-box">${message}</div>`;
+        document.getElementById('fixtures-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
+        document.getElementById('results-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
+      });
+
+    function teamSide(m) {
+      const isHome = matchesTeam(m.team1, teamName);
+      const usName = isHome ? m.team1 : m.team2;
+      const themName = isHome ? m.team2 : m.team1;
+      const usScore = isHome ? m.score1 : m.score2;
+      const themScore = isHome ? m.score2 : m.score1;
+      return { isHome, usName, themName, usScore, themScore };
+    }
+
+    function renderResults(matches) {
+      const panel = document.getElementById('results-panel');
+      if (matches.length === 0) {
+        panel.innerHTML = '<div class="status-box">No results yet this season.</div>';
+        return;
+      }
+      let html = '';
+      matches.forEach(m => {
+        const { isHome, usName, themName, usScore, themScore } = teamSide(m);
+        const dateStr = new Date(m.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+        const comp = m.competition ? `${m.competition} · ` : '';
+        html += `
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">${isHome ? teamName + ' vs ' + themName : themName + ' vs ' + teamName}</div>
+              <div class="list-item-meta">${comp}${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
+            </div>
+            <div class="list-item-score">${usScore}–${themScore}</div>
+          </div>`;
+      });
+      panel.innerHTML = html;
+    }
+
+    function renderFixtures(matches) {
+      const panel = document.getElementById('fixtures-panel');
+      if (matches.length === 0) {
+        panel.innerHTML = '<div class="status-box">No upcoming fixtures scheduled yet.</div>';
+        return;
+      }
+      let html = '';
+      matches.slice(0, 10).forEach(m => {
+        const isHome = matchesTeam(m.team1, teamName);
+        const opponent = isHome ? m.team2 : m.team1;
+        const dateStr = new Date(m.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+        const comp = m.competition ? `${m.competition} · ` : '';
+        html += `
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">${isHome ? teamName + ' vs ' + opponent : opponent + ' vs ' + teamName}</div>
+              <div class="list-item-meta">${comp}${dateStr} · ${isHome ? 'Home' : 'Away'}</div>
+            </div>
+          </div>`;
+      });
+      html += '<div class="status-box" style="padding:20px 0 0;"><a href="fixtures.html?team='
+        + encodeURIComponent(teamName) + '&div=' + encodeURIComponent(div)
+        + '" style="color:var(--gold);font-family:Poppins,sans-serif;font-weight:600;">View full-season fixtures →</a></div>';
+      panel.innerHTML = html;
+    }
+
+    function renderLastResult(m) {
+      const { isHome, usName, themName, usScore, themScore } = teamSide(m);
+      let outcomeClass = 'outcome-draw', outcomeText = 'DRAW';
+      if (usScore > themScore) { outcomeClass = 'outcome-win'; outcomeText = 'WIN'; }
+      else if (usScore < themScore) { outcomeClass = 'outcome-loss'; outcomeText = 'LOSS'; }
+
+      const dateStr = new Date(m.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+      document.getElementById('content').innerHTML = `
+        <div class="result-card">
+          <div class="result-label">Last Result</div>
+          <span class="result-outcome ${outcomeClass}">${outcomeText}</span>
+          <div class="result-teams">
+            <div class="result-team us">${usName}</div>
+            <div class="result-score">${usScore} – ${themScore}</div>
+            <div class="result-team">${themName}</div>
+          </div>
+          <div class="result-meta">
+            <span>${dateStr}</span>
+            <span>${isHome ? 'Home' : 'Away'}</span>
+            <span>${m.competition ? m.competition : divisionNames[div]}</span>
+          </div>
+          <div id="match-detail-extra"></div>
+        </div>
+      `;
+
+      // Bonus only: try to find goalscorers/stats via ESPN. This can fail for any
+      // reason (proxy down, name mismatch, data shape) without affecting the page above.
+      tryLoadMatchDetail(usName, themName, m.date);
+    }
+
+    function withTimeout(promise, ms) {
+      return Promise.race([
+        promise,
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+      ]);
+    }
+
+    function tryLoadMatchDetail(usName, themName, dateStr) {
+      const league = ESPN_LEAGUE[div];
+      const d = new Date(dateStr);
+      const pad = n => n < 10 ? '0' + n : n;
+      const espnDateStr = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+
+      withTimeout(
+        fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/scoreboard?dates=${espnDateStr}&limit=100`),
+        6000
+      )
+        .then(data => {
+          const events = data.events || [];
+          const match = events.find(ev => {
+            const comps = ev.competitions[0].competitors;
+            const names = comps.map(c => c.team.displayName);
+            return names.some(n => matchesTeam(n, usName)) && names.some(n => matchesTeam(n, themName));
+          });
+          if (!match) throw new Error('not found');
+          return withTimeout(
+            fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/summary?event=${match.id}`),
+            6000
+          );
+        })
+        .then(data => renderMatchDetail(data, usName, themName))
+        .catch(() => { /* bonus only — main page already rendered fine either way */ });
+    }
+
+    function renderMatchDetail(data, usName, themName) {
+      const container = document.getElementById('match-detail-extra');
+      if (!container) return;
+
+      let html = '';
+
+      // Goalscorers
+      const keyEvents = (data.header?.competitions?.[0]?.details || []).filter(d => d.type?.text === 'Goal' || d.scoringPlay);
+      if (keyEvents.length > 0) {
+        const homeAbbrev = data.header?.competitions?.[0]?.competitors?.find(c => c.homeAway === 'home')?.team?.displayName;
+        const usGoals = [], themGoals = [];
+        keyEvents.forEach(k => {
+          const scorer = k.athletesInvolved?.[0]?.displayName || k.text || 'Goal';
+          const minute = k.clock?.displayValue || '';
+          const line = `${scorer} ${minute}`;
+          if (k.team?.displayName === usName || (!k.team && homeAbbrev === usName)) usGoals.push(line);
+          else themGoals.push(line);
+        });
+        if (usGoals.length || themGoals.length) {
+          html += `
+            <div class="goalscorers">
+              <h4>Goalscorers</h4>
+              <div class="scorer-col">
+                <div class="scorer-list"><b>${usName}</b>${usGoals.length ? usGoals.join('<br>') : '—'}</div>
+                <div class="scorer-list"><b>${themName}</b>${themGoals.length ? themGoals.join('<br>') : '—'}</div>
+              </div>
+            </div>`;
+        }
+      }
+
+      // Match stats
+      const stats = data.boxscore?.teams;
+      if (stats && stats.length === 2) {
+        const findStat = (teamStats, name) => teamStats?.statistics?.find(s => s.name === name)?.displayValue || '—';
+        const usStats = stats.find(s => s.team?.displayName === usName) || stats[0];
+        const possession = findStat(usStats, 'possessionPct');
+        const shots = findStat(usStats, 'totalShots');
+        const corners = findStat(usStats, 'wonCorners');
+        if (possession !== '—' || shots !== '—') {
+          html += `
+            <div class="stats-grid">
+              <div class="stat-box"><div class="val">${possession}</div><div class="lbl">Possession</div></div>
+              <div class="stat-box"><div class="val">${shots}</div><div class="lbl">Shots</div></div>
+              <div class="stat-box"><div class="val">${corners}</div><div class="lbl">Corners</div></div>
+            </div>`;
+        }
+      }
+
+      if (html) container.innerHTML = html;
+    }
+
+    document.querySelectorAll('.section-tab[data-panel]').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.section-tab[data-panel]').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.panel).classList.add('active');
+      });
+    });
+  </script>
+  <script>
+    const dropdownClubsByDiv = {
+      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
+      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
+      3: ["AFC Wimbledon","Barnsley","Blackpool","Bradford City","Bromley","Burton Albion","Cambridge United","Doncaster Rovers","Huddersfield Town","Leicester City","Leyton Orient","Luton Town","Mansfield Town","Milton Keynes Dons","Notts County","Oxford United","Peterborough United","Plymouth Argyle","Reading","Sheffield Wednesday","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Newport County","Northampton Town","Oldham Athletic","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
+    };
+    const dropdownDivNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
+
+    const navPanel = document.getElementById('teams-dropdown-panel');
+    if (navPanel) {
+      let navHtml = '';
+      for (const div in dropdownClubsByDiv) {
+        navHtml += `<div class="dropdown-col"><h4>${dropdownDivNames[div]}</h4>`;
+        dropdownClubsByDiv[div].forEach(name => {
+          const c = clubColors[name] || '#149954';
+          navHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:${c};">${name}</a>`;
+        });
+        navHtml += `</div>`;
+      }
+      navHtml += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
+      navPanel.innerHTML = navHtml;
+    }
+
+    const teamsItem = document.getElementById('teams-nav-item');
+    const teamsTrigger = document.getElementById('teams-trigger');
+    if (teamsItem && teamsTrigger) {
+      teamsTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        teamsItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        teamsItem.classList.remove('open');
+      });
+      navPanel.addEventListener('click', function(e) { e.stopPropagation(); });
+    }
+
+    const tablesItem = document.getElementById('tables-nav-item');
+    const tablesTrigger = document.getElementById('tables-trigger');
+    if (tablesItem && tablesTrigger) {
+      tablesTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        tablesItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        tablesItem.classList.remove('open');
+      });
+    }
+  </script>
+
+</body>
+</html>
