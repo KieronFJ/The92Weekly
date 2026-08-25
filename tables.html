@@ -292,17 +292,9 @@
     const tableCache = {};
 
     function fetchViaProxy(targetUrl) {
-      const proxies = [
-        u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
-        u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`
-      ];
-      function tryProxy(i) {
-        if (i >= proxies.length) return Promise.reject(new Error('all proxies failed'));
-        return fetch(proxies[i](targetUrl))
-          .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); })
-          .catch(() => tryProxy(i + 1));
-      }
-      return tryProxy(0);
+      const workerUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+      return fetch(workerUrl)
+        .then(r => { if (!r.ok) throw new Error('bad status'); return r.json(); });
     }
 
     function buildTable(div) {
