@@ -860,8 +860,18 @@
       past.setDate(past.getDate() - 10);
       const dateRange = `${espnDatePart(past)}-${espnDatePart(today)}`;
 
+      function withTimeoutTicker(promise, ms) {
+        return Promise.race([
+          promise,
+          new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+        ]);
+      }
+
       const espnFetches = ['eng.3', 'eng.4'].map(lg =>
-        fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${dateRange}&limit=100`)
+        withTimeoutTicker(
+          fetchViaProxy(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${dateRange}&limit=100`),
+          15000
+        )
           .then(data => (data.events || [])
             .filter(ev => ev.status && ev.status.type && ev.status.type.completed)
             .sort((a, b) => new Date(b.date) - new Date(a.date))

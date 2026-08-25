@@ -431,7 +431,39 @@
         }));
     }
 
-    const loadMatches = (div === '3' || div === '4') ? loadFromESPN() : loadFromOpenFootball();
+    function withTimeoutMatches(promise, ms) {
+      return Promise.race([
+        promise,
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+      ]);
+    }
+
+    // For League One/Two: use manual data if it's been added for this club (instant,
+    // guaranteed correct). Otherwise make one time-limited attempt at the live source —
+    // if that doesn't succeed quickly, show an honest message rather than hang.
+    function loadForL1L2() {
+      const manual = MANUAL_L1L2_MATCHES[teamName];
+      if (manual && manual.length > 0) {
+        return Promise.resolve(manual);
+      }
+      return withTimeoutMatches(loadFromESPN(), 12000);
+    }
+
+    // MANUAL LEAGUE ONE / LEAGUE TWO MATCHES — no reliable free automated source
+    // exists for these two divisions yet. Add match data here for a club and it
+    // will be used instantly instead of trying (and possibly failing) live sources.
+    // Format per club: { date: "YYYY-MM-DD", team1, team2, score1, score2 }
+    // score1/score2 as null means the match hasn't been played (a fixture).
+    // Example:
+    // "Barnsley": [
+    //   { date: "2026-08-23", team1: "Barnsley", team2: "Bolton Wanderers", score1: 2, score2: 1 },
+    //   { date: "2026-08-30", team1: "Wycombe Wanderers", team2: "Barnsley", score1: null, score2: null }
+    // ],
+    const MANUAL_L1L2_MATCHES = {
+      // "Barnsley": [ ... ],
+    };
+
+    const loadMatches = (div === '3' || div === '4') ? loadForL1L2() : loadFromOpenFootball();
 
     loadMatches
       .then(allMatches => {
@@ -452,8 +484,11 @@
         renderLastResult(completed[0]);
       })
       .catch(err => {
-        document.getElementById('content').innerHTML =
-          `<div class="status-box">Couldn't load results right now.<br><br>Try refreshing, or check back shortly.</div>`;
+        const isL1L2 = (div === '3' || div === '4');
+        const message = isL1L2
+          ? `We don't have automated League One/League Two results set up reliably yet.<br><br>Check <a href="https://www.bbc.co.uk/sport/football" style="color:var(--gold)">BBC Sport</a> or the <a href="https://www.efl.com" style="color:var(--gold)">EFL site</a> for ${teamName}'s latest results in the meantime.`
+          : `Couldn't load results right now.<br><br>Try refreshing, or check back shortly.`;
+        document.getElementById('content').innerHTML = `<div class="status-box">${message}</div>`;
         document.getElementById('fixtures-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
         document.getElementById('results-panel').innerHTML = '<div class="status-box">Unavailable right now.</div>';
       });

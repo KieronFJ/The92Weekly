@@ -364,7 +364,14 @@
       const container = document.getElementById('table-container');
       const league = { 3: 'eng.3', 4: 'eng.4' }[div];
 
-      fetchViaProxy(`https://site.api.espn.com/apis/v2/sports/soccer/${league}/standings`)
+      function withTimeoutTable(promise, ms) {
+        return Promise.race([
+          promise,
+          new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+        ]);
+      }
+
+      withTimeoutTable(fetchViaProxy(`https://site.api.espn.com/apis/v2/sports/soccer/${league}/standings`), 15000)
         .then(data => {
           // ESPN's standings shape varies — try the common paths defensively
           let entries = data?.standings?.entries
@@ -399,7 +406,8 @@
           renderTable(div, rows);
         })
         .catch(err => {
-          container.innerHTML = '<div class="status-box">Couldn\'t load this table right now — the League One/Two source can be slower. Try refreshing in a moment.</div>';
+          const divName = { '3': 'League One', '4': 'League Two' }[div];
+          container.innerHTML = `<div class="status-box">We don't have automated ${divName} standings set up reliably yet.<br><br>Check <a href="https://www.bbc.co.uk/sport/football" style="color:var(--gold)">BBC Sport</a> or the <a href="https://www.efl.com" style="color:var(--gold)">EFL site</a> for the current table in the meantime.</div>`;
         });
     }
 
