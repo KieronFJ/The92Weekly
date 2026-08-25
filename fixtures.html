@@ -7,7 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -17,7 +17,10 @@
   --line-soft:#edeae3;
   --ink:#2e3136;
   --muted:#74787e;
-  --gold:#149954;
+  --green:#149954;
+  --win:#3e8a4d;
+  --loss:#b5504b;
+  --draw:#74787e;
 }
 
 *{
@@ -58,7 +61,7 @@ header{
 }
 
 .nameplate span{
-  color:var(--gold);
+  color:var(--green);
 }
 
 nav{
@@ -76,7 +79,7 @@ nav a{
 
 nav a:hover{
   color:var(--ink);
-  border-bottom-color:var(--gold);
+  border-bottom-color:var(--green);
 }
 
 main{
@@ -92,13 +95,13 @@ main{
 }
 
 .breadcrumb a:hover{
-  color:var(--gold);
+  color:var(--green);
 }
 
 .tag{
   font:10.5px 'JetBrains Mono',monospace;
   color:#fff;
-  background:var(--gold);
+  background:var(--green);
   padding:4px 9px;
   border-radius:2px;
   letter-spacing:.06em;
@@ -121,7 +124,7 @@ h1{
   display:inline-block;
   margin-bottom:26px;
   font:600 13px Poppins,sans-serif;
-  color:var(--gold);
+  color:var(--green);
 }
 
 .month{
@@ -179,7 +182,20 @@ h1{
   color:var(--muted);
 }
 
+.result-win{
+  color:var(--win);
+}
+
+.result-loss{
+  color:var(--loss);
+}
+
+.result-draw{
+  color:var(--draw);
+}
+
 @media(max-width:650px){
+
   nav{
     gap:10px;
     flex-wrap:wrap;
@@ -192,6 +208,7 @@ h1{
   .teams{
     font-size:13.5px;
   }
+
 }
 </style>
 </head>
@@ -199,6 +216,7 @@ h1{
 <body>
 
 <header>
+
   <div>
     <a href="index.html">
       <div class="nameplate">THE<span>92</span>WEEKLY</div>
@@ -212,13 +230,16 @@ h1{
     <a href="tables.html">Tables</a>
     <a href="about.html">About</a>
   </nav>
+
 </header>
 
 <main>
 
   <div class="breadcrumb">
-    <a href="index.html">Home</a> /
-    <a href="teams.html">All 92</a> /
+    <a href="index.html">Home</a>
+    /
+    <a href="teams.html">All 92</a>
+    /
     <span id="crumb">Fixtures</span>
   </div>
 
@@ -235,12 +256,12 @@ h1{
   </h1>
 
   <div id="subtitle" class="subtitle">
-    Full-season fixtures
+    2026/27 · all scheduled matches
   </div>
 
   <div id="fixtures">
     <div class="status">
-      Loading the full 2026/27 season…
+      Loading the full fixture list…
     </div>
   </div>
 
@@ -248,10 +269,20 @@ h1{
 
 <script>
 
+/* ---------------------------------------
+   READ TEAM AND DIVISION FROM URL
+--------------------------------------- */
+
 const params = new URLSearchParams(location.search);
 
 const teamName = params.get('team') || '';
+
 const div = params.get('div') || '1';
+
+
+/* ---------------------------------------
+   DIVISION NAMES
+--------------------------------------- */
 
 const divisionNames = {
   1:'Premier League',
@@ -260,18 +291,17 @@ const divisionNames = {
   4:'League Two'
 };
 
-const espnLeagues = {
-  1:'eng.1',
-  2:'eng.2',
-  3:'eng.3',
-  4:'eng.4'
-};
 
-const divisionName =
-  divisionNames[div] || 'English football';
+/* ---------------------------------------
+   DATA FILE
+--------------------------------------- */
 
-const league =
-  espnLeagues[div] || 'eng.1';
+const DATA_URL = 'data/football-data.json';
+
+
+/* ---------------------------------------
+   PAGE HEADER
+--------------------------------------- */
 
 document.getElementById('team-name').textContent =
   teamName || 'Team';
@@ -280,392 +310,283 @@ document.getElementById('crumb').textContent =
   teamName || 'Fixtures';
 
 document.getElementById('division-tag').textContent =
-  divisionName;
+  divisionNames[div] || 'Division';
 
 document.getElementById('subtitle').textContent =
-  `2026/27 · ${divisionName} · all scheduled matches`;
+  `2026/27 · ${divisionNames[div] || 'English football'} · all scheduled matches`;
 
-const back =
-  document.getElementById('back-link');
+
+/* ---------------------------------------
+   BACK TO TEAM LINK
+--------------------------------------- */
+
+const back = document.getElementById('back-link');
 
 back.href =
   `team.html?team=${encodeURIComponent(teamName)}&div=${encodeURIComponent(div)}`;
 
 
-/* -----------------------------
-   TEAM NAME HELPERS
------------------------------ */
+/* ---------------------------------------
+   TEAM NAME NORMALISATION
+--------------------------------------- */
 
-function normalize(value){
-  return String(value || '')
+function normalize(name){
+
+  return String(name || '')
     .toLowerCase()
     .replace(/&/g,'and')
+    .replace(/football club/g,'')
+    .replace(/fc$/g,'')
     .replace(/[^a-z0-9]/g,'');
-}
 
-function matchesTeam(a,b){
-
-  const x = normalize(a);
-  const y = normalize(b);
-
-  if(!x || !y) return false;
-
-  return (
-    x === y ||
-    x.includes(y) ||
-    y.includes(x)
-  );
 }
 
 
-/* -----------------------------
-   PROXY
------------------------------ */
+/* ---------------------------------------
+   CHECK WHETHER TWO TEAM NAMES MATCH
+--------------------------------------- */
 
-function proxy(url){
+function matchesTeam(nameA,nameB){
 
-  const worker =
-    'https://the92weekly-proxyv2.the92weekly.workers.dev/?url='
-    + encodeURIComponent(url);
+  const a = normalize(nameA);
+  const b = normalize(nameB);
 
-  return fetch(worker)
-    .then(response => {
+  if(!a || !b) return false;
 
-      if(!response.ok){
-        throw new Error(
-          `Proxy error (${response.status})`
-        );
-      }
+  return a === b || a.includes(b) || b.includes(a);
 
-      return response.json();
-    });
 }
 
 
-/* -----------------------------
-   FIND TEAM ID
------------------------------ */
+/* ---------------------------------------
+   LOAD OUR OWN JSON FILE
+--------------------------------------- */
 
-async function getTeamId(){
+async function loadData(){
 
-  const url =
-    `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=100`;
+  const response = await fetch(DATA_URL, {
+    cache:'no-store'
+  });
 
-  const data =
-    await proxy(url);
+  if(!response.ok){
 
-  const teams =
-    data.sports?.[0]?.leagues?.[0]?.teams || [];
-
-  const teamObjects =
-    teams.map(item => item.team).filter(Boolean);
-
-  let found =
-    teamObjects.find(team =>
-      matchesTeam(
-        team.displayName,
-        teamName
-      )
-    );
-
-  if(!found){
-
-    found =
-      teamObjects.find(team =>
-        matchesTeam(
-          team.name,
-          teamName
-        )
-      );
-  }
-
-  if(!found){
     throw new Error(
-      `Team "${teamName}" could not be found`
+      `Could not load football-data.json (${response.status})`
     );
+
   }
 
-  return found.id;
+  return await response.json();
+
 }
 
 
-/* -----------------------------
-   NORMALISE ESPN FIXTURE
------------------------------ */
+/* ---------------------------------------
+   GET TEAM'S MATCHES
+--------------------------------------- */
 
-function normaliseEvent(ev){
+function getTeamMatches(data){
 
-  const competition =
-    ev.competitions?.[0];
+  const allMatches = Array.isArray(data.matches)
+    ? data.matches
+    : [];
 
-  const competitors =
-    competition?.competitors || [];
-
-  const home =
-    competitors.find(
-      x => x.homeAway === 'home'
-    );
-
-  const away =
-    competitors.find(
-      x => x.homeAway === 'away'
-    );
-
-  if(!home || !away){
-    return null;
-  }
-
-  const status =
-    ev.status?.type ||
-    competition?.status?.type ||
-    {};
-
-  const homeScore =
-    home.score != null
-      ? Number(home.score)
-      : null;
-
-  const awayScore =
-    away.score != null
-      ? Number(away.score)
-      : null;
-
-  return {
-
-    id:String(ev.id || ''),
-
-    date:ev.date || '',
-
-    season:
-      ev.season?.year ??
-      null,
-
-    competition:'',
-    
-    completed:
-      Boolean(status.completed),
-
-    statusDetail:
-      status.detail || '',
-
-    home:
-      home.team?.displayName ||
-      home.team?.name ||
-      '',
-
-    away:
-      away.team?.displayName ||
-      away.team?.name ||
-      '',
-
-    homeScore,
-
-    awayScore
-  };
-}
+  const competitionCode = {
+    1:'eng.1',
+    2:'eng.2',
+    3:'eng.3',
+    4:'eng.4'
+  }[div];
 
 
-/* -----------------------------
-   COMPETITION NAME
------------------------------ */
+  /* Filter by division */
 
-function competitionName(ev){
+  let matches = allMatches.filter(match => {
 
-  const competition =
-    ev.competitions?.[0];
-
-  const typeText =
-    competition?.type?.text || '';
-
-  if(
-    typeText &&
-    !/^regular season$/i.test(typeText)
-  ){
-    return typeText;
-  }
-
-  const seasonName =
-    ev.season?.displayName || '';
-
-  if(seasonName){
-    return seasonName;
-  }
-
-  return divisionName;
-}
-
-
-/* -----------------------------
-   LOAD FULL SEASON
------------------------------ */
-
-async function loadSeason(){
-
-  const id =
-    await getTeamId();
-
-  /*
-    IMPORTANT:
-
-    Explicitly request the 2026 season
-    and a large number of events.
-
-    This prevents the page from relying
-    on ESPN's default result limit.
-  */
-
-  const scheduleUrl =
-    `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams/${id}/schedule?season=2026&limit=500`;
-
-  const data =
-    await proxy(scheduleUrl);
-
-  let events =
-    (data.events || [])
-      .map(ev => {
-
-        const match =
-          normaliseEvent(ev);
-
-        if(!match){
-          return null;
-        }
-
-        match.competition =
-          competitionName(ev);
-
-        return match;
-      })
-      .filter(Boolean);
-
-
-  /*
-    Keep the 2026/27 season.
-
-    ESPN normally returns the correct season
-    from the season parameter, but we also
-    protect against unrelated events.
-  */
-
-  events =
-    events.filter(match => {
-
-      if(
-        match.season === null ||
-        match.season === undefined
-      ){
-        return true;
-      }
-
-      return Number(match.season) === 2026;
-    });
-
-
-  /*
-    Remove duplicate fixtures.
-  */
-
-  const seen =
-    new Set();
-
-  events =
-    events.filter(match => {
-
-      const key =
-        match.id ||
-        `${match.date}|${match.home}|${match.away}`;
-
-      if(seen.has(key)){
-        return false;
-      }
-
-      seen.add(key);
-
+    if(!competitionCode){
       return true;
-    });
+    }
+
+    return match.competitionCode === competitionCode;
+
+  });
 
 
-  /*
-    Sort chronologically.
-  */
+  /* Filter by team */
 
-  events.sort(
-    (a,b) =>
-      new Date(a.date) -
-      new Date(b.date)
-  );
+  matches = matches.filter(match => {
+
+    const homeName = match.home?.name || '';
+    const awayName = match.away?.name || '';
+
+    return matchesTeam(homeName,teamName) ||
+           matchesTeam(awayName,teamName);
+
+  });
 
 
-  return events;
+  /* Remove duplicates */
+
+  const seen = new Set();
+
+  matches = matches.filter(match => {
+
+    const key =
+      match.id ||
+      `${match.date}|${match.home?.name}|${match.away?.name}`;
+
+    if(seen.has(key)){
+      return false;
+    }
+
+    seen.add(key);
+
+    return true;
+
+  });
+
+
+  /* Sort chronologically */
+
+  matches.sort((a,b) => {
+
+    return new Date(a.date) - new Date(b.date);
+
+  });
+
+
+  return matches;
+
 }
 
 
-/* -----------------------------
-   MONTH LABEL
------------------------------ */
+/* ---------------------------------------
+   FORMAT MONTH
+--------------------------------------- */
 
 function monthLabel(date){
 
-  return new Date(date)
-    .toLocaleDateString(
-      'en-GB',
-      {
-        month:'long',
-        year:'numeric'
-      }
-    );
+  return new Date(date).toLocaleDateString(
+    'en-GB',
+    {
+      month:'long',
+      year:'numeric'
+    }
+  );
+
 }
 
 
-/* -----------------------------
-   RENDER FIXTURES
------------------------------ */
+/* ---------------------------------------
+   FORMAT MATCH RESULT
+--------------------------------------- */
 
-function render(events){
+function getResult(match){
+
+  if(
+    match.home?.score == null ||
+    match.away?.score == null
+  ){
+
+    return {
+      text:'',
+      className:''
+    };
+
+  }
+
+
+  const homeScore = Number(match.home.score);
+  const awayScore = Number(match.away.score);
+
+
+  const homeTeam =
+    matchesTeam(match.home?.name,teamName);
+
+
+  let result;
+
+
+  if(homeScore === awayScore){
+
+    result = 'draw';
+
+  }else{
+
+    const teamWon =
+      homeTeam
+        ? homeScore > awayScore
+        : awayScore > homeScore;
+
+    result = teamWon ? 'win' : 'loss';
+
+  }
+
+
+  return {
+    text:`${homeScore}–${awayScore}`,
+    className:`result-${result}`
+  };
+
+}
+
+
+/* ---------------------------------------
+   FORMAT COMPETITION
+--------------------------------------- */
+
+function competitionName(match){
+
+  return match.competition ||
+         divisionNames[div] ||
+         'Football';
+
+}
+
+
+/* ---------------------------------------
+   RENDER FIXTURES
+--------------------------------------- */
+
+function render(matches){
 
   const root =
     document.getElementById('fixtures');
 
 
-  if(!events.length){
+  if(!matches.length){
 
     root.innerHTML = `
       <div class="status">
-        No 2026/27 fixtures were returned
-        for this team.
+        No 2026/27 fixtures were found for this team.
       </div>
     `;
 
     return;
+
   }
 
 
-  /*
-    Group fixtures by month.
-  */
-
   const groups = {};
 
-  events.forEach(match => {
 
-    const month =
-      monthLabel(match.date);
+  matches.forEach(match => {
+
+    const month = monthLabel(match.date);
 
     if(!groups[month]){
       groups[month] = [];
     }
 
     groups[month].push(match);
+
   });
 
 
   let html = '';
 
 
-  for(
-    const [month,matches]
-    of Object.entries(groups)
-  ){
+  for(const [month,monthMatches] of Object.entries(groups)){
 
     html += `
       <section class="month">
@@ -673,10 +594,11 @@ function render(events){
     `;
 
 
-    matches.forEach(match => {
+    monthMatches.forEach(match => {
 
       const date =
         new Date(match.date);
+
 
       const dateText =
         date.toLocaleDateString(
@@ -699,105 +621,132 @@ function render(events){
         );
 
 
-      const hasScore =
-        match.homeScore !== null &&
-        match.awayScore !== null;
+      const result =
+        getResult(match);
 
 
-      const score =
-        hasScore
-          ? `${match.homeScore}–${match.awayScore}`
+      const status =
+        match.completed
+          ? 'FT'
+          : timeText;
+
+
+      const venue =
+        match.venue
+          ? ` · ${match.venue}`
           : '';
 
 
       html += `
+
         <div class="match">
 
           <div class="match-main">
 
             <div class="teams">
-              ${match.home}
+              ${match.home?.name || 'Home'}
               vs
-              ${match.away}
+              ${match.away?.name || 'Away'}
             </div>
 
             <div class="meta">
-              ${match.competition}
+              ${competitionName(match)}
               ·
               ${dateText}
               ·
-              ${timeText}
+              ${status}
+              ${venue}
             </div>
 
           </div>
 
-          <div class="score">
-            ${score}
+          <div class="score ${result.className}">
+            ${result.text}
           </div>
 
         </div>
+
       `;
+
     });
 
 
     html += `
       </section>
     `;
+
   }
 
 
-  /*
-    Add a small information note.
-  */
-
-  html += `
-    <div class="note">
-      Full 2026/27 scheduled fixture list.
-      Completed matches display their scores;
-      upcoming matches display their scheduled
-      date and time.
-    </div>
-  `;
+  root.innerHTML = html;
 
 
-  root.innerHTML =
-    html;
+  /* Small note showing where the data came from */
+
+  const note = document.createElement('div');
+
+  note.className = 'note';
+
+  note.textContent =
+    'Fixture data supplied from The92Weekly football data feed.';
+
+  root.appendChild(note);
+
 }
 
 
-/* -----------------------------
-   START
------------------------------ */
+/* ---------------------------------------
+   LOAD EVERYTHING
+--------------------------------------- */
 
-loadSeason()
+async function start(){
 
-  .then(render)
+  try{
 
-  .catch(error => {
+    if(!teamName){
 
-    console.error(
-      'Fixture loading error:',
-      error
-    );
+      throw new Error('No team was supplied in the URL.');
 
-    document.getElementById(
-      'fixtures'
-    ).innerHTML = `
+    }
+
+
+    const data =
+      await loadData();
+
+
+    const matches =
+      getTeamMatches(data);
+
+
+    render(matches);
+
+
+  }catch(error){
+
+    console.error(error);
+
+
+    document.getElementById('fixtures').innerHTML = `
 
       <div class="status">
 
-        We could not load the full
-        2026/27 fixture list right now.
+        We could not load the full 2026/27
+        fixture list right now.
 
         <br><br>
 
-        Please refresh the page
-        in a moment.
+        Please refresh the page in a moment.
 
       </div>
 
     `;
-  });
+
+  }
+
+}
+
+
+start();
 
 </script>
 
