@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — The92Weekly</title>
+<title>Groundhopper's Companion — The92Weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -273,6 +273,145 @@
     color: var(--ink-muted);
   }
   .footer-links a:hover { color: var(--gold); }
+
+  /* ---------- Coming Soon pages ---------- */
+  .coming-soon-badge {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: var(--gold);
+    padding: 5px 12px;
+    border-radius: 3px;
+    margin-bottom: 18px;
+  }
+
+  main > p.sub {
+    color: var(--ink-muted);
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 60ch;
+  }
+
+  .preview-mockup {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 32px;
+    margin-bottom: 40px;
+  }
+  .preview-mockup-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 20px;
+  }
+
+  .coming-soon-cta {
+    background: var(--ink);
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 32px 36px;
+    text-align: center;
+  }
+  .coming-soon-cta h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .coming-soon-cta p {
+    color: #C7C9CC;
+    font-size: 14.5px;
+    margin-bottom: 22px;
+    max-width: 48ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .coming-soon-cta .cta-button {
+    display: inline-block;
+    background: var(--gold);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    padding: 13px 30px;
+    border-radius: 6px;
+  }
+  .coming-soon-cta .cta-button:hover { filter: brightness(1.08); }
+
+  /* Groundhopper mockup */
+  .ground-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .ground-tile {
+    aspect-ratio: 1;
+    border-radius: 6px;
+    background: var(--line-soft);
+    border: 1px solid var(--line);
+  }
+  .ground-tile.visited { background: var(--gold); border-color: var(--gold); }
+  .ground-progress-bar {
+    height: 8px; background: var(--line-soft); border-radius: 4px; overflow: hidden; margin-bottom: 10px;
+  }
+  .ground-progress-fill { height: 100%; background: var(--gold); width: 37%; }
+  .ground-progress-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink);
+  }
+  .ground-progress-label b { color: var(--gold); }
+
+  /* Bragging Rights mockup */
+  .versus-card {
+    display: flex; align-items: center; justify-content: center; gap: 28px;
+  }
+  .versus-side { flex: 1; max-width: 200px; text-align: center; }
+  .versus-side .club-name { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; margin-bottom: 6px; }
+  .versus-side .club-stat { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted); }
+  .versus-vs { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gold); font-weight: 700; }
+  .versus-score {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 26px; margin-top: 8px;
+  }
+
+  /* Fan Blogs mockup */
+  .blog-post-card {
+    background: #FFFFFF; border: 1px solid var(--line); border-radius: 8px; padding: 20px; margin-bottom: 14px;
+  }
+  .blog-post-card:last-child { margin-bottom: 0; }
+  .blog-post-title { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px; margin-bottom: 6px; }
+  .blog-post-meta { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); margin-bottom: 10px; }
+  .blog-post-excerpt { font-size: 13.5px; color: var(--ink-muted); margin-bottom: 10px; }
+  .blog-post-comments { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--gold); }
+
+  /* Polls mockup */
+  .poll-card { background: #FFFFFF; border: 1px solid var(--line); border-radius: 8px; padding: 22px; }
+  .poll-question { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; margin-bottom: 16px; }
+  .poll-option { margin-bottom: 12px; }
+  .poll-option-label { display: flex; justify-content: space-between; font-size: 13.5px; margin-bottom: 5px; }
+  .poll-option-bar { height: 10px; background: var(--line-soft); border-radius: 5px; overflow: hidden; }
+  .poll-option-fill { height: 100%; background: var(--gold); }
+  .poll-meta { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); margin-top: 14px; }
+
+  /* Transfer Tweets mockup */
+  .tweet-card {
+    background: #FFFFFF; border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 12px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .tweet-card:last-child { margin-bottom: 0; }
+  .tweet-avatar {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--line-soft); flex-shrink: 0;
+  }
+  .tweet-handle { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; }
+  .tweet-verified { color: var(--gold); font-size: 12px; margin-left: 4px; }
+  .tweet-text { font-size: 13.5px; color: var(--ink-muted); margin-top: 4px; }
+  .tweet-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -309,50 +448,29 @@
         </div>
       </div>
       <a href="accumulator.html">This Week's Acca Picks</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <div class="eyebrow">About</div>
-    <h1>Most football coverage stops at the Premier League. We think the best stories are everywhere else.</h1>
+    <span class="coming-soon-badge">Coming Soon</span>
+    <div class="eyebrow">Community · Groundhopper's Companion</div>
+    <h1>Track every ground. Prove you've been.</h1>
+    <p class="sub">A visual checklist of all 92 league grounds. Tick off the ones you've stood in, get suggestions for your next trip based on what's left and how far you'd need to travel, and grab a shareable badge for your progress — the kind of thing worth showing your mates.</p>
 
-    <p class="lead">The92Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
+    <div class="preview-mockup">
+      <div class="preview-mockup-label">A rough idea of how it'll look</div>
+      <div class="ground-progress-label">
+        <b>34</b> of 92 grounds visited
+      </div>
+      <div class="ground-progress-bar"><div class="ground-progress-fill"></div></div>
+      <div class="ground-grid"><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div><div class="ground-tile visited"></div><div class="ground-tile"></div><div class="ground-tile"></div></div>
+    </div>
 
-    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
-
-    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
-
-    <hr class="divider">
-
-    <h2>What you'll get</h2>
-    <ul class="principles">
-      <li>
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>Every division treated as one story</h3>
-          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Depth over speed</h3>
-          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Written by a fan, not a wire service</h3>
-          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="contact-box">
-      <p>Got a story from your division that's crying out for more attention? Tell us — we're always listening.</p>
-      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+    <div class="coming-soon-cta">
+      <h3>Get first access</h3>
+      <p>This is being built now. Members will be the first to try it the moment it's live — no extra cost, it's part of your membership.</p>
+      <a href="membership.html" class="cta-button">Join for £5/month →</a>
     </div>
   </main>
 

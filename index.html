@@ -593,6 +593,15 @@
       </div>
       <a href="#spotlight">Spotlight</a>
       <a href="ins-and-outs.html">Ins &amp; Outs</a>
+      <div class="nav-item" id="community-nav-item">
+        <button class="nav-trigger" type="button" id="community-trigger">Community</button>
+        <div class="league-dropdown-panel" id="community-dropdown-panel">
+          <a href="groundhopper.html">Groundhopper's Companion</a>
+          <a href="fan-blogs.html">Fan Blogs</a>
+          <a href="polls.html">Polls</a>
+          <a href="club-news.html">Club News</a>
+        </div>
+      </div>
       <a href="accumulator.html">This Week's Acca Picks</a>
       <a href="about.html">About</a>
     </nav>
@@ -881,6 +890,18 @@
       });
       document.addEventListener('click', function() {
         tablesItem.classList.remove('open');
+      });
+    }
+
+    const communityItem = document.getElementById('community-nav-item');
+    const communityTrigger = document.getElementById('community-trigger');
+    if (communityItem && communityTrigger) {
+      communityTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        communityItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        communityItem.classList.remove('open');
       });
     }
   </script>
