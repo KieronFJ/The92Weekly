@@ -124,6 +124,18 @@ function stripTags(str) {
   return (str || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 }
 
+function safeDate(pubDate) {
+  if (pubDate) {
+    const parsed = new Date(pubDate);
+    if (!isNaN(parsed.getTime())) {
+      return parsed.toISOString();
+    }
+  }
+  // Missing or unparseable date — fall back to now rather than crash
+  // the whole feed over one bad item.
+  return new Date().toISOString();
+}
+
 function decodeEntities(str) {
   return (str || "")
     .replace(/&amp;/g, "&")
@@ -155,7 +167,7 @@ function parseRSS(xml, sourceName) {
       title,
       link,
       summary: description.length > 180 ? description.slice(0, 177) + "..." : description,
-      date: pubDate ? new Date(pubDate).toISOString() : new Date().toISOString(),
+      date: safeDate(pubDate),
       source: sourceName
     });
   }
