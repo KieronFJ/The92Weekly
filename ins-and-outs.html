@@ -37,8 +37,17 @@
   .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; }
   .nameplate span { color: var(--gold); }
   nav {
-    display: flex; gap: 18px;
+    display: flex; align-items: center;
     padding-bottom: 4px;
+  }
+  nav > * {
+    padding: 0 14px;
+  }
+  nav > *:first-child {
+    padding-left: 0;
+  }
+  nav > *:not(:last-child) {
+    border-right: 1px solid var(--line);
   }
   nav a, .nav-trigger {
     font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
@@ -184,7 +193,13 @@
     <div><a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a></div>
     <nav>
       <a href="membership.html">Membership</a>
-      <a href="index.html#latest">Latest</a>
+      <div class="nav-item" id="latest-nav-item">
+        <button class="nav-trigger" type="button" id="latest-trigger">Latest</button>
+        <div class="league-dropdown-panel" id="latest-dropdown-panel">
+          <a href="index.html#latest">Latest Articles</a>
+          <a href="club-news.html">Club News</a>
+        </div>
+      </div>
       <div class="nav-item" id="teams-nav-item">
         <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
         <div class="dropdown-panel" id="teams-dropdown-panel"></div>
@@ -198,18 +213,22 @@
           <a href="tables.html?div=4">League Two</a>
         </div>
       </div>
-      <a href="index.html#spotlight">Spotlight</a>
-      <a href="ins-and-outs.html" class="active">Ins &amp; Outs</a>
+      <div class="nav-item" id="picks-nav-item">
+        <button class="nav-trigger" type="button" id="picks-trigger">Picks &amp; Spotlight</button>
+        <div class="league-dropdown-panel" id="picks-dropdown-panel">
+          <a href="index.html#spotlight">Spotlight</a>
+          <a href="accumulator.html">This Week's Acca Picks</a>
+        </div>
+      </div>
+      <a href="ins-and-outs.html">Ins &amp; Outs</a>
       <div class="nav-item" id="community-nav-item">
         <button class="nav-trigger" type="button" id="community-trigger">Community</button>
         <div class="league-dropdown-panel" id="community-dropdown-panel">
           <a href="groundhopper.html">Groundhopper's Companion</a>
           <a href="fan-blogs.html">Fan Blogs</a>
           <a href="polls.html">Polls</a>
-          <a href="club-news.html">Club News</a>
         </div>
       </div>
-      <a href="accumulator.html">This Week's Acca Picks</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -349,6 +368,30 @@
       });
       document.addEventListener('click', function() {
         communityItem.classList.remove('open');
+      });
+    }
+
+    const latestItem = document.getElementById('latest-nav-item');
+    const latestTrigger = document.getElementById('latest-trigger');
+    if (latestItem && latestTrigger) {
+      latestTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        latestItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        latestItem.classList.remove('open');
+      });
+    }
+
+    const picksItem = document.getElementById('picks-nav-item');
+    const picksTrigger = document.getElementById('picks-trigger');
+    if (picksItem && picksTrigger) {
+      picksTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        picksItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        picksItem.classList.remove('open');
       });
     }
   </script>

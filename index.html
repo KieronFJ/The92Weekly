@@ -129,9 +129,18 @@
 
   nav {
     display: flex;
-    gap: 18px;
+    align-items: center;
     padding-bottom: 4px;
     flex-wrap: wrap;
+  }
+  nav > * {
+    padding: 0 14px;
+  }
+  nav > *:first-child {
+    padding-left: 0;
+  }
+  nav > *:not(:last-child) {
+    border-right: 1px solid var(--line);
   }
 
   nav a, .nav-trigger {
@@ -275,6 +284,15 @@
   .tag-rising { background: #2E5C8A; color: #DCEBFA; }
   .tag-form { background: var(--gold); color: #FFFFFF; }
   .tag-backing { background: #4C9A5B; color: #0d1a10; }
+  .betting-angle {
+    margin-top: 14px; padding: 12px 14px;
+    background: #FFFFFF; border-left: 3px solid var(--gold); border-radius: 4px;
+  }
+  .betting-angle-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold); margin-bottom: 5px;
+  }
+  .betting-angle p { font-size: 13px; color: var(--ink-muted); margin: 0; }
   .spot-division { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink-muted); }
 
   .spot-name { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 19px; margin-bottom: 2px; }
@@ -348,6 +366,35 @@
     letter-spacing: 0.03em;
     color: var(--ink-muted);
   }
+
+  .home-news-section {
+    padding: 40px 6vw 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .home-news-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 18px; flex-wrap: wrap; gap: 8px;
+  }
+  .home-news-head h2 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 20px; }
+  .home-news-head a { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gold); }
+  .home-news-head a:hover { text-decoration: underline; }
+  .home-news-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px;
+    margin-bottom: 28px;
+  }
+  .home-news-card {
+    padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
+  }
+  .home-news-card-clubs { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 6px; }
+  .home-news-club-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.03em; color: var(--gold);
+  }
+  .home-news-card-title {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.3; margin-bottom: 6px;
+  }
+  .home-news-card-title a:hover { color: var(--gold); }
+  .home-news-card-meta { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink-muted); }
 
   .split {
     display: grid;
@@ -577,7 +624,13 @@
     </div>
     <nav>
       <a href="membership.html">Membership</a>
-      <a href="#latest">Latest</a>
+      <div class="nav-item" id="latest-nav-item">
+        <button class="nav-trigger" type="button" id="latest-trigger">Latest</button>
+        <div class="league-dropdown-panel" id="latest-dropdown-panel">
+          <a href="#latest">Latest Articles</a>
+          <a href="club-news.html">Club News</a>
+        </div>
+      </div>
       <div class="nav-item" id="teams-nav-item">
         <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
         <div class="dropdown-panel" id="teams-dropdown-panel"></div>
@@ -591,7 +644,13 @@
           <a href="tables.html?div=4">League Two</a>
         </div>
       </div>
-      <a href="#spotlight">Spotlight</a>
+      <div class="nav-item" id="picks-nav-item">
+        <button class="nav-trigger" type="button" id="picks-trigger">Picks &amp; Spotlight</button>
+        <div class="league-dropdown-panel" id="picks-dropdown-panel">
+          <a href="#spotlight">Spotlight</a>
+          <a href="accumulator.html">This Week's Acca Picks</a>
+        </div>
+      </div>
       <a href="ins-and-outs.html">Ins &amp; Outs</a>
       <div class="nav-item" id="community-nav-item">
         <button class="nav-trigger" type="button" id="community-trigger">Community</button>
@@ -599,10 +658,8 @@
           <a href="groundhopper.html">Groundhopper's Companion</a>
           <a href="fan-blogs.html">Fan Blogs</a>
           <a href="polls.html">Polls</a>
-          <a href="club-news.html">Club News</a>
         </div>
       </div>
-      <a href="accumulator.html">This Week's Acca Picks</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -615,6 +672,16 @@
       <span><b>8 min read</b></span>
       <span>Pyramid Notes</span>
       <span>Updated weekly</span>
+    </div>
+  </section>
+
+  <section class="home-news-section">
+    <div class="home-news-head">
+      <h2 class="display">Latest Club News</h2>
+      <a href="club-news.html">View all →</a>
+    </div>
+    <div class="home-news-grid" id="home-news-grid">
+      <div class="status-box">Loading the latest news…</div>
     </div>
   </section>
 
@@ -772,6 +839,10 @@
         <div class="spot-name">[Player Name]</div>
         <div class="spot-club">[Club]</div>
         <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
+        </div>
       </div>
       <div class="spot-card">
         <div class="spot-tag-row">
@@ -781,6 +852,10 @@
         <div class="spot-name">[Player Name]</div>
         <div class="spot-club">[Club]</div>
         <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
+        </div>
       </div>
       <div class="spot-card">
         <div class="spot-tag-row">
@@ -790,6 +865,10 @@
         <div class="spot-name">[Player Name]</div>
         <div class="spot-club">[Club]</div>
         <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
       </div>
     </div>
   </section>
@@ -824,7 +903,7 @@
       <p>Every Friday: the full breakdown across all four divisions, the Weekend Accumulator, rumour grading, and one deep-dive that never runs anywhere else. Members only.</p>
     </div>
     <a href="membership.html" class="newsletter-form" style="display:inline-flex; align-items:center; justify-content:center; text-decoration:none;">
-      <span style="font-family:'Poppins',sans-serif; font-weight:600; font-size:14px; background:var(--gold); color:#FFFFFF; padding:14px 30px; border-radius:6px;">Join for £5/month</span>
+      <span style="font-family:'Poppins',sans-serif; font-weight:600; font-size:14px; background:var(--gold); color:#FFFFFF; padding:14px 30px; border-radius:6px;">Join for £4.99/month</span>
     </a>
   </div>
 
@@ -844,6 +923,34 @@
       4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Newport County","Northampton Town","Oldham Athletic","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
     };
     const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
+
+    // Homepage live club news preview
+    fetch('data/club-news.json')
+      .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+      .then(data => {
+        const items = (data.items || []).slice(0, 9);
+        const grid = document.getElementById('home-news-grid');
+        if (items.length === 0) {
+          grid.innerHTML = '<div class="status-box">No news right now — check back soon.</div>';
+          return;
+        }
+        let html = '';
+        items.forEach(item => {
+          const dateStr = new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+          const clubTags = item.clubs.slice(0, 2).map(c => `<span class="home-news-club-tag">${c}</span>`).join('');
+          html += `
+            <div class="home-news-card">
+              <div class="home-news-card-clubs">${clubTags}</div>
+              <div class="home-news-card-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
+              <div class="home-news-card-meta">${dateStr} · via ${item.source}</div>
+            </div>`;
+        });
+        grid.innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById('home-news-grid').innerHTML =
+          '<div class="status-box">Couldn\'t load the news feed right now.</div>';
+      });
 
     const clubColors = {
       "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
@@ -902,6 +1009,30 @@
       });
       document.addEventListener('click', function() {
         communityItem.classList.remove('open');
+      });
+    }
+
+    const latestItem = document.getElementById('latest-nav-item');
+    const latestTrigger = document.getElementById('latest-trigger');
+    if (latestItem && latestTrigger) {
+      latestTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        latestItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        latestItem.classList.remove('open');
+      });
+    }
+
+    const picksItem = document.getElementById('picks-nav-item');
+    const picksTrigger = document.getElementById('picks-trigger');
+    if (picksItem && picksTrigger) {
+      picksTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        picksItem.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        picksItem.classList.remove('open');
       });
     }
   </script>
