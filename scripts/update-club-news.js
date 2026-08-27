@@ -20,7 +20,14 @@ const FEEDS = [
   // exact URL isn't independently confirmed the way the others above are,
   // so it's included as a best-effort attempt. If it's wrong, this one
   // source just contributes nothing; it won't affect the others.
-  { name: "Football League World", url: "https://footballleagueworld.co.uk/feed" }
+  { name: "Football League World", url: "https://footballleagueworld.co.uk/feed" },
+  // football.co.uk runs genuinely dedicated section feeds per division —
+  // these should meaningfully improve League One/Two coverage specifically,
+  // since general sources barely mention lower-league clubs. Same as above,
+  // best-effort URLs — if wrong, they simply contribute nothing.
+  { name: "League One News", url: "https://www.football.co.uk/league-1-news" },
+  { name: "League Two News", url: "https://www.football.co.uk/league-2-news" },
+  { name: "Championship News", url: "https://www.football.co.uk/championship-news" }
 ];
 
 // Every club in the 92, with common short names/aliases the way headlines
