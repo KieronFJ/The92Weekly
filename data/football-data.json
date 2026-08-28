@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T16:57:02.886Z",
+  "updatedAt": "2026-08-28T01:30:39.023Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3177,18 +3177,18 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-08-26T18:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, August 26th at 2:45 PM EDT",
+      "completed": true,
+      "status": "STATUS_FINAL_PEN",
+      "statusDetail": "FT-Pens",
       "home": {
         "id": "387",
         "name": "Bradford City",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "379",
         "name": "Burnley",
-        "score": null
+        "score": 0
       },
       "venue": "Valley Parade",
       "source": "ESPN"
@@ -3199,18 +3199,18 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-08-26T18:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, August 26th at 2:45 PM EDT",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "361",
         "name": "Newcastle United",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "383",
         "name": "West Bromwich Albion",
-        "score": null
+        "score": 2
       },
       "venue": "St. James' Park",
       "source": "ESPN"
@@ -3221,18 +3221,18 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-08-26T18:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, August 26th at 2:45 PM EDT",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "367",
         "name": "Tottenham Hotspur",
-        "score": null
+        "score": 5
       },
       "away": {
         "id": "372",
         "name": "Charlton Athletic",
-        "score": null
+        "score": 1
       },
       "venue": "Tottenham Hotspur Stadium",
       "source": "ESPN"
@@ -3243,18 +3243,18 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-08-26T19:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, August 26th at 3:00 PM EDT",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "394",
         "name": "Preston North End",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "368",
         "name": "Everton",
-        "score": null
+        "score": 4
       },
       "venue": "Deepdale",
       "source": "ESPN"
@@ -3265,18 +3265,18 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-08-27T18:30Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Thu, August 27th at 2:30 PM EDT",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "363",
         "name": "Chelsea",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "301",
         "name": "Luton Town",
-        "score": null
+        "score": 0
       },
       "venue": "Stamford Bridge",
       "source": "ESPN"
@@ -3287,18 +3287,18 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-08-27T19:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Thu, August 27th at 3:00 PM EDT",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "370",
         "name": "Fulham",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "3802",
         "name": "AFC Wimbledon",
-        "score": null
+        "score": 0
       },
       "venue": "Craven Cottage",
       "source": "ESPN"
@@ -5347,6 +5347,358 @@
         "score": null
       },
       "venue": "St James Park",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914267",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "349",
+        "name": "AFC Bournemouth",
+        "score": null
+      },
+      "away": {
+        "id": "314",
+        "name": "Lincoln City",
+        "score": null
+      },
+      "venue": "Vitality Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914256",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "363",
+        "name": "Chelsea",
+        "score": null
+      },
+      "away": {
+        "id": "357",
+        "name": "Leeds United",
+        "score": null
+      },
+      "venue": "Stamford Bridge",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914258",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "388",
+        "name": "Coventry City",
+        "score": null
+      },
+      "away": {
+        "id": "362",
+        "name": "Aston Villa",
+        "score": null
+      },
+      "venue": "Coventry Building Society Arena",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914269",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "384",
+        "name": "Crystal Palace",
+        "score": null
+      },
+      "away": {
+        "id": "369",
+        "name": "Middlesbrough",
+        "score": null
+      },
+      "venue": "Selhurst Park",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914282",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "368",
+        "name": "Everton",
+        "score": null
+      },
+      "away": {
+        "id": "380",
+        "name": "Wolverhampton Wanderers",
+        "score": null
+      },
+      "venue": "Hill Dickinson Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914266",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "3891",
+        "name": "Fleetwood Town",
+        "score": null
+      },
+      "away": {
+        "id": "398",
+        "name": "Sheffield United",
+        "score": null
+      },
+      "venue": "Highbury Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914268",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "373",
+        "name": "Ipswich Town",
+        "score": null
+      },
+      "away": {
+        "id": "359",
+        "name": "Arsenal",
+        "score": null
+      },
+      "venue": "Portman Road",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914254",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "309",
+        "name": "Leyton Orient",
+        "score": null
+      },
+      "away": {
+        "id": "387",
+        "name": "Bradford City",
+        "score": null
+      },
+      "venue": "Gaughan Group Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914257",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "364",
+        "name": "Liverpool",
+        "score": null
+      },
+      "away": {
+        "id": "367",
+        "name": "Tottenham Hotspur",
+        "score": null
+      },
+      "venue": "Anfield",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914260",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "382",
+        "name": "Manchester City",
+        "score": null
+      },
+      "away": {
+        "id": "381",
+        "name": "Norwich City",
+        "score": null
+      },
+      "venue": "Etihad Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914261",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "360",
+        "name": "Manchester United",
+        "score": null
+      },
+      "away": {
+        "id": "331",
+        "name": "Brighton & Hove Albion",
+        "score": null
+      },
+      "venue": "Old Trafford",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914255",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "391",
+        "name": "Millwall",
+        "score": null
+      },
+      "away": {
+        "id": "361",
+        "name": "Newcastle United",
+        "score": null
+      },
+      "venue": "The Den",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914284",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "342",
+        "name": "Peterborough United",
+        "score": null
+      },
+      "away": {
+        "id": "397",
+        "name": "Barnsley",
+        "score": null
+      },
+      "venue": "London Road Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914285",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "338",
+        "name": "Reading",
+        "score": null
+      },
+      "away": {
+        "id": "337",
+        "name": "Brentford",
+        "score": null
+      },
+      "venue": "Madejski Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914259",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "366",
+        "name": "Sunderland",
+        "score": null
+      },
+      "away": {
+        "id": "306",
+        "name": "Hull City",
+        "score": null
+      },
+      "venue": "Stadium of Light",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914283",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-08T18:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "TBD",
+      "home": {
+        "id": "371",
+        "name": "West Ham United",
+        "score": null
+      },
+      "away": {
+        "id": "370",
+        "name": "Fulham",
+        "score": null
+      },
+      "venue": "London Stadium",
       "source": "ESPN"
     },
     {
@@ -35563,7 +35915,7 @@
     "eng.league_cup": {
       "name": "Carabao Cup",
       "success": true,
-      "matches": 59
+      "matches": 75
     },
     "eng.fa": {
       "name": "FA Cup",
