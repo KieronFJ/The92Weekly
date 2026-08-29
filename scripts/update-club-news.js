@@ -1,357 +1,278 @@
-const fs = require("fs");
-const path = require("path");
-
-/*
-============================================================
-THE92 WEEKLY — CLUB NEWS UPDATER
-============================================================
-
-Purpose:
-- Fetch football news for all 92 clubs.
-- Use official, fan and media discovery.
-- Remove obvious streaming / SEO spam.
-- Balance the output so clubs get fair coverage.
-- Write the final data to data/club-news.json.
-
-No external npm packages required.
-============================================================
-*/
-
-
-// ============================================================
-// GENERAL NEWS FEEDS
-// ============================================================
+const fs = require('fs');
+const path = require('path');
 
 const BASE_FEEDS = [
-  {
-    name: "BBC Sport",
-    url: "https://feeds.bbci.co.uk/sport/football/rss.xml",
-    category: "media"
-  },
-  {
-    name: "Sky Sports",
-    url: "https://www.skysports.com/rss/12040",
-    category: "media"
-  },
-  {
-    name: "The 72",
-    url: "https://the72.co.uk/feed",
-    category: "media"
-  },
-  {
-    name: "Vital Football",
-    url: "https://vitalfootball.co.uk/feed",
-    category: "fan"
-  },
-  {
-    name: "The League Paper",
-    url: "https://www.theleaguepaper.com/feed",
-    category: "media"
-  },
-  {
-    name: "90min",
-    url: "https://www.90min.com/posts.rss",
-    category: "media"
-  },
-  {
-    name: "CaughtOffside",
-    url: "https://www.caughtoffside.com/feed",
-    category: "media"
-  },
-  {
-    name: "Football League World",
-    url: "https://footballleagueworld.co.uk/feed",
-    category: "media"
-  },
-  {
-    name: "Football365",
-    url: "https://www.football365.com/feed",
-    category: "media"
-  },
-  {
-    name: "The Real EFL",
-    url: "https://therealefl.co.uk/feed/",
-    category: "fan"
-  }
-];
+  ['BBC Sport','https://feeds.bbci.co.uk/sport/football/rss.xml','media'],
+  ['Sky Sports','https://www.skysports.com/rss/12040','media'],
+  ['The 72','https://the72.co.uk/feed','media'],
+  ['Vital Football','https://vitalfootball.co.uk/feed','fan'],
+  ['The League Paper','https://www.theleaguepaper.com/feed','media'],
+  ['90min','https://www.90min.com/posts.rss','media'],
+  ['CaughtOffside','https://www.caughtoffside.com/feed','media'],
+  ['Football League World','https://footballleagueworld.co.uk/feed','media'],
+  ['Football365','https://www.football365.com/feed','media'],
+  ['The Real EFL','https://therealefl.co.uk/feed/','fan']
+].map(([name,url,category]) => ({name,url,category}));
 
 
 // ============================================================
 // THE 92 CLUBS
 // ============================================================
 
-const CLUBS = {
+const CLUB_NAMES = [
+  'Arsenal','Aston Villa','Bournemouth','Brentford',
+  'Brighton & Hove Albion','Chelsea','Coventry City',
+  'Crystal Palace','Everton','Fulham','Hull City',
+  'Ipswich Town','Leeds United','Liverpool','Manchester City',
+  'Manchester United','Newcastle United','Nottingham Forest',
+  'Sunderland','Tottenham Hotspur',
 
-  // PREMIER LEAGUE
+  'Birmingham City','Blackburn Rovers','Bolton Wanderers',
+  'Bristol City','Burnley','Cardiff City','Charlton Athletic',
+  'Derby County','Lincoln City','Middlesbrough','Millwall',
+  'Norwich City','Portsmouth','Preston North End',
+  'Queens Park Rangers','Sheffield United','Southampton',
+  'Stoke City','Swansea City','Watford',
+  'West Bromwich Albion','West Ham United',
+  'Wolverhampton Wanderers','Wrexham',
 
-  "Arsenal": ["arsenal"],
+  'AFC Wimbledon','Barnsley','Blackpool','Bradford City',
+  'Bromley','Burton Albion','Cambridge United',
+  'Doncaster Rovers','Huddersfield Town','Leicester City',
+  'Leyton Orient','Luton Town','Mansfield Town',
+  'Milton Keynes Dons','Notts County','Oxford United',
+  'Peterborough United','Plymouth Argyle','Reading',
+  'Sheffield Wednesday','Stevenage','Stockport County',
+  'Wigan Athletic','Wycombe Wanderers',
 
-  "Aston Villa": [
-    "aston villa",
-    "villa"
+  'Accrington Stanley','Barnet','Bristol Rovers',
+  'Cheltenham Town','Chesterfield','Colchester United',
+  'Crawley Town','Crewe Alexandra','Exeter City',
+  'Fleetwood Town','Gillingham','Grimsby Town',
+  'Newport County','Northampton Town','Oldham Athletic',
+  'Port Vale','Rochdale','Rotherham United','Salford City',
+  'Shrewsbury Town','Swindon Town','Tranmere Rovers',
+  'Walsall','York City'
+];
+
+
+// ============================================================
+// CLUB ALIASES
+// ============================================================
+
+const ALIASES = {
+
+  'Aston Villa': ['aston villa','villa'],
+
+  'Crystal Palace': ['crystal palace','palace'],
+
+  'Hull City': ['hull city','hull'],
+
+  'Manchester City': ['manchester city','man city'],
+
+  'Manchester United': [
+    'manchester united',
+    'man utd',
+    'man united'
   ],
 
-  "Bournemouth": ["bournemouth"],
-
-  "Brentford": ["brentford"],
-
-  "Brighton & Hove Albion": [
-    "brighton"
+  'Nottingham Forest': [
+    'nottingham forest',
+    'forest'
   ],
 
-  "Chelsea": ["chelsea"],
-
-  "Coventry City": [
-    "coventry"
+  'Tottenham Hotspur': [
+    'tottenham',
+    'spurs'
   ],
 
-  "Crystal Palace": [
-    "crystal palace",
-    "palace"
+  'Derby County': [
+    'derby county',
+    'derby'
   ],
 
-  "Everton": ["everton"],
-
-  "Fulham": ["fulham"],
-
-  "Hull City": [
-    "hull city",
-    "hull"
+  'Lincoln City': [
+    'lincoln city',
+    'lincoln'
   ],
 
-  "Ipswich Town": ["ipswich"],
-
-  "Leeds United": ["leeds"],
-
-  "Liverpool": ["liverpool"],
-
-  "Manchester City": [
-    "manchester city",
-    "man city"
+  'Middlesbrough': [
+    'middlesbrough',
+    'boro'
   ],
 
-  "Manchester United": [
-    "manchester united",
-    "man utd",
-    "man united"
+  'Portsmouth': [
+    'portsmouth',
+    'pompey'
   ],
 
-  "Newcastle United": ["newcastle"],
-
-  "Nottingham Forest": [
-    "nottingham forest",
-    "forest"
+  'Preston North End': [
+    'preston north end',
+    'preston'
   ],
 
-  "Sunderland": ["sunderland"],
-
-  "Tottenham Hotspur": [
-    "tottenham",
-    "spurs"
+  'Queens Park Rangers': [
+    'queens park rangers',
+    'qpr'
   ],
 
-
-  // CHAMPIONSHIP
-
-  "Birmingham City": ["birmingham"],
-
-  "Blackburn Rovers": ["blackburn"],
-
-  "Bolton Wanderers": ["bolton"],
-
-  "Bristol City": ["bristol city"],
-
-  "Burnley": ["burnley"],
-
-  "Cardiff City": ["cardiff"],
-
-  "Charlton Athletic": ["charlton"],
-
-  "Derby County": [
-    "derby county",
-    "derby"
+  'Sheffield United': [
+    'sheffield united',
+    'sheff utd',
+    'sheff united'
   ],
 
-  "Lincoln City": [
-    "lincoln city",
-    "lincoln"
+  'West Bromwich Albion': [
+    'west bromwich albion',
+    'west brom'
   ],
 
-  "Middlesbrough": [
-    "middlesbrough",
-    "boro"
+  'West Ham United': [
+    'west ham united',
+    'west ham'
   ],
 
-  "Millwall": ["millwall"],
-
-  "Norwich City": ["norwich"],
-
-  "Portsmouth": [
-    "portsmouth",
-    "pompey"
+  'Wolverhampton Wanderers': [
+    'wolverhampton wanderers',
+    'wolverhampton',
+    'wolves'
   ],
 
-  "Preston North End": ["preston"],
-
-  "Queens Park Rangers": [
-    "queens park rangers",
-    "qpr"
+  'AFC Wimbledon': [
+    'afc wimbledon',
+    'wimbledon'
   ],
 
-  "Sheffield United": [
-    "sheffield united",
-    "sheff utd",
-    "sheff united"
+  'Bradford City': [
+    'bradford city',
+    'bradford'
   ],
 
-  "Southampton": ["southampton"],
-
-  "Stoke City": ["stoke"],
-
-  "Swansea City": ["swansea"],
-
-  "Watford": ["watford"],
-
-  "West Bromwich Albion": [
-    "west brom",
-    "west bromwich"
+  'Burton Albion': [
+    'burton albion',
+    'burton'
   ],
 
-  "West Ham United": ["west ham"],
-
-  "Wolverhampton Wanderers": [
-    "wolves",
-    "wolverhampton"
+  'Cambridge United': [
+    'cambridge united',
+    'cambridge'
   ],
 
-  "Wrexham": ["wrexham"],
-
-
-  // LEAGUE ONE
-
-  "AFC Wimbledon": [
-    "afc wimbledon",
-    "wimbledon"
+  'Doncaster Rovers': [
+    'doncaster rovers',
+    'doncaster'
   ],
 
-  "Barnsley": ["barnsley"],
-
-  "Blackpool": ["blackpool"],
-
-  "Bradford City": [
-    "bradford city",
-    "bradford"
+  'Leyton Orient': [
+    'leyton orient'
   ],
 
-  "Bromley": ["bromley"],
-
-  "Burton Albion": [
-    "burton albion",
-    "burton"
+  'Luton Town': [
+    'luton town',
+    'luton'
   ],
 
-  "Cambridge United": [
-    "cambridge united",
-    "cambridge"
+  'Milton Keynes Dons': [
+    'milton keynes dons',
+    'mk dons',
+    'milton keynes'
   ],
 
-  "Doncaster Rovers": ["doncaster"],
-
-  "Huddersfield Town": ["huddersfield"],
-
-  "Leicester City": ["leicester"],
-
-  "Leyton Orient": ["leyton orient"],
-
-  "Luton Town": ["luton"],
-
-  "Mansfield Town": ["mansfield"],
-
-  "Milton Keynes Dons": [
-    "mk dons",
-    "milton keynes"
+  'Notts County': [
+    'notts county'
   ],
 
-  "Notts County": ["notts county"],
-
-  "Oxford United": [
-    "oxford united",
-    "oxford"
+  'Oxford United': [
+    'oxford united',
+    'oxford'
   ],
 
-  "Peterborough United": ["peterborough"],
-
-  "Plymouth Argyle": ["plymouth"],
-
-  "Reading": ["reading"],
-
-  "Sheffield Wednesday": [
-    "sheffield wednesday",
-    "sheff wed"
+  'Peterborough United': [
+    'peterborough united',
+    'peterborough'
   ],
 
-  "Stevenage": ["stevenage"],
-
-  "Stockport County": ["stockport"],
-
-  "Wigan Athletic": ["wigan"],
-
-  "Wycombe Wanderers": ["wycombe"],
-
-
-  // LEAGUE TWO
-
-  "Accrington Stanley": ["accrington"],
-
-  "Barnet": ["barnet"],
-
-  "Bristol Rovers": ["bristol rovers"],
-
-  "Cheltenham Town": ["cheltenham"],
-
-  "Chesterfield": ["chesterfield"],
-
-  "Colchester United": ["colchester"],
-
-  "Crawley Town": ["crawley"],
-
-  "Crewe Alexandra": ["crewe"],
-
-  "Exeter City": ["exeter"],
-
-  "Fleetwood Town": ["fleetwood"],
-
-  "Gillingham": ["gillingham"],
-
-  "Grimsby Town": ["grimsby"],
-
-  "Newport County": [
-    "newport county",
-    "newport"
+  'Plymouth Argyle': [
+    'plymouth argyle',
+    'plymouth'
   ],
 
-  "Northampton Town": ["northampton"],
+  'Sheffield Wednesday': [
+    'sheffield wednesday',
+    'sheff wed'
+  ],
 
-  "Oldham Athletic": ["oldham"],
+  'Stockport County': [
+    'stockport county',
+    'stockport'
+  ],
 
-  "Port Vale": ["port vale"],
+  'Wigan Athletic': [
+    'wigan athletic',
+    'wigan'
+  ],
 
-  "Rochdale": ["rochdale"],
+  'Wycombe Wanderers': [
+    'wycombe wanderers',
+    'wycombe'
+  ],
 
-  "Rotherham United": ["rotherham"],
+  'Newport County': [
+    'newport county',
+    'newport'
+  ],
 
-  "Salford City": ["salford"],
+  'Northampton Town': [
+    'northampton town',
+    'northampton'
+  ],
 
-  "Shrewsbury Town": ["shrewsbury"],
+  'Oldham Athletic': [
+    'oldham athletic',
+    'oldham'
+  ],
 
-  "Swindon Town": ["swindon"],
+  'Port Vale': [
+    'port vale'
+  ],
 
-  "Tranmere Rovers": ["tranmere"],
+  'Rotherham United': [
+    'rotherham united',
+    'rotherham'
+  ],
 
-  "Walsall": ["walsall"],
+  'Salford City': [
+    'salford city',
+    'salford'
+  ],
 
-  "York City": ["york city"]
+  'Shrewsbury Town': [
+    'shrewsbury town',
+    'shrewsbury'
+  ],
+
+  'Swindon Town': [
+    'swindon town',
+    'swindon'
+  ],
+
+  'Tranmere Rovers': [
+    'tranmere rovers',
+    'tranmere'
+  ],
+
+  'York City': [
+    'york city'
+  ]
 };
+
+
+// Give every remaining club its full name as an alias.
+for (const club of CLUB_NAMES) {
+  if (!ALIASES[club]) {
+    ALIASES[club] = [club.toLowerCase()];
+  }
+}
 
 
 // ============================================================
@@ -359,45 +280,56 @@ const CLUBS = {
 // ============================================================
 
 function googleNewsUrl(query) {
+
   return (
-    "https://news.google.com/rss/search?q=" +
+    'https://news.google.com/rss/search?q=' +
     encodeURIComponent(query) +
-    "&hl=en-GB&gl=GB&ceid=GB:en"
+    '&hl=en-GB&gl=GB&ceid=GB:en'
   );
+
 }
 
 
 // ============================================================
-// CLUB-SPECIFIC FEEDS
+// CLUB FEEDS
 // ============================================================
 
-const CLUB_SOURCE_FEEDS = Object.keys(CLUBS).flatMap(club => [
+const CLUB_FEEDS = CLUB_NAMES.flatMap(club => [
 
   {
     name: `Official – ${club}`,
+
     url: googleNewsUrl(
       `"${club}" football (official OR "official website" OR "club statement" OR announcement)`
     ),
+
     clubHint: club,
-    category: "official"
+
+    category: 'official'
   },
 
   {
     name: `Fan – ${club}`,
+
     url: googleNewsUrl(
       `"${club}" football (supporters OR fans OR fanzine OR "fan site" OR "fan blog" OR podcast)`
     ),
+
     clubHint: club,
-    category: "fan"
+
+    category: 'fan'
   },
 
   {
     name: `Media – ${club}`,
+
     url: googleNewsUrl(
       `"${club}" football news`
     ),
+
     clubHint: club,
-    category: "media"
+
+    category: 'media'
   }
 
 ]);
@@ -405,65 +337,69 @@ const CLUB_SOURCE_FEEDS = Object.keys(CLUBS).flatMap(club => [
 
 const FEEDS = [
   ...BASE_FEEDS,
-  ...CLUB_SOURCE_FEEDS
+  ...CLUB_FEEDS
 ];
 
 
 // ============================================================
-// TEXT HELPERS
+// RSS HELPERS
 // ============================================================
 
-function stripTags(value) {
-  return String(value || "")
-    .replace(/<[^>]*>/g, "")
-    .replace(/\s+/g, " ")
+function stripTags(value = '') {
+
+  return value
+    .replace(/<[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
     .trim();
+
 }
 
 
-function decodeEntities(value) {
-  return String(value || "")
-    .replace(/<!\[CDATA\[/gi, "")
-    .replace(/\]\]>/gi, "")
-    .replace(/&amp;/gi, "&")
-    .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">")
-    .replace(/&quot;/gi, '"')
-    .replace(/&apos;/gi, "'")
-    .replace(/&#39;/gi, "'")
+function decodeEntities(value = '') {
+
+  return value
+    .replace(/<!\[CDATA\[/g, '')
+    .replace(/\]\]>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
     .replace(/&#x27;/gi, "'")
-    .replace(/&#x2F;/gi, "/");
+    .replace(/&#x2F;/gi, '/');
+
 }
 
 
-function textFromTag(block, tag) {
+function getTag(block, name) {
 
-  const regex = new RegExp(
-    `<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`,
-    "i"
+  const match = block.match(
+    new RegExp(
+      `<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,
+      'i'
+    )
   );
 
-  const match = block.match(regex);
+  return match
+    ? decodeEntities(stripTags(match[1]))
+    : '';
 
-  if (!match) {
-    return "";
-  }
-
-  return decodeEntities(
-    stripTags(match[1])
-  );
 }
 
 
 function safeDate(value) {
 
-  const date = new Date(value || "");
+  const date = new Date(value || '');
 
   if (Number.isNaN(date.getTime())) {
+
     return new Date().toISOString();
+
   }
 
   return date.toISOString();
+
 }
 
 
@@ -471,124 +407,155 @@ function safeDate(value) {
 // RSS PARSER
 // ============================================================
 
-function parseRSS(xml, sourceName) {
+function parseRSS(xml, fallbackSource) {
 
   const items = [];
 
   const blocks =
-    String(xml || "").match(
+    xml.match(
       /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
     ) || [];
 
   for (const block of blocks) {
 
-    const title = textFromTag(block, "title");
-    const link = textFromTag(block, "link");
+    const title = getTag(block, 'title');
+
+    const link = getTag(block, 'link');
 
     if (!title || !link) {
       continue;
     }
 
-    const description =
-      textFromTag(block, "description");
+    const summary =
+      getTag(block, 'description');
 
     const date =
-      textFromTag(block, "pubDate") ||
-      textFromTag(block, "published") ||
-      textFromTag(block, "updated");
+      getTag(block, 'pubDate') ||
+      getTag(block, 'published') ||
+      getTag(block, 'updated');
 
-    const publisher =
-      textFromTag(block, "source") ||
-      sourceName;
+    const source =
+      getTag(block, 'source') ||
+      fallbackSource;
 
     items.push({
+
       title,
+
       link,
+
       summary:
-        description.length > 220
-          ? description.slice(0, 217) + "..."
-          : description,
+        summary.length > 220
+          ? summary.slice(0, 217) + '...'
+          : summary,
+
       date: safeDate(date),
-      source: publisher,
-      feedSource: sourceName
+
+      source,
+
+      feedSource: fallbackSource
+
     });
+
   }
 
   return items;
+
 }
 
 
 // ============================================================
-// CLUB MATCHING
+// FEED FETCHING
 // ============================================================
 
-function findMatchingClubs(text) {
+const FETCH_TIMEOUT_MS = 8000;
 
-  const lower = String(text || "").toLowerCase();
-
-  const matches = [];
-
-  for (const [club, aliases] of Object.entries(CLUBS)) {
-
-    if (
-      aliases.some(alias =>
-        lower.includes(alias)
-      )
-    ) {
-      matches.push(club);
-    }
-  }
-
-  return matches;
-}
-
-
-// ============================================================
-// FETCH FEED
-// ============================================================
 
 async function fetchFeed(feed) {
 
-  try {
+  const controller =
+    new AbortController();
 
-    const response = await fetch(
-      feed.url,
-      {
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (compatible; The92WeeklyBot/1.0; +https://the92weekly.com)"
-        }
-      }
+  const timer =
+    setTimeout(
+      () => controller.abort(),
+      FETCH_TIMEOUT_MS
     );
 
+  try {
+
+    const response =
+      await fetch(
+        feed.url,
+        {
+          signal: controller.signal,
+
+          headers: {
+            'User-Agent':
+              'Mozilla/5.0 (compatible; The92WeeklyBot/2.0; +https://the92weekly.com)',
+
+            'Accept':
+              'application/rss+xml, application/xml, text/xml;q=0.9,*/*;q=0.8'
+          }
+        }
+      );
+
     if (!response.ok) {
+
       throw new Error(
         `HTTP ${response.status}`
       );
+
     }
 
-    const xml = await response.text();
+    const xml =
+      await response.text();
 
     return {
+
       success: true,
-      items: parseRSS(
-        xml,
-        feed.name
-      )
+
+      items:
+        parseRSS(
+          xml,
+          feed.name
+        )
+
     };
 
   } catch (error) {
 
-    console.error(
-      `Failed to fetch ${feed.name}: ${error.message}`
+    const message =
+      error &&
+      error.name === 'AbortError'
+
+        ? `timeout after ${FETCH_TIMEOUT_MS / 1000}s`
+
+        : (
+            error.message ||
+            String(error)
+          );
+
+    console.log(
+      `Skipped ${feed.name}: ${message}`
     );
 
     return {
+
       success: false,
+
       items: [],
-      error: error.message
+
+      error: message
+
     };
+
+  } finally {
+
+    clearTimeout(timer);
+
   }
+
 }
 
 
@@ -605,16 +572,22 @@ async function mapWithConcurrency(
   const results =
     new Array(list.length);
 
-  let nextIndex = 0;
+  let next = 0;
 
   async function worker() {
 
     while (true) {
 
-      const index = nextIndex++;
+      const index =
+        next++;
 
-      if (index >= list.length) {
+      if (
+        index >=
+        list.length
+      ) {
+
         return;
+
       }
 
       results[index] =
@@ -622,23 +595,329 @@ async function mapWithConcurrency(
           list[index],
           index
         );
+
     }
+
   }
 
-  const workers =
+  await Promise.all(
+
     Array.from(
       {
-        length: Math.min(
-          limit,
-          list.length
-        )
+        length:
+          Math.min(
+            limit,
+            list.length
+          )
       },
       worker
-    );
+    )
 
-  await Promise.all(workers);
+  );
 
   return results;
+
+}
+
+
+// ============================================================
+// SPAM NORMALISATION
+// ============================================================
+
+function normaliseSpamText(value = '') {
+
+  return value
+
+    .toLowerCase()
+
+    .normalize('NFKD')
+
+    .replace(
+      /[\u0300-\u036f]/g,
+      ''
+    )
+
+    .replace(
+      /[^a-z0-9]+/g,
+      ' '
+    )
+
+    .replace(
+      /\s+/g,
+      ' '
+    )
+
+    .trim();
+
+}
+
+
+// ============================================================
+// STREAMING / SEO SPAM FILTER
+// ============================================================
+
+function isStreamingSpam(item) {
+
+  const title =
+    normaliseSpamText(
+      item.title
+    );
+
+  const summary =
+    normaliseSpamText(
+      item.summary
+    );
+
+  const source =
+    normaliseSpamText(
+      item.source
+    );
+
+  const link =
+    (
+      item.link ||
+      ''
+    ).toLowerCase();
+
+  const text =
+    `${title} ${summary} ${source}`;
+
+
+  // ----------------------------------------------------------
+  // DEFINITE STREAMING TERMS
+  // ----------------------------------------------------------
+
+  const hardPhrases = [
+
+    'live stream',
+    'live streams',
+    'live streaming',
+
+    'live broadcast',
+    'live broadcasts',
+
+    'football streams',
+    'soccer streams',
+
+    'stream online',
+    'streaming online',
+
+    'free live stream',
+    'free live',
+
+    'free broadcast',
+    'free broadcasts',
+
+    'football live online',
+    'football live free',
+
+    'live online tv',
+
+    'live tv stream',
+    'live tv streaming',
+
+    'live sports',
+
+    'watch live online',
+    'watch live stream',
+
+    'hd stream',
+    'hd streams',
+
+    'live soccer stream'
+
+  ];
+
+
+  if (
+    hardPhrases.some(
+      phrase =>
+        title.includes(phrase) ||
+        text.includes(phrase)
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  // ----------------------------------------------------------
+  // "HOW TO WATCH" / SEO STREAMING ARTICLES
+  // ----------------------------------------------------------
+
+  if (
+    title.includes(
+      'how to watch'
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  if (
+    title.includes(
+      'where to watch'
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  if (
+    title.includes('watch') &&
+    (
+      title.includes('free') ||
+      title.includes('live')
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  if (
+    title.includes('broadcast') &&
+    (
+      title.includes('live') ||
+      title.includes('free')
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  if (
+    title.includes('tv channel') &&
+    (
+      title.includes('live') ||
+      title.includes('football') ||
+      title.includes('soccer')
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  // ----------------------------------------------------------
+  // KNOWN JUNK SOURCE
+  // ----------------------------------------------------------
+
+  const blockedSources = [
+
+    'air and space museum'
+
+  ];
+
+
+  if (
+    blockedSources.some(
+      value =>
+        source.includes(value)
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  // ----------------------------------------------------------
+  // STREAMING-LOOKING URLS
+  // ----------------------------------------------------------
+
+  const blockedUrlBits = [
+
+    'livestream',
+    'live-stream',
+    'watch-live',
+    'free-live',
+    'streaming',
+    'stream-',
+    '-stream'
+
+  ];
+
+
+  if (
+    blockedUrlBits.some(
+      value =>
+        link.includes(value)
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  // ----------------------------------------------------------
+  // OBVIOUS SEO GARBAGE
+  // ----------------------------------------------------------
+
+  const punctuation =
+    (
+      item.title || ''
+    ).match(
+      /[!$+#@]/g
+    ) || [];
+
+
+  if (
+    punctuation.length >= 3
+  ) {
+
+    return true;
+
+  }
+
+
+  return false;
+
+}
+
+
+// ============================================================
+// FIND CLUBS
+// ============================================================
+
+function findMatchingClubs(text) {
+
+  const lower =
+    text.toLowerCase();
+
+  const matches = [];
+
+
+  for (
+    const club of CLUB_NAMES
+  ) {
+
+    if (
+      ALIASES[club].some(
+        alias =>
+          lower.includes(alias)
+      )
+    ) {
+
+      matches.push(club);
+
+    }
+
+  }
+
+
+  return matches;
+
 }
 
 
@@ -648,304 +927,72 @@ async function mapWithConcurrency(
 
 function dedupe(items) {
 
-  const seen = new Set();
+  const seen =
+    new Set();
 
-  return items.filter(item => {
+  return items.filter(
+    item => {
 
-    const key =
-      String(
-        item.link ||
-        item.title ||
-        ""
-      )
-      .toLowerCase()
-      .replace(/\/$/, "");
+      const key =
+        (
+          item.link ||
+          item.title ||
+          ''
+        )
+          .toLowerCase()
+          .replace(
+            /\/$/,
+            ''
+          );
 
-    if (seen.has(key)) {
-      return false;
+      if (
+        seen.has(key)
+      ) {
+
+        return false;
+
+      }
+
+      seen.add(key);
+
+      return true;
+
     }
+  );
 
-    seen.add(key);
-
-    return true;
-  });
 }
 
 
 // ============================================================
-// STREAMING / SEO SPAM FILTER
-// ============================================================
-//
-// This is intentionally strong because we do not want The92Weekly
-// linking users to dodgy streaming sites.
-//
-// Legitimate football journalism remains allowed.
-// ============================================================
-
-function isStreamingSpam(item) {
-
-  const title =
-    String(item.title || "")
-      .toLowerCase();
-
-  const summary =
-    String(item.summary || "")
-      .toLowerCase();
-
-  const source =
-    String(item.source || "")
-      .toLowerCase();
-
-  const link =
-    String(item.link || "")
-      .toLowerCase();
-
-  const text =
-    `${title} ${summary} ${source} ${link}`;
-
-
-  // ----------------------------------------------------------
-  // DEFINITE STREAMING PHRASES
-  // ----------------------------------------------------------
-
-  const streamingPhrases = [
-
-    "live stream",
-    "live streams",
-    "live streaming",
-
-    "live broadcast",
-    "live broadcasts",
-
-    "free broadcast",
-    "free broadcasts",
-
-    "football live free",
-    "football live online",
-
-    "live online tv",
-    "live online",
-
-    "stream online",
-    "streaming online",
-
-    "free live stream",
-    "free live",
-
-    "hd stream",
-    "hd streams",
-
-    "watch live stream",
-    "watch live online",
-
-    "live tv stream",
-    "live tv streaming",
-
-    "live soccer stream",
-
-    "football streams",
-    "soccer streams",
-
-    "free streaming",
-
-    "watch football live",
-    "watch the match live",
-
-    "watch match live",
-
-    "online broadcast",
-    "online broadcasts"
-
-  ];
-
-
-  if (
-    streamingPhrases.some(
-      phrase =>
-        text.includes(phrase)
-    )
-  ) {
-    return true;
-  }
-
-
-  // ----------------------------------------------------------
-  // SEO / "HOW TO WATCH" JUNK
-  // ----------------------------------------------------------
-
-  const seoPatterns = [
-
-    /how\s+to\s+watch/i,
-
-    /where\s+to\s+watch/i,
-
-    /here'?s\s+how\s+to\s+watch/i,
-
-    /here\s+is\s+how\s+to\s+watch/i,
-
-    /watch.*free.*online/i,
-
-    /football.*live.*free/i,
-
-    /football.*live.*online/i,
-
-    /live.*free.*broadcast/i,
-
-    /free.*broadcast.*tv/i
-
-  ];
-
-
-  if (
-    seoPatterns.some(
-      pattern =>
-        pattern.test(title)
-    )
-  ) {
-    return true;
-  }
-
-
-  // ----------------------------------------------------------
-  // KNOWN JUNK / NON-FOOTBALL SOURCES
-  // ----------------------------------------------------------
-
-  const blockedSources = [
-
-    "air and space museum",
-
-    "air & space museum"
-
-  ];
-
-
-  if (
-    blockedSources.some(
-      blocked =>
-        source.includes(blocked)
-    )
-  ) {
-    return true;
-  }
-
-
-  // ----------------------------------------------------------
-  // STREAMING URL PATTERNS
-  // ----------------------------------------------------------
-
-  const blockedUrlPatterns = [
-
-    "livestream",
-    "live-stream",
-    "live_stream",
-
-    "watch-live",
-    "watch_live",
-
-    "free-live",
-    "free_live",
-
-    "freestream",
-    "free-stream",
-
-    "stream-live",
-    "streamlive",
-
-    "livetv",
-    "live-tv",
-
-    "soccer-stream",
-    "football-stream"
-
-  ];
-
-
-  if (
-    blockedUrlPatterns.some(
-      pattern =>
-        link.includes(pattern)
-    )
-  ) {
-    return true;
-  }
-
-
-  // ----------------------------------------------------------
-  // EXCESSIVE SPAM PUNCTUATION
-  // ----------------------------------------------------------
-
-  const punctuation =
-    (
-      title.match(
-        /[!$+#@]/g
-      ) || []
-    ).length;
-
-
-  if (punctuation >= 4) {
-    return true;
-  }
-
-
-  // ----------------------------------------------------------
-  // OBVIOUS STREAMING TITLE STRUCTURE
-  // ----------------------------------------------------------
-
-  const hasLive =
-    /\blive\b/i.test(title);
-
-  const hasWatch =
-    /\bwatch\b/i.test(title);
-
-  const hasFree =
-    /\bfree\b/i.test(title);
-
-  const hasTv =
-    /\btv\b/i.test(title);
-
-  const hasStream =
-    /\bstream(s|ing)?\b/i.test(title);
-
-
-  if (
-    hasLive &&
-    (
-      hasStream ||
-      (hasWatch && hasFree) ||
-      (hasTv && hasFree)
-    )
-  ) {
-    return true;
-  }
-
-
-  return false;
-}
-
-
-// ============================================================
-// BALANCE NEWS ACROSS THE 92 CLUBS
+// BALANCE ALL 92 CLUBS
 // ============================================================
 
 function balanceForAllClubs(items) {
 
-  const PER_CATEGORY = 4;
   const MAX_PER_CLUB = 12;
 
+  const PER_CATEGORY = 4;
+
   const selected = [];
-  const selectedKeys = new Set();
+
+  const selectedKeys =
+    new Set();
 
   const counts =
     Object.fromEntries(
-      Object.keys(CLUBS).map(club => [
-        club,
-        {
-          official: 0,
-          fan: 0,
-          media: 0,
-          total: 0
-        }
-      ])
+
+      CLUB_NAMES.map(
+        club => [
+          club,
+          {
+            official: 0,
+            fan: 0,
+            media: 0,
+            total: 0
+          }
+        ]
+      )
+
     );
 
 
@@ -958,25 +1005,36 @@ function balanceForAllClubs(items) {
 
 
   // ----------------------------------------------------------
-  // FIRST PASS
-  // Give every club an opportunity in each category.
+  // FIRST: give every club up to 4 from each category
   // ----------------------------------------------------------
 
-  for (const club of Object.keys(CLUBS)) {
+  for (
+    const club of CLUB_NAMES
+  ) {
 
     for (
       const category of [
-        "official",
-        "fan",
-        "media"
+        'official',
+        'fan',
+        'media'
       ]
     ) {
 
-      for (const item of sorted) {
+      for (
+        const item of sorted
+      ) {
 
         if (
-          !item.clubs.includes(club) ||
-          item.category !== category
+          !item.clubs.includes(
+            club
+          )
+        ) {
+          continue;
+        }
+
+        if (
+          item.category !==
+          category
         ) {
           continue;
         }
@@ -988,67 +1046,93 @@ function balanceForAllClubs(items) {
           break;
         }
 
-        const key =
-          String(
-            item.link ||
-            item.title ||
-            ""
-          )
-          .toLowerCase();
 
-        if (selectedKeys.has(key)) {
+        const key =
+          (
+            item.link ||
+            item.title
+          ).toLowerCase();
+
+
+        if (
+          selectedKeys.has(key)
+        ) {
           continue;
         }
 
+
         selected.push(item);
+
         selectedKeys.add(key);
 
         counts[club][category]++;
+
         counts[club].total++;
+
       }
+
     }
+
   }
 
 
   // ----------------------------------------------------------
-  // SECOND PASS
-  // Fill remaining places with other legitimate articles.
+  // SECOND: fill remaining places with any good news
   // ----------------------------------------------------------
 
-  for (const club of Object.keys(CLUBS)) {
+  for (
+    const club of CLUB_NAMES
+  ) {
 
-    for (const item of sorted) {
+    for (
+      const item of sorted
+    ) {
 
       if (
         counts[club].total >=
         MAX_PER_CLUB
       ) {
+
         break;
+
       }
+
 
       if (
-        !item.clubs.includes(club)
+        !item.clubs.includes(
+          club
+        )
       ) {
+
         continue;
+
       }
+
 
       const key =
-        String(
+        (
           item.link ||
-          item.title ||
-          ""
-        )
-        .toLowerCase();
+          item.title
+        ).toLowerCase();
 
-      if (selectedKeys.has(key)) {
+
+      if (
+        selectedKeys.has(key)
+      ) {
+
         continue;
+
       }
 
+
       selected.push(item);
+
       selectedKeys.add(key);
 
       counts[club].total++;
+
     }
+
   }
 
 
@@ -1059,10 +1143,18 @@ function balanceForAllClubs(items) {
   );
 
 
-  return selected.slice(
-    0,
-    1200
-  );
+  return {
+
+    items:
+      selected.slice(
+        0,
+        1200
+      ),
+
+    counts
+
+  };
+
 }
 
 
@@ -1073,7 +1165,7 @@ function balanceForAllClubs(items) {
 async function main() {
 
   console.log(
-    `Fetching ${FEEDS.length} news feeds with concurrency limit 12...`
+    `Fetching ${FEEDS.length} news feeds with concurrency limit 12 and ${FETCH_TIMEOUT_MS / 1000}s timeout...`
   );
 
 
@@ -1086,17 +1178,23 @@ async function main() {
 
 
   const allItems = [];
+
   const sourceStatus = {};
 
 
   FEEDS.forEach(
-    (feed, index) => {
+    (
+      feed,
+      index
+    ) => {
 
       const result =
         results[index];
 
 
-      sourceStatus[feed.name] = {
+      sourceStatus[
+        feed.name
+      ] = {
 
         success:
           result.success,
@@ -1105,18 +1203,24 @@ async function main() {
           result.items.length,
 
         error:
-          result.error || null
+          result.error ||
+          null
 
       };
 
 
       for (
-        const item of result.items
+        const item of
+        result.items
       ) {
 
         const clubs =
           feed.clubHint
-            ? [feed.clubHint]
+
+            ? [
+                feed.clubHint
+              ]
+
             : findMatchingClubs(
                 `${item.title} ${item.summary}`
               );
@@ -1125,7 +1229,9 @@ async function main() {
         if (
           clubs.length === 0
         ) {
+
           continue;
+
         }
 
 
@@ -1137,10 +1243,12 @@ async function main() {
 
           category:
             feed.category ||
-            "media"
+            'media'
 
         });
+
       }
+
     }
   );
 
@@ -1149,39 +1257,37 @@ async function main() {
   // REMOVE STREAMING / SEO SPAM
   // ==========================================================
 
-  const beforeFilter =
+  const before =
     allItems.length;
 
 
-  const filteredItems =
+  const filtered =
     allItems.filter(
       item =>
         !isStreamingSpam(item)
     );
 
 
-  const removedSpam =
-    beforeFilter -
-    filteredItems.length;
+  const removed =
+    before -
+    filtered.length;
 
 
   console.log(
-    `Removed ${removedSpam} streaming/spam articles.`
+    `Removed ${removed} streaming/spam articles.`
   );
 
 
   // ==========================================================
-  // REMOVE DUPLICATES
+  // DEDUPE
   // ==========================================================
 
   const deduped =
-    dedupe(
-      filteredItems
-    );
+    dedupe(filtered);
 
 
   // ==========================================================
-  // BALANCE CLUB COVERAGE
+  // BALANCE
   // ==========================================================
 
   const balanced =
@@ -1190,35 +1296,61 @@ async function main() {
     );
 
 
+  const successfulFeeds =
+    Object.values(
+      sourceStatus
+    ).filter(
+      source =>
+        source.success
+    ).length;
+
+
+  // ==========================================================
+  // SAFETY CHECK
+  // ==========================================================
+  //
+  // If Google News or another upstream service has a major
+  // outage, NEVER replace the live data with an empty dataset.
+  // ==========================================================
+
+  const minimumSuccessful =
+    Math.max(
+      10,
+      Math.floor(
+        FEEDS.length * 0.10
+      )
+    );
+
+
+  if (
+    successfulFeeds <
+    minimumSuccessful
+  ) {
+
+    throw new Error(
+      `Only ${successfulFeeds}/${FEEDS.length} feeds succeeded. Existing club-news.json was left untouched.`
+    );
+
+  }
+
+
   // ==========================================================
   // CLUB COUNTS
   // ==========================================================
 
   const clubCounts =
     Object.fromEntries(
-      Object.keys(CLUBS).map(
+
+      CLUB_NAMES.map(
         club => [
           club,
-          0
+          balanced.counts[
+            club
+          ].total
         ]
       )
+
     );
-
-
-  balanced.forEach(item => {
-
-    item.clubs.forEach(club => {
-
-      if (
-        clubCounts[club] !==
-        undefined
-      ) {
-        clubCounts[club]++;
-      }
-
-    });
-
-  });
 
 
   // ==========================================================
@@ -1227,7 +1359,8 @@ async function main() {
 
   const categoryCounts =
     Object.fromEntries(
-      Object.keys(CLUBS).map(
+
+      CLUB_NAMES.map(
         club => [
           club,
           {
@@ -1238,38 +1371,53 @@ async function main() {
           }
         ]
       )
+
     );
 
 
-  balanced.forEach(item => {
+  balanced.items.forEach(
+    item => {
 
-    item.clubs.forEach(club => {
+      item.clubs.forEach(
+        club => {
 
-      if (
-        !categoryCounts[club]
-      ) {
-        return;
-      }
+          if (
+            !categoryCounts[club]
+          ) {
 
+            return;
 
-      const category =
-        [
-          "official",
-          "fan",
-          "media"
-        ].includes(
-          item.category
-        )
-          ? item.category
-          : "media";
+          }
 
 
-      categoryCounts[club][category]++;
-      categoryCounts[club].total++;
+          const category =
+            [
+              'official',
+              'fan',
+              'media'
+            ].includes(
+              item.category
+            )
+              ? item.category
+              : 'media';
 
-    });
 
-  });
+          categoryCounts[
+            club
+          ][
+            category
+          ]++;
+
+
+          categoryCounts[
+            club
+          ].total++;
+
+        }
+      );
+
+    }
+  );
 
 
   // ==========================================================
@@ -1284,16 +1432,10 @@ async function main() {
     feedCount:
       FEEDS.length,
 
-    successfulFeeds:
-      Object.values(
-        sourceStatus
-      ).filter(
-        source =>
-          source.success
-      ).length,
+    successfulFeeds,
 
     removedStreamingSpam:
-      removedSpam,
+      removed,
 
     sources:
       sourceStatus,
@@ -1303,7 +1445,7 @@ async function main() {
     categoryCounts,
 
     items:
-      balanced
+      balanced.items
 
   };
 
@@ -1311,36 +1453,34 @@ async function main() {
   const outPath =
     path.join(
       __dirname,
-      "..",
-      "data",
-      "club-news.json"
+      '..',
+      'data',
+      'club-news.json'
     );
 
 
   fs.writeFileSync(
+
     outPath,
+
     JSON.stringify(
       output,
       null,
       2
     )
+
   );
 
 
   console.log(
-    `Wrote ${output.items.length} balanced club news items from ${output.successfulFeeds}/${output.feedCount} feeds.`
+    `Wrote ${balanced.items.length} balanced club-news items from ${successfulFeeds}/${FEEDS.length} feeds.`
   );
 
 
   console.log(
-    `Streaming/spam articles removed: ${removedSpam}`
+    `Streaming/spam articles removed: ${removed}`
   );
 
-
-  console.log(
-    "Club coverage:",
-    clubCounts
-  );
 }
 
 
@@ -1348,13 +1488,15 @@ async function main() {
 // RUN
 // ============================================================
 
-main().catch(error => {
+main().catch(
+  error => {
 
-  console.error(
-    "Club news update failed:",
-    error
-  );
+    console.error(
+      'Club news update failed:',
+      error
+    );
 
-  process.exit(1);
+    process.exit(1);
 
-});
+  }
+);
