@@ -188,6 +188,14 @@ async function fetchMatchDetail(match) {
         cards.push({ player: scorer, minute, team: teamName, card: "red" });
       } else if (d.yellowCard) {
         cards.push({ player: scorer, minute, team: teamName, card: "yellow" });
+      } else {
+        // Doesn't match any known category — likely a booking using a field
+        // name we haven't confirmed yet. Log the full entry so we can see
+        // its real shape and fix the field name properly.
+        console.log(
+          `[match-detail] ${match.home.name} v ${match.away.name}: ` +
+          `unmatched entry (not goal/red/yellow): ${JSON.stringify(d)}`
+        );
       }
     }
 
