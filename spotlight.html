@@ -54,8 +54,8 @@
   }
   nav a:hover, nav a.active, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
 
-  .nav-item { position: relative; }
-  .nav-trigger { display: flex; align-items: center; gap: 5px; }
+  .nav-item { position: relative; display: inline-flex; margin: 0 12px 6px 0; }
+  .nav-trigger { display: inline-flex; align-items: center; gap: 5px; margin: 0 !important; }
   .nav-trigger::after { content: '▾'; font-size: 8px; position: relative; top: 1px; }
   .dropdown-panel {
     display: none;
