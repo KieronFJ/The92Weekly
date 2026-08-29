@@ -135,13 +135,25 @@
     flex-wrap: wrap;
   }
   nav > * {
-    padding: 0 14px;
+    position: relative;
+    padding: 0;
+    margin: 0 14px;
   }
   nav > *:first-child {
-    padding-left: 0;
+    margin-left: 0;
   }
-  nav > *:not(:last-child) {
-    border-right: 1px solid var(--line);
+  nav > *:last-child {
+    margin-right: 0;
+  }
+  nav > * + *::before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: var(--line);
   }
 
   nav a, .nav-trigger {
@@ -910,14 +922,13 @@
   </div>
 
   <footer>
-  <p>THE92WEEKLY — Football across the pyramid.</p>
-  <div class="footer-links">
-    <a href="#">X / Twitter</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="privacy.html">Privacy Policy</a>
-  </div>
-</footer>
+    <p>THE92WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
   <script>
     const clubsByDiv = {
       1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],

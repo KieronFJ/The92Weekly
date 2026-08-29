@@ -45,13 +45,25 @@
     padding-bottom: 4px;
   }
   nav > * {
-    padding: 0 14px;
+    position: relative;
+    padding: 0;
+    margin: 0 14px;
   }
   nav > *:first-child {
-    padding-left: 0;
+    margin-left: 0;
   }
-  nav > *:not(:last-child) {
-    border-right: 1px solid var(--line);
+  nav > *:last-child {
+    margin-right: 0;
+  }
+  nav > * + *::before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: var(--line);
   }
   nav a, .nav-trigger {
     font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
