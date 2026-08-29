@@ -237,7 +237,67 @@
         font-size: 21px;
       }
     }
-  </style>
+  
+  /* ---------- Sidebar Navigation ---------- */
+  .menu-toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 34px; height: 34px; padding: 0; border: none; background: none; cursor: pointer;
+  }
+  .menu-toggle span {
+    display: block; width: 100%; height: 3px; background: var(--ink); border-radius: 2px;
+  }
+  .sidebar-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 150;
+  }
+  .sidebar-overlay.open { display: block; }
+  .sidebar-menu {
+    position: fixed; top: 0; left: -100%; width: min(86vw, 320px); height: 100vh;
+    background: #FFFFFF; z-index: 200; overflow-y: auto;
+    transition: left 0.25s ease;
+    box-shadow: 2px 0 20px rgba(0,0,0,0.15);
+  }
+  .sidebar-menu.open { left: 0; }
+  .sidebar-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px; border-bottom: 1px solid var(--line);
+  }
+  .sidebar-logo { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; color: var(--ink); }
+  .sidebar-logo span { color: var(--gold); }
+  .sidebar-close {
+    width: 32px; height: 32px; border: none; background: none; cursor: pointer;
+    font-size: 26px; line-height: 1; color: var(--ink-muted);
+  }
+  .sidebar-nav { padding: 12px 0 30px; }
+  .sidebar-nav > a {
+    display: block; padding: 14px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
+    font-size: 15.5px; color: var(--ink); border-bottom: 1px solid var(--line-soft);
+  }
+  .sidebar-section { border-bottom: 1px solid var(--line-soft); }
+  .sidebar-section-toggle {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px;
+    color: var(--ink); background: none; border: none; cursor: pointer; text-align: left;
+  }
+  .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
+  .sidebar-section.open .sidebar-chevron { transform: rotate(180deg); }
+  .sidebar-submenu {
+    max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
+    background: var(--panel);
+  }
+  .sidebar-section.open .sidebar-submenu { max-height: 2000px; }
+  .sidebar-submenu a {
+    display: block; padding: 12px 20px 12px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
+    color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
+  }
+  .sidebar-submenu a:last-child { border-bottom: none; }
+  .sidebar-teams-group-title {
+    padding: 12px 20px 4px 34px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
+    font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold);
+  }
+  .sidebar-team-link { display: flex; align-items: center; gap: 10px; }
+  .sidebar-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+</style>
 </head>
 
 <body>
@@ -247,16 +307,67 @@
     THE<span class="green">92</span>WEEKLY
   </div>
 
-  <nav>
-    <a href="membership.html">Membership</a>
-    <a href="index.html#latest">Latest</a>
-    <a href="club-news.html">Club News</a>
-    <a href="teams.html">Teams</a>
-    <a href="tables.html">Tables</a>
-    <a href="index.html#spotlight">Spotlight</a>
-    <a href="accumulator.html">Acca Picks</a>
-    <a href="about.html">About</a>
-  </nav>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <div class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">THE<span>92</span>WEEKLY</div>
+          <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="membership.html">Membership</a>
+
+          <div class="sidebar-section" id="sidebar-latest-section">
+            <button class="sidebar-section-toggle">Latest <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu">
+              <a href="index.html#latest">Latest Articles</a>
+              <a href="club-news.html">Club News</a>
+              <a href="index.html#spotlight">Spotlight</a>
+            </div>
+          </div>
+
+          <div class="sidebar-section" id="sidebar-teams-section">
+            <button class="sidebar-section-toggle">Teams <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu" id="sidebar-teams-submenu">
+              <a href="teams.html">View full directory &rarr;</a>
+            </div>
+          </div>
+
+          <div class="sidebar-section" id="sidebar-tables-section">
+            <button class="sidebar-section-toggle">Tables <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu">
+              <a href="tables.html?div=1">Premier League</a>
+              <a href="tables.html?div=2">Championship</a>
+              <a href="tables.html?div=3">League One</a>
+              <a href="tables.html?div=4">League Two</a>
+            </div>
+          </div>
+
+          <div class="sidebar-section" id="sidebar-picks-section">
+            <button class="sidebar-section-toggle">Acca Tips &amp; Analysis <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu">
+              <a href="index.html#spotlight">Spotlight</a>
+              <a href="accumulator.html">This Week's Acca Picks</a>
+            </div>
+          </div>
+
+          <a href="ins-and-outs.html">Ins &amp; Outs</a>
+
+          <div class="sidebar-section" id="sidebar-community-section">
+            <button class="sidebar-section-toggle">Community <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu">
+              <a href="groundhopper.html">Groundhopper's Companion</a>
+              <a href="fan-blogs.html">Fan Blogs</a>
+              <a href="polls.html">Polls</a>
+            </div>
+          </div>
+
+          <a href="about.html">About</a>
+        </nav>
+      </div>
 </header>
 
 <main>
@@ -865,6 +976,35 @@ async function loadData() {
 
 
 loadData();
+
+
+    // Sidebar menu open/close
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebarMenu = document.getElementById('sidebar-menu');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const sidebarClose = document.getElementById('sidebar-close');
+
+    function openSidebar() {
+      sidebarMenu.classList.add('open');
+      sidebarOverlay.classList.add('open');
+    }
+    function closeSidebar() {
+      sidebarMenu.classList.remove('open');
+      sidebarOverlay.classList.remove('open');
+    }
+    if (menuToggle) menuToggle.addEventListener('click', openSidebar);
+    if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+    if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeSidebar();
+    });
+
+    // Expandable sections (Latest, Teams, Tables, Acca Tips & Analysis, Community)
+    document.querySelectorAll('.sidebar-section-toggle').forEach(btn => {
+      btn.addEventListener('click', function() {
+        btn.closest('.sidebar-section').classList.toggle('open');
+      });
+    });
 
 </script>
 
