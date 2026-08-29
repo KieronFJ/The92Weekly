@@ -641,18 +641,89 @@
     max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
     background: var(--panel);
   }
-  .sidebar-section.open .sidebar-submenu { max-height: 2000px; }
+  .sidebar-section.open .sidebar-submenu { max-height: 5000px; }
   .sidebar-submenu a {
     display: block; padding: 12px 20px 12px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
     color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-submenu a:last-child { border-bottom: none; }
-  .sidebar-teams-group-title {
-    padding: 12px 20px 4px 34px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
-    font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold);
+
+  /* ---------- Teams: league dropdowns ---------- */
+  .sidebar-league {
+    border-bottom: 1px solid var(--line-soft);
   }
-  .sidebar-team-link { display: flex; align-items: center; gap: 10px; }
-  .sidebar-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .sidebar-league:last-of-type {
+    border-bottom: none;
+  }
+  .sidebar-league-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px 12px 34px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ink);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  .sidebar-league-toggle:hover {
+    background: var(--bg);
+    color: var(--gold);
+  }
+  .sidebar-league-chevron {
+    font-size: 10px;
+    color: var(--ink-muted);
+    transition: transform .2s ease;
+  }
+  .sidebar-league.open .sidebar-league-chevron {
+    transform: rotate(180deg);
+  }
+  .sidebar-league-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease;
+    background: var(--bg);
+  }
+  .sidebar-league.open .sidebar-league-submenu {
+    max-height: 1400px;
+  }
+  .sidebar-team-link {
+    display: block;
+    margin: 0 12px 4px 34px;
+    padding: 10px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 3px rgba(0,0,0,.35);
+    transition: filter .12s ease, transform .12s ease;
+  }
+  .sidebar-team-link:hover {
+    filter: brightness(1.1);
+    transform: translateX(2px);
+  }
+  .sidebar-team-link.on-light-bg {
+    color: #2E3136;
+    text-shadow: none;
+  }
+  .sidebar-directory-link {
+    display: block;
+    padding: 14px 20px 14px 34px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--gold);
+    border-top: 1px solid var(--line-soft);
+  }
+  .sidebar-directory-link:hover {
+    background: var(--bg);
+  }
 
 </style>
 </head>
@@ -1296,15 +1367,46 @@
     const sidebarTeamsSubmenu = document.getElementById('sidebar-teams-submenu');
     if (sidebarTeamsSubmenu) {
       let sidebarTeamsHtml = '';
+
       for (const div in clubsByDiv) {
-        sidebarTeamsHtml += `<div class="sidebar-teams-group-title">${divNames[div]}</div>`;
+        sidebarTeamsHtml += `
+          <div class="sidebar-league">
+            <button class="sidebar-league-toggle" type="button" aria-expanded="false">
+              <span>${divNames[div]}</span>
+              <span class="sidebar-league-chevron">&#9660;</span>
+            </button>
+            <div class="sidebar-league-submenu">`;
+
         clubsByDiv[div].forEach(name => {
           const c = clubColors[name] || '#149954';
-          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link"><span class="sidebar-team-dot" style="background:${c};"></span>${name}</a>`;
+          const rgb = c.replace('#', '');
+          const r = parseInt(rgb.substring(0, 2), 16);
+          const g = parseInt(rgb.substring(2, 4), 16);
+          const b = parseInt(rgb.substring(4, 6), 16);
+          const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+          const textClass = brightness > 150 ? ' on-light-bg' : '';
+
+          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" style="background:${c};">${name}</a>`;
         });
+
+        sidebarTeamsHtml += `
+            </div>
+          </div>`;
       }
-      sidebarTeamsHtml += `<a href="teams.html" style="font-weight:600; color:var(--gold);">View full directory &rarr;</a>`;
+
+      sidebarTeamsHtml += `<a href="teams.html" class="sidebar-directory-link">View full directory &rarr;</a>`;
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
+
+      // Each league opens independently so the Teams menu never becomes an
+      // enormous 92-team list.
+      sidebarTeamsSubmenu.querySelectorAll('.sidebar-league-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const league = toggle.closest('.sidebar-league');
+          const isOpen = league.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      });
     }
 
 </script>
