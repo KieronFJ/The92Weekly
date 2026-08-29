@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T13:31:59.076Z",
+  "updatedAt": "2026-08-29T13:42:00.939Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3331,18 +3331,18 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "81'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "364",
         "name": "Liverpool",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "393",
         "name": "Nottingham Forest",
-        "score": null
+        "score": 2
       },
       "venue": "Anfield",
       "source": "ESPN"
@@ -3353,18 +3353,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "374",
         "name": "Derby County",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "318",
         "name": "Swansea City",
-        "score": null
+        "score": 3
       },
       "venue": "Pride Park",
       "source": "ESPN"
@@ -3375,18 +3375,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "383",
         "name": "West Bromwich Albion",
-        "score": null
+        "score": 1
       },
       "venue": "Riverside Stadium",
       "source": "ESPN"
@@ -3397,18 +3397,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
-        "score": null
+        "score": 4
       },
       "away": {
         "id": "336",
         "name": "Stoke City",
-        "score": null
+        "score": 1
       },
       "venue": "Molineux Stadium",
       "source": "ESPN"
@@ -3419,18 +3419,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "346",
         "name": "Blackpool",
-        "score": null
+        "score": 4
       },
       "away": {
         "id": "342",
         "name": "Peterborough United",
-        "score": null
+        "score": 0
       },
       "venue": "Bloomfield Road",
       "source": "ESPN"
@@ -3441,18 +3441,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "81'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "390",
         "name": "Milton Keynes Dons",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "375",
         "name": "Leicester City",
-        "score": null
+        "score": 0
       },
       "venue": "Stadium MK",
       "source": "ESPN"
@@ -3463,18 +3463,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "280",
         "name": "Barnet",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "320",
         "name": "Cheltenham Town",
-        "score": null
+        "score": 2
       },
       "venue": "The Hive Stadium",
       "source": "ESPN"
@@ -3485,18 +3485,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "348",
         "name": "Port Vale",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "396",
         "name": "Crewe Alexandra",
-        "score": null
+        "score": 0
       },
       "venue": "Vale Park",
       "source": "ESPN"
@@ -3508,8 +3508,8 @@
       "type": "league",
       "date": "2026-08-29T12:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "55'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "75'",
       "home": {
         "id": "402",
         "name": "Rotherham United",
