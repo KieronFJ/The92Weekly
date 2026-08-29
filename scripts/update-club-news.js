@@ -1,1236 +1,1360 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Club News — The92Weekly</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #FFFFFF;
-    --panel: #F6F5F1;
-    --line: #E3E0D8;
-    --line-soft: #EDEAE3;
-    --ink: #2E3136;
-    --ink-muted: #74787E;
-    --gold: #149954;
+const fs = require("fs");
+const path = require("path");
+
+/*
+============================================================
+THE92 WEEKLY — CLUB NEWS UPDATER
+============================================================
+
+Purpose:
+- Fetch football news for all 92 clubs.
+- Use official, fan and media discovery.
+- Remove obvious streaming / SEO spam.
+- Balance the output so clubs get fair coverage.
+- Write the final data to data/club-news.json.
+
+No external npm packages required.
+============================================================
+*/
+
+
+// ============================================================
+// GENERAL NEWS FEEDS
+// ============================================================
+
+const BASE_FEEDS = [
+  {
+    name: "BBC Sport",
+    url: "https://feeds.bbci.co.uk/sport/football/rss.xml",
+    category: "media"
+  },
+  {
+    name: "Sky Sports",
+    url: "https://www.skysports.com/rss/12040",
+    category: "media"
+  },
+  {
+    name: "The 72",
+    url: "https://the72.co.uk/feed",
+    category: "media"
+  },
+  {
+    name: "Vital Football",
+    url: "https://vitalfootball.co.uk/feed",
+    category: "fan"
+  },
+  {
+    name: "The League Paper",
+    url: "https://www.theleaguepaper.com/feed",
+    category: "media"
+  },
+  {
+    name: "90min",
+    url: "https://www.90min.com/posts.rss",
+    category: "media"
+  },
+  {
+    name: "CaughtOffside",
+    url: "https://www.caughtoffside.com/feed",
+    category: "media"
+  },
+  {
+    name: "Football League World",
+    url: "https://footballleagueworld.co.uk/feed",
+    category: "media"
+  },
+  {
+    name: "Football365",
+    url: "https://www.football365.com/feed",
+    category: "media"
+  },
+  {
+    name: "The Real EFL",
+    url: "https://therealefl.co.uk/feed/",
+    category: "fan"
+  }
+];
+
+
+// ============================================================
+// THE 92 CLUBS
+// ============================================================
+
+const CLUBS = {
+
+  // PREMIER LEAGUE
+
+  "Arsenal": ["arsenal"],
+
+  "Aston Villa": [
+    "aston villa",
+    "villa"
+  ],
+
+  "Bournemouth": ["bournemouth"],
+
+  "Brentford": ["brentford"],
+
+  "Brighton & Hove Albion": [
+    "brighton"
+  ],
+
+  "Chelsea": ["chelsea"],
+
+  "Coventry City": [
+    "coventry"
+  ],
+
+  "Crystal Palace": [
+    "crystal palace",
+    "palace"
+  ],
+
+  "Everton": ["everton"],
+
+  "Fulham": ["fulham"],
+
+  "Hull City": [
+    "hull city",
+    "hull"
+  ],
+
+  "Ipswich Town": ["ipswich"],
+
+  "Leeds United": ["leeds"],
+
+  "Liverpool": ["liverpool"],
+
+  "Manchester City": [
+    "manchester city",
+    "man city"
+  ],
+
+  "Manchester United": [
+    "manchester united",
+    "man utd",
+    "man united"
+  ],
+
+  "Newcastle United": ["newcastle"],
+
+  "Nottingham Forest": [
+    "nottingham forest",
+    "forest"
+  ],
+
+  "Sunderland": ["sunderland"],
+
+  "Tottenham Hotspur": [
+    "tottenham",
+    "spurs"
+  ],
+
+
+  // CHAMPIONSHIP
+
+  "Birmingham City": ["birmingham"],
+
+  "Blackburn Rovers": ["blackburn"],
+
+  "Bolton Wanderers": ["bolton"],
+
+  "Bristol City": ["bristol city"],
+
+  "Burnley": ["burnley"],
+
+  "Cardiff City": ["cardiff"],
+
+  "Charlton Athletic": ["charlton"],
+
+  "Derby County": [
+    "derby county",
+    "derby"
+  ],
+
+  "Lincoln City": [
+    "lincoln city",
+    "lincoln"
+  ],
+
+  "Middlesbrough": [
+    "middlesbrough",
+    "boro"
+  ],
+
+  "Millwall": ["millwall"],
+
+  "Norwich City": ["norwich"],
+
+  "Portsmouth": [
+    "portsmouth",
+    "pompey"
+  ],
+
+  "Preston North End": ["preston"],
+
+  "Queens Park Rangers": [
+    "queens park rangers",
+    "qpr"
+  ],
+
+  "Sheffield United": [
+    "sheffield united",
+    "sheff utd",
+    "sheff united"
+  ],
+
+  "Southampton": ["southampton"],
+
+  "Stoke City": ["stoke"],
+
+  "Swansea City": ["swansea"],
+
+  "Watford": ["watford"],
+
+  "West Bromwich Albion": [
+    "west brom",
+    "west bromwich"
+  ],
+
+  "West Ham United": ["west ham"],
+
+  "Wolverhampton Wanderers": [
+    "wolves",
+    "wolverhampton"
+  ],
+
+  "Wrexham": ["wrexham"],
+
+
+  // LEAGUE ONE
+
+  "AFC Wimbledon": [
+    "afc wimbledon",
+    "wimbledon"
+  ],
+
+  "Barnsley": ["barnsley"],
+
+  "Blackpool": ["blackpool"],
+
+  "Bradford City": [
+    "bradford city",
+    "bradford"
+  ],
+
+  "Bromley": ["bromley"],
+
+  "Burton Albion": [
+    "burton albion",
+    "burton"
+  ],
+
+  "Cambridge United": [
+    "cambridge united",
+    "cambridge"
+  ],
+
+  "Doncaster Rovers": ["doncaster"],
+
+  "Huddersfield Town": ["huddersfield"],
+
+  "Leicester City": ["leicester"],
+
+  "Leyton Orient": ["leyton orient"],
+
+  "Luton Town": ["luton"],
+
+  "Mansfield Town": ["mansfield"],
+
+  "Milton Keynes Dons": [
+    "mk dons",
+    "milton keynes"
+  ],
+
+  "Notts County": ["notts county"],
+
+  "Oxford United": [
+    "oxford united",
+    "oxford"
+  ],
+
+  "Peterborough United": ["peterborough"],
+
+  "Plymouth Argyle": ["plymouth"],
+
+  "Reading": ["reading"],
+
+  "Sheffield Wednesday": [
+    "sheffield wednesday",
+    "sheff wed"
+  ],
+
+  "Stevenage": ["stevenage"],
+
+  "Stockport County": ["stockport"],
+
+  "Wigan Athletic": ["wigan"],
+
+  "Wycombe Wanderers": ["wycombe"],
+
+
+  // LEAGUE TWO
+
+  "Accrington Stanley": ["accrington"],
+
+  "Barnet": ["barnet"],
+
+  "Bristol Rovers": ["bristol rovers"],
+
+  "Cheltenham Town": ["cheltenham"],
+
+  "Chesterfield": ["chesterfield"],
+
+  "Colchester United": ["colchester"],
+
+  "Crawley Town": ["crawley"],
+
+  "Crewe Alexandra": ["crewe"],
+
+  "Exeter City": ["exeter"],
+
+  "Fleetwood Town": ["fleetwood"],
+
+  "Gillingham": ["gillingham"],
+
+  "Grimsby Town": ["grimsby"],
+
+  "Newport County": [
+    "newport county",
+    "newport"
+  ],
+
+  "Northampton Town": ["northampton"],
+
+  "Oldham Athletic": ["oldham"],
+
+  "Port Vale": ["port vale"],
+
+  "Rochdale": ["rochdale"],
+
+  "Rotherham United": ["rotherham"],
+
+  "Salford City": ["salford"],
+
+  "Shrewsbury Town": ["shrewsbury"],
+
+  "Swindon Town": ["swindon"],
+
+  "Tranmere Rovers": ["tranmere"],
+
+  "Walsall": ["walsall"],
+
+  "York City": ["york city"]
+};
+
+
+// ============================================================
+// GOOGLE NEWS
+// ============================================================
+
+function googleNewsUrl(query) {
+  return (
+    "https://news.google.com/rss/search?q=" +
+    encodeURIComponent(query) +
+    "&hl=en-GB&gl=GB&ceid=GB:en"
+  );
+}
+
+
+// ============================================================
+// CLUB-SPECIFIC FEEDS
+// ============================================================
+
+const CLUB_SOURCE_FEEDS = Object.keys(CLUBS).flatMap(club => [
+
+  {
+    name: `Official – ${club}`,
+    url: googleNewsUrl(
+      `"${club}" football (official OR "official website" OR "club statement" OR announcement)`
+    ),
+    clubHint: club,
+    category: "official"
+  },
+
+  {
+    name: `Fan – ${club}`,
+    url: googleNewsUrl(
+      `"${club}" football (supporters OR fans OR fanzine OR "fan site" OR "fan blog" OR podcast)`
+    ),
+    clubHint: club,
+    category: "fan"
+  },
+
+  {
+    name: `Media – ${club}`,
+    url: googleNewsUrl(
+      `"${club}" football news`
+    ),
+    clubHint: club,
+    category: "media"
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+]);
+
+
+const FEEDS = [
+  ...BASE_FEEDS,
+  ...CLUB_SOURCE_FEEDS
+];
+
+
+// ============================================================
+// TEXT HELPERS
+// ============================================================
+
+function stripTags(value) {
+  return String(value || "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+
+function decodeEntities(value) {
+  return String(value || "")
+    .replace(/<!\[CDATA\[/gi, "")
+    .replace(/\]\]>/gi, "")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&apos;/gi, "'")
+    .replace(/&#39;/gi, "'")
+    .replace(/&#x27;/gi, "'")
+    .replace(/&#x2F;/gi, "/");
+}
+
+
+function textFromTag(block, tag) {
+
+  const regex = new RegExp(
+    `<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`,
+    "i"
+  );
+
+  const match = block.match(regex);
+
+  if (!match) {
+    return "";
   }
 
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Source Serif 4', serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+  return decodeEntities(
+    stripTags(match[1])
+  );
+}
+
+
+function safeDate(value) {
+
+  const date = new Date(value || "");
+
+  if (Number.isNaN(date.getTime())) {
+    return new Date().toISOString();
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
+  return date.toISOString();
+}
+
+
+// ============================================================
+// RSS PARSER
+// ============================================================
+
+function parseRSS(xml, sourceName) {
+
+  const items = [];
+
+  const blocks =
+    String(xml || "").match(
+      /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
+    ) || [];
+
+  for (const block of blocks) {
+
+    const title = textFromTag(block, "title");
+    const link = textFromTag(block, "link");
+
+    if (!title || !link) {
+      continue;
+    }
+
+    const description =
+      textFromTag(block, "description");
+
+    const date =
+      textFromTag(block, "pubDate") ||
+      textFromTag(block, "published") ||
+      textFromTag(block, "updated");
+
+    const publisher =
+      textFromTag(block, "source") ||
+      sourceName;
+
+    items.push({
+      title,
+      link,
+      summary:
+        description.length > 220
+          ? description.slice(0, 217) + "..."
+          : description,
+      date: safeDate(date),
+      source: publisher,
+      feedSource: sourceName
+    });
   }
 
-  .display {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.01em;
-  }
+  return items;
+}
 
-  header {
-    border-bottom: 1px solid var(--line);
-    padding: 28px 6vw 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
 
-  .nameplate {
-    font-size: clamp(30px, 4.4vw, 40px);
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    line-height: 1;
-    text-transform: uppercase;
-  }
+// ============================================================
+// CLUB MATCHING
+// ============================================================
 
-  .nameplate span {
-    color: var(--gold);
-  }
+function findMatchingClubs(text) {
 
-  nav {
-    display: flex;
-    align-items: center;
-    padding-bottom: 4px;
-  }
+  const lower = String(text || "").toLowerCase();
 
-  nav > * {
-    padding: 0 14px;
-  }
+  const matches = [];
 
-  nav > *:first-child {
-    padding-left: 0;
-  }
+  for (const [club, aliases] of Object.entries(CLUBS)) {
 
-  nav > *:not(:last-child) {
-    border-right: 1px solid var(--line);
-  }
-
-  nav a,
-  .nav-trigger {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14.5px;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    line-height: 1;
-    color: var(--ink-muted);
-    border-bottom: 2px solid transparent;
-    padding: 0 0 4px 0;
-    white-space: nowrap;
-    margin: 0;
-    background: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    cursor: pointer;
-    transition: color .15s, border-color .15s;
-  }
-
-  nav a:hover,
-  nav a.active,
-  .nav-trigger:hover,
-  .nav-item.open .nav-trigger {
-    color: var(--ink);
-    border-bottom-color: var(--gold);
-  }
-
-  .nav-item {
-    position: relative;
-  }
-
-  .nav-trigger {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .nav-trigger::after {
-    content: '▾';
-    font-size: 8px;
-    position: relative;
-    top: 1px;
-  }
-
-  .dropdown-panel {
-    display: none;
-    position: absolute;
-    top: calc(100% + 21px);
-    right: 0;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    padding: 26px;
-    min-width: 620px;
-    max-width: min(90vw, 700px);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-    z-index: 60;
-    max-height: 68vh;
-    overflow-y: auto;
-  }
-
-  .nav-item:hover .dropdown-panel,
-  .nav-item.open .dropdown-panel {
-    display: grid;
-  }
-
-  .dropdown-col h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--gold);
-    margin-bottom: 10px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .dropdown-col a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13.5px;
-    font-weight: 600;
-    color: #FFFFFF;
-    padding: 7px 10px;
-    margin-bottom: 3px;
-    border-radius: 3px;
-    transition: filter .12s, transform .12s;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
-  }
-
-  .dropdown-col a:hover {
-    filter: brightness(1.1);
-    transform: translateX(2px);
-  }
-
-  .dropdown-footer {
-    grid-column: 1 / -1;
-    margin-top: 4px;
-    padding-top: 14px;
-    border-top: 1px solid var(--line);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-  }
-
-  .dropdown-footer a {
-    color: var(--gold);
-  }
-
-  .dropdown-footer a:hover {
-    border-bottom: 1px solid var(--gold);
-  }
-
-  .league-dropdown-panel {
-    display: none;
-    position: absolute;
-    top: calc(100% + 21px);
-    right: 0;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    padding: 10px;
-    min-width: 200px;
-    flex-direction: column;
-    gap: 2px;
-    z-index: 60;
-  }
-
-  .nav-item:hover .league-dropdown-panel,
-  .nav-item.open .league-dropdown-panel {
-    display: flex;
-  }
-
-  .league-dropdown-panel a {
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--ink);
-    padding: 10px 14px;
-    border-radius: 4px;
-  }
-
-  .league-dropdown-panel a:hover {
-    background: var(--bg);
-    color: var(--gold);
-  }
-
-  @media (max-width: 780px) {
-    .dropdown-panel {
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: auto;
-      min-width: 0;
-      max-width: none;
-      width: 100%;
-      grid-template-columns: repeat(2, 1fr);
-      border-left: none;
-      border-right: none;
-      max-height: 60vh;
+    if (
+      aliases.some(alias =>
+        lower.includes(alias)
+      )
+    ) {
+      matches.push(club);
     }
   }
 
-  main {
-    max-width: 68ch;
-    margin: 0 auto;
-    padding: 72px 6vw 80px;
-  }
+  return matches;
+}
 
-  .eyebrow {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    letter-spacing: 0.03em;
-    color: var(--gold);
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
 
-  .eyebrow::before {
-    content: '';
-    width: 22px;
-    height: 2px;
-    background: var(--gold);
-  }
+// ============================================================
+// FETCH FEED
+// ============================================================
 
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-transform: none;
-    letter-spacing: 0;
-    font-size: clamp(28px, 4vw, 42px);
-    line-height: 1.1;
-    margin-bottom: 28px;
-  }
+async function fetchFeed(feed) {
 
-  main p {
-    font-size: 17.5px;
-    color: var(--ink);
-    margin-bottom: 22px;
-  }
+  try {
 
-  main p.lead {
-    font-size: 20px;
-    color: var(--ink);
-    margin-bottom: 32px;
-  }
-
-  .divider {
-    border: none;
-    border-top: 1px solid var(--line);
-    margin: 44px 0;
-  }
-
-  h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    color: var(--gold);
-    margin-bottom: 18px;
-  }
-
-  ul.principles {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 8px;
-  }
-
-  ul.principles li {
-    display: flex;
-    gap: 16px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--line-soft);
-  }
-
-  ul.principles li:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-
-  .p-num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--ink-muted);
-    padding-top: 3px;
-    min-width: 22px;
-  }
-
-  .p-body h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    text-transform: none;
-    font-size: 17px;
-    margin-bottom: 6px;
-  }
-
-  .p-body p {
-    font-size: 15px;
-    color: var(--ink-muted);
-    margin-bottom: 0;
-  }
-
-  .contact-box {
-    margin-top: 48px;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    padding: 32px;
-  }
-
-  .contact-box p {
-    font-size: 15px;
-    color: var(--ink-muted);
-    margin-bottom: 16px;
-  }
-
-  .contact-box p:last-child {
-    margin-bottom: 0;
-  }
-
-  .contact-box a.email {
-    font-family: 'JetBrains Mono', monospace;
-    color: var(--gold);
-    font-size: 15px;
-  }
-
-  .contact-box a.email:hover {
-    border-bottom: 1px solid var(--gold);
-  }
-
-  footer {
-    padding: 28px 6vw 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    border-top: 1px solid var(--line);
-  }
-
-  footer p {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: var(--ink-muted);
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 18px;
-  }
-
-  .footer-links a {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: var(--ink-muted);
-  }
-
-  .footer-links a:hover {
-    color: var(--gold);
-  }
-
-  .coming-soon-badge {
-    display: inline-block;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: var(--gold);
-    padding: 5px 12px;
-    border-radius: 3px;
-    margin-bottom: 18px;
-  }
-
-  main > p.sub {
-    color: var(--ink-muted);
-    font-size: 16px;
-    margin-bottom: 40px;
-    max-width: 60ch;
-  }
-
-  .preview-mockup {
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 32px;
-    margin-bottom: 40px;
-  }
-
-  .preview-mockup-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 20px;
-  }
-
-  .coming-soon-cta {
-    background: var(--ink);
-    color: #FFFFFF;
-    border-radius: 10px;
-    padding: 32px 36px;
-    text-align: center;
-  }
-
-  .coming-soon-cta h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .coming-soon-cta p {
-    color: #C7C9CC;
-    font-size: 14.5px;
-    margin-bottom: 22px;
-    max-width: 48ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .coming-soon-cta .cta-button {
-    display: inline-block;
-    background: var(--gold);
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 14.5px;
-    padding: 13px 30px;
-    border-radius: 6px;
-  }
-
-  .coming-soon-cta .cta-button:hover {
-    filter: brightness(1.08);
-  }
-
-  .ground-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-
-  .ground-tile {
-    aspect-ratio: 1;
-    border-radius: 6px;
-    background: var(--line-soft);
-    border: 1px solid var(--line);
-  }
-
-  .ground-tile.visited {
-    background: var(--gold);
-    border-color: var(--gold);
-  }
-
-  .ground-progress-bar {
-    height: 8px;
-    background: var(--line-soft);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-
-  .ground-progress-fill {
-    height: 100%;
-    background: var(--gold);
-    width: 37%;
-  }
-
-  .ground-progress-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    color: var(--ink);
-  }
-
-  .ground-progress-label b {
-    color: var(--gold);
-  }
-
-  .versus-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-  }
-
-  .versus-side {
-    flex: 1;
-    max-width: 200px;
-    text-align: center;
-  }
-
-  .versus-side .club-name {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 6px;
-  }
-
-  .versus-side .club-stat {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--ink-muted);
-  }
-
-  .versus-vs {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--gold);
-    font-weight: 700;
-  }
-
-  .versus-score {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
-    font-size: 26px;
-    margin-top: 8px;
-  }
-
-  .blog-post-card {
-    background: #FFFFFF;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 14px;
-  }
-
-  .blog-post-card:last-child {
-    margin-bottom: 0;
-  }
-
-  .blog-post-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 15.5px;
-    margin-bottom: 6px;
-  }
-
-  .blog-post-meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: var(--ink-muted);
-    margin-bottom: 10px;
-  }
-
-  .blog-post-excerpt {
-    font-size: 13.5px;
-    color: var(--ink-muted);
-    margin-bottom: 10px;
-  }
-
-  .blog-post-comments {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: var(--gold);
-  }
-
-  .poll-card {
-    background: #FFFFFF;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 22px;
-  }
-
-  .poll-question {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 16px;
-  }
-
-  .poll-option {
-    margin-bottom: 12px;
-  }
-
-  .poll-option-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13.5px;
-    margin-bottom: 5px;
-  }
-
-  .poll-option-bar {
-    height: 10px;
-    background: var(--line-soft);
-    border-radius: 5px;
-    overflow: hidden;
-  }
-
-  .poll-option-fill {
-    height: 100%;
-    background: var(--gold);
-  }
-
-  .poll-meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: var(--ink-muted);
-    margin-top: 14px;
-  }
-
-  .tweet-card {
-    background: #FFFFFF;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 18px;
-    margin-bottom: 12px;
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-  }
-
-  .tweet-card:last-child {
-    margin-bottom: 0;
-  }
-
-  .tweet-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--line-soft);
-    flex-shrink: 0;
-  }
-
-  .tweet-handle {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  .tweet-verified {
-    color: var(--gold);
-    font-size: 12px;
-    margin-left: 4px;
-  }
-
-  .tweet-text {
-    font-size: 13.5px;
-    color: var(--ink-muted);
-    margin-top: 4px;
-  }
-
-  .tweet-meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--ink-muted);
-    margin-top: 6px;
-  }
-
-  .news-filter-bar {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 28px;
-  }
-
-  .news-filter-bar input {
-    flex: 1;
-    min-width: 200px;
-    padding: 11px 16px;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    font-family: 'Source Serif 4', serif;
-    font-size: 14.5px;
-  }
-
-  .news-item {
-    padding: 20px 0;
-    border-bottom: 1px solid var(--line-soft);
-  }
-
-  .news-item:last-child {
-    border-bottom: none;
-  }
-
-  .news-item-clubs {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 8px;
-  }
-
-  .news-club-tag {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--gold);
-    background: var(--panel);
-    padding: 3px 8px;
-    border-radius: 3px;
-  }
-
-  .news-item-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 6px;
-  }
-
-  .news-item-title a:hover {
-    color: var(--gold);
-  }
-
-  .news-item-summary {
-    font-size: 14px;
-    color: var(--ink-muted);
-    margin-bottom: 8px;
-  }
-
-  .news-item-meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--ink-muted);
-  }
-
-  .news-item-meta a {
-    color: var(--gold);
-  }
-</style>
-</head>
-
-<body>
-
-<header>
-  <div>
-    <a href="index.html">
-      <div class="nameplate display">
-        THE<span>92</span>WEEKLY
-      </div>
-    </a>
-  </div>
-
-  <nav>
-    <a href="membership.html">Membership</a>
-
-    <div class="nav-item" id="latest-nav-item">
-      <button class="nav-trigger" type="button" id="latest-trigger">Latest</button>
-      <div class="league-dropdown-panel" id="latest-dropdown-panel">
-        <a href="index.html#latest">Latest Articles</a>
-        <a href="club-news.html">Club News</a>
-        <a href="index.html#spotlight">Spotlight</a>
-      </div>
-    </div>
-
-    <div class="nav-item" id="teams-nav-item">
-      <button class="nav-trigger" type="button" id="teams-trigger">Teams</button>
-      <div class="dropdown-panel" id="teams-dropdown-panel"></div>
-    </div>
-
-    <div class="nav-item" id="tables-nav-item">
-      <button class="nav-trigger" type="button" id="tables-trigger">Tables</button>
-      <div class="league-dropdown-panel" id="tables-dropdown-panel">
-        <a href="tables.html?div=1">Premier League</a>
-        <a href="tables.html?div=2">Championship</a>
-        <a href="tables.html?div=3">League One</a>
-        <a href="tables.html?div=4">League Two</a>
-      </div>
-    </div>
-
-    <div class="nav-item" id="picks-nav-item">
-      <button class="nav-trigger" type="button" id="picks-trigger">Acca Tips &amp; Analysis</button>
-      <div class="league-dropdown-panel" id="picks-dropdown-panel">
-        <a href="index.html#spotlight">Spotlight</a>
-        <a href="accumulator.html">This Week's Acca Picks</a>
-      </div>
-    </div>
-
-    <a href="ins-and-outs.html">Ins &amp; Outs</a>
-
-    <div class="nav-item" id="community-nav-item">
-      <button class="nav-trigger" type="button" id="community-trigger">Community</button>
-      <div class="league-dropdown-panel" id="community-dropdown-panel">
-        <a href="groundhopper.html">Groundhopper's Companion</a>
-        <a href="fan-blogs.html">Fan Blogs</a>
-        <a href="polls.html">Polls</a>
-      </div>
-    </div>
-
-    <a href="about.html">About</a>
-  </nav>
-</header>
-
-<main>
-  <div class="eyebrow">Club News</div>
-
-  <h1>Every club in the 92, one automatic feed.</h1>
-
-  <p class="sub">
-    Headlines pulled automatically from BBC Sport, Sky Sports, The 72,
-    90min, CaughtOffside and Football League World — matched against all
-    92 clubs, not just the Premier League. Each story links straight back
-    to the original source. Updated every hour, no manual work involved.
-  </p>
-
-  <div class="news-filter-bar">
-    <input
-      type="text"
-      id="club-search"
-      placeholder="Filter by club name..."
-    >
-  </div>
-
-  <div id="news-list">
-    <div class="status-box">Loading the latest news…</div>
-  </div>
-</main>
-
-<footer>
-  <p>THE92WEEKLY — Football across the pyramid.</p>
-
-  <div class="footer-links">
-    <a href="#">X / Twitter</a>
-    <a href="about.html">About</a>
-    <a href="mailto:hello@92weekly.com">Contact</a>
-  </div>
-</footer>
-
-<script>
-  const clubsByDiv = {
-    1: [
-      "Arsenal","Aston Villa","Bournemouth","Brentford",
-      "Brighton & Hove Albion","Chelsea","Coventry City",
-      "Crystal Palace","Everton","Fulham","Hull City",
-      "Ipswich Town","Leeds United","Liverpool","Manchester City",
-      "Manchester United","Newcastle United","Nottingham Forest",
-      "Sunderland","Tottenham Hotspur"
-    ],
-
-    2: [
-      "Birmingham City","Blackburn Rovers","Bolton Wanderers",
-      "Bristol City","Burnley","Cardiff City","Charlton Athletic",
-      "Derby County","Lincoln City","Middlesbrough","Millwall",
-      "Norwich City","Portsmouth","Preston North End",
-      "Queens Park Rangers","Sheffield United","Southampton",
-      "Stoke City","Swansea City","Watford","West Bromwich Albion",
-      "West Ham United","Wolverhampton Wanderers","Wrexham"
-    ],
-
-    3: [
-      "AFC Wimbledon","Barnsley","Blackpool","Bradford City",
-      "Bromley","Burton Albion","Cambridge United","Doncaster Rovers",
-      "Huddersfield Town","Leicester City","Leyton Orient","Luton Town",
-      "Mansfield Town","Milton Keynes Dons","Notts County",
-      "Oxford United","Peterborough United","Plymouth Argyle",
-      "Reading","Sheffield Wednesday","Stevenage","Stockport County",
-      "Wigan Athletic","Wycombe Wanderers"
-    ],
-
-    4: [
-      "Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town",
-      "Chesterfield","Colchester United","Crawley Town","Crewe Alexandra",
-      "Exeter City","Fleetwood Town","Gillingham","Grimsby Town",
-      "Newport County","Northampton Town","Oldham Athletic","Port Vale",
-      "Rochdale","Rotherham United","Salford City","Shrewsbury Town",
-      "Swindon Town","Tranmere Rovers","Walsall","York City"
-    ]
-  };
-
-  const divNames = {
-    1: "Premier League",
-    2: "Championship",
-    3: "League One",
-    4: "League Two"
-  };
-
-  const clubColors = {
-    "Arsenal":"#EF0107",
-    "Aston Villa":"#670E36",
-    "Bournemouth":"#DA291C",
-    "Brentford":"#E30613",
-    "Brighton & Hove Albion":"#0057B8",
-    "Chelsea":"#034694",
-    "Coventry City":"#6CADDF",
-    "Crystal Palace":"#1B458F",
-    "Everton":"#003399",
-    "Fulham":"#1A1A1A",
-    "Hull City":"#F18A00",
-    "Ipswich Town":"#3A64A3",
-    "Leeds United":"#FFCD00",
-    "Liverpool":"#149954",
-    "Manchester City":"#6CABDD",
-    "Manchester United":"#DA291C",
-    "Newcastle United":"#111111",
-    "Nottingham Forest":"#DD0000",
-    "Sunderland":"#EB172F",
-    "Tottenham Hotspur":"#132257",
-
-    "Birmingham City":"#003090",
-    "Blackburn Rovers":"#009EE0",
-    "Bolton Wanderers":"#002B5C",
-    "Bristol City":"#E21C21",
-    "Burnley":"#6C1D45",
-    "Cardiff City":"#0070B5",
-    "Charlton Athletic":"#D2122E",
-    "Derby County":"#1A1A1A",
-    "Lincoln City":"#149954",
-    "Middlesbrough":"#E2231A",
-    "Millwall":"#1B3D6D",
-    "Norwich City":"#FFF200",
-    "Portsmouth":"#001489",
-    "Preston North End":"#0033A0",
-    "Queens Park Rangers":"#1D5BA4",
-    "Sheffield United":"#EE2737",
-    "Southampton":"#D71920",
-    "Stoke City":"#E03A3E",
-    "Swansea City":"#1A1A1A",
-    "Watford":"#FBEE23",
-    "West Bromwich Albion":"#122F67",
-    "West Ham United":"#7A263A",
-    "Wolverhampton Wanderers":"#FDB913",
-    "Wrexham":"#E31B23",
-
-    "Barnsley":"#ED1C24",
-    "Blackpool":"#F58220",
-    "Bradford City":"#7A1E27",
-    "Doncaster Rovers":"#E2231A",
-    "Huddersfield Town":"#0E63AD",
-    "Leyton Orient":"#D2122E",
-    "Luton Town":"#F68712",
-    "Mansfield Town":"#FDB913",
-    "Peterborough United":"#0044A9",
-    "Plymouth Argyle":"#007A3D",
-    "Reading":"#004494",
-    "Stevenage":"#B30E22",
-    "Stockport County":"#0E56A6",
-    "Wigan Athletic":"#1B458F",
-    "Wycombe Wanderers":"#1E3A8A",
-    "Burton Albion":"#FFD100",
-    "AFC Wimbledon":"#1B458F",
-    "Oxford United":"#FFD200",
-    "Leicester City":"#003090",
-    "Sheffield Wednesday":"#1B3E8C",
-    "Bromley":"#12284C",
-    "Milton Keynes Dons":"#E2231A",
-    "Cambridge United":"#FFD400",
-    "Notts County":"#1A1A1A",
-
-    "Accrington Stanley":"#D2122E",
-    "Barnet":"#FDB913",
-    "Bristol Rovers":"#0E56A6",
-    "Cheltenham Town":"#DD0000",
-    "Chesterfield":"#0E56A6",
-    "Colchester United":"#0E56A6",
-    "Crawley Town":"#D2122E",
-    "Crewe Alexandra":"#D2122E",
-    "Fleetwood Town":"#D2122E",
-    "Gillingham":"#0E56A6",
-    "Grimsby Town":"#1A1A1A",
-    "Oldham Athletic":"#004996",
-    "Newport County":"#FDB913",
-    "Salford City":"#FDB913",
-    "Shrewsbury Town":"#0E56A6",
-    "Swindon Town":"#D2122E",
-    "Tranmere Rovers":"#12284C",
-    "Walsall":"#D2122E",
-    "Exeter City":"#D2122E",
-    "Port Vale":"#D8A21B",
-    "Rotherham United":"#D2122E",
-    "Northampton Town":"#7A263A",
-    "York City":"#7A263A",
-    "Rochdale":"#0E56A6"
-  };
-
-  const panel = document.getElementById('teams-dropdown-panel');
-
-  if (panel) {
-    let html = '';
-
-    for (const div in clubsByDiv) {
-      html += `<div class="dropdown-col"><h4>${divNames[div]}</h4>`;
-
-      clubsByDiv[div].forEach(name => {
-        const c = clubColors[name] || '#149954';
-
-        html += `
-          <a
-            href="team.html?team=${encodeURIComponent(name)}&div=${div}"
-            style="background:${c};"
-          >
-            ${name}
-          </a>
-        `;
-      });
-
-      html += `</div>`;
-    }
-
-    html += `
-      <div class="dropdown-footer">
-        <a href="teams.html">View full directory →</a>
-      </div>
-    `;
-
-    panel.innerHTML = html;
-  }
-
-  const teamsItem = document.getElementById('teams-nav-item');
-  const teamsTrigger = document.getElementById('teams-trigger');
-
-  if (teamsItem && teamsTrigger) {
-    teamsTrigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      teamsItem.classList.toggle('open');
-    });
-
-    document.addEventListener('click', function() {
-      teamsItem.classList.remove('open');
-    });
-
-    panel.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
-  }
-
-  const tablesItem = document.getElementById('tables-nav-item');
-  const tablesTrigger = document.getElementById('tables-trigger');
-
-  if (tablesItem && tablesTrigger) {
-    tablesTrigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      tablesItem.classList.toggle('open');
-    });
-
-    document.addEventListener('click', function() {
-      tablesItem.classList.remove('open');
-    });
-  }
-
-  const communityItem = document.getElementById('community-nav-item');
-  const communityTrigger = document.getElementById('community-trigger');
-
-  if (communityItem && communityTrigger) {
-    communityTrigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      communityItem.classList.toggle('open');
-    });
-
-    document.addEventListener('click', function() {
-      communityItem.classList.remove('open');
-    });
-  }
-
-  const latestItem = document.getElementById('latest-nav-item');
-  const latestTrigger = document.getElementById('latest-trigger');
-
-  if (latestItem && latestTrigger) {
-    latestTrigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      latestItem.classList.toggle('open');
-    });
-
-    document.addEventListener('click', function() {
-      latestItem.classList.remove('open');
-    });
-  }
-
-  const picksItem = document.getElementById('picks-nav-item');
-  const picksTrigger = document.getElementById('picks-trigger');
-
-  if (picksItem && picksTrigger) {
-    picksTrigger.addEventListener('click', function(e) {
-      e.stopPropagation();
-      picksItem.classList.toggle('open');
-    });
-
-    document.addEventListener('click', function() {
-      picksItem.classList.remove('open');
-    });
-  }
-</script>
-
-<script>
-  /*
-   * IMPORTANT:
-   * Add a timestamp to the JSON URL.
-   * This prevents GitHub Pages/browser caching from
-   * showing an old version of club-news.json.
-   */
-  const NEWS_URL = 'data/club-news.json?v=' + Date.now();
-
-  let allNewsItems = [];
-
-  fetch(NEWS_URL, {
-    cache: 'no-store'
-  })
-    .then(r => {
-      if (!r.ok) {
-        throw new Error('fetch failed');
-      }
-
-      return r.json();
-    })
-    .then(data => {
-      allNewsItems = data.items || [];
-      renderNews(allNewsItems);
-    })
-    .catch(() => {
-      document.getElementById('news-list').innerHTML =
-        '<div class="status-box">Couldn\'t load the news feed right now. Try refreshing.</div>';
-    });
-
-  function renderNews(items) {
-    const container = document.getElementById('news-list');
-
-    if (items.length === 0) {
-      container.innerHTML =
-        '<div class="status-box">No matching stories right now — check back soon.</div>';
-
-      return;
-    }
-
-    let html = '';
-
-    items.forEach(item => {
-      const dateStr = new Date(item.date).toLocaleDateString(
-        'en-GB',
-        {
-          day: 'numeric',
-          month: 'short'
+    const response = await fetch(
+      feed.url,
+      {
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (compatible; The92WeeklyBot/1.0; +https://the92weekly.com)"
         }
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `HTTP ${response.status}`
       );
+    }
 
-      const clubTags = item.clubs
-        .map(c => `<span class="news-club-tag">${c}</span>`)
-        .join('');
+    const xml = await response.text();
 
-      html += `
-        <div class="news-item">
-          <div class="news-item-clubs">
-            ${clubTags}
-          </div>
+    return {
+      success: true,
+      items: parseRSS(
+        xml,
+        feed.name
+      )
+    };
 
-          <div class="news-item-title">
-            <a
-              href="${item.link}"
-              target="_blank"
-              rel="noopener"
-            >
-              ${item.title}
-            </a>
-          </div>
+  } catch (error) {
 
-          <div class="news-item-summary">
-            ${item.summary}
-          </div>
+    console.error(
+      `Failed to fetch ${feed.name}: ${error.message}`
+    );
 
-          <div class="news-item-meta">
-            ${dateStr} · via ${item.source}
-          </div>
-        </div>
-      `;
-    });
-
-    container.innerHTML = html;
+    return {
+      success: false,
+      items: [],
+      error: error.message
+    };
   }
+}
 
-  document
-    .getElementById('club-search')
-    .addEventListener('input', function(e) {
 
-      const q = e.target.value
-        .toLowerCase()
-        .trim();
+// ============================================================
+// CONCURRENCY
+// ============================================================
 
-      if (!q) {
-        renderNews(allNewsItems);
+async function mapWithConcurrency(
+  list,
+  limit,
+  fn
+) {
+
+  const results =
+    new Array(list.length);
+
+  let nextIndex = 0;
+
+  async function worker() {
+
+    while (true) {
+
+      const index = nextIndex++;
+
+      if (index >= list.length) {
         return;
       }
 
-      const filtered = allNewsItems.filter(item =>
-        item.clubs.some(c =>
-          c.toLowerCase().includes(q)
+      results[index] =
+        await fn(
+          list[index],
+          index
+        );
+    }
+  }
+
+  const workers =
+    Array.from(
+      {
+        length: Math.min(
+          limit,
+          list.length
         )
-      );
+      },
+      worker
+    );
 
-      renderNews(filtered);
+  await Promise.all(workers);
+
+  return results;
+}
+
+
+// ============================================================
+// DEDUPLICATION
+// ============================================================
+
+function dedupe(items) {
+
+  const seen = new Set();
+
+  return items.filter(item => {
+
+    const key =
+      String(
+        item.link ||
+        item.title ||
+        ""
+      )
+      .toLowerCase()
+      .replace(/\/$/, "");
+
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+
+    return true;
+  });
+}
+
+
+// ============================================================
+// STREAMING / SEO SPAM FILTER
+// ============================================================
+//
+// This is intentionally strong because we do not want The92Weekly
+// linking users to dodgy streaming sites.
+//
+// Legitimate football journalism remains allowed.
+// ============================================================
+
+function isStreamingSpam(item) {
+
+  const title =
+    String(item.title || "")
+      .toLowerCase();
+
+  const summary =
+    String(item.summary || "")
+      .toLowerCase();
+
+  const source =
+    String(item.source || "")
+      .toLowerCase();
+
+  const link =
+    String(item.link || "")
+      .toLowerCase();
+
+  const text =
+    `${title} ${summary} ${source} ${link}`;
+
+
+  // ----------------------------------------------------------
+  // DEFINITE STREAMING PHRASES
+  // ----------------------------------------------------------
+
+  const streamingPhrases = [
+
+    "live stream",
+    "live streams",
+    "live streaming",
+
+    "live broadcast",
+    "live broadcasts",
+
+    "free broadcast",
+    "free broadcasts",
+
+    "football live free",
+    "football live online",
+
+    "live online tv",
+    "live online",
+
+    "stream online",
+    "streaming online",
+
+    "free live stream",
+    "free live",
+
+    "hd stream",
+    "hd streams",
+
+    "watch live stream",
+    "watch live online",
+
+    "live tv stream",
+    "live tv streaming",
+
+    "live soccer stream",
+
+    "football streams",
+    "soccer streams",
+
+    "free streaming",
+
+    "watch football live",
+    "watch the match live",
+
+    "watch match live",
+
+    "online broadcast",
+    "online broadcasts"
+
+  ];
+
+
+  if (
+    streamingPhrases.some(
+      phrase =>
+        text.includes(phrase)
+    )
+  ) {
+    return true;
+  }
+
+
+  // ----------------------------------------------------------
+  // SEO / "HOW TO WATCH" JUNK
+  // ----------------------------------------------------------
+
+  const seoPatterns = [
+
+    /how\s+to\s+watch/i,
+
+    /where\s+to\s+watch/i,
+
+    /here'?s\s+how\s+to\s+watch/i,
+
+    /here\s+is\s+how\s+to\s+watch/i,
+
+    /watch.*free.*online/i,
+
+    /football.*live.*free/i,
+
+    /football.*live.*online/i,
+
+    /live.*free.*broadcast/i,
+
+    /free.*broadcast.*tv/i
+
+  ];
+
+
+  if (
+    seoPatterns.some(
+      pattern =>
+        pattern.test(title)
+    )
+  ) {
+    return true;
+  }
+
+
+  // ----------------------------------------------------------
+  // KNOWN JUNK / NON-FOOTBALL SOURCES
+  // ----------------------------------------------------------
+
+  const blockedSources = [
+
+    "air and space museum",
+
+    "air & space museum"
+
+  ];
+
+
+  if (
+    blockedSources.some(
+      blocked =>
+        source.includes(blocked)
+    )
+  ) {
+    return true;
+  }
+
+
+  // ----------------------------------------------------------
+  // STREAMING URL PATTERNS
+  // ----------------------------------------------------------
+
+  const blockedUrlPatterns = [
+
+    "livestream",
+    "live-stream",
+    "live_stream",
+
+    "watch-live",
+    "watch_live",
+
+    "free-live",
+    "free_live",
+
+    "freestream",
+    "free-stream",
+
+    "stream-live",
+    "streamlive",
+
+    "livetv",
+    "live-tv",
+
+    "soccer-stream",
+    "football-stream"
+
+  ];
+
+
+  if (
+    blockedUrlPatterns.some(
+      pattern =>
+        link.includes(pattern)
+    )
+  ) {
+    return true;
+  }
+
+
+  // ----------------------------------------------------------
+  // EXCESSIVE SPAM PUNCTUATION
+  // ----------------------------------------------------------
+
+  const punctuation =
+    (
+      title.match(
+        /[!$+#@]/g
+      ) || []
+    ).length;
+
+
+  if (punctuation >= 4) {
+    return true;
+  }
+
+
+  // ----------------------------------------------------------
+  // OBVIOUS STREAMING TITLE STRUCTURE
+  // ----------------------------------------------------------
+
+  const hasLive =
+    /\blive\b/i.test(title);
+
+  const hasWatch =
+    /\bwatch\b/i.test(title);
+
+  const hasFree =
+    /\bfree\b/i.test(title);
+
+  const hasTv =
+    /\btv\b/i.test(title);
+
+  const hasStream =
+    /\bstream(s|ing)?\b/i.test(title);
+
+
+  if (
+    hasLive &&
+    (
+      hasStream ||
+      (hasWatch && hasFree) ||
+      (hasTv && hasFree)
+    )
+  ) {
+    return true;
+  }
+
+
+  return false;
+}
+
+
+// ============================================================
+// BALANCE NEWS ACROSS THE 92 CLUBS
+// ============================================================
+
+function balanceForAllClubs(items) {
+
+  const PER_CATEGORY = 4;
+  const MAX_PER_CLUB = 12;
+
+  const selected = [];
+  const selectedKeys = new Set();
+
+  const counts =
+    Object.fromEntries(
+      Object.keys(CLUBS).map(club => [
+        club,
+        {
+          official: 0,
+          fan: 0,
+          media: 0,
+          total: 0
+        }
+      ])
+    );
+
+
+  const sorted =
+    [...items].sort(
+      (a, b) =>
+        new Date(b.date) -
+        new Date(a.date)
+    );
+
+
+  // ----------------------------------------------------------
+  // FIRST PASS
+  // Give every club an opportunity in each category.
+  // ----------------------------------------------------------
+
+  for (const club of Object.keys(CLUBS)) {
+
+    for (
+      const category of [
+        "official",
+        "fan",
+        "media"
+      ]
+    ) {
+
+      for (const item of sorted) {
+
+        if (
+          !item.clubs.includes(club) ||
+          item.category !== category
+        ) {
+          continue;
+        }
+
+        if (
+          counts[club][category] >=
+          PER_CATEGORY
+        ) {
+          break;
+        }
+
+        const key =
+          String(
+            item.link ||
+            item.title ||
+            ""
+          )
+          .toLowerCase();
+
+        if (selectedKeys.has(key)) {
+          continue;
+        }
+
+        selected.push(item);
+        selectedKeys.add(key);
+
+        counts[club][category]++;
+        counts[club].total++;
+      }
+    }
+  }
+
+
+  // ----------------------------------------------------------
+  // SECOND PASS
+  // Fill remaining places with other legitimate articles.
+  // ----------------------------------------------------------
+
+  for (const club of Object.keys(CLUBS)) {
+
+    for (const item of sorted) {
+
+      if (
+        counts[club].total >=
+        MAX_PER_CLUB
+      ) {
+        break;
+      }
+
+      if (
+        !item.clubs.includes(club)
+      ) {
+        continue;
+      }
+
+      const key =
+        String(
+          item.link ||
+          item.title ||
+          ""
+        )
+        .toLowerCase();
+
+      if (selectedKeys.has(key)) {
+        continue;
+      }
+
+      selected.push(item);
+      selectedKeys.add(key);
+
+      counts[club].total++;
+    }
+  }
+
+
+  selected.sort(
+    (a, b) =>
+      new Date(b.date) -
+      new Date(a.date)
+  );
+
+
+  return selected.slice(
+    0,
+    1200
+  );
+}
+
+
+// ============================================================
+// MAIN
+// ============================================================
+
+async function main() {
+
+  console.log(
+    `Fetching ${FEEDS.length} news feeds with concurrency limit 12...`
+  );
+
+
+  const results =
+    await mapWithConcurrency(
+      FEEDS,
+      12,
+      fetchFeed
+    );
+
+
+  const allItems = [];
+  const sourceStatus = {};
+
+
+  FEEDS.forEach(
+    (feed, index) => {
+
+      const result =
+        results[index];
+
+
+      sourceStatus[feed.name] = {
+
+        success:
+          result.success,
+
+        itemsFound:
+          result.items.length,
+
+        error:
+          result.error || null
+
+      };
+
+
+      for (
+        const item of result.items
+      ) {
+
+        const clubs =
+          feed.clubHint
+            ? [feed.clubHint]
+            : findMatchingClubs(
+                `${item.title} ${item.summary}`
+              );
+
+
+        if (
+          clubs.length === 0
+        ) {
+          continue;
+        }
+
+
+        allItems.push({
+
+          ...item,
+
+          clubs,
+
+          category:
+            feed.category ||
+            "media"
+
+        });
+      }
+    }
+  );
+
+
+  // ==========================================================
+  // REMOVE STREAMING / SEO SPAM
+  // ==========================================================
+
+  const beforeFilter =
+    allItems.length;
+
+
+  const filteredItems =
+    allItems.filter(
+      item =>
+        !isStreamingSpam(item)
+    );
+
+
+  const removedSpam =
+    beforeFilter -
+    filteredItems.length;
+
+
+  console.log(
+    `Removed ${removedSpam} streaming/spam articles.`
+  );
+
+
+  // ==========================================================
+  // REMOVE DUPLICATES
+  // ==========================================================
+
+  const deduped =
+    dedupe(
+      filteredItems
+    );
+
+
+  // ==========================================================
+  // BALANCE CLUB COVERAGE
+  // ==========================================================
+
+  const balanced =
+    balanceForAllClubs(
+      deduped
+    );
+
+
+  // ==========================================================
+  // CLUB COUNTS
+  // ==========================================================
+
+  const clubCounts =
+    Object.fromEntries(
+      Object.keys(CLUBS).map(
+        club => [
+          club,
+          0
+        ]
+      )
+    );
+
+
+  balanced.forEach(item => {
+
+    item.clubs.forEach(club => {
+
+      if (
+        clubCounts[club] !==
+        undefined
+      ) {
+        clubCounts[club]++;
+      }
+
     });
-</script>
 
-</body>
-</html>
+  });
+
+
+  // ==========================================================
+  // CATEGORY COUNTS
+  // ==========================================================
+
+  const categoryCounts =
+    Object.fromEntries(
+      Object.keys(CLUBS).map(
+        club => [
+          club,
+          {
+            official: 0,
+            fan: 0,
+            media: 0,
+            total: 0
+          }
+        ]
+      )
+    );
+
+
+  balanced.forEach(item => {
+
+    item.clubs.forEach(club => {
+
+      if (
+        !categoryCounts[club]
+      ) {
+        return;
+      }
+
+
+      const category =
+        [
+          "official",
+          "fan",
+          "media"
+        ].includes(
+          item.category
+        )
+          ? item.category
+          : "media";
+
+
+      categoryCounts[club][category]++;
+      categoryCounts[club].total++;
+
+    });
+
+  });
+
+
+  // ==========================================================
+  // OUTPUT
+  // ==========================================================
+
+  const output = {
+
+    updatedAt:
+      new Date().toISOString(),
+
+    feedCount:
+      FEEDS.length,
+
+    successfulFeeds:
+      Object.values(
+        sourceStatus
+      ).filter(
+        source =>
+          source.success
+      ).length,
+
+    removedStreamingSpam:
+      removedSpam,
+
+    sources:
+      sourceStatus,
+
+    clubCounts,
+
+    categoryCounts,
+
+    items:
+      balanced
+
+  };
+
+
+  const outPath =
+    path.join(
+      __dirname,
+      "..",
+      "data",
+      "club-news.json"
+    );
+
+
+  fs.writeFileSync(
+    outPath,
+    JSON.stringify(
+      output,
+      null,
+      2
+    )
+  );
+
+
+  console.log(
+    `Wrote ${output.items.length} balanced club news items from ${output.successfulFeeds}/${output.feedCount} feeds.`
+  );
+
+
+  console.log(
+    `Streaming/spam articles removed: ${removedSpam}`
+  );
+
+
+  console.log(
+    "Club coverage:",
+    clubCounts
+  );
+}
+
+
+// ============================================================
+// RUN
+// ============================================================
+
+main().catch(error => {
+
+  console.error(
+    "Club news update failed:",
+    error
+  );
+
+  process.exit(1);
+
+});
