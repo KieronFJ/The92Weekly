@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T12:11:52.805Z",
+  "updatedAt": "2026-08-29T12:22:06.404Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3333,7 +3333,7 @@
       "date": "2026-08-29T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "31'",
+      "statusDetail": "10'",
       "home": {
         "id": "364",
         "name": "Liverpool",
@@ -3355,7 +3355,7 @@
       "date": "2026-08-29T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "32'",
+      "statusDetail": "12'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -3377,7 +3377,7 @@
       "date": "2026-08-29T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "32'",
+      "statusDetail": "11'",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
@@ -3399,7 +3399,7 @@
       "date": "2026-08-29T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "32'",
+      "statusDetail": "11'",
       "home": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
@@ -3421,7 +3421,7 @@
       "date": "2026-08-29T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "32'",
+      "statusDetail": "12'",
       "home": {
         "id": "346",
         "name": "Blackpool",
@@ -3442,8 +3442,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "31'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "11'",
       "home": {
         "id": "390",
         "name": "Milton Keynes Dons",
@@ -3465,7 +3465,7 @@
       "date": "2026-08-29T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "32'",
+      "statusDetail": "12'",
       "home": {
         "id": "280",
         "name": "Barnet",
@@ -3486,8 +3486,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "32'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "12'",
       "home": {
         "id": "348",
         "name": "Port Vale",
@@ -3508,8 +3508,8 @@
       "type": "league",
       "date": "2026-08-29T12:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "3'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 8:00 AM EDT",
       "home": {
         "id": "402",
         "name": "Rotherham United",
