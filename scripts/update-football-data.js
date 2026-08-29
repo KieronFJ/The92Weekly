@@ -145,14 +145,32 @@ async function fetchCompetitionSeason(competition) {
 }
 
 async function fetchMatchDetail(match) {
+  const url =
+    `${BASE}/${match.competitionCode}/summary?event=${match.id}`;
   try {
-    const url =
-      `${BASE}/${match.competitionCode}/summary?event=${match.id}`;
     const data = await getJson(url);
 
-    const details = data.header?.competitions?.[0]?.details || [];
+    const details = data.header?.competitions?.[0]?.details;
+
+    if (!Array.isArray(details)) {
+      // The response came back, but not in the shape we expected —
+      // log exactly what keys ARE there so we can fix the parsing.
+      console.log(
+        `[match-detail] ${match.home.name} v ${match.away.name} (${match.id}): ` +
+        `no "details" array found. header keys: ${Object.keys(data.header || {}).join(", ")}. ` +
+        `competitions[0] keys: ${Object.keys(data.header?.competitions?.[0] || {}).join(", ")}`
+      );
+      return { goals: [], cards: [] };
+    }
+
+    console.log(
+      `[match-detail] ${match.home.name} v ${match.away.name} (${match.id}): ` +
+      `found ${details.length} raw detail entries`
+    );
+
     const goals = [];
     const cards = [];
+    let skippedNoScorerOrMinute = 0;
 
     for (const d of details) {
       const typeText = d.type?.text || "";
@@ -160,7 +178,10 @@ async function fetchMatchDetail(match) {
       const minute = d.clock?.displayValue || null;
       const teamName = d.team?.displayName || null;
 
-      if (!scorer || !minute) continue;
+      if (!scorer || !minute) {
+        skippedNoScorerOrMinute++;
+        continue;
+      }
 
       if (typeText.toLowerCase().includes("goal") && !typeText.toLowerCase().includes("own")) {
         goals.push({ player: scorer, minute, team: teamName });
@@ -173,10 +194,21 @@ async function fetchMatchDetail(match) {
       }
     }
 
+    if (details.length > 0 && goals.length === 0 && cards.length === 0) {
+      // We had raw entries but extracted nothing — log one full example
+      // entry so we can see the actual field names ESPN is using.
+      console.log(
+        `[match-detail] ${match.home.name} v ${match.away.name}: ` +
+        `0 goals/cards extracted from ${details.length} entries (${skippedNoScorerOrMinute} skipped for missing scorer/minute). ` +
+        `Example entry: ${JSON.stringify(details[0])}`
+      );
+    }
+
     return { goals, cards };
   } catch (error) {
-    // Match detail is a bonus on top of the core score — if it fails for
-    // any reason, just skip it rather than fail the whole data update.
+    console.log(
+      `[match-detail] ${match.home.name} v ${match.away.name} (${match.id}) FAILED: ${error.message}`
+    );
     return { goals: [], cards: [] };
   }
 }
