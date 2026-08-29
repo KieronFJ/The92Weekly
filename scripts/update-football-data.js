@@ -150,89 +150,69 @@ async function fetchMatchDetail(match) {
   try {
     const data = await getJson(url);
 
-    // One-off diagnostic: log the full top-level shape of the response for
-    // Derby County's match specifically, so we can see whether card data
-    // lives somewhere other than header.competitions[0].details.
-    if (match.home.name.includes("Derby") || match.away.name.includes("Derby")) {
-      console.log(
-        `[match-detail-FULLSHAPE] ${match.home.name} v ${match.away.name}: ` +
-        `top-level keys: ${Object.keys(data).join(", ")}`
-      );
-      if (data.rosters) {
-        console.log(
-          `[match-detail-FULLSHAPE] rosters[0] keys: ${Object.keys(data.rosters[0] || {}).join(", ")}`
-        );
-      }
-      if (data.boxscore) {
-        console.log(
-          `[match-detail-FULLSHAPE] boxscore keys: ${Object.keys(data.boxscore || {}).join(", ")}`
-        );
-      }
-      if (data.keyEvents) {
-        console.log(
-          `[match-detail-FULLSHAPE] keyEvents: found ${data.keyEvents.length} entries. ` +
-          `First entry: ${JSON.stringify(data.keyEvents[0] || {})}`
-        );
-        if (data.keyEvents.length > 1) {
-          console.log(
-            `[match-detail-FULLSHAPE] Second entry: ${JSON.stringify(data.keyEvents[1] || {})}`
-          );
-        }
-      }
-    }
+    const events = data.keyEvents;
 
-    const details = data.header?.competitions?.[0]?.details;
-
-    if (!Array.isArray(details)) {
-      // The response came back, but not in the shape we expected —
-      // log exactly what keys ARE there so we can fix the parsing.
+    if (!Array.isArray(events)) {
       console.log(
         `[match-detail] ${match.home.name} v ${match.away.name} (${match.id}): ` +
-        `no "details" array found. header keys: ${Object.keys(data.header || {}).join(", ")}. ` +
-        `competitions[0] keys: ${Object.keys(data.header?.competitions?.[0] || {}).join(", ")}`
+        `no "keyEvents" array found. top-level keys: ${Object.keys(data).join(", ")}`
       );
       return { goals: [], cards: [] };
     }
 
     console.log(
       `[match-detail] ${match.home.name} v ${match.away.name} (${match.id}): ` +
-      `found ${details.length} raw detail entries`
+      `found ${events.length} keyEvents entries`
     );
 
     const goals = [];
     const cards = [];
     let skipped = 0;
+    let unmatchedTypes = new Set();
 
-    for (const d of details) {
+    for (const d of events) {
+      const typeCode = (d.type?.type || "").toLowerCase();
+      const typeText = (d.type?.text || "").toLowerCase();
       const scorer = d.participants?.[0]?.athlete?.displayName || null;
       const minute = d.clock?.displayValue || null;
       const teamName = d.team?.displayName || null;
+
+      const isGoal = typeCode === "goal" || typeText.includes("goal");
+      const isYellow = typeCode.includes("yellow") || typeText.includes("yellow");
+      const isRed = typeCode.includes("red") || typeText.includes("red");
+
+      if (!isGoal && !isYellow && !isRed) {
+        // Not a goal or card (kickoff, halftime, substitution, etc.) —
+        // expected to be skipped, not an error.
+        continue;
+      }
 
       if (!scorer || !minute) {
         skipped++;
         continue;
       }
 
-      if (d.scoringPlay) {
-        goals.push({ player: scorer, minute, team: teamName, ownGoal: Boolean(d.ownGoal) });
-      } else if (d.redCard) {
+      if (isGoal) {
+        goals.push({ player: scorer, minute, team: teamName, ownGoal: typeText.includes("own") });
+      } else if (isRed) {
         cards.push({ player: scorer, minute, team: teamName, card: "red" });
-      } else if (d.yellowCard) {
+      } else if (isYellow) {
         cards.push({ player: scorer, minute, team: teamName, card: "yellow" });
       } else {
-        // Doesn't match any known category — likely a booking using a field
-        // name we haven't confirmed yet. Log the full entry so we can see
-        // its real shape and fix the field name properly.
-        console.log(
-          `[match-detail] ${match.home.name} v ${match.away.name}: ` +
-          `unmatched entry (not goal/red/yellow): ${JSON.stringify(d)}`
-        );
+        unmatchedTypes.add(`${d.type?.type}/${d.type?.text}`);
       }
+    }
+
+    if (unmatchedTypes.size > 0) {
+      console.log(
+        `[match-detail] ${match.home.name} v ${match.away.name}: ` +
+        `unmatched types seen: ${[...unmatchedTypes].join(", ")}`
+      );
     }
 
     console.log(
       `[match-detail] ${match.home.name} v ${match.away.name}: ` +
-      `${goals.length} goals, ${cards.length} cards extracted from ${details.length} entries (${skipped} skipped)`
+      `${goals.length} goals, ${cards.length} cards extracted from ${events.length} keyEvents (${skipped} skipped for missing scorer/minute)`
     );
 
     return { goals, cards };
