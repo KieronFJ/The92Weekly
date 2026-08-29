@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T14:02:45.048Z",
+  "updatedAt": "2026-08-29T14:21:41.162Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3331,18 +3331,18 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "364",
         "name": "Liverpool",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "393",
         "name": "Nottingham Forest",
-        "score": 2
+        "score": null
       },
       "venue": "Anfield",
       "source": "ESPN"
@@ -3353,18 +3353,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "374",
         "name": "Derby County",
-        "score": 0
+        "score": null
       },
       "away": {
         "id": "318",
         "name": "Swansea City",
-        "score": 3
+        "score": null
       },
       "venue": "Pride Park",
       "source": "ESPN"
@@ -3375,18 +3375,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
-        "score": 3
+        "score": null
       },
       "away": {
         "id": "383",
         "name": "West Bromwich Albion",
-        "score": 1
+        "score": null
       },
       "venue": "Riverside Stadium",
       "source": "ESPN"
@@ -3397,18 +3397,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
-        "score": 4
+        "score": null
       },
       "away": {
         "id": "336",
         "name": "Stoke City",
-        "score": 1
+        "score": null
       },
       "venue": "Molineux Stadium",
       "source": "ESPN"
@@ -3441,18 +3441,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "390",
         "name": "Milton Keynes Dons",
-        "score": 0
+        "score": null
       },
       "away": {
         "id": "375",
         "name": "Leicester City",
-        "score": 0
+        "score": null
       },
       "venue": "Stadium MK",
       "source": "ESPN"
@@ -3463,18 +3463,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "280",
         "name": "Barnet",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "320",
         "name": "Cheltenham Town",
-        "score": 2
+        "score": null
       },
       "venue": "The Hive Stadium",
       "source": "ESPN"
@@ -3509,7 +3509,7 @@
       "date": "2026-08-29T12:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+5'",
+      "statusDetail": "65'",
       "home": {
         "id": "402",
         "name": "Rotherham United",
