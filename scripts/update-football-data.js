@@ -170,39 +170,31 @@ async function fetchMatchDetail(match) {
 
     const goals = [];
     const cards = [];
-    let skippedNoScorerOrMinute = 0;
+    let skipped = 0;
 
     for (const d of details) {
-      const typeText = d.type?.text || "";
-      const scorer = d.athletesInvolved?.[0]?.displayName || null;
+      const scorer = d.participants?.[0]?.athlete?.displayName || null;
       const minute = d.clock?.displayValue || null;
       const teamName = d.team?.displayName || null;
 
       if (!scorer || !minute) {
-        skippedNoScorerOrMinute++;
+        skipped++;
         continue;
       }
 
-      if (typeText.toLowerCase().includes("goal") && !typeText.toLowerCase().includes("own")) {
-        goals.push({ player: scorer, minute, team: teamName });
-      } else if (typeText.toLowerCase().includes("own goal")) {
-        goals.push({ player: scorer, minute, team: teamName, ownGoal: true });
-      } else if (typeText.toLowerCase().includes("yellow card")) {
-        cards.push({ player: scorer, minute, team: teamName, card: "yellow" });
-      } else if (typeText.toLowerCase().includes("red card")) {
+      if (d.scoringPlay) {
+        goals.push({ player: scorer, minute, team: teamName, ownGoal: Boolean(d.ownGoal) });
+      } else if (d.redCard) {
         cards.push({ player: scorer, minute, team: teamName, card: "red" });
+      } else if (d.yellowCard) {
+        cards.push({ player: scorer, minute, team: teamName, card: "yellow" });
       }
     }
 
-    if (details.length > 0 && goals.length === 0 && cards.length === 0) {
-      // We had raw entries but extracted nothing — log one full example
-      // entry so we can see the actual field names ESPN is using.
-      console.log(
-        `[match-detail] ${match.home.name} v ${match.away.name}: ` +
-        `0 goals/cards extracted from ${details.length} entries (${skippedNoScorerOrMinute} skipped for missing scorer/minute). ` +
-        `Example entry: ${JSON.stringify(details[0])}`
-      );
-    }
+    console.log(
+      `[match-detail] ${match.home.name} v ${match.away.name}: ` +
+      `${goals.length} goals, ${cards.length} cards extracted from ${details.length} entries (${skipped} skipped)`
+    );
 
     return { goals, cards };
   } catch (error) {
