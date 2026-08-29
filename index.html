@@ -648,46 +648,56 @@
   }
   .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
   .sidebar-section.open .sidebar-chevron { transform: rotate(180deg); }
-  /* All dropdown panels share the same width as the team tiles. */
+  .sidebar-section {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
   .sidebar-submenu,
-  .sidebar-section .sidebar-submenu {
+  .sidebar-section .sidebar-submenu,
+  #sidebar-latest-section .sidebar-submenu,
+  #sidebar-teams-section .sidebar-submenu,
+  #sidebar-tables-section .sidebar-submenu,
+  #sidebar-picks-section .sidebar-submenu,
+  #sidebar-community-section .sidebar-submenu {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.25s ease;
     background: var(--panel);
-    width: calc(100% - 46px) !important;
+    width: 100% !important;
+    max-width: none !important;
     min-width: 0 !important;
-    margin: 0 12px 0 34px !important;
+    margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
-    align-self: stretch;
+    display: block !important;
+    position: relative;
+    left: 0 !important;
+    right: auto !important;
   }
   .sidebar-section.open .sidebar-submenu { max-height: 5000px; }
-  .sidebar-submenu > a {
-    display: block;
+  .sidebar-submenu a {
+    display: block !important;
     width: 100% !important;
+    max-width: none !important;
     min-width: 0 !important;
     box-sizing: border-box;
     margin: 0 !important;
-    padding: 14px 20px;
+    padding: 14px 20px 14px 34px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #000000 !important;
-    -webkit-text-fill-color: #000000 !important;
+    color: #111111 !important;
     background: #f4f3f0;
     border-bottom: 1px solid var(--line-soft);
     text-decoration: none;
   }
-  .sidebar-submenu > a:last-child { border-bottom: none; }
+  .sidebar-submenu a:last-child { border-bottom: none; }
 
   /* ---------- Teams: league dropdowns ---------- */
   .sidebar-league {
-    width: 100%;
-    margin: 0;
     border-bottom: 1px solid var(--line-soft);
-    background: #f4f3f0;
-    box-sizing: border-box;
   }
   .sidebar-league:last-of-type {
     border-bottom: none;
@@ -702,8 +712,8 @@
     font-family: 'Poppins', sans-serif;
     font-size: 13.5px;
     font-weight: 600;
-    color: #000000;
-    background: #f4f3f0;
+    color: var(--ink);
+    background: transparent;
     border: none;
     cursor: pointer;
     text-align: left;
@@ -734,9 +744,9 @@
     max-height: 1400px;
   }
   .sidebar-team-link {
-    display: flex;
+    display: flex !important;
     align-items: center;
-    width: calc(100% - 46px);
+    width: calc(100% - 46px) !important;
     box-sizing: border-box;
     margin: 0 12px 4px 34px;
     padding: 10px 12px;
@@ -760,11 +770,6 @@
     -webkit-text-fill-color: #000000 !important;
     text-shadow: none !important;
   }
-  .sidebar-team-link.on-dark-bg {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-    text-shadow: none !important;
-  }
   .sidebar-team-badge {
     width: 24px;
     height: 24px;
@@ -772,6 +777,18 @@
     object-fit: contain;
     margin-right: 10px;
     display: block;
+  }
+  .sidebar-directory-link {
+    display: block;
+    padding: 14px 20px 14px 34px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--gold);
+    border-top: 1px solid var(--line-soft);
+  }
+  .sidebar-directory-link:hover {
+    background: var(--bg);
   }
 
 </style>
@@ -1301,6 +1318,8 @@
           '<div class="status-box">Couldn\'t load the news feed right now.</div>';
       });
 
+    const clubEspnIds = {"Arsenal":"359","Aston Villa":"362","Bournemouth":"349","Brentford":"337","Brighton & Hove Albion":"331","Chelsea":"363","Coventry City":"388","Crystal Palace":"384","Everton":"368","Fulham":"370","Hull City":"306","Ipswich Town":"373","Leeds United":"357","Liverpool":"364","Manchester City":"382","Manchester United":"360","Newcastle United":"361","Nottingham Forest":"393","Sunderland":"366","Tottenham Hotspur":"367","Birmingham City":"392","Blackburn Rovers":"365","Bolton Wanderers":"358","Bristol City":"333","Burnley":"379","Cardiff City":"347","Charlton Athletic":"372","Derby County":"374","Lincoln City":"314","Middlesbrough":"369","Millwall":"391","Norwich City":"381","Portsmouth":"385","Preston North End":"394","Queens Park Rangers":"334","Sheffield United":"398","Southampton":"376","Stoke City":"336","Swansea City":"318","Watford":"395","West Bromwich Albion":"383","West Ham United":"371","Wolverhampton Wanderers":"380","Wrexham":"352","AFC Wimbledon":"3802","Barnsley":"397","Blackpool":"346","Bradford City":"387","Bromley":"3129","Burton Albion":"2567","Cambridge United":"351","Doncaster Rovers":"279","Huddersfield Town":"335","Leicester City":"375","Leyton Orient":"309","Luton Town":"301","Mansfield Town":"304","Milton Keynes Dons":"390","Notts County":"340","Oxford United":"311","Peterborough United":"342","Plymouth Argyle":"307","Reading":"338","Sheffield Wednesday":"399","Stevenage":"285","Stockport County":"400","Wigan Athletic":"350","Wycombe Wanderers":"344","Accrington Stanley":"2731","Barnet":"280","Bristol Rovers":"308","Cheltenham Town":"320","Chesterfield":"343","Colchester United":"339","Crawley Town":"2594","Crewe Alexandra":"396","Exeter City":"324","Fleetwood Town":"3891","Gillingham":"389","Grimsby Town":"386","Newport County":"635","Northampton Town":"353","Oldham Athletic":"332","Port Vale":"348","Rochdale":"303","Rotherham United":"402","Salford City":"4703","Shrewsbury Town":"302","Swindon Town":"341","Tranmere Rovers":"345","Walsall":"401","York City":"315"};
+
     const clubColors = {
       "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
       "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#149954","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
@@ -1319,7 +1338,6 @@
         });
         html += `</div>`;
       }
-      html += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
       panel.innerHTML = html;
     }
 
@@ -1433,8 +1451,8 @@
           const g = parseInt(rgb.substring(2, 4), 16);
           const b = parseInt(rgb.substring(4, 6), 16);
           const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-          const textClass = brightness >= 145 ? ' on-light-bg' : ' on-dark-bg';
-          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge" alt="${name} badge" loading="lazy"><span>${name}</span></a>`;
+          const textClass = brightness >= 145 ? ' on-light-bg' : '';
+          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge" alt="" loading="lazy"><span>${name}</span></a>`;
         });
 
         sidebarTeamsHtml += `
@@ -1443,54 +1461,20 @@
       }
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
 
-      // Load the official club crests from ESPN. We use the competition team
-      // feeds rather than guessing filenames, because many clubs have different
-      // ESPN slugs/IDs. If a crest cannot be loaded, the team tile still works.
-      (async function loadSidebarTeamBadges() {
-        const leagues = ['eng.1', 'eng.2', 'eng.3', 'eng.4'];
-        const normalize = value => String(value || '')
-          .toLowerCase()
-          .replace(/&/g, 'and')
-          .replace(/\bafc\b/g, '')
-          .replace(/\bfc\b/g, '')
-          .replace(/\bthe\b/g, '')
-          .replace(/[^a-z0-9]+/g, ' ')
-          .replace(/\s+/g, ' ')
-          .trim();
-
-        const logoMap = new Map();
-        await Promise.all(leagues.map(async league => {
-          try {
-            const targetUrl = `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=100`;
-            const proxyUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-            const response = await fetch(proxyUrl);
-            if (!response.ok) return;
-            const data = await response.json();
-            const teams = (data.sports && data.sports[0] && data.sports[0].leagues && data.sports[0].leagues[0] && data.sports[0].leagues[0].teams) || [];
-            teams.forEach(item => {
-              const team = item.team || item;
-              const name = team.displayName || team.name || team.shortDisplayName;
-              const logo = team.logos && team.logos[0] && team.logos[0].href;
-              if (name && logo) logoMap.set(normalize(name), logo);
-            });
-          } catch (error) {
-            console.warn('Could not load ESPN club badges for', league, error);
-          }
-        }));
-
-        sidebarTeamsSubmenu.querySelectorAll('.sidebar-team-link').forEach(link => {
-          const name = link.getAttribute('data-team-name') || '';
-          const img = link.querySelector('.sidebar-team-badge');
-          if (!img) return;
-          const logo = logoMap.get(normalize(name));
-          if (logo) {
-            img.src = logo;
-            img.style.display = 'block';
-          } else {
-            img.style.display = 'none';
-          }
-        });
-      })();
+      // Club badges: use the ESPN team IDs already stored in football-data.json.
+      // The badge images are served directly from ESPN's CDN, so no browser-side
+      // API call or CORS permission is required.
+      sidebarTeamsSubmenu.querySelectorAll('.sidebar-team-link').forEach(link => {
+        const name = link.getAttribute('data-team-name') || '';
+        const img = link.querySelector('.sidebar-team-badge');
+        const teamId = clubEspnIds[name];
+        if (!img || !teamId) {
+          if (img) img.style.display = 'none';
+          return;
+        }
+        img.src = `https://a.espncdn.com/i/teamlogos/soccer/500/${teamId}.png`;
+        img.onerror = function() { this.style.display = 'none'; };
+      });
 
       // Each league opens independently so the Teams menu never becomes an
       // enormous 92-team list.
