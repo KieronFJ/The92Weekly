@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T16:11:56.128Z",
+  "updatedAt": "2026-08-29T16:22:03.273Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3771,18 +3771,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+5'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "397",
         "name": "Barnsley",
-        "score": null
+        "score": 3
       },
       "venue": "Gaughan Group Stadium",
       "source": "ESPN"
@@ -4057,18 +4057,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+7'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "401",
         "name": "Walsall",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "2731",
         "name": "Accrington Stanley",
-        "score": null
+        "score": 2
       },
       "venue": "Bescot Stadium",
       "source": "ESPN"
