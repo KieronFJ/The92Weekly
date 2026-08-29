@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T16:51:49.613Z",
+  "updatedAt": "2026-08-29T17:02:29.060Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3529,18 +3529,18 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "368",
         "name": "Everton",
-        "score": 1
+        "score": null
       },
       "venue": "Vitality Stadium",
       "source": "ESPN"
@@ -3551,18 +3551,18 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "388",
         "name": "Coventry City",
-        "score": 0
+        "score": null
       },
       "away": {
         "id": "306",
         "name": "Hull City",
-        "score": 1
+        "score": null
       },
       "venue": "Coventry Building Society Arena",
       "source": "ESPN"
@@ -3573,18 +3573,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "334",
         "name": "Queens Park Rangers",
-        "score": 2
+        "score": null
       },
       "venue": "Ewood Park",
       "source": "ESPN"
@@ -3595,18 +3595,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
-        "score": 0
+        "score": null
       },
       "away": {
         "id": "314",
         "name": "Lincoln City",
-        "score": 1
+        "score": null
       },
       "venue": "Toughsheet Community Stadium",
       "source": "ESPN"
@@ -3617,18 +3617,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "333",
         "name": "Bristol City",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "385",
         "name": "Portsmouth",
-        "score": 1
+        "score": null
       },
       "venue": "Ashton Gate",
       "source": "ESPN"
@@ -3639,18 +3639,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "398",
         "name": "Sheffield United",
-        "score": 2
+        "score": null
       },
       "venue": "Cardiff City Stadium",
       "source": "ESPN"
@@ -3661,18 +3661,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "394",
         "name": "Preston North End",
-        "score": 0
+        "score": null
       },
       "venue": "The Valley",
       "source": "ESPN"
@@ -3683,18 +3683,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "381",
         "name": "Norwich City",
-        "score": 4
+        "score": null
       },
       "away": {
         "id": "379",
         "name": "Burnley",
-        "score": 1
+        "score": null
       },
       "venue": "Carrow Road",
       "source": "ESPN"
@@ -3705,18 +3705,18 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'",
       "home": {
         "id": "376",
         "name": "Southampton",
-        "score": 5
+        "score": null
       },
       "away": {
         "id": "391",
         "name": "Millwall",
-        "score": 1
+        "score": null
       },
       "venue": "St. Mary's Stadium",
       "source": "ESPN"
@@ -3749,18 +3749,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "351",
         "name": "Cambridge United",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "335",
         "name": "Huddersfield Town",
-        "score": 2
+        "score": null
       },
       "venue": "Cledara Abbey Stadium",
       "source": "ESPN"
@@ -3771,18 +3771,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "85'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "397",
         "name": "Barnsley",
-        "score": 3
+        "score": null
       },
       "venue": "Gaughan Group Stadium",
       "source": "ESPN"
@@ -3793,18 +3793,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "340",
         "name": "Notts County",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "2567",
         "name": "Burton Albion",
-        "score": 1
+        "score": null
       },
       "venue": "Meadow Lane",
       "source": "ESPN"
@@ -3815,18 +3815,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "307",
         "name": "Plymouth Argyle",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "387",
         "name": "Bradford City",
-        "score": 0
+        "score": null
       },
       "venue": "Home Park",
       "source": "ESPN"
@@ -3837,18 +3837,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "399",
         "name": "Sheffield Wednesday",
-        "score": 7
+        "score": null
       },
       "away": {
         "id": "3129",
         "name": "Bromley",
-        "score": 2
+        "score": null
       },
       "venue": "Hillsborough",
       "source": "ESPN"
@@ -3859,18 +3859,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "285",
         "name": "Stevenage",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "279",
         "name": "Doncaster Rovers",
-        "score": 2
+        "score": null
       },
       "venue": "Lamex Stadium",
       "source": "ESPN"
@@ -3881,18 +3881,18 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "400",
         "name": "Stockport County",
-        "score": 5
+        "score": null
       },
       "away": {
         "id": "344",
         "name": "Wycombe Wanderers",
-        "score": 1
+        "score": null
       },
       "venue": "Edgeley Park",
       "source": "ESPN"
@@ -3903,18 +3903,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "339",
         "name": "Colchester United",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "303",
         "name": "Rochdale",
-        "score": 0
+        "score": null
       },
       "venue": "JobServe Community Stadium",
       "source": "ESPN"
@@ -3947,18 +3947,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "389",
         "name": "Gillingham",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "353",
         "name": "Northampton Town",
-        "score": 1
+        "score": null
       },
       "venue": "Priestfield Stadium",
       "source": "ESPN"
@@ -3969,18 +3969,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "386",
         "name": "Grimsby Town",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "3891",
         "name": "Fleetwood Town",
-        "score": 2
+        "score": null
       },
       "venue": "Blundell Park",
       "source": "ESPN"
@@ -3991,18 +3991,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "635",
         "name": "Newport County",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "345",
         "name": "Tranmere Rovers",
-        "score": 2
+        "score": null
       },
       "venue": "Rodney Parade",
       "source": "ESPN"
@@ -4013,18 +4013,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "332",
         "name": "Oldham Athletic",
-        "score": 3
+        "score": null
       },
       "away": {
         "id": "341",
         "name": "Swindon Town",
-        "score": 0
+        "score": null
       },
       "venue": "Boundary Park",
       "source": "ESPN"
@@ -4035,18 +4035,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "302",
         "name": "Shrewsbury Town",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "4703",
         "name": "Salford City",
-        "score": 0
+        "score": null
       },
       "venue": "The Croud Meadow",
       "source": "ESPN"
@@ -4057,18 +4057,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "87'",
       "home": {
         "id": "401",
         "name": "Walsall",
-        "score": 3
+        "score": null
       },
       "away": {
         "id": "2731",
         "name": "Accrington Stanley",
-        "score": 2
+        "score": null
       },
       "venue": "Bescot Stadium",
       "source": "ESPN"
@@ -4079,18 +4079,18 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-08-29T14:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'",
       "home": {
         "id": "315",
         "name": "York City",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "324",
         "name": "Exeter City",
-        "score": 1
+        "score": null
       },
       "venue": "LNER Community Stadium",
       "source": "ESPN"
@@ -4102,8 +4102,8 @@
       "type": "league",
       "date": "2026-08-29T16:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 12:30 PM EDT",
       "home": {
         "id": "367",
         "name": "Tottenham Hotspur",
