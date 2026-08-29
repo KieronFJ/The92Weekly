@@ -217,12 +217,12 @@ async function addRecentMatchDetail(matches) {
   // Fetching goal/card detail for every match all season would mean
   // thousands of extra requests. The "Last Result" feature on team pages
   // only ever needs this for genuinely recent matches, so scope it to
-  // completed league matches within the last 5 days.
+  // completed matches (league and cup) within the last 5 days.
   const cutoff = new Date();
   cutoff.setUTCDate(cutoff.getUTCDate() - 5);
 
   const recentMatches = matches.filter(m =>
-    m.completed && m.type === "league" && new Date(m.date) >= cutoff
+    m.completed && new Date(m.date) >= cutoff
   );
 
   console.log(`Fetching goal/card detail for ${recentMatches.length} recent matches...`);
