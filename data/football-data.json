@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T13:01:43.506Z",
+  "updatedAt": "2026-08-29T13:12:08.518Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3332,8 +3332,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "61'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "364",
         "name": "Liverpool",
@@ -3354,8 +3354,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "64'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -3376,8 +3376,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "65'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
@@ -3398,8 +3398,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "64'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
@@ -3420,8 +3420,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "66'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "346",
         "name": "Blackpool",
@@ -3442,8 +3442,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "62'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "390",
         "name": "Milton Keynes Dons",
@@ -3464,8 +3464,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "64'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "280",
         "name": "Barnet",
@@ -3486,8 +3486,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "65'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "348",
         "name": "Port Vale",
@@ -3508,8 +3508,8 @@
       "type": "league",
       "date": "2026-08-29T12:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "22'",
       "home": {
         "id": "402",
         "name": "Rotherham United",
