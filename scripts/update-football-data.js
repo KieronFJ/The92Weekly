@@ -168,6 +168,17 @@ async function fetchMatchDetail(match) {
           `[match-detail-FULLSHAPE] boxscore keys: ${Object.keys(data.boxscore || {}).join(", ")}`
         );
       }
+      if (data.keyEvents) {
+        console.log(
+          `[match-detail-FULLSHAPE] keyEvents: found ${data.keyEvents.length} entries. ` +
+          `First entry: ${JSON.stringify(data.keyEvents[0] || {})}`
+        );
+        if (data.keyEvents.length > 1) {
+          console.log(
+            `[match-detail-FULLSHAPE] Second entry: ${JSON.stringify(data.keyEvents[1] || {})}`
+          );
+        }
+      }
     }
 
     const details = data.header?.competitions?.[0]?.details;
