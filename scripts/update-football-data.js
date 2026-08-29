@@ -144,6 +144,64 @@ async function fetchCompetitionSeason(competition) {
   return matches;
 }
 
+async function fetchMatchDetail(match) {
+  try {
+    const url =
+      `${BASE}/${match.competitionCode}/summary?event=${match.id}`;
+    const data = await getJson(url);
+
+    const details = data.header?.competitions?.[0]?.details || [];
+    const goals = [];
+    const cards = [];
+
+    for (const d of details) {
+      const typeText = d.type?.text || "";
+      const scorer = d.athletesInvolved?.[0]?.displayName || null;
+      const minute = d.clock?.displayValue || null;
+      const teamName = d.team?.displayName || null;
+
+      if (!scorer || !minute) continue;
+
+      if (typeText.toLowerCase().includes("goal") && !typeText.toLowerCase().includes("own")) {
+        goals.push({ player: scorer, minute, team: teamName });
+      } else if (typeText.toLowerCase().includes("own goal")) {
+        goals.push({ player: scorer, minute, team: teamName, ownGoal: true });
+      } else if (typeText.toLowerCase().includes("yellow card")) {
+        cards.push({ player: scorer, minute, team: teamName, card: "yellow" });
+      } else if (typeText.toLowerCase().includes("red card")) {
+        cards.push({ player: scorer, minute, team: teamName, card: "red" });
+      }
+    }
+
+    return { goals, cards };
+  } catch (error) {
+    // Match detail is a bonus on top of the core score — if it fails for
+    // any reason, just skip it rather than fail the whole data update.
+    return { goals: [], cards: [] };
+  }
+}
+
+async function addRecentMatchDetail(matches) {
+  // Fetching goal/card detail for every match all season would mean
+  // thousands of extra requests. The "Last Result" feature on team pages
+  // only ever needs this for genuinely recent matches, so scope it to
+  // completed league matches within the last 5 days.
+  const cutoff = new Date();
+  cutoff.setUTCDate(cutoff.getUTCDate() - 5);
+
+  const recentMatches = matches.filter(m =>
+    m.completed && m.type === "league" && new Date(m.date) >= cutoff
+  );
+
+  console.log(`Fetching goal/card detail for ${recentMatches.length} recent matches...`);
+
+  for (const match of recentMatches) {
+    const detail = await fetchMatchDetail(match);
+    match.goals = detail.goals;
+    match.cards = detail.cards;
+  }
+}
+
 async function main() {
   const output = {
     updatedAt: new Date().toISOString(),
@@ -200,6 +258,8 @@ async function main() {
     (a, b) =>
       new Date(a.date || 0) - new Date(b.date || 0)
   );
+
+  await addRecentMatchDetail(output.matches);
 
   const file = path.join(
     process.cwd(),
