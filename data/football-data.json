@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T19:02:21.886Z",
+  "updatedAt": "2026-08-29T19:11:40.741Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3302,7 +3302,38 @@
       },
       "venue": "Selhurst Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Erling Haaland",
+          "minute": "17'",
+          "team": "Manchester City",
+          "ownGoal": false
+        },
+        {
+          "player": "Rayan Cherki",
+          "minute": "54'",
+          "team": "Manchester City",
+          "ownGoal": false
+        },
+        {
+          "player": "Gianluigi Donnarumma",
+          "minute": "56'",
+          "team": "Crystal Palace",
+          "ownGoal": true
+        },
+        {
+          "player": "Rayan Cherki",
+          "minute": "59'",
+          "team": "Manchester City",
+          "ownGoal": false
+        },
+        {
+          "player": "Erling Haaland",
+          "minute": "84'",
+          "team": "Manchester City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3326,7 +3357,26 @@
       },
       "venue": "STōK Cae Ras",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Phil Neumann",
+          "minute": "13'",
+          "team": "Birmingham City",
+          "ownGoal": false
+        },
+        {
+          "player": "Callum Doyle",
+          "minute": "54'",
+          "team": "Wrexham",
+          "ownGoal": false
+        },
+        {
+          "player": "Phil Neumann",
+          "minute": "63'",
+          "team": "Birmingham City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3350,7 +3400,32 @@
       },
       "venue": "Anfield",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Dan Ndoye",
+          "minute": "24'",
+          "team": "Nottingham Forest",
+          "ownGoal": false
+        },
+        {
+          "player": "Alexander Isak",
+          "minute": "60'",
+          "team": "Liverpool",
+          "ownGoal": false
+        },
+        {
+          "player": "Morgan Gibbs-White",
+          "minute": "70'",
+          "team": "Nottingham Forest",
+          "ownGoal": false
+        },
+        {
+          "player": "Víctor Muñoz",
+          "minute": "82'",
+          "team": "Liverpool",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3374,7 +3449,26 @@
       },
       "venue": "Pride Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Joseph Opoku",
+          "minute": "2'",
+          "team": "Swansea City",
+          "ownGoal": false
+        },
+        {
+          "player": "Eom Ji-Sung",
+          "minute": "44'",
+          "team": "Swansea City",
+          "ownGoal": false
+        },
+        {
+          "player": "Ronald",
+          "minute": "90'+1'",
+          "team": "Swansea City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3398,7 +3492,32 @@
       },
       "venue": "Riverside Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Will Lankshear",
+          "minute": "48'",
+          "team": "Middlesbrough",
+          "ownGoal": false
+        },
+        {
+          "player": "Jimmy Morgan",
+          "minute": "65'",
+          "team": "West Bromwich Albion",
+          "ownGoal": false
+        },
+        {
+          "player": "Will Lankshear",
+          "minute": "73'",
+          "team": "Middlesbrough",
+          "ownGoal": false
+        },
+        {
+          "player": "Alfie Jones",
+          "minute": "87'",
+          "team": "Middlesbrough",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3422,7 +3541,38 @@
       },
       "venue": "Molineux Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Sam Gallagher",
+          "minute": "2'",
+          "team": "Stoke City",
+          "ownGoal": false
+        },
+        {
+          "player": "Rodrigo Gomes",
+          "minute": "19'",
+          "team": "Wolverhampton Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Rodrigo Gomes",
+          "minute": "22'",
+          "team": "Wolverhampton Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Raúl Jiménez",
+          "minute": "55'",
+          "team": "Wolverhampton Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Jordan James",
+          "minute": "84'",
+          "team": "Wolverhampton Wanderers",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3446,7 +3596,32 @@
       },
       "venue": "Bloomfield Road",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Jordan Williams",
+          "minute": "19'",
+          "team": "Blackpool",
+          "ownGoal": false
+        },
+        {
+          "player": "Dion Charles",
+          "minute": "20'",
+          "team": "Blackpool",
+          "ownGoal": false
+        },
+        {
+          "player": "Karoy Anderson",
+          "minute": "56'",
+          "team": "Blackpool",
+          "ownGoal": false
+        },
+        {
+          "player": "Jerry Yates",
+          "minute": "72'",
+          "team": "Blackpool",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3494,7 +3669,32 @@
       },
       "venue": "The Hive Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Charlie Lakin",
+          "minute": "11'",
+          "team": "Barnet",
+          "ownGoal": false
+        },
+        {
+          "player": "Ryan Broom",
+          "minute": "60'",
+          "team": "Cheltenham Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Charlie Mccann",
+          "minute": "64'",
+          "team": "Cheltenham Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Kabongo Tshimanga",
+          "minute": "78'",
+          "team": "Barnet",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3542,7 +3742,26 @@
       },
       "venue": "AESSEAL New York Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Fabio Tavares",
+          "minute": "12'",
+          "team": "Rotherham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Liam Mandeville",
+          "minute": "88'",
+          "team": "Chesterfield",
+          "ownGoal": false
+        },
+        {
+          "player": "Paul Mullin",
+          "minute": "90'",
+          "team": "Rotherham United",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3566,7 +3785,20 @@
       },
       "venue": "Vitality Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Alex Scott",
+          "minute": "41'",
+          "team": "AFC Bournemouth",
+          "ownGoal": false
+        },
+        {
+          "player": "James Tarkowski",
+          "minute": "90'+1'",
+          "team": "Everton",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3590,7 +3822,14 @@
       },
       "venue": "Coventry Building Society Arena",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Liam Millar",
+          "minute": "82'",
+          "team": "Hull City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3614,7 +3853,26 @@
       },
       "venue": "Ewood Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Ryoya Morishita",
+          "minute": "49'",
+          "team": "Blackburn Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Paul Smyth",
+          "minute": "51'",
+          "team": "Queens Park Rangers",
+          "ownGoal": false
+        },
+        {
+          "player": "Jimmy Dunne",
+          "minute": "74'",
+          "team": "Queens Park Rangers",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3638,7 +3896,14 @@
       },
       "venue": "Toughsheet Community Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Ben House",
+          "minute": "66'",
+          "team": "Lincoln City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3662,7 +3927,26 @@
       },
       "venue": "Ashton Gate",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Lorent Tolaj",
+          "minute": "31'",
+          "team": "Bristol City",
+          "ownGoal": false
+        },
+        {
+          "player": "Jason Knight",
+          "minute": "56'",
+          "team": "Bristol City",
+          "ownGoal": false
+        },
+        {
+          "player": "Marko Milovanovic",
+          "minute": "90'+5'",
+          "team": "Portsmouth",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3686,7 +3970,32 @@
       },
       "venue": "Cardiff City Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Jack Moylan",
+          "minute": "2'",
+          "team": "Cardiff City",
+          "ownGoal": false
+        },
+        {
+          "player": "Thomas Cannon",
+          "minute": "4'",
+          "team": "Sheffield United",
+          "ownGoal": false
+        },
+        {
+          "player": "Callum O'Hare",
+          "minute": "7'",
+          "team": "Sheffield United",
+          "ownGoal": false
+        },
+        {
+          "player": "Cian Ashford",
+          "minute": "38'",
+          "team": "Cardiff City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3710,7 +4019,14 @@
       },
       "venue": "The Valley",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Karlan Grant",
+          "minute": "56'",
+          "team": "Charlton Athletic",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3734,8 +4050,46 @@
       },
       "venue": "Carrow Road",
       "source": "ESPN",
-      "goals": [],
-      "cards": []
+      "goals": [
+        {
+          "player": "Mohamed Toure",
+          "minute": "2'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Andre Brooks",
+          "minute": "5'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Mohamed Toure",
+          "minute": "21'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Josh Laurent",
+          "minute": "27'",
+          "team": "Burnley",
+          "ownGoal": false
+        },
+        {
+          "player": "Andre Brooks",
+          "minute": "67'",
+          "team": "Norwich City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Josh Laurent",
+          "minute": "77'",
+          "team": "Burnley",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401880308",
@@ -3758,7 +4112,44 @@
       },
       "venue": "St. Mary's Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Mark Sykes",
+          "minute": "15'",
+          "team": "Millwall",
+          "ownGoal": false
+        },
+        {
+          "player": "Cyle Larin",
+          "minute": "25'",
+          "team": "Southampton",
+          "ownGoal": false
+        },
+        {
+          "player": "Finn Azaz",
+          "minute": "38'",
+          "team": "Southampton",
+          "ownGoal": false
+        },
+        {
+          "player": "Léo Scienza",
+          "minute": "55'",
+          "team": "Southampton",
+          "ownGoal": false
+        },
+        {
+          "player": "Cyle Larin",
+          "minute": "62'",
+          "team": "Southampton",
+          "ownGoal": false
+        },
+        {
+          "player": "Tom Fellows",
+          "minute": "86'",
+          "team": "Southampton",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3782,7 +4173,20 @@
       },
       "venue": "Vicarage Road",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Amin Nabizada",
+          "minute": "19'",
+          "team": "Watford",
+          "ownGoal": false
+        },
+        {
+          "player": "Matthew Pollock",
+          "minute": "27'",
+          "team": "West Ham United",
+          "ownGoal": true
+        }
+      ],
       "cards": []
     },
     {
@@ -3806,7 +4210,26 @@
       },
       "venue": "Cledara Abbey Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Zak Bradshaw",
+          "minute": "80'",
+          "team": "Cambridge United",
+          "ownGoal": false
+        },
+        {
+          "player": "Joseph Taylor",
+          "minute": "82'",
+          "team": "Huddersfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Joseph Taylor",
+          "minute": "89'",
+          "team": "Huddersfield Town",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3830,7 +4253,32 @@
       },
       "venue": "Gaughan Group Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Mackenzie Kirk",
+          "minute": "15'",
+          "team": "Barnsley",
+          "ownGoal": false
+        },
+        {
+          "player": "Cameron McGeehan",
+          "minute": "64'",
+          "team": "Barnsley",
+          "ownGoal": false
+        },
+        {
+          "player": "Reyes Cleary",
+          "minute": "76'",
+          "team": "Barnsley",
+          "ownGoal": false
+        },
+        {
+          "player": "Nicholas Oyekunle",
+          "minute": "85'",
+          "team": "Leyton Orient",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3854,8 +4302,34 @@
       },
       "venue": "Meadow Lane",
       "source": "ESPN",
-      "goals": [],
-      "cards": []
+      "goals": [
+        {
+          "player": "Finn Delap",
+          "minute": "22'",
+          "team": "Burton Albion",
+          "ownGoal": false
+        },
+        {
+          "player": "Luka Smyth",
+          "minute": "78'",
+          "team": "Notts County",
+          "ownGoal": false
+        },
+        {
+          "player": "Luka Smyth",
+          "minute": "84'",
+          "team": "Notts County",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Curtis Tilt",
+          "minute": "83'",
+          "team": "Burton Albion",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401880890",
@@ -3878,7 +4352,20 @@
       },
       "venue": "Home Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Julio Pleguezuelo",
+          "minute": "44'",
+          "team": "Plymouth Argyle",
+          "ownGoal": false
+        },
+        {
+          "player": "Harvey White",
+          "minute": "50'",
+          "team": "Plymouth Argyle",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3902,7 +4389,62 @@
       },
       "venue": "Hillsborough",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Callum Slattery",
+          "minute": "7'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Mason Burstow",
+          "minute": "31'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Jamal Lowe",
+          "minute": "45'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Louie Barry",
+          "minute": "46'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Louie Barry",
+          "minute": "49'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Jamal Lowe",
+          "minute": "73'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Gabriel Otegbayo",
+          "minute": "81'",
+          "team": "Sheffield Wednesday",
+          "ownGoal": false
+        },
+        {
+          "player": "Victor Adeboyejo",
+          "minute": "85'",
+          "team": "Bromley",
+          "ownGoal": false
+        },
+        {
+          "player": "Gabriel Otegbayo",
+          "minute": "87'",
+          "team": "Bromley",
+          "ownGoal": true
+        }
+      ],
       "cards": []
     },
     {
@@ -3926,7 +4468,32 @@
       },
       "venue": "Lamex Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Josh Magennis",
+          "minute": "57'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Jack Senior",
+          "minute": "70'",
+          "team": "Doncaster Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Owen Bailey",
+          "minute": "80'",
+          "team": "Doncaster Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Oliver Sanderson",
+          "minute": "82'",
+          "team": "Stevenage",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3950,7 +4517,44 @@
       },
       "venue": "Edgeley Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Harry Wood",
+          "minute": "16'",
+          "team": "Stockport County",
+          "ownGoal": false
+        },
+        {
+          "player": "Harry Wood",
+          "minute": "23'",
+          "team": "Stockport County",
+          "ownGoal": false
+        },
+        {
+          "player": "Cauley Woodrow",
+          "minute": "43'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Kyle Wootton",
+          "minute": "56'",
+          "team": "Stockport County",
+          "ownGoal": false
+        },
+        {
+          "player": "Jack Diamond",
+          "minute": "61'",
+          "team": "Stockport County",
+          "ownGoal": false
+        },
+        {
+          "player": "Mikael Mandron",
+          "minute": "89'",
+          "team": "Stockport County",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3974,7 +4578,14 @@
       },
       "venue": "JobServe Community Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Jaden Williams",
+          "minute": "87'",
+          "team": "Colchester United",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -3998,7 +4609,20 @@
       },
       "venue": "Broadfield Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Tom James",
+          "minute": "23'",
+          "team": "Bristol Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Bobby Kamwa",
+          "minute": "41'",
+          "team": "Bristol Rovers",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4022,7 +4646,20 @@
       },
       "venue": "Priestfield Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Conor McManus",
+          "minute": "7'",
+          "team": "Gillingham",
+          "ownGoal": false
+        },
+        {
+          "player": "Logan Briggs",
+          "minute": "36'",
+          "team": "Northampton Town",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4046,7 +4683,32 @@
       },
       "venue": "Blundell Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Will Davies",
+          "minute": "6'",
+          "team": "Fleetwood Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Cian Doyle",
+          "minute": "37'",
+          "team": "Grimsby Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Andy Cook",
+          "minute": "64'",
+          "team": "Grimsby Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Finley Potter",
+          "minute": "69'",
+          "team": "Fleetwood Town",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4070,7 +4732,32 @@
       },
       "venue": "Rodney Parade",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Shaquille Gwengwe",
+          "minute": "11'",
+          "team": "Newport County",
+          "ownGoal": false
+        },
+        {
+          "player": "Zane Okoro",
+          "minute": "71'",
+          "team": "Tranmere Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Dylan Jones",
+          "minute": "75'",
+          "team": "Tranmere Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Shaquille Gwengwe",
+          "minute": "90'",
+          "team": "Newport County",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4094,7 +4781,26 @@
       },
       "venue": "Boundary Park",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Elliott Nevitt",
+          "minute": "41'",
+          "team": "Oldham Athletic",
+          "ownGoal": false
+        },
+        {
+          "player": "Calum Kavanagh",
+          "minute": "84'",
+          "team": "Oldham Athletic",
+          "ownGoal": false
+        },
+        {
+          "player": "Mike Fondop-Talom",
+          "minute": "90'+5'",
+          "team": "Oldham Athletic",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4118,7 +4824,14 @@
       },
       "venue": "The Croud Meadow",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "William Boyle",
+          "minute": "74'",
+          "team": "Shrewsbury Town",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4142,7 +4855,38 @@
       },
       "venue": "Bescot Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Reece Smith",
+          "minute": "8'",
+          "team": "Walsall",
+          "ownGoal": false
+        },
+        {
+          "player": "Josh Woods",
+          "minute": "12'",
+          "team": "Accrington Stanley",
+          "ownGoal": false
+        },
+        {
+          "player": "Harrison Burke",
+          "minute": "45'+6'",
+          "team": "Walsall",
+          "ownGoal": false
+        },
+        {
+          "player": "Aaron Pressley",
+          "minute": "53'",
+          "team": "Walsall",
+          "ownGoal": false
+        },
+        {
+          "player": "Stefan Mols",
+          "minute": "57'",
+          "team": "Accrington Stanley",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4166,7 +4910,26 @@
       },
       "venue": "LNER Community Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Alex Newby",
+          "minute": "7'",
+          "team": "York City",
+          "ownGoal": false
+        },
+        {
+          "player": "Jovan Malcolm",
+          "minute": "76'",
+          "team": "York City",
+          "ownGoal": false
+        },
+        {
+          "player": "Jack Fitzwater",
+          "minute": "90'+1'",
+          "team": "Exeter City",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
@@ -4190,7 +4953,20 @@
       },
       "venue": "Tottenham Hotspur Stadium",
       "source": "ESPN",
-      "goals": [],
+      "goals": [
+        {
+          "player": "Anthony Elanga",
+          "minute": "62'",
+          "team": "Newcastle United",
+          "ownGoal": false
+        },
+        {
+          "player": "Yoane Wissa",
+          "minute": "72'",
+          "team": "Newcastle United",
+          "ownGoal": false
+        }
+      ],
       "cards": []
     },
     {
