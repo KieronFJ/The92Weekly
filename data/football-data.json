@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T15:21:42.769Z",
+  "updatedAt": "2026-08-29T15:31:49.735Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3531,7 +3531,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "64'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
@@ -3553,7 +3553,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "63'",
       "home": {
         "id": "388",
         "name": "Coventry City",
@@ -3575,7 +3575,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "65'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
@@ -3597,7 +3597,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "64'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -3618,8 +3618,8 @@
       "type": "league",
       "date": "2026-08-29T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "53'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "62'",
       "home": {
         "id": "333",
         "name": "Bristol City",
@@ -3641,7 +3641,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "63'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
@@ -3663,7 +3663,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "63'",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
@@ -3685,7 +3685,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "statusDetail": "62'",
       "home": {
         "id": "381",
         "name": "Norwich City",
@@ -3707,7 +3707,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "51'",
+      "statusDetail": "60'",
       "home": {
         "id": "376",
         "name": "Southampton",
@@ -3729,7 +3729,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "56'",
+      "statusDetail": "66'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -3750,8 +3750,8 @@
       "type": "league",
       "date": "2026-08-29T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "62'",
       "home": {
         "id": "351",
         "name": "Cambridge United",
@@ -3772,8 +3772,8 @@
       "type": "league",
       "date": "2026-08-29T14:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "55'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -3795,7 +3795,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "statusDetail": "62'",
       "home": {
         "id": "340",
         "name": "Notts County",
@@ -3817,7 +3817,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "51'",
+      "statusDetail": "61'",
       "home": {
         "id": "307",
         "name": "Plymouth Argyle",
@@ -3838,8 +3838,8 @@
       "type": "league",
       "date": "2026-08-29T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "62'",
       "home": {
         "id": "399",
         "name": "Sheffield Wednesday",
@@ -3861,7 +3861,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "64'",
       "home": {
         "id": "285",
         "name": "Stevenage",
@@ -3883,7 +3883,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "54'",
+      "statusDetail": "65'",
       "home": {
         "id": "400",
         "name": "Stockport County",
@@ -3905,7 +3905,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "65'",
       "home": {
         "id": "339",
         "name": "Colchester United",
@@ -3927,7 +3927,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "65'",
       "home": {
         "id": "2594",
         "name": "Crawley Town",
@@ -3949,7 +3949,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "64'",
       "home": {
         "id": "389",
         "name": "Gillingham",
@@ -3971,7 +3971,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "65'",
       "home": {
         "id": "386",
         "name": "Grimsby Town",
@@ -3992,8 +3992,8 @@
       "type": "league",
       "date": "2026-08-29T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "54'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "63'",
       "home": {
         "id": "635",
         "name": "Newport County",
@@ -4015,7 +4015,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "56'",
+      "statusDetail": "65'",
       "home": {
         "id": "332",
         "name": "Oldham Athletic",
@@ -4037,7 +4037,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "63'",
       "home": {
         "id": "302",
         "name": "Shrewsbury Town",
@@ -4059,7 +4059,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "47'",
+      "statusDetail": "57'",
       "home": {
         "id": "401",
         "name": "Walsall",
@@ -4081,7 +4081,7 @@
       "date": "2026-08-29T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "50'",
+      "statusDetail": "60'",
       "home": {
         "id": "315",
         "name": "York City",
