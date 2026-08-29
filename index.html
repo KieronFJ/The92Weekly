@@ -648,20 +648,46 @@
   }
   .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
   .sidebar-section.open .sidebar-chevron { transform: rotate(180deg); }
-  .sidebar-submenu {
-    max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
+  /* All dropdown panels share the same width as the team tiles. */
+  .sidebar-submenu,
+  .sidebar-section .sidebar-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
     background: var(--panel);
+    width: calc(100% - 46px) !important;
+    min-width: 0 !important;
+    margin: 0 12px 0 34px !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    align-self: stretch;
   }
   .sidebar-section.open .sidebar-submenu { max-height: 5000px; }
-  .sidebar-submenu a {
-    display: block; padding: 12px 20px 12px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
-    color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
+  .sidebar-submenu > a {
+    display: block;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 14px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    background: #f4f3f0;
+    border-bottom: 1px solid var(--line-soft);
+    text-decoration: none;
   }
-  .sidebar-submenu a:last-child { border-bottom: none; }
+  .sidebar-submenu > a:last-child { border-bottom: none; }
 
   /* ---------- Teams: league dropdowns ---------- */
   .sidebar-league {
+    width: 100%;
+    margin: 0;
     border-bottom: 1px solid var(--line-soft);
+    background: #f4f3f0;
+    box-sizing: border-box;
   }
   .sidebar-league:last-of-type {
     border-bottom: none;
@@ -676,8 +702,8 @@
     font-family: 'Poppins', sans-serif;
     font-size: 13.5px;
     font-weight: 600;
-    color: var(--ink);
-    background: transparent;
+    color: #000000;
+    background: #f4f3f0;
     border: none;
     cursor: pointer;
     text-align: left;
@@ -699,12 +725,19 @@
     overflow: hidden;
     transition: max-height .25s ease;
     background: var(--bg);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   .sidebar-league.open .sidebar-league-submenu {
     max-height: 1400px;
   }
   .sidebar-team-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 46px);
+    box-sizing: border-box;
     margin: 0 12px 4px 34px;
     padding: 10px 12px;
     font-family: 'Poppins', sans-serif;
@@ -712,8 +745,10 @@
     font-weight: 600;
     line-height: 1.25;
     border-radius: 4px;
-    color: #FFFFFF;
-    text-shadow: 0 1px 3px rgba(0,0,0,.35);
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    text-shadow: none !important;
+    text-decoration: none;
     transition: filter .12s ease, transform .12s ease;
   }
   .sidebar-team-link:hover {
@@ -721,20 +756,22 @@
     transform: translateX(2px);
   }
   .sidebar-team-link.on-light-bg {
-    color: #2E3136;
-    text-shadow: none;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: none !important;
   }
-  .sidebar-directory-link {
+  .sidebar-team-link.on-dark-bg {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    text-shadow: none !important;
+  }
+  .sidebar-team-badge {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    object-fit: contain;
+    margin-right: 10px;
     display: block;
-    padding: 14px 20px 14px 34px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: var(--gold);
-    border-top: 1px solid var(--line-soft);
-  }
-  .sidebar-directory-link:hover {
-    background: var(--bg);
   }
 
 </style>
@@ -1396,9 +1433,8 @@
           const g = parseInt(rgb.substring(2, 4), 16);
           const b = parseInt(rgb.substring(4, 6), 16);
           const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-          const textClass = brightness > 150 ? ' on-light-bg' : '';
-
-          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" style="background:${c};">${name}</a>`;
+          const textClass = brightness >= 145 ? ' on-light-bg' : ' on-dark-bg';
+          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge" alt="${name} badge" loading="lazy"><span>${name}</span></a>`;
         });
 
         sidebarTeamsHtml += `
@@ -1406,6 +1442,55 @@
           </div>`;
       }
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
+
+      // Load the official club crests from ESPN. We use the competition team
+      // feeds rather than guessing filenames, because many clubs have different
+      // ESPN slugs/IDs. If a crest cannot be loaded, the team tile still works.
+      (async function loadSidebarTeamBadges() {
+        const leagues = ['eng.1', 'eng.2', 'eng.3', 'eng.4'];
+        const normalize = value => String(value || '')
+          .toLowerCase()
+          .replace(/&/g, 'and')
+          .replace(/\bafc\b/g, '')
+          .replace(/\bfc\b/g, '')
+          .replace(/\bthe\b/g, '')
+          .replace(/[^a-z0-9]+/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+
+        const logoMap = new Map();
+        await Promise.all(leagues.map(async league => {
+          try {
+            const targetUrl = `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams?limit=100`;
+            const proxyUrl = `https://the92weekly-proxyv2.the92weekly.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+            const response = await fetch(proxyUrl);
+            if (!response.ok) return;
+            const data = await response.json();
+            const teams = (data.sports && data.sports[0] && data.sports[0].leagues && data.sports[0].leagues[0] && data.sports[0].leagues[0].teams) || [];
+            teams.forEach(item => {
+              const team = item.team || item;
+              const name = team.displayName || team.name || team.shortDisplayName;
+              const logo = team.logos && team.logos[0] && team.logos[0].href;
+              if (name && logo) logoMap.set(normalize(name), logo);
+            });
+          } catch (error) {
+            console.warn('Could not load ESPN club badges for', league, error);
+          }
+        }));
+
+        sidebarTeamsSubmenu.querySelectorAll('.sidebar-team-link').forEach(link => {
+          const name = link.getAttribute('data-team-name') || '';
+          const img = link.querySelector('.sidebar-team-badge');
+          if (!img) return;
+          const logo = logoMap.get(normalize(name));
+          if (logo) {
+            img.src = logo;
+            img.style.display = 'block';
+          } else {
+            img.style.display = 'none';
+          }
+        });
+      })();
 
       // Each league opens independently so the Teams menu never becomes an
       // enormous 92-team list.
