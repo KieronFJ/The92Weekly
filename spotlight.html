@@ -42,29 +42,11 @@
     padding-bottom: 4px;
   }
   nav > * {
-    position: relative;
-    padding: 0;
-    margin: 0 14px;
-  }
-  nav > *:first-child {
-    margin-left: 0;
-  }
-  nav > *:last-child {
-    margin-right: 0;
-  }
-  nav > * + *::before {
-    content: '';
-    position: absolute;
-    left: -14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 14px;
-    background: var(--line);
+    margin: 0 12px 6px 0;
   }
   nav a, .nav-trigger {
-    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
-    color: var(--ink-muted); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 0.01em; line-height: 1;
+    color: var(--ink); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
     background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
   }
   nav a:hover, nav a.active, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
@@ -126,6 +108,12 @@
       border-left: none; border-right: none;
       max-height: 60vh;
     }
+    .league-dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      border-left: none; border-right: none;
+      max-height: 60vh; overflow-y: auto;
+    }
   }
 
   main { max-width: 900px; margin: 0 auto; padding: 56px 6vw 80px; }
@@ -152,9 +140,16 @@
   .player-card {
     background: var(--panel);
     border: 1px solid var(--line);
+    border-radius: 10px;
     margin-bottom: 28px;
     overflow: hidden;
   }
+  .spotlight-division-title {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+    margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  .spotlight-division-title:first-of-type { margin-top: 28px; }
 
   .card-tag-row {
     display: flex; justify-content: space-between; align-items: center;
@@ -286,14 +281,144 @@
 
   <main>
     <div class="eyebrow">Player Spotlight</div>
-    <h1>Three to watch this week</h1>
-    <p class="sub">Every week, three players across the pyramid worth your attention — one on the rise, one in form right now, and one we're backing to have a big gameweek.</p>
+    <h1>Twelve to watch this week</h1>
+    <p class="sub">Every week, three players in each of the four divisions worth your attention — one on the rise, one in form right now, and one we're backing to have a big gameweek.</p>
     <span class="week-tag">Week of [date]</span>
+
+    <div class="spotlight-division-title">Premier League</div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-rising">On The Rise</span>
+        <span class="card-division">Premier League</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
+        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Age]</b>Age</div>
+          <div class="stat-item"><b>[Position]</b>Position</div>
+          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-form">In Form</span>
+        <span class="card-division">Premier League</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
+          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-backing">One To Back</span>
+        <span class="card-division">Premier League</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
+          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight-division-title">Championship</div>
 
     <div class="player-card">
       <div class="card-tag-row">
         <span class="category-tag tag-rising">On The Rise</span>
         <span class="card-division">Championship</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
+        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Age]</b>Age</div>
+          <div class="stat-item"><b>[Position]</b>Position</div>
+          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-form">In Form</span>
+        <span class="card-division">Championship</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
+          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-backing">One To Back</span>
+        <span class="card-division">Championship</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
+          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight-division-title">League One</div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-rising">On The Rise</span>
+        <span class="card-division">League One</span>
       </div>
       <div class="card-body">
         <div class="player-name">[Player Name]</div>
@@ -335,7 +460,71 @@
     <div class="player-card">
       <div class="card-tag-row">
         <span class="category-tag tag-backing">One To Back</span>
-        <span class="card-division">Premier League</span>
+        <span class="card-division">League One</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
+          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight-division-title">League Two</div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-rising">On The Rise</span>
+        <span class="card-division">League Two</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
+        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Age]</b>Age</div>
+          <div class="stat-item"><b>[Position]</b>Position</div>
+          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-form">In Form</span>
+        <span class="card-division">League Two</span>
+      </div>
+      <div class="card-body">
+        <div class="player-name">[Player Name]</div>
+        <div class="player-club">[Club]</div>
+        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
+        <div class="stat-row">
+          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
+          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
+        </div>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <div class="card-tag-row">
+        <span class="category-tag tag-backing">One To Back</span>
+        <span class="card-division">League Two</span>
       </div>
       <div class="card-body">
         <div class="player-name">[Player Name]</div>

@@ -135,34 +135,16 @@
     flex-wrap: wrap;
   }
   nav > * {
-    position: relative;
-    padding: 0;
-    margin: 0 14px;
-  }
-  nav > *:first-child {
-    margin-left: 0;
-  }
-  nav > *:last-child {
-    margin-right: 0;
-  }
-  nav > * + *::before {
-    content: '';
-    position: absolute;
-    left: -14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 14px;
-    background: var(--line);
+    margin: 0 12px 6px 0;
   }
 
   nav a, .nav-trigger {
     font-family: 'Poppins', sans-serif;
     font-size: 14.5px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.01em;
     line-height: 1;
-    color: var(--ink-muted);
+    color: var(--ink);
     border-bottom: 2px solid transparent;
     padding: 0 0 4px 0;
     white-space: nowrap;
@@ -234,6 +216,12 @@
       border-left: none; border-right: none;
       max-height: 60vh;
     }
+    .league-dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      border-left: none; border-right: none;
+      max-height: 60vh; overflow-y: auto;
+    }
   }
 
   /* ---------- Spotlight (homepage) ---------- */
@@ -288,7 +276,15 @@
     background: var(--line); border: 1px solid var(--line);
   }
 
-  .spot-card { background: var(--panel); padding: 26px; }
+  .spotlight-division-block { margin-bottom: 40px; }
+  .spotlight-division-block:last-child { margin-bottom: 0; }
+  .spotlight-division-title {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+    margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+
+  .spot-card { background: var(--panel); padding: 26px; border-radius: 10px; }
   .spot-tag-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
   .spot-category {
     font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
@@ -844,11 +840,103 @@
       <h2 class="display">This week's player spotlight</h2>
       <a class="spotlight-archive-link" href="spotlight.html">Full spotlight archive →</a>
     </div>
-    <div class="spotlight-grid">
+    <div class="spotlight-division-block">
+      <div class="spotlight-division-title">Premier League</div>
+      <div class="spotlight-grid">
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-rising">On The Rise</span>
+          <span class="spot-division">Premier League</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
+        </div>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-form">In Form</span>
+          <span class="spot-division">Premier League</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
+        </div>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-backing">One To Back</span>
+          <span class="spot-division">Premier League</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="spotlight-division-block">
+      <div class="spotlight-division-title">Championship</div>
+      <div class="spotlight-grid">
       <div class="spot-card">
         <div class="spot-tag-row">
           <span class="spot-category tag-rising">On The Rise</span>
           <span class="spot-division">Championship</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
+        </div>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-form">In Form</span>
+          <span class="spot-division">Championship</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
+        </div>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-backing">One To Back</span>
+          <span class="spot-division">Championship</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="spotlight-division-block">
+      <div class="spotlight-division-title">League One</div>
+      <div class="spotlight-grid">
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-rising">On The Rise</span>
+          <span class="spot-division">League One</span>
         </div>
         <div class="spot-name">[Player Name]</div>
         <div class="spot-club">[Club]</div>
@@ -874,7 +962,7 @@
       <div class="spot-card">
         <div class="spot-tag-row">
           <span class="spot-category tag-backing">One To Back</span>
-          <span class="spot-division">Premier League</span>
+          <span class="spot-division">League One</span>
         </div>
         <div class="spot-name">[Player Name]</div>
         <div class="spot-club">[Club]</div>
@@ -883,6 +971,52 @@
           <div class="betting-angle-label">Worth a punt?</div>
           <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
         </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="spotlight-division-block">
+      <div class="spotlight-division-title">League Two</div>
+      <div class="spotlight-grid">
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-rising">On The Rise</span>
+          <span class="spot-division">League Two</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
+        </div>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-form">In Form</span>
+          <span class="spot-division">League Two</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
+        </div>
+      </div>
+      <div class="spot-card">
+        <div class="spot-tag-row">
+          <span class="spot-category tag-backing">One To Back</span>
+          <span class="spot-division">League Two</span>
+        </div>
+        <div class="spot-name">[Player Name]</div>
+        <div class="spot-club">[Club]</div>
+        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
+        <div class="betting-angle">
+          <div class="betting-angle-label">Worth a punt?</div>
+          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
+        </div>
+      </div>
       </div>
     </div>
   </section>

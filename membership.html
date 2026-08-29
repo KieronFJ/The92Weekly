@@ -42,29 +42,11 @@
     padding-bottom: 4px;
   }
   nav > * {
-    position: relative;
-    padding: 0;
-    margin: 0 14px;
-  }
-  nav > *:first-child {
-    margin-left: 0;
-  }
-  nav > *:last-child {
-    margin-right: 0;
-  }
-  nav > * + *::before {
-    content: '';
-    position: absolute;
-    left: -14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 14px;
-    background: var(--line);
+    margin: 0 12px 6px 0;
   }
   nav a, .nav-trigger {
-    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em; line-height: 1;
-    color: var(--ink-muted); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 0.01em; line-height: 1;
+    color: var(--ink); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
     background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
   }
   nav a:hover, nav a.active, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
@@ -126,6 +108,12 @@
       border-left: none; border-right: none;
       max-height: 60vh;
     }
+    .league-dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      border-left: none; border-right: none;
+      max-height: 60vh; overflow-y: auto;
+    }
   }
 
   main { max-width: 900px; margin: 0 auto; padding: 56px 6vw 80px; }
@@ -178,7 +166,7 @@
     background: var(--line); border: 1px solid var(--line);
     margin-bottom: 56px;
   }
-  .perk-card { background: #FFFFFF; padding: 28px; }
+  .perk-card { background: #FFFFFF; padding: 28px; border-radius: 10px; }
   .perk-card h3 {
     font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16.5px; margin-bottom: 8px;
     display: flex; align-items: center; gap: 8px;
