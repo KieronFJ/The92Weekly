@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T04:12:06.438Z",
+  "updatedAt": "2026-08-29T04:21:58.222Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5444,8 +5444,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 8th at 2:45 PM EDT",
+      "status": "STATUS_POSTPONED",
+      "statusDetail": "Postponed",
       "home": {
         "id": "311",
         "name": "Oxford United",
@@ -7396,28 +7396,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401879272",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-09-19T14:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 19th at 10:00 AM EDT",
-      "home": {
-        "id": "382",
-        "name": "Manchester City",
-        "score": null
-      },
-      "away": {
-        "id": "366",
-        "name": "Sunderland",
-        "score": null
-      },
-      "venue": "Etihad Stadium",
-      "source": "ESPN"
-    },
-    {
       "id": "401879271",
       "competition": "Premier League",
       "competitionCode": "eng.1",
@@ -8075,6 +8053,28 @@
         "score": null
       },
       "venue": "Vitality Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879272",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-09-20T13:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, September 20th at 9:00 AM EDT",
+      "home": {
+        "id": "382",
+        "name": "Manchester City",
+        "score": null
+      },
+      "away": {
+        "id": "366",
+        "name": "Sunderland",
+        "score": null
+      },
+      "venue": "Etihad Stadium",
       "source": "ESPN"
     },
     {
