@@ -150,6 +150,26 @@ async function fetchMatchDetail(match) {
   try {
     const data = await getJson(url);
 
+    // One-off diagnostic: log the full top-level shape of the response for
+    // Derby County's match specifically, so we can see whether card data
+    // lives somewhere other than header.competitions[0].details.
+    if (match.home.name.includes("Derby") || match.away.name.includes("Derby")) {
+      console.log(
+        `[match-detail-FULLSHAPE] ${match.home.name} v ${match.away.name}: ` +
+        `top-level keys: ${Object.keys(data).join(", ")}`
+      );
+      if (data.rosters) {
+        console.log(
+          `[match-detail-FULLSHAPE] rosters[0] keys: ${Object.keys(data.rosters[0] || {}).join(", ")}`
+        );
+      }
+      if (data.boxscore) {
+        console.log(
+          `[match-detail-FULLSHAPE] boxscore keys: ${Object.keys(data.boxscore || {}).join(", ")}`
+        );
+      }
+    }
+
     const details = data.header?.competitions?.[0]?.details;
 
     if (!Array.isArray(details)) {
