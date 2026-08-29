@@ -106,17 +106,19 @@
 
   @media (max-width: 780px) {
     .dropdown-panel {
-      position: fixed; left: 0; right: 0; top: auto;
+      position: fixed; left: 0; right: 0; bottom: 0; top: auto;
       min-width: 0; max-width: none; width: 100%;
       grid-template-columns: repeat(2, 1fr);
       border-left: none; border-right: none;
       max-height: 60vh;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
     }
     .league-dropdown-panel {
-      position: fixed; left: 0; right: 0; top: auto;
+      position: fixed; left: 0; right: 0; bottom: 0; top: auto;
       min-width: 0; max-width: none; width: 100%;
       border-left: none; border-right: none;
       max-height: 60vh; overflow-y: auto;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
     }
   }
 
