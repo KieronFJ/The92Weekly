@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T11:41:44.169Z",
+  "updatedAt": "2026-08-29T11:51:58.801Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3354,8 +3354,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "2'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 7:30 AM EDT",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -3376,8 +3376,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "1'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 7:30 AM EDT",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
@@ -3398,8 +3398,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "1'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 7:30 AM EDT",
       "home": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
@@ -3420,8 +3420,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "2'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 7:30 AM EDT",
       "home": {
         "id": "346",
         "name": "Blackpool",
@@ -3464,8 +3464,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "2'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 7:30 AM EDT",
       "home": {
         "id": "280",
         "name": "Barnet",
@@ -3486,8 +3486,8 @@
       "type": "league",
       "date": "2026-08-29T11:30Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "2'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, August 29th at 7:30 AM EDT",
       "home": {
         "id": "348",
         "name": "Port Vale",
