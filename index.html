@@ -631,9 +631,20 @@
   }
   .sidebar-section { border-bottom: 1px solid var(--line-soft); }
   .sidebar-section-toggle {
-    width: 100%; display: flex; align-items: center; justify-content: space-between;
-    padding: 14px 20px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px;
-    color: var(--ink); background: none; border: none; cursor: pointer; text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 14px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
   }
   .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
   .sidebar-section.open .sidebar-chevron { transform: rotate(180deg); }
@@ -643,24 +654,13 @@
   }
   .sidebar-section.open .sidebar-submenu { max-height: 5000px; }
   .sidebar-submenu a {
-    display: block;
-    width: 100%;
-    padding: 12px 20px 12px 34px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #000000;
-    background: var(--panel);
-    border-bottom: 1px solid var(--line-soft);
-  }
-  .sidebar-submenu a:hover {
-    background: var(--panel-hover);
-    color: #000000;
+    display: block; padding: 12px 20px 12px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
+    color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-submenu a:last-child { border-bottom: none; }
 
   /* ---------- Teams: league dropdowns ---------- */
   .sidebar-league {
-    width: 100%;
     border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-league:last-of-type {
@@ -670,20 +670,21 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 5px;
     padding: 12px 20px 12px 34px;
     font-family: 'Poppins', sans-serif;
     font-size: 13.5px;
     font-weight: 600;
-    color: #000000;
-    background: var(--panel);
+    color: var(--ink);
+    background: transparent;
     border: none;
     cursor: pointer;
     text-align: left;
   }
   .sidebar-league-toggle:hover {
-    background: var(--panel-hover);
-    color: #000000;
+    background: var(--bg);
+    color: var(--gold);
   }
   .sidebar-league-chevron {
     font-size: 10px;
@@ -697,24 +698,22 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s ease;
-    background: var(--panel);
-    width: 100%;
+    background: var(--bg);
   }
   .sidebar-league.open .sidebar-league-submenu {
     max-height: 1400px;
   }
   .sidebar-team-link {
     display: block;
-    width: 100%;
-    margin: 0 0 4px 0;
-    padding: 10px 20px 10px 34px;
+    margin: 0 12px 4px 34px;
+    padding: 10px 12px;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     font-weight: 600;
     line-height: 1.25;
-    border-radius: 0;
-    color: #000000;
-    text-shadow: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 3px rgba(0,0,0,.35);
     transition: filter .12s ease, transform .12s ease;
   }
   .sidebar-team-link:hover {
@@ -722,12 +721,20 @@
     transform: translateX(2px);
   }
   .sidebar-team-link.on-light-bg {
-    color: #000000;
+    color: #2E3136;
     text-shadow: none;
   }
-  .sidebar-team-link.on-dark-bg {
-    color: #FFFFFF;
-    text-shadow: 0 1px 3px rgba(0,0,0,.35);
+  .sidebar-directory-link {
+    display: block;
+    padding: 14px 20px 14px 34px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--gold);
+    border-top: 1px solid var(--line-soft);
+  }
+  .sidebar-directory-link:hover {
+    background: var(--bg);
   }
 
 </style>
@@ -1389,7 +1396,7 @@
           const g = parseInt(rgb.substring(2, 4), 16);
           const b = parseInt(rgb.substring(4, 6), 16);
           const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-          const textClass = brightness < 135 ? ' on-dark-bg' : ' on-light-bg';
+          const textClass = brightness > 150 ? ' on-light-bg' : '';
 
           sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" style="background:${c};">${name}</a>`;
         });
@@ -1398,7 +1405,6 @@
             </div>
           </div>`;
       }
-
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
 
       // Each league opens independently so the Teams menu never becomes an
