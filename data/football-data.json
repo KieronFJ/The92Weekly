@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T05:02:03.648Z",
+  "updatedAt": "2026-08-29T05:11:59.321Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8034,28 +8034,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401879272",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-09-20T13:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sun, September 20th at 9:00 AM EDT",
-      "home": {
-        "id": "382",
-        "name": "Manchester City",
-        "score": null
-      },
-      "away": {
-        "id": "366",
-        "name": "Sunderland",
-        "score": null
-      },
-      "venue": "Etihad Stadium",
-      "source": "ESPN"
-    },
-    {
       "id": "401879276",
       "competition": "Premier League",
       "competitionCode": "eng.1",
@@ -8075,6 +8053,28 @@
         "score": null
       },
       "venue": "Vitality Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879272",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-09-20T13:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, September 20th at 9:00 AM EDT",
+      "home": {
+        "id": "382",
+        "name": "Manchester City",
+        "score": null
+      },
+      "away": {
+        "id": "366",
+        "name": "Sunderland",
+        "score": null
+      },
+      "venue": "Etihad Stadium",
       "source": "ESPN"
     },
     {
