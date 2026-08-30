@@ -302,6 +302,21 @@ async function main() {
       new Date(a.date || 0) - new Date(b.date || 0)
   );
 
+  // Build a club name -> official badge URL lookup from every team ID
+  // we've seen. ESPN's own CDN serves these at a predictable URL built
+  // from the team ID already captured on every match above — same
+  // trusted source as the scores themselves, no separate dependency.
+  output.teamLogos = {};
+  for (const match of output.matches) {
+    for (const side of [match.home, match.away]) {
+      if (side?.name && side?.id && !output.teamLogos[side.name]) {
+        output.teamLogos[side.name] =
+          `https://a.espncdn.com/i/teamlogos/soccer/500/${side.id}.png`;
+      }
+    }
+  }
+  console.log(`Built logo lookup for ${Object.keys(output.teamLogos).length} teams`);
+
   await addRecentMatchDetail(output.matches);
 
   const file = path.join(
