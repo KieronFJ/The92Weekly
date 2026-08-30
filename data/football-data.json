@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T13:11:59.191Z",
+  "updatedAt": "2026-08-30T13:21:47.543Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6890,8 +6890,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "1'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, August 30th at 9:00 AM EDT",
       "home": {
         "id": "363",
         "name": "Chelsea",
@@ -6912,8 +6912,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "1'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, August 30th at 9:00 AM EDT",
       "home": {
         "id": "357",
         "name": "Leeds United",
@@ -6934,8 +6934,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "2'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, August 30th at 9:00 AM EDT",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -6956,8 +6956,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "2'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, August 30th at 9:00 AM EDT",
       "home": {
         "id": "3802",
         "name": "AFC Wimbledon",
