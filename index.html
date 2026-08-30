@@ -744,18 +744,13 @@
   .sidebar-league.open .sidebar-league-submenu {
     max-height: 1400px;
   }
-  /* Team cards: badge and team name must ALWAYS sit side-by-side. */
   .sidebar-team-link {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 14px !important;
+    align-items: center;
     width: calc(100% - 46px) !important;
     box-sizing: border-box;
     margin: 0 12px 4px 34px;
-    padding: 10px 12px !important;
+    padding: 10px 12px;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -767,14 +762,6 @@
     text-decoration: none;
     transition: filter .12s ease, transform .12s ease;
   }
-  .sidebar-team-link > span {
-    display: block !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    width: auto !important;
-    margin: 0 !important;
-    align-self: center !important;
-  }
   .sidebar-team-link:hover {
     filter: brightness(1.1);
     transform: translateX(2px);
@@ -785,29 +772,19 @@
     text-shadow: none !important;
   }
   .sidebar-team-badge {
-    width: 40px !important;
-    height: 40px !important;
-    min-width: 40px !important;
-    max-width: 40px !important;
-    min-height: 40px !important;
-    max-height: 40px !important;
-    flex: 0 0 40px !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important;
-    position: static !important;
-    align-self: center !important;
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    object-fit: contain;
+    margin-right: 10px;
+    display: block;
   }
-  /* Visible outline follows the badge PNG's actual transparent silhouette — never a circle. */
+  /* Thin outline follows the actual transparent crest silhouette — never a circle. */
   .sidebar-team-badge.badge-outline-light {
-    -webkit-filter: drop-shadow(0 0 0.8px #000000) drop-shadow(0 0 0.8px #000000);
-    filter: drop-shadow(0 0 0.8px #000000) drop-shadow(0 0 0.8px #000000);
+    filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000);
   }
   .sidebar-team-badge.badge-outline-dark {
-    -webkit-filter: drop-shadow(0 0 0.8px #ffffff) drop-shadow(0 0 0.8px #ffffff);
-    filter: drop-shadow(0 0 0.8px #ffffff) drop-shadow(0 0 0.8px #ffffff);
+    filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
   }
   .sidebar-directory-link {
     display: block;
@@ -1497,7 +1474,7 @@
           const brightness = (r * 299 + g * 587 + b * 114) / 1000;
           const textClass = brightness >= 145 ? ' on-light-bg' : '';
           const badgeClass = brightness >= 145 ? ' badge-outline-light' : ' badge-outline-dark';
-          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c}; display:flex; flex-direction:row; flex-wrap:nowrap; align-items:center; justify-content:flex-start; gap:14px;"><img class="sidebar-team-badge${badgeClass}" alt="" loading="lazy" style="display:block; width:40px; height:40px; min-width:40px; flex:0 0 40px; object-fit:contain;"><span>${name}</span></a>`;
+          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge${badgeClass}" alt="" loading="lazy"><span>${name}</span></a>`;
         });
 
         sidebarTeamsHtml += `
@@ -1517,13 +1494,8 @@
           if (img) img.style.display = 'none';
           return;
         }
-        // Keep the standard ESPN badge artwork that was already being used.
-        // The CSS outline above makes the badge visible against every team colour.
-        const logo = `https://a.espncdn.com/i/teamlogos/soccer/500/${teamId}.png`;
-        img.src = logo;
-        img.onerror = function() {
-          this.style.display = 'none';
-        };
+        img.src = `https://a.espncdn.com/i/teamlogos/soccer/500/${teamId}.png`;
+        img.onerror = function() { this.style.display = 'none'; };
       });
 
       // Each league opens independently so the Teams menu never becomes an
