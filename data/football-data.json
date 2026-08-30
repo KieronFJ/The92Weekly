@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T15:22:09.196Z",
+  "updatedAt": "2026-08-30T15:31:58.123Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7168,8 +7168,8 @@
       "type": "league",
       "date": "2026-08-30T14:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "55'",
       "home": {
         "id": "304",
         "name": "Mansfield Town",
