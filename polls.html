@@ -537,6 +537,7 @@
         </div>
         <nav class="sidebar-nav">
           <a href="membership.html">Membership</a>
+          <a href="pyramid-notes.html">Pyramid Notes</a>
 
           <div class="sidebar-section" id="sidebar-latest-section">
             <button class="sidebar-section-toggle">Latest <span class="sidebar-chevron">&#9660;</span></button>
@@ -763,7 +764,7 @@
 
 
     // Sticky membership bar
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       const bar = document.getElementById('sticky-join-bar');
       const dismissBtn = document.getElementById('sticky-join-dismiss');
       if (!bar) return;
@@ -777,7 +778,7 @@
           sessionStorage.setItem('the92weekly-bar-dismissed', '1');
         });
       }
-    })();
+    });
 
 </script>
 

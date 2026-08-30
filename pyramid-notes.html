@@ -4,7 +4,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Player Spotlight — The92Weekly</title>
+<title>Pyramid Notes — The92Weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,7 +18,9 @@
     --ink-muted: #74787E;
     --gold: #149954;
   }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
   body {
     background: var(--bg);
     color: var(--ink);
@@ -26,19 +28,40 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
+
   a { color: inherit; text-decoration: none; }
-  .display { font-family: 'Poppins', sans-serif; letter-spacing: 0.01em; }
+
+  .display {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.01em;
+  }
 
   header {
     border-bottom: 1px solid var(--line);
     padding: 28px 6vw 24px;
-    display: flex; justify-content: space-between; align-items: flex-end;
-    flex-wrap: wrap; gap: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
   }
-  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; display: inline-block; background: #FFFFFF; padding: 10px 18px; border-radius: 8px; border: 1.5px solid #000000; box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
+
+  .nameplate {
+    font-size: clamp(30px, 4.4vw, 40px);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-block; background: #FFFFFF; padding: 10px 18px; border-radius: 8px;
+    border: 1.5px solid #000000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  }
+
   .nameplate span { color: var(--gold); }
+
   nav {
-    display: flex; align-items: center;
+    display: flex;
+    align-items: center;
     padding-bottom: 4px;
     flex-wrap: wrap;
   }
@@ -46,9 +69,20 @@
     margin: 0 12px 6px 0;
   }
   nav a, .nav-trigger {
-    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 0.01em; color: var(--ink); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
-    background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
-   
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    color: var(--ink);
+    border-bottom: 2px solid transparent;
+    padding: 0 0 4px 0;
+    white-space: nowrap;
+    margin: 0;
+    background: none;
+    border-top: none; border-left: none; border-right: none;
+    cursor: pointer;
+    transition: color .15s, border-color .15s;
   }
   nav a:hover, nav a.active, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
 
@@ -117,120 +151,142 @@
     }
   }
 
-  main { max-width: 900px; margin: 0 auto; padding: 56px 6vw 80px; }
+  main {
+    max-width: 68ch;
+    margin: 0 auto;
+    padding: 72px 6vw 80px;
+  }
 
   .eyebrow {
-    font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.03em;
-    color: var(--gold); margin-bottom: 16px;
-    display: flex; align-items: center; gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    color: var(--gold);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
-  .eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--gold); }
+
+  .eyebrow::before {
+    content: '';
+    width: 22px; height: 2px;
+    background: var(--gold);
+  }
 
   h1 {
-    font-family: 'Poppins', sans-serif; font-weight: 600; text-transform: none;
-    font-size: clamp(28px, 4.4vw, 44px); margin-bottom: 12px; line-height: 1.1;
-  }
-  main > p.sub {
-    color: var(--ink-muted); font-size: 16px; margin-bottom: 12px; max-width: 60ch;
-  }
-  .week-tag {
-    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
-    margin-bottom: 48px; display: block;
-  }
-
-  .player-card {
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.1;
     margin-bottom: 28px;
-    overflow: hidden;
-  }
-  .spotlight-division-title {
-    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
-    margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
-  }
-  .spotlight-division-title:first-of-type { margin-top: 28px; }
-
-  .card-tag-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 18px 28px;
-    border-bottom: 1px solid var(--line);
   }
 
-  .category-tag {
-    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
-    letter-spacing: 0.06em; text-transform: uppercase;
-    padding: 4px 10px; border-radius: 5px;
-  }
-  .tag-rising { background: #2E5C8A; color: #DCEBFA; }
-  .tag-form { background: var(--gold); color: #FFFFFF; }
-  .tag-backing { background: #4C9A5B; color: #0d1a10; }
-  .betting-angle {
-    margin-top: 16px; padding: 14px 16px;
-    background: var(--panel); border-left: 3px solid var(--gold); border-radius: 4px;
-  }
-  .betting-angle-label {
-    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold); margin-bottom: 6px;
-  }
-  .betting-angle p { font-size: 13.5px; color: var(--ink-muted); margin: 0; }
-
-  .card-division {
-    font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted);
+  main p {
+    font-size: 17.5px;
+    color: var(--ink);
+    margin-bottom: 22px;
   }
 
-  .card-body { padding: 28px; }
-
-  .player-name {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 26px;
-    margin-bottom: 4px;
+  main p.lead {
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 32px;
   }
-  .player-club {
-    font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--gold);
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 44px 0;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: var(--gold);
     margin-bottom: 18px;
   }
 
-  .card-body p {
-    font-size: 16.5px; color: var(--ink); margin-bottom: 16px;
+  ul.principles {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 8px;
   }
-  .card-body p:last-of-type { margin-bottom: 0; }
 
-  .stat-row {
-    display: flex; gap: 18px; flex-wrap: wrap;
-    margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line-soft);
+  ul.principles li {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line-soft);
   }
-  .stat-item {
-    font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--ink-muted);
-  }
-  .stat-item b { color: var(--ink); font-size: 15px; display: block; margin-bottom: 2px; }
 
-  .archive-note {
+  ul.principles li:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .p-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    padding-top: 3px;
+    min-width: 22px;
+  }
+
+  .p-body h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .p-body p { font-size: 15px; color: var(--ink-muted); margin-bottom: 0; }
+
+  .contact-box {
     margin-top: 48px;
-    padding: 24px 28px;
     background: var(--panel);
     border: 1px solid var(--line);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    color: var(--ink-muted);
+    padding: 32px;
   }
-  .archive-note a { color: var(--gold); }
-  .archive-note a:hover { border-bottom: 1px solid var(--gold); }
+
+  .contact-box p { font-size: 15px; color: var(--ink-muted); margin-bottom: 16px; }
+  .contact-box p:last-child { margin-bottom: 0; }
+
+  .contact-box a.email {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gold);
+    font-size: 15px;
+  }
+
+  .contact-box a.email:hover { border-bottom: 1px solid var(--gold); }
 
   footer {
-    max-width: 900px; margin: 0 auto; padding: 40px 6vw 56px;
-    display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); margin-top: 40px;
+    padding: 28px 6vw 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid var(--line);
   }
-  footer p { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
-  .footer-links { display: flex; gap: 18px; }
-  .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
-  .footer-links a:hover { color: var(--gold); }
 
-  @media (max-width: 600px) {
-    .card-tag-row { flex-wrap: wrap; gap: 8px; }
-    .stat-row { gap: 16px; }
+  footer p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
   }
+
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+  }
+  .footer-links a:hover { color: var(--gold); }
 
   /* ---------- Sidebar Navigation ---------- */
   .menu-toggle {
@@ -322,12 +378,45 @@
     .sticky-join-text { font-size: 12.5px; }
   }
 
+
+  /* ---------- Pyramid Notes ---------- */
+  .pn-intro { max-width: 62ch; color: var(--ink-muted); font-size: 16px; margin-bottom: 40px; }
+  .pn-list { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .pn-card {
+    background: #FFFFFF; padding: 26px 28px; display: block;
+  }
+  .pn-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .pn-lock {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.04em; color: #FFFFFF;
+    background: var(--ink); padding: 4px 10px; border-radius: 12px;
+  }
+  .pn-meta { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .pn-title {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 19px; margin-bottom: 8px; line-height: 1.3;
+  }
+  .pn-card:hover .pn-title { color: var(--gold); }
+  .pn-teaser { font-size: 14.5px; color: var(--ink-muted); line-height: 1.6; }
+  .pn-cta-box {
+    margin-top: 40px; background: var(--ink); color: #FFFFFF; border-radius: 10px;
+    padding: 32px 36px; text-align: center;
+  }
+  .pn-cta-box h3 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 20px; margin-bottom: 10px; }
+  .pn-cta-box p { color: #C7C9CC; font-size: 14.5px; margin-bottom: 20px; max-width: 48ch; margin-left: auto; margin-right: auto; }
+  .pn-cta-box a {
+    display: inline-block; background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px;
+    padding: 13px 30px; border-radius: 6px;
+  }
 </style>
 </head>
 <body>
 
   <header>
-    <div><a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a></div>
+    <div>
+      <a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a>
+    </div>
     <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -391,269 +480,52 @@
   </header>
 
   <main>
-    <div class="eyebrow">Player Spotlight</div>
-    <h1>Twelve to watch this week</h1>
-    <p class="sub">Every week, three players in each of the four divisions worth your attention — one on the rise, one in form right now, and one we're backing to have a big gameweek.</p>
-    <span class="week-tag">Week of [date]</span>
+    <div class="eyebrow">Members Only</div>
+    <h1>Pyramid Notes</h1>
+    <p class="pn-intro">The proper long-reads — one connected story a week, tracing something across the whole pyramid rather than just one division. The stuff that never runs free, because it's the actual reason to be a member.</p>
 
-    <div class="spotlight-division-title">Premier League</div>
+    <div class="pn-list">
+      <a href="article.html" class="pn-card">
+        <div class="pn-card-top">
+          <span class="pn-lock">🔒 Members Only</span>
+          <span class="pn-meta">8 min read · Updated weekly</span>
+        </div>
+        <div class="pn-title">The clubs everyone stopped watching are where the season is actually being decided.</div>
+        <p class="pn-teaser">While the national press covers six Premier League clubs on repeat, the stories that shape English football — the promotions, the financial collapses, the players who'll be worth ten times more in eighteen months — are happening two divisions down...</p>
+      </a>
 
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-rising">On The Rise</span>
-        <span class="card-division">Premier League</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
-        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Age]</b>Age</div>
-          <div class="stat-item"><b>[Position]</b>Position</div>
-          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
+      <a href="#" class="pn-card">
+        <div class="pn-card-top">
+          <span class="pn-lock">🔒 Members Only</span>
+          <span class="pn-meta">[X] min read · [Date]</span>
         </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
+        <div class="pn-title">[The specific financial mechanic keeping one League Two club afloat — or not]</div>
+        <p class="pn-teaser">[A teaser paragraph — the hook, not the whole argument. Enough to make the lock icon feel like it's actually hiding something.]</p>
+      </a>
+
+      <a href="#" class="pn-card">
+        <div class="pn-card-top">
+          <span class="pn-lock">🔒 Members Only</span>
+          <span class="pn-meta">[X] min read · [Date]</span>
         </div>
-      </div>
+        <div class="pn-title">[The academy pipeline nobody's tracking — who's actually coming through at Tier 3 and 4 clubs]</div>
+        <p class="pn-teaser">[Teaser text here.]</p>
+      </a>
+
+      <a href="#" class="pn-card">
+        <div class="pn-card-top">
+          <span class="pn-lock">🔒 Members Only</span>
+          <span class="pn-meta">[X] min read · [Date]</span>
+        </div>
+        <div class="pn-title">[A manager under real pressure at a club the national press hasn't noticed yet]</div>
+        <p class="pn-teaser">[Teaser text here.]</p>
+      </a>
     </div>
 
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-form">In Form</span>
-        <span class="card-division">Premier League</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
-          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-backing">One To Back</span>
-        <span class="card-division">Premier League</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
-          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="spotlight-division-title">Championship</div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-rising">On The Rise</span>
-        <span class="card-division">Championship</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
-        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Age]</b>Age</div>
-          <div class="stat-item"><b>[Position]</b>Position</div>
-          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-form">In Form</span>
-        <span class="card-division">Championship</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
-          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-backing">One To Back</span>
-        <span class="card-division">Championship</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
-          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="spotlight-division-title">League One</div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-rising">On The Rise</span>
-        <span class="card-division">League One</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
-        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Age]</b>Age</div>
-          <div class="stat-item"><b>[Position]</b>Position</div>
-          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-form">In Form</span>
-        <span class="card-division">League One</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
-          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-backing">One To Back</span>
-        <span class="card-division">League One</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
-          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="spotlight-division-title">League Two</div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-rising">On The Rise</span>
-        <span class="card-division">League Two</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is one to watch — age, breakout moment, what scouts or fans are noticing. 2-3 sentences on the specific thing that makes them stand out right now, not just a generic "talented young player" line.]</p>
-        <p>[Optional second paragraph — a specific performance, stat, or moment that backs up the case.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Age]</b>Age</div>
-          <div class="stat-item"><b>[Position]</b>Position</div>
-          <div class="stat-item"><b>[Stat, e.g. 6 goals]</b>This season</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this player could be worth backing this week — anytime scorer odds, assist markets, or a specific matchup that favours them. Ties into this week's Acca Picks.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-form">In Form</span>
-        <span class="card-division">League Two</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[Why this player is in red-hot form right now — recent run of performances, goals/assists streak, or a tactical shift that's unlocked them. Be specific about the last few weeks, not the whole season.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Stat, e.g. 5 in 4]</b>Goals in last 4</div>
-          <div class="stat-item"><b>[Form indicator]</b>Recent run</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets, the fixture they're walking into, anything that stacks the odds in their favour.]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="player-card">
-      <div class="card-tag-row">
-        <span class="category-tag tag-backing">One To Back</span>
-        <span class="card-division">League Two</span>
-      </div>
-      <div class="card-body">
-        <div class="player-name">[Player Name]</div>
-        <div class="player-club">[Club]</div>
-        <p>[The case for why this player has a big game coming — fixture, opposition weakness, role in the team, or something specific you've spotted that others might miss.]</p>
-        <div class="stat-row">
-          <div class="stat-item"><b>[Next opponent]</b>This gameweek</div>
-          <div class="stat-item"><b>[Reasoning tag, e.g. Home]</b>Context</div>
-        </div>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The betting case for this pick — this is the player most likely to feature directly in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="archive-note">
-      Miss a week? Every spotlight edition lands in the <a href="index.html#newsletter">weekly newsletter</a> first.
+    <div class="pn-cta-box">
+      <h3>Get every Pyramid Note, every week</h3>
+      <p>Free readers get the opening. Members get the whole story — every week, across every division, no exceptions.</p>
+      <a href="membership.html">Join for £4.99/month →</a>
     </div>
   </main>
 

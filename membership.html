@@ -133,10 +133,25 @@
   main > p.sub { color: var(--ink-muted); font-size: 17.5px; margin-bottom: 48px; max-width: 58ch; }
 
   .founding-badge {
-    display: inline-block; background: var(--gold); color: #FFFFFF;
-    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
-    letter-spacing: 0.02em; padding: 8px 16px; border-radius: 20px;
-    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+    background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700;
+    letter-spacing: 0.01em; padding: 14px 22px; border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(20, 153, 84, 0.35);
+    animation: badge-pulse 2.4s ease-in-out infinite;
+  }
+  .founding-badge .badge-dot {
+    width: 9px; height: 9px; border-radius: 50%; background: #FFFFFF;
+    flex-shrink: 0; animation: dot-blink 1.6s ease-in-out infinite;
+  }
+  @keyframes badge-pulse {
+    0%, 100% { box-shadow: 0 4px 18px rgba(20, 153, 84, 0.35); }
+    50% { box-shadow: 0 4px 26px rgba(20, 153, 84, 0.6); }
+  }
+  @keyframes dot-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
   }
   .pricing-card {
     background: var(--ink);
@@ -327,6 +342,7 @@
         </div>
         <nav class="sidebar-nav">
           <a href="membership.html">Membership</a>
+          <a href="pyramid-notes.html">Pyramid Notes</a>
 
           <div class="sidebar-section" id="sidebar-latest-section">
             <button class="sidebar-section-toggle">Latest <span class="sidebar-chevron">&#9660;</span></button>
@@ -381,7 +397,7 @@
     <h1>The stories that don't make it anywhere else</h1>
     <p class="sub">Everything on the free site stays free — results, headlines, the weekly Spotlight picks, all of it. Members just get the extra layer underneath: the proper analysis, the rumour grading, and the one piece a week that never sees daylight anywhere else.</p>
 
-    <div class="founding-badge">🔥 Founding membership — price locks in for as long as you stay subscribed</div>
+    <div class="founding-badge"><span class="badge-dot"></span>FOUNDING MEMBERSHIP IS STILL OPEN — this price is locked in for life, for as long as you stay subscribed</div>
     <div class="pricing-card">
       <div class="pricing-left">
         <h2 class="display">The92Weekly Membership</h2>

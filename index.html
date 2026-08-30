@@ -737,6 +737,7 @@
         </div>
         <nav class="sidebar-nav">
           <a href="membership.html">Membership</a>
+          <a href="pyramid-notes.html">Pyramid Notes</a>
 
           <div class="sidebar-section" id="sidebar-latest-section">
             <button class="sidebar-section-toggle">Latest <span class="sidebar-chevron">&#9660;</span></button>
@@ -792,7 +793,7 @@
     <p>While the national press covers six Premier League clubs on repeat, the stories that shape English football — the promotions, the financial collapses, the players who'll be worth ten times more in eighteen months — are happening two divisions down. This is where we look.</p>
     <div class="hero-meta">
       <span><b>8 min read</b></span>
-      <span>Pyramid Notes</span>
+      <span><a href="pyramid-notes.html" style="color:inherit;">Pyramid Notes</a></span>
       <span>Updated weekly</span>
     </div>
   </section>
@@ -1340,7 +1341,7 @@
 
 
     // Sticky membership bar
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
       const bar = document.getElementById('sticky-join-bar');
       const dismissBtn = document.getElementById('sticky-join-dismiss');
       if (!bar) return;
@@ -1354,7 +1355,7 @@
           sessionStorage.setItem('the92weekly-bar-dismissed', '1');
         });
       }
-    })();
+    });
 
 </script>
 
