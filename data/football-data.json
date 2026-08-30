@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T16:41:51.669Z",
+  "updatedAt": "2026-08-30T16:51:58.594Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7272,8 +7272,8 @@
       "type": "league",
       "date": "2026-08-30T15:30Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "53'",
       "home": {
         "id": "360",
         "name": "Manchester United",
