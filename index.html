@@ -746,7 +746,10 @@
   }
   .sidebar-team-link {
     display: flex !important;
-    align-items: center;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
     width: calc(100% - 46px) !important;
     box-sizing: border-box;
     margin: 0 12px 4px 34px;
@@ -778,6 +781,11 @@
     object-fit: contain;
     margin-right: 10px;
     display: block;
+  }
+  .sidebar-team-link > span {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0;
   }
   /* Thin outline follows the actual transparent crest silhouette — never a circle. */
   .sidebar-team-badge.badge-outline-light {
