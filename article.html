@@ -59,15 +59,6 @@
 
   .nameplate span { color: var(--gold); }
 
-  nav {
-    display: flex;
-    align-items: center;
-    padding-bottom: 4px;
-    flex-wrap: wrap;
-  }
-  nav > * {
-    margin: 0 12px 6px 0;
-  }
   nav a, .nav-trigger {
     font-family: 'Poppins', sans-serif;
     font-size: 14.5px;
@@ -446,7 +437,7 @@
   .sidebar-menu.open { left: 0; }
   .sidebar-header {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 20px; border-bottom: 1px solid var(--line);
+    padding: 14px 20px; border-bottom: 1px solid var(--line);
   }
   .sidebar-logo { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; color: var(--ink); }
   .sidebar-logo span { color: var(--gold); }
@@ -454,15 +445,15 @@
     width: 32px; height: 32px; border: none; background: none; cursor: pointer;
     font-size: 26px; line-height: 1; color: var(--ink-muted);
   }
-  .sidebar-nav { padding: 12px 0 30px; }
+  .sidebar-nav { padding: 6px 0 20px; }
   .sidebar-nav > a {
-    display: block; padding: 14px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
-    font-size: 15.5px; color: var(--ink); border-bottom: 1px solid var(--line-soft);
+    display: block; padding: 9px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
+    font-size: 14.5px; color: var(--ink); border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-section { border-bottom: 1px solid var(--line-soft); }
   .sidebar-section-toggle {
     width: 100%; display: flex; align-items: center; justify-content: space-between;
-    padding: 14px 20px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px;
+    padding: 9px 20px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px;
     color: var(--ink); background: none; border: none; cursor: pointer; text-align: left;
   }
   .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
@@ -473,7 +464,7 @@
   }
   .sidebar-section.open .sidebar-submenu { max-height: 2000px; }
   .sidebar-submenu a {
-    display: block; padding: 12px 20px 12px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
+    display: block; padding: 8px 20px 8px 34px; font-family: 'Poppins', sans-serif; font-size: 13.5px;
     color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-submenu a:last-child { border-bottom: none; }
@@ -489,19 +480,20 @@
   .sticky-join-bar {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
     background: var(--ink); color: #FFFFFF;
-    padding: 7px 6vw; display: flex; align-items: center; justify-content: space-between;
-    gap: 14px; flex-wrap: wrap;
+    padding: 5px 5vw; display: flex; align-items: center; justify-content: space-between;
+    gap: 10px; flex-wrap: nowrap;
     box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
   }
   .sticky-join-text {
-    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
+    font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 500;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .sticky-join-text b { color: var(--gold); }
   .sticky-join-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
   .sticky-join-button {
     display: inline-block; background: var(--gold); color: #FFFFFF;
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 12.5px;
-    padding: 6px 14px; border-radius: 6px; white-space: nowrap;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11.5px;
+    padding: 5px 12px; border-radius: 5px; white-space: nowrap;
   }
   .sticky-join-button:hover { filter: brightness(1.08); }
   .sticky-join-dismiss {
@@ -509,10 +501,10 @@
     cursor: pointer; padding: 4px;
   }
   .sticky-join-dismiss:hover { color: #FFFFFF; }
-  body.sticky-bar-visible { padding-bottom: 46px; }
+  body.sticky-bar-visible { padding-bottom: 36px; }
   @media (max-width: 600px) {
-    .sticky-join-bar { padding: 6px 4vw; }
-    .sticky-join-text { font-size: 11.5px; }
+    .sticky-join-bar { padding: 4px 4vw; }
+    .sticky-join-text { font-size: 10.5px; max-width: 130px; }
   }
 
 </style>
@@ -810,7 +802,7 @@
 
   <div class="sticky-join-bar" id="sticky-join-bar" style="display:none;">
     <div class="sticky-join-text">
-      <b>Founding membership is still open</b> — lock in £4.99/month before the price rises.
+      <b>Founding membership</b> — £4.99/mo
     </div>
     <div class="sticky-join-actions">
       <a href="membership.html" class="sticky-join-button">Join now →</a>
