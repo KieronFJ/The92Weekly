@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T16:11:56.902Z",
+  "updatedAt": "2026-08-30T16:21:54.206Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7167,21 +7167,103 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-08-30T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+6'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "304",
         "name": "Mansfield Town",
-        "score": null
+        "score": 5
       },
       "away": {
         "id": "301",
         "name": "Luton Town",
-        "score": null
+        "score": 2
       },
       "venue": "One Call Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Nathan Moriah-Welsh",
+          "minute": "17'",
+          "team": "Mansfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Nathan Moriah-Welsh",
+          "minute": "28'",
+          "team": "Mansfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Louis Reed",
+          "minute": "45'",
+          "team": "Mansfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Jonathan Russell",
+          "minute": "47'",
+          "team": "Mansfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Jonathan Russell",
+          "minute": "56'",
+          "team": "Mansfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Nahki Wells",
+          "minute": "90'+2'",
+          "team": "Luton Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Louis Reed",
+          "minute": "8'",
+          "team": "Mansfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Isaiah Jones",
+          "minute": "26'",
+          "team": "Luton Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Ryan Sweeney",
+          "minute": "45'+2'",
+          "team": "Mansfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Gideon Kodua",
+          "minute": "64'",
+          "team": "Luton Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Kyle Knoyle",
+          "minute": "77'",
+          "team": "Mansfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Nahki Wells",
+          "minute": "78'",
+          "team": "Luton Town",
+          "card": "red"
+        },
+        {
+          "player": "Regan Hendry",
+          "minute": "90'+4'",
+          "team": "Mansfield Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879293",
@@ -7191,7 +7273,7 @@
       "date": "2026-08-30T15:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "22'",
+      "statusDetail": "32'",
       "home": {
         "id": "360",
         "name": "Manchester United",
