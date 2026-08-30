@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T18:51:56.309Z",
+  "updatedAt": "2026-08-30T19:02:06.271Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3125,71 +3125,7 @@
         "score": 6
       },
       "venue": "St. Andrew's Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Callum Wilson",
-          "minute": "6'",
-          "team": "Brentford",
-          "ownGoal": false
-        },
-        {
-          "player": "Demarai Gray",
-          "minute": "28'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        },
-        {
-          "player": "Aaron Hickey",
-          "minute": "35'",
-          "team": "Brentford",
-          "ownGoal": false
-        },
-        {
-          "player": "Nathan Collins",
-          "minute": "40'",
-          "team": "Brentford",
-          "ownGoal": false
-        },
-        {
-          "player": "Mikkel Damsgaard",
-          "minute": "70'",
-          "team": "Brentford",
-          "ownGoal": false
-        },
-        {
-          "player": "Igor Thiago",
-          "minute": "73'",
-          "team": "Brentford",
-          "ownGoal": false
-        },
-        {
-          "player": "Nathan Collins",
-          "minute": "77'",
-          "team": "Brentford",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jannik Schuster",
-          "minute": "26'",
-          "team": "Brentford",
-          "card": "yellow"
-        },
-        {
-          "player": "Jhon Solís",
-          "minute": "37'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Bright Osayi-Samuel",
-          "minute": "55'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908138",
@@ -3211,65 +3147,7 @@
         "score": 2
       },
       "venue": "The City Ground",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Daniel James",
-          "minute": "50'",
-          "team": "Leeds United",
-          "ownGoal": false
-        },
-        {
-          "player": "James Justin",
-          "minute": "75'",
-          "team": "Leeds United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Ao Tanaka",
-          "minute": "26'",
-          "team": "Leeds United",
-          "card": "yellow"
-        },
-        {
-          "player": "Xaver Schlager",
-          "minute": "46'",
-          "team": "Nottingham Forest",
-          "card": "yellow"
-        },
-        {
-          "player": "Sean Longstaff",
-          "minute": "67'",
-          "team": "Leeds United",
-          "card": "yellow"
-        },
-        {
-          "player": "Jair Paula",
-          "minute": "73'",
-          "team": "Nottingham Forest",
-          "card": "yellow"
-        },
-        {
-          "player": "Murillo",
-          "minute": "79'",
-          "team": "Nottingham Forest",
-          "card": "yellow"
-        },
-        {
-          "player": "Nicolás Domínguez",
-          "minute": "84'",
-          "team": "Nottingham Forest",
-          "card": "yellow"
-        },
-        {
-          "player": "Ethan Ampadu",
-          "minute": "86'",
-          "team": "Leeds United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908136",
