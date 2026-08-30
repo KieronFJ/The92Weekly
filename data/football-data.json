@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T18:41:46.918Z",
+  "updatedAt": "2026-08-30T18:51:56.309Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -2839,53 +2839,7 @@
         "score": 2
       },
       "venue": "Oakwell",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Adrien Thibaut",
-          "minute": "21'",
-          "team": "Crewe Alexandra",
-          "ownGoal": false
-        },
-        {
-          "player": "Reyes Cleary",
-          "minute": "29'",
-          "team": "Barnsley",
-          "ownGoal": false
-        },
-        {
-          "player": "Tyrese Noslin",
-          "minute": "31'",
-          "team": "Barnsley",
-          "ownGoal": false
-        },
-        {
-          "player": "Corey O'Keefe",
-          "minute": "38'",
-          "team": "Barnsley",
-          "ownGoal": false
-        },
-        {
-          "player": "Joel Ewusi",
-          "minute": "89'",
-          "team": "Crewe Alexandra",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jonathan Bland",
-          "minute": "23'",
-          "team": "Barnsley",
-          "card": "yellow"
-        },
-        {
-          "player": "Rogan Ravenhill",
-          "minute": "89'",
-          "team": "Barnsley",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908139",
@@ -2907,28 +2861,7 @@
         "score": 2
       },
       "venue": "Ewood Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Thomas Cannon",
-          "minute": "20'",
-          "team": "Sheffield United",
-          "ownGoal": false
-        },
-        {
-          "player": "Oladapo Afolayan",
-          "minute": "55'",
-          "team": "Blackburn Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Romelle Donovan",
-          "minute": "81'",
-          "team": "Sheffield United",
-          "ownGoal": false
-        }
-      ],
-      "cards": []
+      "source": "ESPN"
     },
     {
       "id": "401908122",
@@ -2950,71 +2883,7 @@
         "score": 4
       },
       "venue": "Bloomfield Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Isaac Olaofe",
-          "minute": "36'",
-          "team": "Lincoln City",
-          "ownGoal": false
-        },
-        {
-          "player": "Leighton Clarkson",
-          "minute": "45'",
-          "team": "Blackpool",
-          "ownGoal": false
-        },
-        {
-          "player": "Tom Bayliss",
-          "minute": "53'",
-          "team": "Lincoln City",
-          "ownGoal": false
-        },
-        {
-          "player": "Robert Street",
-          "minute": "55'",
-          "team": "Lincoln City",
-          "ownGoal": false
-        },
-        {
-          "player": "Callum Elder",
-          "minute": "77'",
-          "team": "Lincoln City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Zachary Ashworth",
-          "minute": "31'",
-          "team": "Blackpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Mason Melia",
-          "minute": "35'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "Zachary Ashworth",
-          "minute": "52'",
-          "team": "Blackpool",
-          "card": "red"
-        },
-        {
-          "player": "Josh Bowler",
-          "minute": "57'",
-          "team": "Blackpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Hayden Coulson",
-          "minute": "60'",
-          "team": "Blackpool",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907952",
@@ -3036,29 +2905,7 @@
         "score": 1
       },
       "venue": "Cledara Abbey Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Jake Cooper",
-          "minute": "9'",
-          "team": "Millwall",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Patrick Bauer",
-          "minute": "50'",
-          "team": "Cambridge United",
-          "card": "yellow"
-        },
-        {
-          "player": "Glenn Mcconnell",
-          "minute": "87'",
-          "team": "Cambridge United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908135",
@@ -3080,59 +2927,7 @@
         "score": 0
       },
       "venue": "Highbury Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "William Boyle",
-          "minute": "8'",
-          "team": "Fleetwood Town",
-          "ownGoal": true
-        },
-        {
-          "player": "Ched Evans",
-          "minute": "28'",
-          "team": "Fleetwood Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Ched Evans",
-          "minute": "35'",
-          "team": "Fleetwood Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Will Davies",
-          "minute": "90'",
-          "team": "Fleetwood Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Arkell Jude-Boyd",
-          "minute": "37'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Shaun Rooney",
-          "minute": "48'",
-          "team": "Fleetwood Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Joseph Gbode",
-          "minute": "54'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Kevin Berkoe",
-          "minute": "74'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907954",
@@ -3154,65 +2949,7 @@
         "score": 1
       },
       "venue": "Portman Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Sindre Walle Egeli",
-          "minute": "62'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Olabade Aluko",
-          "minute": "67'",
-          "team": "Leicester City",
-          "ownGoal": false
-        },
-        {
-          "player": "Marcelino Núñez",
-          "minute": "71'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Marcelino Núñez",
-          "minute": "90'+1'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Olabade Aluko",
-          "minute": "40'",
-          "team": "Leicester City",
-          "card": "yellow"
-        },
-        {
-          "player": "Cameron Humphreys",
-          "minute": "49'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Jack Clarke",
-          "minute": "54'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Cedric Kipre",
-          "minute": "65'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Louis Page",
-          "minute": "70'",
-          "team": "Leicester City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908416",
@@ -3234,65 +2971,7 @@
         "score": 4
       },
       "venue": "Home Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Taiwo Awoniyi",
-          "minute": "3'",
-          "team": "Coventry City",
-          "ownGoal": false
-        },
-        {
-          "player": "Jack Rudoni",
-          "minute": "5'",
-          "team": "Coventry City",
-          "ownGoal": false
-        },
-        {
-          "player": "Oliver Irow",
-          "minute": "21'",
-          "team": "Plymouth Argyle",
-          "ownGoal": false
-        },
-        {
-          "player": "Xavier Amaechi",
-          "minute": "54'",
-          "team": "Plymouth Argyle",
-          "ownGoal": false
-        },
-        {
-          "player": "Ephron Mason-Clark",
-          "minute": "67'",
-          "team": "Coventry City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Joel Latibeaudiere",
-          "minute": "12'",
-          "team": "Coventry City",
-          "card": "yellow"
-        },
-        {
-          "player": "Xavier Amaechi",
-          "minute": "62'",
-          "team": "Plymouth Argyle",
-          "card": "yellow"
-        },
-        {
-          "player": "Victor Torp",
-          "minute": "78'",
-          "team": "Coventry City",
-          "card": "red"
-        },
-        {
-          "player": "Josh Eccles",
-          "minute": "85'",
-          "team": "Coventry City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908121",
@@ -3314,35 +2993,7 @@
         "score": 2
       },
       "venue": "Hillsborough",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Sil Swinkels",
-          "minute": "3'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": true
-        },
-        {
-          "player": "Saheed Olagunju",
-          "minute": "45'+1'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jarvis Thornton",
-          "minute": "8'",
-          "team": "Sheffield Wednesday",
-          "card": "yellow"
-        },
-        {
-          "player": "Boubacar Traoré",
-          "minute": "32'",
-          "team": "Wolverhampton Wanderers",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907950",
@@ -3364,53 +3015,7 @@
         "score": 4
       },
       "venue": "St. Mary's Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Léo Scienza",
-          "minute": "10'",
-          "team": "Southampton",
-          "ownGoal": false
-        },
-        {
-          "player": "Joshua Ajala",
-          "minute": "41'",
-          "team": "West Ham United",
-          "ownGoal": false
-        },
-        {
-          "player": "Joshua Ajala",
-          "minute": "53'",
-          "team": "West Ham United",
-          "ownGoal": false
-        },
-        {
-          "player": "Valentín Castellanos",
-          "minute": "75'",
-          "team": "West Ham United",
-          "ownGoal": false
-        },
-        {
-          "player": "Jarrod Bowen",
-          "minute": "84'",
-          "team": "West Ham United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Cameron Bragg",
-          "minute": "26'",
-          "team": "Southampton",
-          "card": "yellow"
-        },
-        {
-          "player": "Léo Scienza",
-          "minute": "34'",
-          "team": "Southampton",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907953",
@@ -3432,53 +3037,7 @@
         "score": 3
       },
       "venue": "Lamex Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Jacob Brown",
-          "minute": "9'",
-          "team": "Reading",
-          "ownGoal": false
-        },
-        {
-          "player": "Paddy Lane",
-          "minute": "24'",
-          "team": "Reading",
-          "ownGoal": false
-        },
-        {
-          "player": "Randell Williams",
-          "minute": "85'",
-          "team": "Reading",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Dan Butler",
-          "minute": "29'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Jeriel Dorsett",
-          "minute": "41'",
-          "team": "Reading",
-          "card": "yellow"
-        },
-        {
-          "player": "Carl Piergianni",
-          "minute": "89'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Benn Ward",
-          "minute": "89'",
-          "team": "Reading",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908126",
@@ -3500,35 +3059,7 @@
         "score": 1
       },
       "venue": "bet365 Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Róbert Bozeník",
-          "minute": "39'",
-          "team": "Stoke City",
-          "ownGoal": false
-        },
-        {
-          "player": "Kieran Dowell",
-          "minute": "45'",
-          "team": "Hull City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Lucas Herrington",
-          "minute": "82'",
-          "team": "Hull City",
-          "card": "yellow"
-        },
-        {
-          "player": "George Hirst",
-          "minute": "90'+5'",
-          "team": "Stoke City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908120",
@@ -3550,28 +3081,7 @@
         "score": 0
       },
       "venue": "Bescot Stadium",
-      "source": "ESPN",
-      "goals": [],
-      "cards": [
-        {
-          "player": "Isaac Hayden",
-          "minute": "49'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        },
-        {
-          "player": "Tai Sodje",
-          "minute": "51'",
-          "team": "Walsall",
-          "card": "yellow"
-        },
-        {
-          "player": "Isaac Moore",
-          "minute": "90'+5'",
-          "team": "Walsall",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907949",
@@ -3593,53 +3103,7 @@
         "score": 5
       },
       "venue": "Vicarage Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "James Clarridge",
-          "minute": "10'",
-          "team": "Peterborough United",
-          "ownGoal": true
-        },
-        {
-          "player": "Harry Leonard",
-          "minute": "23'",
-          "team": "Peterborough United",
-          "ownGoal": false
-        },
-        {
-          "player": "Harry Leonard",
-          "minute": "51'",
-          "team": "Peterborough United",
-          "ownGoal": false
-        },
-        {
-          "player": "Bolu Shofowoke",
-          "minute": "55'",
-          "team": "Peterborough United",
-          "ownGoal": false
-        },
-        {
-          "player": "Harrison Jones",
-          "minute": "64'",
-          "team": "Peterborough United",
-          "ownGoal": false
-        },
-        {
-          "player": "Mamadou Doumbia",
-          "minute": "73'",
-          "team": "Watford",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "George Nevett",
-          "minute": "83'",
-          "team": "Peterborough United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907951",
