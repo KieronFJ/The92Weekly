@@ -676,7 +676,8 @@
     left: 0 !important;
     right: auto !important;
   }
-  .sidebar-section.open .sidebar-submenu { max-height: 5000px; }
+  .sidebar-section.open .sidebar-submenu { max-height: 5000px !important; }
+  .sidebar-section:not(.open) .sidebar-submenu { max-height: 0 !important; }
   .sidebar-submenu a {
     display: block !important;
     width: 100% !important;
@@ -1424,12 +1425,25 @@
       if (e.key === 'Escape') closeSidebar();
     });
 
-    // Expandable sections (Latest, Teams, Tables, Acca Tips & Analysis, Community)
-    document.querySelectorAll('.sidebar-section-toggle').forEach(btn => {
-      btn.addEventListener('click', function() {
-        btn.closest('.sidebar-section').classList.toggle('open');
+    // Expandable sidebar sections. Use delegated click handling so the controls
+    // remain reliable even after the Teams submenu is populated dynamically.
+    const sidebarNav = document.querySelector('.sidebar-nav');
+    if (sidebarNav) {
+      sidebarNav.addEventListener('click', function(e) {
+        const btn = e.target.closest('.sidebar-section-toggle');
+        if (!btn || !sidebarNav.contains(btn)) return;
+        e.preventDefault();
+        e.stopPropagation();
+        const section = btn.closest('.sidebar-section');
+        if (!section) return;
+        const opening = !section.classList.contains('open');
+        section.classList.toggle('open', opening);
+        const submenu = section.querySelector(':scope > .sidebar-submenu');
+        if (submenu) {
+          submenu.style.maxHeight = opening ? submenu.scrollHeight + 'px' : '0px';
+        }
       });
-    });
+    }
 
     const sidebarTeamsSubmenu = document.getElementById('sidebar-teams-submenu');
     if (sidebarTeamsSubmenu) {
@@ -1480,10 +1494,15 @@
       // enormous 92-team list.
       sidebarTeamsSubmenu.querySelectorAll('.sidebar-league-toggle').forEach(toggle => {
         toggle.addEventListener('click', function(e) {
+          e.preventDefault();
           e.stopPropagation();
           const league = toggle.closest('.sidebar-league');
-          const isOpen = league.classList.toggle('open');
+          const submenu = league && league.querySelector(':scope > .sidebar-league-submenu');
+          if (!league || !submenu) return;
+          const isOpen = !league.classList.contains('open');
+          league.classList.toggle('open', isOpen);
           toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          submenu.style.maxHeight = isOpen ? submenu.scrollHeight + 'px' : '0px';
         });
       });
     }
