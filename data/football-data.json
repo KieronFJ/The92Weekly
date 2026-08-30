@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T15:02:03.926Z",
+  "updatedAt": "2026-08-30T15:11:57.385Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6890,8 +6890,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "363",
         "name": "Chelsea",
@@ -6912,8 +6912,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "357",
         "name": "Leeds United",
@@ -6933,43 +6933,21 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-30T13:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "366",
         "name": "Sunderland",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "370",
         "name": "Fulham",
-        "score": 0
+        "score": null
       },
       "venue": "Stadium of Light",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Wilson Isidor",
-          "minute": "75'",
-          "team": "Sunderland",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Joachim Andersen",
-          "minute": "35'",
-          "team": "Fulham",
-          "card": "yellow"
-        },
-        {
-          "player": "César Palacios",
-          "minute": "59'",
-          "team": "Fulham",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880898",
@@ -6978,8 +6956,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "3802",
         "name": "AFC Wimbledon",
@@ -7000,8 +6978,8 @@
       "type": "league",
       "date": "2026-08-30T14:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, August 30th at 10:00 AM EDT",
       "home": {
         "id": "304",
         "name": "Mansfield Town",
