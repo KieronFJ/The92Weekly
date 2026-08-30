@@ -474,28 +474,27 @@
     padding: 12px 20px 4px 34px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
     font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold);
   }
-  .sidebar-team-link { display: flex; align-items: center; gap: 10px; }
-  .sidebar-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .sidebar-submenu a.sidebar-team-link { display: flex !important; align-items: center; gap: 10px; }
+  .sidebar-team-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
 
   /* ---------- Sticky membership bar ---------- */
   .sticky-join-bar {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
     background: var(--ink); color: #FFFFFF;
-    padding: 5px 5vw; display: flex; align-items: center; justify-content: space-between;
-    gap: 10px; flex-wrap: nowrap;
+    padding: 10px 6vw; display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap;
     box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
   }
   .sticky-join-text {
-    font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 500;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
   }
   .sticky-join-text b { color: var(--gold); }
   .sticky-join-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
   .sticky-join-button {
     display: inline-block; background: var(--gold); color: #FFFFFF;
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11.5px;
-    padding: 5px 12px; border-radius: 5px; white-space: nowrap;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px;
+    padding: 8px 18px; border-radius: 6px; white-space: nowrap;
   }
   .sticky-join-button:hover { filter: brightness(1.08); }
   .sticky-join-dismiss {
@@ -503,10 +502,10 @@
     cursor: pointer; padding: 4px;
   }
   .sticky-join-dismiss:hover { color: #FFFFFF; }
-  body.sticky-bar-visible { padding-bottom: 36px; }
+  body.sticky-bar-visible { padding-bottom: 58px; }
   @media (max-width: 600px) {
-    .sticky-join-bar { padding: 4px 4vw; }
-    .sticky-join-text { font-size: 10.5px; max-width: 130px; }
+    .sticky-join-bar { padding: 8px 4vw; }
+    .sticky-join-text { font-size: 12px; max-width: none; }
   }
 
 </style>
@@ -759,7 +758,7 @@
 
   <div class="sticky-join-bar" id="sticky-join-bar" style="display:none;">
     <div class="sticky-join-text">
-      <b>Founding membership</b> — £4.99/mo
+      <b>Founding membership is still open</b> — lock in £4.99/month before the price rises.
     </div>
     <div class="sticky-join-actions">
       <a href="membership.html" class="sticky-join-button">Join now →</a>
