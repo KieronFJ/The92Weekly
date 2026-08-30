@@ -486,6 +486,37 @@
   .sidebar-team-link { display: flex; align-items: center; gap: 10px; }
   .sidebar-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
+
+  /* ---------- Sticky membership bar ---------- */
+  .sticky-join-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
+    background: var(--ink); color: #FFFFFF;
+    padding: 12px 6vw; display: flex; align-items: center; justify-content: space-between;
+    gap: 14px; flex-wrap: wrap;
+    box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
+  }
+  .sticky-join-text {
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
+  }
+  .sticky-join-text b { color: var(--gold); }
+  .sticky-join-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .sticky-join-button {
+    display: inline-block; background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px;
+    padding: 9px 18px; border-radius: 6px; white-space: nowrap;
+  }
+  .sticky-join-button:hover { filter: brightness(1.08); }
+  .sticky-join-dismiss {
+    background: none; border: none; color: #8B8F94; font-size: 20px; line-height: 1;
+    cursor: pointer; padding: 4px;
+  }
+  .sticky-join-dismiss:hover { color: #FFFFFF; }
+  body.sticky-bar-visible { padding-bottom: 62px; }
+  @media (max-width: 600px) {
+    .sticky-join-bar { padding: 10px 4vw; }
+    .sticky-join-text { font-size: 12.5px; }
+  }
+
 </style>
 </head>
 <body>
@@ -730,7 +761,35 @@
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
     }
 
+
+    // Sticky membership bar
+    (function() {
+      const bar = document.getElementById('sticky-join-bar');
+      const dismissBtn = document.getElementById('sticky-join-dismiss');
+      if (!bar) return;
+      if (sessionStorage.getItem('the92weekly-bar-dismissed') === '1') return;
+      bar.style.display = 'flex';
+      document.body.classList.add('sticky-bar-visible');
+      if (dismissBtn) {
+        dismissBtn.addEventListener('click', function() {
+          bar.style.display = 'none';
+          document.body.classList.remove('sticky-bar-visible');
+          sessionStorage.setItem('the92weekly-bar-dismissed', '1');
+        });
+      }
+    })();
+
 </script>
+
+  <div class="sticky-join-bar" id="sticky-join-bar" style="display:none;">
+    <div class="sticky-join-text">
+      <b>Founding membership is still open</b> — lock in £4.99/month before the price rises.
+    </div>
+    <div class="sticky-join-actions">
+      <a href="membership.html" class="sticky-join-button">Join now →</a>
+      <button class="sticky-join-dismiss" id="sticky-join-dismiss" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
 
 </body>
 </html>

@@ -247,6 +247,42 @@
     margin: 40px 0;
   }
 
+  .paywall-fade {
+    position: relative;
+    max-height: 220px;
+    overflow: hidden;
+  }
+  .paywall-fade::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 140px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 80%);
+  }
+  .paywall-cta {
+    background: var(--ink);
+    color: #FFFFFF;
+    padding: 36px 32px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 0 44px;
+  }
+  .paywall-cta .lock-icon { font-size: 22px; margin-bottom: 10px; }
+  .paywall-cta h3 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 21px; margin-bottom: 10px;
+  }
+  .paywall-cta p {
+    color: #C7C9CC; font-size: 14.5px; max-width: 46ch; margin: 0 auto 22px;
+  }
+  .paywall-cta-button {
+    display: inline-block; background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px;
+    padding: 13px 30px; border-radius: 6px; margin-bottom: 10px;
+  }
+  .paywall-cta-button:hover { filter: brightness(1.08); }
+  .paywall-cta-secondary { display: block; font-size: 12.5px; color: #9CA0A6; }
+  .paywall-cta-secondary:hover { color: #FFFFFF; }
+
   .stat-strip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -448,6 +484,37 @@
   .sidebar-team-link { display: flex; align-items: center; gap: 10px; }
   .sidebar-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
+
+  /* ---------- Sticky membership bar ---------- */
+  .sticky-join-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
+    background: var(--ink); color: #FFFFFF;
+    padding: 12px 6vw; display: flex; align-items: center; justify-content: space-between;
+    gap: 14px; flex-wrap: wrap;
+    box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
+  }
+  .sticky-join-text {
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
+  }
+  .sticky-join-text b { color: var(--gold); }
+  .sticky-join-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .sticky-join-button {
+    display: inline-block; background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px;
+    padding: 9px 18px; border-radius: 6px; white-space: nowrap;
+  }
+  .sticky-join-button:hover { filter: brightness(1.08); }
+  .sticky-join-dismiss {
+    background: none; border: none; color: #8B8F94; font-size: 20px; line-height: 1;
+    cursor: pointer; padding: 4px;
+  }
+  .sticky-join-dismiss:hover { color: #FFFFFF; }
+  body.sticky-bar-visible { padding-bottom: 62px; }
+  @media (max-width: 600px) {
+    .sticky-join-bar { padding: 10px 4vw; }
+    .sticky-join-text { font-size: 12.5px; }
+  }
+
 </style>
 </head>
 <body>
@@ -537,30 +604,40 @@
 
       <div class="pull-quote">The gap between the Premier League and the Championship isn't a gap in quality. It's a gap in money — and that gap is the real story of English football.</div>
 
-      <h2>Where the money actually goes</h2>
-      <p>Parachute payments alone can hand a relegated club a financial advantage over the rest of the Championship that lasts two or three seasons. Clubs that plan around this — rather than panic-spending the moment they go down — tend to bounce back up. Clubs that don't can spiral for a decade.</p>
+      <div class="paywall-fade">
+        <h2>Where the money actually goes</h2>
+        <p>Parachute payments alone can hand a relegated club a financial advantage over the rest of the Championship that lasts two or three seasons. Clubs that plan around this — rather than panic-spending the moment they go down — tend to bounce back up. Clubs that don't can spiral for a decade.</p>
 
-      <p>That single mechanic explains more about the Championship table on any given October than form, morale, or managerial reputation combined. It's also almost never mentioned in mainstream previews, because it doesn't fit neatly into a weekend build-up segment.</p>
+        <p>That single mechanic explains more about the Championship table on any given October than form, morale, or managerial reputation combined. It's also almost never mentioned in mainstream previews, because it doesn't fit neatly into a weekend build-up segment.</p>
 
-      <div class="stat-strip">
-        <div class="stat-cell">
-          <span class="stat-num">£40m+</span>
-          <span class="stat-label">Typical parachute payment, yr 1</span>
+        <div class="stat-strip">
+          <div class="stat-cell">
+            <span class="stat-num">£40m+</span>
+            <span class="stat-label">Typical parachute payment, yr 1</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-num">3 yrs</span>
+            <span class="stat-label">Payments taper over</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-num">~50%</span>
+            <span class="stat-label">Promoted sides that go straight back down</span>
+          </div>
         </div>
-        <div class="stat-cell">
-          <span class="stat-num">3 yrs</span>
-          <span class="stat-label">Payments taper over</span>
-        </div>
-        <div class="stat-cell">
-          <span class="stat-num">~50%</span>
-          <span class="stat-label">Promoted sides that go straight back down</span>
-        </div>
+
+        <h2>The pyramid moves both ways</h2>
+        <p>The same blind spot applies to players. Everyone tracks the striker moving from the Championship to the Premier League for £30m. Almost nobody tracks the reverse: the promising academy player sent on loan two divisions down to actually play first-team football, the kind of move that quietly shapes a career more than any single transfer ever gets credit for.</p>
+
+        <p>Follow both directions at once, and the picture changes. The story isn't "Premier League" or "Championship" — it's one connected system, constantly redistributing talent and money between its tiers. Miss that, and you're only ever seeing half the sport.</p>
       </div>
 
-      <h2>The pyramid moves both ways</h2>
-      <p>The same blind spot applies to players. Everyone tracks the striker moving from the Championship to the Premier League for £30m. Almost nobody tracks the reverse: the promising academy player sent on loan two divisions down to actually play first-team football, the kind of move that quietly shapes a career more than any single transfer ever gets credit for.</p>
-
-      <p>Follow both directions at once, and the picture changes. The story isn't "Premier League" or "Championship" — it's one connected system, constantly redistributing talent and money between its tiers. Miss that, and you're only ever seeing half the sport.</p>
+      <div class="paywall-cta">
+        <div class="lock-icon">🔒</div>
+        <h3>You're reading the free preview</h3>
+        <p>Members get the full breakdown on every article, every week, across all four divisions — plus full access to comment, post, and everything else on the site.</p>
+        <a href="membership.html" class="paywall-cta-button">Join for £4.99/month →</a>
+        <a href="membership.html" class="paywall-cta-secondary">See what's included</a>
+      </div>
     </div>
 
     <div class="author-box">
@@ -723,7 +800,35 @@
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
     }
 
+
+    // Sticky membership bar
+    (function() {
+      const bar = document.getElementById('sticky-join-bar');
+      const dismissBtn = document.getElementById('sticky-join-dismiss');
+      if (!bar) return;
+      if (sessionStorage.getItem('the92weekly-bar-dismissed') === '1') return;
+      bar.style.display = 'flex';
+      document.body.classList.add('sticky-bar-visible');
+      if (dismissBtn) {
+        dismissBtn.addEventListener('click', function() {
+          bar.style.display = 'none';
+          document.body.classList.remove('sticky-bar-visible');
+          sessionStorage.setItem('the92weekly-bar-dismissed', '1');
+        });
+      }
+    })();
+
 </script>
+
+  <div class="sticky-join-bar" id="sticky-join-bar" style="display:none;">
+    <div class="sticky-join-text">
+      <b>Founding membership is still open</b> — lock in £4.99/month before the price rises.
+    </div>
+    <div class="sticky-join-actions">
+      <a href="membership.html" class="sticky-join-button">Join now →</a>
+      <button class="sticky-join-dismiss" id="sticky-join-dismiss" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
 
 </body>
 </html>

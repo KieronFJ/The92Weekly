@@ -631,180 +631,58 @@
   }
   .sidebar-section { border-bottom: 1px solid var(--line-soft); }
   .sidebar-section-toggle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-    padding: 14px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 15.5px;
-    color: var(--ink);
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-align: left;
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px;
+    color: var(--ink); background: none; border: none; cursor: pointer; text-align: left;
   }
   .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
   .sidebar-section.open .sidebar-chevron { transform: rotate(180deg); }
-  .sidebar-section {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box;
-  }
-  .sidebar-submenu,
-  .sidebar-section .sidebar-submenu,
-  #sidebar-latest-section .sidebar-submenu,
-  #sidebar-teams-section .sidebar-submenu,
-  #sidebar-tables-section .sidebar-submenu,
-  #sidebar-picks-section .sidebar-submenu,
-  #sidebar-community-section .sidebar-submenu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
+  .sidebar-submenu {
+    max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
     background: var(--panel);
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    display: block !important;
-    position: relative;
-    left: 0 !important;
-    right: auto !important;
   }
-  .sidebar-section.open .sidebar-submenu { max-height: 5000px !important; }
-  .sidebar-section:not(.open) .sidebar-submenu { max-height: 0 !important; }
+  .sidebar-section.open .sidebar-submenu { max-height: 2000px; }
   .sidebar-submenu a {
-    display: block !important;
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    box-sizing: border-box;
-    margin: 0 !important;
-    padding: 14px 20px 14px 34px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #111111 !important;
-    background: #f4f3f0;
-    border-bottom: 1px solid var(--line-soft);
-    text-decoration: none;
+    display: block; padding: 12px 20px 12px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
+    color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-submenu a:last-child { border-bottom: none; }
+  .sidebar-teams-group-title {
+    padding: 12px 20px 4px 34px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
+    font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold);
+  }
+  .sidebar-team-link { display: flex; align-items: center; gap: 10px; }
+  .sidebar-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
-  /* ---------- Teams: league dropdowns ---------- */
-  .sidebar-league {
-    border-bottom: 1px solid var(--line-soft);
+
+  /* ---------- Sticky membership bar ---------- */
+  .sticky-join-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
+    background: var(--ink); color: #FFFFFF;
+    padding: 12px 6vw; display: flex; align-items: center; justify-content: space-between;
+    gap: 14px; flex-wrap: wrap;
+    box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
   }
-  .sidebar-league:last-of-type {
-    border-bottom: none;
+  .sticky-join-text {
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
   }
-  .sidebar-league-toggle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-    padding: 12px 20px 12px 34px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13.5px;
-    font-weight: 600;
-    color: var(--ink);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    text-align: left;
+  .sticky-join-text b { color: var(--gold); }
+  .sticky-join-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .sticky-join-button {
+    display: inline-block; background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px;
+    padding: 9px 18px; border-radius: 6px; white-space: nowrap;
   }
-  .sidebar-league-toggle:hover {
-    background: var(--bg);
-    color: var(--gold);
+  .sticky-join-button:hover { filter: brightness(1.08); }
+  .sticky-join-dismiss {
+    background: none; border: none; color: #8B8F94; font-size: 20px; line-height: 1;
+    cursor: pointer; padding: 4px;
   }
-  .sidebar-league-chevron {
-    font-size: 10px;
-    color: var(--ink-muted);
-    transition: transform .2s ease;
-  }
-  .sidebar-league.open .sidebar-league-chevron {
-    transform: rotate(180deg);
-  }
-  .sidebar-league-submenu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .25s ease;
-    background: var(--bg);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .sidebar-league.open .sidebar-league-submenu {
-    max-height: 1400px;
-  }
-  .sidebar-team-link {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    width: calc(100% - 46px) !important;
-    box-sizing: border-box;
-    margin: 0 12px 4px 34px;
-    padding: 10px 12px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.25;
-    border-radius: 4px;
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-    text-shadow: none !important;
-    text-decoration: none;
-    transition: filter .12s ease, transform .12s ease;
-  }
-  .sidebar-team-link:hover {
-    filter: brightness(1.1);
-    transform: translateX(2px);
-  }
-  .sidebar-team-link.on-light-bg {
-    color: #000000 !important;
-    -webkit-text-fill-color: #000000 !important;
-    text-shadow: none !important;
-  }
-  .sidebar-team-badge {
-    width: 24px;
-    height: 24px;
-    flex: 0 0 24px;
-    object-fit: contain;
-    margin-right: 10px;
-    display: block;
-  }
-  .sidebar-team-link > span {
-    display: block;
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-  /* Thin outline follows the actual transparent crest silhouette — never a circle. */
-  .sidebar-team-badge.badge-outline-light {
-    filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000);
-  }
-  .sidebar-team-badge.badge-outline-dark {
-    filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
-  }
-  .sidebar-directory-link {
-    display: block;
-    padding: 14px 20px 14px 34px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: var(--gold);
-    border-top: 1px solid var(--line-soft);
-  }
-  .sidebar-directory-link:hover {
-    background: var(--bg);
+  .sticky-join-dismiss:hover { color: #FFFFFF; }
+  body.sticky-bar-visible { padding-bottom: 62px; }
+  @media (max-width: 600px) {
+    .sticky-join-bar { padding: 10px 4vw; }
+    .sticky-join-text { font-size: 12.5px; }
   }
 
 </style>
@@ -1334,8 +1212,6 @@
           '<div class="status-box">Couldn\'t load the news feed right now.</div>';
       });
 
-    const clubEspnIds = {"Arsenal":"359","Aston Villa":"362","Bournemouth":"349","Brentford":"337","Brighton & Hove Albion":"331","Chelsea":"363","Coventry City":"388","Crystal Palace":"384","Everton":"368","Fulham":"370","Hull City":"306","Ipswich Town":"373","Leeds United":"357","Liverpool":"364","Manchester City":"382","Manchester United":"360","Newcastle United":"361","Nottingham Forest":"393","Sunderland":"366","Tottenham Hotspur":"367","Birmingham City":"392","Blackburn Rovers":"365","Bolton Wanderers":"358","Bristol City":"333","Burnley":"379","Cardiff City":"347","Charlton Athletic":"372","Derby County":"374","Lincoln City":"314","Middlesbrough":"369","Millwall":"391","Norwich City":"381","Portsmouth":"385","Preston North End":"394","Queens Park Rangers":"334","Sheffield United":"398","Southampton":"376","Stoke City":"336","Swansea City":"318","Watford":"395","West Bromwich Albion":"383","West Ham United":"371","Wolverhampton Wanderers":"380","Wrexham":"352","AFC Wimbledon":"3802","Barnsley":"397","Blackpool":"346","Bradford City":"387","Bromley":"3129","Burton Albion":"2567","Cambridge United":"351","Doncaster Rovers":"279","Huddersfield Town":"335","Leicester City":"375","Leyton Orient":"309","Luton Town":"301","Mansfield Town":"304","Milton Keynes Dons":"390","Notts County":"340","Oxford United":"311","Peterborough United":"342","Plymouth Argyle":"307","Reading":"338","Sheffield Wednesday":"399","Stevenage":"285","Stockport County":"400","Wigan Athletic":"350","Wycombe Wanderers":"344","Accrington Stanley":"2731","Barnet":"280","Bristol Rovers":"308","Cheltenham Town":"320","Chesterfield":"343","Colchester United":"339","Crawley Town":"2594","Crewe Alexandra":"396","Exeter City":"324","Fleetwood Town":"3891","Gillingham":"389","Grimsby Town":"386","Newport County":"635","Northampton Town":"353","Oldham Athletic":"332","Port Vale":"348","Rochdale":"303","Rotherham United":"402","Salford City":"4703","Shrewsbury Town":"302","Swindon Town":"341","Tranmere Rovers":"345","Walsall":"401","York City":"315"};
-
     const clubColors = {
       "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
       "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#149954","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
@@ -1354,6 +1230,7 @@
         });
         html += `</div>`;
       }
+      html += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
       panel.innerHTML = html;
     }
 
@@ -1440,90 +1317,56 @@
       if (e.key === 'Escape') closeSidebar();
     });
 
-    // Expandable sidebar sections. Use delegated click handling so the controls
-    // remain reliable even after the Teams submenu is populated dynamically.
-    const sidebarNav = document.querySelector('.sidebar-nav');
-    if (sidebarNav) {
-      sidebarNav.addEventListener('click', function(e) {
-        const btn = e.target.closest('.sidebar-section-toggle');
-        if (!btn || !sidebarNav.contains(btn)) return;
-        e.preventDefault();
-        e.stopPropagation();
-        const section = btn.closest('.sidebar-section');
-        if (!section) return;
-        const opening = !section.classList.contains('open');
-        section.classList.toggle('open', opening);
-        const submenu = section.querySelector(':scope > .sidebar-submenu');
-        if (submenu) {
-          submenu.style.maxHeight = opening ? submenu.scrollHeight + 'px' : '0px';
-        }
+    // Expandable sections (Latest, Teams, Tables, Acca Tips & Analysis, Community)
+    document.querySelectorAll('.sidebar-section-toggle').forEach(btn => {
+      btn.addEventListener('click', function() {
+        btn.closest('.sidebar-section').classList.toggle('open');
       });
-    }
+    });
 
     const sidebarTeamsSubmenu = document.getElementById('sidebar-teams-submenu');
     if (sidebarTeamsSubmenu) {
       let sidebarTeamsHtml = '';
-
       for (const div in clubsByDiv) {
-        sidebarTeamsHtml += `
-          <div class="sidebar-league">
-            <button class="sidebar-league-toggle" type="button" aria-expanded="false">
-              <span>${divNames[div]}</span>
-              <span class="sidebar-league-chevron">&#9660;</span>
-            </button>
-            <div class="sidebar-league-submenu">`;
-
+        sidebarTeamsHtml += `<div class="sidebar-teams-group-title">${divNames[div]}</div>`;
         clubsByDiv[div].forEach(name => {
           const c = clubColors[name] || '#149954';
-          const rgb = c.replace('#', '');
-          const r = parseInt(rgb.substring(0, 2), 16);
-          const g = parseInt(rgb.substring(2, 4), 16);
-          const b = parseInt(rgb.substring(4, 6), 16);
-          const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-          const textClass = brightness >= 145 ? ' on-light-bg' : '';
-          const badgeClass = brightness >= 145 ? ' badge-outline-light' : ' badge-outline-dark';
-          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge${badgeClass}" alt="" loading="lazy"><span>${name}</span></a>`;
+          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link"><span class="sidebar-team-dot" style="background:${c};"></span>${name}</a>`;
         });
-
-        sidebarTeamsHtml += `
-            </div>
-          </div>`;
       }
+      sidebarTeamsHtml += `<a href="teams.html" style="font-weight:600; color:var(--gold);">View full directory &rarr;</a>`;
       sidebarTeamsSubmenu.innerHTML = sidebarTeamsHtml;
-
-      // Club badges: use the ESPN team IDs already stored in football-data.json.
-      // The badge images are served directly from ESPN's CDN, so no browser-side
-      // API call or CORS permission is required.
-      sidebarTeamsSubmenu.querySelectorAll('.sidebar-team-link').forEach(link => {
-        const name = link.getAttribute('data-team-name') || '';
-        const img = link.querySelector('.sidebar-team-badge');
-        const teamId = clubEspnIds[name];
-        if (!img || !teamId) {
-          if (img) img.style.display = 'none';
-          return;
-        }
-        img.src = `https://a.espncdn.com/i/teamlogos/soccer/500/${teamId}.png`;
-        img.onerror = function() { this.style.display = 'none'; };
-      });
-
-      // Each league opens independently so the Teams menu never becomes an
-      // enormous 92-team list.
-      sidebarTeamsSubmenu.querySelectorAll('.sidebar-league-toggle').forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          const league = toggle.closest('.sidebar-league');
-          const submenu = league && league.querySelector(':scope > .sidebar-league-submenu');
-          if (!league || !submenu) return;
-          const isOpen = !league.classList.contains('open');
-          league.classList.toggle('open', isOpen);
-          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          submenu.style.maxHeight = isOpen ? submenu.scrollHeight + 'px' : '0px';
-        });
-      });
     }
 
+
+    // Sticky membership bar
+    (function() {
+      const bar = document.getElementById('sticky-join-bar');
+      const dismissBtn = document.getElementById('sticky-join-dismiss');
+      if (!bar) return;
+      if (sessionStorage.getItem('the92weekly-bar-dismissed') === '1') return;
+      bar.style.display = 'flex';
+      document.body.classList.add('sticky-bar-visible');
+      if (dismissBtn) {
+        dismissBtn.addEventListener('click', function() {
+          bar.style.display = 'none';
+          document.body.classList.remove('sticky-bar-visible');
+          sessionStorage.setItem('the92weekly-bar-dismissed', '1');
+        });
+      }
+    })();
+
 </script>
+
+  <div class="sticky-join-bar" id="sticky-join-bar" style="display:none;">
+    <div class="sticky-join-text">
+      <b>Founding membership is still open</b> — lock in £4.99/month before the price rises.
+    </div>
+    <div class="sticky-join-actions">
+      <a href="membership.html" class="sticky-join-button">Join now →</a>
+      <button class="sticky-join-dismiss" id="sticky-join-dismiss" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
 
 </body>
 </html>
