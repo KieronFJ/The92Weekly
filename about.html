@@ -346,13 +346,14 @@
   }
   .sidebar-league-group.open .sidebar-league-clubs { max-height: 3000px; padding: 4px 16px 12px; }
   .sidebar-club-tile {
-    display: flex; align-items: center; gap: 10px; padding: 10px 14px 10px 8px;
+    display: flex !important; flex-direction: row !important;
+    align-items: center !important; gap: 10px; padding: 10px 14px 10px 8px;
     min-height: 46px; box-sizing: border-box; border-radius: 6px;
     font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px; color: var(--ink);
   }
   .sidebar-club-badge {
     width: 26px; height: 26px; object-fit: contain; flex-shrink: 0;
-    display: block; margin: 0;
+    display: block !important; margin: 0;
   }
   .sidebar-full-directory {
     display: block; padding: 12px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
@@ -508,8 +509,8 @@
     const divNames = { 1: "Premier League", 2: "Championship", 3: "League One", 4: "League Two" };
 
     const clubColors = {
-      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#149954","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
-      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#149954","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+      "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+      "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
       "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
       "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Oldham Athletic":"#004996","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Exeter City":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
     };
@@ -647,8 +648,9 @@
               const brightness = (r * 299 + g * 587 + b * 114) / 1000;
               const textColor = brightness > 150 ? '#1A1D22' : '#FFFFFF';
               const logoUrl = findLogo(name);
+              const outlineColor = textColor;
               const badge = logoUrl
-                ? `<img src="${logoUrl}" alt="" class="sidebar-club-badge" onerror="this.style.display='none'">`
+                ? `<img src="${logoUrl}" alt="" class="sidebar-club-badge" style="filter: drop-shadow(0 0 1px ${outlineColor}) drop-shadow(0 0 1px ${outlineColor}) drop-shadow(0 0 1px ${outlineColor});" onerror="this.style.display='none'">`
                 : '';
               sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-club-tile" style="background:${c}; color:${textColor};">${badge}${name}</a>`;
             });

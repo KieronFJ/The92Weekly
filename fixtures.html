@@ -305,13 +305,14 @@
   }
   .sidebar-league-group.open .sidebar-league-clubs { max-height: 3000px; padding: 4px 16px 12px; }
   .sidebar-club-tile {
-    display: flex; align-items: center; gap: 10px; padding: 10px 14px 10px 8px;
+    display: flex !important; flex-direction: row !important;
+    align-items: center !important; gap: 10px; padding: 10px 14px 10px 8px;
     min-height: 46px; box-sizing: border-box; border-radius: 6px;
     font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px; color: var(--ink);
   }
   .sidebar-club-badge {
     width: 26px; height: 26px; object-fit: contain; flex-shrink: 0;
-    display: block; margin: 0;
+    display: block !important; margin: 0;
   }
   .sidebar-full-directory {
     display: block; padding: 12px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
