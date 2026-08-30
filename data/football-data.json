@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T18:01:58.308Z",
+  "updatedAt": "2026-08-30T18:11:46.720Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7179,21 +7179,91 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-30T15:30Z",
-      "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "360",
         "name": "Manchester United",
-        "score": null
+        "score": 5
       },
       "away": {
         "id": "373",
         "name": "Ipswich Town",
-        "score": null
+        "score": 2
       },
       "venue": "Old Trafford",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Leif Davis",
+          "minute": "29'",
+          "team": "Ipswich Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Bruno Fernandes",
+          "minute": "40'",
+          "team": "Manchester United",
+          "ownGoal": false
+        },
+        {
+          "player": "Jacob Greaves",
+          "minute": "56'",
+          "team": "Manchester United",
+          "ownGoal": true
+        },
+        {
+          "player": "Bruno Fernandes",
+          "minute": "68'",
+          "team": "Manchester United",
+          "ownGoal": false
+        },
+        {
+          "player": "Bryan Mbeumo",
+          "minute": "82'",
+          "team": "Manchester United",
+          "ownGoal": false
+        },
+        {
+          "player": "Chuba Akpom",
+          "minute": "90'+1'",
+          "team": "Ipswich Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Sasa Lukic",
+          "minute": "33'",
+          "team": "Ipswich Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Fatawu Issahaku",
+          "minute": "37'",
+          "team": "Ipswich Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Jacob Greaves",
+          "minute": "60'",
+          "team": "Ipswich Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Bruno Fernandes",
+          "minute": "61'",
+          "team": "Manchester United",
+          "card": "red"
+        },
+        {
+          "player": "Bryan Mbeumo",
+          "minute": "90'+3'",
+          "team": "Manchester United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879295",
