@@ -39,4 +39,8 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update football data"
-          git push
+          # If someone uploaded files at the same moment this ran, the push
+          # can get rejected because the remote has newer commits. Pull
+          # those in first (rebasing our commit on top) and retry once,
+          # rather than just failing outright.
+          git push || (git pull --rebase && git push)
