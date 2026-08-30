@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T15:41:58.340Z",
+  "updatedAt": "2026-08-30T15:51:56.781Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7168,8 +7168,8 @@
       "type": "league",
       "date": "2026-08-30T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "66'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "75'",
       "home": {
         "id": "304",
         "name": "Mansfield Town",
@@ -7190,8 +7190,8 @@
       "type": "league",
       "date": "2026-08-30T15:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sun, August 30th at 11:30 AM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "1'",
       "home": {
         "id": "360",
         "name": "Manchester United",
