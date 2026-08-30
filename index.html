@@ -779,6 +779,13 @@
     margin-right: 10px;
     display: block;
   }
+  /* Thin outline follows the actual transparent crest silhouette — never a circle. */
+  .sidebar-team-badge.badge-outline-light {
+    filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000);
+  }
+  .sidebar-team-badge.badge-outline-dark {
+    filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
+  }
   .sidebar-directory-link {
     display: block;
     padding: 14px 20px 14px 34px;
@@ -1466,7 +1473,8 @@
           const b = parseInt(rgb.substring(4, 6), 16);
           const brightness = (r * 299 + g * 587 + b * 114) / 1000;
           const textClass = brightness >= 145 ? ' on-light-bg' : '';
-          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge" alt="" loading="lazy"><span>${name}</span></a>`;
+          const badgeClass = brightness >= 145 ? ' badge-outline-light' : ' badge-outline-dark';
+          sidebarTeamsHtml += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" class="sidebar-team-link${textClass}" data-team-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" style="background:${c};"><img class="sidebar-team-badge${badgeClass}" alt="" loading="lazy"><span>${name}</span></a>`;
         });
 
         sidebarTeamsHtml += `
