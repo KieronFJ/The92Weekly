@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T18:21:53.017Z",
+  "updatedAt": "2026-08-30T18:31:42.893Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -2817,59 +2817,7 @@
         "score": 3
       },
       "venue": "Eco-Power Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Kyle Joseph",
-          "minute": "34'",
-          "team": "Middlesbrough",
-          "ownGoal": false
-        },
-        {
-          "player": "Will Lankshear",
-          "minute": "78'",
-          "team": "Middlesbrough",
-          "ownGoal": false
-        },
-        {
-          "player": "Jeremy Sarmiento",
-          "minute": "87'",
-          "team": "Middlesbrough",
-          "ownGoal": false
-        },
-        {
-          "player": "Isaac Hutchinson",
-          "minute": "90'+2'",
-          "team": "Doncaster Rovers",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Robbie Gotts",
-          "minute": "26'",
-          "team": "Doncaster Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Myles Peart-Harris",
-          "minute": "45'+1'",
-          "team": "Middlesbrough",
-          "card": "yellow"
-        },
-        {
-          "player": "Neto Borges",
-          "minute": "46'",
-          "team": "Middlesbrough",
-          "card": "yellow"
-        },
-        {
-          "player": "George Broadbent",
-          "minute": "77'",
-          "team": "Doncaster Rovers",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908137",
