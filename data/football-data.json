@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T17:51:42.883Z",
+  "updatedAt": "2026-08-30T18:01:58.308Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -2773,53 +2773,7 @@
         "score": 2
       },
       "venue": "Memorial Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Mees Rijks",
-          "minute": "22'",
-          "team": "Bristol Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Joe Quigley",
-          "minute": "58'",
-          "team": "Bristol Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Harrison Bettoni",
-          "minute": "71'",
-          "team": "Chelsea U21",
-          "ownGoal": false
-        },
-        {
-          "player": "Chizaram Ezenwata",
-          "minute": "82'",
-          "team": "Chelsea U21",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Chizaram Ezenwata",
-          "minute": "35'",
-          "team": "Chelsea U21",
-          "card": "yellow"
-        },
-        {
-          "player": "Joe Quigley",
-          "minute": "63'",
-          "team": "Bristol Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Justin Osagie",
-          "minute": "89'",
-          "team": "Chelsea U21",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908119",
@@ -2841,53 +2795,7 @@
         "score": 2
       },
       "venue": "Cardiff City Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Mathias Kvistgaarden",
-          "minute": "25'",
-          "team": "Norwich City",
-          "ownGoal": false
-        },
-        {
-          "player": "Ante Crnac",
-          "minute": "78'",
-          "team": "Norwich City",
-          "ownGoal": false
-        },
-        {
-          "player": "Yousef Salech",
-          "minute": "90'+3'",
-          "team": "Cardiff City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Perry Ng",
-          "minute": "27'",
-          "team": "Cardiff City",
-          "card": "yellow"
-        },
-        {
-          "player": "Isaak Davies",
-          "minute": "33'",
-          "team": "Cardiff City",
-          "card": "yellow"
-        },
-        {
-          "player": "Pelle Mattsson",
-          "minute": "50'",
-          "team": "Norwich City",
-          "card": "yellow"
-        },
-        {
-          "player": "Rubin Colwill",
-          "minute": "84'",
-          "team": "Cardiff City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908124",
@@ -7271,91 +7179,21 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-30T15:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "42'",
       "home": {
         "id": "360",
         "name": "Manchester United",
-        "score": 5
+        "score": null
       },
       "away": {
         "id": "373",
         "name": "Ipswich Town",
-        "score": 2
+        "score": null
       },
       "venue": "Old Trafford",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Leif Davis",
-          "minute": "29'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Bruno Fernandes",
-          "minute": "40'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Jacob Greaves",
-          "minute": "56'",
-          "team": "Manchester United",
-          "ownGoal": true
-        },
-        {
-          "player": "Bruno Fernandes",
-          "minute": "68'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Bryan Mbeumo",
-          "minute": "82'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Chuba Akpom",
-          "minute": "90'+1'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Sasa Lukic",
-          "minute": "33'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Fatawu Issahaku",
-          "minute": "37'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Jacob Greaves",
-          "minute": "60'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Bruno Fernandes",
-          "minute": "61'",
-          "team": "Manchester United",
-          "card": "red"
-        },
-        {
-          "player": "Bryan Mbeumo",
-          "minute": "90'+3'",
-          "team": "Manchester United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879295",
