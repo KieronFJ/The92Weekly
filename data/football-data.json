@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T14:21:49.650Z",
+  "updatedAt": "2026-08-30T14:31:43.792Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6891,7 +6891,7 @@
       "date": "2026-08-30T13:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "statusDetail": "62'",
       "home": {
         "id": "363",
         "name": "Chelsea",
@@ -6913,7 +6913,7 @@
       "date": "2026-08-30T13:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "51'",
+      "statusDetail": "61'",
       "home": {
         "id": "357",
         "name": "Leeds United",
@@ -6934,8 +6934,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "55'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "65'",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -6957,7 +6957,7 @@
       "date": "2026-08-30T13:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "63'",
       "home": {
         "id": "3802",
         "name": "AFC Wimbledon",
@@ -6979,7 +6979,7 @@
       "date": "2026-08-30T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "statusDetail": "22'",
       "home": {
         "id": "304",
         "name": "Mansfield Town",
