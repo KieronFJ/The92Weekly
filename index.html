@@ -746,7 +746,9 @@
   }
   .sidebar-team-link {
     display: flex !important;
-    align-items: center;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
     width: calc(100% - 46px) !important;
     box-sizing: border-box;
     margin: 0 12px 4px 34px;
@@ -777,14 +779,16 @@
     flex: 0 0 24px;
     object-fit: contain;
     margin-right: 10px;
-    display: block;
+    display: block !important;
+    position: relative;
+    flex-shrink: 0;
   }
-  /* Thin outline follows the actual transparent crest silhouette — never a circle. */
+  /* Subtle outline follows the actual transparent crest silhouette — never a circle. */
   .sidebar-team-badge.badge-outline-light {
-    filter: drop-shadow(0.5px 0 0 #000) drop-shadow(-0.5px 0 0 #000) drop-shadow(0 0.5px 0 #000) drop-shadow(0 -0.5px 0 #000);
+    filter: drop-shadow(0 0 0.75px #000);
   }
   .sidebar-team-badge.badge-outline-dark {
-    filter: drop-shadow(0.5px 0 0 #fff) drop-shadow(-0.5px 0 0 #fff) drop-shadow(0 0.5px 0 #fff) drop-shadow(0 -0.5px 0 #fff);
+    filter: drop-shadow(0 0 0.75px #fff);
   }
   .sidebar-directory-link {
     display: block;
