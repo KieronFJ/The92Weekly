@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T13:52:00.527Z",
+  "updatedAt": "2026-08-30T14:01:54.878Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6891,7 +6891,7 @@
       "date": "2026-08-30T13:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "41'",
+      "statusDetail": "11'",
       "home": {
         "id": "363",
         "name": "Chelsea",
@@ -6912,8 +6912,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "41'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "11'",
       "home": {
         "id": "357",
         "name": "Leeds United",
@@ -6934,8 +6934,8 @@
       "type": "league",
       "date": "2026-08-30T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "12'",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -6957,7 +6957,7 @@
       "date": "2026-08-30T13:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "12'",
       "home": {
         "id": "3802",
         "name": "AFC Wimbledon",
