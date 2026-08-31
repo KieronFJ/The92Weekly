@@ -220,6 +220,10 @@
     display: block; padding: 9px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
     font-size: 14.5px; color: var(--ink); border-bottom: 1px solid var(--line-soft);
   }
+  .sidebar-nav-sub {
+    display: block; font-family: 'Source Serif 4', serif; font-weight: 400; font-style: italic;
+    font-size: 11px; color: var(--ink-muted); margin-top: 1px;
+  }
   .sidebar-section { border-bottom: 1px solid var(--line-soft); }
   .sidebar-section-toggle {
     width: 100%; display: flex; align-items: center; justify-content: space-between;
@@ -315,8 +319,8 @@
           <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
         </div>
                 <nav class="sidebar-nav">
-          <a href="membership.html">Membership</a>
-          <a href="pyramid-notes.html">Pyramid Notes</a>
+          <a href="membership.html">Membership<span class="sidebar-nav-sub">Join & unlock everything</span></a>
+          <a href="pyramid-notes.html">Pyramid Notes<span class="sidebar-nav-sub">Members-only long-reads</span></a>
 
           <div class="sidebar-section" id="sidebar-latest-section">
             <button class="sidebar-section-toggle">Latest <span class="sidebar-chevron">&#9660;</span></button>
@@ -343,16 +347,16 @@
             </div>
           </div>
 
-          <a href="combined-table.html">Combined Table</a>
-          <a href="merry-go-round.html">The Merry-Go-Round</a>
-          <a href="archive.html">The Archive</a>
-          <a href="under-the-radar.html">Under The Radar</a>
-          <a href="match-of-the-tier.html">Match of the Tier</a>
-          <a href="accumulator.html">Acca Tips</a>
-          <a href="ins-and-outs.html">Ins &amp; Outs</a>
-          <a href="groundhopper.html">Groundhopper's Companion</a>
-          <a href="fan-blogs.html">Fan Blogs</a>
-          <a href="polls.html">Polls</a>
+          <a href="combined-table.html">Combined Table<span class="sidebar-nav-sub">All 92 clubs, ranked together</span></a>
+          <a href="merry-go-round.html">The Merry-Go-Round<span class="sidebar-nav-sub">Every managerial change</span></a>
+          <a href="archive.html">The Archive<span class="sidebar-nav-sub">On this day, all 4 divisions</span></a>
+          <a href="under-the-radar.html">Under The Radar<span class="sidebar-nav-sub">New signings, properly explained</span></a>
+          <a href="match-of-the-tier.html">Match of the Tier<span class="sidebar-nav-sub">One match per division, weekly</span></a>
+          <a href="accumulator.html">Acca Tips<span class="sidebar-nav-sub">This week's betting picks</span></a>
+          <a href="ins-and-outs.html">Ins &amp; Outs<span class="sidebar-nav-sub">Transfer ins and outs</span></a>
+          <a href="groundhopper.html">Groundhopper's Companion<span class="sidebar-nav-sub">Track every ground you've visited</span></a>
+          <a href="fan-blogs.html">Fan Blogs<span class="sidebar-nav-sub">Member-written pieces</span></a>
+          <a href="polls.html">Polls<span class="sidebar-nav-sub">Vote & discuss</span></a>
           <a href="about.html">About</a>
         </nav>
       </div>
