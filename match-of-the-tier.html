@@ -4,7 +4,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — The92Weekly</title>
+<title>Match of the Tier — The92Weekly</title>
 <meta name="description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
 <meta property="og:title" content="The92Weekly">
 <meta property="og:description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
@@ -396,6 +396,51 @@
     .sticky-join-text { font-size: 12px; max-width: none; }
   }
 
+
+  /* ---------- Match of the Tier ---------- */
+  .mott-intro { max-width: 62ch; color: var(--ink-muted); font-size: 15px; margin-bottom: 40px; }
+  .mott-match { margin-bottom: 56px; }
+  .mott-div-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--gold); margin-bottom: 10px;
+  }
+  .mott-title { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 22px; margin-bottom: 6px; }
+  .mott-score { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--ink-muted); margin-bottom: 20px; }
+  .mott-analysis { font-size: 15px; color: var(--ink); line-height: 1.7; margin-bottom: 28px; }
+  .mott-analysis p { margin-bottom: 14px; }
+
+  /* Formation pitch diagram */
+  .pitch {
+    position: relative; width: 100%; max-width: 480px; margin: 0 auto 12px;
+    aspect-ratio: 3 / 4; background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden;
+  }
+  .pitch::before {
+    content: ''; position: absolute; inset: 6%; border: 1px solid var(--line); border-radius: 4px;
+  }
+  .pitch::after {
+    content: ''; position: absolute; top: 50%; left: 6%; right: 6%; height: 1px; background: var(--line);
+  }
+  .pitch-circle {
+    position: absolute; top: 50%; left: 50%; width: 22%; aspect-ratio: 1; transform: translate(-50%, -50%);
+    border: 1px solid var(--line); border-radius: 50%;
+  }
+  .pitch-player {
+    position: absolute; transform: translate(-50%, -50%); text-align: center; width: 60px;
+  }
+  .pitch-player .num {
+    width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: #FFFFFF;
+    display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace;
+    font-weight: 700; font-size: 13px; margin: 0 auto 4px;
+  }
+  .pitch-player .pname {
+    font-family: 'Poppins', sans-serif; font-size: 10.5px; font-weight: 600; color: var(--ink);
+    line-height: 1.15;
+  }
+  .pitch-caption {
+    text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted);
+    margin-bottom: 32px;
+  }
 </style>
 </head>
 <body>
@@ -459,46 +504,63 @@
   </header>
 
   <main>
-    <div class="eyebrow">About</div>
-    <h1>Most football coverage stops at the Premier League. We think the best stories are everywhere else.</h1>
+    <div class="eyebrow">Match of the Tier</div>
+    <h1>One match, every division, every week.</h1>
+    <p class="mott-intro">Four matches a week — one from each division — broken down properly: the tactics, the players who decided it, the moments the scoreline doesn't show. Each comes with a full lineup diagram, not just a final score.</p>
 
-    <p class="lead">The92Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
+    <div class="mott-match">
+      <div class="mott-div-label">Premier League</div>
+      <div class="mott-title">[Home Team] vs [Away Team]</div>
+      <div class="mott-score">[Score] · [Date] · [Competition]</div>
 
-    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
+      <div class="pitch">
+<div class="pitch-player" style="left:50%; top:10%;"><div class="num">37</div><div class="pname">Scherpen</div></div>
+<div class="pitch-player" style="left:15%; top:30%;"><div class="num">26</div><div class="pname">O'Shea</div></div>
+<div class="pitch-player" style="left:38%; top:30%;"><div class="num">6</div><div class="pname">Diop</div></div>
+<div class="pitch-player" style="left:62%; top:30%;"><div class="num">24</div><div class="pname">Greaves</div></div>
+<div class="pitch-player" style="left:85%; top:30%;"><div class="num">3</div><div class="pname">Davis</div></div>
+<div class="pitch-player" style="left:30%; top:50%;"><div class="num">23</div><div class="pname">Lukic</div></div>
+<div class="pitch-player" style="left:70%; top:50%;"><div class="num">32</div><div class="pname">Núñez</div></div>
+<div class="pitch-player" style="left:20%; top:70%;"><div class="num">7</div><div class="pname">Abdul Fatawu</div></div>
+<div class="pitch-player" style="left:50%; top:70%;"><div class="num">10</div><div class="pname">Enciso</div></div>
+<div class="pitch-player" style="left:80%; top:70%;"><div class="num">38</div><div class="pname">Maeda</div></div>
+<div class="pitch-player" style="left:50%; top:88%;"><div class="num">19</div><div class="pname">Emersonn</div></div>
+      </div>
+      <div class="pitch-caption">Example formation diagram — Ipswich Town, 4-2-3-1 (real lineup, used to demonstrate the layout)</div>
 
-    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
-
-    <hr class="divider">
-
-    <h2>What you'll get</h2>
-    <ul class="principles">
-      <li>
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>Every division treated as one story</h3>
-          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Depth over speed</h3>
-          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Written by a fan, not a wire service</h3>
-          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="contact-box">
-      <p>Got a story from your division that's crying out for more attention? Tell us — we're always listening.</p>
-      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+      <div class="mott-analysis">
+        <p>[The write-up goes here — what actually happened, the tactical setup, the players who made the difference. Real analysis of a real match.]</p>
+      </div>
     </div>
+
+    <div class="mott-match">
+      <div class="mott-div-label">Championship</div>
+      <div class="mott-title">[Home Team] vs [Away Team]</div>
+      <div class="mott-score">[Score] · [Date] · [Competition]</div>
+      <div class="pitch"></div>
+      <div class="pitch-caption">[Formation diagram — add real lineup here]</div>
+      <div class="mott-analysis"><p>[Analysis here.]</p></div>
+    </div>
+
+    <div class="mott-match">
+      <div class="mott-div-label">League One</div>
+      <div class="mott-title">[Home Team] vs [Away Team]</div>
+      <div class="mott-score">[Score] · [Date] · [Competition]</div>
+      <div class="pitch"></div>
+      <div class="pitch-caption">[Formation diagram — add real lineup here]</div>
+      <div class="mott-analysis"><p>[Analysis here.]</p></div>
+    </div>
+
+    <div class="mott-match">
+      <div class="mott-div-label">League Two</div>
+      <div class="mott-title">[Home Team] vs [Away Team]</div>
+      <div class="mott-score">[Score] · [Date] · [Competition]</div>
+      <div class="pitch"></div>
+      <div class="pitch-caption">[Formation diagram — add real lineup here]</div>
+      <div class="mott-analysis"><p>[Analysis here.]</p></div>
+    </div>
+
+    <p style="color:var(--ink-muted); font-size:13.5px;">Send me a lineup (even a screenshot like the BBC one) and the final score, and I'll build the real diagram and help draft the analysis.</p>
   </main>
 
   <footer>

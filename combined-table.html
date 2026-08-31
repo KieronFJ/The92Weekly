@@ -4,7 +4,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — The92Weekly</title>
+<title>The Combined Table — The92Weekly</title>
 <meta name="description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
 <meta property="og:title" content="The92Weekly">
 <meta property="og:description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
@@ -396,6 +396,28 @@
     .sticky-join-text { font-size: 12px; max-width: none; }
   }
 
+
+  /* ---------- Combined Table ---------- */
+  .ct-intro { max-width: 62ch; color: var(--ink-muted); font-size: 15px; margin-bottom: 32px; }
+  #ct-container { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  table.ct-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.ct-table th {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--ink-muted); text-align: center; padding: 10px 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  table.ct-table th:first-child, table.ct-table th:nth-child(2) { text-align: left; }
+  table.ct-table td {
+    text-align: center; padding: 9px 4px; border-bottom: 1px solid var(--line-soft); font-size: 12.5px;
+  }
+  table.ct-table td.ct-team-cell { text-align: left; font-family: 'Poppins', sans-serif; font-weight: 600; }
+  table.ct-table td.ct-pos-cell { font-weight: 700; color: var(--ink-muted); width: 24px; }
+  table.ct-table td.ct-ppg-cell { font-weight: 700; color: var(--gold); }
+  .ct-div-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 700; text-transform: uppercase;
+    padding: 2px 6px; border-radius: 3px; background: var(--panel); color: var(--ink-muted);
+    display: inline-block; margin-left: 6px;
+  }
 </style>
 </head>
 <body>
@@ -459,45 +481,12 @@
   </header>
 
   <main>
-    <div class="eyebrow">About</div>
-    <h1>Most football coverage stops at the Premier League. We think the best stories are everywhere else.</h1>
+    <div class="eyebrow">The Combined Table</div>
+    <h1>Who's actually top of England right now?</h1>
+    <p class="ct-intro">Every one of the 92 clubs, ranked together in one table using points-per-game — the fairest way to compare across four divisions that don't always play the same number of matches. No one else builds this, because it only makes sense once you already cover the whole pyramid.</p>
 
-    <p class="lead">The92Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
-
-    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
-
-    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
-
-    <hr class="divider">
-
-    <h2>What you'll get</h2>
-    <ul class="principles">
-      <li>
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>Every division treated as one story</h3>
-          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Depth over speed</h3>
-          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Written by a fan, not a wire service</h3>
-          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="contact-box">
-      <p>Got a story from your division that's crying out for more attention? Tell us — we're always listening.</p>
-      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+    <div id="ct-container">
+      <div class="status-box">Loading the combined table…</div>
     </div>
   </main>
 
@@ -707,5 +696,100 @@
     </div>
   </div>
 
+
+  <script>
+    const divCode = { '1': 'eng.1', '2': 'eng.2', '3': 'eng.3', '4': 'eng.4' };
+    const divNames = { 'eng.1': 'PL', 'eng.2': 'CHA', 'eng.3': 'L1', 'eng.4': 'L2' };
+    const clubsByDiv = {
+      1: ["Arsenal","Aston Villa","Bournemouth","Brentford","Brighton & Hove Albion","Chelsea","Coventry City","Crystal Palace","Everton","Fulham","Hull City","Ipswich Town","Leeds United","Liverpool","Manchester City","Manchester United","Newcastle United","Nottingham Forest","Sunderland","Tottenham Hotspur"],
+      2: ["Birmingham City","Blackburn Rovers","Bolton Wanderers","Bristol City","Burnley","Cardiff City","Charlton Athletic","Derby County","Lincoln City","Middlesbrough","Millwall","Norwich City","Portsmouth","Preston North End","Queens Park Rangers","Sheffield United","Southampton","Stoke City","Swansea City","Watford","West Bromwich Albion","West Ham United","Wolverhampton Wanderers","Wrexham"],
+      3: ["AFC Wimbledon","Barnsley","Blackpool","Bradford City","Bromley","Burton Albion","Cambridge United","Doncaster Rovers","Huddersfield Town","Leicester City","Leyton Orient","Luton Town","Mansfield Town","Milton Keynes Dons","Notts County","Oxford United","Peterborough United","Plymouth Argyle","Reading","Sheffield Wednesday","Stevenage","Stockport County","Wigan Athletic","Wycombe Wanderers"],
+      4: ["Accrington Stanley","Barnet","Bristol Rovers","Cheltenham Town","Chesterfield","Colchester United","Crawley Town","Crewe Alexandra","Exeter City","Fleetwood Town","Gillingham","Grimsby Town","Newport County","Northampton Town","Oldham Athletic","Port Vale","Rochdale","Rotherham United","Salford City","Shrewsbury Town","Swindon Town","Tranmere Rovers","Walsall","York City"]
+    };
+
+    function normalize(s) { return s.toLowerCase().replace(/[^a-z0-9]/g, ''); }
+    function matchesTeam(a, b) {
+      const x = normalize(a), y = normalize(b);
+      return x.includes(y) || y.includes(x);
+    }
+
+    fetch('data/football-data.json')
+      .then(r => r.json())
+      .then(data => {
+        const allMatches = data.matches || [];
+        const table = {};
+
+        for (const div in clubsByDiv) {
+          clubsByDiv[div].forEach(name => {
+            table[name] = { team: name, div: divCode[div], p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 };
+          });
+        }
+
+        const nameToClub = {};
+        for (const div in clubsByDiv) {
+          clubsByDiv[div].forEach(name => { nameToClub[normalize(name)] = name; });
+        }
+        function resolveClub(espnName) {
+          const n = normalize(espnName);
+          if (nameToClub[n]) return nameToClub[n];
+          for (const key in nameToClub) {
+            if (key.includes(n) || n.includes(key)) return nameToClub[key];
+          }
+          return null;
+        }
+
+        allMatches.forEach(m => {
+          if (m.type !== 'league' || !m.completed || !m.home || !m.away) return;
+          if (m.home.score === null || m.away.score === null) return;
+
+          const homeClub = resolveClub(m.home.name);
+          const awayClub = resolveClub(m.away.name);
+          if (!homeClub || !awayClub) return;
+
+          const hs = m.home.score, as = m.away.score;
+
+          table[homeClub].p++; table[awayClub].p++;
+          table[homeClub].gf += hs; table[homeClub].ga += as;
+          table[awayClub].gf += as; table[awayClub].ga += hs;
+
+          if (hs > as) { table[homeClub].w++; table[homeClub].pts += 3; table[awayClub].l++; }
+          else if (hs < as) { table[awayClub].w++; table[awayClub].pts += 3; table[homeClub].l++; }
+          else { table[homeClub].d++; table[awayClub].d++; table[homeClub].pts++; table[awayClub].pts++; }
+        });
+
+        const rows = Object.values(table).map(r => ({
+          ...r,
+          gd: r.gf - r.ga,
+          ppg: r.p > 0 ? (r.pts / r.p) : 0
+        }));
+
+        rows.sort((a, b) => b.ppg - a.ppg || b.gd - a.gd || b.gf - a.gf);
+
+        let html = '<table class="ct-table"><thead><tr>';
+        html += '<th>#</th><th>Club</th><th>Pld</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th><th>PPG</th>';
+        html += '</tr></thead><tbody>';
+
+        rows.forEach((r, i) => {
+          html += `<tr>
+            <td class="ct-pos-cell">${i + 1}</td>
+            <td class="ct-team-cell">${r.team}<span class="ct-div-tag">${divNames[r.div]}</span></td>
+            <td>${r.p}</td>
+            <td>${r.w}</td>
+            <td>${r.d}</td>
+            <td>${r.l}</td>
+            <td>${r.gd > 0 ? '+' : ''}${r.gd}</td>
+            <td><b>${r.pts}</b></td>
+            <td class="ct-ppg-cell">${r.ppg.toFixed(2)}</td>
+          </tr>`;
+        });
+
+        html += '</tbody></table>';
+        document.getElementById('ct-container').innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById('ct-container').innerHTML =
+          '<div class="status-box">Couldn\'t load the combined table right now. Try refreshing.</div>';
+      });
+  </script>
 </body>
 </html>

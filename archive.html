@@ -4,7 +4,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — The92Weekly</title>
+<title>The Archive — The92Weekly</title>
 <meta name="description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
 <meta property="og:title" content="The92Weekly">
 <meta property="og:description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
@@ -396,6 +396,24 @@
     .sticky-join-text { font-size: 12px; max-width: none; }
   }
 
+
+  /* ---------- The Archive ---------- */
+  .arc-intro { max-width: 62ch; color: var(--ink-muted); font-size: 15px; margin-bottom: 32px; }
+  .arc-date-header {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--gold); margin-bottom: 20px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .arc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 44px; }
+  .arc-card { background: #FFFFFF; padding: 24px; }
+  .arc-card-div {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--gold); margin-bottom: 10px;
+  }
+  .arc-card-year { font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .arc-card-title { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15.5px; margin-bottom: 10px; line-height: 1.3; }
+  .arc-card p { font-size: 13.5px; color: var(--ink-muted); }
+  @media (max-width: 700px) { .arc-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -459,46 +477,39 @@
   </header>
 
   <main>
-    <div class="eyebrow">About</div>
-    <h1>Most football coverage stops at the Premier League. We think the best stories are everywhere else.</h1>
+    <div class="eyebrow">The Archive</div>
+    <h1>On this day, across the whole pyramid.</h1>
+    <p class="arc-intro">Every entry here covers all four divisions on the same date — one genuine moment from the Premier League, the Championship, League One and League Two. Real history only, nothing invented. This one's a template, ready for real research to fill in.</p>
 
-    <p class="lead">The92Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
-
-    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
-
-    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
-
-    <hr class="divider">
-
-    <h2>What you'll get</h2>
-    <ul class="principles">
-      <li>
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>Every division treated as one story</h3>
-          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Depth over speed</h3>
-          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Written by a fan, not a wire service</h3>
-          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="contact-box">
-      <p>Got a story from your division that's crying out for more attention? Tell us — we're always listening.</p>
-      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+    <div class="arc-date-header">[Weekday], [Day] [Month]</div>
+    <div class="arc-grid">
+      <div class="arc-card">
+        <div class="arc-card-div">Premier League</div>
+        <div class="arc-card-year">[Year]</div>
+        <div class="arc-card-title">[The genuine moment — a result, a record, a comeback, something that actually happened on this date]</div>
+        <p>[2-3 sentences on why it mattered. Real facts only — a date, a scoreline, a name, something checkable.]</p>
+      </div>
+      <div class="arc-card">
+        <div class="arc-card-div">Championship</div>
+        <div class="arc-card-year">[Year]</div>
+        <div class="arc-card-title">[The genuine moment — a result, a record, a comeback, something that actually happened on this date]</div>
+        <p>[2-3 sentences on why it mattered. Real facts only — a date, a scoreline, a name, something checkable.]</p>
+      </div>
+      <div class="arc-card">
+        <div class="arc-card-div">League One</div>
+        <div class="arc-card-year">[Year]</div>
+        <div class="arc-card-title">[The genuine moment — a result, a record, a comeback, something that actually happened on this date]</div>
+        <p>[2-3 sentences on why it mattered. Real facts only — a date, a scoreline, a name, something checkable.]</p>
+      </div>
+      <div class="arc-card">
+        <div class="arc-card-div">League Two</div>
+        <div class="arc-card-year">[Year]</div>
+        <div class="arc-card-title">[The genuine moment — a result, a record, a comeback, something that actually happened on this date]</div>
+        <p>[2-3 sentences on why it mattered. Real facts only — a date, a scoreline, a name, something checkable.]</p>
+      </div>
     </div>
+
+    <p style="color:var(--ink-muted); font-size:13.5px;">Want to help build this out? Send me a date and I'll research genuine, verified moments from each division to seed it properly.</p>
   </main>
 
   <footer>

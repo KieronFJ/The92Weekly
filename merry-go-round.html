@@ -4,7 +4,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — The92Weekly</title>
+<title>The Merry-Go-Round — The92Weekly</title>
 <meta name="description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
 <meta property="og:title" content="The92Weekly">
 <meta property="og:description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
@@ -396,6 +396,19 @@
     .sticky-join-text { font-size: 12px; max-width: none; }
   }
 
+
+  /* ---------- Merry-Go-Round ---------- */
+  .mgr-intro { max-width: 62ch; color: var(--ink-muted); font-size: 15px; margin-bottom: 32px; }
+  .mgr-list { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .mgr-item { background: #FFFFFF; padding: 18px 20px; }
+  .mgr-item-clubs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+  .mgr-club-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.03em; color: var(--gold);
+  }
+  .mgr-item-title { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px; margin-bottom: 6px; line-height: 1.35; }
+  .mgr-item-title a:hover { color: var(--gold); }
+  .mgr-item-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-muted); }
 </style>
 </head>
 <body>
@@ -459,45 +472,12 @@
   </header>
 
   <main>
-    <div class="eyebrow">About</div>
-    <h1>Most football coverage stops at the Premier League. We think the best stories are everywhere else.</h1>
+    <div class="eyebrow">The Merry-Go-Round</div>
+    <h1>Every managerial change, all 92 clubs.</h1>
+    <p class="mgr-intro">Sackings, resignations, appointments — tracked automatically across every division, not just the six clubs the national press bothers with. Pulled from the same news feed as Club News, filtered specifically for manager stories.</p>
 
-    <p class="lead">The92Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
-
-    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
-
-    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
-
-    <hr class="divider">
-
-    <h2>What you'll get</h2>
-    <ul class="principles">
-      <li>
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>Every division treated as one story</h3>
-          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Depth over speed</h3>
-          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Written by a fan, not a wire service</h3>
-          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="contact-box">
-      <p>Got a story from your division that's crying out for more attention? Tell us — we're always listening.</p>
-      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+    <div class="mgr-list" id="mgr-list">
+      <div class="status-box">Loading manager news…</div>
     </div>
   </main>
 
@@ -707,5 +687,50 @@
     </div>
   </div>
 
+
+  <script>
+    const MANAGER_KEYWORDS = [
+      'sack', 'sacked', 'sacking', 'appoint', 'appointed', 'appointment',
+      'resign', 'resigns', 'resignation', 'steps down', 'stepped down',
+      'parts company', 'parted company', 'new manager', 'new head coach',
+      'interim manager', 'interim boss', 'named manager', 'named as manager',
+      'takes charge', 'relieved of', 'leaves role', 'leaves his role',
+      'departs', 'departure', 'unveiled as manager', 'confirmed as manager'
+    ];
+
+    function looksLikeManagerNews(item) {
+      const text = ((item.title || '') + ' ' + (item.summary || '')).toLowerCase();
+      return MANAGER_KEYWORDS.some(k => text.includes(k));
+    }
+
+    fetch('data/club-news.json')
+      .then(r => r.json())
+      .then(data => {
+        const items = (data.items || []).filter(looksLikeManagerNews);
+        const list = document.getElementById('mgr-list');
+
+        if (items.length === 0) {
+          list.innerHTML = '<div class="status-box">No manager news right now — check back soon.</div>';
+          return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+          const dateStr = new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+          const clubTags = item.clubs.map(c => `<span class="mgr-club-tag">${c}</span>`).join('');
+          html += `
+            <div class="mgr-item">
+              <div class="mgr-item-clubs">${clubTags}</div>
+              <div class="mgr-item-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
+              <div class="mgr-item-meta">${dateStr} · via ${item.source}</div>
+            </div>`;
+        });
+        list.innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById('mgr-list').innerHTML =
+          '<div class="status-box">Couldn\'t load manager news right now. Try refreshing.</div>';
+      });
+  </script>
 </body>
 </html>

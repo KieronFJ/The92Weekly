@@ -4,7 +4,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — The92Weekly</title>
+<title>Under The Radar — The92Weekly</title>
 <meta name="description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
 <meta property="og:title" content="The92Weekly">
 <meta property="og:description" content="Find out what The92Weekly is about — comprehensive coverage of all 92 English football clubs, built by a fan for fans who care about more than just the top six.">
@@ -396,6 +396,32 @@
     .sticky-join-text { font-size: 12px; max-width: none; }
   }
 
+
+  /* ---------- Under The Radar ---------- */
+  .utr-intro { max-width: 62ch; color: var(--ink-muted); font-size: 15px; margin-bottom: 40px; }
+  .utr-card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 28px; margin-bottom: 24px;
+  }
+  .utr-card-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .utr-name { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 21px; }
+  .utr-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; color: #FFFFFF; background: var(--gold); padding: 3px 9px; border-radius: 10px;
+  }
+  .utr-meta-row {
+    display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .utr-meta-item { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .utr-meta-item b { display: block; font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--ink); margin-top: 2px; }
+  .utr-section { margin-bottom: 16px; }
+  .utr-section:last-child { margin-bottom: 0; }
+  .utr-section-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--gold); margin-bottom: 6px;
+  }
+  .utr-section p { font-size: 14px; color: var(--ink-muted); line-height: 1.65; }
 </style>
 </head>
 <body>
@@ -459,46 +485,81 @@
   </header>
 
   <main>
-    <div class="eyebrow">About</div>
-    <h1>Most football coverage stops at the Premier League. We think the best stories are everywhere else.</h1>
+    <div class="eyebrow">Under The Radar</div>
+    <h1>Who are they, and what do they actually do?</h1>
+    <p class="utr-intro">New signings from abroad, or players who've arrived at clubs most people don't pay attention to — the background, the role, and the early contributions, properly explained. The stuff a two-line transfer ticker never bothers with.</p>
 
-    <p class="lead">The92Weekly covers English football across all four divisions — Premier League, Championship, League One, League Two — as one connected system, not four separate stories.</p>
-
-    <p>The national press has six Premier League clubs on repeat and treats everything below it as an afterthought. But that's not where football actually happens for most of the country. It's where players get built before they're ready for the top flight, where relegated clubs either rebuild properly or spiral, and where the financial gap between divisions tells you more about the modern game than another transfer rumour ever will.</p>
-
-    <p>This is a weekly publication for people who already know the basics and want the version of football writing that connects the dots — how a Championship recruitment model predicts a Premier League one two seasons later, why a League Two forward is worth watching now, what a club's wage bill actually says about their season before ball is kicked.</p>
-
-    <hr class="divider">
-
-    <h2>What you'll get</h2>
-    <ul class="principles">
-      <li>
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>Every division treated as one story</h3>
-          <p>Promotion, relegation, loan pipelines, recruitment patterns — followed across tiers, not siloed by league.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Depth over speed</h3>
-          <p>No live-blogging transfer deadline day. One weekly send, written properly, with the analysis the daily news cycle skips.</p>
-        </div>
-      </li>
-      <li>
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Written by a fan, not a wire service</h3>
-          <p>An Ipswich Town supporter's-eye view of English football — genuine lower-league affection, not a parachuted-in national angle.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="contact-box">
-      <p>Got a story from your division that's crying out for more attention? Tell us — we're always listening.</p>
-      <a class="email" href="mailto:hello@92weekly.com">hello@92weekly.com</a>
+    <div class="utr-card">
+      <div class="utr-card-top">
+        <div class="utr-name">[Player Name]</div>
+        <span class="utr-tag">New Arrival</span>
+      </div>
+      <div class="utr-meta-row">
+        <div class="utr-meta-item">Club<b>[Club]</b></div>
+        <div class="utr-meta-item">Position<b>[Position]</b></div>
+        <div class="utr-meta-item">Signed From<b>[Previous club, country]</b></div>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">The Background</div>
+        <p>[Where they actually came from — the league, the club, what they were known for before signing. Real, checkable facts only.]</p>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">The Role</div>
+        <p>[What they actually do on the pitch — position, style, what the manager's likely signed them to fix or add.]</p>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">Early Impact</div>
+        <p>[How it's gone so far, or what to watch for if they haven't played much yet.]</p>
+      </div>
     </div>
+    <div class="utr-card">
+      <div class="utr-card-top">
+        <div class="utr-name">[Player Name]</div>
+        <span class="utr-tag">New Arrival</span>
+      </div>
+      <div class="utr-meta-row">
+        <div class="utr-meta-item">Club<b>[Club]</b></div>
+        <div class="utr-meta-item">Position<b>[Position]</b></div>
+        <div class="utr-meta-item">Signed From<b>[Previous club, country]</b></div>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">The Background</div>
+        <p>[Where they actually came from — the league, the club, what they were known for before signing. Real, checkable facts only.]</p>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">The Role</div>
+        <p>[What they actually do on the pitch — position, style, what the manager's likely signed them to fix or add.]</p>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">Early Impact</div>
+        <p>[How it's gone so far, or what to watch for if they haven't played much yet.]</p>
+      </div>
+    </div>
+    <div class="utr-card">
+      <div class="utr-card-top">
+        <div class="utr-name">[Player Name]</div>
+        <span class="utr-tag">New Arrival</span>
+      </div>
+      <div class="utr-meta-row">
+        <div class="utr-meta-item">Club<b>[Club]</b></div>
+        <div class="utr-meta-item">Position<b>[Position]</b></div>
+        <div class="utr-meta-item">Signed From<b>[Previous club, country]</b></div>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">The Background</div>
+        <p>[Where they actually came from — the league, the club, what they were known for before signing. Real, checkable facts only.]</p>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">The Role</div>
+        <p>[What they actually do on the pitch — position, style, what the manager's likely signed them to fix or add.]</p>
+      </div>
+      <div class="utr-section">
+        <div class="utr-section-label">Early Impact</div>
+        <p>[How it's gone so far, or what to watch for if they haven't played much yet.]</p>
+      </div>
+    </div>
+
+    <p style="color:var(--ink-muted); font-size:13.5px; margin-top:8px;">Got a specific player in mind? Send me the name and I'll research their real background properly to fill this in.</p>
   </main>
 
   <footer>
