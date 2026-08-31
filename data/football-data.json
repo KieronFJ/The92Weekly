@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T21:11:58.039Z",
+  "updatedAt": "2026-08-31T21:21:52.202Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6397,21 +6397,55 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-08-31T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "64'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "362",
         "name": "Aston Villa",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "359",
         "name": "Arsenal",
-        "score": null
+        "score": 1
       },
       "venue": "Villa Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Bukayo Saka",
+          "minute": "59'",
+          "team": "Arsenal",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Christos Tzolis",
+          "minute": "29'",
+          "team": "Arsenal",
+          "card": "yellow"
+        },
+        {
+          "player": "Alysson",
+          "minute": "80'",
+          "team": "Aston Villa",
+          "card": "yellow"
+        },
+        {
+          "player": "John McGinn",
+          "minute": "81'",
+          "team": "Aston Villa",
+          "card": "yellow"
+        },
+        {
+          "player": "Ian Maatsen",
+          "minute": "90'+6'",
+          "team": "Aston Villa",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879288",
