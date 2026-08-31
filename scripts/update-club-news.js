@@ -471,7 +471,7 @@ function parseRSS(xml, fallbackSource) {
 const FETCH_TIMEOUT_MS = 8000;
 
 
-async function fetchFeed(feed) {
+async function fetchFeedOnce(feed) {
 
   const controller =
     new AbortController();
@@ -555,6 +555,36 @@ async function fetchFeed(feed) {
     clearTimeout(timer);
 
   }
+
+}
+
+
+function isTransientError(message) {
+  if (!message) return false;
+  return (
+    message.includes('timeout') ||
+    message.includes('503') ||
+    message.includes('502') ||
+    message.includes('429')
+  );
+}
+
+async function fetchFeed(feed) {
+
+  const first = await fetchFeedOnce(feed);
+
+  if (first.success || !isTransientError(first.error)) {
+    return first;
+  }
+
+  // Transient failures (timeouts, 502/503/429) are often just a source
+  // being briefly overwhelmed — especially likely across ~280 small,
+  // individually-hosted club/fan sites hit in one run. One short-delayed
+  // retry recovers a meaningful chunk of these without much extra cost.
+  await new Promise(resolve => setTimeout(resolve, 1500));
+
+  console.log(`Retrying ${feed.name}...`);
+  return fetchFeedOnce(feed);
 
 }
 
@@ -1317,7 +1347,7 @@ async function main() {
     Math.max(
       10,
       Math.floor(
-        FEEDS.length * 0.10
+        FEEDS.length * 0.05
       )
     );
 
