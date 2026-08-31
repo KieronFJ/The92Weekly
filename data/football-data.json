@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T18:41:50.064Z",
+  "updatedAt": "2026-08-31T18:52:01.464Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3169,22 +3169,7 @@
         "score": 0
       },
       "venue": "Valley Parade",
-      "source": "ESPN",
-      "goals": [],
-      "cards": [
-        {
-          "player": "Henry Cartwright",
-          "minute": "44'",
-          "team": "Bradford City",
-          "card": "yellow"
-        },
-        {
-          "player": "Ibou Touray",
-          "minute": "90'+3'",
-          "team": "Bradford City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908125",
@@ -3206,77 +3191,7 @@
         "score": 2
       },
       "venue": "St. James' Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Isaac Price",
-          "minute": "19'",
-          "team": "West Bromwich Albion",
-          "ownGoal": false
-        },
-        {
-          "player": "Bazoumana Touré",
-          "minute": "38'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        },
-        {
-          "player": "Harvey Barnes",
-          "minute": "48'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        },
-        {
-          "player": "Harvey Barnes",
-          "minute": "81'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Sean Steur",
-          "minute": "18'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        },
-        {
-          "player": "Rabby Nzingoula",
-          "minute": "52'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Ousmane Diakite",
-          "minute": "55'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Barney Stewart",
-          "minute": "62'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Ewen Jaouen",
-          "minute": "77'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        },
-        {
-          "player": "Isaac Price",
-          "minute": "77'",
-          "team": "West Bromwich Albion",
-          "card": "red"
-        },
-        {
-          "player": "Jacob Ramsey",
-          "minute": "89'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908140",
@@ -3298,59 +3213,7 @@
         "score": 1
       },
       "venue": "Tottenham Hotspur Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Mikey Moore",
-          "minute": "41'",
-          "team": "Tottenham Hotspur",
-          "ownGoal": false
-        },
-        {
-          "player": "Dominic Solanke",
-          "minute": "45'",
-          "team": "Tottenham Hotspur",
-          "ownGoal": false
-        },
-        {
-          "player": "Kevin Danso",
-          "minute": "67'",
-          "team": "Tottenham Hotspur",
-          "ownGoal": false
-        },
-        {
-          "player": "Sávio",
-          "minute": "82'",
-          "team": "Tottenham Hotspur",
-          "ownGoal": false
-        },
-        {
-          "player": "Ben Davies",
-          "minute": "85'",
-          "team": "Tottenham Hotspur",
-          "ownGoal": false
-        },
-        {
-          "player": "Lloyd Jones",
-          "minute": "87'",
-          "team": "Charlton Athletic",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Lucas Bergvall",
-          "minute": "24'",
-          "team": "Tottenham Hotspur",
-          "card": "yellow"
-        },
-        {
-          "player": "Robert Apter",
-          "minute": "45'+2'",
-          "team": "Charlton Athletic",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401908123",
