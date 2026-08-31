@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T13:41:51.914Z",
+  "updatedAt": "2026-08-31T13:51:58.809Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7942,28 +7942,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401914282",
-      "competition": "Carabao Cup",
-      "competitionCode": "eng.league_cup",
-      "type": "cup",
-      "date": "2026-09-09T18:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, September 9th at 2:45 PM EDT",
-      "home": {
-        "id": "368",
-        "name": "Everton",
-        "score": null
-      },
-      "away": {
-        "id": "380",
-        "name": "Wolverhampton Wanderers",
-        "score": null
-      },
-      "venue": "Hill Dickinson Stadium",
-      "source": "ESPN"
-    },
-    {
       "id": "401880272",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -9262,6 +9240,50 @@
       "source": "ESPN"
     },
     {
+      "id": "401914257",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-15T19:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 15th at 3:00 PM EDT",
+      "home": {
+        "id": "364",
+        "name": "Liverpool",
+        "score": null
+      },
+      "away": {
+        "id": "367",
+        "name": "Tottenham Hotspur",
+        "score": null
+      },
+      "venue": "Anfield",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914282",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-16T18:45Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Wed, September 16th at 2:45 PM EDT",
+      "home": {
+        "id": "368",
+        "name": "Everton",
+        "score": null
+      },
+      "away": {
+        "id": "380",
+        "name": "Wolverhampton Wanderers",
+        "score": null
+      },
+      "venue": "Hill Dickinson Stadium",
+      "source": "ESPN"
+    },
+    {
       "id": "401914266",
       "competition": "Carabao Cup",
       "competitionCode": "eng.league_cup",
@@ -9303,28 +9325,6 @@
         "score": null
       },
       "venue": "Coventry Building Society Arena",
-      "source": "ESPN"
-    },
-    {
-      "id": "401914257",
-      "competition": "Carabao Cup",
-      "competitionCode": "eng.league_cup",
-      "type": "cup",
-      "date": "2026-09-16T19:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, September 16th at 3:00 PM EDT",
-      "home": {
-        "id": "364",
-        "name": "Liverpool",
-        "score": null
-      },
-      "away": {
-        "id": "367",
-        "name": "Tottenham Hotspur",
-        "score": null
-      },
-      "venue": "Anfield",
       "source": "ESPN"
     },
     {
