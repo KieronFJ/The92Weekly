@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T14:11:59.377Z",
+  "updatedAt": "2026-08-31T14:21:52.323Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9218,28 +9218,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401914285",
-      "competition": "Carabao Cup",
-      "competitionCode": "eng.league_cup",
-      "type": "cup",
-      "date": "2026-09-15T19:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 15th at 3:00 PM EDT",
-      "home": {
-        "id": "338",
-        "name": "Reading",
-        "score": null
-      },
-      "away": {
-        "id": "337",
-        "name": "Brentford",
-        "score": null
-      },
-      "venue": "Madejski Stadium",
-      "source": "ESPN"
-    },
-    {
       "id": "401914257",
       "competition": "Carabao Cup",
       "competitionCode": "eng.league_cup",
@@ -9259,6 +9237,28 @@
         "score": null
       },
       "venue": "Anfield",
+      "source": "ESPN"
+    },
+    {
+      "id": "401914285",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-15T19:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 15th at 3:00 PM EDT",
+      "home": {
+        "id": "338",
+        "name": "Reading",
+        "score": null
+      },
+      "away": {
+        "id": "337",
+        "name": "Brentford",
+        "score": null
+      },
+      "venue": "Madejski Stadium",
       "source": "ESPN"
     },
     {
