@@ -286,6 +286,26 @@
 .full-fixtures-button:hover {
   background: #ffffff;
 }
+  .team-news-section { margin-top: 32px; }
+  .team-news-head { margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid rgba(128,128,128,0.35); }
+  .team-news-head h2 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; }
+  .team-news-item {
+    background: #FFFFFF; border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .team-news-item:last-child { margin-bottom: 0; }
+  .team-news-item-title {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px; margin-bottom: 6px; line-height: 1.35;
+  }
+  .team-news-item-title a:hover { color: var(--gold); }
+  .team-news-item-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-muted); }
+  .team-news-view-all-wrap { margin-top: 16px; text-align: center; }
+  .team-news-view-all-button {
+    display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13.5px;
+    color: var(--gold);
+  }
+  .team-news-view-all-button:hover { text-decoration: underline; }
+
   .fan-views-head { margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid rgba(128,128,128,0.35); }
   .fan-views-head h2 {
     font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px;
@@ -531,6 +551,18 @@
       <div class="status-box">Digging up their recent form…</div>
     </div>
 
+    <div class="team-news-section">
+      <div class="team-news-head">
+        <h2 class="display" id="team-news-heading">Latest News</h2>
+      </div>
+      <div id="team-news-list">
+        <div class="status-box">Loading recent news…</div>
+      </div>
+      <div class="team-news-view-all-wrap">
+        <a href="#" id="team-news-view-all" class="team-news-view-all-button">View all recent articles →</a>
+      </div>
+    </div>
+
     <div class="fan-views-section">
       <div class="fan-views-head">
         <h2 class="display">What fans are saying</h2>
@@ -654,6 +686,40 @@
     }
 
     const loadMatches = loadFromDataFile();
+
+    // Latest club news for this team
+    document.getElementById('team-news-heading').textContent = `Latest ${teamName} News`;
+    document.getElementById('team-news-view-all').href = `club-news.html?club=${encodeURIComponent(teamName)}`;
+
+    fetch('data/club-news.json')
+      .then(r => r.ok ? r.json() : { items: [] })
+      .then(data => {
+        const items = (data.items || []).filter(item =>
+          (item.clubs || []).some(c => matchesTeam(c, teamName))
+        ).slice(0, 3);
+
+        const list = document.getElementById('team-news-list');
+        if (items.length === 0) {
+          list.innerHTML = '<div class="status-box">No recent news for this club yet — check back soon.</div>';
+          return;
+        }
+
+        let html = '';
+        items.forEach(item => {
+          const dateStr = new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+          html += `
+            <div class="team-news-item">
+              <div class="team-news-item-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
+              <div class="team-news-item-meta">${dateStr} · via ${item.source}</div>
+            </div>`;
+        });
+        list.innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById('team-news-list').innerHTML =
+          '<div class="status-box">Couldn\\'t load recent news right now.</div>';
+      });
+
 
     const MANUAL_CUP_MATCHES = {
       "Barnsley": [ { date: "2026-08-25", competition: "Carabao Cup", team1: "Barnsley", team2: "Crewe Alexandra", score1: null, score2: null } ],
