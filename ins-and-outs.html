@@ -165,6 +165,17 @@
     text-align: right; min-width: 90px; flex-shrink: 0;
   }
 
+
+  .transfer-loading {
+    padding: 30px 0; color: var(--ink-muted); font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .transfer-item a.transfer-player { color: var(--ink); display: block; }
+  .transfer-item a.transfer-player:hover { color: var(--gold); }
+  .transfer-move a { color: var(--ink-muted); text-decoration: underline; text-underline-offset: 2px; }
+  .transfer-move a:hover { color: var(--gold); }
+  .transfer-empty { padding: 20px 0; color: var(--ink-muted); font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+  .transfer-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-muted); margin-top: 5px; }
+
   .division-heading {
     font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px;
     margin: 44px 0 4px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
@@ -369,62 +380,18 @@
   <main>
     <div class="eyebrow">Ins &amp; Outs</div>
     <h1>Who's moving, across all four divisions</h1>
-    <p class="sub">Who's in, who's out, and who's just paper talk — from the Premier League down to the depths of League Two.</p>
-    <span class="week-tag">Updated weekly</span>
+    <p class="sub">Live transfer coverage across the Premier League, Championship, League One and League Two, pulled from multiple football news sources.</p>
+    <span class="week-tag" id="transfer-updated">Checking for the latest updates…</span>
 
-    <div class="filter-row">
-      <span class="filter-pill active">All</span>
-      <span class="filter-pill">Confirmed</span>
-      <span class="filter-pill">Loan</span>
-      <span class="filter-pill">Rumour</span>
+    <div class="filter-row" id="transfer-filters">
+      <button class="filter-pill active" data-filter="all" type="button">All</button>
+      <button class="filter-pill" data-filter="confirmed" type="button">Confirmed</button>
+      <button class="filter-pill" data-filter="loan" type="button">Loan</button>
+      <button class="filter-pill" data-filter="rumour" type="button">Rumour</button>
     </div>
 
-    <div class="division-heading">Premier League</div>
-    <div class="transfer-item">
-      <span class="status-chip status-confirmed">Confirmed</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Selling Club] → <b>[Buying Club]</b></div>
-      </div>
-      <div class="transfer-fee">[£Xm]</div>
-    </div>
-    <div class="transfer-item">
-      <span class="status-chip status-rumour">Rumour</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Current Club] → <b>[Linked Club]</b></div>
-      </div>
-      <div class="transfer-fee">[Est. £Xm]</div>
-    </div>
-
-    <div class="division-heading">Championship</div>
-    <div class="transfer-item">
-      <span class="status-chip status-loan">Loan</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Parent Club] → <b>[Loan Club]</b></div>
-      </div>
-      <div class="transfer-fee">Season-long</div>
-    </div>
-
-    <div class="division-heading">League One</div>
-    <div class="transfer-item">
-      <span class="status-chip status-confirmed">Confirmed</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Selling Club] → <b>[Buying Club]</b></div>
-      </div>
-      <div class="transfer-fee">Free</div>
-    </div>
-
-    <div class="division-heading">League Two</div>
-    <div class="transfer-item">
-      <span class="status-chip status-rumour">Rumour</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Current Club] → <b>[Linked Club]</b></div>
-      </div>
-      <div class="transfer-fee">Undisclosed</div>
+    <div id="transfer-feed">
+      <div class="transfer-loading">Loading the latest transfer news…</div>
     </div>
   </main>
 
@@ -621,6 +588,83 @@
         });
       }
     });
+
+
+    // Live transfer-news feed. The GitHub Action updates data/transfers.json every 10 minutes.
+    const transferFeedEl = document.getElementById('transfer-feed');
+    const transferUpdatedEl = document.getElementById('transfer-updated');
+    const transferFiltersEl = document.getElementById('transfer-filters');
+    let transferStories = [];
+    let transferFilter = 'all';
+
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+    }
+
+    function formatTransferTime(value) {
+      if (!value) return 'Time unavailable';
+      const d = new Date(value);
+      if (Number.isNaN(d.getTime())) return value;
+      return d.toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+    }
+
+    function renderTransfers() {
+      if (!transferFeedEl) return;
+      const divisions = [1,2,3,4];
+      let html = '';
+      let total = 0;
+      divisions.forEach(div => {
+        const divisionStories = transferStories.filter(s => s.division === div && (transferFilter === 'all' || s.status.toLowerCase() === transferFilter));
+        html += `<div class="division-heading">${escapeHtml(divisionStories[0]?.divisionName || ({1:'Premier League',2:'Championship',3:'League One',4:'League Two'}[div]))}</div>`;
+        if (!divisionStories.length) {
+          html += '<div class="transfer-empty">No matching transfer stories found yet.</div>';
+          return;
+        }
+        total += divisionStories.length;
+        divisionStories.forEach(story => {
+          const cls = story.status.toLowerCase() === 'confirmed' ? 'status-confirmed' : story.status.toLowerCase() === 'loan' ? 'status-loan' : 'status-rumour';
+          html += `
+            <article class="transfer-item">
+              <span class="status-chip ${cls}">${escapeHtml(story.status)}</span>
+              <div class="transfer-main">
+                <a class="transfer-player" href="${escapeHtml(story.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(story.title)}</a>
+                <div class="transfer-move">${escapeHtml(story.source)} · ${escapeHtml(formatTransferTime(story.publishedAt))}</div>
+              </div>
+              <div class="transfer-fee"><a href="${escapeHtml(story.link)}" target="_blank" rel="noopener noreferrer">Read →</a></div>
+            </article>`;
+        });
+      });
+      transferFeedEl.innerHTML = html;
+      if (transferUpdatedEl) transferUpdatedEl.textContent = `Last checked ${new Date().toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'})} · ${total} stories shown · refreshes every 10 minutes`;
+    }
+
+    async function loadTransferNews() {
+      try {
+        const response = await fetch(`data/transfers.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        transferStories = Object.values(data.byDivision || {}).flat();
+        renderTransfers();
+      } catch (error) {
+        if (transferFeedEl) transferFeedEl.innerHTML = '<div class="transfer-empty">Transfer news could not be loaded right now. Please try again shortly.</div>';
+        if (transferUpdatedEl) transferUpdatedEl.textContent = 'Unable to load the latest transfer updates.';
+        console.error('Transfer news error:', error);
+      }
+    }
+
+    if (transferFiltersEl) {
+      transferFiltersEl.addEventListener('click', e => {
+        const button = e.target.closest('[data-filter]');
+        if (!button) return;
+        transferFilter = button.dataset.filter;
+        transferFiltersEl.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+        button.classList.add('active');
+        renderTransfers();
+      });
+    }
+
+    loadTransferNews();
+    setInterval(loadTransferNews, 10 * 60 * 1000);
 
 </script>
 
