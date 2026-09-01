@@ -209,7 +209,12 @@ async function main() {
           summary: item.summary.slice(0,260),
           link: item.link,
           source: item.source,
-          publishedAt: new Date(item.date || Date.now()).toISOString(),
+          publishedAt: (() => {
+  const date = new Date(item.date);
+  return Number.isNaN(date.getTime())
+    ? new Date().toISOString()
+    : date.toISOString();
+})(),
           status: status(item.title)
         });
       }
