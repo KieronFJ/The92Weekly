@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1426503007509475" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ins & Outs — The92Weekly</title>
+<meta name="description" content="The latest transfer ins and outs across all 92 English football clubs, tracked by The92Weekly across every division of the pyramid.">
+<meta property="og:title" content="The92Weekly">
+<meta property="og:description" content="The latest transfer ins and outs across all 92 English football clubs, tracked by The92Weekly across every division of the pyramid.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the92weekly.com/ins-and-outs.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --panel: #F6F5F1;
+    --line: #E3E0D8;
+    --line-soft: #EDEAE3;
+    --ink: #2E3136;
+    --ink-muted: #74787E;
+    --gold: #149954;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .display { font-family: 'Poppins', sans-serif; letter-spacing: 0.01em; }
+
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 6vw 10px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .nameplate { font-size: clamp(30px, 4.4vw, 40px); font-weight: 700; line-height: 1; text-transform: uppercase; display: inline-block; background: #FFFFFF; padding: 10px 18px; border-radius: 8px; border: 1.5px solid #000000; box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
+  .nameplate span { color: var(--gold); }
+  nav a, .nav-trigger {
+    font-family: 'Poppins', sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 0.01em; color: var(--ink); border-bottom: 2px solid transparent; padding: 0 0 4px 0; margin: 0;
+    background: none; border-top: none; border-left: none; border-right: none; cursor: pointer; white-space: nowrap;
+   
+  }
+  nav a:hover, nav a.active, .nav-trigger:hover, .nav-item.open .nav-trigger { color: var(--ink); border-bottom-color: var(--gold); }
+
+  .nav-item { position: relative; }
+  .nav-trigger { display: flex; align-items: center; gap: 5px; }
+  .nav-trigger::after { content: '▾'; font-size: 8px; position: relative; top: 1px; }
+
+  .dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 26px; min-width: 620px; max-width: min(90vw, 700px);
+    grid-template-columns: repeat(4, 1fr); gap: 22px;
+    z-index: 60; max-height: 68vh; overflow-y: auto;
+  }
+  .nav-item:hover .dropdown-panel, .nav-item.open .dropdown-panel { display: grid; }
+
+  .dropdown-col h4 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+    margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  .dropdown-col a {
+    display: block; position: relative; overflow: hidden;
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 600;
+    color: #FFFFFF; padding: 7px 10px; margin-bottom: 3px;
+    border-radius: 3px; transition: filter .12s, transform .12s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  }
+  .dropdown-col a:hover { filter: brightness(1.1); transform: translateX(2px); }
+
+  .dropdown-footer {
+    grid-column: 1 / -1; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+  }
+  .dropdown-footer a { color: var(--gold); }
+  .dropdown-footer a:hover { border-bottom: 1px solid var(--gold); }
+
+  .league-dropdown-panel {
+    display: none;
+    position: absolute; top: calc(100% + 21px); right: 0;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px; min-width: 200px;
+    flex-direction: column; gap: 2px;
+    z-index: 60;
+  }
+  .nav-item:hover .league-dropdown-panel, .nav-item.open .league-dropdown-panel { display: flex; }
+  .league-dropdown-panel a {
+    display: block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px;
+    color: var(--ink); padding: 10px 14px; border-radius: 4px;
+  }
+  .league-dropdown-panel a:hover { background: var(--bg); color: var(--gold); }
+
+  @media (max-width: 780px) {
+    .dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      border-left: none; border-right: none;
+      max-height: 60vh;
+    }
+    .league-dropdown-panel {
+      position: fixed; left: 0; right: 0; top: auto;
+      min-width: 0; max-width: none; width: 100%;
+      border-left: none; border-right: none;
+      max-height: 60vh; overflow-y: auto;
+    }
+  }
+
+  main { max-width: 900px; margin: 0 auto; padding: 20px 6vw 80px; }
+
+  .eyebrow {
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--gold); }
+
+  h1 {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: clamp(28px, 4.4vw, 44px);
+    margin-bottom: 12px; line-height: 1.1;
+  }
+  main > p.sub { color: var(--ink-muted); font-size: 16px; margin-bottom: 12px; max-width: 60ch; }
+  .week-tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted); margin-bottom: 40px; display: block; }
+
+  .filter-row { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
+  .filter-pill {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.02em;
+    padding: 6px 14px; border: 1px solid var(--line); border-radius: 20px; color: var(--ink-muted);
+  }
+  .filter-pill.active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
+
+  .transfer-item {
+    display: flex; align-items: center; gap: 20px;
+    padding: 20px 0; border-bottom: 1px solid var(--line-soft);
+    flex-wrap: wrap;
+  }
+  .transfer-item:last-child { border-bottom: none; }
+
+  .status-chip {
+    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; padding: 4px 10px; border-radius: 5px;
+    flex-shrink: 0; min-width: 78px; text-align: center;
+  }
+  .status-confirmed { background: #3E8A4D; color: #FFFFFF; }
+  .status-loan { background: #2E5C8A; color: #FFFFFF; }
+  .status-rumour { background: var(--panel); color: var(--ink-muted); border: 1px solid var(--line); }
+
+  .transfer-main { flex: 1; min-width: 220px; }
+  .transfer-player { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px; margin-bottom: 3px; }
+  .transfer-move { font-size: 14.5px; color: var(--ink-muted); }
+  .transfer-move b { color: var(--ink); font-weight: 600; }
+
+  .transfer-fee {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink-muted);
+    text-align: right; min-width: 90px; flex-shrink: 0;
+  }
+
+  .division-heading {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px;
+    margin: 44px 0 4px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  }
+  .division-heading:first-of-type { margin-top: 0; }
+
+  footer {
+    max-width: 900px; margin: 0 auto; padding: 40px 6vw 56px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); margin-top: 40px;
+  }
+  footer p { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links { display: flex; gap: 18px; }
+  .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ink-muted); }
+  .footer-links a:hover { color: var(--gold); }
+
+  @media (max-width: 600px) {
+    .transfer-item { gap: 12px; }
+    .transfer-fee { text-align: left; margin-top: 4px; }
+  }
+
+  /* ---------- Sidebar Navigation ---------- */
+  .menu-toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 34px; height: 34px; padding: 0; border: none; background: none; cursor: pointer;
+  }
+  .menu-toggle span {
+    display: block; width: 100%; height: 3px; background: var(--ink); border-radius: 2px;
+  }
+  .sidebar-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 150;
+  }
+  .sidebar-overlay.open { display: block; }
+  .sidebar-menu {
+    position: fixed; top: 0; left: -100%; width: min(86vw, 320px); height: 100vh;
+    background: #FFFFFF; z-index: 200; overflow-y: auto;
+    transition: left 0.25s ease;
+    box-shadow: 2px 0 20px rgba(0,0,0,0.15);
+  }
+  .sidebar-menu.open { left: 0; }
+  .sidebar-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; border-bottom: 1px solid var(--line);
+  }
+  .sidebar-logo {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; color: var(--ink);
+    display: inline-block; background: #FFFFFF; padding: 8px 14px; border-radius: 8px;
+    border: 1.5px solid #000000;
+  }
+  .sidebar-logo span { color: var(--gold); }
+  .sidebar-close {
+    width: 32px; height: 32px; border: none; background: none; cursor: pointer;
+    font-size: 26px; line-height: 1; color: var(--ink-muted);
+  }
+  .sidebar-nav { padding: 6px 0 20px; }
+  .sidebar-nav > a {
+    display: block; padding: 9px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
+    font-size: 14.5px; color: var(--ink); border-bottom: 1px solid var(--line-soft);
+  }
+  .sidebar-nav-sub {
+    display: block; font-family: 'Source Serif 4', serif; font-weight: 400; font-style: italic;
+    font-size: 11px; color: var(--ink-muted); margin-top: 1px;
+  }
+  .sidebar-section { border-bottom: 1px solid var(--line-soft); }
+  .sidebar-section-toggle {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 9px 20px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px;
+    color: var(--ink); background: none; border: none; cursor: pointer; text-align: left;
+  }
+  .sidebar-chevron { font-size: 12px; color: var(--ink-muted); transition: transform 0.2s; }
+  .sidebar-section.open > .sidebar-section-toggle > .sidebar-chevron { transform: rotate(180deg); }
+  .sidebar-submenu {
+    max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
+    background: var(--panel);
+  }
+  .sidebar-section.open .sidebar-submenu { max-height: 10000px; }
+  .sidebar-submenu a {
+    display: block; padding: 8px 20px 8px 34px; font-family: 'Poppins', sans-serif; font-size: 13.5px;
+    font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-soft);
+  }
+  .sidebar-submenu a:last-child { border-bottom: none; }
+  .sidebar-league-group { border-bottom: 1px solid var(--line-soft); }
+  .sidebar-league-toggle {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 20px 10px 34px; font-family: 'Poppins', sans-serif; font-size: 14px;
+    font-weight: 600; color: var(--ink);
+    background: none; border: none; cursor: pointer; text-align: left;
+  }
+  .sidebar-league-group .sidebar-chevron { font-size: 10px; }
+  .sidebar-league-group.open .sidebar-chevron { transform: rotate(180deg); }
+  .sidebar-league-clubs {
+    max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
+    display: flex; flex-direction: column; gap: 4px; padding: 0 16px;
+  }
+  .sidebar-league-group.open .sidebar-league-clubs { max-height: 3000px; padding: 4px 16px 12px; }
+  .sidebar-club-tile {
+    display: flex !important; flex-direction: row !important;
+    align-items: center !important; gap: 10px; padding: 10px 14px 10px 8px;
+    min-height: 46px; box-sizing: border-box; border-radius: 6px;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14.5px; color: var(--ink);
+  }
+  .sidebar-club-badge {
+    width: 26px; height: 26px; object-fit: contain; flex-shrink: 0;
+    display: block !important; margin: 0;
+  }
+  .sidebar-full-directory {
+    display: block; padding: 12px 20px; font-family: 'Poppins', sans-serif; font-weight: 600;
+    font-size: 13.5px; color: var(--gold);
+  }
+
+
+  /* ---------- Sticky membership bar ---------- */
+  .sticky-join-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
+    background: var(--ink); color: #FFFFFF;
+    padding: 10px 6vw; display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap;
+    box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
+  }
+  .sticky-join-text {
+    font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 500;
+  }
+  .sticky-join-text b { color: var(--gold); }
+  .sticky-join-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .sticky-join-button {
+    display: inline-block; background: var(--gold); color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px;
+    padding: 8px 18px; border-radius: 6px; white-space: nowrap;
+  }
+  .sticky-join-button:hover { filter: brightness(1.08); }
+  .sticky-join-dismiss {
+    background: none; border: none; color: #8B8F94; font-size: 20px; line-height: 1;
+    cursor: pointer; padding: 4px;
+  }
+  .sticky-join-dismiss:hover { color: #FFFFFF; }
+  body.sticky-bar-visible { padding-bottom: 58px; }
+  @media (max-width: 600px) {
+    .sticky-join-bar { padding: 8px 4vw; }
+    .sticky-join-text { font-size: 12px; max-width: none; }
+  }
+
+
+  .transfer-list { margin-bottom: 30px; }
+  .transfer-item {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .transfer-top { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:7px; }
+  .transfer-player { font-family:'Poppins',sans-serif; font-weight:600; font-size:17px; line-height:1.35; }
+  .transfer-move { font-size:14px; color:var(--ink-muted); line-height:1.55; }
+  .transfer-move a { color:var(--ink); text-decoration:none; }
+  .transfer-move a:hover { color:var(--gold); }
+  .transfer-meta { margin-top:9px; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--ink-muted); }
+  .status-chip { display:inline-block; }
+  .division-heading { margin-top:44px; }
+  .empty-state { padding:24px 0 10px; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--ink-muted); }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <div><a href="index.html"><div class="nameplate display">THE<span>92</span>WEEKLY</div></a></div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <div class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">THE<span>92</span>WEEKLY</div>
+          <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
+        </div>
+                        <nav class="sidebar-nav">
+          <a href="membership.html">Membership<span class="sidebar-nav-sub">Join & unlock everything</span></a>
+
+          <div class="sidebar-section" id="sidebar-latest-section">
+            <button class="sidebar-section-toggle">Latest <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu">
+              <a href="index.html#latest">Latest Articles</a>
+              <a href="club-news.html">Club News</a>
+            </div>
+          </div>
+
+          <div class="sidebar-section" id="sidebar-teams-section">
+            <button class="sidebar-section-toggle">Teams <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu" id="sidebar-teams-submenu"></div>
+          </div>
+
+          <div class="sidebar-section" id="sidebar-tables-section">
+            <button class="sidebar-section-toggle">Tables <span class="sidebar-chevron">&#9660;</span></button>
+            <div class="sidebar-submenu">
+              <a href="tables.html?div=1">Premier League</a>
+              <a href="tables.html?div=2">Championship</a>
+              <a href="tables.html?div=3">League One</a>
+              <a href="tables.html?div=4">League Two</a>
+            </div>
+          </div>
+
+          <a href="ins-and-outs.html">Ins &amp; Outs<span class="sidebar-nav-sub">Transfer ins and outs</span></a>
+          <a href="combined-table.html">Combined Table<span class="sidebar-nav-sub">All 92 clubs, ranked together</span></a>
+          <a href="accumulator.html">Acca Tips<span class="sidebar-nav-sub">This week's betting picks</span></a>
+          <a href="team-of-the-week.html">Combined Team of the Week<span class="sidebar-nav-sub">Best XI, all 4 divisions</span></a>
+          <a href="match-of-the-tier.html">Match of the Tier<span class="sidebar-nav-sub">One match per division, weekly</span></a>
+          <a href="index.html#spotlight">Spotlight<span class="sidebar-nav-sub">Players to watch this week</span></a>
+          <a href="under-the-radar.html">Under The Radar<span class="sidebar-nav-sub">New signings, properly explained</span></a>
+          <a href="merry-go-round.html">The Merry-Go-Round<span class="sidebar-nav-sub">Every managerial change</span></a>
+          <a href="archive.html">The Archive<span class="sidebar-nav-sub">On this day, all 4 divisions</span></a>
+          <a href="fan-blogs.html">Fan Blogs<span class="sidebar-nav-sub">Member-written pieces</span></a>
+          <a href="polls.html">Polls<span class="sidebar-nav-sub">Vote & discuss</span></a>
+          <a href="groundhopper.html">Groundhopper's Companion<span class="sidebar-nav-sub">Track every ground you've visited</span></a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact<span class="sidebar-nav-sub">Get in touch, or write for us</span></a>
+        </nav>
+      </div>
+  </header>
+<main>
+    <div class="eyebrow">Ins &amp; Outs</div>
+    <h1>Who's moving, across all four divisions</h1>
+    <p class="sub">Live transfer coverage across the Premier League, Championship, League One and League Two, pulled from major football news sources.</p>
+    <span class="week-tag" id="update-status">Loading live transfer coverage…</span>
+
+    <div class="filter-row" id="filters">
+      <button class="filter-pill active" data-filter="All" type="button">All</button>
+      <button class="filter-pill" data-filter="Confirmed" type="button">Confirmed</button>
+      <button class="filter-pill" data-filter="Loan" type="button">Loan</button>
+      <button class="filter-pill" data-filter="Rumour" type="button">Rumour</button>
+    </div>
+
+    <div id="transfer-content"></div>
+  </main>
+<footer>
+    <p>THE92WEEKLY — Football across the pyramid.</p>
+    <div class="footer-links">
+      <a href="#">X / Twitter</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hello@92weekly.com">Contact</a>
+    </div>
+  </footer>
+
+  
+<script>
+  const clubColors = {
+    "Arsenal":"#EF0107","Aston Villa":"#670E36","Bournemouth":"#DA291C","Brentford":"#E30613","Brighton & Hove Albion":"#0057B8","Chelsea":"#034694","Coventry City":"#6CADDF","Crystal Palace":"#1B458F","Everton":"#003399","Fulham":"#1A1A1A","Hull City":"#F18A00","Ipswich Town":"#3A64A3","Leeds United":"#FFCD00","Liverpool":"#C8102E","Manchester City":"#6CABDD","Manchester United":"#DA291C","Newcastle United":"#111111","Nottingham Forest":"#DD0000","Sunderland":"#EB172F","Tottenham Hotspur":"#132257",
+    "Birmingham City":"#003090","Blackburn Rovers":"#009EE0","Bolton Wanderers":"#002B5C","Bristol City":"#E21C21","Burnley":"#6C1D45","Cardiff City":"#0070B5","Charlton Athletic":"#D2122E","Derby County":"#1A1A1A","Lincoln City":"#C8102E","Middlesbrough":"#E2231A","Millwall":"#1B3D6D","Norwich City":"#FFF200","Portsmouth":"#001489","Preston North End":"#0033A0","Queens Park Rangers":"#1D5BA4","Sheffield United":"#EE2737","Southampton":"#D71920","Stoke City":"#E03A3E","Swansea City":"#1A1A1A","Watford":"#FBEE23","West Bromwich Albion":"#122F67","West Ham United":"#7A263A","Wolverhampton Wanderers":"#FDB913","Wrexham":"#E31B23",
+    "Barnsley":"#ED1C24","Blackpool":"#F58220","Bradford City":"#7A1E27","Doncaster Rovers":"#E2231A","Huddersfield Town":"#0E63AD","Leyton Orient":"#D2122E","Luton Town":"#F68712","Mansfield Town":"#FDB913","Peterborough United":"#0044A9","Plymouth Argyle":"#007A3D","Reading":"#004494","Stevenage":"#B30E22","Stockport County":"#0E56A6","Wigan Athletic":"#1B458F","Wycombe Wanderers":"#1E3A8A","Burton Albion":"#FFD100","AFC Wimbledon":"#1B458F","Oxford United":"#FFD200","Leicester City":"#003090","Sheffield Wednesday":"#1B3E8C","Bromley":"#12284C","Milton Keynes Dons":"#E2231A","Cambridge United":"#FFD400","Notts County":"#1A1A1A",
+    "Accrington Stanley":"#D2122E","Barnet":"#FDB913","Bristol Rovers":"#0E56A6","Cheltenham Town":"#DD0000","Chesterfield":"#0E56A6","Colchester United":"#0E56A6","Crawley Town":"#D2122E","Crewe Alexandra":"#D2122E","Exeter City":"#D2122E","Fleetwood Town":"#D2122E","Gillingham":"#0E56A6","Grimsby Town":"#1A1A1A","Oldham Athletic":"#004996","Newport County":"#FDB913","Salford City":"#FDB913","Shrewsbury Town":"#0E56A6","Swindon Town":"#D2122E","Tranmere Rovers":"#12284C","Walsall":"#D2122E","Port Vale":"#D8A21B","Rotherham United":"#D2122E","Northampton Town":"#7A263A","York City":"#7A263A","Rochdale":"#0E56A6"
+  };
+
+  const clubsByDiv = {"1": ["Arsenal", "Aston Villa", "Bournemouth", "Brentford", "Brighton & Hove Albion", "Chelsea", "Coventry City", "Crystal Palace", "Everton", "Fulham", "Hull City", "Ipswich Town", "Leeds United", "Liverpool", "Manchester City", "Manchester United", "Newcastle United", "Nottingham Forest", "Sunderland", "Tottenham Hotspur"], "2": ["Birmingham City", "Blackburn Rovers", "Bolton Wanderers", "Bristol City", "Burnley", "Cardiff City", "Charlton Athletic", "Derby County", "Lincoln City", "Middlesbrough", "Millwall", "Norwich City", "Portsmouth", "Preston North End", "Queens Park Rangers", "Sheffield United", "Southampton", "Stoke City", "Swansea City", "Watford", "West Bromwich Albion", "West Ham United", "Wolverhampton Wanderers", "Wrexham"], "3": ["AFC Wimbledon", "Barnsley", "Blackpool", "Bradford City", "Bromley", "Burton Albion", "Cambridge United", "Doncaster Rovers", "Huddersfield Town", "Leicester City", "Leyton Orient", "Luton Town", "Mansfield Town", "Milton Keynes Dons", "Notts County", "Oxford United", "Peterborough United", "Plymouth Argyle", "Reading", "Sheffield Wednesday", "Stevenage", "Stockport County", "Wigan Athletic", "Wycombe Wanderers"], "4": ["Accrington Stanley", "Barnet", "Bristol Rovers", "Cheltenham Town", "Chesterfield", "Colchester United", "Crawley Town", "Crewe Alexandra", "Exeter City", "Fleetwood Town", "Gillingham", "Grimsby Town", "Newport County", "Northampton Town", "Oldham Athletic", "Port Vale", "Rochdale", "Rotherham United", "Salford City", "Shrewsbury Town", "Swindon Town", "Tranmere Rovers", "Walsall", "York City"]};
+  const divNames = {"1": "Premier League", "2": "Championship", "3": "League One", "4": "League Two"};
+
+  const panel = document.getElementById('teams-dropdown-panel');
+  if (panel) {
+    let html = '';
+    for (const div in clubsByDiv) {
+      html += `<div class="dropdown-col"><h4>${divNames[div]}</h4>`;
+      clubsByDiv[div].forEach(name => {
+        const c = clubColors[name] || '#149954';
+        html += `<a href="team.html?team=${encodeURIComponent(name)}&div=${div}" style="background:${c};">${name}</a>`;
+      });
+      html += `</div>`;
+    }
+    html += `<div class="dropdown-footer"><a href="teams.html">View full directory →</a></div>`;
+    panel.innerHTML = html;
+  }
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const sidebarMenu = document.getElementById('sidebar-menu');
+  const sidebarOverlay = document.getElementById('sidebar-overlay');
+  const sidebarClose = document.getElementById('sidebar-close');
+  function openSidebar(){ sidebarMenu && sidebarMenu.classList.add('open'); sidebarOverlay && sidebarOverlay.classList.add('open'); }
+  function closeSidebar(){ sidebarMenu && sidebarMenu.classList.remove('open'); sidebarOverlay && sidebarOverlay.classList.remove('open'); }
+  if (menuToggle) menuToggle.addEventListener('click', openSidebar);
+  if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+  if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSidebar(); });
+
+  document.querySelectorAll('.sidebar-section-toggle').forEach(btn => {
+    btn.addEventListener('click', () => btn.closest('.sidebar-section').classList.toggle('open'));
+  });
+
+  const statusLabel = document.getElementById('update-status');
+  const content = document.getElementById('transfer-content');
+  let currentFilter = 'All';
+  let transferData = null;
+
+  function formatDate(value) {
+    const d = new Date(value);
+    if (Number.isNaN(d.getTime())) return '';
+    return d.toLocaleString('en-GB', {
+      day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'
+    });
+  }
+
+  function esc(value) {
+    return String(value ?? '').replace(/[&<>"']/g, ch => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[ch]));
+  }
+
+  function renderTransfers() {
+    if (!transferData) return;
+    const all = [];
+    for (const division of [1,2,3,4]) {
+      (transferData.byDivision?.[division] || []).forEach(item => all.push(item));
+    }
+
+    const filtered = currentFilter === 'All'
+      ? all
+      : all.filter(item => item.status === currentFilter);
+
+    let html = '';
+
+    for (const division of [1,2,3,4]) {
+      const items = filtered.filter(item => Number(item.division) === division);
+      html += `<div class="division-heading">${esc(divNames[division])}</div>`;
+
+      if (!items.length) {
+        html += `<div class="empty-state">No matching transfer stories found yet.</div>`;
+        continue;
+      }
+
+      html += `<div class="transfer-list">`;
+      for (const item of items) {
+        const statusClass = item.status === 'Confirmed'
+          ? 'status-confirmed'
+          : item.status === 'Loan'
+            ? 'status-loan'
+            : 'status-rumour';
+
+        const clubs = Array.isArray(item.clubs) && item.clubs.length
+          ? ` · ${item.clubs.slice(0,3).map(esc).join(', ')}`
+          : '';
+
+        html += `
+          <article class="transfer-item">
+            <div class="transfer-top">
+              <span class="status-chip ${statusClass}">${esc(item.status)}</span>
+              <span class="transfer-meta">${esc(item.source || 'News')} · ${esc(formatDate(item.publishedAt))}</span>
+            </div>
+            <div class="transfer-player">
+              <a href="${esc(item.link)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a>
+            </div>
+            <div class="transfer-move">${esc(item.summary || '')}</div>
+            <div class="transfer-meta">${clubs}</div>
+          </article>`;
+      }
+      html += `</div>`;
+    }
+
+    content.innerHTML = html;
+  }
+
+  async function loadTransfers() {
+    try {
+      const response = await fetch('data/transfers.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      transferData = await response.json();
+
+      const total = Object.values(transferData.byDivision || {})
+        .reduce((n, arr) => n + (Array.isArray(arr) ? arr.length : 0), 0);
+
+      const checked = transferData.updatedAt
+        ? formatDate(transferData.updatedAt)
+        : 'unknown time';
+
+      statusLabel.textContent =
+        `Last checked ${checked} · ${total} stories shown · refreshes every 10 minutes`;
+
+      renderTransfers();
+    } catch (error) {
+      statusLabel.textContent =
+        'Transfer coverage is temporarily unavailable · trying again in 10 minutes';
+
+      if (!transferData) {
+        content.innerHTML = `<div class="empty-state">Transfer data could not be loaded yet. The automatic updater will try again.</div>`;
+      }
+    }
+  }
+
+  document.querySelectorAll('#filters .filter-pill').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('#filters .filter-pill').forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+      currentFilter = button.dataset.filter;
+      renderTransfers();
+    });
+  });
+
+  loadTransfers();
+  setInterval(loadTransfers, 10 * 60 * 1000);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const bar = document.getElementById('sticky-join-bar');
+    const dismissBtn = document.getElementById('sticky-join-dismiss');
+    if (!bar) return;
+    if (sessionStorage.getItem('the92weekly-bar-dismissed') === '1') return;
+    bar.style.display = 'flex';
+    document.body.classList.add('sticky-bar-visible');
+    if (dismissBtn) {
+      dismissBtn.addEventListener('click', function() {
+        bar.style.display = 'none';
+        document.body.classList.remove('sticky-bar-visible');
+        sessionStorage.setItem('the92weekly-bar-dismissed', '1');
+      });
+    }
+  });
+</script>
+
+
+  <div class="sticky-join-bar" id="sticky-join-bar" style="display:none;">
+    <div class="sticky-join-text">
+      <b>Founding membership is still open</b> — lock in £4.99/month before the price rises.
+    </div>
+    <div class="sticky-join-actions">
+      <a href="membership.html" class="sticky-join-button">Join now →</a>
+      <button class="sticky-join-dismiss" id="sticky-join-dismiss" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+</body>
+</html>
