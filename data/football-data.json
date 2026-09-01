@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T17:08:31.687Z",
+  "updatedAt": "2026-09-01T17:21:00.361Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -10166,28 +10166,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401879273",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-09-20T13:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sun, September 20th at 9:00 AM EDT",
-      "home": {
-        "id": "357",
-        "name": "Leeds United",
-        "score": null
-      },
-      "away": {
-        "id": "384",
-        "name": "Crystal Palace",
-        "score": null
-      },
-      "venue": "Elland Road",
-      "source": "ESPN"
-    },
-    {
       "id": "401879276",
       "competition": "Premier League",
       "competitionCode": "eng.1",
@@ -10207,6 +10185,28 @@
         "score": null
       },
       "venue": "Vitality Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879273",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-09-20T13:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, September 20th at 9:00 AM EDT",
+      "home": {
+        "id": "357",
+        "name": "Leeds United",
+        "score": null
+      },
+      "away": {
+        "id": "384",
+        "name": "Crystal Palace",
+        "score": null
+      },
+      "venue": "Elland Road",
       "source": "ESPN"
     },
     {
@@ -15556,28 +15556,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401878765",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-10-25T14:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sun, October 25th at 10:00 AM EDT",
-      "home": {
-        "id": "364",
-        "name": "Liverpool",
-        "score": null
-      },
-      "away": {
-        "id": "331",
-        "name": "Brighton & Hove Albion",
-        "score": null
-      },
-      "venue": "Anfield",
-      "source": "ESPN"
-    },
-    {
       "id": "401879254",
       "competition": "Premier League",
       "competitionCode": "eng.1",
@@ -15619,6 +15597,28 @@
         "score": null
       },
       "venue": "The MKM Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401878765",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-10-25T14:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, October 25th at 10:00 AM EDT",
+      "home": {
+        "id": "364",
+        "name": "Liverpool",
+        "score": null
+      },
+      "away": {
+        "id": "331",
+        "name": "Brighton & Hove Albion",
+        "score": null
+      },
+      "venue": "Anfield",
       "source": "ESPN"
     },
     {
@@ -16697,6 +16697,28 @@
         "score": null
       },
       "venue": "Tottenham Hotspur Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879250",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-10-31T20:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, October 31st at 4:00 PM EDT",
+      "home": {
+        "id": "362",
+        "name": "Aston Villa",
+        "score": null
+      },
+      "away": {
+        "id": "370",
+        "name": "Fulham",
+        "score": null
+      },
+      "venue": "Villa Park",
       "source": "ESPN"
     },
     {
@@ -38066,7 +38088,7 @@
     "eng.1": {
       "name": "Premier League",
       "success": true,
-      "matches": 267
+      "matches": 268
     },
     "eng.2": {
       "name": "Championship",
