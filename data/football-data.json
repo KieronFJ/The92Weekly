@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T18:21:56.815Z",
+  "updatedAt": "2026-09-01T18:37:42.347Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3257,29 +3257,7 @@
         "score": 0
       },
       "venue": "Stamford Bridge",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Danny Welbeck",
-          "minute": "50'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Hakeem Odofin",
-          "minute": "79'",
-          "team": "Chelsea",
-          "ownGoal": true
-        }
-      ],
-      "cards": [
-        {
-          "player": "Joseph Johnson",
-          "minute": "56'",
-          "team": "Luton Town",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401907948",
