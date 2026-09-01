@@ -39,7 +39,7 @@
 
   header {
     border-bottom: 1px solid var(--line);
-    padding: 28px 6vw 24px;
+    padding: 20px 6vw 10px;
     display: flex; justify-content: space-between; align-items: flex-end;
     flex-wrap: wrap; gap: 12px;
   }
@@ -351,7 +351,11 @@
     display: flex; align-items: center; justify-content: space-between;
     padding: 14px 20px; border-bottom: 1px solid var(--line);
   }
-  .sidebar-logo { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; color: var(--ink); }
+  .sidebar-logo {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; color: var(--ink);
+    display: inline-block; background: #FFFFFF; padding: 8px 14px; border-radius: 8px;
+    border: 1.5px solid #000000;
+  }
   .sidebar-logo span { color: var(--gold); }
   .sidebar-close {
     width: 32px; height: 32px; border: none; background: none; cursor: pointer;
@@ -381,7 +385,7 @@
   .sidebar-section.open .sidebar-submenu { max-height: 10000px; }
   .sidebar-submenu a {
     display: block; padding: 8px 20px 8px 34px; font-family: 'Poppins', sans-serif; font-size: 13.5px;
-    color: var(--ink-muted); border-bottom: 1px solid var(--line-soft);
+    font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-soft);
   }
   .sidebar-submenu a:last-child { border-bottom: none; }
   .sidebar-league-group { border-bottom: 1px solid var(--line-soft); }
@@ -489,6 +493,7 @@
           <a href="ins-and-outs.html">Ins &amp; Outs<span class="sidebar-nav-sub">Transfer ins and outs</span></a>
           <a href="combined-table.html">Combined Table<span class="sidebar-nav-sub">All 92 clubs, ranked together</span></a>
           <a href="accumulator.html">Acca Tips<span class="sidebar-nav-sub">This week's betting picks</span></a>
+          <a href="team-of-the-week.html">Combined Team of the Week<span class="sidebar-nav-sub">Best XI, all 4 divisions</span></a>
           <a href="match-of-the-tier.html">Match of the Tier<span class="sidebar-nav-sub">One match per division, weekly</span></a>
           <a href="index.html#spotlight">Spotlight<span class="sidebar-nav-sub">Players to watch this week</span></a>
           <a href="under-the-radar.html">Under The Radar<span class="sidebar-nav-sub">New signings, properly explained</span></a>
@@ -498,6 +503,7 @@
           <a href="polls.html">Polls<span class="sidebar-nav-sub">Vote & discuss</span></a>
           <a href="groundhopper.html">Groundhopper's Companion<span class="sidebar-nav-sub">Track every ground you've visited</span></a>
           <a href="about.html">About</a>
+          <a href="contact.html">Contact<span class="sidebar-nav-sub">Get in touch, or write for us</span></a>
         </nav>
       </div>
   </header>
