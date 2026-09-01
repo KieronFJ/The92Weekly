@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T18:56:28.041Z",
+  "updatedAt": "2026-09-01T19:04:45.890Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3279,41 +3279,7 @@
         "score": 0
       },
       "venue": "Craven Cottage",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Emile Smith Rowe",
-          "minute": "37'",
-          "team": "Fulham",
-          "ownGoal": false
-        },
-        {
-          "player": "Rodrigo Muniz",
-          "minute": "42'",
-          "team": "Fulham",
-          "ownGoal": false
-        },
-        {
-          "player": "Gonzalo García",
-          "minute": "90'+3'",
-          "team": "Fulham",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Kenny Tete",
-          "minute": "48'",
-          "team": "Fulham",
-          "card": "yellow"
-        },
-        {
-          "player": "Zack Nelson",
-          "minute": "82'",
-          "team": "AFC Wimbledon",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879294",
