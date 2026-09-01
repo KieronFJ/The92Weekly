@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-01T22:37:36.432Z",
+  "updatedAt": "2026-09-01T22:43:45.891Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea"
-        ],
-        "title": "Deal off! Monaco pull out of selling Fernandez replacement Camara to Chelsea",
-        "summary": "Monaco have pulled out of the deal to sell Lamine Camara to Chelsea - who feel the French club have acted in an extraordinary and deeply unprofessional way.",
-        "link": "https://www.skysports.com/football/news/12040/13580189/lamine-camara-monaco-pull-out-of-selling-midfielder-to-chelsea-in-47m-deal-after-blues-agreed-deal-for-enzo-fernandez-replacement",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-01T22:37:36.411Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -27,7 +14,7 @@
         "summary": "Manchester City have signed Enzo Fernandez from Chelsea for a joint-British-record fee of &#163;125m.",
         "link": "https://www.skysports.com/football/news/12040/13579972/enzo-fernandez-transfer-news-man-city-sign-midfielder-from-chelsea-in-british-record-equalling-125m-deal",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-01T22:37:36.411Z",
+        "publishedAt": "2026-09-01T22:43:45.865Z",
         "status": "Rumour"
       },
       {
@@ -41,7 +28,7 @@
         "summary": "Tottenham have signed Chelsea winger Mykhailo Mudryk on a season-long loan with an option to buy.",
         "link": "https://www.skysports.com/football/news/12040/13579537/mykhailo-mudryk-transfer-news-tottenham-sign-chelsea-winger-on-loan-as-tosin-joins-in-permanent-deal",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-01T22:37:36.411Z",
+        "publishedAt": "2026-09-01T22:43:45.865Z",
         "status": "Rumour"
       },
       {
@@ -54,7 +41,7 @@
         "summary": "No Julian Alvarez to Arsenal. He joins Morgan Rogers and Vinicius Junior in not moving to the Premier League champions this summer. And Mikel Arteta has missed out on the star attacker he wanted.",
         "link": "https://www.skysports.com/football/news/12040/13579965/arsenal-fail-to-sign-julian-alvarez-and-with-no-elite-attacker-in-are-mikel-artetas-team-short-in-the-forward-options",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-01T22:37:36.411Z",
+        "publishedAt": "2026-09-01T22:43:45.865Z",
         "status": "Rumour"
       },
       {
@@ -67,8 +54,36 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13279313/fulham-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-01T22:37:36.411Z",
+        "publishedAt": "2026-09-01T22:43:45.865Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Deal off! Monaco pull out of selling Fernandez replacement Camara to Chelsea",
+        "summary": "Monaco have pulled out of the deal to sell Lamine Camara to Chelsea - who feel the French club have acted in an extraordinary and deeply unprofessional way.",
+        "link": "https://www.skysports.com/football/news/12040/13580189/lamine-camara-monaco-pull-out-of-selling-midfielder-to-chelsea-in-47m-deal-after-blues-agreed-deal-for-enzo-fernandez-replacement",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-01T22:43:45.864Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Liverpool",
+          "Manchester United"
+        ],
+        "title": "Liverpool tried to sign Gusto - Wednesday's gossip",
+        "summary": "Football gossip: Liverpool made a late move for Chelsea defender Malo Gusto and Manchester United defenders on \"trial\" this season",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9qr4vw9eqgo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-09-01T22:40:28.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -126,21 +141,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea",
-          "Liverpool",
-          "Manchester United"
-        ],
-        "title": "Liverpool tried to sign Gusto - Wednesday's gossip",
-        "summary": "Football gossip: Liverpool made a late move for Chelsea defender Malo Gusto and Manchester United defenders on 'trial' this season",
-        "link": "https://www.bbc.co.uk/sport/football/articles/c9qr4vw9eqgo?at_medium=RSS&at_campaign=rss",
-        "source": "BBC Sport",
-        "publishedAt": "2026-09-01T22:03:03.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Everton",
           "Manchester City",
           "Manchester United"
@@ -151,6 +151,31 @@
         "source": "BBC Sport",
         "publishedAt": "2026-09-01T21:54:30.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs - Sky Sports",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxNOUkzY25NSzRMTzdkY0tCa2dQbTlpcV90QmY2c0JOWTFPb0VnRU1rUjJhbGVhRExlc0J2dG04cnZNdEFoRnRuaWQ1RktfTlhVbGFWeTY3R0daWnhuVk1lMGgxYm1BODFMQ1cxTGU5RTl1S1MxeHNaWWNMZWxwQXJ6TGdhYjEtY0M3QjBWWG15TWdBOURwX2pfRnJ",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOUkzY25NSzRMTzdkY0tCa2dQbTlpcV90QmY2c0JOWTFPb0VnRU1rUjJhbGVhRExlc0J2dG04cnZNdEFoRnRuaWQ1RktfTlhVbGFWeTY3R0daWnhuVk1lMGgxYm1BODFMQ1cxTGU5RTl1S1MxeHNaWWNMZWxwQXJ6TGdhYjEtY0M3QjBWWG15TWdBOURwX2pfRnJQUHZPUV9adHBYWVYwVjQzX1JlVW5sN0wtT3F6QmZ6UVM4S1NaVUJFY2M3eERTcmRR?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T21:36:43.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Tottenham"
+        ],
+        "title": "Mykhailo Mudryk transfer news: Tottenham sign Chelsea winger on loan with option to buy - Sky Sports",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTWNxVjJfS05iLXc3UVVIMTBHOU1KeEZYbXU1ZHVMUFNsajF4aWVKSWRVLUJQU1FrSU95NGN6OXVjaGRSUFN2bk5LWnVSX2R1Z2pyR3J5SWlaaE5oSWJLSEZDbHZZcE9nOVNTbFBHRE5nRHFmQ3NZMGliLXh5Zng2VXdObjRLLU5qZHd4RTVHZTdkRFhYUUlNcTJ",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTWNxVjJfS05iLXc3UVVIMTBHOU1KeEZYbXU1ZHVMUFNsajF4aWVKSWRVLUJQU1FrSU95NGN6OXVjaGRSUFN2bk5LWnVSX2R1Z2pyR3J5SWlaaE5oSWJLSEZDbHZZcE9nOVNTbFBHRE5nRHFmQ3NZMGliLXh5Zng2VXdObjRLLU5qZHd4RTVHZTdkRFhYUUlNcTJBeDZzeTRpb0U4bmNCY1BQbkYzNjlZWEdQSkFndDZlMDR0bkttb0RmOEpjWkh1VHdHeVpMR1BrU3NFV29KQU4?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T21:28:23.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -211,6 +236,20 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Chelsea",
+          "Tottenham"
+        ],
+        "title": "Mykhailo Mudryk transfer: Tottenham sign Chelsea winger on loan - BBC",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VTTZRM1BPZFhFV3V4M1FoRW1PY3B3MmEwSnF2OWZxR1g2OTl1aDNsbFRBakpNWjJUN0EtbDhVeUwwdmxadHBSVnZISG0tWUNyZ1NVOTVJVXY2SmFRVHFVd0V4MEdaN2M?oc=5\" target=\"_blank\"&gt;Mykhailo Mudryk transfer: Tottenham sign C",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VTTZRM1BPZFhFV3V4M1FoRW1PY3B3MmEwSnF2OWZxR1g2OTl1aDNsbFRBakpNWjJUN0EtbDhVeUwwdmxadHBSVnZISG0tWUNyZ1NVOTVJVXY2SmFRVHFVd0V4MEdaN2M?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T21:00:39.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Everton",
           "Manchester City"
         ],
@@ -262,6 +301,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Deadline Day 2026: Every Done Deal, Ins and Outs - football360.com.au",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5\" target=\"_blank\"&gt;Premier League ",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T19:57:23.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Sunderland",
           "Tottenham"
@@ -285,57 +335,6 @@
         "source": "BBC Sport",
         "publishedAt": "2026-09-01T19:50:05.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Tottenham"
-        ],
-        "title": "Tottenham transfer news: Spurs announce Kevin Danso loan exit to Premier League rival club - Sports Mole",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQLXlCYS1BcmttRW1IMVVzeFZ0Z0JwOGVOekpVcFBpdXJzc0k3djNWcDZETmhIeHc4UzVhSW5GQW1lSkI0dzBWMHR1eTlrMjlMNlltamRFU1Z3cTJkbTNEdVJXclVKVmVybVZRbmhHQUd1S3hLSGVUcldRU0Q5VGk0dEZYN1J1QS1JVUtXMDhzRkJUUjdtMUJqSmV",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLXlCYS1BcmttRW1IMVVzeFZ0Z0JwOGVOekpVcFBpdXJzc0k3djNWcDZETmhIeHc4UzVhSW5GQW1lSkI0dzBWMHR1eTlrMjlMNlltamRFU1Z3cTJkbTNEdVJXclVKVmVybVZRbmhHQUd1S3hLSGVUcldRU0Q5VGk0dEZYN1J1QS1JVUtXMDhzRkJUUjdtMUJqSmVUbW5FSHZCYl9fYjl3R19vQzFUU0dnXzdKTWVUdWNrcHZCNlR0TGRIMUZ4?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-01T19:26:42.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Newcastle transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxNSXNxZ25falpWSDNKdUY4YWFUaHF3SHJ5bUFGVkNGNnByWU96dmg3a3A5cnhXRjhZWjQ2REtKN3FyVFc3b3dqTmVXVnhWQmowX2h3NnExcXJIV3ZuelhRR3Y4OGdiRVk1Z1ZDVGIteGIwSjFMTjVZNmVkZm43ZmJBYS11YXN5djRxYlNiZ3g3YXRZc3g5V1FzSmd",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNSXNxZ25falpWSDNKdUY4YWFUaHF3SHJ5bUFGVkNGNnByWU96dmg3a3A5cnhXRjhZWjQ2REtKN3FyVFc3b3dqTmVXVnhWQmowX2h3NnExcXJIV3ZuelhRR3Y4OGdiRVk1Z1ZDVGIteGIwSjFMTjVZNmVkZm43ZmJBYS11YXN5djRxYlNiZ3g3YXRZc3g5V1FzSmdSZFZhbElKX2kxdnpQM29IX3Fld2FVZWxRbkJtN1JwTmNneTJQdk1sTk9FdzgxUjJYWGRGUkpKdV91UTFIWEZpTmszTVdFams4dXNMOHA1MmFlZDY0eEZGZVBNTWNF?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-01T19:16:21.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Nottingham Forest",
-          "West Ham"
-        ],
-        "title": "West Ham United transfer news: Morato signs on loan from Nottingham Forest - BBC",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE9mXzVOVXJHRG5XRWYyeHVoY1VLNWxBeGpnRldaMmZia0Q3Y2NYNnlULTZpUXhSSUNnTmtqREhLS0x5WXYxZ2NWbzRDUVh0bGw0QzhzX0RUR0JvS2tzUC1ZWWFhcF9ocHZFelE?oc=5\" target=\"_blank\"&gt;West Ham United transfer news: Morato ",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9mXzVOVXJHRG5XRWYyeHVoY1VLNWxBeGpnRldaMmZia0Q3Y2NYNnlULTZpUXhSSUNnTmtqREhLS0x5WXYxZ2NWbzRDUVh0bGw0QzhzX0RUR0JvS2tzUC1ZWWFhcF9ocHZFelE?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-01T19:03:54.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "Report: Everton re-sign former star in huge move as forward leaves - EPL Index",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ3FNSG55cTMzM2dkRE84SDQ4bnk4WThaNGNiQnhwcU8tSF9lMEp0U2UxN1BWSkYyT0FuUnpnNVZMY0ZPNnRtV3NJSmZnNnhNNWpOV1RKQXNfbW5qbTVnSENRakZlMDJlMzZNVDhiU1g3WGFmZkF6SkpXbE9yRWQ3WS1yVm1JTkhUT2NJZHVhTDRBTzJxR1EtWHQ",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ3FNSG55cTMzM2dkRE84SDQ4bnk4WThaNGNiQnhwcU8tSF9lMEp0U2UxN1BWSkYyT0FuUnpnNVZMY0ZPNnRtV3NJSmZnNnhNNWpOV1RKQXNfbW5qbTVnSENRakZlMDJlMzZNVDhiU1g3WGFmZkF6SkpXbE9yRWQ3WS1yVm1JTkhUT2NJZHVhTDRBTzJxR1EtWHQyRWd2d0E?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-01T18:50:05.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -888,20 +887,6 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Tottenham",
-          "Luton"
-        ],
-        "title": "Jamie Donley: Luton Town sign Tottenham Hotspur forward on loan - BBC",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1JbEgxTjdMcDFGVGl0ZnRnZGxfTi1TMl94YWhfTUhIU01Id3A4aW0yM0RqcEw2bE05RDVBZlhtdDJHUlpXSVJrVXlKV3Utc0NVejRlQXZ4d3NndTBPdmR0aWhOTXFpTG8?oc=5\" target=\"_blank\"&gt;Jamie Donley: Luton Town sign Tottenham Ho",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1JbEgxTjdMcDFGVGl0ZnRnZGxfTi1TMl94YWhfTUhIU01Id3A4aW0yM0RqcEw2bE05RDVBZlhtdDJHUlpXSVJrVXlKV3Utc0NVejRlQXZ4d3NndTBPdmR0aWhOTXFpTG8?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-29T14:06:33.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [
           "Coventry",
           "Oxford"
         ],
@@ -968,19 +953,6 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-10T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [
-          "Leicester"
-        ],
-        "title": "Leicester complete signing of Premier League winger for cheap five-figure fee - talkSPORT",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVmE1RmVud0NaUzZFUm9aaEl1MXE3dzZKbmZDR1dnTEFLOWV0UmZUTTA2Wk9kc0RCQm1IbUdIdDZrV1NsTC1Nal9obXl3S3NMdFR2aUJHRENiWGpweFp2NGR2U2hRZlFxY3dPR3BzanlGT0tnaUltb09QV3JLYm5LdjViUEVYRVZKVkQw?oc=5\" target=\"_bla",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVmE1RmVud0NaUzZFUm9aaEl1MXE3dzZKbmZDR1dnTEFLOWV0UmZUTTA2Wk9kc0RCQm1IbUdIdDZrV1NsTC1Nal9obXl3S3NMdFR2aUJHRENiWGpweFp2NGR2U2hRZlFxY3dPR3BzanlGT0tnaUltb09QV3JLYm5LdjViUEVYRVZKVkQw?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-05T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 3,
@@ -1062,20 +1034,6 @@
         "source": "Google News League One",
         "publishedAt": "2026-07-28T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [
-          "Crystal Palace",
-          "Wrexham"
-        ],
-        "title": "Wrexham transfer news: Red Dragons clinch signing of Crystal Palace defender Danny Imray - BBC",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TUVN4Qk5RZktPSHdUbmI1QnktY2FVOTY1RGpjUS1OTmMwOXdOc3RfdEZKcGt6SENYYV84RmRGOWwzanJiMEpLU00tM2tON3dpSzBjMEtDRHhGbXpNOXhrdnNteGlRVDQ?oc=5\" target=\"_blank\"&gt;Wrexham transfer news: Red Dragons clinch ",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TUVN4Qk5RZktPSHdUbmI1QnktY2FVOTY1RGpjUS1OTmMwOXdOc3RfdEZKcGt6SENYYV84RmRGOWwzanJiMEpLU00tM2tON3dpSzBjMEtDRHhGbXpNOXhrdnNteGlRVDQ?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-07-27T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 3,
@@ -1209,6 +1167,47 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kZDlVNnMtQm9qY2J3OFJzY2RWME9XUE1wcHdHeW9UNDRibmx4R21PRUtabjVlaUJTWlFONEUtaDg4a24yV2FyOHNobUpDRmoyZXA2Q1phRUFaY3Q0d3huTjI4NmprVm8?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-11T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Newcastle United",
+          "Luton"
+        ],
+        "title": "Harrison Ashby: Luton Town sign Newcastle United defender on loan - BBC",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFQ3k1QTk2Q2pENnNNcmhuN08tOTBEQmxhZTZFRV9aZTVCWjVQR09uRGlOQWU0aVpGR3ppYzRiN2F0ZXFDbHFQU1VnUy1PNkhMSkFUYXFjWi00Qk1oZUZXeERybXdaeXM?oc=5\" target=\"_blank\"&gt;Harrison Ashby: Luton Town sign Newcastle ",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFQ3k1QTk2Q2pENnNNcmhuN08tOTBEQmxhZTZFRV9aZTVCWjVQR09uRGlOQWU0aVpGR3ppYzRiN2F0ZXFDbHFQU1VnUy1PNkhMSkFUYXFjWi00Qk1oZUZXeERybXdaeXM?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-07-09T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Oxford"
+        ],
+        "title": "League One transfer latest: Premier League additions and new U's link - Oxford Mail",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPMk1XUHJURTRaLVQ3dzlVVHVWT2hJUkh3cHdIQzdoYlgxY1hTeDlzSUxXcGplOUM3V0tfRXFpY3FBNEF0b0NqSWV2aS13LWRZd2VhTmRNdTlCTVF6ekdIdGIyejhkV2Q1ZXg0NDZfd3ZXT2NBM1RzS0lDTTdzY2kwZmlxOWxKaWxJeDRSdEkzeklCMExTNTFDVEN",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMk1XUHJURTRaLVQ3dzlVVHVWT2hJUkh3cHdIQzdoYlgxY1hTeDlzSUxXcGplOUM3V0tfRXFpY3FBNEF0b0NqSWV2aS13LWRZd2VhTmRNdTlCTVF6ekdIdGIyejhkV2Q1ZXg0NDZfd3ZXT2NBM1RzS0lDTTdzY2kwZmlxOWxKaWxJeDRSdEkzeklCMExTNTFDVENxeHl0b1VI?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-07-07T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Leeds United",
+          "Sheffield Wednesday"
+        ],
+        "title": "Harry Gray: Sheffield Wednesday sign Leeds United striker on loan - BBC",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zbm9BMjBvUW1rR3k1SDNVR2FGbkNkUmxuV0ZHaXNvWjFpeWtsT1QzZG82ckZKVElOYmk1M3JqdVhLM3JKM3l0T0JxWnYyLXREN1NQT1dHenlfOTBYQ0pkWnVGRW9RQjQ?oc=5\" target=\"_blank\"&gt;Harry Gray: Sheffield Wednesday sign Leeds",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zbm9BMjBvUW1rR3k1SDNVR2FGbkNkUmxuV0ZHaXNvWjFpeWtsT1QzZG82ckZKVElOYmk1M3JqdVhLM3JKM3l0T0JxWnYyLXREN1NQT1dHenlfOTBYQ0pkWnVGRW9RQjQ?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-07-07T07:00:00.000Z",
         "status": "Loan"
       }
     ],
@@ -1463,17 +1462,6 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "Sky Bet League Two: January 2026 transfer deadline day round‑up - The English Football League",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQRXJMS1JDbFNkeVAzZXRzZ3IzZWdSbWNub0JDc3N4NkU4WkdoOGFYbXJyUlVOMFAycS1fd0JLVnhXa2ZLaWN5LWY5RjdmckxKamRzUkQxdjNvdHZiWEJpZDJCTU1wanhTNUxWVmU1TVdTY0NaYlc0U1JvN1pwTllqT0JkOTd5QWtwbEYySno4cGdjVmdwQzVIbS1",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRXJMS1JDbFNkeVAzZXRzZ3IzZWdSbWNub0JDc3N4NkU4WkdoOGFYbXJyUlVOMFAycS1fd0JLVnhXa2ZLaWN5LWY5RjdmckxKamRzUkQxdjNvdHZiWEJpZDJCTU1wanhTNUxWVmU1TVdTY0NaYlc0U1JvN1pwTllqT0JkOTd5QWtwbEYySno4cGdjVmdwQzVIbS1BZ2F5MkdickhvYw?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-02-03T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
         "title": "Every signing completed in League Two on deadline day - wiltshiretimes.co.uk",
         "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNRWttTUpJeFk0WkNkYktQNk05QzY3WkpkVjE0NFYtcDJNMDRfTmJVTkRFTkc3NVo2WllmY1RaRHhaR1FiZnVfMTB4bUU0Qmw1enBSQmRDV2N6SmxlSzNvTGdqYlppM192aUVtakMyUXhyWXduQS1YNURYV1FHTFMwMGc0cjF1TmJiUUwxVC1PU0ltcXAyZS1Cem9",
         "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRWttTUpJeFk0WkNkYktQNk05QzY3WkpkVjE0NFYtcDJNMDRfTmJVTkRFTkc3NVo2WllmY1RaRHhaR1FiZnVfMTB4bUU0Qmw1enBSQmRDV2N6SmxlSzNvTGdqYlppM192aUVtakMyUXhyWXduQS1YNURYV1FHTFMwMGc0cjF1TmJiUUwxVC1PU0ltcXAyZS1Cem91dw?oc=5",
@@ -1601,6 +1589,20 @@
         "source": "Google News League Two",
         "publishedAt": "2026-01-13T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
+          "Bradford",
+          "Grimsby"
+        ],
+        "title": "Andy Cook: Grimsby Town sign Bradford City striker on loan - BBC",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FbTFHcF9mMzRWNGQtczZqRzhQaTJaZEdCMHVvNFBYenkwLW1SZHVseXhIX3RoY0pBN2Z6VTNQeldCQVR3RmlXQ0VFYVE3d3QzR0xWOGNLajZYNUNCODRRNUVJUTZqaXM?oc=5\" target=\"_blank\"&gt;Andy Cook: Grimsby Town sign Bradford City",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FbTFHcF9mMzRWNGQtczZqRzhQaTJaZEdCMHVvNFBYenkwLW1SZHVseXhIX3RoY0pBN2Z6VTNQeldCQVR3RmlXQ0VFYVE3d3QzR0xWOGNLajZYNUNCODRRNUVJUTZqaXM?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-01-12T08:00:00.000Z",
+        "status": "Loan"
       }
     ]
   }
