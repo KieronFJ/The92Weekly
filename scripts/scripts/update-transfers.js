@@ -1,305 +1,734 @@
 const fs = require('fs');
 const path = require('path');
 
-const FEEDS = [
-  { division: 1, source: 'Football.co.uk', url: 'https://feeds.feedburner.com/PremierLeagueFootballNews' },
-  { division: 2, source: 'Football.co.uk', url: 'https://feeds.feedburner.com/ChampionshipFootballNews' },
-  { division: 3, source: 'Football.co.uk', url: 'https://feeds.feedburner.com/LeagueOneFootballNews' },
-  { division: 4, source: 'Football.co.uk', url: 'https://feeds.feedburner.com/LeagueTwoFootballNews' },
-  { division: 0, source: 'BBC Sport', url: 'https://feeds.bbci.co.uk/sport/football/rss.xml' },
-  { division: 0, source: 'The Guardian', url: 'https://www.theguardian.com/football/rss' },
-  { division: 0, source: 'Transfermarkt', url: 'https://www.transfermarkt.co.uk/rss/news' },
+// The Ins & Outs updater reuses the same RSS/Google News approach
+// as the existing Club News system, but with fewer major sources.
+// It is designed to run every 10 minutes in GitHub Actions.
 
-  { division: 1, source: 'Google News', url: 'https://news.google.com/rss/search?q=Premier%20League%20transfer%20news&hl=en-GB&gl=GB&ceid=GB:en' },
-  { division: 2, source: 'Google News', url: 'https://news.google.com/rss/search?q=Championship%20transfer%20news&hl=en-GB&gl=GB&ceid=GB:en' },
-  { division: 3, source: 'Google News', url: 'https://news.google.com/rss/search?q=League%20One%20transfer%20news&hl=en-GB&gl=GB&ceid=GB:en' },
-  { division: 4, source: 'Google News', url: 'https://news.google.com/rss/search?q=League%20Two%20transfer%20news&hl=en-GB&gl=GB&ceid=GB:en' }
-];
+const BASE_FEEDS = [
+  ['BBC Sport', 'https://feeds.bbci.co.uk/sport/football/rss.xml'],
+  ['Sky Sports', 'https://www.skysports.com/rss/12040'],
+  ['The 72', 'https://the72.co.uk/feed'],
+  ['Football365', 'https://www.football365.com/feed'],
+  ['90min', 'https://www.90min.com/posts.rss'],
+  ['Football League World', 'https://footballleagueworld.co.uk/feed']
+].map(([name, url]) => ({
+  name,
+  url,
+  divisionHint: 0
+}));
 
 const DIVISIONS = {
-  1: {
-    name: 'Premier League',
-    clubs: [
-      'Arsenal','Aston Villa','Bournemouth','Brentford',
-      'Brighton & Hove Albion','Chelsea','Crystal Palace','Everton',
-      'Fulham','Leeds United','Liverpool','Manchester City',
-      'Manchester United','Newcastle United','Nottingham Forest',
-      'Sunderland','Tottenham Hotspur','West Ham United',
-      'Wolverhampton Wanderers','Burnley'
-    ]
-  },
-
-  2: {
-    name: 'Championship',
-    clubs: [
-      'Birmingham City','Blackburn Rovers','Bristol City',
-      'Charlton Athletic','Coventry City','Derby County',
-      'Hull City','Ipswich Town','Leicester City','Middlesbrough',
-      'Millwall','Norwich City','Oxford United','Portsmouth',
-      'Preston North End','Queens Park Rangers','Sheffield United',
-      'Sheffield Wednesday','Southampton','Stoke City','Swansea City',
-      'Watford','West Bromwich Albion','Wrexham'
-    ]
-  },
-
-  3: {
-    name: 'League One',
-    clubs: [
-      'AFC Wimbledon','Barnsley','Blackpool','Bolton Wanderers',
-      'Bradford City','Burton Albion','Cambridge United',
-      'Doncaster Rovers','Exeter City','Huddersfield Town',
-      'Leyton Orient','Lincoln City','Luton Town','Mansfield Town',
-      'Milton Keynes Dons','Northampton Town','Notts County',
-      'Peterborough United','Plymouth Argyle','Reading',
-      'Rotherham United','Stevenage','Stockport County',
-      'Wigan Athletic','Wycombe Wanderers'
-    ]
-  },
-
-  4: {
-    name: 'League Two',
-    clubs: [
-      'Accrington Stanley','Barnet','Bristol Rovers',
-      'Cambridge United','Cheltenham Town','Chesterfield',
-      'Colchester United','Crawley Town','Crewe Alexandra',
-      'Fleetwood Town','Gillingham','Grimsby Town',
-      'Newport County','Oldham Athletic','Port Vale',
-      'Salford City','Shrewsbury Town','Swindon Town',
-      'Tranmere Rovers','Walsall','York City'
-    ]
-  }
+  1: 'Premier League',
+  2: 'Championship',
+  3: 'League One',
+  4: 'League Two'
 };
 
+const CLUBS_BY_DIVISION = {
+  1: [
+    'Arsenal',
+    'Aston Villa',
+    'Bournemouth',
+    'Brentford',
+    'Brighton & Hove Albion',
+    'Chelsea',
+    'Coventry City',
+    'Crystal Palace',
+    'Everton',
+    'Fulham',
+    'Hull City',
+    'Ipswich Town',
+    'Leeds United',
+    'Liverpool',
+    'Manchester City',
+    'Manchester United',
+    'Newcastle United',
+    'Nottingham Forest',
+    'Sunderland',
+    'Tottenham Hotspur'
+  ],
+
+  2: [
+    'Birmingham City',
+    'Blackburn Rovers',
+    'Bolton Wanderers',
+    'Bristol City',
+    'Burnley',
+    'Cardiff City',
+    'Charlton Athletic',
+    'Derby County',
+    'Lincoln City',
+    'Middlesbrough',
+    'Millwall',
+    'Norwich City',
+    'Portsmouth',
+    'Preston North End',
+    'Queens Park Rangers',
+    'Sheffield United',
+    'Southampton',
+    'Stoke City',
+    'Swansea City',
+    'Watford',
+    'West Bromwich Albion',
+    'West Ham United',
+    'Wolverhampton Wanderers',
+    'Wrexham'
+  ],
+
+  3: [
+    'AFC Wimbledon',
+    'Barnsley',
+    'Blackpool',
+    'Bradford City',
+    'Bromley',
+    'Burton Albion',
+    'Cambridge United',
+    'Doncaster Rovers',
+    'Huddersfield Town',
+    'Leicester City',
+    'Leyton Orient',
+    'Luton Town',
+    'Mansfield Town',
+    'Milton Keynes Dons',
+    'Notts County',
+    'Oxford United',
+    'Peterborough United',
+    'Plymouth Argyle',
+    'Reading',
+    'Sheffield Wednesday',
+    'Stevenage',
+    'Stockport County',
+    'Wigan Athletic',
+    'Wycombe Wanderers'
+  ],
+
+  4: [
+    'Accrington Stanley',
+    'Barnet',
+    'Bristol Rovers',
+    'Cheltenham Town',
+    'Chesterfield',
+    'Colchester United',
+    'Crawley Town',
+    'Crewe Alexandra',
+    'Exeter City',
+    'Fleetwood Town',
+    'Gillingham',
+    'Grimsby Town',
+    'Newport County',
+    'Northampton Town',
+    'Oldham Athletic',
+    'Port Vale',
+    'Rochdale',
+    'Rotherham United',
+    'Salford City',
+    'Shrewsbury Town',
+    'Swindon Town',
+    'Tranmere Rovers',
+    'Walsall',
+    'York City'
+  ]
+};
+
+const ALIASES = {};
+
+function addAliases(club, aliases) {
+  ALIASES[club] = aliases;
+}
+
+for (const clubs of Object.values(CLUBS_BY_DIVISION)) {
+  for (const club of clubs) {
+    addAliases(club, [club.toLowerCase()]);
+  }
+}
+
+addAliases('Aston Villa', ['aston villa', 'villa']);
+addAliases('Crystal Palace', ['crystal palace', 'palace']);
+addAliases('Hull City', ['hull city', 'hull']);
+addAliases('Manchester City', ['manchester city', 'man city']);
+addAliases('Manchester United', [
+  'manchester united',
+  'man utd',
+  'man united'
+]);
+addAliases('Nottingham Forest', ['nottingham forest', 'forest']);
+addAliases('Tottenham Hotspur', ['tottenham', 'spurs']);
+
+addAliases('Derby County', ['derby county', 'derby']);
+addAliases('Lincoln City', ['lincoln city', 'lincoln']);
+addAliases('Middlesbrough', ['middlesbrough', 'boro']);
+addAliases('Portsmouth', ['portsmouth', 'pompey']);
+addAliases('Preston North End', ['preston north end', 'preston']);
+addAliases('Queens Park Rangers', [
+  'queens park rangers',
+  'qpr'
+]);
+addAliases('Sheffield United', [
+  'sheffield united',
+  'sheff utd',
+  'sheff united'
+]);
+addAliases('West Bromwich Albion', [
+  'west bromwich albion',
+  'west brom'
+]);
+addAliases('West Ham United', ['west ham united', 'west ham']);
+addAliases('Wolverhampton Wanderers', [
+  'wolverhampton wanderers',
+  'wolverhampton',
+  'wolves'
+]);
+
+addAliases('AFC Wimbledon', ['afc wimbledon', 'wimbledon']);
+addAliases('Bradford City', ['bradford city', 'bradford']);
+addAliases('Burton Albion', ['burton albion', 'burton']);
+addAliases('Cambridge United', ['cambridge united', 'cambridge']);
+addAliases('Doncaster Rovers', ['doncaster rovers', 'doncaster']);
+addAliases('Luton Town', ['luton town', 'luton']);
+addAliases('Milton Keynes Dons', [
+  'milton keynes dons',
+  'mk dons',
+  'milton keynes'
+]);
+addAliases('Notts County', ['notts county']);
+addAliases('Oxford United', ['oxford united', 'oxford']);
+addAliases('Peterborough United', [
+  'peterborough united',
+  'peterborough'
+]);
+addAliases('Plymouth Argyle', ['plymouth argyle', 'plymouth']);
+addAliases('Sheffield Wednesday', [
+  'sheffield wednesday',
+  'sheff wed'
+]);
+addAliases('Stockport County', ['stockport county', 'stockport']);
+addAliases('Wigan Athletic', ['wigan athletic', 'wigan']);
+addAliases('Wycombe Wanderers', [
+  'wycombe wanderers',
+  'wycombe'
+]);
+
+addAliases('Newport County', ['newport county', 'newport']);
+addAliases('Northampton Town', [
+  'northampton town',
+  'northampton'
+]);
+addAliases('Oldham Athletic', ['oldham athletic', 'oldham']);
+addAliases('Port Vale', ['port vale']);
+addAliases('Rotherham United', [
+  'rotherham united',
+  'rotherham'
+]);
+addAliases('Salford City', ['salford city', 'salford']);
+addAliases('Shrewsbury Town', [
+  'shrewsbury town',
+  'shrewsbury'
+]);
+addAliases('Swindon Town', ['swindon town', 'swindon']);
+addAliases('Tranmere Rovers', [
+  'tranmere rovers',
+  'tranmere'
+]);
+addAliases('York City', ['york city']);
+
+const DIVISION_SEARCHES = [
+  {
+    division: 1,
+    query:
+      'Premier League transfer OR signing OR signs OR loan OR "joins" OR "deal agreed" OR "transfer news"'
+  },
+  {
+    division: 2,
+    query:
+      'Championship transfer OR signing OR signs OR loan OR "joins" OR "deal agreed" OR "transfer news"'
+  },
+  {
+    division: 3,
+    query:
+      'League One transfer OR signing OR signs OR loan OR "joins" OR "deal agreed" OR "transfer news"'
+  },
+  {
+    division: 4,
+    query:
+      'League Two transfer OR signing OR signs OR loan OR "joins" OR "deal agreed" OR "transfer news"'
+  }
+];
+
+function googleNewsUrl(query) {
+  return (
+    'https://news.google.com/rss/search?q=' +
+    encodeURIComponent(query) +
+    '&hl=en-GB&gl=GB&ceid=GB:en'
+  );
+}
+
+const FEEDS = [
+  ...BASE_FEEDS,
+
+  ...DIVISION_SEARCHES.map(item => ({
+    name: `Google News – ${DIVISIONS[item.division]}`,
+    url: googleNewsUrl(item.query),
+    divisionHint: item.division
+  }))
+];
+
 const TRANSFER_WORDS =
-  /transfer|sign|signing|signed|joins|joined|join|deal|loan|loanee|bid|bids|offer|offers|move|moves|moved|exit|exits|leaves|leave|depart|departure|agreed|agreement|target|targets|interest|interested|talks|released|release|contract|free agent/i;
+  /transfer|sign|signing|signed|signs|joins|joined|join|deal|loan|loanee|bid|bids|offer|offers|move|moves|moved|exit|exits|leaves|leave|depart|departure|agreed|agreement|target|targets|interest|interested|talks|released|release|contract|free agent/i;
 
 const RUMOUR_WORDS =
   /rumour|rumor|report|reports|reportedly|could|might|set to|eye|eyes|target|targets|interest|interested|talks|bid|bids|offer|offers|linked|wants|want|considering|monitoring|pursue|pursuing/i;
 
 const CONFIRMED_WORDS =
-  /signs|sign |signed|joins|joined|join |complete|completed|completes|agreed|agreement reached|official|confirmed|seals|sealed|announced|loaned|released/i;
+  /signed|signs|joins|joined|completed|completes|agreed|agreement reached|official|confirmed|seals|sealed|announced|released/i;
 
-function decode(s = '') {
-  return s
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&apos;/g, "'")
-    .replace(/&#x27;/gi, "'")
-    .replace(/&#x2F;/gi, '/')
+function stripTags(value = '') {
+  return value
     .replace(/<[^>]*>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
 
-function field(block, tag) {
-  const re = new RegExp(
-    `<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`,
-    'i'
-  );
-
-  const m = block.match(re);
-  return m ? decode(m[1]) : '';
+function decodeEntities(value = '') {
+  return value
+    .replace(/<!\[CDATA\[/g, '')
+    .replace(/\]\]>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#x27;/gi, "'")
+    .replace(/&#x2F;/gi, '/');
 }
 
-function parseFeed(xml, feed) {
+function getTag(block, name) {
+  const match = block.match(
+    new RegExp(
+      `<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,
+      'i'
+    )
+  );
+
+  return match
+    ? decodeEntities(stripTags(match[1]))
+    : '';
+}
+
+function safeDate(value) {
+  const date = new Date(value || '');
+
+  return Number.isNaN(date.getTime())
+    ? new Date().toISOString()
+    : date.toISOString();
+}
+
+function parseRSS(xml, fallbackSource) {
+  const items = [];
+
   const blocks =
     xml.match(
-      /<(?:item|entry)(?:\s[^>]*)?>[\s\S]*?<\/(?:item|entry)>/gi
+      /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
     ) || [];
 
-  return blocks
-    .map(block => {
-      const title = field(block, 'title');
+  for (const block of blocks) {
+    const title = getTag(block, 'title');
+    const link = getTag(block, 'link');
 
-      const link =
-        field(block, 'link') ||
-        ((block.match(/<link[^>]*href=["']([^"']+)["']/i) || [])[1] ||
-          '');
+    if (!title || !link) continue;
 
-      const date =
-        field(block, 'pubDate') ||
-        field(block, 'published') ||
-        field(block, 'updated');
+    const summary = getTag(block, 'description');
 
-      const description =
-        field(block, 'description') ||
-        field(block, 'summary');
+    const date =
+      getTag(block, 'pubDate') ||
+      getTag(block, 'published') ||
+      getTag(block, 'updated');
 
-      const source =
-        field(block, 'source') ||
-        feed.source;
+    const source =
+      getTag(block, 'source') ||
+      fallbackSource;
 
-      return {
-        title,
-        link,
-        date,
-        description,
-        source,
-        feedDivision: feed.division
-      };
-    })
-    .filter(x => x.title && x.link);
+    items.push({
+      title,
+      link,
+      summary:
+        summary.length > 260
+          ? summary.slice(0, 257) + '...'
+          : summary,
+      date: safeDate(date),
+      source,
+      feedSource: fallbackSource
+    });
+  }
+
+  return items;
 }
 
-function normalise(s) {
-  return s
-    .toLowerCase()
-    .replace(/&amp;/g, '&')
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
+const FETCH_TIMEOUT_MS = 8000;
 
-function inferDivision(item) {
-  if (item.feedDivision) return item.feedDivision;
+async function fetchFeedOnce(feed) {
+  const controller = new AbortController();
 
-  const text = normalise(
-    `${item.title} ${item.description}`
+  const timer = setTimeout(
+    () => controller.abort(),
+    FETCH_TIMEOUT_MS
   );
 
-  const matches = [];
+  try {
+    const response = await fetch(feed.url, {
+      signal: controller.signal,
 
-  for (const [division, data] of Object.entries(DIVISIONS)) {
-    for (const club of data.clubs) {
-      const c = normalise(club);
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (compatible; The92WeeklyBot/3.0; +https://the92weekly.com)',
 
-      if (c && text.includes(c)) {
-        matches.push(Number(division));
+        Accept:
+          'application/rss+xml, application/xml, text/xml;q=0.9,*/*;q=0.8'
       }
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const xml = await response.text();
+
+    return {
+      success: true,
+      items: parseRSS(xml, feed.name)
+    };
+  } catch (error) {
+    const message =
+      error && error.name === 'AbortError'
+        ? `timeout after ${FETCH_TIMEOUT_MS / 1000}s`
+        : error.message || String(error);
+
+    console.log(
+      `Skipped ${feed.name}: ${message}`
+    );
+
+    return {
+      success: false,
+      items: [],
+      error: message
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function isTransientError(message) {
+  return (
+    !!message &&
+    /timeout|503|502|429/.test(message)
+  );
+}
+
+async function fetchFeed(feed) {
+  const first = await fetchFeedOnce(feed);
+
+  if (
+    first.success ||
+    !isTransientError(first.error)
+  ) {
+    return first;
+  }
+
+  await new Promise(resolve =>
+    setTimeout(resolve, 1500)
+  );
+
+  console.log(`Retrying ${feed.name}...`);
+
+  return fetchFeedOnce(feed);
+}
+
+async function mapWithConcurrency(
+  list,
+  limit,
+  fn
+) {
+  const results = new Array(list.length);
+
+  let next = 0;
+
+  async function worker() {
+    while (true) {
+      const index = next++;
+
+      if (index >= list.length) {
+        return;
+      }
+
+      results[index] =
+        await fn(list[index]);
     }
   }
 
-  return matches.length ? matches[0] : 0;
+  await Promise.all(
+    Array.from(
+      {
+        length: Math.min(
+          limit,
+          list.length
+        )
+      },
+      worker
+    )
+  );
+
+  return results;
 }
 
-function statusFor(title) {
-  if (CONFIRMED_WORDS.test(title)) {
-    return 'Confirmed';
+function findMatchingClubs(text) {
+  const lower = text.toLowerCase();
+  const matches = [];
+
+  for (const [club, aliases] of Object.entries(
+    ALIASES
+  )) {
+    if (
+      aliases.some(alias =>
+        lower.includes(alias)
+      )
+    ) {
+      matches.push(club);
+    }
   }
 
-  if (/loan/i.test(title) && !RUMOUR_WORDS.test(title)) {
+  return matches;
+}
+
+function divisionForClubs(clubs) {
+  const divisions = [];
+
+  for (const [division, names] of Object.entries(
+    CLUBS_BY_DIVISION
+  )) {
+    if (
+      clubs.some(club =>
+        names.includes(club)
+      )
+    ) {
+      divisions.push(Number(division));
+    }
+  }
+
+  return divisions;
+}
+
+function classifyStatus(title) {
+  const lower = title.toLowerCase();
+
+  if (
+    /loan|loaned|loan move|season-long loan/.test(
+      lower
+    ) &&
+    !RUMOUR_WORDS.test(lower)
+  ) {
     return 'Loan';
+  }
+
+  if (
+    CONFIRMED_WORDS.test(title) &&
+    !RUMOUR_WORDS.test(title)
+  ) {
+    return 'Confirmed';
   }
 
   return 'Rumour';
 }
 
-function dateMs(date) {
-  const n = Date.parse(date || '');
-  return Number.isFinite(n) ? n : 0;
-}
+function isUsefulTransferStory(item) {
+  const text =
+    `${item.title} ${item.summary}`.toLowerCase();
 
-async function fetchFeed(feed) {
-  try {
-    const response = await fetch(feed.url, {
-      headers: {
-        'User-Agent':
-          'The92Weekly/1.0 (+https://the92weekly.com)',
-
-        'Accept':
-          'application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8'
-      }
-    });
-
-    if (!response.ok) {
-      throw new Error(
-        `${response.status} ${response.statusText}`
-      );
-    }
-
-    return parseFeed(
-      await response.text(),
-      feed
-    );
-
-  } catch (error) {
-    console.warn(
-      `Feed failed: ${feed.source} ${feed.url} — ${error.message}`
-    );
-
-    return [];
+  if (!TRANSFER_WORDS.test(text)) {
+    return false;
   }
+
+  const junk = [
+    'how to watch',
+    'where to watch',
+    'live stream',
+    'live-stream',
+    'tv channel',
+    'kick-off time',
+    'kickoff time',
+    'broadcast',
+    'fantasy football',
+    'betting tips'
+  ];
+
+  if (
+    junk.some(x =>
+      text.includes(x)
+    )
+  ) {
+    return false;
+  }
+
+  return true;
 }
 
-(async () => {
+function canonicalKey(item) {
+  return (
+    (item.link || '').replace(/[?#].*$/, '') ||
+    `${item.source}|${item.title}`.toLowerCase()
+  );
+}
 
-  const all =
-    (await Promise.all(FEEDS.map(fetchFeed))).flat();
-
+function dedupe(items) {
   const seen = new Set();
-  const items = [];
+  const output = [];
 
-  for (const item of all) {
+  for (const item of items) {
+    const key = canonicalKey(item);
 
-    const key =
-      item.link.replace(/[?#].*$/, '') ||
-      `${item.source}|${item.title}`;
-
-    if (seen.has(key)) continue;
-
-    seen.add(key);
-
-    if (
-      !TRANSFER_WORDS.test(
-        `${item.title} ${item.description}`
-      )
-    ) {
+    if (seen.has(key)) {
       continue;
     }
 
-    const division = inferDivision(item);
-
-    if (!division) continue;
-
-    items.push({
-      id: key,
-      division,
-      divisionName:
-        DIVISIONS[division].name,
-
-      title: item.title,
-
-      description:
-        item.description.slice(0, 260),
-
-      link: item.link,
-
-      source: item.source,
-
-      publishedAt:
-        item.date || null,
-
-      status:
-        statusFor(item.title)
-    });
+    seen.add(key);
+    output.push(item);
   }
 
-  items.sort(
-    (a, b) =>
-      dateMs(b.publishedAt) -
-      dateMs(a.publishedAt)
+  return output;
+}
+
+function loadExisting(outPath) {
+  try {
+    return JSON.parse(
+      fs.readFileSync(outPath, 'utf8')
+    );
+  } catch {
+    return null;
+  }
+}
+
+async function main() {
+  console.log(
+    `Fetching ${FEEDS.length} major news/search feeds...`
   );
+
+  const results =
+    await mapWithConcurrency(
+      FEEDS,
+      8,
+      fetchFeed
+    );
+
+  const successfulFeeds =
+    results.filter(
+      result => result.success
+    ).length;
+
+  const candidates = [];
+
+  results.forEach(
+    (result, index) => {
+      const feed = FEEDS[index];
+
+      if (!result.success) {
+        return;
+      }
+
+      for (const item of result.items) {
+        if (
+          !isUsefulTransferStory(item)
+        ) {
+          continue;
+        }
+
+        const text =
+          `${item.title} ${item.summary}`;
+
+        const clubs =
+          findMatchingClubs(text);
+
+        let divisions =
+          divisionForClubs(clubs);
+
+        if (
+          !divisions.length &&
+          feed.divisionHint
+        ) {
+          divisions = [
+            feed.divisionHint
+          ];
+        }
+
+        if (!divisions.length) {
+          continue;
+        }
+
+        for (const division of divisions) {
+          candidates.push({
+            id:
+              `${canonicalKey(item)}|${division}`,
+
+            division,
+
+            divisionName:
+              DIVISIONS[division],
+
+            clubs,
+
+            title: item.title,
+
+            summary: item.summary,
+
+            link: item.link,
+
+            source:
+              item.source ||
+              feed.name,
+
+            publishedAt:
+              item.date,
+
+            status:
+              classifyStatus(
+                item.title
+              )
+          });
+        }
+      }
+    }
+  );
+
+  const deduped =
+    dedupe(candidates).sort(
+      (a, b) =>
+        new Date(b.publishedAt) -
+        new Date(a.publishedAt)
+    );
 
   const byDivision = {};
 
-  for (let d = 1; d <= 4; d++) {
-    byDivision[d] =
-      items
-        .filter(x => x.division === d)
-        .slice(0, 25);
+  for (const division of [
+    1,
+    2,
+    3,
+    4
+  ]) {
+    byDivision[division] =
+      deduped
+        .filter(
+          item =>
+            item.division ===
+            division
+        )
+        .slice(0, 30);
   }
 
-  const output = {
-    updatedAt:
-      new Date().toISOString(),
-
-    note:
-      'Headlines and links are sourced from live RSS feeds. Full articles remain on their original sites.',
-
-    byDivision
-  };
+  const totalStories =
+    Object.values(byDivision).reduce(
+      (total, stories) =>
+        total + stories.length,
+      0
+    );
 
   const outPath =
     path.join(
@@ -309,13 +738,82 @@ async function fetchFeed(feed) {
       'transfers.json'
     );
 
+  const existing =
+    loadExisting(outPath);
+
+  // Never wipe existing data because of
+  // a temporary source outage.
+  if (
+    successfulFeeds < 2 ||
+    totalStories === 0
+  ) {
+    console.log(
+      `Only ${successfulFeeds}/${FEEDS.length} feeds succeeded or no transfer stories were found. Existing data left untouched.`
+    );
+
+    return;
+  }
+
+  const output = {
+    updatedAt:
+      new Date().toISOString(),
+
+    sourceCount:
+      successfulFeeds,
+
+    feedCount:
+      FEEDS.length,
+
+    byDivision
+  };
+
+  // Preserve previous division data if
+  // that division temporarily returns nothing.
+  if (
+    existing &&
+    existing.byDivision
+  ) {
+    for (const division of [
+      1,
+      2,
+      3,
+      4
+    ]) {
+      if (
+        !output.byDivision[
+          division
+        ].length &&
+        Array.isArray(
+          existing.byDivision[
+            division
+          ]
+        )
+      ) {
+        output.byDivision[
+          division
+        ] =
+          existing.byDivision[
+            division
+          ];
+      }
+    }
+  }
+
   fs.writeFileSync(
     outPath,
-    JSON.stringify(output, null, 2) + '\n'
+    JSON.stringify(
+      output,
+      null,
+      2
+    ) + '\n'
   );
 
   console.log(
-    `Wrote ${items.length} transfer stories to ${outPath}`
+    `Wrote ${totalStories} transfer stories from ${successfulFeeds}/${FEEDS.length} feeds.`
   );
+}
 
-})();
+main().catch(error => {
+  console.error(error);
+  process.exit(1);
+});
