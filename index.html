@@ -5,6 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The92Weekly — Football Across the Pyramid</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "The92Weekly",
+  "alternateName": ["The 92 Weekly", "92 Weekly", "The92 Weekly"],
+  "url": "https://the92weekly.com",
+  "description": "Every division. One pyramid. The92Weekly covers all 92 English football clubs — Premier League, Championship, League One and League Two."
+}
+</script>
 <meta name="description" content="Every division. One pyramid. The92Weekly covers all 92 English football clubs — Premier League, Championship, League One and League Two — with live scores, tables, automated club news, and in-depth weekly analysis you won't find anywhere else.">
 <meta property="og:title" content="The92Weekly">
 <meta property="og:description" content="Every division. One pyramid. The92Weekly covers all 92 English football clubs — Premier League, Championship, League One and League Two — with live scores, tables, automated club news, and in-depth weekly analysis you won't find anywhere else.">
@@ -147,12 +157,13 @@
     margin-top: 12px;
   }
   .x-follow-link {
-    display: inline-flex; align-items: center; gap: 8px;
+    display: inline-flex; align-items: center; gap: 6px;
     background: var(--ink); color: #FFFFFF;
-    font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 13.5px;
-    padding: 9px 18px; border-radius: 20px; margin-top: 18px;
+    font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 12px;
+    padding: 6px 14px; border-radius: 16px; margin-top: 8px;
   }
   .x-follow-link:hover { filter: brightness(1.15); }
+  .x-follow-link svg { width: 12px; height: 12px; }
 
 
   nav a, .nav-trigger {
@@ -413,8 +424,13 @@
     margin-bottom: 28px;
   }
   .home-news-card {
-    padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
+    padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
+    overflow: hidden;
   }
+  .home-news-card-img {
+    width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: var(--line);
+  }
+  .home-news-card-body { padding: 14px 16px; }
   .home-news-card-clubs { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 6px; }
   .home-news-club-tag {
     font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 700;
@@ -823,7 +839,7 @@
           <a href="accumulator.html">Acca Tips<span class="sidebar-nav-sub">This week's betting picks</span></a>
           <a href="team-of-the-week.html">Combined Team of the Week<span class="sidebar-nav-sub">Best XI, all 4 divisions</span></a>
           <a href="match-of-the-tier.html">Match of the Tier<span class="sidebar-nav-sub">One match per division, weekly</span></a>
-          <a href="#spotlight">Spotlight<span class="sidebar-nav-sub">Players to watch this week</span></a>
+          <a href="spotlight.html">Spotlight<span class="sidebar-nav-sub">Players to watch this week</span></a>
           <a href="under-the-radar.html">Under The Radar<span class="sidebar-nav-sub">New signings, properly explained</span></a>
           <a href="merry-go-round.html">The Merry-Go-Round<span class="sidebar-nav-sub">Every managerial change</span></a>
           <a href="archive.html">The Archive<span class="sidebar-nav-sub">On this day, all 4 divisions</span></a>
@@ -997,191 +1013,6 @@
     </div>
   </section>
 
-  <section class="spotlight-section" id="spotlight">
-    <div class="spotlight-head">
-      <h2 class="display">This week's player spotlight</h2>
-      <a class="spotlight-archive-link" href="spotlight.html">Full spotlight archive →</a>
-    </div>
-    <div class="spotlight-division-block">
-      <div class="spotlight-division-title">Premier League</div>
-      <div class="spotlight-grid">
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-rising">On The Rise</span>
-          <span class="spot-division">Premier League</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-form">In Form</span>
-          <span class="spot-division">Premier League</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-backing">One To Back</span>
-          <span class="spot-division">Premier League</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div class="spotlight-division-block">
-      <div class="spotlight-division-title">Championship</div>
-      <div class="spotlight-grid">
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-rising">On The Rise</span>
-          <span class="spot-division">Championship</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-form">In Form</span>
-          <span class="spot-division">Championship</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-backing">One To Back</span>
-          <span class="spot-division">Championship</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div class="spotlight-division-block">
-      <div class="spotlight-division-title">League One</div>
-      <div class="spotlight-grid">
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-rising">On The Rise</span>
-          <span class="spot-division">League One</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-form">In Form</span>
-          <span class="spot-division">League One</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-backing">One To Back</span>
-          <span class="spot-division">League One</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div class="spotlight-division-block">
-      <div class="spotlight-division-title">League Two</div>
-      <div class="spotlight-grid">
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-rising">On The Rise</span>
-          <span class="spot-division">League Two</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[Why this player is one to watch — the specific breakout moment or trait that's turning heads.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Anytime scorer odds, assist markets, or a specific matchup worth backing this week.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-form">In Form</span>
-          <span class="spot-division">League Two</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[What's driving their recent run — goals, assists, or a tactical shift unlocking them.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[Why this hot streak makes them worth backing right now — form-based markets and the fixture ahead.]</p>
-        </div>
-      </div>
-      <div class="spot-card">
-        <div class="spot-tag-row">
-          <span class="spot-category tag-backing">One To Back</span>
-          <span class="spot-division">League Two</span>
-        </div>
-        <div class="spot-name">[Player Name]</div>
-        <div class="spot-club">[Club]</div>
-        <p>[The case for a big gameweek — fixture, form, or a specific edge you've spotted.]</p>
-        <div class="betting-angle">
-          <div class="betting-angle-label">Worth a punt?</div>
-          <p>[The player most likely to feature in this week's Acca. <a href="accumulator.html" style="color:var(--gold); font-weight:600;">See this week's picks →</a>]</p>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
 
   <section class="ins-outs-section">
     <div class="ins-outs-head">
@@ -1238,7 +1069,7 @@
     fetch('data/club-news.json')
       .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
       .then(data => {
-        const items = (data.items || []).slice(0, 9);
+        const items = (data.items || []).slice(0, 18);
         const grid = document.getElementById('home-news-grid');
         if (items.length === 0) {
           grid.innerHTML = '<div class="status-box">No news right now — check back soon.</div>';
@@ -1248,11 +1079,17 @@
         items.forEach(item => {
           const dateStr = new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
           const clubTags = item.clubs.slice(0, 2).map(c => `<span class="home-news-club-tag">${c}</span>`).join('');
+          const imgHtml = item.image
+            ? `<img src="${item.image}" alt="" class="home-news-card-img" onerror="this.style.display='none'">`
+            : '';
           html += `
             <div class="home-news-card">
-              <div class="home-news-card-clubs">${clubTags}</div>
-              <div class="home-news-card-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
-              <div class="home-news-card-meta">${dateStr} · via ${item.source}</div>
+              ${imgHtml}
+              <div class="home-news-card-body">
+                <div class="home-news-card-clubs">${clubTags}</div>
+                <div class="home-news-card-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
+                <div class="home-news-card-meta">${dateStr} · via ${item.source}</div>
+              </div>
             </div>`;
         });
         grid.innerHTML = html;

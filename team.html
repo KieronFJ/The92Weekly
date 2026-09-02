@@ -325,14 +325,6 @@
   body.on-dark-bg .fan-views-head h2, body.on-dark-bg nav a, body.on-dark-bg .nav-trigger {
     color: #FFFFFF;
   }
-
-  /* The sidebar is always a plain white panel, regardless of the club
-     colour behind it — it should never inherit the adaptive text color
-     meant for content sitting directly on that colour. */
-  body.on-dark-bg .sidebar-nav > a,
-  body.on-light-bg .sidebar-nav > a {
-    color: var(--ink) !important;
-  }
   .fan-tweet-placeholder {
     background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
     padding: 20px; margin-bottom: 14px; font-size: 14px; color: var(--ink-muted);
@@ -523,7 +515,7 @@
           <a href="accumulator.html">Acca Tips<span class="sidebar-nav-sub">This week's betting picks</span></a>
           <a href="team-of-the-week.html">Combined Team of the Week<span class="sidebar-nav-sub">Best XI, all 4 divisions</span></a>
           <a href="match-of-the-tier.html">Match of the Tier<span class="sidebar-nav-sub">One match per division, weekly</span></a>
-          <a href="index.html#spotlight">Spotlight<span class="sidebar-nav-sub">Players to watch this week</span></a>
+          <a href="spotlight.html">Spotlight<span class="sidebar-nav-sub">Players to watch this week</span></a>
           <a href="under-the-radar.html">Under The Radar<span class="sidebar-nav-sub">New signings, properly explained</span></a>
           <a href="merry-go-round.html">The Merry-Go-Round<span class="sidebar-nav-sub">Every managerial change</span></a>
           <a href="archive.html">The Archive<span class="sidebar-nav-sub">On this day, all 4 divisions</span></a>
@@ -696,37 +688,44 @@
     const loadMatches = loadFromDataFile();
 
     // Latest club news for this team
-    document.getElementById('team-news-heading').textContent = `Latest ${teamName} News`;
-    document.getElementById('team-news-view-all').href = `club-news.html?club=${encodeURIComponent(teamName)}`;
+    try {
+      const newsHeading = document.getElementById('team-news-heading');
+      const newsViewAll = document.getElementById('team-news-view-all');
+      if (newsHeading) newsHeading.textContent = `Latest ${teamName} News`;
+      if (newsViewAll) newsViewAll.href = `club-news.html?club=${encodeURIComponent(teamName)}`;
 
-    fetch('data/club-news.json')
-      .then(r => r.ok ? r.json() : { items: [] })
-      .then(data => {
-        const items = (data.items || []).filter(item =>
-          (item.clubs || []).some(c => matchesTeam(c, teamName))
-        ).slice(0, 3);
+      fetch('data/club-news.json')
+        .then(r => r.ok ? r.json() : { items: [] })
+        .then(data => {
+          const items = (data.items || []).filter(item =>
+            (item.clubs || []).some(c => matchesTeam(c, teamName))
+          ).slice(0, 3);
 
-        const list = document.getElementById('team-news-list');
-        if (items.length === 0) {
-          list.innerHTML = '<div class="status-box">No recent news for this club yet — check back soon.</div>';
-          return;
-        }
+          const list = document.getElementById('team-news-list');
+          if (!list) return;
+          if (items.length === 0) {
+            list.innerHTML = '<div class="status-box">No recent news for this club yet — check back soon.</div>';
+            return;
+          }
 
-        let html = '';
-        items.forEach(item => {
-          const dateStr = new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-          html += `
-            <div class="team-news-item">
-              <div class="team-news-item-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
-              <div class="team-news-item-meta">${dateStr} · via ${item.source}</div>
-            </div>`;
+          let html = '';
+          items.forEach(item => {
+            const dateStr = new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+            html += `
+              <div class="team-news-item">
+                <div class="team-news-item-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
+                <div class="team-news-item-meta">${dateStr} · via ${item.source}</div>
+              </div>`;
+          });
+          list.innerHTML = html;
+        })
+        .catch(() => {
+          const list = document.getElementById('team-news-list');
+          if (list) list.innerHTML = '<div class="status-box">Couldn\\'t load recent news right now.</div>';
         });
-        list.innerHTML = html;
-      })
-      .catch(() => {
-        document.getElementById('team-news-list').innerHTML =
-          '<div class="status-box">Couldn\'t load recent news right now.</div>';
-      });
+    } catch (e) {
+      console.log('Team news section failed to load:', e);
+    }
 
 
     const MANUAL_CUP_MATCHES = {
