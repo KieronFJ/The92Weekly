@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T18:55:19.033Z",
+  "updatedAt": "2026-09-02T19:03:09.588Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3301,59 +3301,7 @@
         "score": 4
       },
       "venue": "Selhurst Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Erling Haaland",
-          "minute": "17'",
-          "team": "Manchester City",
-          "ownGoal": false
-        },
-        {
-          "player": "Rayan Cherki",
-          "minute": "54'",
-          "team": "Manchester City",
-          "ownGoal": false
-        },
-        {
-          "player": "Gianluigi Donnarumma",
-          "minute": "56'",
-          "team": "Crystal Palace",
-          "ownGoal": true
-        },
-        {
-          "player": "Rayan Cherki",
-          "minute": "59'",
-          "team": "Manchester City",
-          "ownGoal": false
-        },
-        {
-          "player": "Erling Haaland",
-          "minute": "84'",
-          "team": "Manchester City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Rayan Cherki",
-          "minute": "33'",
-          "team": "Manchester City",
-          "card": "yellow"
-        },
-        {
-          "player": "Elliot Anderson",
-          "minute": "55'",
-          "team": "Manchester City",
-          "card": "yellow"
-        },
-        {
-          "player": "Anan Khalaili",
-          "minute": "68'",
-          "team": "Crystal Palace",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880305",
@@ -3375,47 +3323,7 @@
         "score": 2
       },
       "venue": "STōK Cae Ras",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Phil Neumann",
-          "minute": "13'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        },
-        {
-          "player": "Callum Doyle",
-          "minute": "54'",
-          "team": "Wrexham",
-          "ownGoal": false
-        },
-        {
-          "player": "Phil Neumann",
-          "minute": "63'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Alex Cochrane",
-          "minute": "7'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Bright Osayi-Samuel",
-          "minute": "50'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Bailey Cadamarteri",
-          "minute": "90'+3'",
-          "team": "Wrexham",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879314",
