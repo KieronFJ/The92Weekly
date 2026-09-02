@@ -388,6 +388,55 @@ function getTag(block, name) {
 }
 
 
+// Same as getTag, but returns the raw (un-stripped) inner HTML. Needed
+// because Google News wraps the real publisher link inside an <a href>
+// in the <description> tag, and getTag()'s stripTags() throws that away.
+function getRawTag(block, name) {
+
+  const match = block.match(
+    new RegExp(
+      `<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,
+      'i'
+    )
+  );
+
+  return match
+    ? match[1].replace(/<!\[CDATA\[/g, '').replace(/\]\]>/g, '')
+    : '';
+
+}
+
+
+// Google News RSS <link> values are redirect URLs
+// (news.google.com/rss/articles/...) that only resolve to the real
+// article via client-side JavaScript. A server-side fetch() never gets
+// redirected, so scraping og:image from that URL just grabs Google's
+// own interstitial image — the same one, every time. The actual
+// publisher link is embedded as an <a href="..."> inside the raw
+// <description> HTML, so pull it out from there instead.
+function extractRealArticleLink(rawDescriptionHtml) {
+
+  // Some feeds wrap description HTML in CDATA (tags are literal),
+  // others entity-encode it (&lt;a href=...&gt;). Decoding first makes
+  // this work either way.
+  const decoded = decodeEntities(rawDescriptionHtml);
+
+  const match = decoded.match(
+    /<a[^>]*href=["']([^"']+)["']/i
+  );
+
+  return match ? match[1] : null;
+
+}
+
+
+function isGoogleNewsLink(url) {
+
+  return /news\.google\.com/i.test(url);
+
+}
+
+
 function getImageUrl(block) {
 
   // Most feeds put the image in one of a few standard places. Try each
@@ -454,10 +503,21 @@ function parseRSS(xml, fallbackSource) {
 
     const title = getTag(block, 'title');
 
-    const link = getTag(block, 'link');
+    let link = getTag(block, 'link');
 
     if (!title || !link) {
       continue;
+    }
+
+    // Google News links won't resolve server-side (see
+    // extractRealArticleLink above) — swap in the real publisher URL
+    // embedded in the raw description when we can find one.
+    if (isGoogleNewsLink(link)) {
+      const rawSummary = getRawTag(block, 'description');
+      const realLink = extractRealArticleLink(rawSummary);
+      if (realLink) {
+        link = realLink;
+      }
     }
 
     const summary =
@@ -511,6 +571,30 @@ function parseRSS(xml, fallbackSource) {
     if (!/<enclosure|<media:content|<media:thumbnail|<img/i.test(firstBlock)) {
       console.log(
         `[image-diagnostic-raw] Raw first item block (first 500 chars): ${firstBlock.slice(0, 500)}`
+      );
+    }
+  }
+
+  // Diagnostic: print the actual raw <link> and <description> of a real
+  // Google News item, once, so we can see the current real format
+  // instead of assuming it hasn't changed.
+  if (!parseRSS._loggedGoogleSample && blocks.length > 0) {
+    const gBlock = blocks.find(b => /<link>[^<]*news\.google\.com/i.test(b));
+    if (gBlock) {
+      parseRSS._loggedGoogleSample = true;
+      const rawLink = getTag(gBlock, 'link');
+      const rawDesc = getRawTag(gBlock, 'description');
+      console.log(
+        `[google-news-diagnostic] Source: ${fallbackSource}`
+      );
+      console.log(
+        `[google-news-diagnostic] Raw <link>: ${rawLink}`
+      );
+      console.log(
+        `[google-news-diagnostic] Raw <description> (first 600 chars): ${rawDesc.slice(0, 600)}`
+      );
+      console.log(
+        `[google-news-diagnostic] Full raw item block (first 900 chars): ${gBlock.slice(0, 900)}`
       );
     }
   }
