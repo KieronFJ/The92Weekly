@@ -1084,9 +1084,16 @@ function balanceForAllClubs(items) {
 
   const sorted =
     [...items].sort(
-      (a, b) =>
-        new Date(b.date) -
-        new Date(a.date)
+      (a, b) => {
+        // Items with an image get priority for the limited slots each
+        // club/category gets — recency still decides ties either way.
+        const aHasImage = a.image ? 0 : 1;
+        const bHasImage = b.image ? 0 : 1;
+        if (aHasImage !== bHasImage) {
+          return aHasImage - bHasImage;
+        }
+        return new Date(b.date) - new Date(a.date);
+      }
     );
 
 
