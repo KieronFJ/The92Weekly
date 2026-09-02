@@ -388,55 +388,6 @@ function getTag(block, name) {
 }
 
 
-// Same as getTag, but returns the raw (un-stripped) inner HTML. Needed
-// because Google News wraps the real publisher link inside an <a href>
-// in the <description> tag, and getTag()'s stripTags() throws that away.
-function getRawTag(block, name) {
-
-  const match = block.match(
-    new RegExp(
-      `<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,
-      'i'
-    )
-  );
-
-  return match
-    ? match[1].replace(/<!\[CDATA\[/g, '').replace(/\]\]>/g, '')
-    : '';
-
-}
-
-
-// Google News RSS <link> values are redirect URLs
-// (news.google.com/rss/articles/...) that only resolve to the real
-// article via client-side JavaScript. A server-side fetch() never gets
-// redirected, so scraping og:image from that URL just grabs Google's
-// own interstitial image — the same one, every time. The actual
-// publisher link is embedded as an <a href="..."> inside the raw
-// <description> HTML, so pull it out from there instead.
-function extractRealArticleLink(rawDescriptionHtml) {
-
-  // Some feeds wrap description HTML in CDATA (tags are literal),
-  // others entity-encode it (&lt;a href=...&gt;). Decoding first makes
-  // this work either way.
-  const decoded = decodeEntities(rawDescriptionHtml);
-
-  const match = decoded.match(
-    /<a[^>]*href=["']([^"']+)["']/i
-  );
-
-  return match ? match[1] : null;
-
-}
-
-
-function isGoogleNewsLink(url) {
-
-  return /news\.google\.com/i.test(url);
-
-}
-
-
 function getImageUrl(block) {
 
   // Most feeds put the image in one of a few standard places. Try each
@@ -503,21 +454,10 @@ function parseRSS(xml, fallbackSource) {
 
     const title = getTag(block, 'title');
 
-    let link = getTag(block, 'link');
+    const link = getTag(block, 'link');
 
     if (!title || !link) {
       continue;
-    }
-
-    // Google News links won't resolve server-side (see
-    // extractRealArticleLink above) — swap in the real publisher URL
-    // embedded in the raw description when we can find one.
-    if (isGoogleNewsLink(link)) {
-      const rawSummary = getRawTag(block, 'description');
-      const realLink = extractRealArticleLink(rawSummary);
-      if (realLink) {
-        link = realLink;
-      }
     }
 
     const summary =
@@ -575,117 +515,7 @@ function parseRSS(xml, fallbackSource) {
     }
   }
 
-  // Diagnostic: print the actual raw <link> and <description> of a real
-  // Google News item, once, so we can see the current real format
-  // instead of assuming it hasn't changed.
-  if (!parseRSS._loggedGoogleSample && blocks.length > 0) {
-    const gBlock = blocks.find(b => /<link>[^<]*news\.google\.com/i.test(b));
-    if (gBlock) {
-      parseRSS._loggedGoogleSample = true;
-      const rawLink = getTag(gBlock, 'link');
-      const rawDesc = getRawTag(gBlock, 'description');
-      console.log(
-        `[google-news-diagnostic] Source: ${fallbackSource}`
-      );
-      console.log(
-        `[google-news-diagnostic] Raw <link>: ${rawLink}`
-      );
-      console.log(
-        `[google-news-diagnostic] Raw <description> (first 600 chars): ${rawDesc.slice(0, 600)}`
-      );
-      console.log(
-        `[google-news-diagnostic] Full raw item block (first 900 chars): ${gBlock.slice(0, 900)}`
-      );
-    }
-  }
-
   return items;
-
-}
-
-
-// ============================================================
-// OG:IMAGE ENRICHMENT
-// ============================================================
-// Most feeds strip images to keep them lightweight, even though the
-// actual article page nearly always sets one via og:image for social
-// sharing. Only worth doing for items that are actually going to be
-// published — fetching all ~25k raw articles for this would be wasteful
-// and risk the same timeout/rate-limit issues as the feeds themselves.
-
-const OG_IMAGE_TIMEOUT_MS = 6000;
-
-async function fetchOgImage(url) {
-
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), OG_IMAGE_TIMEOUT_MS);
-
-  try {
-
-    const res = await fetch(url, {
-      signal: controller.signal,
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; The92WeeklyBot/1.0)' }
-    });
-
-    if (!res.ok) return null;
-
-    const html = await res.text();
-
-    const match =
-      html.match(/<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i) ||
-      html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i);
-
-    return match ? match[1] : null;
-
-  } catch (error) {
-
-    return null;
-
-  } finally {
-
-    clearTimeout(timer);
-
-  }
-
-}
-
-async function enrichMissingImages(items) {
-
-  const needsImage = items.filter(item => !item.image);
-
-  console.log(
-    `[og-image] ${needsImage.length}/${items.length} published items are missing an image — fetching their article pages...`
-  );
-
-  let found = 0;
-
-  await mapWithConcurrency(needsImage, 8, async (item) => {
-    const ogImage = await fetchOgImage(item.link);
-    if (ogImage) {
-      item.image = ogImage;
-      found++;
-    }
-  });
-
-  console.log(
-    `[og-image] Found og:image for ${found}/${needsImage.length} items that were missing one.`
-  );
-
-  // Diagnostic: a suspiciously high success rate across hundreds of
-  // different sites usually means we're grabbing a generic fallback
-  // image (a site logo, a "enable JavaScript" page) rather than the
-  // real article photo. Check how many unique URLs actually came back —
-  // if it's a small number reused constantly, that confirms it.
-  const foundUrls = needsImage.filter(i => i.image).map(i => i.image);
-  const uniqueUrls = new Set(foundUrls);
-  console.log(
-    `[og-image-diagnostic] ${uniqueUrls.size} unique image URLs across ${foundUrls.length} items found.`
-  );
-  if (foundUrls.length > 0) {
-    console.log(
-      `[og-image-diagnostic] Sample URLs: ${foundUrls.slice(0, 5).join(' | ')}`
-    );
-  }
 
 }
 
@@ -1578,8 +1408,6 @@ async function main() {
     balanceForAllClubs(
       deduped
     );
-
-  await enrichMissingImages(balanced.items);
 
 
   const successfulFeeds =
