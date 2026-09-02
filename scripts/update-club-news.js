@@ -587,6 +587,22 @@ async function enrichMissingImages(items) {
     `[og-image] Found og:image for ${found}/${needsImage.length} items that were missing one.`
   );
 
+  // Diagnostic: a suspiciously high success rate across hundreds of
+  // different sites usually means we're grabbing a generic fallback
+  // image (a site logo, a "enable JavaScript" page) rather than the
+  // real article photo. Check how many unique URLs actually came back —
+  // if it's a small number reused constantly, that confirms it.
+  const foundUrls = needsImage.filter(i => i.image).map(i => i.image);
+  const uniqueUrls = new Set(foundUrls);
+  console.log(
+    `[og-image-diagnostic] ${uniqueUrls.size} unique image URLs across ${foundUrls.length} items found.`
+  );
+  if (foundUrls.length > 0) {
+    console.log(
+      `[og-image-diagnostic] Sample URLs: ${foundUrls.slice(0, 5).join(' | ')}`
+    );
+  }
+
 }
 
 
