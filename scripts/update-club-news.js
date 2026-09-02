@@ -521,6 +521,76 @@ function parseRSS(xml, fallbackSource) {
 
 
 // ============================================================
+// OG:IMAGE ENRICHMENT
+// ============================================================
+// Most feeds strip images to keep them lightweight, even though the
+// actual article page nearly always sets one via og:image for social
+// sharing. Only worth doing for items that are actually going to be
+// published — fetching all ~25k raw articles for this would be wasteful
+// and risk the same timeout/rate-limit issues as the feeds themselves.
+
+const OG_IMAGE_TIMEOUT_MS = 6000;
+
+async function fetchOgImage(url) {
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), OG_IMAGE_TIMEOUT_MS);
+
+  try {
+
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; The92WeeklyBot/1.0)' }
+    });
+
+    if (!res.ok) return null;
+
+    const html = await res.text();
+
+    const match =
+      html.match(/<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i) ||
+      html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i);
+
+    return match ? match[1] : null;
+
+  } catch (error) {
+
+    return null;
+
+  } finally {
+
+    clearTimeout(timer);
+
+  }
+
+}
+
+async function enrichMissingImages(items) {
+
+  const needsImage = items.filter(item => !item.image);
+
+  console.log(
+    `[og-image] ${needsImage.length}/${items.length} published items are missing an image — fetching their article pages...`
+  );
+
+  let found = 0;
+
+  await mapWithConcurrency(needsImage, 8, async (item) => {
+    const ogImage = await fetchOgImage(item.link);
+    if (ogImage) {
+      item.image = ogImage;
+      found++;
+    }
+  });
+
+  console.log(
+    `[og-image] Found og:image for ${found}/${needsImage.length} items that were missing one.`
+  );
+
+}
+
+
+// ============================================================
 // FEED FETCHING
 // ============================================================
 
@@ -1408,6 +1478,8 @@ async function main() {
     balanceForAllClubs(
       deduped
     );
+
+  await enrichMissingImages(balanced.items);
 
 
   const successfulFeeds =
