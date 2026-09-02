@@ -1,36 +1,8 @@
 {
-  "updatedAt": "2026-09-02T11:02:31.774Z",
+  "updatedAt": "2026-09-02T11:03:18.366Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Everton"
-        ],
-        "title": "Balogun walks away from Everton deal",
-        "summary": "Everton's move for Monaco striker Folarin Balogun has fallen through following a change of heart from the player after the deal scuppered Chelsea's chances of signing Lamine Camara.",
-        "link": "https://www.skysports.com/football/news/12040/13580201/folarin-balogun-monaco-strikers-move-to-everton-falls-through-after-deal-scuppered-chelseas-chances-of-signing-lamine-camara",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Manchester City"
-        ],
-        "title": "'Very unhappy' - Why Chelsea still sold Fernandez despite Camara drama",
-        "summary": "Sky Sports chief correspondent Kaveh Solhekol explains why Chelsea sold Enzo Fernandez to rivals Manchester City despite the last-minute collapse of their deal to sign Lamine Camara from Monaco.",
-        "link": "https://www.skysports.com/watch/video/13580198/explained-why-chelsea-still-sold-enzo-fernandez-despite-collapse-of-lamina-camara-deal",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -41,7 +13,7 @@
         "summary": "Monaco have pulled out of the deal to sell Lamine Camara to Chelsea, who feel the French club have acted in an extraordinary and deeply unprofessional way.",
         "link": "https://www.skysports.com/football/news/12040/13580189/lamine-camara-monaco-pull-out-of-selling-midfielder-to-chelsea-in-47m-deal-after-blues-agreed-deal-for-enzo-fernandez-replacement",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
+        "publishedAt": "2026-09-02T11:03:18.348Z",
         "status": "Rumour"
       },
       {
@@ -54,7 +26,7 @@
         "summary": "Sunderland have finally completed the signing of Lyon winger Malick Fofana after a dramatic Deadline Day transfer saga involving two private jets and the player changing his mind multiple times.",
         "link": "https://www.skysports.com/football/news/12040/13580106/malick-fofana-sunderland-finally-complete-signing-of-lyon-winger-after-deadline-day-drama-with-crystal-palace",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
+        "publishedAt": "2026-09-02T11:03:18.348Z",
         "status": "Rumour"
       },
       {
@@ -68,7 +40,7 @@
         "summary": "Manchester City have signed Enzo Fernandez from Chelsea for a joint-British-record fee of &#163;125m.",
         "link": "https://www.skysports.com/football/news/12040/13579972/enzo-fernandez-transfer-news-man-city-sign-midfielder-from-chelsea-in-british-record-equalling-125m-deal",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
+        "publishedAt": "2026-09-02T11:03:18.348Z",
         "status": "Rumour"
       },
       {
@@ -82,7 +54,7 @@
         "summary": "Tottenham have signed Chelsea winger Mykhailo Mudryk on a season-long loan with an option to buy.",
         "link": "https://www.skysports.com/football/news/12040/13579537/mykhailo-mudryk-transfer-news-tottenham-sign-chelsea-winger-on-loan-as-tosin-joins-in-permanent-deal",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
+        "publishedAt": "2026-09-02T11:03:18.348Z",
         "status": "Rumour"
       },
       {
@@ -95,7 +67,35 @@
         "summary": "No Julian Alvarez to Arsenal. He joins Morgan Rogers and Vinicius Junior in not moving to the Premier League champions this summer. And Mikel Arteta has missed out on the star attacker he wanted.",
         "link": "https://www.skysports.com/football/news/12040/13579965/arsenal-fail-to-sign-julian-alvarez-and-with-no-elite-attacker-in-are-mikel-artetas-team-short-in-the-forward-options",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-02T11:02:31.748Z",
+        "publishedAt": "2026-09-02T11:03:18.348Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Everton"
+        ],
+        "title": "Balogun walks away from Everton deal",
+        "summary": "Everton's move for Monaco striker Folarin Balogun has fallen through following a change of heart from the player after the deal scuppered Chelsea's chances of signing Lamine Camara.",
+        "link": "https://www.skysports.com/football/news/12040/13580201/folarin-balogun-monaco-strikers-move-to-everton-falls-through-after-deal-scuppered-chelseas-chances-of-signing-lamine-camara",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-02T11:03:18.347Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Manchester City"
+        ],
+        "title": "'Very unhappy' - Why Chelsea still sold Fernandez despite Camara drama",
+        "summary": "Sky Sports chief correspondent Kaveh Solhekol explains why Chelsea sold Enzo Fernandez to rivals Manchester City despite the last-minute collapse of their deal to sign Lamine Camara from Monaco.",
+        "link": "https://www.skysports.com/watch/video/13580198/explained-why-chelsea-still-sold-enzo-fernandez-despite-collapse-of-lamina-camara-deal",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-02T11:03:18.347Z",
         "status": "Rumour"
       },
       {
