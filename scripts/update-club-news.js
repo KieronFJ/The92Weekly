@@ -388,6 +388,40 @@ function getTag(block, name) {
 }
 
 
+function getImageUrl(block) {
+
+  // Most feeds put the image in one of a few standard places. Try each
+  // in order of reliability, since not every feed uses the same one.
+
+  // 1. <enclosure url="..." type="image/..." />
+  const enclosure = block.match(
+    /<enclosure[^>]*url=["']([^"']+)["'][^>]*type=["']image[^"']*["'][^>]*\/?>/i
+  ) || block.match(
+    /<enclosure[^>]*type=["']image[^"']*["'][^>]*url=["']([^"']+)["'][^>]*\/?>/i
+  );
+  if (enclosure) return enclosure[1];
+
+  // 2. <media:content url="..." medium="image" /> or similar media: tags
+  const mediaContent = block.match(
+    /<media:content[^>]*url=["']([^"']+)["'][^>]*\/?>/i
+  );
+  if (mediaContent) return mediaContent[1];
+
+  // 3. <media:thumbnail url="..." />
+  const mediaThumb = block.match(
+    /<media:thumbnail[^>]*url=["']([^"']+)["'][^>]*\/?>/i
+  );
+  if (mediaThumb) return mediaThumb[1];
+
+  // 4. An <img src="..."> embedded directly in the raw description HTML
+  const imgTag = block.match(/<img[^>]*src=["']([^"']+)["']/i);
+  if (imgTag) return imgTag[1];
+
+  return null;
+
+}
+
+
 function safeDate(value) {
 
   const date = new Date(value || '');
@@ -453,7 +487,9 @@ function parseRSS(xml, fallbackSource) {
 
       source,
 
-      feedSource: fallbackSource
+      feedSource: fallbackSource,
+
+      image: getImageUrl(block)
 
     });
 
