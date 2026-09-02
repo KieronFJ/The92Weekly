@@ -388,40 +388,6 @@ function getTag(block, name) {
 }
 
 
-function getImageUrl(block) {
-
-  // Most feeds put the image in one of a few standard places. Try each
-  // in order of reliability, since not every feed uses the same one.
-
-  // 1. <enclosure url="..." type="image/..." />
-  const enclosure = block.match(
-    /<enclosure[^>]*url=["']([^"']+)["'][^>]*type=["']image[^"']*["'][^>]*\/?>/i
-  ) || block.match(
-    /<enclosure[^>]*type=["']image[^"']*["'][^>]*url=["']([^"']+)["'][^>]*\/?>/i
-  );
-  if (enclosure) return enclosure[1];
-
-  // 2. <media:content url="..." medium="image" /> or similar media: tags
-  const mediaContent = block.match(
-    /<media:content[^>]*url=["']([^"']+)["'][^>]*\/?>/i
-  );
-  if (mediaContent) return mediaContent[1];
-
-  // 3. <media:thumbnail url="..." />
-  const mediaThumb = block.match(
-    /<media:thumbnail[^>]*url=["']([^"']+)["'][^>]*\/?>/i
-  );
-  if (mediaThumb) return mediaThumb[1];
-
-  // 4. An <img src="..."> embedded directly in the raw description HTML
-  const imgTag = block.match(/<img[^>]*src=["']([^"']+)["']/i);
-  if (imgTag) return imgTag[1];
-
-  return null;
-
-}
-
-
 function safeDate(value) {
 
   const date = new Date(value || '');
@@ -487,32 +453,10 @@ function parseRSS(xml, fallbackSource) {
 
       source,
 
-      feedSource: fallbackSource,
-
-      image: getImageUrl(block)
+      feedSource: fallbackSource
 
     });
 
-  }
-
-  // Diagnostic: on the very first feed processed, check whether the raw
-  // XML even contains recognizable image tags at all, before anything
-  // else touches the data.
-  if (!parseRSS._loggedSample && blocks.length > 0) {
-    parseRSS._loggedSample = true;
-    const firstBlock = blocks[0];
-    console.log(
-      `[image-diagnostic-raw] Sample feed (${fallbackSource}) — ` +
-      `has <enclosure>: ${/<enclosure/i.test(firstBlock)}, ` +
-      `has <media:content>: ${/<media:content/i.test(firstBlock)}, ` +
-      `has <media:thumbnail>: ${/<media:thumbnail/i.test(firstBlock)}, ` +
-      `has <img: ${/<img/i.test(firstBlock)}`
-    );
-    if (!/<enclosure|<media:content|<media:thumbnail|<img/i.test(firstBlock)) {
-      console.log(
-        `[image-diagnostic-raw] Raw first item block (first 500 chars): ${firstBlock.slice(0, 500)}`
-      );
-    }
   }
 
   return items;
@@ -1084,16 +1028,8 @@ function balanceForAllClubs(items) {
 
   const sorted =
     [...items].sort(
-      (a, b) => {
-        // Items with an image get priority for the limited slots each
-        // club/category gets — recency still decides ties either way.
-        const aHasImage = a.image ? 0 : 1;
-        const bHasImage = b.image ? 0 : 1;
-        if (aHasImage !== bHasImage) {
-          return aHasImage - bHasImage;
-        }
-        return new Date(b.date) - new Date(a.date);
-      }
+      (a, b) =>
+        new Date(b.date) - new Date(a.date)
     );
 
 
@@ -1369,27 +1305,6 @@ async function main() {
   console.log(
     `Removed ${removed} streaming/spam articles.`
   );
-
-  // Diagnostic: how many items actually got an image, and if none did,
-  // show why — either nothing was found, or the field isn't surviving
-  // through to this point.
-  const withImage = filtered.filter(i => i.image).length;
-  console.log(
-    `[image-diagnostic] ${withImage}/${filtered.length} items have an image URL.`
-  );
-  if (withImage === 0 && filtered.length > 0) {
-    console.log(
-      `[image-diagnostic] Sample item keys: ${Object.keys(filtered[0]).join(', ')}`
-    );
-    console.log(
-      `[image-diagnostic] Sample item.image value: ${JSON.stringify(filtered[0].image)}`
-    );
-  } else if (withImage > 0) {
-    const sample = filtered.find(i => i.image);
-    console.log(
-      `[image-diagnostic] Example image URL found: ${sample.image}`
-    );
-  }
 
 
   // ==========================================================
