@@ -325,6 +325,14 @@
   body.on-dark-bg .fan-views-head h2, body.on-dark-bg nav a, body.on-dark-bg .nav-trigger {
     color: #FFFFFF;
   }
+
+  /* The sidebar is always a plain white panel, regardless of the club
+     colour behind it — it should never inherit the adaptive text color
+     meant for content sitting directly on that colour. */
+  body.on-dark-bg .sidebar-nav > a,
+  body.on-light-bg .sidebar-nav > a {
+    color: var(--ink) !important;
+  }
   .fan-tweet-placeholder {
     background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
     padding: 20px; margin-bottom: 14px; font-size: 14px; color: var(--ink-muted);
