@@ -721,7 +721,8 @@
         })
         .catch(() => {
           const list = document.getElementById('team-news-list');
-          if (list) list.innerHTML = '<div class="status-box">Couldn\\'t load recent news right now.</div>';
+          if (list) list.innerHTML = '<div class="status-box">Couldn\'t load recent news right now.</div>';
+
         });
     } catch (e) {
       console.log('Team news section failed to load:', e);
