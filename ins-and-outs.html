@@ -132,38 +132,40 @@
   main > p.sub { color: var(--ink-muted); font-size: 16px; margin-bottom: 12px; max-width: 60ch; }
   .week-tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-muted); margin-bottom: 40px; display: block; }
 
-  .filter-row { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
-  .filter-pill {
-    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.02em;
-    padding: 6px 14px; border: 1px solid var(--line); border-radius: 20px; color: var(--ink-muted);
-  }
-  .filter-pill.active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
-
-  .transfer-item {
-    display: flex; align-items: center; gap: 20px;
+  .news-item {
     padding: 20px 0; border-bottom: 1px solid var(--line-soft);
-    flex-wrap: wrap;
   }
-  .transfer-item:last-child { border-bottom: none; }
-
-  .status-chip {
-    font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700;
-    letter-spacing: 0.04em; text-transform: uppercase; padding: 4px 10px; border-radius: 5px;
-    flex-shrink: 0; min-width: 78px; text-align: center;
+  .news-item:last-child { border-bottom: none; }
+  .news-item-clubs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .news-club-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--gold);
+    background: var(--panel); padding: 3px 8px; border-radius: 3px;
   }
-  .status-confirmed { background: #3E8A4D; color: #FFFFFF; }
-  .status-loan { background: #2E5C8A; color: #FFFFFF; }
-  .status-rumour { background: var(--panel); color: var(--ink-muted); border: 1px solid var(--line); }
-
-  .transfer-main { flex: 1; min-width: 220px; }
-  .transfer-player { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px; margin-bottom: 3px; }
-  .transfer-move { font-size: 14.5px; color: var(--ink-muted); }
-  .transfer-move b { color: var(--ink); font-weight: 600; }
-
-  .transfer-fee {
-    font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink-muted);
-    text-align: right; min-width: 90px; flex-shrink: 0;
+  .news-item-title {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; margin-bottom: 6px;
   }
+  .news-item-title a:hover { color: var(--gold); }
+  .news-item-summary { font-size: 14px; color: var(--ink-muted); margin-bottom: 8px; }
+  .news-item-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-muted); }
+  .news-item-meta a { color: var(--gold); }
+
+  .status-box { color: var(--ink-muted); font-size: 15px; padding: 16px 0; }
+
+  .show-all-btn {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--gold);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 9px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 14px 0 0;
+  }
+  .show-all-btn:hover { background: var(--line-soft); }
 
   .division-heading {
     font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px;
@@ -182,8 +184,7 @@
   .footer-links a:hover { color: var(--gold); }
 
   @media (max-width: 600px) {
-    .transfer-item { gap: 12px; }
-    .transfer-fee { text-align: left; margin-top: 4px; }
+    .news-item-clubs { gap: 4px; }
   }
 
   /* ---------- Sidebar Navigation ---------- */
@@ -369,64 +370,19 @@
   <main>
     <div class="eyebrow">Ins &amp; Outs</div>
     <h1>Who's moving, across all four divisions</h1>
-    <p class="sub">Who's in, who's out, and who's just paper talk — from the Premier League down to the depths of League Two.</p>
-    <span class="week-tag">Updated weekly</span>
+    <p class="sub">Transfer news from the Premier League down to League Two, pulled from trusted sources and sorted by division — not just the top flight.</p>
+    <span class="week-tag" id="updated-tag">Updated automatically</span>
 
-    <div class="filter-row">
-      <span class="filter-pill active">All</span>
-      <span class="filter-pill">Confirmed</span>
-      <span class="filter-pill">Loan</span>
-      <span class="filter-pill">Rumour</span>
-    </div>
-
-    <div class="division-heading">Premier League</div>
-    <div class="transfer-item">
-      <span class="status-chip status-confirmed">Confirmed</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Selling Club] → <b>[Buying Club]</b></div>
-      </div>
-      <div class="transfer-fee">[£Xm]</div>
-    </div>
-    <div class="transfer-item">
-      <span class="status-chip status-rumour">Rumour</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Current Club] → <b>[Linked Club]</b></div>
-      </div>
-      <div class="transfer-fee">[Est. £Xm]</div>
-    </div>
-
-    <div class="division-heading">Championship</div>
-    <div class="transfer-item">
-      <span class="status-chip status-loan">Loan</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Parent Club] → <b>[Loan Club]</b></div>
-      </div>
-      <div class="transfer-fee">Season-long</div>
-    </div>
-
-    <div class="division-heading">League One</div>
-    <div class="transfer-item">
-      <span class="status-chip status-confirmed">Confirmed</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Selling Club] → <b>[Buying Club]</b></div>
-      </div>
-      <div class="transfer-fee">Free</div>
-    </div>
-
-    <div class="division-heading">League Two</div>
-    <div class="transfer-item">
-      <span class="status-chip status-rumour">Rumour</span>
-      <div class="transfer-main">
-        <div class="transfer-player">[Player Name]</div>
-        <div class="transfer-move">[Current Club] → <b>[Linked Club]</b></div>
-      </div>
-      <div class="transfer-fee">Undisclosed</div>
+    <div id="transfers-root">
+      <div class="status-box">Loading the latest transfer news…</div>
     </div>
   </main>
+
+  <template id="division-template">
+    <div class="division-heading"></div>
+    <div class="division-items"></div>
+    <button class="show-all-btn" type="button">Show all</button>
+  </template>
 
   <footer>
     <p>THE92WEEKLY — Football across the pyramid.</p>
@@ -528,6 +484,78 @@
       });
     }
   
+    const TRANSFERS_URL = 'data/transfers.json';
+    const DIVISION_ORDER = [1, 2, 3, 4];
+    let transfersByDivision = {};
+
+    fetch(TRANSFERS_URL)
+      .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+      .then(data => {
+        transfersByDivision = data.byDivision || {};
+        const tag = document.getElementById('updated-tag');
+        if (tag && data.updatedAt) {
+          const d = new Date(data.updatedAt);
+          tag.textContent = 'Updated ' +
+            d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) +
+            ' at ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+        }
+        renderTransfers();
+      })
+      .catch(() => {
+        document.getElementById('transfers-root').innerHTML =
+          '<div class="status-box">Couldn\'t load transfer news right now. Try refreshing.</div>';
+      });
+
+    function transferCardHtml(item) {
+      const dateStr = new Date(item.publishedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+      const clubTags = (item.clubs || []).map(c => `<span class="news-club-tag">${c}</span>`).join('');
+      return `
+        <div class="news-item">
+          <div class="news-item-clubs">${clubTags}</div>
+          <div class="news-item-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
+          <div class="news-item-summary">${item.summary}</div>
+          <div class="news-item-meta">${dateStr} · via ${item.source}</div>
+        </div>`;
+    }
+
+    function renderTransfers() {
+      const root = document.getElementById('transfers-root');
+      const template = document.getElementById('division-template');
+      root.innerHTML = '';
+
+      let anyItems = false;
+
+      DIVISION_ORDER.forEach(div => {
+        const items = transfersByDivision[div] || [];
+        if (items.length === 0) return;
+        anyItems = true;
+
+        const section = template.content.cloneNode(true);
+        section.querySelector('.division-heading').textContent = divNames[div];
+
+        const itemsContainer = section.querySelector('.division-items');
+        const showAllBtn = section.querySelector('.show-all-btn');
+
+        itemsContainer.innerHTML = items.slice(0, 3).map(transferCardHtml).join('');
+
+        if (items.length > 3) {
+          showAllBtn.textContent = `Show all ${items.length} ${divNames[div]} stories`;
+          showAllBtn.addEventListener('click', function() {
+            itemsContainer.innerHTML = items.map(transferCardHtml).join('');
+            showAllBtn.remove();
+          });
+        } else {
+          showAllBtn.remove();
+        }
+
+        root.appendChild(section);
+      });
+
+      if (!anyItems) {
+        root.innerHTML = '<div class="status-box">No transfer news right now — check back soon.</div>';
+      }
+    }
+
     // Sidebar menu open/close
     const menuToggle = document.getElementById('menu-toggle');
     const sidebarMenu = document.getElementById('sidebar-menu');
