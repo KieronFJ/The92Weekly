@@ -20,33 +20,32 @@ const DIVISIONS = {
 const CLUBS = {
   1: [
     'Arsenal','Aston Villa','Bournemouth','Brentford',
-    'Brighton','Chelsea','Crystal Palace','Everton',
-    'Fulham','Leeds United','Liverpool','Manchester City',
-    'Manchester United','Newcastle United','Nottingham Forest',
-    'Sunderland','Tottenham','West Ham','Wolves'
+    'Brighton','Chelsea','Coventry','Crystal Palace','Everton',
+    'Fulham','Hull','Ipswich','Leeds United','Liverpool',
+    'Manchester City','Manchester United','Newcastle United',
+    'Nottingham Forest','Sunderland','Tottenham'
   ],
   2: [
     'Birmingham','Blackburn','Bolton','Bristol City',
-    'Burnley','Cardiff','Charlton','Coventry','Derby',
-    'Hull','Leicester','Middlesbrough','Millwall','Norwich',
-    'Oxford','Portsmouth','Preston','QPR','Sheffield United',
-    'Southampton','Stoke','Swansea','Watford','West Brom',
-    'Wrexham'
+    'Burnley','Cardiff','Charlton','Derby','Lincoln',
+    'Middlesbrough','Millwall','Norwich','Portsmouth',
+    'Preston','QPR','Sheffield United','Southampton',
+    'Stoke','Swansea','Watford','West Brom','West Ham',
+    'Wolves','Wrexham'
   ],
   3: [
     'AFC Wimbledon','Barnsley','Blackpool','Bradford',
-    'Bristol Rovers','Burton','Cambridge','Doncaster',
-    'Huddersfield','Leyton Orient','Luton','Mansfield',
-    'MK Dons','Notts County','Peterborough','Plymouth',
-    'Reading','Rotherham','Sheffield Wednesday','Stevenage',
-    'Stockport','Wigan','Wycombe'
+    'Bromley','Burton','Cambridge','Doncaster','Huddersfield',
+    'Leicester','Leyton Orient','Luton','Mansfield','MK Dons',
+    'Notts County','Oxford','Peterborough','Plymouth','Reading',
+    'Sheffield Wednesday','Stevenage','Stockport','Wigan','Wycombe'
   ],
   4: [
-    'Accrington','Barnet','Bromley','Cheltenham','Chesterfield',
-    'Colchester','Crawley','Crewe','Exeter','Fleetwood',
-    'Gillingham','Grimsby','Newport','Northampton','Oldham',
-    'Port Vale','Salford','Shrewsbury','Swindon','Tranmere',
-    'Walsall','York'
+    'Accrington','Barnet','Bristol Rovers','Cheltenham',
+    'Chesterfield','Colchester','Crawley','Crewe','Exeter',
+    'Fleetwood','Gillingham','Grimsby','Newport','Northampton',
+    'Oldham','Port Vale','Rochdale','Rotherham','Salford',
+    'Shrewsbury','Swindon','Tranmere','Walsall','York'
   ]
 };
 
