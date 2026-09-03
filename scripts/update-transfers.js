@@ -139,6 +139,14 @@ const CONFIRMED =
 const NON_FOOTBALL =
   /\b(cricket|rugby league|rugby union|county championship|T20 Blast|One Day Cup|test match|wicket|batsman|bowler|snooker|darts|golf|tennis|boxing|Formula 1|F1 Grand Prix|MotoGP|athletics|Olympics)\b/i;
 
+// Google's "Premier League" search doesn't know that should mean
+// specifically the English top flight — it also surfaces Scottish
+// Premiership stories. Since those rarely mention an English club by
+// name, they had nothing to override the feed's division hint and were
+// landing in the Premier League section by default.
+const SCOTTISH_FOOTBALL =
+  /\b(scottish premiership|spfl|scottish cup|scottish football|ibrox|celtic park|parkhead|hampden|old firm|celtic fc|celtic|hibernian|hibs|aberdeen fc|heart of midlothian|hearts fc|dundee united|dundee fc|motherwell|kilmarnock|st mirren|livingston fc|ross county|st johnstone|partick thistle)\b/i;
+
 function googleNews(query) {
   return 'https://news.google.com/rss/search?q=' +
     encodeURIComponent(query) +
@@ -305,6 +313,10 @@ async function main() {
         continue;
       }
 
+      if (SCOTTISH_FOOTBALL.test(text)) {
+        continue;
+      }
+
       const clubs = getClubs(text);
       const divisions = getDivisions(
         clubs,
@@ -365,6 +377,8 @@ async function main() {
     const text = `${story.title} ${story.summary || ''}`;
 
     if (NON_FOOTBALL.test(text)) return [];
+
+    if (SCOTTISH_FOOTBALL.test(text)) return [];
 
     const clubs = getClubs(text);
     const divisions = getDivisions(clubs, 0);
