@@ -509,11 +509,14 @@
     function transferCardHtml(item) {
       const dateStr = new Date(item.publishedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
       const clubTags = (item.clubs || []).map(c => `<span class="news-club-tag">${c}</span>`).join('');
+      const summaryHtml = item.summary
+        ? `<div class="news-item-summary">${item.summary}</div>`
+        : '';
       return `
         <div class="news-item">
           <div class="news-item-clubs">${clubTags}</div>
           <div class="news-item-title"><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></div>
-          <div class="news-item-summary">${item.summary}</div>
+          ${summaryHtml}
           <div class="news-item-meta">${dateStr} · via ${item.source}</div>
         </div>`;
     }
