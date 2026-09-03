@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T18:38:06.809Z",
+  "updatedAt": "2026-09-03T18:49:53.876Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -14897,28 +14897,6 @@
         "score": null
       },
       "venue": "Villa Park",
-      "source": "ESPN"
-    },
-    {
-      "id": "401880891",
-      "competition": "League One",
-      "competitionCode": "eng.3",
-      "type": "league",
-      "date": "2026-11-04T19:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, November 4th at 2:45 PM EST",
-      "home": {
-        "id": "311",
-        "name": "Oxford United",
-        "score": null
-      },
-      "away": {
-        "id": "338",
-        "name": "Reading",
-        "score": null
-      },
-      "venue": "The Kassam Stadium",
       "source": "ESPN"
     },
     {
@@ -36298,7 +36276,7 @@
     "eng.3": {
       "name": "League One",
       "success": true,
-      "matches": 394
+      "matches": 393
     },
     "eng.4": {
       "name": "League Two",
