@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T11:28:22.605Z",
+  "updatedAt": "2026-09-03T11:38:37.359Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3345,71 +3345,7 @@
         "score": 2
       },
       "venue": "Anfield",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Dan Ndoye",
-          "minute": "24'",
-          "team": "Nottingham Forest",
-          "ownGoal": false
-        },
-        {
-          "player": "Alexander Isak",
-          "minute": "60'",
-          "team": "Liverpool",
-          "ownGoal": false
-        },
-        {
-          "player": "Víctor Muñoz",
-          "minute": "82'",
-          "team": "Liverpool",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Igor Jesus",
-          "minute": "44'",
-          "team": "Nottingham Forest",
-          "card": "yellow"
-        },
-        {
-          "player": "Ola Aina",
-          "minute": "50'",
-          "team": "Nottingham Forest",
-          "card": "yellow"
-        },
-        {
-          "player": "Víctor Muñoz",
-          "minute": "54'",
-          "team": "Liverpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Florian Wirtz",
-          "minute": "58'",
-          "team": "Liverpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Alisson Becker",
-          "minute": "69'",
-          "team": "Liverpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Morgan Gibbs-White",
-          "minute": "70'",
-          "team": "Nottingham Forest",
-          "card": "red"
-        },
-        {
-          "player": "Ronald Araújo",
-          "minute": "79'",
-          "team": "Liverpool",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880311",
@@ -3431,59 +3367,7 @@
         "score": 3
       },
       "venue": "Pride Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Joseph Opoku",
-          "minute": "2'",
-          "team": "Swansea City",
-          "ownGoal": false
-        },
-        {
-          "player": "Eom Ji-Sung",
-          "minute": "44'",
-          "team": "Swansea City",
-          "ownGoal": false
-        },
-        {
-          "player": "Ronald",
-          "minute": "90'+1'",
-          "team": "Swansea City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Sondre Langas",
-          "minute": "69'",
-          "team": "Derby County",
-          "card": "yellow"
-        },
-        {
-          "player": "Marko Stamenic",
-          "minute": "73'",
-          "team": "Swansea City",
-          "card": "yellow"
-        },
-        {
-          "player": "Dion Sanderson",
-          "minute": "79'",
-          "team": "Derby County",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Travis",
-          "minute": "81'",
-          "team": "Derby County",
-          "card": "yellow"
-        },
-        {
-          "player": "Elijah Just",
-          "minute": "84'",
-          "team": "Swansea City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880310",
@@ -3505,41 +3389,7 @@
         "score": 1
       },
       "venue": "Riverside Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Will Lankshear",
-          "minute": "48'",
-          "team": "Middlesbrough",
-          "ownGoal": false
-        },
-        {
-          "player": "Jimmy Morgan",
-          "minute": "65'",
-          "team": "West Bromwich Albion",
-          "ownGoal": false
-        },
-        {
-          "player": "Will Lankshear",
-          "minute": "73'",
-          "team": "Middlesbrough",
-          "ownGoal": false
-        },
-        {
-          "player": "Alfie Jones",
-          "minute": "87'",
-          "team": "Middlesbrough",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Ousmane Diakite",
-          "minute": "61'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880306",
@@ -3561,71 +3411,7 @@
         "score": 1
       },
       "venue": "Molineux Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Sam Gallagher",
-          "minute": "2'",
-          "team": "Stoke City",
-          "ownGoal": false
-        },
-        {
-          "player": "Rodrigo Gomes",
-          "minute": "19'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Rodrigo Gomes",
-          "minute": "22'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jordan James",
-          "minute": "84'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Bae Jun-Ho",
-          "minute": "15'",
-          "team": "Stoke City",
-          "card": "yellow"
-        },
-        {
-          "player": "Bosun Lawal",
-          "minute": "31'",
-          "team": "Stoke City",
-          "card": "yellow"
-        },
-        {
-          "player": "Mateus Mané",
-          "minute": "39'",
-          "team": "Wolverhampton Wanderers",
-          "card": "yellow"
-        },
-        {
-          "player": "Sam Gallagher",
-          "minute": "45'",
-          "team": "Stoke City",
-          "card": "yellow"
-        },
-        {
-          "player": "Raúl Jiménez",
-          "minute": "55'",
-          "team": "Wolverhampton Wanderers",
-          "card": "red"
-        },
-        {
-          "player": "Sorba Thomas",
-          "minute": "90'+3'",
-          "team": "Stoke City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880897",
@@ -3647,34 +3433,7 @@
         "score": 0
       },
       "venue": "Bloomfield Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Jordan Williams",
-          "minute": "19'",
-          "team": "Blackpool",
-          "ownGoal": false
-        },
-        {
-          "player": "Dion Charles",
-          "minute": "20'",
-          "team": "Blackpool",
-          "ownGoal": false
-        },
-        {
-          "player": "Karoy Anderson",
-          "minute": "56'",
-          "team": "Blackpool",
-          "ownGoal": false
-        },
-        {
-          "player": "Jerry Yates",
-          "minute": "72'",
-          "team": "Blackpool",
-          "ownGoal": false
-        }
-      ],
-      "cards": []
+      "source": "ESPN"
     },
     {
       "id": "401880893",
@@ -3696,28 +3455,7 @@
         "score": 0
       },
       "venue": "Stadium MK",
-      "source": "ESPN",
-      "goals": [],
-      "cards": [
-        {
-          "player": "Luke Thomas",
-          "minute": "48'",
-          "team": "Leicester City",
-          "card": "yellow"
-        },
-        {
-          "player": "Harry Souttar",
-          "minute": "80'",
-          "team": "Leicester City",
-          "card": "yellow"
-        },
-        {
-          "player": "Liam Cullen",
-          "minute": "90'+2'",
-          "team": "Leicester City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401881420",
@@ -3739,59 +3477,7 @@
         "score": 2
       },
       "venue": "The Hive Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Charlie Lakin",
-          "minute": "11'",
-          "team": "Barnet",
-          "ownGoal": false
-        },
-        {
-          "player": "Ryan Broom",
-          "minute": "60'",
-          "team": "Cheltenham Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Charlie Mccann",
-          "minute": "64'",
-          "team": "Cheltenham Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jonathan Tomkinson",
-          "minute": "13'",
-          "team": "Cheltenham Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Shaun McWilliams",
-          "minute": "38'",
-          "team": "Cheltenham Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Matthew Cox",
-          "minute": "53'",
-          "team": "Barnet",
-          "card": "yellow"
-        },
-        {
-          "player": "Freddie Willcox",
-          "minute": "76'",
-          "team": "Cheltenham Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Kabongo Tshimanga",
-          "minute": "78'",
-          "team": "Barnet",
-          "card": "red"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401881413",
@@ -3813,16 +3499,7 @@
         "score": 0
       },
       "venue": "Vale Park",
-      "source": "ESPN",
-      "goals": [],
-      "cards": [
-        {
-          "player": "Mickey Demetriou",
-          "minute": "80'",
-          "team": "Crewe Alexandra",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401881412",
