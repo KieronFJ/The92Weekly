@@ -17,36 +17,111 @@ const DIVISIONS = {
   4: 'League Two'
 };
 
+// Each club maps to a list of names it's commonly referred to by in
+// news headlines — plain single-name matching missed too much real
+// coverage (e.g. "Man Utd" never matches "Manchester United" as a
+// substring, so that story would silently fall through undetected).
 const CLUBS = {
-  1: [
-    'Arsenal','Aston Villa','Bournemouth','Brentford',
-    'Brighton','Chelsea','Coventry','Crystal Palace','Everton',
-    'Fulham','Hull','Ipswich','Leeds United','Liverpool',
-    'Manchester City','Manchester United','Newcastle United',
-    'Nottingham Forest','Sunderland','Tottenham'
-  ],
-  2: [
-    'Birmingham','Blackburn','Bolton','Bristol City',
-    'Burnley','Cardiff','Charlton','Derby','Lincoln',
-    'Middlesbrough','Millwall','Norwich','Portsmouth',
-    'Preston','QPR','Sheffield United','Southampton',
-    'Stoke','Swansea','Watford','West Brom','West Ham',
-    'Wolves','Wrexham'
-  ],
-  3: [
-    'AFC Wimbledon','Barnsley','Blackpool','Bradford',
-    'Bromley','Burton','Cambridge','Doncaster','Huddersfield',
-    'Leicester','Leyton Orient','Luton','Mansfield','MK Dons',
-    'Notts County','Oxford','Peterborough','Plymouth','Reading',
-    'Sheffield Wednesday','Stevenage','Stockport','Wigan','Wycombe'
-  ],
-  4: [
-    'Accrington','Barnet','Bristol Rovers','Cheltenham',
-    'Chesterfield','Colchester','Crawley','Crewe','Exeter',
-    'Fleetwood','Gillingham','Grimsby','Newport','Northampton',
-    'Oldham','Port Vale','Rochdale','Rotherham','Salford',
-    'Shrewsbury','Swindon','Tranmere','Walsall','York'
-  ]
+  1: {
+    'Arsenal': ['arsenal'],
+    'Aston Villa': ['aston villa','villa'],
+    'Bournemouth': ['bournemouth'],
+    'Brentford': ['brentford'],
+    'Brighton': ['brighton'],
+    'Chelsea': ['chelsea'],
+    'Coventry City': ['coventry city','coventry'],
+    'Crystal Palace': ['crystal palace','palace'],
+    'Everton': ['everton'],
+    'Fulham': ['fulham'],
+    'Hull City': ['hull city','hull'],
+    'Ipswich Town': ['ipswich town','ipswich'],
+    'Leeds United': ['leeds united','leeds'],
+    'Liverpool': ['liverpool'],
+    'Manchester City': ['manchester city','man city'],
+    'Manchester United': ['manchester united','man utd','man united'],
+    'Newcastle United': ['newcastle united','newcastle'],
+    'Nottingham Forest': ['nottingham forest','forest'],
+    'Sunderland': ['sunderland'],
+    'Tottenham': ['tottenham hotspur','tottenham','spurs']
+  },
+  2: {
+    'Birmingham City': ['birmingham city','birmingham'],
+    'Blackburn Rovers': ['blackburn rovers','blackburn'],
+    'Bolton Wanderers': ['bolton wanderers','bolton'],
+    'Bristol City': ['bristol city'],
+    'Burnley': ['burnley'],
+    'Cardiff City': ['cardiff city','cardiff'],
+    'Charlton Athletic': ['charlton athletic','charlton'],
+    'Derby County': ['derby county','derby'],
+    'Lincoln City': ['lincoln city','lincoln'],
+    'Middlesbrough': ['middlesbrough','boro'],
+    'Millwall': ['millwall'],
+    'Norwich City': ['norwich city','norwich'],
+    'Portsmouth': ['portsmouth','pompey'],
+    'Preston North End': ['preston north end','preston'],
+    'Queens Park Rangers': ['queens park rangers','qpr'],
+    'Sheffield United': ['sheffield united','sheff utd','sheff united'],
+    'Southampton': ['southampton'],
+    'Stoke City': ['stoke city','stoke'],
+    'Swansea City': ['swansea city','swansea'],
+    'Watford': ['watford'],
+    'West Bromwich Albion': ['west bromwich albion','west brom'],
+    'West Ham United': ['west ham united','west ham'],
+    'Wolverhampton Wanderers': ['wolverhampton wanderers','wolverhampton','wolves'],
+    'Wrexham': ['wrexham']
+  },
+  3: {
+    'AFC Wimbledon': ['afc wimbledon','wimbledon'],
+    'Barnsley': ['barnsley'],
+    'Blackpool': ['blackpool'],
+    'Bradford City': ['bradford city','bradford'],
+    'Bromley': ['bromley'],
+    'Burton Albion': ['burton albion','burton'],
+    'Cambridge United': ['cambridge united','cambridge'],
+    'Doncaster Rovers': ['doncaster rovers','doncaster'],
+    'Huddersfield Town': ['huddersfield town','huddersfield'],
+    'Leicester City': ['leicester city','leicester'],
+    'Leyton Orient': ['leyton orient'],
+    'Luton Town': ['luton town','luton'],
+    'Mansfield Town': ['mansfield town','mansfield'],
+    'Milton Keynes Dons': ['milton keynes dons','mk dons','milton keynes'],
+    'Notts County': ['notts county'],
+    'Oxford United': ['oxford united','oxford'],
+    'Peterborough United': ['peterborough united','peterborough'],
+    'Plymouth Argyle': ['plymouth argyle','plymouth'],
+    'Reading': ['reading'],
+    'Sheffield Wednesday': ['sheffield wednesday','sheff wed'],
+    'Stevenage': ['stevenage'],
+    'Stockport County': ['stockport county','stockport'],
+    'Wigan Athletic': ['wigan athletic','wigan'],
+    'Wycombe Wanderers': ['wycombe wanderers','wycombe']
+  },
+  4: {
+    'Accrington Stanley': ['accrington stanley','accrington'],
+    'Barnet': ['barnet'],
+    'Bristol Rovers': ['bristol rovers'],
+    'Cheltenham Town': ['cheltenham town','cheltenham'],
+    'Chesterfield': ['chesterfield'],
+    'Colchester United': ['colchester united','colchester'],
+    'Crawley Town': ['crawley town','crawley'],
+    'Crewe Alexandra': ['crewe alexandra','crewe'],
+    'Exeter City': ['exeter city','exeter'],
+    'Fleetwood Town': ['fleetwood town','fleetwood'],
+    'Gillingham': ['gillingham'],
+    'Grimsby Town': ['grimsby town','grimsby'],
+    'Newport County': ['newport county','newport'],
+    'Northampton Town': ['northampton town','northampton'],
+    'Oldham Athletic': ['oldham athletic','oldham'],
+    'Port Vale': ['port vale'],
+    'Rochdale': ['rochdale'],
+    'Rotherham United': ['rotherham united','rotherham'],
+    'Salford City': ['salford city','salford'],
+    'Shrewsbury Town': ['shrewsbury town','shrewsbury'],
+    'Swindon Town': ['swindon town','swindon'],
+    'Tranmere Rovers': ['tranmere rovers','tranmere'],
+    'Walsall': ['walsall'],
+    'York City': ['york city','york']
+  }
 };
 
 const TRANSFER =
@@ -149,12 +224,13 @@ function getClubs(text) {
   const lower = text.toLowerCase();
   const found = [];
 
-  for (const clubs of Object.values(CLUBS)) {
-    for (const club of clubs) {
-      const pattern = new RegExp('\\b' + escapeRegex(club.toLowerCase()) + '\\b');
-      if (pattern.test(lower)) {
-        found.push(club);
-      }
+  for (const clubMap of Object.values(CLUBS)) {
+    for (const [name, aliases] of Object.entries(clubMap)) {
+      const matched = aliases.some(alias => {
+        const pattern = new RegExp('\\b' + escapeRegex(alias) + '\\b');
+        return pattern.test(lower);
+      });
+      if (matched) found.push(name);
     }
   }
 
@@ -171,7 +247,8 @@ function getClubs(text) {
 function getDivisions(clubs, hint) {
   const detected = [];
 
-  for (const [division, names] of Object.entries(CLUBS)) {
+  for (const [division, clubMap] of Object.entries(CLUBS)) {
+    const names = Object.keys(clubMap);
     if (clubs.some(c => names.includes(c))) {
       detected.push(Number(division));
     }
