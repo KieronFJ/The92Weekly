@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T11:53:45.811Z",
+  "updatedAt": "2026-09-03T12:03:48.543Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -3521,47 +3521,7 @@
         "score": 1
       },
       "venue": "AESSEAL New York Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Fabio Tavares",
-          "minute": "12'",
-          "team": "Rotherham United",
-          "ownGoal": false
-        },
-        {
-          "player": "Paul Mullin",
-          "minute": "90'",
-          "team": "Rotherham United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Brandon Cover",
-          "minute": "17'",
-          "team": "Rotherham United",
-          "card": "yellow"
-        },
-        {
-          "player": "Lee Bonis",
-          "minute": "18'",
-          "team": "Chesterfield",
-          "card": "yellow"
-        },
-        {
-          "player": "Jili Buyabu",
-          "minute": "43'",
-          "team": "Rotherham United",
-          "card": "yellow"
-        },
-        {
-          "player": "Liam Mandeville",
-          "minute": "88'",
-          "team": "Chesterfield",
-          "card": "red"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879296",
