@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T16:20:37.475Z",
+  "updatedAt": "2026-09-03T16:36:07.020Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4115,41 +4115,7 @@
         "score": 2
       },
       "venue": "Tottenham Hotspur Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Anthony Elanga",
-          "minute": "62'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        },
-        {
-          "player": "Yoane Wissa",
-          "minute": "72'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Micky van de Ven",
-          "minute": "3'",
-          "team": "Tottenham Hotspur",
-          "card": "yellow"
-        },
-        {
-          "player": "Nico González",
-          "minute": "13'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        },
-        {
-          "player": "Sven Botman",
-          "minute": "79'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879317",
