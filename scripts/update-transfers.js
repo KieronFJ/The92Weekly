@@ -185,6 +185,12 @@ async function main() {
   for (const result of results) {
     if (result.items.length) successful++;
 
+    // Google News RSS descriptions are just the article title wrapped in
+    // a link, plus the source name (e.g. "Title <a>...Yahoo Sports"),
+    // not a real article summary. Showing that as a "summary" reads as
+    // garbled, unrelated text — so skip it entirely for these feeds.
+    const isGoogleNews = /^Google News/.test(result.feed.name);
+
     for (const item of result.items) {
       const text = `${item.title} ${item.summary}`;
 
@@ -200,13 +206,15 @@ async function main() {
         result.feed.division
       );
 
+      const summary = isGoogleNews ? '' : item.summary.slice(0,260);
+
       for (const division of divisions) {
         stories.push({
           division,
           divisionName: DIVISIONS[division],
           clubs,
           title: item.title,
-          summary: item.summary.slice(0,260),
+          summary,
           link: item.link,
           source: item.source,
           publishedAt: (() => {
@@ -221,8 +229,32 @@ async function main() {
     }
   }
 
+  // Load whatever was already saved so every story ever collected stays
+  // on the site permanently, not just what this run happened to fetch —
+  // RSS feeds only ever return their most recent ~20-50 items, so
+  // without merging, older stories would silently vanish every run.
+  const output = path.join(
+    __dirname,
+    '..',
+    'data',
+    'transfers.json'
+  );
+
+  let previousStories = [];
+
+  try {
+    const previous = JSON.parse(fs.readFileSync(output, 'utf8'));
+    for (const division of [1,2,3,4]) {
+      previousStories.push(...((previous.byDivision && previous.byDivision[division]) || []));
+    }
+  } catch (e) {
+    // No existing file yet, or it's unreadable — start fresh.
+  }
+
+  const combined = [...stories, ...previousStories];
+
   const seen = new Set();
-  const unique = stories
+  const unique = combined
     .sort((a,b) =>
       new Date(b.publishedAt) -
       new Date(a.publishedAt)
@@ -238,22 +270,17 @@ async function main() {
 
   for (const division of [1,2,3,4]) {
     byDivision[division] = unique
-      .filter(x => x.division === division)
-      .slice(0,30);
+      .filter(x => x.division === division);
   }
 
   const total = Object.values(byDivision)
     .reduce((n,x) => n + x.length, 0);
 
-  const output = path.join(
-    __dirname,
-    '..',
-    'data',
-    'transfers.json'
-  );
-
-  if (successful < 2 || total === 0) {
-    console.log('Not enough successful sources. Existing data preserved.');
+  // Only skip writing if this run failed badly AND there's no existing
+  // archive to fall back on — a bad run with an existing archive is
+  // safe to save anyway, since merging never loses old data.
+  if (successful < 2 && previousStories.length === 0) {
+    console.log('Not enough successful sources and no existing archive. Skipping.');
     return;
   }
 
@@ -266,7 +293,7 @@ async function main() {
     }, null, 2) + '\n'
   );
 
-  console.log(`Saved ${total} transfer stories.`);
+  console.log(`Saved ${total} transfer stories total (archive grows every run, no cap).`);
 }
 
 main().catch(error => {
