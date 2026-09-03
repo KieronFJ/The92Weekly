@@ -59,6 +59,12 @@ const RUMOUR =
 const CONFIRMED =
   /\b(signed|signs|joins|joined|completed|agreed|official|confirmed|announced|seals|sealed)\b/i;
 
+// A second safety net alongside whole-word club matching — catches
+// stories from other sports that happen to mention a club's home city
+// or a word overlapping with a football term (e.g. cricket "signings").
+const NON_FOOTBALL =
+  /\b(cricket|rugby league|rugby union|county championship|T20 Blast|One Day Cup|test match|wicket|batsman|bowler|snooker|darts|golf|tennis|boxing|Formula 1|F1 Grand Prix|MotoGP|athletics|Olympics)\b/i;
+
 function googleNews(query) {
   return 'https://news.google.com/rss/search?q=' +
     encodeURIComponent(query) +
@@ -132,12 +138,22 @@ async function fetchFeed(feed) {
   }
 }
 
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Plain substring matching caused false positives — e.g. "Derby" (Derby
+// County) matching inside "Derbyshire" in an unrelated cricket story.
+// Whole-word matching fixes that while still catching multi-word club
+// names like "Bristol City" correctly.
 function getClubs(text) {
+  const lower = text.toLowerCase();
   const found = [];
 
   for (const clubs of Object.values(CLUBS)) {
     for (const club of clubs) {
-      if (text.toLowerCase().includes(club.toLowerCase())) {
+      const pattern = new RegExp('\\b' + escapeRegex(club.toLowerCase()) + '\\b');
+      if (pattern.test(lower)) {
         found.push(club);
       }
     }
@@ -146,18 +162,27 @@ function getClubs(text) {
   return [...new Set(found)];
 }
 
+// The Google News feeds are per-division searches (e.g. "League One
+// transfer..."), but Google's results sometimes surface stories that
+// are actually about a different division's club entirely. Blindly
+// trusting which search found the story caused Premier League and
+// Championship stories to get force-assigned to League One/Two.
+// Detected clubs are the source of truth; the feed's own division is
+// only a fallback for the rare story where no club name is recognized.
 function getDivisions(clubs, hint) {
-  if (hint) return [hint];
-
-  const result = [];
+  const detected = [];
 
   for (const [division, names] of Object.entries(CLUBS)) {
     if (clubs.some(c => names.includes(c))) {
-      result.push(Number(division));
+      detected.push(Number(division));
     }
   }
 
-  return result;
+  if (detected.length > 0) return detected;
+
+  if (hint) return [hint];
+
+  return [];
 }
 
 function status(title) {
@@ -197,6 +222,10 @@ async function main() {
       if (!TRANSFER.test(text)) continue;
 
       if (/how to watch|live stream|tv channel|fantasy football|betting tips/i.test(text)) {
+        continue;
+      }
+
+      if (NON_FOOTBALL.test(text)) {
         continue;
       }
 
@@ -250,6 +279,31 @@ async function main() {
   } catch (e) {
     // No existing file yet, or it's unreadable — start fresh.
   }
+
+  // Re-check previously stored stories against the current rules too.
+  // Without this, once-bad entries saved before this fix (wrong sport,
+  // wrong division from the old hint-override bug) would stay in the
+  // archive forever, since merging only re-validates freshly fetched
+  // items — not what's already sitting in the file.
+  function revalidateStory(story) {
+    const text = `${story.title} ${story.summary || ''}`;
+
+    if (NON_FOOTBALL.test(text)) return [];
+
+    const clubs = getClubs(text);
+    const divisions = getDivisions(clubs, 0);
+
+    if (divisions.length === 0) return [];
+
+    return divisions.map(division => ({
+      ...story,
+      division,
+      divisionName: DIVISIONS[division],
+      clubs
+    }));
+  }
+
+  previousStories = previousStories.flatMap(revalidateStory);
 
   const combined = [...stories, ...previousStories];
 
