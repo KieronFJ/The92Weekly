@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T19:02:41.734Z",
+  "updatedAt": "2026-09-04T19:23:07.001Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4312,8 +4312,8 @@
       "type": "league",
       "date": "2026-09-04T19:00Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Fri, September 4th at 3:00 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "15'",
       "home": {
         "id": "373",
         "name": "Ipswich Town",
