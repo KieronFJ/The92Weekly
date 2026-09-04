@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T12:52:15.298Z",
+  "updatedAt": "2026-09-04T13:02:55.896Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4137,77 +4137,7 @@
         "score": 3
       },
       "venue": "Stamford Bridge",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Romeo Lavia",
-          "minute": "4'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Pedro Neto",
-          "minute": "14'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "João Pedro",
-          "minute": "32'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Malick Yalcouyé",
-          "minute": "35'",
-          "team": "Brighton & Hove Albion",
-          "ownGoal": false
-        },
-        {
-          "player": "João Pedro",
-          "minute": "63'",
-          "team": "Brighton & Hove Albion",
-          "ownGoal": true
-        },
-        {
-          "player": "Cole Palmer",
-          "minute": "74'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Pascal Gross",
-          "minute": "90'+6'",
-          "team": "Brighton & Hove Albion",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Wesley Fofana",
-          "minute": "55'",
-          "team": "Chelsea",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Dunk",
-          "minute": "70'",
-          "team": "Brighton & Hove Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Olivier Boscagli",
-          "minute": "89'",
-          "team": "Brighton & Hove Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Costinha",
-          "minute": "90'+1'",
-          "team": "Brighton & Hove Albion",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879315",
@@ -4229,47 +4159,7 @@
         "score": 1
       },
       "venue": "Elland Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Kevin Schade",
-          "minute": "41'",
-          "team": "Brentford",
-          "ownGoal": false
-        },
-        {
-          "player": "Dominic Calvert-Lewin",
-          "minute": "79'",
-          "team": "Leeds United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jaidon Anthony",
-          "minute": "30'",
-          "team": "Brentford",
-          "card": "yellow"
-        },
-        {
-          "player": "Kristoffer Ajer",
-          "minute": "74'",
-          "team": "Brentford",
-          "card": "yellow"
-        },
-        {
-          "player": "Vitaly Janelt",
-          "minute": "76'",
-          "team": "Brentford",
-          "card": "yellow"
-        },
-        {
-          "player": "Nathan Collins",
-          "minute": "90'+3'",
-          "team": "Brentford",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879313",
@@ -4291,29 +4181,7 @@
         "score": 0
       },
       "venue": "Stadium of Light",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Wilson Isidor",
-          "minute": "75'",
-          "team": "Sunderland",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Joachim Andersen",
-          "minute": "35'",
-          "team": "Fulham",
-          "card": "yellow"
-        },
-        {
-          "player": "César Palacios",
-          "minute": "59'",
-          "team": "Fulham",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880898",
@@ -4335,65 +4203,7 @@
         "score": 0
       },
       "venue": "The Cherry Red Records Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Myles Hippolyte",
-          "minute": "88'",
-          "team": "AFC Wimbledon",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Archie Harris",
-          "minute": "21'",
-          "team": "Wigan Athletic",
-          "card": "yellow"
-        },
-        {
-          "player": "Jon Mellish",
-          "minute": "25'",
-          "team": "Wigan Athletic",
-          "card": "yellow"
-        },
-        {
-          "player": "Jensen Weir",
-          "minute": "45'+3'",
-          "team": "Wigan Athletic",
-          "card": "yellow"
-        },
-        {
-          "player": "James Carragher",
-          "minute": "65'",
-          "team": "Wigan Athletic",
-          "card": "yellow"
-        },
-        {
-          "player": "Steven Sessegnon",
-          "minute": "73'",
-          "team": "AFC Wimbledon",
-          "card": "yellow"
-        },
-        {
-          "player": "Ollie Harrison",
-          "minute": "75'",
-          "team": "AFC Wimbledon",
-          "card": "yellow"
-        },
-        {
-          "player": "Alistair Smith",
-          "minute": "77'",
-          "team": "AFC Wimbledon",
-          "card": "yellow"
-        },
-        {
-          "player": "Steve Seddon",
-          "minute": "90'+6'",
-          "team": "AFC Wimbledon",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880894",
