@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T15:20:27.651Z",
+  "updatedAt": "2026-09-04T15:35:42.261Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4247,77 +4247,7 @@
         "score": 2
       },
       "venue": "Old Trafford",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Leif Davis",
-          "minute": "29'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Bruno Fernandes",
-          "minute": "40'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Jacob Greaves",
-          "minute": "56'",
-          "team": "Manchester United",
-          "ownGoal": true
-        },
-        {
-          "player": "Bruno Fernandes",
-          "minute": "68'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Bryan Mbeumo",
-          "minute": "82'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Chuba Akpom",
-          "minute": "90'+1'",
-          "team": "Ipswich Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Sasa Lukic",
-          "minute": "33'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Fatawu Issahaku",
-          "minute": "37'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Jacob Greaves",
-          "minute": "60'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Bruno Fernandes",
-          "minute": "61'",
-          "team": "Manchester United",
-          "card": "red"
-        },
-        {
-          "player": "Bryan Mbeumo",
-          "minute": "90'+3'",
-          "team": "Manchester United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879295",
