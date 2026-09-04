@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T21:17:58.290Z",
+  "updatedAt": "2026-09-04T21:28:03.965Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4311,21 +4311,61 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-04T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "72'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "373",
         "name": "Ipswich Town",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "364",
         "name": "Liverpool",
-        "score": null
+        "score": 2
       },
       "venue": "Portman Road",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Alexander Isak",
+          "minute": "6'",
+          "team": "Liverpool",
+          "ownGoal": false
+        },
+        {
+          "player": "Alexander Isak",
+          "minute": "9'",
+          "team": "Liverpool",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Alexis Mac Allister",
+          "minute": "10'",
+          "team": "Liverpool",
+          "card": "yellow"
+        },
+        {
+          "player": "Julio Enciso",
+          "minute": "41'",
+          "team": "Ipswich Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Jérémy Jacquet",
+          "minute": "52'",
+          "team": "Liverpool",
+          "card": "yellow"
+        },
+        {
+          "player": "Milos Kerkez",
+          "minute": "57'",
+          "team": "Liverpool",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879286",
