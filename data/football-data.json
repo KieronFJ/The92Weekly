@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T12:37:22.199Z",
+  "updatedAt": "2026-09-05T12:48:18.634Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4374,8 +4374,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "361",
         "name": "Newcastle United",
@@ -4396,8 +4396,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "314",
         "name": "Lincoln City",
@@ -4418,8 +4418,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "394",
         "name": "Preston North End",
@@ -4441,7 +4441,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "statusDetail": "45'+7'",
       "home": {
         "id": "336",
         "name": "Stoke City",
@@ -4462,8 +4462,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "342",
         "name": "Peterborough United",
@@ -4484,8 +4484,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "350",
         "name": "Wigan Athletic",
@@ -4506,8 +4506,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "3891",
         "name": "Fleetwood Town",
@@ -4528,8 +4528,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "12'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "4703",
         "name": "Salford City",
