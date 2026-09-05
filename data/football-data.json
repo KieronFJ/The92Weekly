@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T17:42:33.262Z",
+  "updatedAt": "2026-09-05T17:51:44.858Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4947,21 +4947,67 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+7'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "337",
         "name": "Brentford",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "366",
         "name": "Sunderland",
-        "score": null
+        "score": 1
       },
       "venue": "Gtech Community Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Vitaly Janelt",
+          "minute": "57'",
+          "team": "Brentford",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Noah Sadiki",
+          "minute": "14'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Mamadou Sangare",
+          "minute": "30'",
+          "team": "Brentford",
+          "card": "yellow"
+        },
+        {
+          "player": "Vitaly Janelt",
+          "minute": "62'",
+          "team": "Brentford",
+          "card": "yellow"
+        },
+        {
+          "player": "Yehor Yarmoliuk",
+          "minute": "69'",
+          "team": "Brentford",
+          "card": "yellow"
+        },
+        {
+          "player": "Enzo Le Fée",
+          "minute": "82'",
+          "team": "Sunderland",
+          "card": "red"
+        },
+        {
+          "player": "Granit Xhaka",
+          "minute": "88'",
+          "team": "Sunderland",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879290",
@@ -6923,8 +6969,8 @@
       "type": "league",
       "date": "2026-09-05T16:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 5th at 12:30 PM EDT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "55'",
       "home": {
         "id": "306",
         "name": "Hull City",
