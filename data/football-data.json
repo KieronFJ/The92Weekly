@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T18:54:40.329Z",
+  "updatedAt": "2026-09-05T19:02:31.094Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4269,41 +4269,7 @@
         "score": 1
       },
       "venue": "Villa Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Bukayo Saka",
-          "minute": "59'",
-          "team": "Arsenal",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Christos Tzolis",
-          "minute": "29'",
-          "team": "Arsenal",
-          "card": "yellow"
-        },
-        {
-          "player": "Alysson",
-          "minute": "80'",
-          "team": "Aston Villa",
-          "card": "yellow"
-        },
-        {
-          "player": "John McGinn",
-          "minute": "81'",
-          "team": "Aston Villa",
-          "card": "yellow"
-        },
-        {
-          "player": "Ian Maatsen",
-          "minute": "90'+6'",
-          "team": "Aston Villa",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879288",
