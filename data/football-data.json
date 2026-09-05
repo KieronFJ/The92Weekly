@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T14:51:38.813Z",
+  "updatedAt": "2026-09-05T15:02:42.233Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4949,7 +4949,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "41'",
+      "statusDetail": "16'",
       "home": {
         "id": "337",
         "name": "Brentford",
@@ -4971,7 +4971,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "331",
         "name": "Brighton & Hove Albion",
@@ -4993,7 +4993,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "370",
         "name": "Fulham",
@@ -5014,8 +5014,8 @@
       "type": "league",
       "date": "2026-09-05T14:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "41'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "16'",
       "home": {
         "id": "382",
         "name": "Manchester City",
@@ -5037,7 +5037,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "393",
         "name": "Nottingham Forest",
@@ -5058,8 +5058,8 @@
       "type": "league",
       "date": "2026-09-05T14:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "17'",
       "home": {
         "id": "379",
         "name": "Burnley",
@@ -5081,7 +5081,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "17'",
       "home": {
         "id": "391",
         "name": "Millwall",
@@ -5103,7 +5103,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "17'",
       "home": {
         "id": "385",
         "name": "Portsmouth",
@@ -5125,7 +5125,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "18'",
       "home": {
         "id": "334",
         "name": "Queens Park Rangers",
@@ -5147,7 +5147,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "398",
         "name": "Sheffield United",
@@ -5168,8 +5168,8 @@
       "type": "league",
       "date": "2026-09-05T14:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "18'",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
@@ -5191,7 +5191,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "17'",
       "home": {
         "id": "371",
         "name": "West Ham United",
@@ -5213,7 +5213,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "397",
         "name": "Barnsley",
@@ -5235,7 +5235,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "387",
         "name": "Bradford City",
@@ -5257,7 +5257,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "2567",
         "name": "Burton Albion",
@@ -5279,7 +5279,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "18'",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
@@ -5301,7 +5301,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "18'",
       "home": {
         "id": "335",
         "name": "Huddersfield Town",
@@ -5323,7 +5323,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "375",
         "name": "Leicester City",
@@ -5345,7 +5345,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "41'",
+      "statusDetail": "16'",
       "home": {
         "id": "301",
         "name": "Luton Town",
@@ -5367,7 +5367,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "18'",
       "home": {
         "id": "338",
         "name": "Reading",
@@ -5389,7 +5389,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "18'",
       "home": {
         "id": "344",
         "name": "Wycombe Wanderers",
@@ -5411,7 +5411,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "2731",
         "name": "Accrington Stanley",
@@ -5433,7 +5433,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "308",
         "name": "Bristol Rovers",
@@ -5455,7 +5455,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "320",
         "name": "Cheltenham Town",
@@ -5477,7 +5477,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "17'",
       "home": {
         "id": "343",
         "name": "Chesterfield",
@@ -5499,7 +5499,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "17'",
       "home": {
         "id": "396",
         "name": "Crewe Alexandra",
@@ -5521,7 +5521,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "43'",
+      "statusDetail": "18'",
       "home": {
         "id": "324",
         "name": "Exeter City",
@@ -5543,7 +5543,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "353",
         "name": "Northampton Town",
@@ -5565,7 +5565,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "17'",
       "home": {
         "id": "303",
         "name": "Rochdale",
@@ -5587,7 +5587,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "42'",
+      "statusDetail": "18'",
       "home": {
         "id": "341",
         "name": "Swindon Town",
@@ -5608,8 +5608,8 @@
       "type": "league",
       "date": "2026-09-05T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "42'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "17'",
       "home": {
         "id": "345",
         "name": "Tranmere Rovers",
