@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T13:33:30.266Z",
+  "updatedAt": "2026-09-05T13:42:02.635Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4373,79 +4373,21 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "88'",
       "home": {
         "id": "361",
         "name": "Newcastle United",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "349",
         "name": "AFC Bournemouth",
-        "score": 2
+        "score": null
       },
       "venue": "St. James' Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Marcus Tavernier",
-          "minute": "9'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Malick Thiaw",
-          "minute": "35'",
-          "team": "AFC Bournemouth",
-          "ownGoal": true
-        },
-        {
-          "player": "Harvey Barnes",
-          "minute": "37'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        },
-        {
-          "player": "Jacob Ramsey",
-          "minute": "88'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Anthony Elanga",
-          "minute": "28'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        },
-        {
-          "player": "Yoane Wissa",
-          "minute": "57'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        },
-        {
-          "player": "Justin Kluivert",
-          "minute": "66'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        },
-        {
-          "player": "Adrien Truffert",
-          "minute": "87'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        },
-        {
-          "player": "Adam Smith",
-          "minute": "90'+4'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880290",
@@ -4453,55 +4395,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'",
       "home": {
         "id": "314",
         "name": "Lincoln City",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "376",
         "name": "Southampton",
-        "score": 1
+        "score": null
       },
       "venue": "LNER Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Welington",
-          "minute": "44'",
-          "team": "Southampton",
-          "ownGoal": false
-        },
-        {
-          "player": "Mikkel Ladefoged",
-          "minute": "87'",
-          "team": "Lincoln City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Conor McGrandles",
-          "minute": "43'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "Ivan Varfolomeev",
-          "minute": "56'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "Freddie Draper",
-          "minute": "75'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880287",
@@ -4509,79 +4417,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "88'",
       "home": {
         "id": "394",
         "name": "Preston North End",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "365",
         "name": "Blackburn Rovers",
-        "score": 1
+        "score": null
       },
       "venue": "Deepdale",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Callum Lang",
-          "minute": "9'",
-          "team": "Preston North End",
-          "ownGoal": false
-        },
-        {
-          "player": "Callum Lang",
-          "minute": "27'",
-          "team": "Preston North End",
-          "ownGoal": false
-        },
-        {
-          "player": "Stanley Mills",
-          "minute": "51'",
-          "team": "Blackburn Rovers",
-          "ownGoal": true
-        }
-      ],
-      "cards": [
-        {
-          "player": "Yuri Ribeiro",
-          "minute": "25'",
-          "team": "Blackburn Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Sam Morsy",
-          "minute": "40'",
-          "team": "Blackburn Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Delano Burgzorg",
-          "minute": "42'",
-          "team": "Preston North End",
-          "card": "yellow"
-        },
-        {
-          "player": "Stanley Mills",
-          "minute": "52'",
-          "team": "Preston North End",
-          "card": "yellow"
-        },
-        {
-          "player": "Harrison Clarke",
-          "minute": "65'",
-          "team": "Preston North End",
-          "card": "yellow"
-        },
-        {
-          "player": "Jordan Thompson",
-          "minute": "89'",
-          "team": "Preston North End",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880284",
@@ -4590,8 +4440,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "90'+4'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "85'",
       "home": {
         "id": "336",
         "name": "Stoke City",
@@ -4613,7 +4463,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+7'",
+      "statusDetail": "88'",
       "home": {
         "id": "342",
         "name": "Peterborough United",
@@ -4633,67 +4483,21 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "86'",
       "home": {
         "id": "350",
         "name": "Wigan Athletic",
-        "score": 0
+        "score": null
       },
       "away": {
         "id": "400",
         "name": "Stockport County",
-        "score": 4
+        "score": null
       },
       "venue": "DW Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Kyle Wootton",
-          "minute": "10'",
-          "team": "Stockport County",
-          "ownGoal": false
-        },
-        {
-          "player": "Harry Wood",
-          "minute": "19'",
-          "team": "Stockport County",
-          "ownGoal": false
-        },
-        {
-          "player": "Jack Diamond",
-          "minute": "21'",
-          "team": "Stockport County",
-          "ownGoal": false
-        },
-        {
-          "player": "Ryan Glover",
-          "minute": "90'",
-          "team": "Stockport County",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Connor Barrett",
-          "minute": "27'",
-          "team": "Wigan Athletic",
-          "card": "yellow"
-        },
-        {
-          "player": "James Carragher",
-          "minute": "31'",
-          "team": "Wigan Athletic",
-          "card": "yellow"
-        },
-        {
-          "player": "Kyron Gordon",
-          "minute": "35'",
-          "team": "Stockport County",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401881389",
@@ -4701,85 +4505,21 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "89'",
       "home": {
         "id": "3891",
         "name": "Fleetwood Town",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "302",
         "name": "Shrewsbury Town",
-        "score": 0
+        "score": null
       },
       "venue": "Highbury Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Ronan Coughlan",
-          "minute": "39'",
-          "team": "Fleetwood Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Aaron Loupalo-Bi",
-          "minute": "86'",
-          "team": "Fleetwood Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Luca Hoole",
-          "minute": "25'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Sam Stubbs",
-          "minute": "32'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Kevin Berkoe",
-          "minute": "48'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Mccann",
-          "minute": "55'",
-          "team": "Fleetwood Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Harrison Neal",
-          "minute": "63'",
-          "team": "Fleetwood Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Josh Davison",
-          "minute": "66'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Ched Evans",
-          "minute": "90'",
-          "team": "Fleetwood Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Joseph Gbode",
-          "minute": "90'",
-          "team": "Shrewsbury Town",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401881386",
@@ -4787,49 +4527,21 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "4703",
         "name": "Salford City",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "348",
         "name": "Port Vale",
-        "score": 0
+        "score": null
       },
       "venue": "Peninsula Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Joe Powell",
-          "minute": "52'",
-          "team": "Salford City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Kyle Dempsey",
-          "minute": "51'",
-          "team": "Port Vale",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Montsma",
-          "minute": "55'",
-          "team": "Port Vale",
-          "card": "yellow"
-        },
-        {
-          "player": "Macaulay Langstaff",
-          "minute": "64'",
-          "team": "Salford City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879311",
