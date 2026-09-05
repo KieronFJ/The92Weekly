@@ -1,8 +1,22 @@
 {
-  "updatedAt": "2026-09-05T23:42:20.070Z",
+  "updatedAt": "2026-09-05T23:51:22.842Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Leeds United",
+          "Wigan Athletic"
+        ],
+        "title": "Wigan thrash Leeds to take control of Shield race",
+        "summary": "Wigan Warriors thrashed Leeds Rhinos 40-8 at Headingley to move two points clear at the top of Super League with one regular-season game remaining.",
+        "link": "https://www.skysports.com/watch/video/13582137/leeds-rhinos-v-wigan-warriors-wigan-hit-40-to-take-control-of-league-leaders-shield-race",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-05T23:51:22.699Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -7805,20 +7819,6 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Leeds United",
-          "Wigan Athletic"
-        ],
-        "title": "Wigan thrash Leeds to take control of Shield race",
-        "summary": "Wigan Warriors thrashed Leeds Rhinos 40-8 at Headingley to move two points clear at the top of Super League with one regular-season game remaining.",
-        "link": "https://www.skysports.com/watch/video/13582137/leeds-rhinos-v-wigan-warriors-wigan-hit-40-to-take-control-of-league-leaders-shield-race",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-05T23:42:19.925Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [
           "Notts County"
         ],
         "title": "Why Notts County may have the last laugh over Alassana Jatta sale",
@@ -9028,6 +9028,17 @@
       {
         "division": 4,
         "divisionName": "League Two",
+        "clubs": [],
+        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVEQzNzV1WEtwWUpEM3JxaW1WbmVhUGdIcWRvV3FGYjBUVWVWNHRBV0NKcFVYWWowYjhqN0R6U3ZsU2t6eTZNejJ5YlNCeEhUSjJFYldKejJuUmNfdEZNZ1dYZkV1UDVieVJCNnl1Y1lQUzBFN1U4cGdBQ0NKSExxZXBVZjV5UE4yYlZISHZ1YzdENThBd1FsMDhYWlVvY3Nqa3JKeHlCOGFHMERVNWU0VGtIRG00T0I0SGVZTWVYQS1aMEh2bVhpR05EQ08zQWhQMEFUX1VUYjhTbFhnUndETE1hX2JWdmc?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-09-02T18:19:24.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
         "clubs": [
           "York City"
         ],
@@ -9352,12 +9363,10 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [
-          "Crawley Town"
-        ],
-        "title": "Crawley Town sign Nick Michalski, Osman Kamara & Nathan Tinsdale on loan - BBC",
+        "clubs": [],
+        "title": "How many loans are allowed for Premier League clubs? - Premier League",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYS2hiSndxeEhzYjhPTXQ4S05GOGZ1SS11MlFFcHM0cUZUTER3VXIxT2pOdFlZU0l0dHlLUjlXMFBHMHdyXzFsVzhSR0RZa0NwNVNoalRoUGlqeEFOUV9UaEZaTF9Xekk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5DT19hRk5QQ3dhbFBJMnVjemdIX01SWVN4TXZQbE1fMnp6eXJvel9kM1RDVU1pNUFVd2R6cUtHNFUwS0JOVjZsR1RnQlNpemlYTUZPUldLRQ?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-08-01T07:00:00.000Z",
         "status": "Loan"
@@ -9365,10 +9374,12 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [],
-        "title": "How many loans are allowed for Premier League clubs? - Premier League",
+        "clubs": [
+          "Crawley Town"
+        ],
+        "title": "Crawley Town sign Nick Michalski, Osman Kamara & Nathan Tinsdale on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5DT19hRk5QQ3dhbFBJMnVjemdIX01SWVN4TXZQbE1fMnp6eXJvel9kM1RDVU1pNUFVd2R6cUtHNFUwS0JOVjZsR1RnQlNpemlYTUZPUldLRQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYS2hiSndxeEhzYjhPTXQ4S05GOGZ1SS11MlFFcHM0cUZUTER3VXIxT2pOdFlZU0l0dHlLUjlXMFBHMHdyXzFsVzhSR0RZa0NwNVNoalRoUGlqeEFOUV9UaEZaTF9Xekk?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-08-01T07:00:00.000Z",
         "status": "Loan"
@@ -9689,6 +9700,17 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9naFRBcl9mX3ZlcnZCLVhBaTh6S3RUb3p0cGFtbkY0R0IxQ3diekxXYXh2VDNtNlMyMGs3TEJNWHdnZTc0TTNEQktMbnRXOXJmb1FwV29WaHYtWlRpUVR0UDBwOEgzY00?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2025-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "National League news - July 2025 - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9uMlZCYVFRcHl5dWl2MXFKVDFFVndJNUpNNHZHYzFKdGFqQWRlS0h0RWJBY1BmSDYyV05pVTF2MmI2SU9hZ3FtaTBhRGlyZndUa2lTbUhkaTBoaHdBc3lhcVVCMlBEbGc?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2025-07-01T07:00:00.000Z",
         "status": "Rumour"
       },
       {
