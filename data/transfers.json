@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T08:46:58.882Z",
+  "updatedAt": "2026-09-05T08:52:29.421Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -694,6 +694,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T17:14:42.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "12 Deadline Day deals you might’ve missed: Gimenez, Diaby... - Planet Football",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVm1iSUtuWEpSMEt2bklfc2FxRE1Ob3RZa2JfNl92b25zTkRkLTlyMllHY3cxZTZYdlU1dnQzSEljakpXdkRtTFpsMW1jZ3BWUXEtM21ZNU4xWWhvODc5U0pDdGI4VENpTHJLbHlVVFJUb0xQdXBHajktTjRuRWtXU2Vvb2hvUzk4TFV2ODJUajRCUkpKZmJKeGVSX2RpNHZmLVRlZmpn?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T15:37:06.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -1814,7 +1825,7 @@
         "clubs": [
           "Chelsea"
         ],
-        "title": "Summer transfers 2026: All the Chelsea ins, outs and new contracts so far | News | Official Site - Chelsea Football Club",
+        "title": "Summer transfers 2026: All the Chelsea ins, outs and new contracts so far | News | Official Site - chelseafc.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcTFZaWNDbVJMLWVjMGJQSGFveWFxRUVUZ25hMlJacjRGV2xiUXNneHg2ZkN2M09RWV9NM1hJM21DcjVsWDU1T1lMazN0MTlmQk9qWXhNVkRPbzZxa0RPQlBjMTBINkowU3hjcThzYXZVWkZJQUpVQW5nOWZTX0ljT0FJcDF5NThCVEpiQlR0WHlTX2tfeGVHb0t5Z0E5UG0tN3J6cWlpaFk4cEhyVWpERWFkYw?oc=5",
         "source": "Google News Premier League",
@@ -3375,17 +3386,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VSFRldTFTRzdZLXVnS1V1WmpuSWtpNl9wTEViZzRUNnIwdl83QU9GYWZySXdlMmxndk5DRzJiNmtjMUZpWktBcjV4akI2czJjTDc4SVZFNm5zbnlxQTdEVFoxVDhUZzg?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-06-05T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Deadline Day LIVE: Keep up with every transfer rumour and done deal - Flashscore UK",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjRlUzdlM1N3bWZtb3hQRVJJMndZbjBjc3FFOXBxSzRyUzVlN2I1NktCcnM3R1R4NVpJQUMzMmNxNTFVc0RXNTVhbnFESTdQaU1QdlFkZFpkb1M4VHVVaE0wMDJlZzAtSk9tRkhSeDRTdEk3cEtNbFBEdGhkcXFxUU1DOURSVDhWMm9jdGI3M0lUUjRJVHlIUE45cEdhM2F0aWxrQUlCd2RJSzd1MjFPbzd3?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-03T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -6597,6 +6597,19 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Birmingham City"
+        ],
+        "title": "Carlos Vicente: Birmingham City sign Deportivo Alaves winger for undisclosed fee - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ZcDV4VDVWSGNoRk5lUW95a1Q4Qkh1QmI3RmIwYktNeEZTNXVTVHVwc0ZQWk9vSGt0MWd4emRBTGxUZ0htSHlVQklKZUloUmVveGJmTnBWM25KbWFlZ1NPLU1BZGwzX3c?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-28T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Lincoln City",
           "Sheffield United"
         ],
@@ -6606,19 +6619,6 @@
         "source": "Google News League One",
         "publishedAt": "2026-01-28T08:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Birmingham City"
-        ],
-        "title": "Carlos Vicente: Birmingham City sign Deportivo Alaves winger for undisclosed fee - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ZcDV4VDVWSGNoRk5lUW95a1Q4Qkh1QmI3RmIwYktNeEZTNXVTVHVwc0ZQWk9vSGt0MWd4emRBTGxUZ0htSHlVQklKZUloUmVveGJmTnBWM25KbWFlZ1NPLU1BZGwzX3c?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-01-28T08:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 2,
@@ -6898,6 +6898,21 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Charlton Athletic",
+          "Portsmouth",
+          "Bradford City"
+        ],
+        "title": "Bradford City 'agree deal' to sign Portsmouth defender Tom McIntyre after Charlton Athletic loan - Yorkshire Post",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3pfdExuNG9WVXpEXy1TeHgwRXVLWnVFUkppZEtZSFZQV0tXYUhvX3hYQ2lkRGs3SnRlbmdMMWlDS200YTFsei1JYW54SG1feGdxQjgyRWNKbjZJWVVZMjVlSzJOZER6WXBfbjJSYU5EajdCeTVjMWNZbFJlQkxxLXJCdElNYlpVX3dIZFo3VlBNOXludFdDc0ZwUGlsZjF4bV9QeDNKNzl4eFh6Qk9MNw?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2025-09-01T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Wrexham"
         ],
         "title": "Wrexham transfer news: Club show intent with Sheaf, Hyam and Kabore signings - BBC",
@@ -6919,21 +6934,6 @@
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Charlton Athletic",
-          "Portsmouth",
-          "Bradford City"
-        ],
-        "title": "Bradford City 'agree deal' to sign Portsmouth defender Tom McIntyre after Charlton Athletic loan - Yorkshire Post",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3pfdExuNG9WVXpEXy1TeHgwRXVLWnVFUkppZEtZSFZQV0tXYUhvX3hYQ2lkRGs3SnRlbmdMMWlDS200YTFsei1JYW54SG1feGdxQjgyRWNKbjZJWVVZMjVlSzJOZER6WXBfbjJSYU5EajdCeTVjMWNZbFJlQkxxLXJCdElNYlpVX3dIZFo3VlBNOXludFdDc0ZwUGlsZjF4bV9QeDNKNzl4eFh6Qk9MNw?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2025-09-01T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 2,
