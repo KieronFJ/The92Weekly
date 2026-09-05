@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T11:51:37.607Z",
+  "updatedAt": "2026-09-05T12:03:09.392Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4375,7 +4375,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "22'",
       "home": {
         "id": "361",
         "name": "Newcastle United",
@@ -4397,7 +4397,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "22'",
       "home": {
         "id": "314",
         "name": "Lincoln City",
@@ -4419,7 +4419,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "21'",
       "home": {
         "id": "394",
         "name": "Preston North End",
@@ -4440,8 +4440,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "3'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "21'",
       "home": {
         "id": "336",
         "name": "Stoke City",
@@ -4463,7 +4463,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "22'",
       "home": {
         "id": "342",
         "name": "Peterborough United",
@@ -4484,8 +4484,8 @@
       "type": "league",
       "date": "2026-09-05T11:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "22'",
       "home": {
         "id": "350",
         "name": "Wigan Athletic",
@@ -4507,7 +4507,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "21'",
       "home": {
         "id": "3891",
         "name": "Fleetwood Town",
@@ -4529,7 +4529,7 @@
       "date": "2026-09-05T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "22'",
       "home": {
         "id": "4703",
         "name": "Salford City",
