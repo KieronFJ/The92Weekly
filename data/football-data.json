@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T16:18:35.192Z",
+  "updatedAt": "2026-09-05T16:29:10.547Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5243,21 +5243,61 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "379",
         "name": "Burnley",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "333",
         "name": "Bristol City",
-        "score": null
+        "score": 2
       },
       "venue": "Turf Moor",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Aaron Ramsey",
+          "minute": "56'",
+          "team": "Burnley",
+          "ownGoal": false
+        },
+        {
+          "player": "Robert Dickie",
+          "minute": "82'",
+          "team": "Bristol City",
+          "ownGoal": false
+        },
+        {
+          "player": "Yu Hirakawa",
+          "minute": "90'+1'",
+          "team": "Bristol City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Hjalmar Ekdal",
+          "minute": "45'+2'",
+          "team": "Burnley",
+          "card": "yellow"
+        },
+        {
+          "player": "Kyle Walker",
+          "minute": "83'",
+          "team": "Burnley",
+          "card": "yellow"
+        },
+        {
+          "player": "Armando Broja",
+          "minute": "90'+4'",
+          "team": "Burnley",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880289",
@@ -5265,21 +5305,67 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "391",
         "name": "Millwall",
-        "score": null
+        "score": 4
       },
       "away": {
         "id": "358",
         "name": "Bolton Wanderers",
-        "score": null
+        "score": 0
       },
       "venue": "The Den",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Caleb Taylor",
+          "minute": "38'",
+          "team": "Millwall",
+          "ownGoal": false
+        },
+        {
+          "player": "Lyndon Dykes",
+          "minute": "83'",
+          "team": "Millwall",
+          "ownGoal": false
+        },
+        {
+          "player": "Lyndon Dykes",
+          "minute": "88'",
+          "team": "Millwall",
+          "ownGoal": false
+        },
+        {
+          "player": "Camiel Neghli",
+          "minute": "90'+2'",
+          "team": "Millwall",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Akin Famewo",
+          "minute": "75'",
+          "team": "Bolton Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Josh Sheehan",
+          "minute": "86'",
+          "team": "Bolton Wanderers",
+          "card": "red"
+        },
+        {
+          "player": "Jenson Metcalfe",
+          "minute": "86'",
+          "team": "Millwall",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401880288",
@@ -5287,21 +5373,61 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "385",
         "name": "Portsmouth",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "347",
         "name": "Cardiff City",
-        "score": null
+        "score": 0
       },
       "venue": "Fratton Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Conor Shaughnessy",
+          "minute": "31'",
+          "team": "Portsmouth",
+          "ownGoal": false
+        },
+        {
+          "player": "Marko Milovanovic",
+          "minute": "52'",
+          "team": "Portsmouth",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Krystian Bielik",
+          "minute": "9'",
+          "team": "Cardiff City",
+          "card": "yellow"
+        },
+        {
+          "player": "Ollie Tanner",
+          "minute": "60'",
+          "team": "Cardiff City",
+          "card": "yellow"
+        },
+        {
+          "player": "Alex Robertson",
+          "minute": "86'",
+          "team": "Cardiff City",
+          "card": "yellow"
+        },
+        {
+          "player": "Yousef Salech",
+          "minute": "90'+2'",
+          "team": "Cardiff City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880286",
@@ -5309,21 +5435,49 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "334",
         "name": "Queens Park Rangers",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "369",
         "name": "Middlesbrough",
-        "score": null
+        "score": 1
       },
       "venue": "MATRADE Loftus Road",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Will Lankshear",
+          "minute": "20'",
+          "team": "Middlesbrough",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Adilson Malanda",
+          "minute": "58'",
+          "team": "Middlesbrough",
+          "card": "yellow"
+        },
+        {
+          "player": "Callum Brittain",
+          "minute": "76'",
+          "team": "Middlesbrough",
+          "card": "yellow"
+        },
+        {
+          "player": "Glen Kamara",
+          "minute": "90'+6'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880285",
@@ -5331,21 +5485,79 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "398",
         "name": "Sheffield United",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "381",
         "name": "Norwich City",
-        "score": null
+        "score": 3
       },
       "venue": "Bramall Lane",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Anthony Musaba",
+          "minute": "8'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Patrick Bamford",
+          "minute": "23'",
+          "team": "Sheffield United",
+          "ownGoal": false
+        },
+        {
+          "player": "Mohamed Toure",
+          "minute": "44'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Mathias Kvistgaarden",
+          "minute": "62'",
+          "team": "Norwich City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Ruairi McConville",
+          "minute": "38'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Kellen Fisher",
+          "minute": "38'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Mohamed Toure",
+          "minute": "44'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Liam Kitching",
+          "minute": "45'+1'",
+          "team": "Sheffield United",
+          "card": "yellow"
+        },
+        {
+          "player": "Rhys Norrington-Davies",
+          "minute": "55'",
+          "team": "Sheffield United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880282",
@@ -5353,21 +5565,79 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "395",
         "name": "Watford",
-        "score": null
+        "score": 0
       },
       "venue": "The Hawthorns",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jimmy Morgan",
+          "minute": "36'",
+          "team": "West Bromwich Albion",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Martín Payero",
+          "minute": "16'",
+          "team": "Watford",
+          "card": "yellow"
+        },
+        {
+          "player": "Jimmy Morgan",
+          "minute": "34'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Ousmane Diakite",
+          "minute": "42'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Edo Kayembe",
+          "minute": "63'",
+          "team": "Watford",
+          "card": "yellow"
+        },
+        {
+          "player": "Nathaniel Phillips",
+          "minute": "88'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Harry Whitwell",
+          "minute": "89'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Isaac Price",
+          "minute": "90'+5'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Iker Bravo",
+          "minute": "90'+5'",
+          "team": "Watford",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880281",
@@ -5375,21 +5645,55 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "371",
         "name": "West Ham United",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "374",
         "name": "Derby County",
-        "score": null
+        "score": 0
       },
       "venue": "London Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Joël Piroe",
+          "minute": "6'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Edvin Austbø",
+          "minute": "87'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Mohamadou Kanté",
+          "minute": "90'+5'",
+          "team": "West Ham United",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Alex Mowatt",
+          "minute": "21'",
+          "team": "Derby County",
+          "card": "yellow"
+        },
+        {
+          "player": "Mohammed Fuseini",
+          "minute": "77'",
+          "team": "Derby County",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880874",
@@ -5397,21 +5701,79 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "397",
         "name": "Barnsley",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "285",
         "name": "Stevenage",
-        "score": null
+        "score": 5
       },
       "venue": "Oakwell",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Oliver Sanderson",
+          "minute": "43'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Daniel Kemp",
+          "minute": "52'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Terence Vancooten",
+          "minute": "57'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Daniel Kemp",
+          "minute": "66'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Michael Mellon",
+          "minute": "90'+2'",
+          "team": "Stevenage",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Carl Piergianni",
+          "minute": "16'",
+          "team": "Stevenage",
+          "card": "yellow"
+        },
+        {
+          "player": "Cameron McGeehan",
+          "minute": "17'",
+          "team": "Barnsley",
+          "card": "red"
+        },
+        {
+          "player": "Patrick Kelly",
+          "minute": "85'",
+          "team": "Barnsley",
+          "card": "yellow"
+        },
+        {
+          "player": "Saxon Earley",
+          "minute": "86'",
+          "team": "Stevenage",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880873",
@@ -5419,21 +5781,55 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "387",
         "name": "Bradford City",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "304",
         "name": "Mansfield Town",
-        "score": null
+        "score": 0
       },
       "venue": "Valley Parade",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Antoni Sarcevic",
+          "minute": "18'",
+          "team": "Bradford City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Louis Reed",
+          "minute": "60'",
+          "team": "Mansfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Antoni Sarcevic",
+          "minute": "63'",
+          "team": "Bradford City",
+          "card": "yellow"
+        },
+        {
+          "player": "Elliott Hewitt",
+          "minute": "87'",
+          "team": "Mansfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "George Pratt",
+          "minute": "90'+1'",
+          "team": "Bradford City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880871",
@@ -5441,21 +5837,67 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "2567",
         "name": "Burton Albion",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "351",
         "name": "Cambridge United",
-        "score": null
+        "score": 2
       },
       "venue": "Pirelli Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Finn Delap",
+          "minute": "19'",
+          "team": "Burton Albion",
+          "ownGoal": false
+        },
+        {
+          "player": "Gassan Ahadme",
+          "minute": "43'",
+          "team": "Cambridge United",
+          "ownGoal": false
+        },
+        {
+          "player": "Gassan Ahadme",
+          "minute": "65'",
+          "team": "Cambridge United",
+          "ownGoal": false
+        },
+        {
+          "player": "Curtis Tilt",
+          "minute": "90'",
+          "team": "Burton Albion",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Dominic Ball",
+          "minute": "16'",
+          "team": "Cambridge United",
+          "card": "yellow"
+        },
+        {
+          "player": "Sulyman Krubally",
+          "minute": "31'",
+          "team": "Burton Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Callum Perry",
+          "minute": "90'+2'",
+          "team": "Cambridge United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880870",
@@ -5463,21 +5905,73 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "307",
         "name": "Plymouth Argyle",
-        "score": null
+        "score": 3
       },
       "venue": "Eco-Power Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Will Evans",
+          "minute": "28'",
+          "team": "Plymouth Argyle",
+          "ownGoal": false
+        },
+        {
+          "player": "Aribim Pepple",
+          "minute": "74'",
+          "team": "Plymouth Argyle",
+          "ownGoal": false
+        },
+        {
+          "player": "Caleb Watts",
+          "minute": "83'",
+          "team": "Plymouth Argyle",
+          "ownGoal": false
+        },
+        {
+          "player": "Sean Grehan",
+          "minute": "90'+5'",
+          "team": "Doncaster Rovers",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Alfie May",
+          "minute": "51'",
+          "team": "Doncaster Rovers",
+          "card": "red"
+        },
+        {
+          "player": "Neill Byrne",
+          "minute": "71'",
+          "team": "Doncaster Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Isaac Hutchinson",
+          "minute": "79'",
+          "team": "Doncaster Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Jack Senior",
+          "minute": "86'",
+          "team": "Doncaster Rovers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880869",
@@ -5485,21 +5979,55 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "335",
         "name": "Huddersfield Town",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "340",
         "name": "Notts County",
-        "score": null
+        "score": 1
       },
       "venue": "John Smith's Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Marcus Myers-Harness",
+          "minute": "12'",
+          "team": "Huddersfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Oliver Cooper",
+          "minute": "23'",
+          "team": "Notts County",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Radinio Balker",
+          "minute": "40'",
+          "team": "Huddersfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Darius Lipsiuc",
+          "minute": "43'",
+          "team": "Notts County",
+          "card": "yellow"
+        },
+        {
+          "player": "Conor Grant",
+          "minute": "82'",
+          "team": "Notts County",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880868",
@@ -5507,21 +6035,61 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "375",
         "name": "Leicester City",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "311",
         "name": "Oxford United",
-        "score": null
+        "score": 4
       },
       "venue": "King Power Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Mark Harris",
+          "minute": "8'",
+          "team": "Oxford United",
+          "ownGoal": false
+        },
+        {
+          "player": "Mo Missanga",
+          "minute": "57'",
+          "team": "Oxford United",
+          "ownGoal": false
+        },
+        {
+          "player": "Mark Harris",
+          "minute": "60'",
+          "team": "Oxford United",
+          "ownGoal": false
+        },
+        {
+          "player": "Jamie McDonnell",
+          "minute": "77'",
+          "team": "Oxford United",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Kai Andrews",
+          "minute": "34'",
+          "team": "Oxford United",
+          "card": "yellow"
+        },
+        {
+          "player": "Emil Riis Jakobsen",
+          "minute": "49'",
+          "team": "Leicester City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880867",
@@ -5529,21 +6097,73 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "301",
         "name": "Luton Town",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "309",
         "name": "Leyton Orient",
-        "score": null
+        "score": 1
       },
       "venue": "Kenilworth Road",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jamie Donley",
+          "minute": "25'",
+          "team": "Luton Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Jaze Kabia",
+          "minute": "34'",
+          "team": "Leyton Orient",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jaze Kabia",
+          "minute": "42'",
+          "team": "Leyton Orient",
+          "card": "yellow"
+        },
+        {
+          "player": "Joseph Olowu",
+          "minute": "53'",
+          "team": "Leyton Orient",
+          "card": "yellow"
+        },
+        {
+          "player": "George Johnston",
+          "minute": "57'",
+          "team": "Luton Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Yusuf Akhamrich",
+          "minute": "57'",
+          "team": "Leyton Orient",
+          "card": "yellow"
+        },
+        {
+          "player": "Isaac Hayden",
+          "minute": "73'",
+          "team": "Leyton Orient",
+          "card": "yellow"
+        },
+        {
+          "player": "Daniel Gore",
+          "minute": "86'",
+          "team": "Luton Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880865",
@@ -5551,21 +6171,55 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "338",
         "name": "Reading",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "346",
         "name": "Blackpool",
-        "score": null
+        "score": 1
       },
       "venue": "Madejski Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "George Earthy",
+          "minute": "12'",
+          "team": "Reading",
+          "ownGoal": false
+        },
+        {
+          "player": "Kyreece Lisbie",
+          "minute": "49'",
+          "team": "Reading",
+          "ownGoal": false
+        },
+        {
+          "player": "Leighton Clarkson",
+          "minute": "80'",
+          "team": "Blackpool",
+          "ownGoal": false
+        },
+        {
+          "player": "Jacob Brown",
+          "minute": "90'+4'",
+          "team": "Reading",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jordan Williams",
+          "minute": "16'",
+          "team": "Blackpool",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880863",
@@ -5573,21 +6227,79 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "344",
         "name": "Wycombe Wanderers",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "390",
         "name": "Milton Keynes Dons",
-        "score": null
+        "score": 3
       },
       "venue": "Adams Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Dan Casey",
+          "minute": "11'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Ewan Henderson",
+          "minute": "31'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Aaron Collins",
+          "minute": "51'",
+          "team": "Milton Keynes Dons",
+          "ownGoal": false
+        },
+        {
+          "player": "Callum Paterson",
+          "minute": "55'",
+          "team": "Milton Keynes Dons",
+          "ownGoal": false
+        },
+        {
+          "player": "Curtis Nelson",
+          "minute": "59'",
+          "team": "Milton Keynes Dons",
+          "ownGoal": false
+        },
+        {
+          "player": "Jayden Wareham",
+          "minute": "74'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Alex Gilbey",
+          "minute": "36'",
+          "team": "Milton Keynes Dons",
+          "card": "yellow"
+        },
+        {
+          "player": "Aaron Collins",
+          "minute": "41'",
+          "team": "Milton Keynes Dons",
+          "card": "yellow"
+        },
+        {
+          "player": "Marvin Ekpiteta",
+          "minute": "84'",
+          "team": "Milton Keynes Dons",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881395",
@@ -5595,21 +6307,91 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "2731",
         "name": "Accrington Stanley",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "2594",
         "name": "Crawley Town",
-        "score": null
+        "score": 2
       },
       "venue": "Wham Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Charlie Caton",
+          "minute": "4'",
+          "team": "Accrington Stanley",
+          "ownGoal": false
+        },
+        {
+          "player": "Danilo Orsi-Dadomo",
+          "minute": "20'",
+          "team": "Crawley Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Charlie Caton",
+          "minute": "55'",
+          "team": "Accrington Stanley",
+          "ownGoal": false
+        },
+        {
+          "player": "Devon Matthews",
+          "minute": "63'",
+          "team": "Accrington Stanley",
+          "ownGoal": false
+        },
+        {
+          "player": "Oluwalopemiwa Aderoju",
+          "minute": "79'",
+          "team": "Crawley Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Devon Matthews",
+          "minute": "30'",
+          "team": "Accrington Stanley",
+          "card": "yellow"
+        },
+        {
+          "player": "Farrend Rawson",
+          "minute": "42'",
+          "team": "Accrington Stanley",
+          "card": "yellow"
+        },
+        {
+          "player": "Priestley Farquharson",
+          "minute": "45'+3'",
+          "team": "Crawley Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Shaun Whalley",
+          "minute": "53'",
+          "team": "Accrington Stanley",
+          "card": "yellow"
+        },
+        {
+          "player": "Klaudio Krasniqi",
+          "minute": "61'",
+          "team": "Crawley Town",
+          "card": "yellow"
+        },
+        {
+          "player": "David Tutonda",
+          "minute": "73'",
+          "team": "Accrington Stanley",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881394",
@@ -5617,21 +6399,55 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "308",
         "name": "Bristol Rovers",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "402",
         "name": "Rotherham United",
-        "score": null
+        "score": 0
       },
       "venue": "Memorial Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Tommy Leigh",
+          "minute": "32'",
+          "team": "Bristol Rovers",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jayce Fitzgerald",
+          "minute": "57'",
+          "team": "Rotherham United",
+          "card": "yellow"
+        },
+        {
+          "player": "Clinton Mola",
+          "minute": "73'",
+          "team": "Bristol Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Joshua Austerfield",
+          "minute": "74'",
+          "team": "Rotherham United",
+          "card": "yellow"
+        },
+        {
+          "player": "Kieran Ngwenya",
+          "minute": "90'+5'",
+          "team": "Rotherham United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881393",
@@ -5639,21 +6455,61 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "320",
         "name": "Cheltenham Town",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "386",
         "name": "Grimsby Town",
-        "score": null
+        "score": 2
       },
       "venue": "The Completely-Suzuki Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Charlie Mccann",
+          "minute": "12'",
+          "team": "Cheltenham Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Mark Shelton",
+          "minute": "47'",
+          "team": "Grimsby Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Kieran Green",
+          "minute": "82'",
+          "team": "Grimsby Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jonathan Tomkinson",
+          "minute": "28'",
+          "team": "Cheltenham Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Andreas Weimann",
+          "minute": "41'",
+          "team": "Cheltenham Town",
+          "card": "red"
+        },
+        {
+          "player": "Kieran Green",
+          "minute": "79'",
+          "team": "Grimsby Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881392",
@@ -5661,21 +6517,97 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "343",
         "name": "Chesterfield",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "280",
         "name": "Barnet",
-        "score": null
+        "score": 3
       },
       "venue": "SMH Group Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Tom Knowles",
+          "minute": "29'",
+          "team": "Barnet",
+          "ownGoal": false
+        },
+        {
+          "player": "Louie Marsh",
+          "minute": "39'",
+          "team": "Chesterfield",
+          "ownGoal": false
+        },
+        {
+          "player": "Michael Williams",
+          "minute": "45'+3'",
+          "team": "Barnet",
+          "ownGoal": false
+        },
+        {
+          "player": "Louie Marsh",
+          "minute": "71'",
+          "team": "Chesterfield",
+          "ownGoal": false
+        },
+        {
+          "player": "Kabongo Tshimanga",
+          "minute": "88'",
+          "team": "Barnet",
+          "ownGoal": false
+        },
+        {
+          "player": "Joel Randall",
+          "minute": "90'+3'",
+          "team": "Chesterfield",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Remeao Hutton",
+          "minute": "21'",
+          "team": "Chesterfield",
+          "card": "yellow"
+        },
+        {
+          "player": "George McEachran",
+          "minute": "33'",
+          "team": "Chesterfield",
+          "card": "yellow"
+        },
+        {
+          "player": "Alfie Pond",
+          "minute": "37'",
+          "team": "Chesterfield",
+          "card": "yellow"
+        },
+        {
+          "player": "Oisin Gallagher",
+          "minute": "50'",
+          "team": "Barnet",
+          "card": "yellow"
+        },
+        {
+          "player": "Brandon Comley",
+          "minute": "60'",
+          "team": "Barnet",
+          "card": "yellow"
+        },
+        {
+          "player": "Idris Kanu",
+          "minute": "72'",
+          "team": "Barnet",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881391",
@@ -5683,21 +6615,55 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+5'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "396",
         "name": "Crewe Alexandra",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "315",
         "name": "York City",
-        "score": null
+        "score": 1
       },
       "venue": "Mornflake Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Luke Offord",
+          "minute": "9'",
+          "team": "Crewe Alexandra",
+          "ownGoal": false
+        },
+        {
+          "player": "Alex Newby",
+          "minute": "40'",
+          "team": "York City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Oliver Banks",
+          "minute": "13'",
+          "team": "York City",
+          "card": "yellow"
+        },
+        {
+          "player": "Lewis Billington",
+          "minute": "29'",
+          "team": "Crewe Alexandra",
+          "card": "yellow"
+        },
+        {
+          "player": "Morgan Williams",
+          "minute": "90'",
+          "team": "York City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881390",
@@ -5705,21 +6671,30 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "324",
         "name": "Exeter City",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "401",
         "name": "Walsall",
-        "score": null
+        "score": 0
       },
       "venue": "St James Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Elicha Ahui",
+          "minute": "77'",
+          "team": "Walsall",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881388",
@@ -5789,21 +6764,73 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "303",
         "name": "Rochdale",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "389",
         "name": "Gillingham",
-        "score": null
+        "score": 4
       },
       "venue": "Crown Oil Arena",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "James Brophy",
+          "minute": "33'",
+          "team": "Gillingham",
+          "ownGoal": false
+        },
+        {
+          "player": "Omar Beckles",
+          "minute": "53'",
+          "team": "Gillingham",
+          "ownGoal": false
+        },
+        {
+          "player": "Lamin Sillah",
+          "minute": "56'",
+          "team": "Gillingham",
+          "ownGoal": false
+        },
+        {
+          "player": "James Brophy",
+          "minute": "68'",
+          "team": "Gillingham",
+          "ownGoal": false
+        },
+        {
+          "player": "Charlie Tasker",
+          "minute": "87'",
+          "team": "Rochdale",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Conor Mcmanus",
+          "minute": "9'",
+          "team": "Gillingham",
+          "card": "yellow"
+        },
+        {
+          "player": "Edward Francis",
+          "minute": "51'",
+          "team": "Rochdale",
+          "card": "yellow"
+        },
+        {
+          "player": "Edward Francis",
+          "minute": "60'",
+          "team": "Rochdale",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401881385",
@@ -5811,21 +6838,61 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "341",
         "name": "Swindon Town",
-        "score": null
+        "score": 3
       },
       "away": {
         "id": "339",
         "name": "Colchester United",
-        "score": null
+        "score": 1
       },
       "venue": "The County Ground",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Kylian Kouassi",
+          "minute": "13'",
+          "team": "Colchester United",
+          "ownGoal": false
+        },
+        {
+          "player": "Aaron Drinan",
+          "minute": "49'",
+          "team": "Swindon Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Aaron Drinan",
+          "minute": "77'",
+          "team": "Swindon Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Aaron Drinan",
+          "minute": "79'",
+          "team": "Swindon Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Dan Butler",
+          "minute": "54'",
+          "team": "Swindon Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Anthony Munda",
+          "minute": "58'",
+          "team": "Swindon Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881396",
@@ -5833,21 +6900,67 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "345",
         "name": "Tranmere Rovers",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "332",
         "name": "Oldham Athletic",
-        "score": null
+        "score": 0
       },
       "venue": "Prenton Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Dylan Jones",
+          "minute": "17'",
+          "team": "Tranmere Rovers",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Oliver Norburn",
+          "minute": "8'",
+          "team": "Oldham Athletic",
+          "card": "yellow"
+        },
+        {
+          "player": "Jamie Robson",
+          "minute": "11'",
+          "team": "Oldham Athletic",
+          "card": "yellow"
+        },
+        {
+          "player": "Jacob Slater",
+          "minute": "43'",
+          "team": "Tranmere Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Luke McGee",
+          "minute": "79'",
+          "team": "Tranmere Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Joe Ironside",
+          "minute": "82'",
+          "team": "Tranmere Rovers",
+          "card": "red"
+        },
+        {
+          "player": "Tom Ince",
+          "minute": "90'",
+          "team": "Tranmere Rovers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401878781",
