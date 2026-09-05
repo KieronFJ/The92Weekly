@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T16:03:02.707Z",
+  "updatedAt": "2026-09-05T16:18:35.192Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4947,21 +4947,67 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "77'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "337",
         "name": "Brentford",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "366",
         "name": "Sunderland",
-        "score": null
+        "score": 1
       },
       "venue": "Gtech Community Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Vitaly Janelt",
+          "minute": "57'",
+          "team": "Brentford",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Noah Sadiki",
+          "minute": "14'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Mamadou Sangare",
+          "minute": "30'",
+          "team": "Brentford",
+          "card": "yellow"
+        },
+        {
+          "player": "Vitaly Janelt",
+          "minute": "62'",
+          "team": "Brentford",
+          "card": "yellow"
+        },
+        {
+          "player": "Yehor Yarmoliuk",
+          "minute": "69'",
+          "team": "Brentford",
+          "card": "yellow"
+        },
+        {
+          "player": "Enzo Le Fée",
+          "minute": "82'",
+          "team": "Sunderland",
+          "card": "red"
+        },
+        {
+          "player": "Granit Xhaka",
+          "minute": "88'",
+          "team": "Sunderland",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879290",
@@ -4969,21 +5015,73 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "331",
         "name": "Brighton & Hove Albion",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "357",
         "name": "Leeds United",
-        "score": null
+        "score": 1
       },
       "venue": "American Express Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jayden Bogle",
+          "minute": "15'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Luka Vuskovic",
+          "minute": "71'",
+          "team": "Brighton & Hove Albion",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jayden Bogle",
+          "minute": "6'",
+          "team": "Leeds United",
+          "card": "yellow"
+        },
+        {
+          "player": "Pascal Gross",
+          "minute": "38'",
+          "team": "Brighton & Hove Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Maxim De Cuyper",
+          "minute": "49'",
+          "team": "Brighton & Hove Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Dominic Calvert-Lewin",
+          "minute": "64'",
+          "team": "Leeds United",
+          "card": "yellow"
+        },
+        {
+          "player": "Harry Wilson",
+          "minute": "85'",
+          "team": "Leeds United",
+          "card": "yellow"
+        },
+        {
+          "player": "Promise David",
+          "minute": "88'",
+          "team": "Brighton & Hove Albion",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879289",
@@ -4991,21 +5089,54 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "82'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "370",
         "name": "Fulham",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "384",
         "name": "Crystal Palace",
-        "score": null
+        "score": 3
       },
       "venue": "Craven Cottage",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Josh King",
+          "minute": "11'",
+          "team": "Fulham",
+          "ownGoal": false
+        },
+        {
+          "player": "Tyrick Mitchell",
+          "minute": "35'",
+          "team": "Crystal Palace",
+          "ownGoal": false
+        },
+        {
+          "player": "César Palacios",
+          "minute": "42'",
+          "team": "Fulham",
+          "ownGoal": false
+        },
+        {
+          "player": "Tyrick Mitchell",
+          "minute": "54'",
+          "team": "Crystal Palace",
+          "ownGoal": false
+        },
+        {
+          "player": "Ben Chilwell",
+          "minute": "77'",
+          "team": "Crystal Palace",
+          "ownGoal": false
+        }
+      ],
+      "cards": []
     },
     {
       "id": "401879287",
@@ -5013,21 +5144,49 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "382",
         "name": "Manchester City",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "388",
         "name": "Coventry City",
-        "score": null
+        "score": 0
       },
       "venue": "Etihad Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Erling Haaland",
+          "minute": "26'",
+          "team": "Manchester City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Milan van Ewijk",
+          "minute": "19'",
+          "team": "Coventry City",
+          "card": "yellow"
+        },
+        {
+          "player": "Ethan Pinnock",
+          "minute": "90'+2'",
+          "team": "Coventry City",
+          "card": "yellow"
+        },
+        {
+          "player": "Abdukodir Khusanov",
+          "minute": "90'+5'",
+          "team": "Manchester City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401878780",
@@ -5035,21 +5194,48 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "393",
         "name": "Nottingham Forest",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "367",
         "name": "Tottenham Hotspur",
-        "score": null
+        "score": 0
       },
       "venue": "The City Ground",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Destiny Udogie",
+          "minute": "45'+1'",
+          "team": "Tottenham Hotspur",
+          "card": "yellow"
+        },
+        {
+          "player": "Nikola Milenkovic",
+          "minute": "52'",
+          "team": "Nottingham Forest",
+          "card": "yellow"
+        },
+        {
+          "player": "James McAtee",
+          "minute": "78'",
+          "team": "Nottingham Forest",
+          "card": "yellow"
+        },
+        {
+          "player": "Mateus Fernandes",
+          "minute": "84'",
+          "team": "Tottenham Hotspur",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880291",
@@ -5059,7 +5245,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "83'",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "379",
         "name": "Burnley",
@@ -5081,7 +5267,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "391",
         "name": "Millwall",
@@ -5103,7 +5289,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "385",
         "name": "Portsmouth",
@@ -5125,7 +5311,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "82'",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "334",
         "name": "Queens Park Rangers",
@@ -5147,7 +5333,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "398",
         "name": "Sheffield United",
@@ -5169,7 +5355,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
@@ -5191,7 +5377,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "371",
         "name": "West Ham United",
@@ -5213,7 +5399,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "397",
         "name": "Barnsley",
@@ -5235,7 +5421,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "83'",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "387",
         "name": "Bradford City",
@@ -5257,7 +5443,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+2'",
       "home": {
         "id": "2567",
         "name": "Burton Albion",
@@ -5278,8 +5464,8 @@
       "type": "league",
       "date": "2026-09-05T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
@@ -5301,7 +5487,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "82'",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "335",
         "name": "Huddersfield Town",
@@ -5323,7 +5509,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "375",
         "name": "Leicester City",
@@ -5345,7 +5531,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "81'",
+      "statusDetail": "90'",
       "home": {
         "id": "301",
         "name": "Luton Town",
@@ -5367,7 +5553,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "338",
         "name": "Reading",
@@ -5389,7 +5575,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "344",
         "name": "Wycombe Wanderers",
@@ -5411,7 +5597,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "83'",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "2731",
         "name": "Accrington Stanley",
@@ -5433,7 +5619,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "308",
         "name": "Bristol Rovers",
@@ -5455,7 +5641,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "320",
         "name": "Cheltenham Town",
@@ -5477,7 +5663,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "84'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "343",
         "name": "Chesterfield",
@@ -5499,7 +5685,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "statusDetail": "90'+5'",
       "home": {
         "id": "396",
         "name": "Crewe Alexandra",
@@ -5521,7 +5707,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "324",
         "name": "Exeter City",
@@ -5541,21 +5727,61 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-05T14:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "86'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "353",
         "name": "Northampton Town",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "635",
         "name": "Newport County",
-        "score": null
+        "score": 0
       },
       "venue": "Sixfields Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Joseph O'Brien-Whitmarsh",
+          "minute": "87'",
+          "team": "Northampton Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Matthew Dibley-Dias",
+          "minute": "31'",
+          "team": "Newport County",
+          "card": "yellow"
+        },
+        {
+          "player": "Matthew Warhurst",
+          "minute": "60'",
+          "team": "Northampton Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Joe Wormleighton",
+          "minute": "71'",
+          "team": "Northampton Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Cameron Evans",
+          "minute": "86'",
+          "team": "Newport County",
+          "card": "yellow"
+        },
+        {
+          "player": "Logan Briggs",
+          "minute": "90'+3'",
+          "team": "Northampton Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881387",
@@ -5565,7 +5791,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "81'",
+      "statusDetail": "90'",
       "home": {
         "id": "303",
         "name": "Rochdale",
@@ -5587,7 +5813,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "statusDetail": "90'+4'",
       "home": {
         "id": "341",
         "name": "Swindon Town",
@@ -5609,7 +5835,7 @@
       "date": "2026-09-05T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "85'",
+      "statusDetail": "90'+3'",
       "home": {
         "id": "345",
         "name": "Tranmere Rovers",
