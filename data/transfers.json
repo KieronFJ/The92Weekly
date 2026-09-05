@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T00:44:24.971Z",
+  "updatedAt": "2026-09-05T00:54:47.820Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,7 @@
         "summary": "The top stories and transfer rumours from Saturday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13581538/chelsea-transfer-news-blues-offered-chance-to-sign-former-tottenham-midfielder-yves-bissouma-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-05T00:44:24.864Z",
+        "publishedAt": "2026-09-05T00:54:47.693Z",
         "status": "Rumour"
       },
       {
@@ -1643,7 +1643,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - fotmob.com",
+        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - FotMob",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeWpYQmpCYVBWOTBqVlQ3WldIMXRBamx6Y3lQLXNDLTVzYWdFT1M0MFNad3JvaDBHckRuRlkyUWozSUthaFByeDR4MGR3RjBMM3dCVzIyc01xbVd5OERETzhkZG9WTVA0WVhYMlpMVlZBTUdhVllET2trZ09fS0ozZEsxZElGSVEwelRwVGJMYXNMUTBJR2Y3RFFwQkowY3prSko2bw?oc=5",
         "source": "Google News Premier League",
@@ -1669,7 +1669,7 @@
         "clubs": [
           "Chelsea"
         ],
-        "title": "Summer transfers 2026: All the Chelsea ins, outs and new contracts so far | News | Official Site - Chelsea Football Club",
+        "title": "Summer transfers 2026: All the Chelsea ins, outs and new contracts so far | News | Official Site - chelseafc.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcTFZaWNDbVJMLWVjMGJQSGFveWFxRUVUZ25hMlJacjRGV2xiUXNneHg2ZkN2M09RWV9NM1hJM21DcjVsWDU1T1lMazN0MTlmQk9qWXhNVkRPbzZxa0RPQlBjMTBINkowU3hjcThzYXZVWkZJQUpVQW5nOWZTX0ljT0FJcDF5NThCVEpiQlR0WHlTX2tfeGVHb0t5Z0E5UG0tN3J6cWlpaFk4cEhyVWpERWFkYw?oc=5",
         "source": "Google News Premier League",
@@ -2651,13 +2651,10 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Brighton",
-          "Leicester City"
-        ],
-        "title": "Tommy Watson: Leicester City sign Brighton winger on loan - BBC",
+        "clubs": [],
+        "title": "One per club: Premier League players who need a loan move - Football365",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9IcnJHYk5NWV9OcVlMN0JxRTViYTdkVVhlUFAxSFlGYlBqZ3I3QU55S3lTTXNCZzNKSVVOdE43LXA4NUx2U0hYVzIyZ0xuYndMOUJqdDF0cmRuakNsQ1N6Y2hyOUNfU3FHVEE?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLXFqOElrX1A0dXI2QkhrYVFtanZPRzZaSlBBczVQa2ZDV2phYkZMSlJ0X0Z4WnRrVUMzaGoyQjlEZDI3Z19HOGFfVXUwQnNjSTZhRlhGbWdtTkxzNlFYY29McTJaQnZhNXVMV29nZEk2S3djYWxMYXZldTc5N2dTcjZHMGtaVjNYM1RR?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-01T07:00:00.000Z",
         "status": "Loan"
@@ -2665,11 +2662,14 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "One per club: Premier League players who need a loan move - Football365",
+        "clubs": [
+          "Brighton",
+          "Leicester City"
+        ],
+        "title": "Tommy Watson: Leicester City sign Brighton winger on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLXFqOElrX1A0dXI2QkhrYVFtanZPRzZaSlBBczVQa2ZDV2phYkZMSlJ0X0Z4WnRrVUMzaGoyQjlEZDI3Z19HOGFfVXUwQnNjSTZhRlhGbWdtTkxzNlFYY29McTJaQnZhNXVMV29nZEk2S3djYWxMYXZldTc5N2dTcjZHMGtaVjNYM1RR?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9IcnJHYk5NWV9OcVlMN0JxRTViYTdkVVhlUFAxSFlGYlBqZ3I3QU55S3lTTXNCZzNKSVVOdE43LXA4NUx2U0hYVzIyZ0xuYndMOUJqdDF0cmRuakNsQ1N6Y2hyOUNfU3FHVEE?oc=5",
+        "source": "Google News League One",
         "publishedAt": "2026-08-01T07:00:00.000Z",
         "status": "Loan"
       },
@@ -3154,6 +3154,20 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Brighton",
+          "Middlesbrough"
+        ],
+        "title": "Jeremy Sarmiento completes permanent move to Middlesbrough - Brighton & Hove Albion",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkJid1ptbjdGNWpJZEVaNjNhQzA2Qm54VUhiVDItRkhVSVg5QjczaVZXUDBGQVZtTElseEhJVDJmaHR1QVA3TnFDNVlIZHF4eVBILUNIa0FrMWhJVTNta290RGRPaHZZSEhkUW9HbUNiVUNjT0lyUWlsdzBMbXNMYjhBdkxQQ21BeEpveDNyTmtHNmdjVlJjWUwyckM5bUplTTFxR1BUaGdwQjhCT1FydG5uSVJCaTlxNzRtVi1ESF9EZ3RyN1lPaw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-06-25T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Arsenal"
         ],
         "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - The Mirror",
@@ -3223,6 +3237,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer rumors, news: Real Madrid to sign PSG's Neves? - ESPN",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3ZUb0lOeVVnUnY2ZDZQR01YN3N0NFg4dk9XWGVfSDJ1Z0xmNW9pSG05YTk0Zm9hTlNzMlVrRjh1TGFQRk9nR2lWWVhpOExQU09xSWkxZW9rNzlXOHdRZ3lNa0dSWThuZFJXNlJHR0tsOHdMWmhwdV8yLTNFSUI5bU9Oa29vaG41SXNrdHg4TnZfYTFWek02SU1DRnNDMHJWaFBuTnhpRQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-05-29T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Coventry City"
         ],
@@ -3282,7 +3307,7 @@
           "Manchester City",
           "Leicester City"
         ],
-        "title": "Man City agree deal to re-sign £12.5m Championship star as Leicester City plot late loan move - manchesterworld.uk",
+        "title": "Man City agree deal to re-sign £12.5m Championship star as Leicester City plot late loan move - ManchesterWorld",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFJIOW4xcWVWamw0bno5X21Fb2Npa3NfdVZzcHJfTWpEWDBHQmdhUUR1LUN6anVvZDVMUDlMQkJZTkZWZEJZdEdZXzhvcF9OTkduOXZ5T0I4bnRMTDZtZmhnNnZDLUJDcXRPZGRHbGpkU2FLNnptMzdnZHlxQWR0UjVackcxYkpQUWhJUmFPLTNpbHIwRFhyNFh0OVZsbmlRbUx0MVVpZ3BTdUlTNFJQZnkwdHA?oc=5",
         "source": "Google News Championship",
@@ -3732,7 +3757,7 @@
           "Hull City",
           "Middlesbrough"
         ],
-        "title": "Championship transfer round-up: Middlesbrough motives, Dele Alli rumours, Hull City's new signing - EFL Analysis",
+        "title": "Championship transfer round-up: Middlesbrough motives, Dele Alli rumours, Hull City's new signing - eflanalysis.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOX0JnWlJuOExGMnkxTmtPN3JrWjJmckQ4OWFOcjNFZW9zTEhFMVV0MWNfWGFoVnlsMEdlSkVnLVZjdGRUOUVIdkozbXBJb2g1YW11SGx2SmpkVHlld2RMZUo3UEpKUWNicDgzYnFId3hVUm9xWC1jdWswbFkwb1Atd0RTZ2xsenhNSEEzWnNzUVdGRlUzMV8tUXkxeHpkMV9WOU1RZnBmc3lnU3FFX3VmWGNDUUpydHgtZWRfcDQwZlJZM04xbEg4?oc=5",
         "source": "Google News Championship",
@@ -5578,7 +5603,7 @@
         "clubs": [
           "Middlesbrough"
         ],
-        "title": "Middlesbrough new boy delighted by move as talks open over Premier League loan deal - Hartlepool Mail",
+        "title": "Middlesbrough new boy delighted by move as talks open over Premier League loan deal - hartlepoolmail.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVjBpa2Y2Z3R2aDZXYlZHUEVpM1p3bTJZSHBDQW1oY2stSjJobDhLd0hWR2RuVGIyVEhEeGlySXRIUmRzUGxleVotQVJKa0Noel9nMW1aMlBWQ2ZUVFZDY2ktM0NBbUNwZjVfRXR2ME9BSmtYRnphTWhjZ0k1amU4RE1jWUpLbW91UHV2eTZUZS03VFFnQXlOcHZqZXg2VXlmNmVvT3pFZW41ZE52WXFHbEI5ZWM1dXIxekRZ?oc=5",
         "source": "Google News Premier League",
@@ -5648,7 +5673,7 @@
         "title": "Wrexham make £5m Premier League signing amid Ryan Reynolds' £25m transfer plan - Wales Online",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQ0xKUnBqN1Q0MHV6aDJja2swZjBLOWZzenI5VzMwenZfR3FJMnc1RUR2UzhVR1hqc3U2UWxlX21DQTR1d3BMREdVb1FwYjI5OV93Y19pSWxZZm9UUlBnQWRFZThRMU5rek5rbVVrOG0xc1JGdXc1S2JqbHR6cjRtMmFTQ293VG4tMHF2dmtSWExiTXFxRjdsSF9GT0J1c3PSAaQBQVVfeXFMTVlMVlU4WVhncldxZXlmWV9PLWhzaDFfaXdUVlB4STRhVXdzT09zal9DRlJkc2ZyR1pnZ2RHVEVCby1PVW1TM3JGbVh5VkNuZDlXT1JtZmFUX0F4a1p4bmVfTFlpRmV1SUNOT0NfdmdWTFR5RERmd3RmcFg4MWIxXzVKZFFlNVlESmFfQmdINHl2YVBuVGwyTi1kQ1dMY1hWQmR2MHo?oc=5",
-        "source": "Google News Premier League",
+        "source": "Google News League Two",
         "publishedAt": "2026-07-27T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -5750,17 +5775,6 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [],
-        "title": "SUFC News: United transfer target seals £10m move to Championship rivals - thestar.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZE8tczZpdnFFN1hJQ3dTQ0xiN1gzVlU1NlhVODdzWkNuTkZFVUFlV0FFUmVBSGJsWk1jbzlPVVNvRjRYZFQ1T2FQQkttMlRDVk12WlRlWXpjMkRRNERUQ1VSRVFpNHV0OC00RlZ1R0t0LV8yRk8xLUw3SEsxRHNfWUVFa1c3QjFsYjB2WHZaZGZTcWhoeHl3TTNDczVNWTBMbFpGeTdKUTNEOUEwZ2ZJbG9uSkM3QQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-07-15T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
         "clubs": [
           "Wrexham"
         ],
@@ -5834,19 +5848,6 @@
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOHQ4UzhJdktfV2VKNFRpbmhHcHFVUU10Vm51cnU2Rkt5T294aGhmajNYbXVlNkVjamdhckFSZU44VGpjRS1uZHRTUWd4Smd4YVdBbWo5NTNtS21xUGVoeDgtMGFnRzFHZnZZVThNaDBFZG9SUlJLY2p1QmFjQkh0bVdub1J3bUpMQXc2TE9kenJiX25GMW92aDVUUUdZSG5xREVBN05NOG1iOVBkVUpJVE4yZk1MMl95U1Jj?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-06-30T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Middlesbrough"
-        ],
-        "title": "Jeremy Sarmiento completes permanent move to Middlesbrough - brightonandhovealbion.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkJid1ptbjdGNWpJZEVaNjNhQzA2Qm54VUhiVDItRkhVSVg5QjczaVZXUDBGQVZtTElseEhJVDJmaHR1QVA3TnFDNVlIZHF4eVBILUNIa0FrMWhJVTNta290RGRPaHZZSEhkUW9HbUNiVUNjT0lyUWlsdzBMbXNMYjhBdkxQQ21BeEpveDNyTmtHNmdjVlJjWUwyckM5bUplTTFxR1BUaGdwQjhCT1FydG5uSVJCaTlxNzRtVi1ESF9EZ3RyN1lPaw?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-06-25T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -6283,7 +6284,7 @@
           "Charlton Athletic",
           "Wigan Athletic"
         ],
-        "title": "Exclusive: Bolton and Wigan Join League One Queue for Charlton Winger Rob Apter - sportsboom.co.uk",
+        "title": "Exclusive: Bolton and Wigan Join League One Queue for Charlton Winger Rob Apter - SportsBoom UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPblNkS1JlLWpiX1p3NmE2ZnhkNmk3X2thZEtKMWxHN3JhbldIeWNyQTB6UW04Q2p6Z3U1VUJhVFd6T1UtODJVRHY1cWFCOEotak1yQXRMZ3dxQzVVV1JLTWdxV1RCWFBqbXluZDdnM2JMczdOaklzRWJsN1UzR0NCb2tKVDVic25Xc1YyNGZJa1ZJZ2dGTUN3S0FUdlRaanJxcWhhMGxBMmpJTHJIRWV1VDdyS3dHRGpTRXhPcXBUa0k2OTlyM3BfMkZSWWZYOHZMTWtv?oc=5",
         "source": "Google News League One",
@@ -6518,7 +6519,7 @@
           "Birmingham City",
           "Wolverhampton Wanderers"
         ],
-        "title": "Exclusive: Birmingham City Want to Sign Wolves Loan Midfielder Tommy Doyle on Permanent Deal - sportsboom.co.uk",
+        "title": "Exclusive: Birmingham City Want to Sign Wolves Loan Midfielder Tommy Doyle on Permanent Deal - SportsBoom UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUGVvSGpncWo0REhXTHFGOW1Nb3RQS0ZhS1YtMWNQNG9aUms5YjAzMEpST0M5RXVOQ05aXzZiaHI4TkdSeWlHWlpmR1YtUlBvUW82Qmt1MlVCNVNMb1d2LU1KRlMzQ2lndUx6cUdWaTJMazBvVkYtZzFqNTlnbWs1aDItQ3I3WVV6azZWTEZkQjJBRUQ4N3Vta2pldllNVU1NT3NEeWNYeUlhZm00aEdvSVdZakhvZkVLQVcxSXpYMmJ4SHNwd3NWOFVkT3NLZGVTN2plRGV5ejNITFk?oc=5",
         "source": "Google News Championship",
@@ -6559,7 +6560,7 @@
           "Portsmouth",
           "Bradford City"
         ],
-        "title": "Bradford City 'agree deal' to sign Portsmouth defender Tom McIntyre after Charlton Athletic loan - yorkshirepost.co.uk",
+        "title": "Bradford City 'agree deal' to sign Portsmouth defender Tom McIntyre after Charlton Athletic loan - Yorkshire Post",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3pfdExuNG9WVXpEXy1TeHgwRXVLWnVFUkppZEtZSFZQV0tXYUhvX3hYQ2lkRGs3SnRlbmdMMWlDS200YTFsei1JYW54SG1feGdxQjgyRWNKbjZJWVVZMjVlSzJOZER6WXBfbjJSYU5EajdCeTVjMWNZbFJlQkxxLXJCdElNYlpVX3dIZFo3VlBNOXludFdDc0ZwUGlsZjF4bV9QeDNKNzl4eFh6Qk9MNw?oc=5",
         "source": "Google News League One",
@@ -7046,7 +7047,7 @@
         "clubs": [
           "Luton Town"
         ],
-        "title": "Luton Town poised to complete loan deal for exciting Premier League prospect - Yahoo Sports UK",
+        "title": "Luton Town poised to complete loan deal for exciting Premier League prospect - uk.sports.yahoo.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQck1LZzF2UzA3Z3REWm1MLWc0ZUFGOER0Q2J0ZndoOTNmT2xYXzBLbUJmbGFfMVRNT1hkZTcwazRTa3ptVFhFcXp5TXVGNGFiUWRvWXFhbjZRaFhkRk9ZYldobEhjTWV5a3pWQkFXTTFaekVTSnFqQl9tZmxZN1hVcUdKRGFTdw?oc=5",
         "source": "Google News Premier League",
@@ -7546,7 +7547,7 @@
         "clubs": [
           "Sheffield Wednesday"
         ],
-        "title": "Sheffield Wednesday 'agree' loan deal for League One forward - yorkshirepost.co.uk",
+        "title": "Sheffield Wednesday 'agree' loan deal for League One forward - Yorkshire Post",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMGhkbTlxWGZva0NHTDFybG1ick1BYUstZlg4SDFDbi1RTmVyemFUQTZXVl9PTmQ4VmNOYVNYREJLc19RZ2d2SFltU0JOQ240Zk9VTHdtUzBnQmJaMUNHRnJjZmM0ZWc3RGxqSkN1bTFoTDJDdEh4SEY2eXlSaWk5blpzbFdFNDFsdm02LU5wcXZkTV9vaWRpM2RGNHpibWYtemVBQ2o3ejkyLW5TeDZpT3JGZ0QxcjhCLVl5MlVHWXVmdw?oc=5",
         "source": "Google News League One",
@@ -7600,7 +7601,7 @@
         "clubs": [
           "Reading"
         ],
-        "title": "Reading FC set to sign Championship striker on loan deal - rdg.today",
+        "title": "Reading FC set to sign Championship striker on loan deal - Reading Today Online",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNFQwbFhSZ0lhVUtyY01QNkpZOTcxXy16SW5RRkhEaVI2UHNCaXJQRTZsb0xna0RPUURyVkdKVlpWWUd0NVBycS1qUXpMUDRnWUItQ1FadlBGbm1KU3dudEoyZXV2MTdIWXZjclBNVk9YdmNVcEpKR2JqQ2hJTEp6OA?oc=5",
         "source": "Google News Championship",
@@ -8055,7 +8056,7 @@
         "clubs": [
           "Swindon Town"
         ],
-        "title": "Transfer deadline day live: Follow everything at Swindon and across League Two - Swindon Advertiser",
+        "title": "Transfer deadline day live: Follow everything at Swindon and across League Two - swindonadvertiser.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa3p5azJwWlY3SnVqYld4WUhhLTUyUlV6dWNrYVJaLThDLUd2NkhKTTdYd3Y2aTJCZENoc2o4dnZ0S3Y0QmJUZTVyREtpdUMwZ0ZmNWdSVWNkREhrUHZHbTV3ektJNHVZb2lsdlV3WFVlNTY2bmxKOHpPUDBZY2xvdl9kMWcycHE5SE1oeTZ1UURUSWw3SFBCNVRVd21KbmtzbkNoSg?oc=5",
         "source": "Google News League Two",
@@ -8094,7 +8095,7 @@
         "clubs": [
           "Swindon Town"
         ],
-        "title": "Swindon's summer transfer window live - All the news and rumour before deadline - Swindon Advertiser",
+        "title": "Swindon's summer transfer window live - All the news and rumour before deadline - swindonadvertiser.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdDVYX0FxUXRJUmZ0d015cXJ5WkFZUmpuaWNCQVpyMXpIX2EzTVFkaVpfSVJ4aTdvTEtkV2F0TWhPbUlBZVd5TmZ5Zy1saWEyRmJqQ0tONFY2SDhkMURsaGtjT1pJRVBLbnRUTlJObFp5TUdJdXpVbnl2NlJ3LXF6MGJTNmhxb1FUeEx6dHRXVlFFV09xUUFLdW1TcDREY0hmUXM1NDB3?oc=5",
         "source": "Google News League Two",
@@ -8107,7 +8108,7 @@
         "clubs": [
           "Salford City"
         ],
-        "title": "Salford make splash signing and Austrian goalscorer joins: League Two transfers - Yahoo Sports UK",
+        "title": "Salford make splash signing and Austrian goalscorer joins: League Two transfers - uk.sports.yahoo.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTTN6TWdfQU1tQmltaU5VRUtIbnM2TFdaTDl5b3V4YW1XTjlGcFNxVmZ3WHpNc3RtV2hMWDlqaHRuTlBad0dEMVFhdUc4aXNIeHM1RkU4Y1hhQmFveHVlZmxWbXY1a1pjT1Y4cUdBSjRnS0tzNTc0WTVpWDJZeGFjS0YyX0VKd1RMWHc?oc=5",
         "source": "Google News League Two",
@@ -8347,7 +8348,7 @@
         "clubs": [
           "Swindon Town"
         ],
-        "title": "January transfer deadline day live: Follow all the news at Swindon - Swindon Advertiser",
+        "title": "January transfer deadline day live: Follow all the news at Swindon - swindonadvertiser.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUk9wQWU3dW8tMmJpYVh0Rm1XdFEybUtlbXBJaDFDSzNEZnRWWGVENm80eER4OU9LZ2dfclRlRnpIeG5iWFRSa3hIdFV4aE1IUmZwR1BKVHZPSGZpYWEyZGJNbXNtZi1wX21KNElCaVhsN3lfOTVXam1rbkNJYWd0ZWRYNnoxWHgzcFZOZlp0SjlyWWxEaVM2MTlENlJqcjBIT2hNTnNIaVdaZXN1dVBxZA?oc=5",
         "source": "Google News League Two",
