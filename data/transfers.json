@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T13:17:41.352Z",
+  "updatedAt": "2026-09-05T13:26:29.912Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -386,6 +386,17 @@
         "link": "https://www.bbc.co.uk/sport/football/articles/cgk5g2z3kyxo?at_medium=RSS&at_campaign=rss",
         "source": "BBC Sport",
         "publishedAt": "2026-09-04T10:44:37.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer Centre LIVE! Football transfer news, updates and rumours - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbW9ZaWpSbE9rU3JDUGRXYnU0ZVRmSTNpX3Q5Q1NrRGtWYmpJWXhkeW94dlE3dFNBekFlZTJCVVFOS1FaUG5Ka05OeTdpRWU1Z1NVbVBrMDdZWFJ3N1A5a2M5UGtPSDgtekdxOW1LZjdiUUl6VjVVRzd5VzZzMlpOSUhrempJZk1UakN2S0k5TWItODN0TzBEQUhwcDVIdkNsMU1NendEWDhCdXNrUVpHbGhzVnV2c1FWZzdNWUdPWFc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-04T09:53:37.000Z",
         "status": "Rumour"
       },
       {
@@ -996,8 +1007,8 @@
         ],
         "title": "Swansea City transfer news: Manchester City winger Jeremy Monga joins on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GSzBQeXRVVGVJZVRTNVJYNXdvRFJFd1VxRWxaa09DbHNia0l2TTVsMDRDTklsS1I3b2cxSWNCUkcwR001dXBSRkZodHpDYWVPNFFxMV8xbGVSUjJ6d012MVZkWjhiOWVVMWc?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0Rk9WQXhKWGVGeFRzYUJiM2trOTlVc0FjODEwTVd1SEc1dl92VmNNNC1aZ2M0b1FpeUJSN013M3B1UnZyMFhIeFVNSjJ6TUNzb2VuRkJMUkRmdkp2TEYyRUtUNTMybWs?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-09-02T09:01:18.000Z",
         "status": "Loan"
       },
@@ -1010,8 +1021,8 @@
         ],
         "title": "Swansea City transfer news: Manchester City winger Jeremy Monga joins on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0Rk9WQXhKWGVGeFRzYUJiM2trOTlVc0FjODEwTVd1SEc1dl92VmNNNC1aZ2M0b1FpeUJSN013M3B1UnZyMFhIeFVNSjJ6TUNzb2VuRkJMUkRmdkp2TEYyRUtUNTMybWs?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GSzBQeXRVVGVJZVRTNVJYNXdvRFJFd1VxRWxaa09DbHNia0l2TTVsMDRDTklsS1I3b2cxSWNCUkcwR001dXBSRkZodHpDYWVPNFFxMV8xbGVSUjJ6d012MVZkWjhiOWVVMWc?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-09-02T09:01:18.000Z",
         "status": "Loan"
       },
@@ -2484,20 +2495,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea",
-          "Portsmouth"
-        ],
-        "title": "Pompey secure 9th summer signing after deal struck for Chelsea forward - portsmouth.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYktOS3NMU20xRENicW5qNlpYanBkUGlNeFlPTmJoUHZDQ192OGk3NWwtQkJkb0IweG90WTNJcDhmNnJoUjNXUHhlY0p0SS01NFRQdUxzN2dtLTFVb1dlY2pTNVNubkFQOVZ5aXEyYzRkQ3NDbjU3U3JPYWpwcFVrWjJoeHp6V2NuWnVYZTFHZEhmZTFIS2NFVTVYZ0FxUkRhLWFzUnU0M0s1VUtUMGVfNWNCUHNGRkVwT2tpVHpIcE9xd29aSVV5V19Gb0gxdEozTGRRV0FsYjdzZFN1?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City",
           "Burnley"
         ],
@@ -2507,6 +2504,20 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Portsmouth"
+        ],
+        "title": "Pompey secure 9th summer signing after deal struck for Chelsea forward - portsmouth.co.uk",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYktOS3NMU20xRENicW5qNlpYanBkUGlNeFlPTmJoUHZDQ192OGk3NWwtQkJkb0IweG90WTNJcDhmNnJoUjNXUHhlY0p0SS01NFRQdUxzN2dtLTFVb1dlY2pTNVNubkFQOVZ5aXEyYzRkQ3NDbjU3U3JPYWpwcFVrWjJoeHp6V2NuWnVYZTFHZEhmZTFIS2NFVTVYZ0FxUkRhLWFzUnU0M0s1VUtUMGVfNWNCUHNGRkVwT2tpVHpIcE9xd29aSVV5V19Gb0gxdEozTGRRV0FsYjdzZFN1?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -3000,7 +3011,7 @@
           "Aston Villa",
           "Chelsea"
         ],
-        "title": "Aston Villa confirm signing of Alejandro Garnacho with £43m Chelsea clause - Daily Mirror",
+        "title": "Aston Villa confirm signing of Alejandro Garnacho with £43m Chelsea clause - mirror.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0tnZXlMZ0diTnVoQ0dmMklMeEhTYW5YUTFnVHdyNXcxa1dOd2tGRkRKR2RkZVBseFhRNUZ6bGUtb2s2ckhNOEZSeW44MDh2cFNXX1ZEZHZIaW1COFFvQ2hqTDNwRnU4cHJJeUFOdWZwUjRtWEtCOFJHRS1Xa2JmTlhDR2U3X0dKZl9KcUtINUNGajMwUjR0RlptWHF3S0E5YU400gGoAUFVX3lxTE1hUzNLS3czaTVlLUxCRmRRS1dLa2d0SXV1WXZtZjlVWVBtVXhLSHpYTkZaM0R1NHRqb2hMWTkzMnQ1bEhDZkFrVW1lSDdfRlNzbDIyc1JKaGw4ZkdYUzJZYTRvWUFVeVVTZ3pIbEVYMUxxdkdfNEM0UHYtOGpqNVBadDVUVWRqN1FQSW5QVWgxODZLaUs2TDNITnRrand4Y0NObUdwRnVZSA?oc=5",
         "source": "Google News Premier League",
@@ -3285,20 +3296,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Leeds United",
-          "Sheffield Wednesday"
-        ],
-        "title": "Harry Gray: Sheffield Wednesday sign Leeds United striker on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zbm9BMjBvUW1rR3k1SDNVR2FGbkNkUmxuV0ZHaXNvWjFpeWtsT1QzZG82ckZKVElOYmk1M3JqdVhLM3JKM3l0T0JxWnYyLXREN1NQT1dHenlfOTBYQ0pkWnVGRW9RQjQ?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-07-07T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Arsenal",
           "Liverpool",
           "Manchester United",
@@ -3310,6 +3307,20 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-07-07T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Leeds United",
+          "Sheffield Wednesday"
+        ],
+        "title": "Harry Gray: Sheffield Wednesday sign Leeds United striker on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zbm9BMjBvUW1rR3k1SDNVR2FGbkNkUmxuV0ZHaXNvWjFpeWtsT1QzZG82ckZKVElOYmk1M3JqdVhLM3JKM3l0T0JxWnYyLXREN1NQT1dHenlfOTBYQ0pkWnVGRW9RQjQ?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-07-07T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -7430,6 +7441,17 @@
       {
         "division": 3,
         "divisionName": "League One",
+        "clubs": [],
+        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVEQzNzV1WEtwWUpEM3JxaW1WbmVhUGdIcWRvV3FGYjBUVWVWNHRBV0NKcFVYWWowYjhqN0R6U3ZsU2t6eTZNejJ5YlNCeEhUSjJFYldKejJuUmNfdEZNZ1dYZkV1UDVieVJCNnl1Y1lQUzBFN1U4cGdBQ0NKSExxZXBVZjV5UE4yYlZISHZ1YzdENThBd1FsMDhYWlVvY3Nqa3JKeHlCOGFHMERVNWU0VGtIRG00T0I0SGVZTWVYQS1aMEh2bVhpR05EQ08zQWhQMEFUX1VUYjhTbFhnUndETE1hX2JWdmc?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-09-03T12:54:20.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
         "clubs": [
           "Sheffield Wednesday"
         ],
@@ -7746,17 +7768,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BZEs1eV82NHl4YWwyZ3BMaFRLVnNvaDVZNjQ4UWx4SWR1c01JMUNPM2pIUThvNnJVMVB5U3cteWpITUZfc3E2ZHZNTlBUN0QyRlVJcVlHMXhoaFFKTnZXQzM4WHJaVXM?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-08-11T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "SWFC News: Owls' rivals 'braced' for headline exit as defender 'set' for loan switch - thestar.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOU1BJTWNRZjVjMUVZVy1nZVpyWWxFeTFjLVE5STgwNkFNN3lUbnFQS1dKZGVBdXl5RTdvX25ZTTF4aGtnZjhwTzRzUEdOVGl6dk1iSG1yOG9OVUFkMmprODFYd0hackhWWTVZeUthemdGRGlqOTBLcU1FelQwY2EzRnRTUFFQaFIzUjloa1VDZ1RnMVVTYkZ6NTJVOGo3T1V5djNOZUxSWjM4V0hzZlFQbVVwQlc?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-09T07:00:00.000Z",
         "status": "Loan"
       },
       {
@@ -8230,7 +8241,7 @@
         "clubs": [
           "Sheffield Wednesday"
         ],
-        "title": "Sheffield Wednesday 'agree' loan deal for League One forward - yorkshirepost.co.uk",
+        "title": "Sheffield Wednesday 'agree' loan deal for League One forward - Yorkshire Post",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMGhkbTlxWGZva0NHTDFybG1ick1BYUstZlg4SDFDbi1RTmVyemFUQTZXVl9PTmQ4VmNOYVNYREJLc19RZ2d2SFltU0JOQ240Zk9VTHdtUzBnQmJaMUNHRnJjZmM0ZWc3RGxqSkN1bTFoTDJDdEh4SEY2eXlSaWk5blpzbFdFNDFsdm02LU5wcXZkTV9vaWRpM2RGNHpibWYtemVBQ2o3ejkyLW5TeDZpT3JGZ0QxcjhCLVl5MlVHWXVmdw?oc=5",
         "source": "Google News League One",
@@ -8502,17 +8513,6 @@
         "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOWx6eE1EWkd3N3FfY2g2eF9tLVZ4Vjl4Yy03T2hkWGh0Sjc1S3NDUE8xZkFMR29DZ0VRZkczSnFGbkhnaUFSWlpBRGRIWVpxTXpZQl93S25Ial9hZUktQjA3aUl0VDFRaGJqR3BITHVGcDcyTEoyY01qeGlQVWVSZ1NKamVxbHBvYzFiaC1EQzAtNDMzLUhNUVA2eEQ?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-03T16:42:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
-        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVEQzNzV1WEtwWUpEM3JxaW1WbmVhUGdIcWRvV3FGYjBUVWVWNHRBV0NKcFVYWWowYjhqN0R6U3ZsU2t6eTZNejJ5YlNCeEhUSjJFYldKejJuUmNfdEZNZ1dYZkV1UDVieVJCNnl1Y1lQUzBFN1U4cGdBQ0NKSExxZXBVZjV5UE4yYlZISHZ1YzdENThBd1FsMDhYWlVvY3Nqa3JKeHlCOGFHMERVNWU0VGtIRG00T0I0SGVZTWVYQS1aMEh2bVhpR05EQ08zQWhQMEFUX1VUYjhTbFhnUndETE1hX2JWdmc?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-03T12:54:20.000Z",
         "status": "Rumour"
       },
       {
