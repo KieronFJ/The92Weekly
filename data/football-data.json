@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T18:20:28.392Z",
+  "updatedAt": "2026-09-05T18:36:33.996Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6968,21 +6968,36 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T16:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "76'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "306",
         "name": "Hull City",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "362",
         "name": "Aston Villa",
-        "score": null
+        "score": 0
       },
       "venue": "The MKM Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Semi Ajayi",
+          "minute": "39'",
+          "team": "Hull City",
+          "card": "yellow"
+        },
+        {
+          "player": "Lucas Gourna-Douath",
+          "minute": "67'",
+          "team": "Hull City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880283",
