@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T19:25:01.500Z",
+  "updatedAt": "2026-09-05T19:31:58.573Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6934,36 +6934,21 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-05T16:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "64'",
       "home": {
         "id": "306",
         "name": "Hull City",
-        "score": 0
+        "score": null
       },
       "away": {
         "id": "362",
         "name": "Aston Villa",
-        "score": 0
+        "score": null
       },
       "venue": "The MKM Stadium",
-      "source": "ESPN",
-      "goals": [],
-      "cards": [
-        {
-          "player": "Semi Ajayi",
-          "minute": "39'",
-          "team": "Hull City",
-          "card": "yellow"
-        },
-        {
-          "player": "Lucas Gourna-Douath",
-          "minute": "67'",
-          "team": "Hull City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880283",
@@ -6972,8 +6957,8 @@
       "type": "league",
       "date": "2026-09-05T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "17'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, September 5th at 3:00 PM EDT",
       "home": {
         "id": "318",
         "name": "Swansea City",
