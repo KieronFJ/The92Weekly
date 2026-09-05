@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T21:16:55.947Z",
+  "updatedAt": "2026-09-05T21:26:04.693Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6971,21 +6971,42 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-05T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "80'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "318",
         "name": "Swansea City",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "352",
         "name": "Wrexham",
-        "score": null
+        "score": 0
       },
       "venue": "Swansea.com Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Joseph Opoku",
+          "minute": "67'",
+          "team": "Swansea City",
+          "card": "yellow"
+        },
+        {
+          "player": "Ben Cabango",
+          "minute": "77'",
+          "team": "Swansea City",
+          "card": "yellow"
+        },
+        {
+          "player": "Stephen Welsh",
+          "minute": "88'",
+          "team": "Swansea City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880292",
