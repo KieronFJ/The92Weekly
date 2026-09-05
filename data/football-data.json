@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T20:18:31.383Z",
+  "updatedAt": "2026-09-05T20:28:47.963Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6972,8 +6972,8 @@
       "type": "league",
       "date": "2026-09-05T19:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "61'",
       "home": {
         "id": "318",
         "name": "Swansea City",
