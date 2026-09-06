@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T12:22:54.654Z",
+  "updatedAt": "2026-09-06T12:38:30.523Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7015,8 +7015,8 @@
       "type": "league",
       "date": "2026-09-06T11:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "45'+5'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "392",
         "name": "Birmingham City",
