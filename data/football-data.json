@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T13:38:02.641Z",
+  "updatedAt": "2026-09-06T13:44:50.780Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7014,67 +7014,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-06T11:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "86'",
       "home": {
         "id": "392",
         "name": "Birmingham City",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
-        "score": 2
+        "score": null
       },
       "venue": "St. Andrew's Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Fernando López",
-          "minute": "3'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jay Stansfield",
-          "minute": "22'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        },
-        {
-          "player": "Ladislav Krejcí",
-          "minute": "31'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jackson Tchatchoua",
-          "minute": "36'",
-          "team": "Birmingham City",
-          "ownGoal": true
-        }
-      ],
-      "cards": [
-        {
-          "player": "Marshall Munetsi",
-          "minute": "51'",
-          "team": "Wolverhampton Wanderers",
-          "card": "yellow"
-        },
-        {
-          "player": "Christoph Klarer",
-          "minute": "53'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Phil Neumann",
-          "minute": "67'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879291",
@@ -7083,8 +7037,8 @@
       "type": "league",
       "date": "2026-09-06T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "28'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, September 6th at 9:00 AM EDT",
       "home": {
         "id": "368",
         "name": "Everton",
