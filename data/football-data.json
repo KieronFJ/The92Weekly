@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T17:42:25.784Z",
+  "updatedAt": "2026-09-06T17:51:45.018Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7168,21 +7168,79 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-06T15:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "70'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "359",
         "name": "Arsenal",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "363",
         "name": "Chelsea",
-        "score": null
+        "score": 1
       },
       "venue": "Emirates Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Morgan Rogers",
+          "minute": "2'",
+          "team": "Chelsea",
+          "ownGoal": false
+        },
+        {
+          "player": "Kai Havertz",
+          "minute": "25'",
+          "team": "Arsenal",
+          "ownGoal": false
+        },
+        {
+          "player": "Martin Ødegaard",
+          "minute": "50'",
+          "team": "Arsenal",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "João Pedro",
+          "minute": "14'",
+          "team": "Chelsea",
+          "card": "yellow"
+        },
+        {
+          "player": "Cole Palmer",
+          "minute": "45'",
+          "team": "Chelsea",
+          "card": "yellow"
+        },
+        {
+          "player": "Christos Tzolis",
+          "minute": "58'",
+          "team": "Arsenal",
+          "card": "yellow"
+        },
+        {
+          "player": "Maxence Lacroix",
+          "minute": "58'",
+          "team": "Chelsea",
+          "card": "yellow"
+        },
+        {
+          "player": "Morgan Rogers",
+          "minute": "83'",
+          "team": "Chelsea",
+          "card": "yellow"
+        },
+        {
+          "player": "Mikel Merino",
+          "minute": "90'+5'",
+          "team": "Arsenal",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880872",
