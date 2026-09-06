@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T13:51:54.681Z",
+  "updatedAt": "2026-09-06T14:02:48.930Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7083,8 +7083,8 @@
       "type": "league",
       "date": "2026-09-06T13:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "37'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "368",
         "name": "Everton",
