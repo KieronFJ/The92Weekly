@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T15:37:09.384Z",
+  "updatedAt": "2026-09-06T15:44:54.697Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7082,85 +7082,21 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-06T13:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "78'",
       "home": {
         "id": "368",
         "name": "Everton",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "360",
         "name": "Manchester United",
-        "score": 2
+        "score": null
       },
       "venue": "Hill Dickinson Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Bryan Mbeumo",
-          "minute": "46'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Tyrique George",
-          "minute": "83'",
-          "team": "Everton",
-          "ownGoal": false
-        },
-        {
-          "player": "Benjamin Sesko",
-          "minute": "88'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Ainsley Maitland-Niles",
-          "minute": "90'+6'",
-          "team": "Everton",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Harrison Armstrong",
-          "minute": "13'",
-          "team": "Everton",
-          "card": "yellow"
-        },
-        {
-          "player": "Brennan Johnson",
-          "minute": "34'",
-          "team": "Everton",
-          "card": "yellow"
-        },
-        {
-          "player": "Luke Shaw",
-          "minute": "62'",
-          "team": "Manchester United",
-          "card": "yellow"
-        },
-        {
-          "player": "Merlin Röhl",
-          "minute": "64'",
-          "team": "Everton",
-          "card": "yellow"
-        },
-        {
-          "player": "Harry Maguire",
-          "minute": "79'",
-          "team": "Manchester United",
-          "card": "yellow"
-        },
-        {
-          "player": "Diogo Dalot",
-          "minute": "81'",
-          "team": "Manchester United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879292",
