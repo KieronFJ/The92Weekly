@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T16:30:27.166Z",
+  "updatedAt": "2026-09-06T16:43:27.140Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7169,8 +7169,8 @@
       "type": "league",
       "date": "2026-09-06T15:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "21'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "359",
         "name": "Arsenal",
