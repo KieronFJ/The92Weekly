@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T21:30:40.379Z",
+  "updatedAt": "2026-09-07T21:45:16.326Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7248,21 +7248,49 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-07T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+3'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "3129",
         "name": "Bromley",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "3802",
         "name": "AFC Wimbledon",
-        "score": null
+        "score": 2
       },
       "venue": "RELOC8 EM Community Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jayden Stockley",
+          "minute": "8'",
+          "team": "AFC Wimbledon",
+          "ownGoal": false
+        },
+        {
+          "player": "Myles Hippolyte",
+          "minute": "67'",
+          "team": "AFC Wimbledon",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Dan Sweeney",
+          "minute": "44'",
+          "team": "AFC Wimbledon",
+          "card": "yellow"
+        },
+        {
+          "player": "Jj Mckiernan",
+          "minute": "78'",
+          "team": "Bromley",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401913075",
