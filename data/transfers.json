@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-07T05:04:42.102Z",
+  "updatedAt": "2026-09-07T05:08:00.766Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City latest: Ndiaye says next move 'was always going to be City'",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-07T05:04:41.959Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
         "link": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-07T05:04:41.959Z",
+        "publishedAt": "2026-09-07T05:08:00.615Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City latest: Ndiaye says next move 'was always going to be City'",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-07T05:08:00.614Z",
         "status": "Rumour"
       },
       {
@@ -5784,6 +5784,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - skysports.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVEQzNzV1WEtwWUpEM3JxaW1WbmVhUGdIcWRvV3FGYjBUVWVWNHRBV0NKcFVYWWowYjhqN0R6U3ZsU2t6eTZNejJ5YlNCeEhUSjJFYldKejJuUmNfdEZNZ1dYZkV1UDVieVJCNnl1Y1lQUzBFN1U4cGdBQ0NKSExxZXBVZjV5UE4yYlZISHZ1YzdENThBd1FsMDhYWlVvY3Nqa3JKeHlCOGFHMERVNWU0VGtIRG00T0I0SGVZTWVYQS1aMEh2bVhpR05EQ08zQWhQMEFUX1VUYjhTbFhnUndETE1hX2JWdmc?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-09-07T03:18:20.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Norwich City",
           "Huddersfield Town"
@@ -9807,17 +9818,6 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [],
-        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - skysports.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVEQzNzV1WEtwWUpEM3JxaW1WbmVhUGdIcWRvV3FGYjBUVWVWNHRBV0NKcFVYWWowYjhqN0R6U3ZsU2t6eTZNejJ5YlNCeEhUSjJFYldKejJuUmNfdEZNZ1dYZkV1UDVieVJCNnl1Y1lQUzBFN1U4cGdBQ0NKSExxZXBVZjV5UE4yYlZISHZ1YzdENThBd1FsMDhYWlVvY3Nqa3JKeHlCOGFHMERVNWU0VGtIRG00T0I0SGVZTWVYQS1aMEh2bVhpR05EQ08zQWhQMEFUX1VUYjhTbFhnUndETE1hX2JWdmc?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-07T03:18:20.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
         "clubs": [
           "York City"
         ],
@@ -9879,17 +9879,6 @@
         "source": "Google News League Two",
         "publishedAt": "2026-09-03T09:31:01.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
-        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - skysports.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaFhyOXlZbDhteUJob2czRGs5V21XcmNXTzhvbnlEcVdrUDZhcmVnd0Y2TmdUNDlIVEFweWJJNUxkV2s4WFdTUXlwOUtDYXB6NENYcjJPM2lMdTVwWFp3STRId18tOHJ4NWNSUG92czVrd0J2cVc1Y0NxVUtZZ1lQSWhQUHMwTkNvQ3hzTW5SQXJfZTRVU2cxN0RWandBTTNQQzl4cUlNMzJETnQwOHU1aXczRWVmVm1mamtNRWhqRHI3Sk52SlltYkhnNk1tUE5yaE9tZm1B?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-02T18:19:24.000Z",
-        "status": "Rumour"
       },
       {
         "division": 4,
