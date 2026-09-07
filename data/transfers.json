@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-07T02:21:30.723Z",
+  "updatedAt": "2026-09-07T02:31:59.736Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Arsenal"
-        ],
-        "title": "No blockbuster signing but Arsenal's attack still finding another level",
-        "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
-        "link": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-07T02:21:30.573Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-07T02:21:30.572Z",
+        "publishedAt": "2026-09-07T02:31:59.582Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "No blockbuster signing but Arsenal's attack still finding another level",
+        "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
+        "link": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-07T02:31:59.582Z",
         "status": "Rumour"
       },
       {
@@ -8969,10 +8969,10 @@
           "Notts County",
           "Grimsby Town"
         ],
-        "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - BBC",
+        "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - bbc.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzVU9BQXpMOVZFaEFBM1JmVmlkcEp2T2RRNTVwTXJacFAwOGlTcGVnb3hqdmY2MTJHSk02czM3dzdTeW04QjlNeVpvcjFkUG9IeUVNeUp0akZ1aHlfcEpkTmIwRVN1OWs?oc=5",
-        "source": "Google News League One",
+        "source": "Google News League Two",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
       },
@@ -10293,10 +10293,12 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [],
-        "title": "TRANSFER DEADLINE DAY: Updates from Latics and League Two - theoldhamtimes.co.uk",
+        "clubs": [
+          "Swindon Town"
+        ],
+        "title": "January transfer deadline day live: Follow all the news at Swindon - Swindon Advertiser",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdHpfWHp0N0J0enhjNUUxcWF1bVFrQy1VampFdXFXT1RPd3hiSVM2SzJQdzRGOEg5ZHQtbm5lRXFpX0NBSjVsaE5SaUVPLVVhX1kwOUVkbS1JWnU1eDEtcUtrTDRqZlhiRk9HN0FxNkxZS2NEWVVWX2FIZC1fSHpSUzhaYUNNUERPZUhSRDc3SlQwNjFxT2ZtZzAzbEk3cDQyblJ4aTF0eWpyZw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUk9wQWU3dW8tMmJpYVh0Rm1XdFEybUtlbXBJaDFDSzNEZnRWWGVENm80eER4OU9LZ2dfclRlRnpIeG5iWFRSa3hIdFV4aE1IUmZwR1BKVHZPSGZpYWEyZGJNbXNtZi1wX21KNElCaVhsN3lfOTVXam1rbkNJYWd0ZWRYNnoxWHgzcFZOZlp0SjlyWWxEaVM2MTlENlJqcjBIT2hNTnNIaVdaZXN1dVBxZA?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Rumour"
@@ -10304,12 +10306,10 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [
-          "Swindon Town"
-        ],
-        "title": "January transfer deadline day live: Follow all the news at Swindon - Swindon Advertiser",
+        "clubs": [],
+        "title": "TRANSFER DEADLINE DAY: Updates from Latics and League Two - theoldhamtimes.co.uk",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUk9wQWU3dW8tMmJpYVh0Rm1XdFEybUtlbXBJaDFDSzNEZnRWWGVENm80eER4OU9LZ2dfclRlRnpIeG5iWFRSa3hIdFV4aE1IUmZwR1BKVHZPSGZpYWEyZGJNbXNtZi1wX21KNElCaVhsN3lfOTVXam1rbkNJYWd0ZWRYNnoxWHgzcFZOZlp0SjlyWWxEaVM2MTlENlJqcjBIT2hNTnNIaVdaZXN1dVBxZA?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdHpfWHp0N0J0enhjNUUxcWF1bVFrQy1VampFdXFXT1RPd3hiSVM2SzJQdzRGOEg5ZHQtbm5lRXFpX0NBSjVsaE5SaUVPLVVhX1kwOUVkbS1JWnU1eDEtcUtrTDRqZlhiRk9HN0FxNkxZS2NEWVVWX2FIZC1fSHpSUzhaYUNNUERPZUhSRDc3SlQwNjFxT2ZtZzAzbEk3cDQyblJ4aTF0eWpyZw?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Rumour"
