@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T05:45:56.290Z",
+  "updatedAt": "2026-09-07T05:47:15.185Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,7 @@
         "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
         "link": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-07T05:45:56.136Z",
+        "publishedAt": "2026-09-07T05:47:15.029Z",
         "status": "Rumour"
       },
       {
@@ -26,7 +26,7 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-07T05:45:56.135Z",
+        "publishedAt": "2026-09-07T05:47:15.028Z",
         "status": "Rumour"
       },
       {
@@ -2374,9 +2374,10 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
+          "Manchester City",
+          "Tottenham"
         ],
-        "title": "Premier League transfer news: Man City agree Ndiaye deal, Gakpo move collapses - why? - football360.com.au",
+        "title": "Manchester City agree chaotic $122.9million deal after Gakpo move collapses, Tottenham’s spending spree to continue: EPL transfer latest - football360.com.au",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbDRGS1NBRlY2dXAydGNwci1HZWROcGFzSmdaZldvaS13T1RacnhNU2pkV19TSG9IUGZwd05DdXJ3aEJHWHptNkVJNWJscGlJVkxkQ245U0FvTmwwZzBNRGZZa0NnSzJkOEhDcDB3b05XbkdvT2Q5QVpDWEdIb3VDMHBwTzJlMWdCV0VGcThPQmFTc09zalpZcnBfWDRPbURNbEpBc1cyWDBVRm9YcmU3Z18wRTNNdm56ZE5fckNnNklvRmZVOHhuWQ?oc=5",
         "source": "Google News Premier League",
@@ -3085,20 +3086,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City",
-          "Burnley"
-        ],
-        "title": "Max Alleyne: Burnley sign Manchester City defender on season-long loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKQVFJX2lodnRNQ1ZHZDFwMEdsbHc0akoxMGdRWUZQVFktbVZRRUx1WUpKbjRycXh3c3AtcVB3TFhiTDhqSEhVUzZzd0NHTUo0NWpIcTA5WTJ0Z3RsWDJ6VVJzaFpLNlBrT2c?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Chelsea",
           "Portsmouth"
         ],
@@ -3120,6 +3107,20 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SZGl2UWJCVTNPUDljY0FFQWdYZTlKQi13eEJ0amZBQWhhVllkeF9pSUZ4aHBPR192a0tKQ1VUQ3dQVHJwaV9US01JeGdTRWExM19GU3NWa3F5Sld5MmpMcmRBZ3pQUnc?oc=5",
         "source": "Google News Championship",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City",
+          "Burnley"
+        ],
+        "title": "Max Alleyne: Burnley sign Manchester City defender on season-long loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKQVFJX2lodnRNQ1ZHZDFwMEdsbHc0akoxMGdRWUZQVFktbVZRRUx1WUpKbjRycXh3c3AtcVB3TFhiTDhqSEhVUzZzd0NHTUo0NWpIcTA5WTJ0Z3RsWDJ6VVJzaFpLNlBrT2c?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
       },
@@ -8660,17 +8661,6 @@
       }
     ],
     "3": [
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVEQzNzV1WEtwWUpEM3JxaW1WbmVhUGdIcWRvV3FGYjBUVWVWNHRBV0NKcFVYWWowYjhqN0R6U3ZsU2t6eTZNejJ5YlNCeEhUSjJFYldKejJuUmNfdEZNZ1dYZkV1UDVieVJCNnl1Y1lQUzBFN1U4cGdBQ0NKSExxZXBVZjV5UE4yYlZISHZ1YzdENThBd1FsMDhYWlVvY3Nqa3JKeHlCOGFHMERVNWU0VGtIRG00T0I0SGVZTWVYQS1aMEh2bVhpR05EQ08zQWhQMEFUX1VUYjhTbFhnUndETE1hX2JWdmc?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-09-07T03:18:20.000Z",
-        "status": "Rumour"
-      },
       {
         "division": 3,
         "divisionName": "League One",
