@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-07T06:27:45.254Z",
+  "updatedAt": "2026-09-07T06:28:40.502Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City latest: Ndiaye says next move 'was always going to be City'",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-07T06:27:45.101Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
         "link": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-07T06:27:45.101Z",
+        "publishedAt": "2026-09-07T06:28:40.348Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City latest: Ndiaye says next move 'was always going to be City'",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-07T06:28:40.347Z",
         "status": "Rumour"
       },
       {
@@ -1564,7 +1564,7 @@
         "clubs": [
           "Everton"
         ],
-        "title": "Everton summer transfer window 2026: Every signing, sale & loan - Read Everton",
+        "title": "Everton summer transfer window 2026: Every signing, sale & loan - readeverton.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPR1FyTFBFUW51VTM0ZmVGRDQxRlZab25tMjRTdHQ5V3Z5aHV6Q2Eyam95QW5HemlPbEZvUDdMd0dhdHh1QjFmVy0yMmkyNW5pdVFQaEtBWlpOeTAtYkhsZURMcDYwNGlCWmpyd3lkem92V2FvU2NTN1FpU25tdVpDb0hFbw?oc=5",
         "source": "Google News Premier League",
@@ -1684,7 +1684,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Transfer Deadline Day 2026: Full List of Every Completed Signing And Loan Deal in Europe - sports.ndtv.com",
+        "title": "Transfer Deadline Day 2026: Full List of Every Completed Signing And Loan Deal in Europe - NDTV Sports",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNREVYdHQwM2toNGlQb0tzNlFqTkNFbjBzU3ZOYUNiM3RNWG9oUE1DbGhHZHBYVnJ0OHRWbDVYV0ltczhEdkdpY2k2TjhDQ00xdUhhSE52MDBjSy0xOHA3bjRldlRreFQyN1FSU3hEc0pHT2JfYlRkV2VSUnlKSGlTaGxFLVQ1S0lZVUxLTlpRLURRajJtWXVFbHltVmthTkdiUHFURU5wbFY2R0swT0FlVTFaZ0lXLS1yTi1BZGtaM0tKNldRN2FOWA?oc=5",
         "source": "Google News Premier League",
@@ -2787,7 +2787,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Premier League transfer deadline day 2026: when does the window close? - UCFB",
+        "title": "Premier League transfer deadline day 2026: when does the window close? - ucfb.ac.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1LM2RVaUh2WXZMdUZxUnl5UE0zRlN0M2hiZTU5S1JCeXByWDNPWHk5S3VXRlQ0YThZOEE3a0tTOHhnOVJ3UVQwTml2bnBPRUhZcllWZFZfOFlGSlZNQ0xHMW9sQmQ5MUtuZm1ETXlucHd0a1E0Ql9adXd3?oc=5",
         "source": "Google News Premier League",
@@ -3129,7 +3129,7 @@
         "clubs": [
           "Chelsea"
         ],
-        "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - standard.co.uk",
+        "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - London Evening Standard",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGNMSXBnWmltRVowT3ZQMkhZWWR2VGc0U3VRSVVmV05lamJMajhCSkdpT09oT000cW9sM2FJNGpOR2tjLXdwVk1OWENOd3g2YzZROUx5VVZNR2JETjl6MlRRVzhYcjZwMnFfRURPQTE3V3ZxWEEzZ3VUX0tFY2plYklFNWxpVS1TWmxVQzRPRHJMLXlCb1E?oc=5",
         "source": "Google News Premier League",
@@ -3429,7 +3429,7 @@
         "clubs": [
           "Chelsea"
         ],
-        "title": "Chelsea open to three striker deals as Xabi Alonso overhaul ramps up - standard.co.uk",
+        "title": "Chelsea open to three striker deals as Xabi Alonso overhaul ramps up - London Evening Standard",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOXzVFWDZHQ3BrajFEekF0TEhTTklqbjVaMzBzQ3ZXNjRhRHRvMUF5QkgzYnBxYkFySjJIaklWWlEwUEJKV3kweFBtbHVXLTMwRWNRM3BYeERiTW1RaGY0LWFTcEM5SGE3ejlGSXlQVnlhd29tUmpESFBRcHNaSXNpcmk3SjdTOU8yQ24yRFJVb0F0dVpiamRoSDJWMDlZUFZ0?oc=5",
         "source": "Google News Premier League",
@@ -3479,7 +3479,7 @@
         "clubs": [
           "Manchester United"
         ],
-        "title": "Manchester United in talks for fifth summer transfer as agreement 'near' for loan deal - standard.co.uk",
+        "title": "Manchester United in talks for fifth summer transfer as agreement 'near' for loan deal - London Evening Standard",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUU5RbDI2Vy1OUVZORGpnZlp0TmlmZ0I2QVBXa2loTzh6X2EyakFmUy1rTFNKbnE4NDRCY015RW9LSEN4ZEdiQXo4Z3lBZkJ4Wnk3dW1uSEpWRWJFbU9XNjduRTFjNVFZX0VwZzN6dlJKTEpoTFo1aDQwdjFoQ0hLV3JLeTMweGZwXzJMSEd2cw?oc=5",
         "source": "Google News Premier League",
@@ -4729,7 +4729,7 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal agree first deal of January transfer window after new contract signed - standard.co.uk",
+        "title": "Arsenal agree first deal of January transfer window after new contract signed - London Evening Standard",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmhIbzN1UngwU1R1STFMRG03SnhSQjRLbXZ0MGJsekxxUEtua2RFbjBqR1lGei1BVU5aZ0hRbFZWdnNSZkhNQnd5VTNKWm1zMHU0ZFdMVl9VT1dNN0JVcXdOTDYtSm9pXzA4UjItWElXWlhGQWNrYktvZU1EeGVxXzZGTGZKVldVMFFBREIwczdhYnE2UmJhT0VKWTNuVU43V0U0?oc=5",
         "source": "Google News League Two",
@@ -4971,7 +4971,7 @@
         "clubs": [
           "Manchester United"
         ],
-        "title": "Manchester United agree loan deal on transfer deadline day - manchestereveningnews.co.uk",
+        "title": "Manchester United agree loan deal on transfer deadline day - Manchester Evening News",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNU1B4RmtqcVRXZkt4aDI1QnpqekhoYXhsWlhyTUU4TzdHS210c0hCNEVVQWtrS0w5VUR0Y1lLaVpoQjBPQkV4eGFiVHNvV3dDNFlCZU1HTGwyWUlwYks5aHB6bE43UmVlRERjdWMtTF8xZkNqOWV6aFUwUy0tVk8tQnlZS1B2dkJvN0ZhUTJpOXhLWDg4TEZmVFF6OXNSRnhnWGwwZjh5blFneS1HUjl6LdIBtgFBVV95cUxNcTM0eFROc1JjWlJYRU11TDhzZGpna1hnblJoem80TXdHcjl2dzdJX3dBVnJ0QTRYSk5FcWdRWTYydXJGY1FNbTJla3lqay1oYzJMT1c4ODN1bklVNjZXdkIyb2J0OG5XaHFRbWtVemdHWkdBbWJnUFBKenpaUXNrU05aQlZ5Y1RrVjBpZy1XanRybVQtZC1sMXJndlQxdHlmVHFoemdjZFZsakpzc2xRSjU2V3JoZw?oc=5",
         "source": "Google News League Two",
@@ -9286,10 +9286,8 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [
-          "Mansfield Town"
-        ],
-        "title": "Here's the latest transfer news from around League One - Mansfield and Ashfield Chad",
+        "clubs": [],
+        "title": "Here's the latest transfer news from around League One - chad.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOLUtlcUMzUXlDcjFpSkNWemo5WVVlTGlGWU1Fd1djNUpVZTJFRmp0b1RmVHNCQV9JMTJLTjltbWxiZHhrTTNZa3ZhRi0tOGZoR2ZvTEp3SWljbEtjanRQVUV5TnlFc3ZhS3EtUURzRUowNEllQk5GdkVNN3l4SVZ0LWVqdG8zMVZWNnN3RXcwR0FQWlVBNlhVR0prR1VFNXpXUlBfZmQ4ZW1NaU1wMWpLQ25lQnhvNWkwTkxSdUJBbVBFdXI2UHc1NDFoSzhaWFp3dGlPY2pPRFI5cTJnS2NxMWFJQU1aeGhYTmpoSXJrd2s0R3EtaVpHNmhtV2dRQ1loeUxjWVNpWTdEeXlvMDV2WWdsMTdQb1hMdVNrbA?oc=5",
         "source": "Google News League One",
@@ -9677,10 +9675,11 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
+          "Blackpool",
           "Luton Town",
           "Wycombe Wanderers"
         ],
-        "title": "League One transfers: Luton confirm striker deal, Wycombe want former loan star - blackpoolgazette.co.uk",
+        "title": "League One transfers: Luton confirm striker deal, Wycombe want former loan star - Blackpool Gazette",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbkUxRlZ6Yms5c255NmVYTl9ta29sdW5SSVNrWXdPQ2c1TWk1OXpHcHJnQktLa3J2eE1PVzJGdzV3blRwd2IzQzhaY1hUQXVWNUFIRUxhOWVycUpEcFk2UUgxT2ZYUnBtT3RTZDNiemUxVHpKd0gyRjg3aXNkSTBfd0NQRjU1SUpjMWo5QUJWQjFjUmN3U3ZUNkNiV1MxSU9WMThjUWRtNkVEbmpnVU9uSkJqcGlzUUVSamxPa0U2NDg?oc=5",
         "source": "Google News League One",
@@ -10112,7 +10111,7 @@
         "clubs": [
           "Swindon Town"
         ],
-        "title": "Transfer deadline day live: Follow everything at Swindon and across League Two - swindonadvertiser.co.uk",
+        "title": "Transfer deadline day live: Follow everything at Swindon and across League Two - Swindon Advertiser",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa3p5azJwWlY3SnVqYld4WUhhLTUyUlV6dWNrYVJaLThDLUd2NkhKTTdYd3Y2aTJCZENoc2o4dnZ0S3Y0QmJUZTVyREtpdUMwZ0ZmNWdSVWNkREhrUHZHbTV3ektJNHVZb2lsdlV3WFVlNTY2bmxKOHpPUDBZY2xvdl9kMWcycHE5SE1oeTZ1UURUSWw3SFBCNVRVd21KbmtzbkNoSg?oc=5",
         "source": "Google News League Two",
@@ -10151,7 +10150,7 @@
         "clubs": [
           "Swindon Town"
         ],
-        "title": "Swindon's summer transfer window live - All the news and rumour before deadline - swindonadvertiser.co.uk",
+        "title": "Swindon's summer transfer window live - All the news and rumour before deadline - Swindon Advertiser",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdDVYX0FxUXRJUmZ0d015cXJ5WkFZUmpuaWNCQVpyMXpIX2EzTVFkaVpfSVJ4aTdvTEtkV2F0TWhPbUlBZVd5TmZ5Zy1saWEyRmJqQ0tONFY2SDhkMURsaGtjT1pJRVBLbnRUTlJObFp5TUdJdXpVbnl2NlJ3LXF6MGJTNmhxb1FUeEx6dHRXVlFFV09xUUFLdW1TcDREY0hmUXM1NDB3?oc=5",
         "source": "Google News League Two",
@@ -10369,7 +10368,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "Every signing completed in League Two on deadline day - Wiltshire Times",
+        "title": "Every signing completed in League Two on deadline day - wiltshiretimes.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRWttTUpJeFk0WkNkYktQNk05QzY3WkpkVjE0NFYtcDJNMDRfTmJVTkRFTkc3NVo2WllmY1RaRHhaR1FiZnVfMTB4bUU0Qmw1enBSQmRDV2N6SmxlSzNvTGdqYlppM192aUVtakMyUXhyWXduQS1YNURYV1FHTFMwMGc0cjF1TmJiUUwxVC1PU0ltcXAyZS1Cem91dw?oc=5",
         "source": "Google News League Two",
@@ -10395,7 +10394,7 @@
         "clubs": [
           "Swindon Town"
         ],
-        "title": "January transfer deadline day live: Follow all the news at Swindon - swindonadvertiser.co.uk",
+        "title": "January transfer deadline day live: Follow all the news at Swindon - Swindon Advertiser",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUk9wQWU3dW8tMmJpYVh0Rm1XdFEybUtlbXBJaDFDSzNEZnRWWGVENm80eER4OU9LZ2dfclRlRnpIeG5iWFRSa3hIdFV4aE1IUmZwR1BKVHZPSGZpYWEyZGJNbXNtZi1wX21KNElCaVhsN3lfOTVXam1rbkNJYWd0ZWRYNnoxWHgzcFZOZlp0SjlyWWxEaVM2MTlENlJqcjBIT2hNTnNIaVdaZXN1dVBxZA?oc=5",
         "source": "Google News League Two",
