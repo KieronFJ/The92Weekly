@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T19:53:11.392Z",
+  "updatedAt": "2026-09-07T20:03:02.351Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7249,8 +7249,8 @@
       "type": "league",
       "date": "2026-09-07T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "45'+1'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "3129",
         "name": "Bromley",
