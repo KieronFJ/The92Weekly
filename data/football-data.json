@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:47:04.395Z",
+  "updatedAt": "2026-09-08T19:54:45.923Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7300,7 +7300,7 @@
       "date": "2026-09-08T18:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "81'",
+      "statusDetail": "88'",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
@@ -7322,7 +7322,7 @@
       "date": "2026-09-08T18:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "83'",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "324",
         "name": "Exeter City",
@@ -7409,8 +7409,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "46'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -7542,7 +7542,7 @@
       "date": "2026-09-08T19:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "39'",
+      "statusDetail": "45'+2'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -7563,8 +7563,8 @@
       "type": "cup",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "39'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "391",
         "name": "Millwall",
