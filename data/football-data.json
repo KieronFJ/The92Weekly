@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:54:45.923Z",
+  "updatedAt": "2026-09-08T20:02:57.656Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7298,21 +7298,67 @@
       "competitionCode": "eng.trophy",
       "type": "cup",
       "date": "2026-09-08T18:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "88'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "335",
         "name": "Huddersfield Town",
-        "score": null
+        "score": 3
       },
       "venue": "Eco-Power Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Leon Ayinde",
+          "minute": "40'",
+          "team": "Doncaster Rovers",
+          "ownGoal": false
+        },
+        {
+          "player": "Jamie Spencer",
+          "minute": "67'",
+          "team": "Huddersfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Joe Low",
+          "minute": "74'",
+          "team": "Huddersfield Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Lasse Sorenson",
+          "minute": "77'",
+          "team": "Huddersfield Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "George Broadbent",
+          "minute": "7'",
+          "team": "Doncaster Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Bali Mumba",
+          "minute": "32'",
+          "team": "Huddersfield Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Ibane Bowat",
+          "minute": "83'",
+          "team": "Huddersfield Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401906381",
@@ -7322,7 +7368,7 @@
       "date": "2026-09-08T18:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "statusDetail": "90'+8'",
       "home": {
         "id": "324",
         "name": "Exeter City",
@@ -7343,8 +7389,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "53'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
@@ -7365,8 +7411,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "53'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
@@ -7387,8 +7433,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "52'",
       "home": {
         "id": "376",
         "name": "Southampton",
@@ -7410,7 +7456,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "46'",
+      "statusDetail": "54'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -7431,8 +7477,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "48'",
       "home": {
         "id": "352",
         "name": "Wrexham",
@@ -7453,8 +7499,8 @@
       "type": "cup",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "53'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
@@ -7475,8 +7521,8 @@
       "type": "cup",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "52'",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
@@ -7497,8 +7543,8 @@
       "type": "cup",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "52'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -7519,8 +7565,8 @@
       "type": "cup",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "49'",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -7541,8 +7587,8 @@
       "type": "league",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "45'+2'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
