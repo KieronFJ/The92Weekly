@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T20:31:46.412Z",
+  "updatedAt": "2026-09-08T20:45:39.194Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7436,7 +7436,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "78'",
+      "statusDetail": "90'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
@@ -7457,8 +7457,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "79'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
@@ -7480,7 +7480,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "78'",
+      "statusDetail": "89'",
       "home": {
         "id": "376",
         "name": "Southampton",
@@ -7502,7 +7502,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "79'",
+      "statusDetail": "90'+1'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -7524,7 +7524,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "73'",
+      "statusDetail": "85'",
       "home": {
         "id": "352",
         "name": "Wrexham",
@@ -7546,7 +7546,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "79'",
+      "statusDetail": "90'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
@@ -7568,7 +7568,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "77'",
+      "statusDetail": "89'",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
@@ -7590,7 +7590,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "77'",
+      "statusDetail": "89'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -7612,7 +7612,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "75'",
+      "statusDetail": "86'",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -7634,7 +7634,7 @@
       "date": "2026-09-08T19:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "61'",
+      "statusDetail": "73'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -7656,7 +7656,7 @@
       "date": "2026-09-08T19:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "64'",
+      "statusDetail": "76'",
       "home": {
         "id": "391",
         "name": "Millwall",
