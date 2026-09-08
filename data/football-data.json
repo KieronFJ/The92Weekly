@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T21:18:05.602Z",
+  "updatedAt": "2026-09-08T21:27:57.748Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7998,21 +7998,67 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-08T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+5'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "371",
         "name": "West Ham United",
-        "score": null
+        "score": 3
       },
       "venue": "Toughsheet Community Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jarrod Bowen",
+          "minute": "13'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Ethan Erhahon",
+          "minute": "18'",
+          "team": "Bolton Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Konstantinos Mavropanos",
+          "minute": "31'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Jarrod Bowen",
+          "minute": "77'",
+          "team": "West Ham United",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Oliver Scarles",
+          "minute": "7'",
+          "team": "West Ham United",
+          "card": "yellow"
+        },
+        {
+          "player": "Ruben Rodrigues",
+          "minute": "27'",
+          "team": "Bolton Wanderers",
+          "card": "red"
+        },
+        {
+          "player": "Konstantinos Mavropanos",
+          "minute": "62'",
+          "team": "West Ham United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401914255",
