@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T20:02:57.656Z",
+  "updatedAt": "2026-09-08T20:19:58.063Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7366,21 +7366,67 @@
       "competitionCode": "eng.trophy",
       "type": "cup",
       "date": "2026-09-08T18:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+8'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "324",
         "name": "Exeter City",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "18787",
         "name": "Tottenham Hotspur U21",
-        "score": null
+        "score": 0
       },
       "venue": "St James Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Danny Rose",
+          "minute": "35'",
+          "team": "Exeter City",
+          "ownGoal": false
+        },
+        {
+          "player": "Louie Cayless",
+          "minute": "86'",
+          "team": "Exeter City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Danny Rose",
+          "minute": "37'",
+          "team": "Exeter City",
+          "card": "yellow"
+        },
+        {
+          "player": "George Feeney",
+          "minute": "44'",
+          "team": "Tottenham Hotspur U21",
+          "card": "yellow"
+        },
+        {
+          "player": "Louie Cayless",
+          "minute": "52'",
+          "team": "Exeter City",
+          "card": "yellow"
+        },
+        {
+          "player": "Liam Oakes",
+          "minute": "73'",
+          "team": "Exeter City",
+          "card": "yellow"
+        },
+        {
+          "player": "Maxwell Henry Oliver Sebastian Adeyemi Adeo Adedeji",
+          "minute": "85'",
+          "team": "Tottenham Hotspur U21",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880276",
@@ -7390,7 +7436,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "61'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
@@ -7412,7 +7458,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "62'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
@@ -7434,7 +7480,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "statusDetail": "60'",
       "home": {
         "id": "376",
         "name": "Southampton",
@@ -7456,7 +7502,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "54'",
+      "statusDetail": "62'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -7478,7 +7524,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "48'",
+      "statusDetail": "57'",
       "home": {
         "id": "352",
         "name": "Wrexham",
@@ -7500,7 +7546,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "53'",
+      "statusDetail": "61'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
@@ -7522,7 +7568,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "statusDetail": "60'",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
@@ -7544,7 +7590,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "52'",
+      "statusDetail": "60'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -7566,7 +7612,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "49'",
+      "statusDetail": "58'",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -7609,8 +7655,8 @@
       "type": "cup",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "47'",
       "home": {
         "id": "391",
         "name": "Millwall",
