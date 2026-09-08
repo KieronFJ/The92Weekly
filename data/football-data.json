@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T20:54:04.555Z",
+  "updatedAt": "2026-09-08T21:02:41.508Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7298,67 +7298,21 @@
       "competitionCode": "eng.trophy",
       "type": "cup",
       "date": "2026-09-08T18:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "60'",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "335",
         "name": "Huddersfield Town",
-        "score": 3
+        "score": null
       },
       "venue": "Eco-Power Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Leon Ayinde",
-          "minute": "40'",
-          "team": "Doncaster Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jamie Spencer",
-          "minute": "67'",
-          "team": "Huddersfield Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Joe Low",
-          "minute": "74'",
-          "team": "Huddersfield Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Lasse Sorenson",
-          "minute": "77'",
-          "team": "Huddersfield Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "George Broadbent",
-          "minute": "7'",
-          "team": "Doncaster Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Bali Mumba",
-          "minute": "32'",
-          "team": "Huddersfield Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Ibane Bowat",
-          "minute": "83'",
-          "team": "Huddersfield Town",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401906381",
@@ -7366,67 +7320,21 @@
       "competitionCode": "eng.trophy",
       "type": "cup",
       "date": "2026-09-08T18:00Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "62'",
       "home": {
         "id": "324",
         "name": "Exeter City",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "18787",
         "name": "Tottenham Hotspur U21",
-        "score": 0
+        "score": null
       },
       "venue": "St James Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Danny Rose",
-          "minute": "35'",
-          "team": "Exeter City",
-          "ownGoal": false
-        },
-        {
-          "player": "Louie Cayless",
-          "minute": "86'",
-          "team": "Exeter City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Danny Rose",
-          "minute": "37'",
-          "team": "Exeter City",
-          "card": "yellow"
-        },
-        {
-          "player": "George Feeney",
-          "minute": "44'",
-          "team": "Tottenham Hotspur U21",
-          "card": "yellow"
-        },
-        {
-          "player": "Louie Cayless",
-          "minute": "52'",
-          "team": "Exeter City",
-          "card": "yellow"
-        },
-        {
-          "player": "Liam Oakes",
-          "minute": "73'",
-          "team": "Exeter City",
-          "card": "yellow"
-        },
-        {
-          "player": "Maxwell Henry Oliver Sebastian Adeyemi Adeo Adedeji",
-          "minute": "85'",
-          "team": "Tottenham Hotspur U21",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880276",
@@ -7434,61 +7342,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "34'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "398",
         "name": "Sheffield United",
-        "score": 2
+        "score": null
       },
       "venue": "Ewood Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Kristi Montgomery",
-          "minute": "20'",
-          "team": "Blackburn Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Thomas Cannon",
-          "minute": "35'",
-          "team": "Sheffield United",
-          "ownGoal": false
-        },
-        {
-          "player": "Sydie Peck",
-          "minute": "44'",
-          "team": "Sheffield United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Romelle Donovan",
-          "minute": "48'",
-          "team": "Sheffield United",
-          "card": "yellow"
-        },
-        {
-          "player": "Kristi Montgomery",
-          "minute": "59'",
-          "team": "Blackburn Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Japhet Tanganga",
-          "minute": "76'",
-          "team": "Sheffield United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880273",
@@ -7496,55 +7364,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "34'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "336",
         "name": "Stoke City",
-        "score": 1
+        "score": null
       },
       "venue": "Cardiff City Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Ben Johnson",
-          "minute": "22'",
-          "team": "Stoke City",
-          "ownGoal": false
-        },
-        {
-          "player": "Joel Colwill",
-          "minute": "63'",
-          "team": "Cardiff City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Ben Wilmot",
-          "minute": "27'",
-          "team": "Stoke City",
-          "card": "yellow"
-        },
-        {
-          "player": "Perry Ng",
-          "minute": "45'+2'",
-          "team": "Cardiff City",
-          "card": "yellow"
-        },
-        {
-          "player": "Luke Graham",
-          "minute": "81'",
-          "team": "Stoke City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880279",
@@ -7552,55 +7386,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "34'",
       "home": {
         "id": "376",
         "name": "Southampton",
-        "score": 3
+        "score": null
       },
       "away": {
         "id": "318",
         "name": "Swansea City",
-        "score": 1
+        "score": null
       },
       "venue": "St. Mary's Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Finn Azaz",
-          "minute": "9'",
-          "team": "Southampton",
-          "ownGoal": false
-        },
-        {
-          "player": "Cyle Larin",
-          "minute": "33'",
-          "team": "Southampton",
-          "ownGoal": false
-        },
-        {
-          "player": "Léo Scienza",
-          "minute": "78'",
-          "team": "Southampton",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Zan Vipotnik",
-          "minute": "52'",
-          "team": "Swansea City",
-          "card": "red"
-        },
-        {
-          "player": "Ronald",
-          "minute": "54'",
-          "team": "Swansea City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880278",
@@ -7608,55 +7408,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "35'",
       "home": {
         "id": "395",
         "name": "Watford",
-        "score": 2
+        "score": null
       },
       "away": {
         "id": "394",
         "name": "Preston North End",
-        "score": 1
+        "score": null
       },
       "venue": "Vicarage Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Callum Lang",
-          "minute": "5'",
-          "team": "Preston North End",
-          "ownGoal": false
-        },
-        {
-          "player": "Edo Kayembe",
-          "minute": "69'",
-          "team": "Watford",
-          "ownGoal": false
-        },
-        {
-          "player": "Mamadou Doumbia",
-          "minute": "76'",
-          "team": "Watford",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Andrija Vukcevic",
-          "minute": "62'",
-          "team": "Preston North End",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Gibson",
-          "minute": "67'",
-          "team": "Preston North End",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880269",
@@ -7664,67 +7430,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "32'",
       "home": {
         "id": "352",
         "name": "Wrexham",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "379",
         "name": "Burnley",
-        "score": 1
+        "score": null
       },
       "venue": "STōK Cae Ras",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Zeki Amdouni",
-          "minute": "26'",
-          "team": "Burnley",
-          "ownGoal": false
-        },
-        {
-          "player": "Jacques Ekomie",
-          "minute": "55'",
-          "team": "Wrexham",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Issa Kaboré",
-          "minute": "14'",
-          "team": "Wrexham",
-          "card": "yellow"
-        },
-        {
-          "player": "Aaron Ramsey",
-          "minute": "65'",
-          "team": "Burnley",
-          "card": "yellow"
-        },
-        {
-          "player": "Dominic Hyam",
-          "minute": "84'",
-          "team": "Wrexham",
-          "card": "yellow"
-        },
-        {
-          "player": "Lucas Pires",
-          "minute": "86'",
-          "team": "Burnley",
-          "card": "yellow"
-        },
-        {
-          "player": "Reo Hatate",
-          "minute": "90'",
-          "team": "Burnley",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914267",
@@ -7732,79 +7452,21 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "34'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
-        "score": 4
+        "score": null
       },
       "away": {
         "id": "314",
         "name": "Lincoln City",
-        "score": 0
+        "score": null
       },
       "venue": "Vitality Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Ryan Christie",
-          "minute": "7'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Ryan Christie",
-          "minute": "69'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Ryan Christie",
-          "minute": "88'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Rayan",
-          "minute": "90'+4'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Callum Elder",
-          "minute": "27'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "Justin Kluivert",
-          "minute": "41'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        },
-        {
-          "player": "Dom Jefferies",
-          "minute": "48'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "António Silva",
-          "minute": "61'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        },
-        {
-          "player": "Daniel Oyegoke",
-          "minute": "67'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914269",
@@ -7812,55 +7474,21 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "34'",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
-        "score": 3
+        "score": null
       },
       "away": {
         "id": "369",
         "name": "Middlesbrough",
-        "score": 0
+        "score": null
       },
       "venue": "Selhurst Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Jørgen Strand Larsen",
-          "minute": "37'",
-          "team": "Crystal Palace",
-          "ownGoal": false
-        },
-        {
-          "player": "Jørgen Strand Larsen",
-          "minute": "53'",
-          "team": "Crystal Palace",
-          "ownGoal": false
-        },
-        {
-          "player": "Daichi Kamada",
-          "minute": "72'",
-          "team": "Crystal Palace",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Adilson Malanda",
-          "minute": "65'",
-          "team": "Middlesbrough",
-          "card": "yellow"
-        },
-        {
-          "player": "Myles Peart-Harris",
-          "minute": "83'",
-          "team": "Middlesbrough",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914254",
@@ -7868,73 +7496,21 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "34'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "387",
         "name": "Bradford City",
-        "score": 3
+        "score": null
       },
       "venue": "Gaughan Group Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Macaulay Gillesphey",
-          "minute": "38'",
-          "team": "Leyton Orient",
-          "ownGoal": true
-        },
-        {
-          "player": "Will Swan",
-          "minute": "45'",
-          "team": "Bradford City",
-          "ownGoal": false
-        },
-        {
-          "player": "Stephen Humphrys",
-          "minute": "58'",
-          "team": "Bradford City",
-          "ownGoal": false
-        },
-        {
-          "player": "Nick Powell",
-          "minute": "88'",
-          "team": "Bradford City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Theo Archibald",
-          "minute": "23'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        },
-        {
-          "player": "George Lapslie",
-          "minute": "40'",
-          "team": "Bradford City",
-          "card": "yellow"
-        },
-        {
-          "player": "Idris El Mizouni",
-          "minute": "44'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        },
-        {
-          "player": "Phillip Chinedu",
-          "minute": "49'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914259",
@@ -7942,55 +7518,21 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-09-08T18:45Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "34'",
       "home": {
         "id": "366",
         "name": "Sunderland",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "306",
         "name": "Hull City",
-        "score": 0
+        "score": null
       },
       "venue": "Stadium of Light",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Chemsdine Talbi",
-          "minute": "71'",
-          "team": "Sunderland",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Lucas Gourna-Douath",
-          "minute": "54'",
-          "team": "Hull City",
-          "card": "yellow"
-        },
-        {
-          "player": "Luke O'Nien",
-          "minute": "62'",
-          "team": "Sunderland",
-          "card": "yellow"
-        },
-        {
-          "player": "John Egan",
-          "minute": "72'",
-          "team": "Hull City",
-          "card": "yellow"
-        },
-        {
-          "player": "Elliot Stroud",
-          "minute": "90'+4'",
-          "team": "Hull City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880275",
@@ -7999,8 +7541,8 @@
       "type": "league",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "87'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "19'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -8021,8 +7563,8 @@
       "type": "cup",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "89'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "19'",
       "home": {
         "id": "391",
         "name": "Millwall",
