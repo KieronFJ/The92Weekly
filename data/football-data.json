@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:18:47.799Z",
+  "updatedAt": "2026-09-08T19:29:23.138Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7321,8 +7321,8 @@
       "type": "cup",
       "date": "2026-09-08T18:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "48'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "324",
         "name": "Exeter City",
@@ -7344,7 +7344,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "7'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
@@ -7366,7 +7366,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "8'",
       "home": {
         "id": "347",
         "name": "Cardiff City",
@@ -7388,7 +7388,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "8'",
       "home": {
         "id": "376",
         "name": "Southampton",
@@ -7409,8 +7409,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "20'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "8'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -7431,8 +7431,8 @@
       "type": "league",
       "date": "2026-09-08T18:45Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "18'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "6'",
       "home": {
         "id": "352",
         "name": "Wrexham",
@@ -7454,7 +7454,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "8'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
@@ -7476,7 +7476,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "8'",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
@@ -7498,7 +7498,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "8'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -7520,7 +7520,7 @@
       "date": "2026-09-08T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "19'",
+      "statusDetail": "8'",
       "home": {
         "id": "366",
         "name": "Sunderland",
@@ -7541,8 +7541,8 @@
       "type": "league",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "4'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 8th at 3:00 PM EDT",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -7563,8 +7563,8 @@
       "type": "cup",
       "date": "2026-09-08T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "4'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 8th at 3:00 PM EDT",
       "home": {
         "id": "391",
         "name": "Millwall",
