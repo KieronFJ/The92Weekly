@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-08T16:27:00.347Z",
+  "updatedAt": "2026-09-08T16:38:11.929Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Papers: Man Utd monitoring Dortmund star Nmecha",
-        "summary": "The top stories and transfer rumours from Tuesday's newspapers...",
-        "link": "https://www.skysports.com/football/news/12040/13582860/transfer-news-borussia-dortmund-midfielder-felix-nmecha-on-man-utds-radar-paper-talk",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-08T16:27:00.184Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "Liverpool midfielder Alexis Mac Allister is \"very sad\" that he has not been offered a new contract and admitted he had \"options to leave\" in the summer.",
         "link": "https://www.skysports.com/football/news/12040/13583123/alexis-mac-allister-liverpool-midfielder-very-sad-over-no-new-contract-and-admits-he-could-have-left-in-summer",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-08T16:27:00.183Z",
+        "publishedAt": "2026-09-08T16:38:11.762Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Papers: Man Utd monitoring Dortmund star Nmecha",
+        "summary": "The top stories and transfer rumours from Tuesday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13582860/transfer-news-borussia-dortmund-midfielder-felix-nmecha-on-man-utds-radar-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-08T16:38:11.762Z",
         "status": "Rumour"
       },
       {
@@ -1717,7 +1717,7 @@
           "Aston Villa",
           "Oxford United"
         ],
-        "title": "Oxford United announce signing of young Aston Villa star after transfer deadline - Oxford Mail",
+        "title": "Oxford United announce signing of young Aston Villa star after transfer deadline - oxfordmail.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLUhGUHdBdE4tTEJzbVdlN2h4VzNPMmZHSkNfM05JYlh6dDBucmNuRVRLQ2JoMl9tY3dpVHBaMGJ0QVZnZ1BUMjJsNktwTlpqRHhfREpZQ3VXUzBTZm1MZkhZemYxNE5UR0tvdGdmV2ZjMnlkTmQ2REJ5VjBoelAxRElfNFA5QWpBXzdvR1hnRkJpOFUtT2c?oc=5",
         "source": "Google News Premier League",
@@ -3060,7 +3060,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Premier League transfer deadline day 2026: when does the window close? - ucfb.ac.uk",
+        "title": "Premier League transfer deadline day 2026: when does the window close? - UCFB",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1LM2RVaUh2WXZMdUZxUnl5UE0zRlN0M2hiZTU5S1JCeXByWDNPWHk5S3VXRlQ0YThZOEE3a0tTOHhnOVJ3UVQwTml2bnBPRUhZcllWZFZfOFlGSlZNQ0xHMW9sQmQ5MUtuZm1ETXlucHd0a1E0Ql9adXd3?oc=5",
         "source": "Google News Premier League",
@@ -4683,10 +4683,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Coventry City",
           "Hull City",
           "Birmingham City"
         ],
-        "title": "Every January transfer in the Championship as Hull in trolley dash despite embargo, Birmingham spend big - coventrytelegraph.net",
+        "title": "Every January transfer in the Championship as Hull in trolley dash despite embargo, Birmingham spend big - Coventry Telegraph",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZXV3RFJoVjl4aEtfTElTVFlNRE41WUZWQWlDVHljNHhRTU5CTkFMYU8wRVlnODViLVpEUTBtWjhzVFE5d0hYanNUNUJvWWU3LWJWOHpUVkstdXZtUjNsMGZxQ1pOY1FlY0w1b0oyeUc0cFRKeVdOUkFMNjQxUUtXTXlUODFSa3Z5WFMtZFFBUkdRQmttQm1POUdaZHZ5U1plZVdUNzFONWJFY1NPY3lqYV9B0gG3AUFVX3lxTFAtUG8zTXFkMUlRZkNlUXo3bFJyaDBtbW9LWUdGWjduMkY0VWxtX0tPRlBhZzFwTldETjEzV1dYZldBZUpiX1pXSkZVNkphX1FuTnNnZjRIVDRjajc2Q0JNMVBuREtLNGMzdl9FNllmaW9WRlh4dTU1eldaV3RtalhsRVdudDF0N2VrUHg0bGl2X2NoVEVKemZpcWRkaS00RlJUVGV5ZnNPZW0xMjdTOTZFNmJjOUlMZw?oc=5",
         "source": "Google News Championship",
@@ -4725,7 +4726,7 @@
           "Manchester City",
           "Leicester City"
         ],
-        "title": "Man City agree deal to re-sign £12.5m Championship star as Leicester City plot late loan move - ManchesterWorld",
+        "title": "Man City agree deal to re-sign £12.5m Championship star as Leicester City plot late loan move - manchesterworld.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFJIOW4xcWVWamw0bno5X21Fb2Npa3NfdVZzcHJfTWpEWDBHQmdhUUR1LUN6anVvZDVMUDlMQkJZTkZWZEJZdEdZXzhvcF9OTkduOXZ5T0I4bnRMTDZtZmhnNnZDLUJDcXRPZGRHbGpkU2FLNnptMzdnZHlxQWR0UjVackcxYkpQUWhJUmFPLTNpbHIwRFhyNFh0OVZsbmlRbUx0MVVpZ3BTdUlTNFJQZnkwdHA?oc=5",
         "source": "Google News Championship",
@@ -5038,7 +5039,7 @@
         "clubs": [
           "Coventry City"
         ],
-        "title": "Every Championship club's transfer state of play as Coventry City remain coy ahead of deadline day - coventrytelegraph.net",
+        "title": "Every Championship club's transfer state of play as Coventry City remain coy ahead of deadline day - Coventry Telegraph",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSVpfcmJOZzZUQm43NzZJWXNTNTRZMm12Y2dlMTN4MU4zTnN6azdSTXpRS2Vkb2xFdFM4Tlo0cHBTdHlFdG1XLWtMdTR2S2wwWlpGSFVPQ1VhTjdrQXhnSXNDVDg3Q0VkaVVlbFpNZmZNWDVsdmcwYVEzNVdLMWNmS2pUaGl6UnRUMkxXWWx4T2xYanpoRmZJeTdJbTZqdzFQUllfOHdTZk05NWVTbUxOZHFB0gG3AUFVX3lxTE01cXI2WXNtbTdDVWhUSDBuNWdsWE9pdE1QRWdLZEpGSFlOOHA2R1lSZDl4NkplWXRzX2tjZkt2dXFGT1V6a2xZaG1jcDg0QUNpbi1ObEdzYlM1MXFaeDh4U2lLOHUyenZfek80cmdUaTVfc0ExVS1OZVBqQjhXTlVzVWJ1MkEwSXBEWmFiNE05VTg4a3Vqcy1MbklCc1U2WU5XRDQwREFITkNuVUpmOXZhZUF0NHhUbw?oc=5",
         "source": "Google News Championship",
@@ -5246,7 +5247,7 @@
         "clubs": [
           "Coventry City"
         ],
-        "title": "Coventry City 'in talks' over Premier League starlet as Frank Lampard plans key loan deal - coventrytelegraph.net",
+        "title": "Coventry City 'in talks' over Premier League starlet as Frank Lampard plans key loan deal - Coventry Telegraph",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbjhDU0cyajFFRHFxeVZEZExFVDdJRTA4UFBDT2djLXNacHFJcGE2aXRSa2d0SHlGazBGd1RTTldlZGdDWUJkVWdjZHlMMUFWX0dBVVN2NER3XzBVY1dOOEs0dEJLX1dfMG1sNG5XOUtiQVA1YW9zSmVvZmdIZGxyaEg2S252SWlHR2dmT0NuZUt5V3FDdVd5bGg3OF9mR2xycURFeXAtY1M5MGvSAbABQVVfeXFMUC03MnhCVVNGb2tWbkJnbDEtM3k4anFza0RHbHRTZ3dwV2FGRWJkMHFMbnItSHhUMmhjeW5HTGJKTGFqRVBWQ29OSGNWTTlMM1UwamM0eWw3cUlQWENWR3BnZ2J4OWtLcHdpZXR3b3ZLS0xpUFZfc0p1SFIxOEpmcGVxSUNHQnJub1lGNERQUnV0eVdQcUM5bkZaZnBLTDBfQ1ZsZnNtejhaRTg0ZlZJYU0?oc=5",
         "source": "Google News Championship",
@@ -5291,6 +5292,19 @@
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOX0JnWlJuOExGMnkxTmtPN3JrWjJmckQ4OWFOcjNFZW9zTEhFMVV0MWNfWGFoVnlsMEdlSkVnLVZjdGRUOUVIdkozbXBJb2g1YW11SGx2SmpkVHlld2RMZUo3UEpKUWNicDgzYnFId3hVUm9xWC1jdWswbFkwb1Atd0RTZ2xsenhNSEEzWnNzUVdGRlUzMV8tUXkxeHpkMV9WOU1RZnBmc3lnU3FFX3VmWGNDUUpydHgtZWRfcDQwZlJZM04xbEg4?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-11T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Coventry City"
+        ],
+        "title": "'Time to say goodbye' and 'utterly miserable' - bumper Championship transfer lowdown - Coventry Telegraph",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeUt1d2hGVVFKem5lSlpBLVdJWFBzVm5hUjdyWVNFQmV6MkFONFVrdUFxQlRrVVlDdEt6TlFHc05Pa2VsR01mZGRSQ0hWS3cxSV9YbW1seVcwQzViVTdJSUtSV2xYNTJhR1hsWmt3dWZzNzFrOTNmc3VycFJndHBfRThiTExsLVVRU1NKb281UVZOMVVVdmY4TDlPTmVRRzllR1E2UTBNT0JXQnfSAbABQVVfeXFMTk1MRHdiWWxXOU0xVmU4YWg3ZDUwVF8zZTlvdUhXd0NPbWhzNkxxQkx3amtfSHBHUWJ6LUg1aWxSd1pDNGp6M1RkR29pVGhVR2V4VmZQcXhSZGRvQVV5LUh0bjhQUHE2VWhjVWZFR1gyU2dPdmt5T2pSdVhmQjE1U2JJaXRpMFhaLVJzdVVzVU5HVHlUTXBnZ2FMRktfU3VYbFB0azNwYXd6NjRfcndjZzg?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2025-09-06T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -8481,17 +8495,6 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [],
-        "title": "Castleford Tigers signing makes Championship loan move in bid for fitness - seriousaboutrl.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSTlqTXZ6dURyZ2QySjc5RU9wUnFJOVR0OXhXUTZKaFFtZjZGaGluN1Z1TnlITmZHanp2WDNlMkJMdWVESDRqbEp0azJ1X2YtRENfUUM3Y2V2YUdNemt4Z2ZLbGJPcXBzVTFsNFVkWU5UdWVNS3lUUHp1VFNCa3Y5M2lhQ3BIaTdzcFNmNmFJUlRFSGlsQ3dfTWQ2akFlRGF6NXB3ZDZIS09CUm9zbmZyWXVVUXlDN2JWSTRfWHNKLVJnUXQ1LUpDUjRB0gHPAUFVX3lxTE41b0w0QWQ4bU1nUWNTdjRWZGJXenZiYi1VcXNZWGt3RWhULUY1MGJUbGYzTmhKNldYNkYxZ1Y3UC1fWEw5MmJnOUFycHVDT2E0U3ZfNDR6UTVQWVNLWnhCbHVlRWxTMzlnbWVpVVRfdElRYWpNQnMzOGQtTk1UNUJEUDhiWUJBdDlmRnU4VUVLYzZKcE1iZnhDTmRnZE14b25LVnZPZkJOQVBJbG5wTm5uVnlfejhDaTktRzJYWTk1b3RCODJJWWhUM0RtVGJIRQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-06-23T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
         "clubs": [
           "Stoke City"
         ],
@@ -8886,7 +8889,7 @@
           "Wrexham",
           "Bradford City"
         ],
-        "title": "Exclusive: Bradford City in Advanced Talks to Sign Wrexham's Paul Mullin on Loan - sportsboom.co.uk",
+        "title": "Exclusive: Bradford City in Advanced Talks to Sign Wrexham's Paul Mullin on Loan - SportsBoom UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdzFoUTNMaG1nZDFIaEdWWmhLNlJSLUhLTWxkT2pKa1Z2SC1FSElsTkJydElUOGxwZUliWDBjWXRnVmdhUmltMnd2WUNhMkVPNHdrbl9VR015Wkh6SjZyelBJVm9sNzBxUWtQX1hmRXZfZEdxbHA1eEJvaWg4ZHdkZ2hhc0FfUzhDNk9aT0Vkek1PTXI4SFhZZ19kdmVUSlNGbnhzdUxpRlpza09YYjBxbDZ2eUxvUjFCXzJGRzd6LWtJdw?oc=5",
         "source": "Google News League Two",
@@ -8964,7 +8967,7 @@
           "Charlton Athletic",
           "Wigan Athletic"
         ],
-        "title": "Exclusive: Bolton and Wigan Join League One Queue for Charlton Winger Rob Apter - sportsboom.co.uk",
+        "title": "Exclusive: Bolton and Wigan Join League One Queue for Charlton Winger Rob Apter - SportsBoom UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPblNkS1JlLWpiX1p3NmE2ZnhkNmk3X2thZEtKMWxHN3JhbldIeWNyQTB6UW04Q2p6Z3U1VUJhVFd6T1UtODJVRHY1cWFCOEotak1yQXRMZ3dxQzVVV1JLTWdxV1RCWFBqbXluZDdnM2JMczdOaklzRWJsN1UzR0NCb2tKVDVic25Xc1YyNGZJa1ZJZ2dGTUN3S0FUdlRaanJxcWhhMGxBMmpJTHJIRWV1VDdyS3dHRGpTRXhPcXBUa0k2OTlyM3BfMkZSWWZYOHZMTWtv?oc=5",
         "source": "Google News League One",
@@ -9319,23 +9322,12 @@
           "Birmingham City",
           "Wolverhampton Wanderers"
         ],
-        "title": "Exclusive: Birmingham City Want to Sign Wolves Loan Midfielder Tommy Doyle on Permanent Deal - sportsboom.co.uk",
+        "title": "Exclusive: Birmingham City Want to Sign Wolves Loan Midfielder Tommy Doyle on Permanent Deal - SportsBoom UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUGVvSGpncWo0REhXTHFGOW1Nb3RQS0ZhS1YtMWNQNG9aUms5YjAzMEpST0M5RXVOQ05aXzZiaHI4TkdSeWlHWlpmR1YtUlBvUW82Qmt1MlVCNVNMb1d2LU1KRlMzQ2lndUx6cUdWaTJMazBvVkYtZzFqNTlnbWs1aDItQ3I3WVV6azZWTEZkQjJBRUQ4N3Vta2pldllNVU1NT3NEeWNYeUlhZm00aEdvSVdZakhvZkVLQVcxSXpYMmJ4SHNwd3NWOFVkT3NLZGVTN2plRGV5ejNITFk?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-10-23T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "'Time to say goodbye' and 'utterly miserable' - bumper Championship transfer lowdown - coventrytelegraph.net",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeUt1d2hGVVFKem5lSlpBLVdJWFBzVm5hUjdyWVNFQmV6MkFONFVrdUFxQlRrVVlDdEt6TlFHc05Pa2VsR01mZGRSQ0hWS3cxSV9YbW1seVcwQzViVTdJSUtSV2xYNTJhR1hsWmt3dWZzNzFrOTNmc3VycFJndHBfRThiTExsLVVRU1NKb281UVZOMVVVdmY4TDlPTmVRRzllR1E2UTBNT0JXQnfSAbABQVVfeXFMTk1MRHdiWWxXOU0xVmU4YWg3ZDUwVF8zZTlvdUhXd0NPbWhzNkxxQkx3amtfSHBHUWJ6LUg1aWxSd1pDNGp6M1RkR29pVGhVR2V4VmZQcXhSZGRvQVV5LUh0bjhQUHE2VWhjVWZFR1gyU2dPdmt5T2pSdVhmQjE1U2JJaXRpMFhaLVJzdVVzVU5HVHlUTXBnZ2FMRktfU3VYbFB0azNwYXd6NjRfcndjZzg?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2025-09-06T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 2,
@@ -9350,6 +9342,20 @@
         "source": "Google News League Two",
         "publishedAt": "2025-09-02T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Bristol City",
+          "Swindon Town"
+        ],
+        "title": "Swindon Town sign Bristol City's Adam Murphy and Jamie Knight-Lebel on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50WHlIdXZNOERWenM4dUd0ZlY3Y0F2NGJzeU1VeVVOcUxFaWNFTEMzZEtMRzBtNXVMRW9iUnQtUXdsNTlYeDA1TktOUmUzYjFqTGFPeTgzdVJ3WWx6R1FaYUFHMmltUGM?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2025-09-01T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 2,
@@ -9376,20 +9382,6 @@
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Bristol City",
-          "Swindon Town"
-        ],
-        "title": "Swindon Town sign Bristol City's Adam Murphy and Jamie Knight-Lebel on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50WHlIdXZNOERWenM4dUd0ZlY3Y0F2NGJzeU1VeVVOcUxFaWNFTEMzZEtMRzBtNXVMRW9iUnQtUXdsNTlYeDA1TktOUmUzYjFqTGFPeTgzdVJ3WWx6R1FaYUFHMmltUGM?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2025-09-01T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 2,
@@ -10228,10 +10220,9 @@
         "divisionName": "League One",
         "clubs": [
           "Leicester City",
-          "Milton Keynes Dons",
-          "Oxford United"
+          "Milton Keynes Dons"
         ],
-        "title": "U's League One rivals Leicester and MK Dons complete statement transfers - Oxford Mail",
+        "title": "U's League One rivals Leicester and MK Dons complete statement transfers - oxfordmail.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS3BGS2hkeXcyUHluUTZDazdEd184Y0d5d0xpWER4ZVFkcjhzYVJTb1JrZ0pGMzQ0eHFBUDUtZW1vOHZIdWhjeDlaY25pZmxMdXBQQ3NRbGY3UXpiRy1aeHh2S09OWmc5cGQ0MHVYTlFEOFY2aE4wV3NFRXY4SEdORWtXWWlqTEVBSXZNdk5LQ0JUSjFHVlJLSGVCVG9kN0tCNF8yUWl3?oc=5",
         "source": "Google News League One",
@@ -10489,10 +10480,8 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [
-          "Oxford United"
-        ],
-        "title": "League One transfer latest: Premier League additions and new U's link - Oxford Mail",
+        "clubs": [],
+        "title": "League One transfer latest: Premier League additions and new U's link - oxfordmail.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMk1XUHJURTRaLVQ3dzlVVHVWT2hJUkh3cHdIQzdoYlgxY1hTeDlzSUxXcGplOUM3V0tfRXFpY3FBNEF0b0NqSWV2aS13LWRZd2VhTmRNdTlCTVF6ekdIdGIyejhkV2Q1ZXg0NDZfd3ZXT2NBM1RzS0lDTTdzY2kwZmlxOWxKaWxJeDRSdEkzeklCMExTNTFDVENxeHl0b1VI?oc=5",
         "source": "Google News League One",
@@ -10584,7 +10573,7 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [],
-        "title": "January 2024 Goalkeeper Transfer Tracker - goalkeeper.com",
+        "title": "January 2024 Goalkeeper Transfer Tracker - Goalkeeper.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM0hPX3hqT3d5YWpZelc5d3JWeFdmTGZDSmlkTFE4NEhOQzlLcG16cVhoZVF4ZldRaW50R3JaZ0ZCUDBwU3RPTVNlVlY2MU5Ncm9jOF9RcVpVN3lNTVRZeDFEN280cHczd19TS3lVb2s2VmtyNVc1WmpPNHpGemR2cG1RRWczVlRxU0w0bWJJemtYb3l2cm9DUW9YRVJiZlk?oc=5",
         "source": "Google News League One",
@@ -10816,7 +10805,7 @@
         "clubs": [
           "Bradford City"
         ],
-        "title": "Exclusive: Barrow Eye January Move for Prolific Bradford Striker Andy Cook - sportsboom.co.uk",
+        "title": "Exclusive: Barrow Eye January Move for Prolific Bradford Striker Andy Cook - SportsBoom UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVlZQOExqYTZHSWVxRks0UE94VnJHcUw2Vm5FLXF2ZWJUcHp5UzdtUlAwMTRjWVdsYlZfcXdhQ2JIVkJLQWJhZkwtT0IyZ0FTdWpBSW5QRklSUm9UQ01nWkZjZkJKanpMc3hTWHoyYmhCT1pjcUJIXzNFcVNRV25pTWtMZUt2Z2pkakpKY2lXVU5lX2R1dXRyRVBjcTVIeGpGeWZMSGtKMGk5dHVqa09MNg?oc=5",
         "source": "Google News League Two",
