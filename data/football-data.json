@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T18:23:25.192Z",
+  "updatedAt": "2026-09-08T18:39:19.386Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7299,8 +7299,8 @@
       "type": "cup",
       "date": "2026-09-08T18:00Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 8th at 2:00 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "3'",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
@@ -7321,8 +7321,8 @@
       "type": "cup",
       "date": "2026-09-08T18:00Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 8th at 2:00 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "3'",
       "home": {
         "id": "324",
         "name": "Exeter City",
