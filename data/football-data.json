@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T21:28:55.087Z",
+  "updatedAt": "2026-09-09T21:39:18.904Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8076,21 +8076,55 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-09T18:45Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "88'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "374",
         "name": "Derby County",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "383",
         "name": "West Bromwich Albion",
-        "score": null
+        "score": 1
       },
       "venue": "Pride Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Aune Heggebo",
+          "minute": "16'",
+          "team": "West Bromwich Albion",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Harry Whitwell",
+          "minute": "10'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Brayann Pereira",
+          "minute": "26'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        },
+        {
+          "player": "Brayann Pereira",
+          "minute": "34'",
+          "team": "West Bromwich Albion",
+          "card": "red"
+        },
+        {
+          "player": "Jimmy Morgan",
+          "minute": "82'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880270",
@@ -8098,21 +8132,91 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-09T18:45Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "381",
         "name": "Norwich City",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "392",
         "name": "Birmingham City",
-        "score": null
+        "score": 1
       },
       "venue": "Carrow Road",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Oscar Schwartau",
+          "minute": "28'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Pape Diallo",
+          "minute": "39'",
+          "team": "Norwich City",
+          "ownGoal": false
+        },
+        {
+          "player": "Carlos Vicente",
+          "minute": "64'",
+          "team": "Birmingham City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Benjamin Chrisene",
+          "minute": "13'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "José Córdoba",
+          "minute": "25'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Jack Stacey",
+          "minute": "59'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Oscar Schwartau",
+          "minute": "60'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Carlos Vicente",
+          "minute": "60'",
+          "team": "Birmingham City",
+          "card": "yellow"
+        },
+        {
+          "player": "Phil Neumann",
+          "minute": "83'",
+          "team": "Birmingham City",
+          "card": "yellow"
+        },
+        {
+          "player": "Jovon Makama",
+          "minute": "83'",
+          "team": "Norwich City",
+          "card": "yellow"
+        },
+        {
+          "player": "Ante Crnac",
+          "minute": "90'+4'",
+          "team": "Norwich City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880272",
@@ -8120,21 +8224,36 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-09T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "72'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "334",
         "name": "Queens Park Rangers",
-        "score": null
+        "score": 0
       },
       "venue": "The Valley",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Kealey Adamson",
+          "minute": "74'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        },
+        {
+          "player": "Jake Clark-Salter",
+          "minute": "76'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401914256",
@@ -8142,21 +8261,85 @@
       "competitionCode": "eng.league_cup",
       "type": "cup",
       "date": "2026-09-09T19:15Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "60'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "363",
         "name": "Chelsea",
-        "score": null
+        "score": 6
       },
       "away": {
         "id": "357",
         "name": "Leeds United",
-        "score": null
+        "score": 3
       },
       "venue": "Stamford Bridge",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Tarik Muharemovic",
+          "minute": "23'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Brenden Aaronson",
+          "minute": "48'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Cole Palmer",
+          "minute": "55'",
+          "team": "Chelsea",
+          "ownGoal": false
+        },
+        {
+          "player": "Pedro Neto",
+          "minute": "60'",
+          "team": "Chelsea",
+          "ownGoal": false
+        },
+        {
+          "player": "Danny Welbeck",
+          "minute": "65'",
+          "team": "Chelsea",
+          "ownGoal": false
+        },
+        {
+          "player": "Dominic Calvert-Lewin",
+          "minute": "75'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Valentín Barco",
+          "minute": "80'",
+          "team": "Chelsea",
+          "ownGoal": false
+        },
+        {
+          "player": "Danny Welbeck",
+          "minute": "90'+4'",
+          "team": "Chelsea",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Reggie Watson",
+          "minute": "45'+1'",
+          "team": "Chelsea",
+          "card": "yellow"
+        },
+        {
+          "player": "Cole Palmer",
+          "minute": "53'",
+          "team": "Chelsea",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401880856",
@@ -9281,6 +9464,28 @@
       "source": "ESPN"
     },
     {
+      "id": "401914284",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-15T18:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 15th at 2:30 PM EDT",
+      "home": {
+        "id": "342",
+        "name": "Peterborough United",
+        "score": null
+      },
+      "away": {
+        "id": "397",
+        "name": "Barnsley",
+        "score": null
+      },
+      "venue": "London Road Stadium",
+      "source": "ESPN"
+    },
+    {
       "id": "401880274",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -9322,28 +9527,6 @@
         "score": null
       },
       "venue": "Riverside Stadium",
-      "source": "ESPN"
-    },
-    {
-      "id": "401914284",
-      "competition": "Carabao Cup",
-      "competitionCode": "eng.league_cup",
-      "type": "cup",
-      "date": "2026-09-15T18:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 15th at 2:45 PM EDT",
-      "home": {
-        "id": "342",
-        "name": "Peterborough United",
-        "score": null
-      },
-      "away": {
-        "id": "397",
-        "name": "Barnsley",
-        "score": null
-      },
-      "venue": "London Road Stadium",
       "source": "ESPN"
     },
     {
