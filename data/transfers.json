@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-09-09T22:54:48.681Z",
+  "updatedAt": "2026-09-09T23:02:23.050Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-09T23:02:22.889Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -14,19 +27,6 @@
         "link": "https://www.skysports.com/football/news/12040/13583541/arsenal-didnt-make-x-factor-signing-like-vinicius-junior-or-julian-alvarez-to-win-champions-league-says-paul-merson",
         "source": "Sky Sports",
         "publishedAt": "2026-09-09T22:54:48.510Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-09T22:54:48.508Z",
         "status": "Rumour"
       },
       {
@@ -1974,7 +1974,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - si.com",
+        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - Sports Illustrated",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeU5LaUx3WUhaVEpXdFhSUTJrUDFzT0s1TWs1TXhJeV9uY1pWd2Rfb3V4WlI1bVZDRTNoVVFjNEszMW5IQVZwSWgtbGt5dHVXck1oNEhGdUV5b1ZxZHZHaGV0cjFYYVVyMXdIZ0FFUlJDMlJxV2dLeHU4TFRYNzI0Mw?oc=5",
         "source": "Google News Premier League",
@@ -2209,7 +2209,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Transfer Deadline Day 2026: Full List of Every Completed Signing And Loan Deal in Europe - NDTV Sports",
+        "title": "Transfer Deadline Day 2026: Full List of Every Completed Signing And Loan Deal in Europe - sports.ndtv.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNREVYdHQwM2toNGlQb0tzNlFqTkNFbjBzU3ZOYUNiM3RNWG9oUE1DbGhHZHBYVnJ0OHRWbDVYV0ltczhEdkdpY2k2TjhDQ00xdUhhSE52MDBjSy0xOHA3bjRldlRreFQyN1FSU3hEc0pHT2JfYlRkV2VSUnlKSGlTaGxFLVQ1S0lZVUxLTlpRLURRajJtWXVFbHltVmthTkdiUHFURU5wbFY2R0swT0FlVTFaZ0lXLS1yTi1BZGtaM0tKNldRN2FOWA?oc=5",
         "source": "Google News Premier League",
@@ -6770,20 +6770,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Charlton Athletic",
-          "Queens Park Rangers"
-        ],
-        "title": "QPR miss chance to move top after goalless draw at Charlton",
-        "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
-        "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-09T22:54:48.509Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Derby County",
           "West Bromwich Albion"
         ],
@@ -6791,7 +6777,21 @@
         "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
         "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-09T22:54:48.508Z",
+        "publishedAt": "2026-09-09T23:02:22.889Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Charlton Athletic",
+          "Queens Park Rangers"
+        ],
+        "title": "QPR miss chance to move top after goalless draw at Charlton",
+        "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
+        "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-09T23:02:22.889Z",
         "status": "Rumour"
       },
       {
@@ -12366,17 +12366,6 @@
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaGJUWV9kMFNSMzhhc2ZLY3pZeVpWT0lqVi12c0dXbFJiSDNEUmxLYnFwZUlRY3NyeEp0S0RFVTZ5OHYxZndNTE1QU3pPeFcxQWNJOTUwYmlFak9UZ3dPNzY3VXYxUng4Qll3UFJCd1BiUWYxR3g0aWlwT3Z0dThkX3ZHR0dOdVExVlFkOVdJUGMtemlVX2JJX2FXVGlrU3ZnT0xIclRGNl82YXct?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-05-11T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
-        "title": "8 transfer headlines from our guru Scott Burns - Daily Record",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWkoweHJqeUZNT09CU0QzV3hmaVh3eHdTekEtdGNreUdPc0dtMU01M2lTcWV6Y2VocUFjdHJ4RkVlSmFIbjVpbGVPdnRRUDZpY3NNdHlZS205dXpGQjZXeUtnTk53bUxUNkUzWXFUVzJKakpFdi1vb2J5ME9CSUxaUl95ZHUzSlliMlJmaTNDWl9HOUtjN3hFaFVtTmk0bGhraHI0U3ZoUGZNV0F1LTdIdmF3?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-05-07T07:00:00.000Z",
         "status": "Rumour"
       },
       {
