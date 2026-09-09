@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T18:56:27.337Z",
+  "updatedAt": "2026-09-09T19:05:06.165Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -4291,47 +4291,7 @@
         "score": 2
       },
       "venue": "Portman Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Alexander Isak",
-          "minute": "6'",
-          "team": "Liverpool",
-          "ownGoal": false
-        },
-        {
-          "player": "Alexander Isak",
-          "minute": "9'",
-          "team": "Liverpool",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Alexis Mac Allister",
-          "minute": "10'",
-          "team": "Liverpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Julio Enciso",
-          "minute": "41'",
-          "team": "Ipswich Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Jérémy Jacquet",
-          "minute": "52'",
-          "team": "Liverpool",
-          "card": "yellow"
-        },
-        {
-          "player": "Milos Kerkez",
-          "minute": "57'",
-          "team": "Liverpool",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879286",
@@ -8118,7 +8078,7 @@
       "date": "2026-09-09T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "4'",
+      "statusDetail": "11'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -8140,7 +8100,7 @@
       "date": "2026-09-09T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "5'",
+      "statusDetail": "11'",
       "home": {
         "id": "381",
         "name": "Norwich City",
