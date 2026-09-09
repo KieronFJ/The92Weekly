@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T21:54:06.186Z",
+  "updatedAt": "2026-09-09T22:02:52.326Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9464,6 +9464,28 @@
       "source": "ESPN"
     },
     {
+      "id": "401914284",
+      "competition": "Carabao Cup",
+      "competitionCode": "eng.league_cup",
+      "type": "cup",
+      "date": "2026-09-15T18:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 15th at 2:30 PM EDT",
+      "home": {
+        "id": "342",
+        "name": "Peterborough United",
+        "score": null
+      },
+      "away": {
+        "id": "397",
+        "name": "Barnsley",
+        "score": null
+      },
+      "venue": "London Road Stadium",
+      "source": "ESPN"
+    },
+    {
       "id": "401880274",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -9505,28 +9527,6 @@
         "score": null
       },
       "venue": "Riverside Stadium",
-      "source": "ESPN"
-    },
-    {
-      "id": "401914284",
-      "competition": "Carabao Cup",
-      "competitionCode": "eng.league_cup",
-      "type": "cup",
-      "date": "2026-09-15T18:45Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 15th at 2:45 PM EDT",
-      "home": {
-        "id": "342",
-        "name": "Peterborough United",
-        "score": null
-      },
-      "away": {
-        "id": "397",
-        "name": "Barnsley",
-        "score": null
-      },
-      "venue": "London Road Stadium",
       "source": "ESPN"
     },
     {
