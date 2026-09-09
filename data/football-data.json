@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T21:03:02.671Z",
+  "updatedAt": "2026-09-09T21:17:51.421Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8224,21 +8224,36 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-09T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "334",
         "name": "Queens Park Rangers",
-        "score": null
+        "score": 0
       },
       "venue": "The Valley",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Kealey Adamson",
+          "minute": "74'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        },
+        {
+          "player": "Jake Clark-Salter",
+          "minute": "76'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401914256",
@@ -8248,7 +8263,7 @@
       "date": "2026-09-09T19:15Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "80'",
+      "statusDetail": "90'",
       "home": {
         "id": "363",
         "name": "Chelsea",
