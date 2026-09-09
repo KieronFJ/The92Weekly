@@ -1,8 +1,23 @@
 {
-  "updatedAt": "2026-09-09T23:03:22.671Z",
+  "updatedAt": "2026-09-09T23:17:43.175Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Liverpool",
+          "Manchester United"
+        ],
+        "title": "Papers: Liverpool eye January swoop for Chelsea and Man Utd midfield target",
+        "summary": "The top stories and transfer rumours from Thursday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13583799/liverpool-transfer-news-as-roma-midfielder-manu-kone-on-anfield-radar-ahaed-of-january-transfer-window-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-09T23:17:43.047Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -13,7 +28,20 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-09T23:03:22.501Z",
+        "publishedAt": "2026-09-09T23:17:43.046Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Liverpool"
+        ],
+        "title": "Liverpool will reward Mac Allister if he lets his football do talking",
+        "summary": "After saying he was \"very sad\" at the lack of a contract offer from Liverpool, Alexis Mac Allister proved his worth against Atletico Madrid.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/crl6zyr1gw5o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-09-09T23:12:27.000Z",
         "status": "Rumour"
       },
       {
@@ -6777,7 +6805,7 @@
         "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
         "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-09T23:03:22.502Z",
+        "publishedAt": "2026-09-09T23:17:43.047Z",
         "status": "Rumour"
       },
       {
@@ -6791,7 +6819,7 @@
         "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
         "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-09T23:03:22.501Z",
+        "publishedAt": "2026-09-09T23:17:43.046Z",
         "status": "Rumour"
       },
       {
@@ -11457,7 +11485,7 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [],
-        "title": "Sky Bet League One: January 2026 transfer deadline day round-up - The English Football League",
+        "title": "Sky Bet League One: January 2026 transfer deadline day round-up - efl.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNEFySDNGR0JmclY5eF91TTVJZ1prSU9HSlVQSks2MnZLQkFiMGNCVDdadGRwbU5jRTZEMndkZ2NMYnZ3Q0xXTS1KZlZBd05pM0pvdy1fR21VUDZ0NVl2Wm1UZjc3OWZBU0FnVFU5U3l6YTgwXzdDZFVMRUpFSHNpNlRZT1FWNE5oR2FMSnRNd0xQTHYyM01uVEhJOEZfM0dLTmp1Tg?oc=5",
         "source": "Google News League One",
@@ -12383,7 +12411,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "Sky Bet League Two: January 2026 transfer deadline day round‑up - The English Football League",
+        "title": "Sky Bet League Two: January 2026 transfer deadline day round‑up - efl.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRXJMS1JDbFNkeVAzZXRzZ3IzZWdSbWNub0JDc3N4NkU4WkdoOGFYbXJyUlVOMFAycS1fd0JLVnhXa2ZLaWN5LWY5RjdmckxKamRzUkQxdjNvdHZiWEJpZDJCTU1wanhTNUxWVmU1TVdTY0NaYlc0U1JvN1pwTllqT0JkOTd5QWtwbEYySno4cGdjVmdwQzVIbS1BZ2F5MkdickhvYw?oc=5",
         "source": "Google News League Two",
@@ -12557,7 +12585,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "LIVE: EFL Transfer Deadline Day - The English Football League",
+        "title": "LIVE: EFL Transfer Deadline Day - efl.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53QzdZVnNMV3hKUHdkSjNsWVVwS2xoOVZKUkIxem5MbHBxdV8tcGluLXl4X3BSUnRlX3dVX0NBYXVPSlJiUmd0TWEzOXU0bk9FWGNHSlZpMGRlRUwwWVlIckx1R2xuakFuaC1KeWd1Z1Zvc3ZxT2pkR2Rn?oc=5",
         "source": "Google News League Two",
@@ -12568,7 +12596,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "Transfer Deadline Day: EFL Round Up - The English Football League",
+        "title": "Transfer Deadline Day: EFL Round Up - efl.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMTA5c3dFZ1ViazRsanI3cTFFUGhUeFptS1RZcTM0dFY2UjQ2MFkxMWZjeFdtdGNsNll0NmxRX3VTNHl5QmlQN003Wm5xRzJhVkJWS09SbVkwdWFzSTc5X0VqVjFGTlhCZ3VCSU5CdTVCWDd3a3Z0WXNLUVNQWjg5dg?oc=5",
         "source": "Google News League Two",
