@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T19:37:25.364Z",
+  "updatedAt": "2026-09-09T19:44:09.828Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8077,8 +8077,8 @@
       "type": "league",
       "date": "2026-09-09T18:45Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "44'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Wed, September 9th at 2:45 PM EDT",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -8099,8 +8099,8 @@
       "type": "league",
       "date": "2026-09-09T18:45Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "44'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Wed, September 9th at 2:45 PM EDT",
       "home": {
         "id": "381",
         "name": "Norwich City",
@@ -8121,8 +8121,8 @@
       "type": "league",
       "date": "2026-09-09T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "28'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Wed, September 9th at 3:00 PM EDT",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
@@ -8141,10 +8141,10 @@
       "competition": "Carabao Cup",
       "competitionCode": "eng.league_cup",
       "type": "cup",
-      "date": "2026-09-09T19:15Z",
+      "date": "2026-09-09T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "13'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Wed, September 9th at 3:00 PM EDT",
       "home": {
         "id": "363",
         "name": "Chelsea",
