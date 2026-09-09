@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T18:49:38.381Z",
+  "updatedAt": "2026-09-09T18:56:27.337Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8117,8 +8117,8 @@
       "type": "league",
       "date": "2026-09-09T18:45Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, September 9th at 2:45 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "4'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -8139,8 +8139,8 @@
       "type": "league",
       "date": "2026-09-09T18:45Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, September 9th at 2:45 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "5'",
       "home": {
         "id": "381",
         "name": "Norwich City",
