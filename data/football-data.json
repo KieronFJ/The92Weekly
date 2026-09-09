@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T20:20:07.357Z",
+  "updatedAt": "2026-09-09T20:32:17.999Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8078,7 +8078,7 @@
       "date": "2026-09-09T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "48'",
+      "statusDetail": "59'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -8100,7 +8100,7 @@
       "date": "2026-09-09T18:45Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "50'",
+      "statusDetail": "61'",
       "home": {
         "id": "381",
         "name": "Norwich City",
@@ -8143,8 +8143,8 @@
       "type": "cup",
       "date": "2026-09-09T19:15Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "37'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "363",
         "name": "Chelsea",
