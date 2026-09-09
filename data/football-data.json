@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T19:28:33.774Z",
+  "updatedAt": "2026-09-09T19:37:25.364Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8077,8 +8077,8 @@
       "type": "league",
       "date": "2026-09-09T18:45Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "33'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "44'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -8100,7 +8100,7 @@
       "date": "2026-09-09T18:45Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "33'",
+      "statusDetail": "44'",
       "home": {
         "id": "381",
         "name": "Norwich City",
@@ -8121,8 +8121,8 @@
       "type": "league",
       "date": "2026-09-09T19:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "18'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "28'",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
@@ -8144,7 +8144,7 @@
       "date": "2026-09-09T19:15Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "13'",
       "home": {
         "id": "363",
         "name": "Chelsea",
