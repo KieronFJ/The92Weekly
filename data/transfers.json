@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-09-09T19:39:09.491Z",
+  "updatedAt": "2026-09-09T19:43:38.044Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-09T19:43:37.903Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -13,7 +26,7 @@
         "summary": "Arsenal's record last year was amazing in the Champions League and they're going to be there or thereabouts again &#8211; but I don't think they bought that X factor signing to take them to that next level.",
         "link": "https://www.skysports.com/football/news/12040/13583541/arsenal-didnt-make-x-factor-signing-like-vinicius-junior-or-julian-alvarez-to-win-champions-league-says-paul-merson",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-09T19:39:09.326Z",
+        "publishedAt": "2026-09-09T19:43:37.903Z",
         "status": "Rumour"
       },
       {
@@ -26,20 +39,7 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13279317/ipswich-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-09T19:39:09.326Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-09T19:39:09.325Z",
+        "publishedAt": "2026-09-09T19:43:37.903Z",
         "status": "Rumour"
       },
       {
@@ -386,7 +386,7 @@
         "clubs": [
           "Chelsea"
         ],
-        "title": "Chelsea's 2026 Summer Transfer Window: Every Signing, Sale and Loan Rated - vavel.com",
+        "title": "Chelsea's 2026 Summer Transfer Window: Every Signing, Sale and Loan Rated - VAVEL.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQkFwSDR2M2xpQU9KVmlPR181M1RhNWs3bXNHSDQ4alpfTk9SeFlLRHJNeFpFVkFxSlRkakNCU1BuZmpMQWQwMHRlanRPaE05NkhKbFdfRDlfVEJ4eTF4N3lZWHpZYTRRU0EybGg2Nm5LSVgwM2sxZ0xLWXF0Y0FVcVZCbUVkMExnbGJOek5sVFBHN1lqb040RVhFa08tVUhJdVJLUVBaV3JoX3UwcUk1RXhnbVI2bEJ0OVZZM181X2dFcDjSAcgBQVVfeXFMTmQ0bm10WHpBMDAyLXVnTmZCdnZvN1NKcnF4MWRpUUQ0WnJBMHVuVlRkS29FdkdTVzFGMVpiMkp1UHBiRVZ2MHJ2b3FrR1ptNW82UDRyU0M3M2pxQnAzNVZaRjRMRTVkWlZOVVJTQU5PSldUU0NhdlNkMjBIM3ZZcXlmTm1VWjN3N09ITXFJak9Ia3lrT0puVThpQ2V4MmdtU0xQdVpVU2VMR0tsd2VESHAxUEtGZzJ6VEVsN29HUFk1MlJWNnc0Nkw?oc=5",
         "source": "Google News Premier League",
@@ -2039,7 +2039,7 @@
         "clubs": [
           "Everton"
         ],
-        "title": "Everton summer transfer window 2026: Every signing, sale & loan - Read Everton",
+        "title": "Everton summer transfer window 2026: Every signing, sale & loan - readeverton.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPR1FyTFBFUW51VTM0ZmVGRDQxRlZab25tMjRTdHQ5V3Z5aHV6Q2Eyam95QW5HemlPbEZvUDdMd0dhdHh1QjFmVy0yMmkyNW5pdVFQaEtBWlpOeTAtYkhsZURMcDYwNGlCWmpyd3lkem92V2FvU2NTN1FpU25tdVpDb0hFbw?oc=5",
         "source": "Google News Premier League",
@@ -3783,17 +3783,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Juventus to sign Premier League goalkeeper after Emiliano Martinez transfer collapses - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzI3RXpxS2NDWjFmWTlNOTlxcVlxZGZxYUZwTndreDIwcm5PR3J0Q29qVU5DRlVaOTdsbEFHR3dieFduNXdzT2hON3pocVlST2steG9WQmtISzBYYXJ4cHJreXBCUFBZZ0lnemhwQ0Y3U0lWQmlUVkRuMWxmeFRzNlBtcjBJNkdndnRVakw5eFhEVWQtY2IyZGZfalJCNU5hNWJCWWJZWEJocnJ1?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-17T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
         "title": "Premier League transfers 2026/27: Every club's confirmed summer deals - Flashscore.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQUZkSkFrUjNLRlk3MU9qZm9pRmhYZ2V6dEU4M2VyVVVTQ1NPbzRTdktDeVhzWktodGQ3QjFzWExOeThnSXR3c002UnlxdlZBODgwMnltaHM0Vy1yYkpkbjlRS3dFYk9qeFI1aUpXRzgyV2VPSzNBbG1yLW9OUVBXYnpobG9YUTRvOEVHNms1eklaWEdjODMtc1QwcG9LZ3ctNGR0UTBFeGFEQ1VfLURMNTl1enRWWDM0T2E0VS0za0dmdEhMcEN2T0xOS18?oc=5",
@@ -3861,19 +3850,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - London Evening Standard",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGNMSXBnWmltRVowT3ZQMkhZWWR2VGc0U3VRSVVmV05lamJMajhCSkdpT09oT000cW9sM2FJNGpOR2tjLXdwVk1OWENOd3g2YzZROUx5VVZNR2JETjl6MlRRVzhYcjZwMnFfRURPQTE3V3ZxWEEzZ3VUX0tFY2plYklFNWxpVS1TWmxVQzRPRHJMLXlCb1E?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-13T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Brighton",
           "Leicester City"
         ],
@@ -3883,6 +3859,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-13T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - London Evening Standard",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGNMSXBnWmltRVowT3ZQMkhZWWR2VGc0U3VRSVVmV05lamJMajhCSkdpT09oT000cW9sM2FJNGpOR2tjLXdwVk1OWENOd3g2YzZROUx5VVZNR2JETjl6MlRRVzhYcjZwMnFfRURPQTE3V3ZxWEEzZ3VUX0tFY2plYklFNWxpVS1TWmxVQzRPRHJMLXlCb1E?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -5006,19 +4995,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Arsenal"
-        ],
-        "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - The Mirror",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1psTGRWRWtCT3JCbnJncEg3a0ZVU3ctc1p4S3RDWGs3ZFdNbjQ4UldGSGtfODNKNWprXzg2dzdFTzRzTkVhZ2dXRHpMa3VyXzZYYThZWEJhQnlac0R0b3dCWE1WLXRsQlhNaV9hLU1La3V0S0hmRE40TEhfSzF1Y1RNZGFNVVl1UmxhTVB3blpvaExjVVNBZjNTWjI2dDh2a1RocNIBqgFBVV95cUxOUzlvbWNFcmRFRUd5ZnVlbUxaUHJkMUVVd0twVzIyMW1Qa0JRRU5Sa1I1MGhsN21IQzd6T1B4UkRtbGltUFJGVXdLODBwaVRRRk9GUllIUDFwQkEwRVJUVU9rZ0syWTUwclNKX0xFbTZpamgtRVVWRzdmbW1TYjRZSjRRcFFFTTVkdi1qQWlSYzJTUFdqRzFIUldqTGI2dWxNa2RJNDZFYWlPQQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-25T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Brighton",
           "Middlesbrough"
         ],
@@ -5026,6 +5002,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkJid1ptbjdGNWpJZEVaNjNhQzA2Qm54VUhiVDItRkhVSVg5QjczaVZXUDBGQVZtTElseEhJVDJmaHR1QVA3TnFDNVlIZHF4eVBILUNIa0FrMWhJVTNta290RGRPaHZZSEhkUW9HbUNiVUNjT0lyUWlsdzBMbXNMYjhBdkxQQ21BeEpveDNyTmtHNmdjVlJjWUwyckM5bUplTTFxR1BUaGdwQjhCT1FydG5uSVJCaTlxNzRtVi1ESF9EZ3RyN1lPaw?oc=5",
         "source": "Google News Championship",
+        "publishedAt": "2026-06-25T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - The Mirror",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1psTGRWRWtCT3JCbnJncEg3a0ZVU3ctc1p4S3RDWGs3ZFdNbjQ4UldGSGtfODNKNWprXzg2dzdFTzRzTkVhZ2dXRHpMa3VyXzZYYThZWEJhQnlac0R0b3dCWE1WLXRsQlhNaV9hLU1La3V0S0hmRE40TEhfSzF1Y1RNZGFNVVl1UmxhTVB3blpvaExjVVNBZjNTWjI2dDh2a1RocNIBqgFBVV95cUxOUzlvbWNFcmRFRUd5ZnVlbUxaUHJkMUVVd0twVzIyMW1Qa0JRRU5Sa1I1MGhsN21IQzd6T1B4UkRtbGltUFJGVXdLODBwaVRRRk9GUllIUDFwQkEwRVJUVU9rZ0syWTUwclNKX0xFbTZpamgtRVVWRzdmbW1TYjRZSjRRcFFFTTVkdi1qQWlSYzJTUFdqRzFIUldqTGI2dWxNa2RJNDZFYWlPQQ?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-06-25T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -5494,7 +5483,7 @@
         "clubs": [
           "Liverpool"
         ],
-        "title": "Liverpool confirms latest transfer move as Championship club eyes late swoop - Liverpool.com",
+        "title": "Liverpool confirms latest transfer move as Championship club eyes late swoop - liverpool.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYkpFc2ZvdUF0VlFIcjc0Z3NDcnhoeTdFQzVfWkotUWZrZEpFV3Y5bmt0OUhEVXNtbDA1akhCaWZuei00Nm9MNXgxSnBueVRkRm51QkthQzF2b1dSOWxTanp4cFE2UlZ4bUk3dFlNMmJNQ0EyRG1uS2VkYzZ1TFpOQlE4Y0NUMmFJdXhrT0ZyMjZxSENFMGI5RFY4WFZfNTjSAaQBQVVfeXFMUEVBcVlzM09DYl9uVEhXbC0wMUtseGFqczZDbkdXSUYwNjAzSnM3R25OZEo5MkZqOVlPcTBEbTMzVDJwZERITXduZzRWSmZQSnFUdm9Yc2RrUDZHdkdXTjB6T0J0MTAwYnF6SkxDcUxiNEF0T19ZTUZlQ3lmNWxyVDVLdWhleWpnZ1YyLWEzbDUtdFpJX0dOV0NvVmVWSks3WmticGE?oc=5",
         "source": "Google News Championship",
@@ -10982,7 +10971,7 @@
         "title": "Leicester complete signing of Premier League winger for cheap five-figure fee - talkSPORT",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVmE1RmVud0NaUzZFUm9aaEl1MXE3dzZKbmZDR1dnTEFLOWV0UmZUTTA2Wk9kc0RCQm1IbUdIdDZrV1NsTC1Nal9obXl3S3NMdFR2aUJHRENiWGpweFp2NGR2U2hRZlFxY3dPR3BzanlGT0tnaUltb09QV3JLYm5LdjViUEVYRVZKVkQw?oc=5",
-        "source": "Google News Premier League",
+        "source": "Google News League One",
         "publishedAt": "2026-08-05T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -11158,10 +11147,8 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [
-          "Mansfield Town"
-        ],
-        "title": "Here's the latest transfer news from around League One - Mansfield and Ashfield Chad",
+        "clubs": [],
+        "title": "Here's the latest transfer news from around League One - chad.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOLUtlcUMzUXlDcjFpSkNWemo5WVVlTGlGWU1Fd1djNUpVZTJFRmp0b1RmVHNCQV9JMTJLTjltbWxiZHhrTTNZa3ZhRi0tOGZoR2ZvTEp3SWljbEtjanRQVUV5TnlFc3ZhS3EtUURzRUowNEllQk5GdkVNN3l4SVZ0LWVqdG8zMVZWNnN3RXcwR0FQWlVBNlhVR0prR1VFNXpXUlBfZmQ4ZW1NaU1wMWpLQ25lQnhvNWkwTkxSdUJBbVBFdXI2UHc1NDFoSzhaWFp3dGlPY2pPRFI5cTJnS2NxMWFJQU1aeGhYTmpoSXJrd2s0R3EtaVpHNmhtV2dRQ1loeUxjWVNpWTdEeXlvMDV2WWdsMTdQb1hMdVNrbA?oc=5",
         "source": "Google News League One",
@@ -11360,7 +11347,7 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [],
-        "title": "January 2024 Goalkeeper Transfer Tracker - goalkeeper.com",
+        "title": "January 2024 Goalkeeper Transfer Tracker - Goalkeeper.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM0hPX3hqT3d5YWpZelc5d3JWeFdmTGZDSmlkTFE4NEhOQzlLcG16cVhoZVF4ZldRaW50R3JaZ0ZCUDBwU3RPTVNlVlY2MU5Ncm9jOF9RcVpVN3lNTVRZeDFEN280cHczd19TS3lVb2s2VmtyNVc1WmpPNHpGemR2cG1RRWczVlRxU0w0bWJJemtYb3l2cm9DUW9YRVJiZlk?oc=5",
         "source": "Google News League One",
