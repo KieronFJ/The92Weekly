@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-10T01:06:51.596Z",
+  "updatedAt": "2026-09-10T01:19:24.621Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-10T01:06:51.483Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -28,7 +15,20 @@
         "summary": "The top stories and transfer rumours from Thursday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13583799/liverpool-transfer-news-as-roma-midfielder-manu-kone-on-anfield-radar-ahaed-of-january-transfer-window-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-10T01:06:51.483Z",
+        "publishedAt": "2026-09-10T01:19:24.444Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-10T01:19:24.443Z",
         "status": "Rumour"
       },
       {
@@ -2465,7 +2465,7 @@
           "Manchester City",
           "Tottenham"
         ],
-        "title": "Every confirmed Premier League summer transfer as Man City and Spurs seal deadline day deals - Daily Mirror",
+        "title": "Every confirmed Premier League summer transfer as Man City and Spurs seal deadline day deals - The Mirror",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFhVd3pKekJ1c1lTQ2ZLN085WU9QZ21kd21lX0NaT0l6OWVFSWpXVVFpdlV4dU5taWIwZlFFQWFtTkF6eGI5TDlvWFcwN1VNektlRFJaMDJmekJhNEUxNjBYT2dXYmRCOHN4RGs4amQwdmxrc0JoXzY0enJWXzhjbkNSay1MbUppVU1TWWgtdGlNN1pGNTIyb3J2TnF3d9IBowFBVV95cUxQTExfeEVmakx0Q0F0SHF1VUpheFQ0czJad29Ob2tpeHNKb1FSVmV2VVM2czg1Vm1BckpHcHExYWFzRDhOSUI2djI5a2o5YUwyM1NGNTljTzlXY2FnZGFmOFVYaG1VOFF1dTZFeVZIaEdnVS1tNjh4ZTJBVTJWeXJQaG5iODY4d0ljMms3NmtGWTZ1QUZuLXhxWHJRUV9CYldMUkdz?oc=5",
         "source": "Google News Premier League",
@@ -5051,7 +5051,7 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - Daily Mirror",
+        "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - The Mirror",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1psTGRWRWtCT3JCbnJncEg3a0ZVU3ctc1p4S3RDWGs3ZFdNbjQ4UldGSGtfODNKNWprXzg2dzdFTzRzTkVhZ2dXRHpMa3VyXzZYYThZWEJhQnlac0R0b3dCWE1WLXRsQlhNaV9hLU1La3V0S0hmRE40TEhfSzF1Y1RNZGFNVVl1UmxhTVB3blpvaExjVVNBZjNTWjI2dDh2a1RocNIBqgFBVV95cUxOUzlvbWNFcmRFRUd5ZnVlbUxaUHJkMUVVd0twVzIyMW1Qa0JRRU5Sa1I1MGhsN21IQzd6T1B4UkRtbGltUFJGVXdLODBwaVRRRk9GUllIUDFwQkEwRVJUVU9rZ0syWTUwclNKX0xFbTZpamgtRVVWRzdmbW1TYjRZSjRRcFFFTTVkdi1qQWlSYzJTUFdqRzFIUldqTGI2dWxNa2RJNDZFYWlPQQ?oc=5",
         "source": "Google News Premier League",
@@ -5720,7 +5720,7 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal issue transfer statement as agreement officially reached before move - Daily Mirror",
+        "title": "Arsenal issue transfer statement as agreement officially reached before move - The Mirror",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3JCU1FYRDZfRkpseHZMMnBWUkxZTVdmUjhxMU5tdUNlaFQzWWZhTTNvdjRFMDQ1eGw5TUVvZjZGeS1VaExxajlCYnhjbVM2aEJkcV9COFE3LTRQdmJqVjVoa016Z2JrbnNJWnU2bkhCR2RfWlI3QTZuZEtWQnMyeHFuejdJLWFtWDRCV1p0MjU3ajJHWFVXWmdMblhIdFBoUFdOVUJn0gGrAUFVX3lxTE42RVhleHB5bXZJQkFIX1VYdFhZS3czRUNhSlVKdDRsM3VtcmxtcDBfQ2J2akVBTXFiNGxIS2VyczJ1RDZDLWJjQ1gwU1A5VHcwRTN0T2piRTFYdkg3LWN5RVUxUmR4RXoxTkY2aEE2ZVpUQzFnX0V6Rk1xTjV1Y0s5blRlYVEzazFSb1phUkRjRk5jTVkzOHdKbGFIaVhnTWpPcW4tUFJzNFJRTQ?oc=5",
         "source": "Google News League Two",
@@ -6796,20 +6796,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Derby County",
-          "West Bromwich Albion"
-        ],
-        "title": "West Brom win with 10 men at Derby to move top of Championship",
-        "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
-        "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-10T01:06:51.483Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Charlton Athletic",
           "Queens Park Rangers"
         ],
@@ -6817,7 +6803,21 @@
         "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
         "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-10T01:06:51.483Z",
+        "publishedAt": "2026-09-10T01:19:24.444Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Derby County",
+          "West Bromwich Albion"
+        ],
+        "title": "West Brom win with 10 men at Derby to move top of Championship",
+        "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
+        "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-10T01:19:24.443Z",
         "status": "Rumour"
       },
       {
@@ -12374,7 +12374,7 @@
           "Gillingham",
           "Oldham Athletic"
         ],
-        "title": "Every transfer in League Two so far as Oldham Athletic and Gillingham seal early deals - bristolpost.co.uk",
+        "title": "Every transfer in League Two so far as Oldham Athletic and Gillingham seal early deals - Bristol Live",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdUVUaDByMjNyd3hIM0V2bFctamJ1alRrM0dQeG5pSjN3ck5mYTdMT1VmeUoyX3htMjNGbFVnRWdubEk5LXNiSzRCUUtoanNCTGtMWk9NSVRzWWI0TWxubzcwMXBTYld2cXNRWHZmbUpQS3pXNlY3eGRfTm80UkY4LWNELXlySmdZRndIOGljTzVGVHN2c1lfS1d6X24xdw?oc=5",
         "source": "Google News League Two",
@@ -12400,7 +12400,7 @@
         "clubs": [
           "Bristol Rovers"
         ],
-        "title": "Kofi Balmer and Richie Smallwood to sign pre-contracts for Bristol Rovers - bristolpost.co.uk",
+        "title": "Kofi Balmer and Richie Smallwood to sign pre-contracts for Bristol Rovers - Bristol Live",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaGJUWV9kMFNSMzhhc2ZLY3pZeVpWT0lqVi12c0dXbFJiSDNEUmxLYnFwZUlRY3NyeEp0S0RFVTZ5OHYxZndNTE1QU3pPeFcxQWNJOTUwYmlFak9UZ3dPNzY3VXYxUng4Qll3UFJCd1BiUWYxR3g0aWlwT3Z0dThkX3ZHR0dOdVExVlFkOVdJUGMtemlVX2JJX2FXVGlrU3ZnT0xIclRGNl82YXct?oc=5",
         "source": "Google News League One",
