@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T20:29:05.122Z",
+  "updatedAt": "2026-09-10T20:40:13.798Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6575,8 +6575,8 @@
       "type": "league",
       "date": "2026-09-10T19:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "60'",
       "home": {
         "id": "285",
         "name": "Stevenage",
