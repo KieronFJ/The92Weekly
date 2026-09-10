@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T21:17:11.420Z",
+  "updatedAt": "2026-09-10T21:27:07.823Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6574,21 +6574,85 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-10T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "285",
         "name": "Stevenage",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "301",
         "name": "Luton Town",
-        "score": null
+        "score": 1
       },
       "venue": "Lamex Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Daniel Kemp",
+          "minute": "23'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Josh Magennis",
+          "minute": "70'",
+          "team": "Stevenage",
+          "ownGoal": false
+        },
+        {
+          "player": "Mads Andersen",
+          "minute": "75'",
+          "team": "Luton Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Daniel Phillips",
+          "minute": "4'",
+          "team": "Stevenage",
+          "card": "yellow"
+        },
+        {
+          "player": "Lewis Freestone",
+          "minute": "26'",
+          "team": "Stevenage",
+          "card": "yellow"
+        },
+        {
+          "player": "Liam Walsh",
+          "minute": "30'",
+          "team": "Luton Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Daniel Kemp",
+          "minute": "44'",
+          "team": "Stevenage",
+          "card": "yellow"
+        },
+        {
+          "player": "Saxon Earley",
+          "minute": "80'",
+          "team": "Stevenage",
+          "card": "yellow"
+        },
+        {
+          "player": "Luther Wildin",
+          "minute": "90'+3'",
+          "team": "Stevenage",
+          "card": "yellow"
+        },
+        {
+          "player": "Mads Andersen",
+          "minute": "90'+5'",
+          "team": "Luton Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880257",
