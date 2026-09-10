@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-09-10T06:26:01.539Z",
+  "updatedAt": "2026-09-10T06:26:32.297Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-10T06:26:32.163Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -15,20 +28,7 @@
         "summary": "The top stories and transfer rumours from Thursday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13583799/liverpool-transfer-news-as-roma-midfielder-manu-kone-on-anfield-radar-ahaed-of-january-transfer-window-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-10T06:26:01.401Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-10T06:26:01.400Z",
+        "publishedAt": "2026-09-10T06:26:32.163Z",
         "status": "Rumour"
       },
       {
@@ -2084,8 +2084,8 @@
         ],
         "title": "Swansea City transfer news: Manchester City winger Jeremy Monga joins on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0Rk9WQXhKWGVGeFRzYUJiM2trOTlVc0FjODEwTVd1SEc1dl92VmNNNC1aZ2M0b1FpeUJSN013M3B1UnZyMFhIeFVNSjJ6TUNzb2VuRkJMUkRmdkp2TEYyRUtUNTMybWs?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GSzBQeXRVVGVJZVRTNVJYNXdvRFJFd1VxRWxaa09DbHNia0l2TTVsMDRDTklsS1I3b2cxSWNCUkcwR001dXBSRkZodHpDYWVPNFFxMV8xbGVSUjJ6d012MVZkWjhiOWVVMWc?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-09-02T09:01:18.000Z",
         "status": "Loan"
       },
@@ -2098,8 +2098,8 @@
         ],
         "title": "Swansea City transfer news: Manchester City winger Jeremy Monga joins on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GSzBQeXRVVGVJZVRTNVJYNXdvRFJFd1VxRWxaa09DbHNia0l2TTVsMDRDTklsS1I3b2cxSWNCUkcwR001dXBSRkZodHpDYWVPNFFxMV8xbGVSUjJ6d012MVZkWjhiOWVVMWc?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0Rk9WQXhKWGVGeFRzYUJiM2trOTlVc0FjODEwTVd1SEc1dl92VmNNNC1aZ2M0b1FpeUJSN013M3B1UnZyMFhIeFVNSjJ6TUNzb2VuRkJMUkRmdkp2TEYyRUtUNTMybWs?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-09-02T09:01:18.000Z",
         "status": "Loan"
       },
@@ -6902,20 +6902,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Charlton Athletic",
-          "Queens Park Rangers"
-        ],
-        "title": "QPR miss chance to move top after goalless draw at Charlton",
-        "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
-        "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-10T06:26:01.401Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Derby County",
           "West Bromwich Albion"
         ],
@@ -6923,7 +6909,21 @@
         "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
         "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-10T06:26:01.400Z",
+        "publishedAt": "2026-09-10T06:26:32.163Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Charlton Athletic",
+          "Queens Park Rangers"
+        ],
+        "title": "QPR miss chance to move top after goalless draw at Charlton",
+        "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
+        "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-10T06:26:32.163Z",
         "status": "Rumour"
       },
       {
