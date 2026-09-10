@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-10T05:45:37.660Z",
+  "updatedAt": "2026-09-10T05:46:26.280Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-10T05:45:37.477Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -28,7 +15,20 @@
         "summary": "The top stories and transfer rumours from Thursday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13583799/liverpool-transfer-news-as-roma-midfielder-manu-kone-on-anfield-radar-ahaed-of-january-transfer-window-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-10T05:45:37.477Z",
+        "publishedAt": "2026-09-10T05:46:26.142Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "Everton latest: Short in key positions? The cost of the transfer window assessed",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-10T05:46:26.141Z",
         "status": "Rumour"
       },
       {
@@ -6873,20 +6873,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Derby County",
-          "West Bromwich Albion"
-        ],
-        "title": "West Brom win with 10 men at Derby to move top of Championship",
-        "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
-        "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-10T05:45:37.477Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Charlton Athletic",
           "Queens Park Rangers"
         ],
@@ -6894,7 +6880,21 @@
         "summary": "QPR missed the chance to go top of the Championship table as they were held to a 0-0 draw at Charlton.",
         "link": "https://www.skysports.com/football/charlton-athletic-vs-queens-park-rangers/report/560566",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-10T05:45:37.477Z",
+        "publishedAt": "2026-09-10T05:46:26.142Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Derby County",
+          "West Bromwich Albion"
+        ],
+        "title": "West Brom win with 10 men at Derby to move top of Championship",
+        "summary": "West Brom celebrated a memorable 1-0 victory over Derby at Pride Park after playing for more than an hour with 10 men.",
+        "link": "https://www.skysports.com/football/derby-county-vs-west-bromwich-albion/report/560567",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-10T05:46:26.141Z",
         "status": "Rumour"
       },
       {
