@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T14:19:54.190Z",
+  "updatedAt": "2026-09-10T14:32:48.309Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -21609,6 +21609,28 @@
       "source": "ESPN"
     },
     {
+      "id": "401878737",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-26T12:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, December 26th at 7:30 AM EST",
+      "home": {
+        "id": "362",
+        "name": "Aston Villa",
+        "score": null
+      },
+      "away": {
+        "id": "357",
+        "name": "Leeds United",
+        "score": null
+      },
+      "venue": "Villa Park",
+      "source": "ESPN"
+    },
+    {
       "id": "401880075",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -21650,72 +21672,6 @@
         "score": null
       },
       "venue": "Bramall Lane",
-      "source": "ESPN"
-    },
-    {
-      "id": "401878737",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-26T15:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, December 26th at 10:00 AM EST",
-      "home": {
-        "id": "362",
-        "name": "Aston Villa",
-        "score": null
-      },
-      "away": {
-        "id": "357",
-        "name": "Leeds United",
-        "score": null
-      },
-      "venue": "Villa Park",
-      "source": "ESPN"
-    },
-    {
-      "id": "401878736",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-26T15:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, December 26th at 10:00 AM EST",
-      "home": {
-        "id": "388",
-        "name": "Coventry City",
-        "score": null
-      },
-      "away": {
-        "id": "363",
-        "name": "Chelsea",
-        "score": null
-      },
-      "venue": "Coventry Building Society Arena",
-      "source": "ESPN"
-    },
-    {
-      "id": "401878735",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-26T15:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, December 26th at 10:00 AM EST",
-      "home": {
-        "id": "384",
-        "name": "Crystal Palace",
-        "score": null
-      },
-      "away": {
-        "id": "359",
-        "name": "Arsenal",
-        "score": null
-      },
-      "venue": "Selhurst Park",
       "source": "ESPN"
     },
     {
@@ -21763,28 +21719,6 @@
       "source": "ESPN"
     },
     {
-      "id": "401878733",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-26T15:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, December 26th at 10:00 AM EST",
-      "home": {
-        "id": "306",
-        "name": "Hull City",
-        "score": null
-      },
-      "away": {
-        "id": "364",
-        "name": "Liverpool",
-        "score": null
-      },
-      "venue": "The MKM Stadium",
-      "source": "ESPN"
-    },
-    {
       "id": "401879196",
       "competition": "Premier League",
       "competitionCode": "eng.1",
@@ -21804,50 +21738,6 @@
         "score": null
       },
       "venue": "Portman Road",
-      "source": "ESPN"
-    },
-    {
-      "id": "401879195",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-26T15:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, December 26th at 10:00 AM EST",
-      "home": {
-        "id": "360",
-        "name": "Manchester United",
-        "score": null
-      },
-      "away": {
-        "id": "393",
-        "name": "Nottingham Forest",
-        "score": null
-      },
-      "venue": "Old Trafford",
-      "source": "ESPN"
-    },
-    {
-      "id": "401878732",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-26T15:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, December 26th at 10:00 AM EST",
-      "home": {
-        "id": "361",
-        "name": "Newcastle United",
-        "score": null
-      },
-      "away": {
-        "id": "382",
-        "name": "Manchester City",
-        "score": null
-      },
-      "venue": "St. James' Park",
       "source": "ESPN"
     },
     {
@@ -22621,6 +22511,116 @@
       "source": "ESPN"
     },
     {
+      "id": "401878733",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-26T17:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, December 26th at 12:30 PM EST",
+      "home": {
+        "id": "306",
+        "name": "Hull City",
+        "score": null
+      },
+      "away": {
+        "id": "364",
+        "name": "Liverpool",
+        "score": null
+      },
+      "venue": "The MKM Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401878732",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-26T20:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, December 26th at 3:00 PM EST",
+      "home": {
+        "id": "361",
+        "name": "Newcastle United",
+        "score": null
+      },
+      "away": {
+        "id": "382",
+        "name": "Manchester City",
+        "score": null
+      },
+      "venue": "St. James' Park",
+      "source": "ESPN"
+    },
+    {
+      "id": "401878736",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-27T14:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, December 27th at 9:00 AM EST",
+      "home": {
+        "id": "388",
+        "name": "Coventry City",
+        "score": null
+      },
+      "away": {
+        "id": "363",
+        "name": "Chelsea",
+        "score": null
+      },
+      "venue": "Coventry Building Society Arena",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879195",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-27T16:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, December 27th at 11:30 AM EST",
+      "home": {
+        "id": "360",
+        "name": "Manchester United",
+        "score": null
+      },
+      "away": {
+        "id": "393",
+        "name": "Nottingham Forest",
+        "score": null
+      },
+      "venue": "Old Trafford",
+      "source": "ESPN"
+    },
+    {
+      "id": "401878735",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-27T19:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sun, December 27th at 2:00 PM EST",
+      "home": {
+        "id": "384",
+        "name": "Crystal Palace",
+        "score": null
+      },
+      "away": {
+        "id": "359",
+        "name": "Arsenal",
+        "score": null
+      },
+      "venue": "Selhurst Park",
+      "source": "ESPN"
+    },
+    {
       "id": "401879666",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -22640,6 +22640,50 @@
         "score": null
       },
       "venue": "STōK Cae Ras",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879190",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-29T19:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, December 29th at 2:30 PM EST",
+      "home": {
+        "id": "306",
+        "name": "Hull City",
+        "score": null
+      },
+      "away": {
+        "id": "357",
+        "name": "Leeds United",
+        "score": null
+      },
+      "venue": "The MKM Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879186",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-29T19:30Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, December 29th at 2:30 PM EST",
+      "home": {
+        "id": "367",
+        "name": "Tottenham Hotspur",
+        "score": null
+      },
+      "away": {
+        "id": "331",
+        "name": "Brighton & Hove Albion",
+        "score": null
+      },
+      "venue": "Tottenham Hotspur Stadium",
       "source": "ESPN"
     },
     {
@@ -23391,6 +23435,28 @@
       "source": "ESPN"
     },
     {
+      "id": "401879192",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-29T20:15Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, December 29th at 3:15 PM EST",
+      "home": {
+        "id": "368",
+        "name": "Everton",
+        "score": null
+      },
+      "away": {
+        "id": "382",
+        "name": "Manchester City",
+        "score": null
+      },
+      "venue": "Hill Dickinson Stadium",
+      "source": "ESPN"
+    },
+    {
       "id": "401879670",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -23413,36 +23479,14 @@
       "source": "ESPN"
     },
     {
-      "id": "401879194",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-30T20:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
-      "home": {
-        "id": "362",
-        "name": "Aston Villa",
-        "score": null
-      },
-      "away": {
-        "id": "364",
-        "name": "Liverpool",
-        "score": null
-      },
-      "venue": "Villa Park",
-      "source": "ESPN"
-    },
-    {
       "id": "401878730",
       "competition": "Premier League",
       "competitionCode": "eng.1",
       "type": "league",
-      "date": "2026-12-30T20:00Z",
+      "date": "2026-12-30T19:30Z",
       "completed": false,
       "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
+      "statusDetail": "Wed, December 30th at 2:30 PM EST",
       "home": {
         "id": "388",
         "name": "Coventry City",
@@ -23461,10 +23505,10 @@
       "competition": "Premier League",
       "competitionCode": "eng.1",
       "type": "league",
-      "date": "2026-12-30T20:00Z",
+      "date": "2026-12-30T19:30Z",
       "completed": false,
       "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
+      "statusDetail": "Wed, December 30th at 2:30 PM EST",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
@@ -23479,36 +23523,14 @@
       "source": "ESPN"
     },
     {
-      "id": "401879192",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-30T20:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
-      "home": {
-        "id": "368",
-        "name": "Everton",
-        "score": null
-      },
-      "away": {
-        "id": "382",
-        "name": "Manchester City",
-        "score": null
-      },
-      "venue": "Hill Dickinson Stadium",
-      "source": "ESPN"
-    },
-    {
       "id": "401879191",
       "competition": "Premier League",
       "competitionCode": "eng.1",
       "type": "league",
-      "date": "2026-12-30T20:00Z",
+      "date": "2026-12-30T19:30Z",
       "completed": false,
       "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
+      "statusDetail": "Wed, December 30th at 2:30 PM EST",
       "home": {
         "id": "370",
         "name": "Fulham",
@@ -23523,58 +23545,14 @@
       "source": "ESPN"
     },
     {
-      "id": "401879190",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-30T20:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
-      "home": {
-        "id": "306",
-        "name": "Hull City",
-        "score": null
-      },
-      "away": {
-        "id": "357",
-        "name": "Leeds United",
-        "score": null
-      },
-      "venue": "The MKM Stadium",
-      "source": "ESPN"
-    },
-    {
-      "id": "401879189",
-      "competition": "Premier League",
-      "competitionCode": "eng.1",
-      "type": "league",
-      "date": "2026-12-30T20:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
-      "home": {
-        "id": "373",
-        "name": "Ipswich Town",
-        "score": null
-      },
-      "away": {
-        "id": "363",
-        "name": "Chelsea",
-        "score": null
-      },
-      "venue": "Portman Road",
-      "source": "ESPN"
-    },
-    {
       "id": "401879188",
       "competition": "Premier League",
       "competitionCode": "eng.1",
       "type": "league",
-      "date": "2026-12-30T20:00Z",
+      "date": "2026-12-30T19:30Z",
       "completed": false,
       "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
+      "statusDetail": "Wed, December 30th at 2:30 PM EST",
       "home": {
         "id": "360",
         "name": "Manchester United",
@@ -23593,10 +23571,10 @@
       "competition": "Premier League",
       "competitionCode": "eng.1",
       "type": "league",
-      "date": "2026-12-30T20:00Z",
+      "date": "2026-12-30T19:30Z",
       "completed": false,
       "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
+      "statusDetail": "Wed, December 30th at 2:30 PM EST",
       "home": {
         "id": "361",
         "name": "Newcastle United",
@@ -23611,25 +23589,47 @@
       "source": "ESPN"
     },
     {
-      "id": "401879186",
+      "id": "401879194",
       "competition": "Premier League",
       "competitionCode": "eng.1",
       "type": "league",
-      "date": "2026-12-30T20:00Z",
+      "date": "2026-12-30T20:15Z",
       "completed": false,
       "status": "STATUS_SCHEDULED",
-      "statusDetail": "Wed, December 30th at 3:00 PM EST",
+      "statusDetail": "Wed, December 30th at 3:15 PM EST",
       "home": {
-        "id": "367",
-        "name": "Tottenham Hotspur",
+        "id": "362",
+        "name": "Aston Villa",
         "score": null
       },
       "away": {
-        "id": "331",
-        "name": "Brighton & Hove Albion",
+        "id": "364",
+        "name": "Liverpool",
         "score": null
       },
-      "venue": "Tottenham Hotspur Stadium",
+      "venue": "Villa Park",
+      "source": "ESPN"
+    },
+    {
+      "id": "401879189",
+      "competition": "Premier League",
+      "competitionCode": "eng.1",
+      "type": "league",
+      "date": "2026-12-30T20:15Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Wed, December 30th at 3:15 PM EST",
+      "home": {
+        "id": "373",
+        "name": "Ipswich Town",
+        "score": null
+      },
+      "away": {
+        "id": "363",
+        "name": "Chelsea",
+        "score": null
+      },
+      "venue": "Portman Road",
       "source": "ESPN"
     },
     {
