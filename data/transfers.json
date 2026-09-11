@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-11T13:36:39.553Z",
+  "updatedAt": "2026-09-11T13:46:57.997Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Tottenham"
-        ],
-        "title": "Tottenham latest: Bergvall signs new deal - two months after asking to leave",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13025489/tottenham-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-11T13:36:39.363Z",
-        "status": "Confirmed"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -27,7 +14,7 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13025497/chelsea-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-11T13:36:39.363Z",
+        "publishedAt": "2026-09-11T13:46:57.812Z",
         "status": "Confirmed"
       },
       {
@@ -41,8 +28,21 @@
         "summary": "Lewis Hall&#160;has signed a new long-term contract at&#160;Newcastle United.",
         "link": "https://www.skysports.com/football/news/12040/13584251/lewis-hall-newcastle-united-left-back-signs-long-term-contract-at-st-james-park",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-11T13:36:39.363Z",
+        "publishedAt": "2026-09-11T13:46:57.812Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Tottenham latest: Bergvall signs new deal - two months after asking to leave",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13025489/tottenham-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-11T13:36:39.363Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -2448,7 +2448,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - si.com",
+        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - Sports Illustrated",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeU5LaUx3WUhaVEpXdFhSUTJrUDFzT0s1TWs1TXhJeV9uY1pWd2Rfb3V4WlI1bVZDRTNoVVFjNEszMW5IQVZwSWgtbGt5dHVXck1oNEhGdUV5b1ZxZHZHaGV0cjFYYVVyMXdIZ0FFUlJDMlJxV2dLeHU4TFRYNzI0Mw?oc=5",
         "source": "Google News Premier League",
@@ -4048,19 +4048,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City midfielder close to exit as new signing confirmed - Manchester Evening News",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTnMzZUV0YlNNbXNUMWhpcVBfbmFNakV3eTl1RmZ2QjgxbW4zYzB6SWw1TU5aVU5JZ0xNWXpjbjhSOWsyTTVHdjd5RndpQ0lMc1ZIa3NqMmFIT2M4a0s1c2xfa1lodE1MWmJzdW4wU0pZNW4zak9LYWxickZaTm5yTnpQVW10SkVFcGoyS1pLN2p6WFVoM3hlLXQ3QlF0cXd3dG9LbklUSk5wRTRB?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-20T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City",
           "West Ham United"
         ],
@@ -4070,6 +4057,19 @@
         "source": "Google News Championship",
         "publishedAt": "2026-08-20T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City midfielder close to exit as new signing confirmed - Manchester Evening News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTnMzZUV0YlNNbXNUMWhpcVBfbmFNakV3eTl1RmZ2QjgxbW4zYzB6SWw1TU5aVU5JZ0xNWXpjbjhSOWsyTTVHdjd5RndpQ0lMc1ZIa3NqMmFIT2M4a0s1c2xfa1lodE1MWmJzdW4wU0pZNW4zak9LYWxickZaTm5yTnpQVW10SkVFcGoyS1pLN2p6WFVoM3hlLXQ3QlF0cXd3dG9LbklUSk5wRTRB?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-20T07:00:00.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -5902,13 +5902,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea",
-          "Wolverhampton Wanderers"
+          "Manchester United"
         ],
-        "title": "Transfer news and rumours: Wolves 'closing' on first signing, Chelsea outcast to join Auxerre? - Sports Mole",
+        "title": "Man United confirm next transfer as three deals done in 24 hours before deadline - Manchester Evening News",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM3JGWFhmVHRiWXhrOFZoTlBpdGlkd05Fa19lcTdPb3hjOF9rU25WcWdIYXVlby1VX3NxczVYV3dHVlZIWmRvLWlMNEpwdmR1bVFRRkp3Z09QUEJnMUZMN1hFeWl1RW45cjBpRmd5V1NfQWFaclFTQlo2ZHNBVUpnOG9SdGdnSFJjYkltMFBibmRmRHhYdzVXRVduOFBFQ3U2XzMtMUdGZ29VSGlTM3RLTFJzVmJ3MFdib1ZzQm0tWnhVQ3FUY3k2Sy0wck9jSnd5SENoY2FPUG44T3A4MHo5MFpqN3NhZEwxRXIwSTlHcldNQ3gy?oc=5",
-        "source": "Google News League One",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHAwSksxek5WNVJjN3A3MXdVV0tvcEtBcmZHVzlGZDRxa1Nra3d0LUgtbjltSmxuX0lTVlNLdGYzSDd3Q1RRSU42ZFVxb2h6SGhGTklUc0pjTVB3eUhmYk1UMU1qeU9QNGstRlF5YXMwaHZzMEVOY1Z0RHU5OG5wZHJLRXZ1c0Vsdmpub0hDdV91dEpxLVQ5MzJISTdmQnlXZk1jUDFHX3hFS1pDTndN0gG0AUFVX3lxTE1MTENhNVBpSlF4cTd6Sko2TlBhWXdOeUxGX2xiWjU4cUlELVlBWTFzY3R6WG1yV29CS0pMNTgyZElraTRuak03by1kbmc4ZGZ4Z2hKajdSTXV3NWJacHdEN3E4dUpIYVdMVldFZERhVWJjUFk5bVJOY1lyQ0VmbFpMcnR0ZEJ5T0pMUWJIdUNoQzR6aHZiZ3pCVHFqaGktRWVCNVpNMFRXNFd0cnNHa2FCNW5EcQ?oc=5",
+        "source": "Google News League Two",
         "publishedAt": "2026-02-01T08:00:00.000Z",
         "status": "Rumour"
       },
@@ -5916,12 +5915,13 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester United"
+          "Chelsea",
+          "Wolverhampton Wanderers"
         ],
-        "title": "Man United confirm next transfer as three deals done in 24 hours before deadline - Manchester Evening News",
+        "title": "Transfer news and rumours: Wolves 'closing' on first signing, Chelsea outcast to join Auxerre? - Sports Mole",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHAwSksxek5WNVJjN3A3MXdVV0tvcEtBcmZHVzlGZDRxa1Nra3d0LUgtbjltSmxuX0lTVlNLdGYzSDd3Q1RRSU42ZFVxb2h6SGhGTklUc0pjTVB3eUhmYk1UMU1qeU9QNGstRlF5YXMwaHZzMEVOY1Z0RHU5OG5wZHJLRXZ1c0Vsdmpub0hDdV91dEpxLVQ5MzJISTdmQnlXZk1jUDFHX3hFS1pDTndN0gG0AUFVX3lxTE1MTENhNVBpSlF4cTd6Sko2TlBhWXdOeUxGX2xiWjU4cUlELVlBWTFzY3R6WG1yV29CS0pMNTgyZElraTRuak03by1kbmc4ZGZ4Z2hKajdSTXV3NWJacHdEN3E4dUpIYVdMVldFZERhVWJjUFk5bVJOY1lyQ0VmbFpMcnR0ZEJ5T0pMUWJIdUNoQzR6aHZiZ3pCVHFqaGktRWVCNVpNMFRXNFd0cnNHa2FCNW5EcQ?oc=5",
-        "source": "Google News League Two",
+        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM3JGWFhmVHRiWXhrOFZoTlBpdGlkd05Fa19lcTdPb3hjOF9rU25WcWdIYXVlby1VX3NxczVYV3dHVlZIWmRvLWlMNEpwdmR1bVFRRkp3Z09QUEJnMUZMN1hFeWl1RW45cjBpRmd5V1NfQWFaclFTQlo2ZHNBVUpnOG9SdGdnSFJjYkltMFBibmRmRHhYdzVXRVduOFBFQ3U2XzMtMUdGZ29VSGlTM3RLTFJzVmJ3MFdib1ZzQm0tWnhVQ3FUY3k2Sy0wck9jSnd5SENoY2FPUG44T3A4MHo5MFpqN3NhZEwxRXIwSTlHcldNQ3gy?oc=5",
+        "source": "Google News League One",
         "publishedAt": "2026-02-01T08:00:00.000Z",
         "status": "Rumour"
       },
@@ -9728,7 +9728,7 @@
         "clubs": [
           "Wrexham"
         ],
-        "title": "Wrexham Striker Seals Move to Championship Rivals - si.com",
+        "title": "Wrexham Striker Seals Move to Championship Rivals - Sports Illustrated",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40TDF1SGJjRVhDZS1XdTNheW14SHJxcDNFelZGVzI1dDE4T1VmWTlwa09abjZ0OVQ2MUZTWUItd19naXdjMzhWN3JDWkFkX290ejFpUlVaV1ZPYzA5YXFGZVl1VnVMX0tyTmhtV0dWZWZBV1Jy?oc=5",
         "source": "Google News Championship",
@@ -10219,17 +10219,6 @@
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zUGhxQlJJcEJXRjM0UHJtc2U4TnZVWHdieWdheTdLUllkRXpNLWRJTEhvb1RrYTRndHYzSnJMdDkxRTMyMEw3TWJZX0I5LTJzLTN3S0dVUllkTDNKRTRPaFZiT1VPQzVORUhQbVJEZkNHQ01r?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-07-17T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "SUFC News: United transfer target seals £10m move to Championship rivals - thestar.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZE8tczZpdnFFN1hJQ3dTQ0xiN1gzVlU1NlhVODdzWkNuTkZFVUFlV0FFUmVBSGJsWk1jbzlPVVNvRjRYZFQ1T2FQQkttMlRDVk12WlRlWXpjMkRRNERUQ1VSRVFpNHV0OC00RlZ1R0t0LV8yRk8xLUw3SEsxRHNfWUVFa1c3QjFsYjB2WHZaZGZTcWhoeHl3TTNDczVNWTBMbFpGeTdKUTNEOUEwZ2ZJbG9uSkM3QQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-07-15T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -12064,7 +12053,7 @@
           "Stevenage",
           "Exeter City"
         ],
-        "title": "Exeter City sign defender on loan from League One side Stevenage - devonlive.com",
+        "title": "Exeter City sign defender on loan from League One side Stevenage - Devon Live",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc1ZwMVpHUjJsVjA5cm42SUdnVm91dmMxV0l0QlF0NG4zTGRrbi1NbGlRc1UxUkpCYXR0dU5uclhVVjRIQVlDdGNaS21fcHdaVVBLQm44NUZSWVRSakN4cXlOcjFkNnRhYkpFOUlKSm5EMWRyRndzNVA4OW14ZDZ3bncycy05OTBfd044WUFxZ1Z6aGswZHo0LTlB0gGfAUFVX3lxTE1BWmxpeW15SktZSHp4ZG0tVXVzd0E3cXVWLWsyN1lnSmJGSV9aQmg4ZWNWTVpUNUdTRjZLc1BWWEZxbFVZQ2JhYTFLU1BEUVVXb0k2bFowYU1NUk5JYmthX0JrNjN0WHJ3aW9mVzJWUmFHbHRJUHdDRDIxYUU3M3dTQXRTZENmck4tbVRwUUxfcW5lUThNQjZ4el95RjdwVQ?oc=5",
         "source": "Google News League One",
@@ -12746,7 +12735,7 @@
         "clubs": [
           "Sheffield Wednesday"
         ],
-        "title": "Sheffield Wednesday 'agree' loan deal for League One forward - Yorkshire Post",
+        "title": "Sheffield Wednesday 'agree' loan deal for League One forward - yorkshirepost.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMGhkbTlxWGZva0NHTDFybG1ick1BYUstZlg4SDFDbi1RTmVyemFUQTZXVl9PTmQ4VmNOYVNYREJLc19RZ2d2SFltU0JOQ240Zk9VTHdtUzBnQmJaMUNHRnJjZmM0ZWc3RGxqSkN1bTFoTDJDdEh4SEY2eXlSaWk5blpzbFdFNDFsdm02LU5wcXZkTV9vaWRpM2RGNHpibWYtemVBQ2o3ejkyLW5TeDZpT3JGZ0QxcjhCLVl5MlVHWXVmdw?oc=5",
         "source": "Google News League One",
