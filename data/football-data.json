@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T10:55:02.083Z",
+  "updatedAt": "2026-09-11T11:03:01.055Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5215,53 +5215,7 @@
         "score": 2
       },
       "venue": "St. Andrew's Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Fernando López",
-          "minute": "3'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jay Stansfield",
-          "minute": "22'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        },
-        {
-          "player": "Ladislav Krejcí",
-          "minute": "31'",
-          "team": "Wolverhampton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jackson Tchatchoua",
-          "minute": "36'",
-          "team": "Birmingham City",
-          "ownGoal": true
-        }
-      ],
-      "cards": [
-        {
-          "player": "Marshall Munetsi",
-          "minute": "51'",
-          "team": "Wolverhampton Wanderers",
-          "card": "yellow"
-        },
-        {
-          "player": "Christoph Klarer",
-          "minute": "53'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Phil Neumann",
-          "minute": "67'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879291",
