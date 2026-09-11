@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T16:03:24.885Z",
+  "updatedAt": "2026-09-11T16:21:02.029Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -19929,6 +19929,28 @@
       "source": "ESPN"
     },
     {
+      "id": "401880096",
+      "competition": "Championship",
+      "competitionCode": "eng.2",
+      "type": "league",
+      "date": "2026-12-12T15:00Z",
+      "completed": false,
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Sat, December 12th at 10:00 AM EST",
+      "home": {
+        "id": "314",
+        "name": "Lincoln City",
+        "score": null
+      },
+      "away": {
+        "id": "381",
+        "name": "Norwich City",
+        "score": null
+      },
+      "venue": "LNER Stadium",
+      "source": "ESPN"
+    },
+    {
       "id": "401880095",
       "competition": "Championship",
       "competitionCode": "eng.2",
@@ -20432,28 +20454,6 @@
         "score": null
       },
       "venue": "The Croud Meadow",
-      "source": "ESPN"
-    },
-    {
-      "id": "401880096",
-      "competition": "Championship",
-      "competitionCode": "eng.2",
-      "type": "league",
-      "date": "2026-12-13T14:00Z",
-      "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sun, December 13th at 9:00 AM EST",
-      "home": {
-        "id": "314",
-        "name": "Lincoln City",
-        "score": null
-      },
-      "away": {
-        "id": "381",
-        "name": "Norwich City",
-        "score": null
-      },
-      "venue": "LNER Stadium",
       "source": "ESPN"
     },
     {
