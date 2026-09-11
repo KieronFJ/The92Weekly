@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T19:52:05.053Z",
+  "updatedAt": "2026-09-11T20:02:52.593Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6493,8 +6493,8 @@
       "type": "league",
       "date": "2026-09-11T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "26'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "371",
         "name": "West Ham United",
