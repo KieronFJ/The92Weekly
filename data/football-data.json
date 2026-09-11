@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T12:56:35.147Z",
+  "updatedAt": "2026-09-11T13:05:36.773Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5237,71 +5237,7 @@
         "score": 2
       },
       "venue": "Hill Dickinson Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Bryan Mbeumo",
-          "minute": "46'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Tyrique George",
-          "minute": "83'",
-          "team": "Everton",
-          "ownGoal": false
-        },
-        {
-          "player": "Benjamin Sesko",
-          "minute": "88'",
-          "team": "Manchester United",
-          "ownGoal": false
-        },
-        {
-          "player": "Ainsley Maitland-Niles",
-          "minute": "90'+6'",
-          "team": "Everton",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Harrison Armstrong",
-          "minute": "13'",
-          "team": "Everton",
-          "card": "yellow"
-        },
-        {
-          "player": "Brennan Johnson",
-          "minute": "34'",
-          "team": "Everton",
-          "card": "yellow"
-        },
-        {
-          "player": "Luke Shaw",
-          "minute": "62'",
-          "team": "Manchester United",
-          "card": "yellow"
-        },
-        {
-          "player": "Merlin Röhl",
-          "minute": "64'",
-          "team": "Everton",
-          "card": "yellow"
-        },
-        {
-          "player": "Harry Maguire",
-          "minute": "79'",
-          "team": "Manchester United",
-          "card": "yellow"
-        },
-        {
-          "player": "Diogo Dalot",
-          "minute": "81'",
-          "team": "Manchester United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401879292",
