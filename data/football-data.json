@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T21:02:54.758Z",
+  "updatedAt": "2026-09-11T21:18:25.786Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6492,21 +6492,67 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-11T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+5'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "371",
         "name": "West Ham United",
-        "score": null
+        "score": 6
       },
       "away": {
         "id": "352",
         "name": "Wrexham",
-        "score": null
+        "score": 0
       },
       "venue": "London Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jarrod Bowen",
+          "minute": "28'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Joël Piroe",
+          "minute": "37'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Konstantinos Mavropanos",
+          "minute": "48'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Valentín Castellanos",
+          "minute": "63'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Mohamadou Kanté",
+          "minute": "76'",
+          "team": "West Ham United",
+          "ownGoal": false
+        },
+        {
+          "player": "Manor Solomon",
+          "minute": "82'",
+          "team": "West Ham United",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Oliver Scarles",
+          "minute": "90'+4'",
+          "team": "West Ham United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880267",
