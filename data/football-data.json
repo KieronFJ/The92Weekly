@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T15:20:49.192Z",
+  "updatedAt": "2026-09-11T15:36:14.193Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5259,65 +5259,7 @@
         "score": 1
       },
       "venue": "Emirates Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Morgan Rogers",
-          "minute": "2'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Kai Havertz",
-          "minute": "25'",
-          "team": "Arsenal",
-          "ownGoal": false
-        },
-        {
-          "player": "Martin Ødegaard",
-          "minute": "50'",
-          "team": "Arsenal",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "João Pedro",
-          "minute": "14'",
-          "team": "Chelsea",
-          "card": "yellow"
-        },
-        {
-          "player": "Cole Palmer",
-          "minute": "45'",
-          "team": "Chelsea",
-          "card": "yellow"
-        },
-        {
-          "player": "Christos Tzolis",
-          "minute": "58'",
-          "team": "Arsenal",
-          "card": "yellow"
-        },
-        {
-          "player": "Maxence Lacroix",
-          "minute": "58'",
-          "team": "Chelsea",
-          "card": "yellow"
-        },
-        {
-          "player": "Morgan Rogers",
-          "minute": "83'",
-          "team": "Chelsea",
-          "card": "yellow"
-        },
-        {
-          "player": "Mikel Merino",
-          "minute": "90'+5'",
-          "team": "Arsenal",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880872",
