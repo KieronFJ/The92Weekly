@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T13:43:38.164Z",
+  "updatedAt": "2026-09-12T13:51:57.887Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6634,67 +6634,21 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": true,
-      "status": "STATUS_FULL_TIME",
-      "statusDetail": "FT",
+      "completed": false,
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "90'+10'",
       "home": {
         "id": "374",
         "name": "Derby County",
-        "score": 1
+        "score": null
       },
       "away": {
         "id": "392",
         "name": "Birmingham City",
-        "score": 2
+        "score": null
       },
       "venue": "Pride Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Bobby Clark",
-          "minute": "40'",
-          "team": "Derby County",
-          "ownGoal": false
-        },
-        {
-          "player": "Carlos Vicente",
-          "minute": "42'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        },
-        {
-          "player": "Paik Seung-Ho",
-          "minute": "63'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Mohammed Fuseini",
-          "minute": "19'",
-          "team": "Derby County",
-          "card": "yellow"
-        },
-        {
-          "player": "Alex Cochrane",
-          "minute": "21'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "August Priske",
-          "minute": "44'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Carlos Vicente",
-          "minute": "90'+4'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880258",
