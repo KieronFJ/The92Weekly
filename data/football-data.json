@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T13:18:11.482Z",
+  "updatedAt": "2026-09-12T13:27:59.622Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6561,8 +6561,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "77'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "21'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -6583,8 +6583,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "78'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "22'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -6605,8 +6605,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "76'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "21'",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
@@ -6627,8 +6627,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "76'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "20'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -6649,8 +6649,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "78'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "22'",
       "home": {
         "id": "340",
         "name": "Notts County",
@@ -6671,8 +6671,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "78'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "22'",
       "home": {
         "id": "2594",
         "name": "Crawley Town",
@@ -6693,8 +6693,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "76'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "22'",
       "home": {
         "id": "386",
         "name": "Grimsby Town",
