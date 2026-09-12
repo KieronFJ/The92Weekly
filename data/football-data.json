@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T11:34:54.085Z",
+  "updatedAt": "2026-09-12T11:42:49.382Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6561,8 +6561,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "4'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -6583,8 +6583,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "5'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -6605,8 +6605,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "4'",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
@@ -6627,8 +6627,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "4'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -6649,8 +6649,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "5'",
       "home": {
         "id": "340",
         "name": "Notts County",
@@ -6671,8 +6671,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "5'",
       "home": {
         "id": "2594",
         "name": "Crawley Town",
@@ -6693,8 +6693,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Sat, September 12th at 7:30 AM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "5'",
       "home": {
         "id": "386",
         "name": "Grimsby Town",
