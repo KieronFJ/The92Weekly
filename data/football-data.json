@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T15:36:42.120Z",
+  "updatedAt": "2026-09-12T15:44:09.365Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -7086,7 +7086,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "74'",
       "home": {
         "id": "349",
         "name": "AFC Bournemouth",
@@ -7108,7 +7108,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "57'",
+      "statusDetail": "76'",
       "home": {
         "id": "362",
         "name": "Aston Villa",
@@ -7130,7 +7130,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "59'",
+      "statusDetail": "78'",
       "home": {
         "id": "363",
         "name": "Chelsea",
@@ -7152,7 +7152,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "55'",
+      "statusDetail": "74'",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
@@ -7174,7 +7174,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "61'",
+      "statusDetail": "80'",
       "home": {
         "id": "364",
         "name": "Liverpool",
@@ -7195,8 +7195,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "59'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "78'",
       "home": {
         "id": "365",
         "name": "Blackburn Rovers",
@@ -7218,7 +7218,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "statusDetail": "78'",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
@@ -7240,7 +7240,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "statusDetail": "78'",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
@@ -7261,8 +7261,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "62'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "81'",
       "home": {
         "id": "394",
         "name": "Preston North End",
@@ -7283,8 +7283,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "77'",
       "home": {
         "id": "376",
         "name": "Southampton",
@@ -7305,8 +7305,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "56'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "75'",
       "home": {
         "id": "318",
         "name": "Swansea City",
@@ -7328,7 +7328,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "statusDetail": "77'",
       "home": {
         "id": "395",
         "name": "Watford",
@@ -7349,8 +7349,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "56'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "75'",
       "home": {
         "id": "3802",
         "name": "AFC Wimbledon",
@@ -7372,7 +7372,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "statusDetail": "77'",
       "home": {
         "id": "346",
         "name": "Blackpool",
@@ -7394,7 +7394,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "62'",
+      "statusDetail": "81'",
       "home": {
         "id": "351",
         "name": "Cambridge United",
@@ -7416,7 +7416,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "54'",
+      "statusDetail": "74'",
       "home": {
         "id": "304",
         "name": "Mansfield Town",
@@ -7438,7 +7438,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "60'",
+      "statusDetail": "80'",
       "home": {
         "id": "390",
         "name": "Milton Keynes Dons",
@@ -7460,7 +7460,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "59'",
+      "statusDetail": "78'",
       "home": {
         "id": "311",
         "name": "Oxford United",
@@ -7481,8 +7481,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "60'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "79'",
       "home": {
         "id": "307",
         "name": "Plymouth Argyle",
@@ -7503,8 +7503,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "61'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "80'",
       "home": {
         "id": "399",
         "name": "Sheffield Wednesday",
@@ -7525,8 +7525,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "60'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "78'",
       "home": {
         "id": "400",
         "name": "Stockport County",
@@ -7548,7 +7548,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "61'",
+      "statusDetail": "80'",
       "home": {
         "id": "280",
         "name": "Barnet",
@@ -7570,7 +7570,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "60'",
+      "statusDetail": "80'",
       "home": {
         "id": "339",
         "name": "Colchester United",
@@ -7592,7 +7592,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "60'",
+      "statusDetail": "79'",
       "home": {
         "id": "389",
         "name": "Gillingham",
@@ -7614,7 +7614,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "60'",
+      "statusDetail": "79'",
       "home": {
         "id": "635",
         "name": "Newport County",
@@ -7636,7 +7636,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "59'",
+      "statusDetail": "78'",
       "home": {
         "id": "332",
         "name": "Oldham Athletic",
@@ -7657,8 +7657,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "61'",
+      "status": "STATUS_SECOND_HALF",
+      "statusDetail": "79'",
       "home": {
         "id": "348",
         "name": "Port Vale",
@@ -7679,8 +7679,8 @@
       "type": "league",
       "date": "2026-09-12T14:00Z",
       "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "77'",
       "home": {
         "id": "402",
         "name": "Rotherham United",
@@ -7702,7 +7702,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "61'",
+      "statusDetail": "81'",
       "home": {
         "id": "302",
         "name": "Shrewsbury Town",
@@ -7724,7 +7724,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "statusDetail": "77'",
       "home": {
         "id": "401",
         "name": "Walsall",
@@ -7746,7 +7746,7 @@
       "date": "2026-09-12T14:00Z",
       "completed": false,
       "status": "STATUS_SECOND_HALF",
-      "statusDetail": "58'",
+      "statusDetail": "77'",
       "home": {
         "id": "315",
         "name": "York City",
