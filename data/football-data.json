@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T11:42:49.382Z",
+  "updatedAt": "2026-09-12T11:51:51.397Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6562,7 +6562,7 @@
       "date": "2026-09-12T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "4'",
+      "statusDetail": "12'",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
@@ -6584,7 +6584,7 @@
       "date": "2026-09-12T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "5'",
+      "statusDetail": "13'",
       "home": {
         "id": "374",
         "name": "Derby County",
@@ -6606,7 +6606,7 @@
       "date": "2026-09-12T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "4'",
+      "statusDetail": "12'",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
@@ -6627,8 +6627,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "4'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "12'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -6649,8 +6649,8 @@
       "type": "league",
       "date": "2026-09-12T11:30Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "5'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "13'",
       "home": {
         "id": "340",
         "name": "Notts County",
@@ -6672,7 +6672,7 @@
       "date": "2026-09-12T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "5'",
+      "statusDetail": "13'",
       "home": {
         "id": "2594",
         "name": "Crawley Town",
@@ -6694,7 +6694,7 @@
       "date": "2026-09-12T11:30Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "5'",
+      "statusDetail": "13'",
       "home": {
         "id": "386",
         "name": "Grimsby Town",
