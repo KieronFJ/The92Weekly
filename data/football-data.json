@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:19:00.951Z",
+  "updatedAt": "2026-09-12T21:29:06.798Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9129,21 +9129,85 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-12T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+8'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "366",
         "name": "Sunderland",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "359",
         "name": "Arsenal",
-        "score": null
+        "score": 2
       },
       "venue": "Stadium of Light",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Bruno Guimarães",
+          "minute": "58'",
+          "team": "Arsenal",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Reinildo Mandava",
+          "minute": "28'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Danny Ballard",
+          "minute": "66'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Granit Xhaka",
+          "minute": "69'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Brian Brobbey",
+          "minute": "81'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Gabriel Magalhães",
+          "minute": "90'+1'",
+          "team": "Arsenal",
+          "card": "yellow"
+        },
+        {
+          "player": "Nordi Mukiele",
+          "minute": "90'+1'",
+          "team": "Sunderland",
+          "card": "yellow"
+        },
+        {
+          "player": "Kai Havertz",
+          "minute": "90'+3'",
+          "team": "Arsenal",
+          "card": "yellow"
+        },
+        {
+          "player": "Reinildo Mandava",
+          "minute": "90'+6'",
+          "team": "Sunderland",
+          "card": "red"
+        },
+        {
+          "player": "Bukayo Saka",
+          "minute": "90'+7'",
+          "team": "Arsenal",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401880262",
