@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T20:02:54.272Z",
+  "updatedAt": "2026-09-12T20:18:58.259Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9130,8 +9130,8 @@
       "type": "league",
       "date": "2026-09-12T19:00Z",
       "completed": false,
-      "status": "STATUS_HALFTIME",
-      "statusDetail": "HT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "33'",
       "home": {
         "id": "366",
         "name": "Sunderland",
