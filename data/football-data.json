@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T18:35:25.152Z",
+  "updatedAt": "2026-09-12T18:44:34.606Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9120,21 +9120,36 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-12T16:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+2'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "367",
         "name": "Tottenham Hotspur",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "368",
         "name": "Everton",
-        "score": null
+        "score": 0
       },
       "venue": "Tottenham Hotspur Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [],
+      "cards": [
+        {
+          "player": "Kiernan Dewsbury-Hall",
+          "minute": "68'",
+          "team": "Everton",
+          "card": "yellow"
+        },
+        {
+          "player": "James Garner",
+          "minute": "84'",
+          "team": "Everton",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401878779",
