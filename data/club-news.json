@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-12T03:07:26.241Z",
+  "updatedAt": "2026-09-12T04:07:27.814Z",
   "feedCount": 286,
   "successfulFeeds": 284,
-  "removedStreamingSpam": 483,
+  "removedStreamingSpam": 485,
   "sources": {
     "BBC Sport": {
       "success": true,
@@ -96,7 +96,7 @@
     },
     "Media – Bournemouth": {
       "success": true,
-      "itemsFound": 100,
+      "itemsFound": 102,
       "error": null
     },
     "Official – Brentford": {
@@ -141,7 +141,7 @@
     },
     "Media – Chelsea": {
       "success": true,
-      "itemsFound": 103,
+      "itemsFound": 105,
       "error": null
     },
     "Official – Coventry City": {
@@ -186,7 +186,7 @@
     },
     "Media – Everton": {
       "success": true,
-      "itemsFound": 100,
+      "itemsFound": 102,
       "error": null
     },
     "Official – Fulham": {
@@ -201,7 +201,7 @@
     },
     "Media – Fulham": {
       "success": true,
-      "itemsFound": 102,
+      "itemsFound": 100,
       "error": null
     },
     "Official – Hull City": {
@@ -386,7 +386,7 @@
     },
     "Official – Bolton Wanderers": {
       "success": true,
-      "itemsFound": 81,
+      "itemsFound": 82,
       "error": null
     },
     "Fan – Bolton Wanderers": {
@@ -461,7 +461,7 @@
     },
     "Official – Derby County": {
       "success": true,
-      "itemsFound": 86,
+      "itemsFound": 88,
       "error": null
     },
     "Fan – Derby County": {
@@ -506,7 +506,7 @@
     },
     "Official – Millwall": {
       "success": true,
-      "itemsFound": 59,
+      "itemsFound": 60,
       "error": null
     },
     "Fan – Millwall": {
@@ -546,12 +546,12 @@
     },
     "Media – Portsmouth": {
       "success": true,
-      "itemsFound": 100,
+      "itemsFound": 99,
       "error": null
     },
     "Official – Preston North End": {
       "success": true,
-      "itemsFound": 91,
+      "itemsFound": 90,
       "error": null
     },
     "Fan – Preston North End": {
@@ -581,7 +581,7 @@
     },
     "Official – Sheffield United": {
       "success": true,
-      "itemsFound": 83,
+      "itemsFound": 84,
       "error": null
     },
     "Fan – Sheffield United": {
@@ -611,7 +611,7 @@
     },
     "Official – Stoke City": {
       "success": true,
-      "itemsFound": 86,
+      "itemsFound": 85,
       "error": null
     },
     "Fan – Stoke City": {
@@ -746,7 +746,7 @@
     },
     "Official – Blackpool": {
       "success": true,
-      "itemsFound": 67,
+      "itemsFound": 68,
       "error": null
     },
     "Fan – Blackpool": {
@@ -866,7 +866,7 @@
     },
     "Official – Leyton Orient": {
       "success": true,
-      "itemsFound": 48,
+      "itemsFound": 77,
       "error": null
     },
     "Fan – Leyton Orient": {
@@ -881,7 +881,7 @@
     },
     "Official – Luton Town": {
       "success": true,
-      "itemsFound": 77,
+      "itemsFound": 76,
       "error": null
     },
     "Fan – Luton Town": {
@@ -971,7 +971,7 @@
     },
     "Official – Plymouth Argyle": {
       "success": true,
-      "itemsFound": 78,
+      "itemsFound": 77,
       "error": null
     },
     "Fan – Plymouth Argyle": {
@@ -986,7 +986,7 @@
     },
     "Official – Reading": {
       "success": true,
-      "itemsFound": 57,
+      "itemsFound": 59,
       "error": null
     },
     "Fan – Reading": {
@@ -1016,7 +1016,7 @@
     },
     "Official – Stevenage": {
       "success": true,
-      "itemsFound": 46,
+      "itemsFound": 49,
       "error": null
     },
     "Fan – Stevenage": {
@@ -1076,7 +1076,7 @@
     },
     "Official – Accrington Stanley": {
       "success": true,
-      "itemsFound": 67,
+      "itemsFound": 68,
       "error": null
     },
     "Fan – Accrington Stanley": {
@@ -1096,7 +1096,7 @@
     },
     "Fan – Barnet": {
       "success": true,
-      "itemsFound": 69,
+      "itemsFound": 71,
       "error": null
     },
     "Media – Barnet": {
@@ -1121,7 +1121,7 @@
     },
     "Official – Cheltenham Town": {
       "success": true,
-      "itemsFound": 69,
+      "itemsFound": 70,
       "error": null
     },
     "Fan – Cheltenham Town": {
@@ -1181,7 +1181,7 @@
     },
     "Official – Crewe Alexandra": {
       "success": true,
-      "itemsFound": 64,
+      "itemsFound": 65,
       "error": null
     },
     "Fan – Crewe Alexandra": {
@@ -1286,7 +1286,7 @@
     },
     "Official – Oldham Athletic": {
       "success": true,
-      "itemsFound": 74,
+      "itemsFound": 75,
       "error": null
     },
     "Fan – Oldham Athletic": {
@@ -1331,7 +1331,7 @@
     },
     "Official – Rotherham United": {
       "success": true,
-      "itemsFound": 80,
+      "itemsFound": 79,
       "error": null
     },
     "Fan – Rotherham United": {
@@ -1346,7 +1346,7 @@
     },
     "Official – Salford City": {
       "success": true,
-      "itemsFound": 77,
+      "itemsFound": 76,
       "error": null
     },
     "Fan – Salford City": {
@@ -1376,7 +1376,7 @@
     },
     "Official – Swindon Town": {
       "success": true,
-      "itemsFound": 79,
+      "itemsFound": 78,
       "error": null
     },
     "Fan – Swindon Town": {
@@ -1797,8 +1797,8 @@
     "AFC Wimbledon": {
       "official": 4,
       "fan": 4,
-      "media": 5,
-      "total": 13
+      "media": 4,
+      "total": 12
     },
     "Barnsley": {
       "official": 4,
@@ -2085,6 +2085,126 @@
   },
   "items": [
     {
+      "title": "Arsenal latest: Arteta accepts being 'bad cop' as Saka sent brutal message - Football London",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRWk2ak1nbjlSSm9IdTVEdnZma2ZhTHJweVI0M001Z1h6UkMwbkl5d2VJNmUyVkRYMFZ0OTFha2pVSW5uU0NfTWNLcllqS0FrODlkRG40QVA2NlA4TXZub3lCZW5YQWlrMTdEeDkzYWNhZzJOWUo2N3dpTVo0LVRzZnZWSXJJMmdXelZZNVlCSTVKZ9IBlwFBVV95cUxNdjVoeGMwaFJaY2ttN2I4aTl0alB2b0FIdWFfN2lLMW5mcHllbHFIbVZnMEJQMVl4M2p0Mk9uX3hTWGMwak5qc3lWMFdFYlVlbWpMV0hPN0RuNWt5U3QtejF5U2dxVnZ3WEtKZWxhWnNjZ3NhN1NBQnFzZGQxTU9feVZSd01GOTcyaTFFMURWVzFOSHJ5aVpJ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNRWk2ak1nbjlSSm9IdTVEdnZma2ZhTHJweVI0M001Z1h6UkMwbkl5d2VJNmUyVkRYMFZ0OTFha2pVSW5uU0NfTWNLcllqS0FrODlkRG40QVA2NlA4TXZub3lCZW5YQWlrMTdEeDkzYWNhZzJOWUo2N3dpTVo...",
+      "date": "2026-09-12T04:02:50.000Z",
+      "source": "Football London",
+      "feedSource": "Media – Arsenal",
+      "clubs": [
+        "Arsenal"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Liverpool made me out to be a traitor but I got my own way just like Alexander Isak did - Liverpool Echo",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS25JM19uUkJGQVVGMkR4cGVGX1B6RDhrekpUUHhCaHNSUG5vY1ZnZW52a29iTjN2UF9jNS1TTW5VcFdqcUtPX1F2NU40SHpsay1TTkJCM19TYnJEVXNDZmtmeEwxVndBZXZiX2k3T2ZueFJkM1E1TEVOZVdpS1NDT2ZnNVJrQ3VyZTdqeHMyTDJMUlc1WTNidFI3cllIb0hxVDRCclBIV1VUYWdWOXg2N9IBtgFBVV95cUxPTHFmbVE4Q2RSa3A5TEU4YVNuSU9wZEowTVl1NWtoWk1icjVuU2I1TjV5SVIwLUN1bHh2R0k3bVFrcDRRZ2hfM0VaY1I4MjdkdWhXdWZ5Q19sWHJ2SnZ4eV9ncjFzRTltcUZ0UVZ6bFRQbkVzbUtIbTVoeXFOUS1JNlVEV0JRLWRQVW1BTUVJLTcwcWFNQzdrZG5DUHpIMzdKZXFCNzZoZ0NVMjlFMFhGUzNUZ2lSdw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPS25JM19uUkJGQVVGMkR4cGVGX1B6RDhrekpUUHhCaHNSUG5vY1ZnZW52a29iTjN2UF9jNS1TTW5VcFdqcUtPX1F2NU40SHpsay1TTkJCM19TYnJEVXNDZmtmeEwxVndBZXZiX2k3T2ZueFJkM1E1TEVOZVd...",
+      "date": "2026-09-12T04:00:00.000Z",
+      "source": "Liverpool Echo",
+      "feedSource": "Media – Liverpool",
+      "clubs": [
+        "Liverpool"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Baleba wait, free agent decision and staff exit - Man United Notebook - Manchester Evening News",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGh2WGRGem4xeUJaZllqdXF0OVlYdC1rYk5DcTBiVmhvT25yVG81SGNCUUhTaW1NaTdJUkRZS2tWOUNJWFlyRFJtZlNocGk5NG5vR3htWnUxZ01nd3pyZ1J4Nk9hQU5wR1l4eWNkTVJDbUdyUmVJN0pMX25NdUs5QUR1R1hfQUZ3NWJvX0hNTW5tX1VtVEdpUUZnZw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGh2WGRGem4xeUJaZllqdXF0OVlYdC1rYk5DcTBiVmhvT25yVG81SGNCUUhTaW1NaTdJUkRZS2tWOUNJWFlyRFJtZlNocGk5NG5vR3htWnUxZ01nd3pyZ1J4Nk9hQU5wR1l4eWNkTVJDbUdyUmVJN0pMX25...",
+      "date": "2026-09-12T04:00:00.000Z",
+      "source": "Manchester Evening News",
+      "feedSource": "Fan – Manchester United",
+      "clubs": [
+        "Manchester United"
+      ],
+      "category": "fan"
+    },
+    {
+      "title": "Man Utd 4-0 Sabah: Winning return to Champions League as Benjamin Sesko scores again for Michael Carrick's side - Sky Sports",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxONGF1OFFKcThEQ3Jmc01iYnhYMTNYaS1pTTZuTmo5SFBkOEFhTnlla1ZoUzRnRy03MFF6ZU9nTmtDaU1qMUpxVlFQVXozaXFPYXV2QlIxdi11OXV3T0J1cnQ5Q09WMmQyTi1jYm1DSnV4YTdhVkZkUng5aDRVZzdJcXdaUzFDa1dVY1hzRTlJNmNGMENDQjZGRjFHd0xVUWRTQUVrWGpoYzZ1VTh3Q2ZDczU4U3BrSV9sUWVZMEJpWThSZGlBbFI5Yzk4ZHVXWFZkN0JRYVFFNTJJY1FjN2VZblB1TnNZVXprajRvRUtjVkdtRGZfS01r?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxONGF1OFFKcThEQ3Jmc01iYnhYMTNYaS1pTTZuTmo5SFBkOEFhTnlla1ZoUzRnRy03MFF6ZU9nTmtDaU1qMUpxVlFQVXozaXFPYXV2QlIxdi11OXV3T0J1cnQ5Q09WMmQyTi1jYm1DSnV4YTdhVkZkUng5aDR...",
+      "date": "2026-09-12T03:27:08.000Z",
+      "source": "Sky Sports",
+      "feedSource": "Media – Manchester United",
+      "clubs": [
+        "Manchester United"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Sunderland vs Arsenal: Premier League preview, team news, stats & head-to-head - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyVUd2aVpBOEhiSE9ySTU4Z0FyOEtUZ3hwUHVqVDhoX3FReE9MQ3FNeXpIWFZ4WTBTblhwSllMZF9Dd0NFaHFIZkF6RVlJbUtzaXlscWRuQ3JPeExHSzdCM3NYdw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyVUd2aVpBOEhiSE9ySTU4Z0FyOEtUZ3hwUHVqVDhoX3FReE9MQ3FNeXpIWFZ4WTBTblhwSllMZF9Dd0NFaHFIZkF6RVlJbUtzaXlscWRuQ3JPeExHSzdCM3NYdw?oc=5\" target=\"_blank\">Sunderland...",
+      "date": "2026-09-12T03:22:35.000Z",
+      "source": "BBC",
+      "feedSource": "Media – Arsenal",
+      "clubs": [
+        "Arsenal"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Evangelos Marinakis sacks his 25th manager in 16 years - Nottingham Post",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQalNjRXhaTnpUZFpfclFqMDhYdXA1WWw2NEJxdlpyLVRQMDZ3MjkzRWFFdXBSc2dhUWZXQVdOb3FTRFBqdy1SNWZHNExMMUlKSFlqYkdjZzFhYkNNejEtV1RJQjN1S19ibG0zdEJHZnlIbGplMjRKTlhUMGUzNGFtbzhNQ2VuQVhFOXJHMjBUTWxPQVBrc1ZpZzlfV19sS3ZIQ1prQmd2b1hmX2xEUTRqVWpuWkpIVFh3?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQalNjRXhaTnpUZFpfclFqMDhYdXA1WWw2NEJxdlpyLVRQMDZ3MjkzRWFFdXBSc2dhUWZXQVdOb3FTRFBqdy1SNWZHNExMMUlKSFlqYkdjZzFhYkNNejEtV1RJQjN1S19ibG0zdEJHZnlIbGplMjRKTlhUMGU...",
+      "date": "2026-09-12T03:20:15.000Z",
+      "source": "Nottingham Post",
+      "feedSource": "Media – Nottingham Forest",
+      "clubs": [
+        "Nottingham Forest"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Liverpool may soon have an $83M upgrade who is quietly thriving under Andoni Iraola - Liverpool.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORktlam81X3VpN0pXcnQwV2w3M2d0WGtFcEY2b3kteE9CRHlmZjJkbmZTWWp6aFVSOU5PcnFXMVdzTFFHUjctNVdsNktpWDRpcGRhRzYzMlFQUkJsR1kyam50dENTcG1XcXpzbG5KQWVQaWZzMjJ4OWhGRzI0WXNrYXNkU1JLRTJIdGgwRjlvLXZoTU9PNm1SSEFMM1h2Skd00gGmAUFVX3lxTE9rUjFIZWFUWUhfdVRmcmtFbFB5ckxKTEtxU0RjRHk2N3NEQ1dfVXZZRHI0TThXX056VHlLLXc2MWRTT0doejlOdmx3S2Q0RHVZYnpBenczd3hQV1RvYlpSMkpJTEUyaDRQLWowdWJ0VFN5MFBWVmdpS1pBd0Mza3Jhak1PNUt2SVFuV1NhdEV6SDFTekxXaDNjXzN1ZXhJcDFsT1R0eVE?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxORktlam81X3VpN0pXcnQwV2w3M2d0WGtFcEY2b3kteE9CRHlmZjJkbmZTWWp6aFVSOU5PcnFXMVdzTFFHUjctNVdsNktpWDRpcGRhRzYzMlFQUkJsR1kyam50dENTcG1XcXpzbG5KQWVQaWZzMjJ4OWhGRzI...",
+      "date": "2026-09-12T03:09:56.000Z",
+      "source": "Liverpool.com",
+      "feedSource": "Media – Liverpool",
+      "clubs": [
+        "Liverpool"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "I don't regret leaving Arsenal because I wasn't good enough – I found a home at Sunderland - Football London",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOFR1T2YxbTItRHpKbU82N3czQ0xRbzdMSEdZWnNVTWI2Q3MtNXd0b3d1SGlTaXh6VElZUVVzYm40RWt0eW1NeFMyVkJPbTVBTWdXcFFXOXN6RVVTT2ZHd0xldjc1WlFFdUFlOTBTYXIzNEQ3azZHdDBCMk5JRzIwNGx6SHJfVmFPV09PZm9tMDNoZ9IBlwFBVV95cUxPTmdrUk9pZUNpRzRidUV4RWRMd3c5RWRLc1pkdDdfazFrN2sxQUJROEtDMk1MdHN2SFlsbUlXMXBYQmswOTR0bGpFZE5iVTBLQ1FOSnBaT0RWZzZoNTBwMTJFbWZuck5CQlczU0VuQTktQnMtSFY5eEVHZ3BJUkNEYjJUcDBvZXVkTmdEWDBoZFNHZHlKZW9r?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQOFR1T2YxbTItRHpKbU82N3czQ0xRbzdMSEdZWnNVTWI2Q3MtNXd0b3d1SGlTaXh6VElZUVVzYm40RWt0eW1NeFMyVkJPbTVBTWdXcFFXOXN6RVVTT2ZHd0xldjc1WlFFdUFlOTBTYXIzNEQ3azZHdDBCMk5...",
+      "date": "2026-09-12T03:02:01.000Z",
+      "source": "Football London",
+      "feedSource": "Media – Arsenal",
+      "clubs": [
+        "Arsenal"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Alonso reveals advice he gave Palestra amid Chelsea injury frustration - London Evening Standard",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0Z2NUU4U0FDRHZYZW41NGpjdXBZd2dDMzEzMlotUVkzeF96X0w5X0RRTEF0TnpIbGZXTFE4cE5MV0ZsZElQYjdjWG9aeG9lcnBQYS1KS0xTRzNKWDdsUGdqZ0VxRTNaajJrNWlPZXJBMWJ3Tk1iQmVURGFXZkpZVTFQSDJyeXRmV2lXeEtsQUVrZ0xMS0FJcFZmeEc?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0Z2NUU4U0FDRHZYZW41NGpjdXBZd2dDMzEzMlotUVkzeF96X0w5X0RRTEF0TnpIbGZXTFE4cE5MV0ZsZElQYjdjWG9aeG9lcnBQYS1KS0xTRzNKWDdsUGdqZ0VxRTNaajJrNWlPZXJBMWJ3Tk1iQmVURGF...",
+      "date": "2026-09-12T03:01:19.000Z",
+      "source": "London Evening Standard",
+      "feedSource": "Media – Chelsea",
+      "clubs": [
+        "Chelsea"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Arsenal news: Saka put in his place with damning statement as Arteta plays 'bad cop' - The Mirror",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPM2xJemZfVUpnSUgtaGg3dTNCYUVwOUlyeGRVaEJpUU0zdFF0eTAwLXFQOFI3S3pHellxdk90RkFrY3ZMbFdoNnZWaVhvR3NHWGVOQkxTX015NWZpTDJQNVBWdXBLVkZTdk9NMTlPc1Bnam9YRVFVbFVWZEJ1ZVgzOUE1Q1l2WDl4MFdjQmJB0gGTAUFVX3lxTE1TYnpCdGFPY0RHNnpTTkxyVl9nQ0dCbTByQ0Ewak1QT2c1WmtodWZwZUI0NFNESGRYMEN6WUZTQ2RYZWtZeUxrLWwyYnFCc0Q5dDhIVVFoZ2lHLUlhQ1U5M09ISHRWMExSY0JhZEtpclBaS01vWkJUa3JpbkUxeUVxdnlEMThwZFBUSk1pM1dTT2FzOA?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPM2xJemZfVUpnSUgtaGg3dTNCYUVwOUlyeGRVaEJpUU0zdFF0eTAwLXFQOFI3S3pHellxdk90RkFrY3ZMbFdoNnZWaVhvR3NHWGVOQkxTX015NWZpTDJQNVBWdXBLVkZTdk9NMTlPc1Bnam9YRVFVbFVWZEJ...",
+      "date": "2026-09-12T03:00:00.000Z",
+      "source": "The Mirror",
+      "feedSource": "Media – Arsenal",
+      "clubs": [
+        "Arsenal"
+      ],
+      "category": "media"
+    },
+    {
       "title": "Chelsea vs Hull City: All you need to know | News | Official Site - Chelsea Football Club",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQW8xaUZYMm1menlySUFHTHgxSjBXZWQtcjZfRjJvZDdiNGp2ZFd4RloxNmgtQ2J5Q09pdTIwSnhmeC0zeUpIaFBOSDV0OWNyRmUtVzBPZ1RZamFZdlZORWJZTlcxZFp3bS1jX3pvajczYUZndmQ4V21ObFFSX1NNOGdSQU5oQnVnTURlWmF2dFVjUFU?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxPQW8xaUZYMm1menlySUFHTHgxSjBXZWQtcjZfRjJvZDdiNGp2ZFd4RloxNmgtQ2J5Q09pdTIwSnhmeC0zeUpIaFBOSDV0OWNyRmUtVzBPZ1RZamFZdlZORWJZTlcxZFp3bS1jX3pvajczYUZndmQ4V21ObFF...",
@@ -2097,7 +2217,7 @@
       "category": "official"
     },
     {
-      "title": "United have something City don't - but it gives Carrick a decision to make - Manchester Evening News",
+      "title": "Manchester United have something Man City don't - but it gives Michael Carrick a decision to make - Manchester Evening News",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRURDd2FzMndHNHlnbVZxVVVwcXlWdUp1ZVNOTlhxWERDalhLOGtaR2hwT3Btb0RjMHo4YUtRWnpDa0g5R0xZM2RXNTVEX24zdEp2WjZXLV8yNXhvSmxsVUZfVk10Y2N6UkZNXzViRXhRb3VRdkJMMjZreHlKOGFabnRwOGQxVWxUaFpUZUZvVEJHMGxiYjlpOTM2RVg2azRhTHc?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxNRURDd2FzMndHNHlnbVZxVVVwcXlWdUp1ZVNOTlhxWERDalhLOGtaR2hwT3Btb0RjMHo4YUtRWnpDa0g5R0xZM2RXNTVEX24zdEp2WjZXLV8yNXhvSmxsVUZfVk10Y2N6UkZNXzViRXhRb3VRdkJMMjZreHl...",
       "date": "2026-09-12T03:00:00.000Z",
@@ -2136,7 +2256,7 @@
       "title": "Man Utd vs Man City: Kings of Manchester hotly debated ahead of Old Trafford derby showdown - Sky Sports",
       "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbEtkcnlDVGIyZDVsQ1ppUE9zUG1rY19XeUJGWTZ3R3VIdk1zQVJXTnRiTTF5TzVUdTM2d3BZSVN6RVVUUEFEd1E2cjB5RlF3ZTRzZnkzc1U5SU4tZDVsTEJTTXBIekVubDdvSTlNeHE5a3lmVHIzUUxWNTgwOS1XSnh4eFB3cnNTWEJQVnBFU3Zrak1DeUt3T19XUzN3RDFpRTVpYmN4clczUkNtR01QUzhtWDJsTTlLMkFYYkdWWnZVSmNoT2U2b1ZYZGFoSTgzZFVoM085RTdwbm9zZkE?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbEtkcnlDVGIyZDVsQ1ppUE9zUG1rY19XeUJGWTZ3R3VIdk1zQVJXTnRiTTF5TzVUdTM2d3BZSVN6RVVUUEFEd1E2cjB5RlF3ZTRzZnkzc1U5SU4tZDVsTEJTTXBIekVubDdvSTlNeHE5a3lmVHIzUUxWNTg...",
-      "date": "2026-09-12T02:26:15.000Z",
+      "date": "2026-09-12T02:29:27.000Z",
       "source": "Sky Sports",
       "feedSource": "Media – Manchester City",
       "clubs": [
@@ -2157,50 +2277,50 @@
       "category": "media"
     },
     {
-      "title": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods - The Guardian",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGdNcUVEZ0JNcmppTHlrODl6d3FLQlZXVjVHWVZsQnZXUlVYRVNfRXJldGRkQU1IVEVPaWVFUTJEdHdvc0RFMFh2V21KQU1JT0VBQklTdm1PZV9HZ21VNzZZQjhkdUZETkdwQnNNLUNnM1hqM3JHQUFyVnVTeFNHVlZKNXYyYTJpNTBza0xjRlkzUkFCdEo0SzByb0NXZEVhZUdYeHVhdXd6dVJ5WHRrMlRhMzY5WlBuQXc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGdNcUVEZ0JNcmppTHlrODl6d3FLQlZXVjVHWVZsQnZXUlVYRVNfRXJldGRkQU1IVEVPaWVFUTJEdHdvc0RFMFh2V21KQU1JT0VBQklTdm1PZV9HZ21VNzZZQjhkdUZETkdwQnNNLUNnM1hqM3JHQUFyVnV...",
-      "date": "2026-09-12T01:30:00.000Z",
-      "source": "The Guardian",
-      "feedSource": "Media – Arsenal",
-      "clubs": [
-        "Arsenal"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Sunderland vs. Arsenal: Preview, Predictions and Lineups - Forza Football",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN2dhNnhaSnEyTG40bmF5dy1YQXQ4Sm1sWnBZeUlSbklCSTZBMUhrNGw2amhURlRoMHU3WDVBVDVZT245c2NpMVBqSVVyM0dGQlM1aGV2MmozTVVfcnJwSUc1dEVnSWVPcU9oR0JLQk5OMFJlUzd0dXZQY1RYT1JFMnZQZHZOakExVVJobGFyaWxCZWg1ZGZaRll3?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQN2dhNnhaSnEyTG40bmF5dy1YQXQ4Sm1sWnBZeUlSbklCSTZBMUhrNGw2amhURlRoMHU3WDVBVDVZT245c2NpMVBqSVVyM0dGQlM1aGV2MmozTVVfcnJwSUc1dEVnSWVPcU9oR0JLQk5OMFJlUzd0dXZQY1R...",
-      "date": "2026-09-12T01:00:00.000Z",
-      "source": "Forza Football",
-      "feedSource": "Media – Arsenal",
-      "clubs": [
-        "Arsenal"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Alonso reveals advice he gave Palestra amid Chelsea injury frustration - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0Z2NUU4U0FDRHZYZW41NGpjdXBZd2dDMzEzMlotUVkzeF96X0w5X0RRTEF0TnpIbGZXTFE4cE5MV0ZsZElQYjdjWG9aeG9lcnBQYS1KS0xTRzNKWDdsUGdqZ0VxRTNaajJrNWlPZXJBMWJ3Tk1iQmVURGFXZkpZVTFQSDJyeXRmV2lXeEtsQUVrZ0xMS0FJcFZmeEc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0Z2NUU4U0FDRHZYZW41NGpjdXBZd2dDMzEzMlotUVkzeF96X0w5X0RRTEF0TnpIbGZXTFE4cE5MV0ZsZElQYjdjWG9aeG9lcnBQYS1KS0xTRzNKWDdsUGdqZ0VxRTNaajJrNWlPZXJBMWJ3Tk1iQmVURGF...",
-      "date": "2026-09-12T00:35:45.000Z",
+      "title": "Man City XI vs Man Utd: Confirmed team news and predicted lineup - London Evening Standard",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY1BFN0REREo4TmRGVjU5WklWTlVJdG9SWV96U2M0V2xMZDBtNGtaRlB6UmcyWjlQOGp0YVpDRUhzNXJuQ0d4MFA3el9iRlhrVEhMX25mdl9rc3V6eW45X0J2djhfT2NZT0tZM2hjUlZyc1FkVzBVLWJGYkJoSWNmelVvVW5nVGZ6YWgxRkxYNFctaDRHZnNINm5lTGJsV2NEYWJJZHcxTHQxTkFCb3BDRDdPdjlKUm0zYTJnNU9LSHZ4ZkpVNXYzRjN1M0h3clpNNTMtMEgwVWtMYUw5NU44M0JKSQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY1BFN0REREo4TmRGVjU5WklWTlVJdG9SWV96U2M0V2xMZDBtNGtaRlB6UmcyWjlQOGp0YVpDRUhzNXJuQ0d4MFA3el9iRlhrVEhMX25mdl9rc3V6eW45X0J2djhfT2NZT0tZM2hjUlZyc1FkVzBVLWJGYkJ...",
+      "date": "2026-09-12T01:41:34.000Z",
       "source": "London Evening Standard",
-      "feedSource": "Media – Chelsea",
+      "feedSource": "Media – Manchester City",
       "clubs": [
-        "Chelsea"
+        "Manchester City"
       ],
       "category": "media"
     },
     {
-      "title": "Sunderland vs Arsenal: Premier League preview, team news, stats & head-to-head - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyVUd2aVpBOEhiSE9ySTU4Z0FyOEtUZ3hwUHVqVDhoX3FReE9MQ3FNeXpIWFZ4WTBTblhwSllMZF9Dd0NFaHFIZkF6RVlJbUtzaXlscWRuQ3JPeExHSzdCM3NYdw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyVUd2aVpBOEhiSE9ySTU4Z0FyOEtUZ3hwUHVqVDhoX3FReE9MQ3FNeXpIWFZ4WTBTblhwSllMZF9Dd0NFaHFIZkF6RVlJbUtzaXlscWRuQ3JPeExHSzdCM3NYdw?oc=5\" target=\"_blank\">Sunderland...",
-      "date": "2026-09-12T00:35:31.000Z",
+      "title": "Championship: build-up to Sheffield Utd v Wolves - live text - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qZkNONlNBNmtkLWRPcml5VDZfSzZFSlFGaC12OW5HaEozdlBNQ0JpY25WNjVuVTZiM1lLZXQ4R05mZUZGb0hxT25ncTlaaFJxblJONDdNRlFIREdqT1VXaV9FeTNNZw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qZkNONlNBNmtkLWRPcml5VDZfSzZFSlFGaC12OW5HaEozdlBNQ0JpY25WNjVuVTZiM1lLZXQ4R05mZUZGb0hxT25ncTlaaFJxblJONDdNRlFIREdqT1VXaV9FeTNNZw?oc=5\" target=\"_blank\">Champi...",
+      "date": "2026-09-12T01:22:00.000Z",
       "source": "BBC",
-      "feedSource": "Media – Arsenal",
+      "feedSource": "Media – Sheffield United",
       "clubs": [
-        "Arsenal"
+        "Sheffield United"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Man Utd XI vs Man City: Confirmed team news and predicted lineup - London Evening Standard",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeVQ1Vms2cENUQkFjUEJIMUYxRzJzRW1SbHRlaXk2Rm5hTUtXT0cyWWZCRktCeHY5c243cGxqUW4yWVFwQTFEU1I4YUJ0a3F1eWVEd1FFLTkyaktPeEhmWTZDcVpCcmtOMXdqdDJ0SzJ2YUlmNTFaVXJtcjFIUmdiZzA2NHpnaEduR2xKZXIzOTFHT2hfZzNmaVN0LWs2ZTdOeWkxSkRiLU0zd010dFUycUpqcmlxZU8tamdqaGx0V1V2dXFWY183WWQzWml3RGhRbTU5SkYtN2FWZ0NnZkxISlZUTQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeVQ1Vms2cENUQkFjUEJIMUYxRzJzRW1SbHRlaXk2Rm5hTUtXT0cyWWZCRktCeHY5c243cGxqUW4yWVFwQTFEU1I4YUJ0a3F1eWVEd1FFLTkyaktPeEhmWTZDcVpCcmtOMXdqdDJ0SzJ2YUlmNTFaVXJtcjF...",
+      "date": "2026-09-12T01:10:41.000Z",
+      "source": "London Evening Standard",
+      "feedSource": "Media – Manchester City",
+      "clubs": [
+        "Manchester City"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Tottenham XI vs Everton: Confirmed team news and predicted lineup - London Evening Standard",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNd3B5eER2c1gwMVlPM2FkakY4NlRfLU9mRjBIVkJMX09ReS0zSnBTUldzbWpnOXBLNU1BR0p3SlQ0Ry1kOVJpbm5fQlVkckRkQVRZWk9vYm9jdlRqVENRVFVQQlE5NVU5WUNKMXd3d1lISkNteEJteExWQ25CbmpZUXlKU0xaUGN5MUZVWk1IcnNBRnZRWXI2TlhFTkxDNzVnWXFvRl93eHgxamFpUHlheUVRU2JQdGhqWXVMRElEYlhPRUhHekZ3UXF5X3RVWUpEQ1BrSlQyR3NEbG9QTWVwdFlFZzI?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNd3B5eER2c1gwMVlPM2FkakY4NlRfLU9mRjBIVkJMX09ReS0zSnBTUldzbWpnOXBLNU1BR0p3SlQ0Ry1kOVJpbm5fQlVkckRkQVRZWk9vYm9jdlRqVENRVFVQQlE5NVU5WUNKMXd3d1lISkNteEJteExWQ25...",
+      "date": "2026-09-12T00:50:03.000Z",
+      "source": "London Evening Standard",
+      "feedSource": "Media – Everton",
+      "clubs": [
+        "Everton"
       ],
       "category": "media"
     },
@@ -2213,30 +2333,6 @@
       "feedSource": "Media – Fulham",
       "clubs": [
         "Fulham"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Man Utd 4-0 Sabah: Winning return to Champions League as Benjamin Sesko scores again for Michael Carrick's side - Sky Sports",
-      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxONGF1OFFKcThEQ3Jmc01iYnhYMTNYaS1pTTZuTmo5SFBkOEFhTnlla1ZoUzRnRy03MFF6ZU9nTmtDaU1qMUpxVlFQVXozaXFPYXV2QlIxdi11OXV3T0J1cnQ5Q09WMmQyTi1jYm1DSnV4YTdhVkZkUng5aDRVZzdJcXdaUzFDa1dVY1hzRTlJNmNGMENDQjZGRjFHd0xVUWRTQUVrWGpoYzZ1VTh3Q2ZDczU4U3BrSV9sUWVZMEJpWThSZGlBbFI5Yzk4ZHVXWFZkN0JRYVFFNTJJY1FjN2VZblB1TnNZVXprajRvRUtjVkdtRGZfS01r?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxONGF1OFFKcThEQ3Jmc01iYnhYMTNYaS1pTTZuTmo5SFBkOEFhTnlla1ZoUzRnRy03MFF6ZU9nTmtDaU1qMUpxVlFQVXozaXFPYXV2QlIxdi11OXV3T0J1cnQ5Q09WMmQyTi1jYm1DSnV4YTdhVkZkUng5aDR...",
-      "date": "2026-09-12T00:24:29.000Z",
-      "source": "Sky Sports",
-      "feedSource": "Media – Manchester United",
-      "clubs": [
-        "Manchester United"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Evangelos Marinakis sacks his 25th manager in 16 years - Nottingham Post",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQalNjRXhaTnpUZFpfclFqMDhYdXA1WWw2NEJxdlpyLVRQMDZ3MjkzRWFFdXBSc2dhUWZXQVdOb3FTRFBqdy1SNWZHNExMMUlKSFlqYkdjZzFhYkNNejEtV1RJQjN1S19ibG0zdEJHZnlIbGplMjRKTlhUMGUzNGFtbzhNQ2VuQVhFOXJHMjBUTWxPQVBrc1ZpZzlfV19sS3ZIQ1prQmd2b1hmX2xEUTRqVWpuWkpIVFh3?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQalNjRXhaTnpUZFpfclFqMDhYdXA1WWw2NEJxdlpyLVRQMDZ3MjkzRWFFdXBSc2dhUWZXQVdOb3FTRFBqdy1SNWZHNExMMUlKSFlqYkdjZzFhYkNNejEtV1RJQjN1S19ibG0zdEJHZnlIbGplMjRKTlhUMGU...",
-      "date": "2026-09-12T00:17:32.000Z",
-      "source": "Nottingham Post",
-      "feedSource": "Media – Nottingham Forest",
-      "clubs": [
-        "Nottingham Forest"
       ],
       "category": "media"
     },
@@ -2261,18 +2357,6 @@
       "feedSource": "Media – Liverpool",
       "clubs": [
         "Liverpool"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Arsenal XI vs Sunderland: Confirmed team news and predicted lineup - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQc0hrYVFKcm5Ub28xX0FwbHc0Vzl4emwwM2xHNDFsY0xHTDRZamM2YnpxUWhmWFl1bkFnbGRZOVl5NDc1MklHUy1vczhHclNtNGNmWnd2WkpIRmFEVnRDYUYycTc5Qms3THMtaUpINjJNWTdGVFFtNlJMeW84bjdabFRlSk9SekttdEV4SmFRWEFfNVJMemVEZ21FNjlQTUhqcGF0MWxNYXRaalBfRkZ6T3Z0MGZ3NVdoTGpGSk5reDNvQjltVWJrRUU3NU1lY1VrVnFJdWhzYU9ZWkNEanJjNWtUaWlMV0hwTkE?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxQc0hrYVFKcm5Ub28xX0FwbHc0Vzl4emwwM2xHNDFsY0xHTDRZamM2YnpxUWhmWFl1bkFnbGRZOVl5NDc1MklHUy1vczhHclNtNGNmWnd2WkpIRmFEVnRDYUYycTc5Qms3THMtaUpINjJNWTdGVFFtNlJMeW8...",
-      "date": "2026-09-11T23:59:57.000Z",
-      "source": "London Evening Standard",
-      "feedSource": "Media – Arsenal",
-      "clubs": [
-        "Arsenal"
       ],
       "category": "media"
     },
@@ -2313,26 +2397,14 @@
       "category": "media"
     },
     {
-      "title": "Grimsby Town vs Bristol Rovers Probable lineups - Goal.com",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYXNOUlNGUmlsOE1pdTd1a3dvX3paWWZLdlRBUWRUT1pNWThKb2xxaW1BUGlXMmYyS2gzQS16UUhfdkdqRjU3M2RfRzJPbF9Rd2FFUEU3MDFVZ04yYkpSSUZSRVJRa280LVNLdDlOR19oZ19VSVA3Q3ZoaWxJdGlkc1hMS3p2ck54SXl1eVRHQ3JIX1NaQ0Q2VFdXLXctd1BRTHZjRmJtOU5WWlNDNWlWYlNwNEUya3Q4dmc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOYXNOUlNGUmlsOE1pdTd1a3dvX3paWWZLdlRBUWRUT1pNWThKb2xxaW1BUGlXMmYyS2gzQS16UUhfdkdqRjU3M2RfRzJPbF9Rd2FFUEU3MDFVZ04yYkpSSUZSRVJRa280LVNLdDlOR19oZ19VSVA3Q3ZoaWx...",
-      "date": "2026-09-11T23:31:10.000Z",
-      "source": "Goal.com",
-      "feedSource": "Media – Bristol Rovers",
+      "title": "West Ham cut loose to hit Wrexham for six and go top of Championship - The Guardian",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONGhQM2hUSm1xTGs2YXNna0hvM3RvX1J2YThoWkdhaDYyVHlRd21TdGhldjJWYWVhcGRocTRndGpyVm5iS2xibms4WlBFY05Tc2pzOE5RZTladnFUUU1sdjY5UmdRSnA1d0o2cW5mTUxjSkgzRGVXbGJnYnZRNjVyMW1uRHN5N2YxcHBMY1IxRFRRMjNwUkE?oc=5",
+      "summary": "<ol><li><a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxONGhQM2hUSm1xTGs2YXNna0hvM3RvX1J2YThoWkdhaDYyVHlRd21TdGhldjJWYWVhcGRocTRndGpyVm5iS2xibms4WlBFY05Tc2pzOE5RZTladnFUUU1sdjY5UmdRSnA1d0o2cW5mTUxjSkgzRGV...",
+      "date": "2026-09-11T23:40:00.000Z",
+      "source": "The Guardian",
+      "feedSource": "Media – Wrexham",
       "clubs": [
-        "Bristol Rovers"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Man Utd XI vs Man City: Confirmed team news and predicted lineup - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeVQ1Vms2cENUQkFjUEJIMUYxRzJzRW1SbHRlaXk2Rm5hTUtXT0cyWWZCRktCeHY5c243cGxqUW4yWVFwQTFEU1I4YUJ0a3F1eWVEd1FFLTkyaktPeEhmWTZDcVpCcmtOMXdqdDJ0SzJ2YUlmNTFaVXJtcjFIUmdiZzA2NHpnaEduR2xKZXIzOTFHT2hfZzNmaVN0LWs2ZTdOeWkxSkRiLU0zd010dFUycUpqcmlxZU8tamdqaGx0V1V2dXFWY183WWQzWml3RGhRbTU5SkYtN2FWZ0NnZkxISlZUTQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeVQ1Vms2cENUQkFjUEJIMUYxRzJzRW1SbHRlaXk2Rm5hTUtXT0cyWWZCRktCeHY5c243cGxqUW4yWVFwQTFEU1I4YUJ0a3F1eWVEd1FFLTkyaktPeEhmWTZDcVpCcmtOMXdqdDJ0SzJ2YUlmNTFaVXJtcjF...",
-      "date": "2026-09-11T23:26:33.000Z",
-      "source": "London Evening Standard",
-      "feedSource": "Media – Manchester City",
-      "clubs": [
-        "Manchester City"
+        "Wrexham"
       ],
       "category": "media"
     },
@@ -2361,38 +2433,14 @@
       "category": "media"
     },
     {
-      "title": "Tottenham XI vs Everton: Confirmed team news and predicted lineup - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNd3B5eER2c1gwMVlPM2FkakY4NlRfLU9mRjBIVkJMX09ReS0zSnBTUldzbWpnOXBLNU1BR0p3SlQ0Ry1kOVJpbm5fQlVkckRkQVRZWk9vYm9jdlRqVENRVFVQQlE5NVU5WUNKMXd3d1lISkNteEJteExWQ25CbmpZUXlKU0xaUGN5MUZVWk1IcnNBRnZRWXI2TlhFTkxDNzVnWXFvRl93eHgxamFpUHlheUVRU2JQdGhqWXVMRElEYlhPRUhHekZ3UXF5X3RVWUpEQ1BrSlQyR3NEbG9QTWVwdFlFZzI?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNd3B5eER2c1gwMVlPM2FkakY4NlRfLU9mRjBIVkJMX09ReS0zSnBTUldzbWpnOXBLNU1BR0p3SlQ0Ry1kOVJpbm5fQlVkckRkQVRZWk9vYm9jdlRqVENRVFVQQlE5NVU5WUNKMXd3d1lISkNteEJteExWQ25...",
-      "date": "2026-09-11T22:50:03.000Z",
-      "source": "London Evening Standard",
-      "feedSource": "Media – Everton",
-      "clubs": [
-        "Everton"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Manchester United news: Ruben Amorim takes a swipe at the club's former players now working in the media - Paper Talk - Sky Sports",
+      "title": "Manchester United news: Ruben Amorim takes a swipe at the club's former players now working in the media - Paper Talk | Football News - Sky Sports",
       "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQT1Q1ZEE3Wm9WNmJMQlhmLWV5d3gySDZDS1RkUFFWODZzbWtBQXBEYjZUTEF1WU8tcTV2cDU5aUIwYlZ1Y2RjX3ZYbkptWFZIeWRKUTJaWi1fcjVkTG94Ui1xOUVDdUF0UFVUU1pCNWJuNFJnaHF0M25lUVJqeTI2WVIxVVN1Rkc1SjdLcmk3NFRVeE0yQnkwVG9fVVJvVXdnSjNmeWE3SGdYN0JvY1BmWHhDWDd6MGtPWE5OeV9obFctR0ZyWU5YNFo2aEYyYzA2NGlZNXJCUFBNa0xZeUVONFlVWjRwWlkwMDZSeC12VXhoNG5reU1yUjJCTkVlWVljOG1JNloyMlUtLVAxZUEtTw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAJBVV95cUxQT1Q1ZEE3Wm9WNmJMQlhmLWV5d3gySDZDS1RkUFFWODZzbWtBQXBEYjZUTEF1WU8tcTV2cDU5aUIwYlZ1Y2RjX3ZYbkptWFZIeWRKUTJaWi1fcjVkTG94Ui1xOUVDdUF0UFVUU1pCNWJuNFJnaHF0M25lUVJ...",
       "date": "2026-09-11T22:41:02.000Z",
       "source": "Sky Sports",
-      "feedSource": "Media – Manchester City",
+      "feedSource": "Media – Chelsea",
       "clubs": [
-        "Manchester City"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Man City XI vs Man Utd: Confirmed team news and predicted lineup - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY1BFN0REREo4TmRGVjU5WklWTlVJdG9SWV96U2M0V2xMZDBtNGtaRlB6UmcyWjlQOGp0YVpDRUhzNXJuQ0d4MFA3el9iRlhrVEhMX25mdl9rc3V6eW45X0J2djhfT2NZT0tZM2hjUlZyc1FkVzBVLWJGYkJoSWNmelVvVW5nVGZ6YWgxRkxYNFctaDRHZnNINm5lTGJsV2NEYWJJZHcxTHQxTkFCb3BDRDdPdjlKUm0zYTJnNU9LSHZ4ZkpVNXYzRjN1M0h3clpNNTMtMEgwVWtMYUw5NU44M0JKSQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY1BFN0REREo4TmRGVjU5WklWTlVJdG9SWV96U2M0V2xMZDBtNGtaRlB6UmcyWjlQOGp0YVpDRUhzNXJuQ0d4MFA3el9iRlhrVEhMX25mdl9rc3V6eW45X0J2djhfT2NZT0tZM2hjUlZyc1FkVzBVLWJGYkJ...",
-      "date": "2026-09-11T22:39:25.000Z",
-      "source": "London Evening Standard",
-      "feedSource": "Media – Manchester City",
-      "clubs": [
-        "Manchester City"
+        "Chelsea"
       ],
       "category": "media"
     },
@@ -2421,18 +2469,6 @@
       "category": "media"
     },
     {
-      "title": "Granit Xhaka breaks silence on Chelsea transfer interest: 'A big privilege' - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTzk2bG5ZNE94UWxJOGpsZFE5SUpzRHlSR2R0TzYwT2JxZ0ZPYUsta2tKQWxPSVh5RGg4TUx0RWR2dXF3RzBuXzl5UWEwQjlNSVBYS3pMcTAwUXJ5ZjJabmtVMmE1bjRuV0doUXFxWTU2Q1pnbXY0aHlhU0o0TTRtWG9JYWRlM3pMM0xVSE5mLUNPcjNDVzE1a0NwajUzc3hTR0E?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPTzk2bG5ZNE94UWxJOGpsZFE5SUpzRHlSR2R0TzYwT2JxZ0ZPYUsta2tKQWxPSVh5RGg4TUx0RWR2dXF3RzBuXzl5UWEwQjlNSVBYS3pMcTAwUXJ5ZjJabmtVMmE1bjRuV0doUXFxWTU2Q1pnbXY0aHlhU0o...",
-      "date": "2026-09-11T22:25:59.000Z",
-      "source": "London Evening Standard",
-      "feedSource": "Media – Chelsea",
-      "clubs": [
-        "Chelsea"
-      ],
-      "category": "media"
-    },
-    {
       "title": "Wright | \"We have built a really good connection\" - Gillingham Football Club",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1BRM3pMQ0xzLTFPODN3U0lsRHF4U2RTeVdjWWs0cXJ5djdiN0g4MUpiUXZyTGtMNkZUOGgza2t5YWhydkJVemxQSWRkTDNROFFWWXNuZTJUdWNkTVNMay04aU92dXJBOEtzb0lJc3hwNkpLZmlOOHJPRHh1YmU1MFRaTXo0NzBtd3RZUlZlaEQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1BRM3pMQ0xzLTFPODN3U0lsRHF4U2RTeVdjWWs0cXJ5djdiN0g4MUpiUXZyTGtMNkZUOGgza2t5YWhydkJVemxQSWRkTDNROFFWWXNuZTJUdWNkTVNMay04aU92dXJBOEtzb0lJc3hwNkpLZmlOOHJPRHh...",
@@ -2453,18 +2489,6 @@
       "feedSource": "Media – Fulham",
       "clubs": [
         "Fulham"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Ngumoha is navigating minutes outside his ‘natural position’ - VAVEL.com",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVmZUbzB1X00zQlpad2VwOXhpbnNNV1hzVEFqVjRhLUsySGNpc1BvNFZGSjFCTWxVZXFKWGRHbXpwU21LT2ZpY29OcDY2anJ6WUkwRDdzUHFqWGN5THBGTUp3NWF4LTZpcWVWRU1FRHJ4TGdSNk0wcFItY3ZPRC1fZGFZcXFVb0hMYm5wVzU1bUo0bDEzUVBUVFUydjBNQzAtMU9PbldKcVhZZmI3V0Z5ZzJEb0pPa2hDbTFib1VjLVRkWHJhMnA5Q9IBzgFBVV95cUxNX083dUc5Q1M0OFJBSWRJX2R5YzFxZElabzZTNGZtVG1idGdvT0pONnBjVjB5RzdKTTNISlRtTzZrazJSTjk0ZWtIcDd4UjhNS0p0V0l4R29VVGdCNnhnUVVUTDhacmd1UW40S09PbFh1cnA3NDlnVWtNWF9uY0NXX0JEdzdJbXN6Y2NfZUxJRjNhQ3lnaV91cUNNb29lMUFQTUgzeDR3X1VMcG5oaWZKVElmRnJ2QzlFNlVSOVRMQWRqNTZ2THdRVzV3QU5LUQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVmZUbzB1X00zQlpad2VwOXhpbnNNV1hzVEFqVjRhLUsySGNpc1BvNFZGSjFCTWxVZXFKWGRHbXpwU21LT2ZpY29OcDY2anJ6WUkwRDdzUHFqWGN5THBGTUp3NWF4LTZpcWVWRU1FRHJ4TGdSNk0wcFItY3Z...",
-      "date": "2026-09-11T21:44:00.000Z",
-      "source": "VAVEL.com",
-      "feedSource": "Media – Liverpool",
-      "clubs": [
-        "Liverpool"
       ],
       "category": "media"
     },
@@ -2505,11 +2529,11 @@
       "category": "media"
     },
     {
-      "title": "De Zerbi has no regrets after Richarlison 'behaviour' and explains what he told Lucas Bergvall - football.london",
+      "title": "De Zerbi has no regrets after Richarlison 'behaviour' and explains what he told Lucas Bergvall - Football London",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc0NIRklEcTV5TnZ1TEdaNWJ2S0VLSENDTXJZaGhDMWQ3OGY1aXFFMXpDVEZfNTVrQjRqdmx4dVFOME4tUE9CSzhyOThPTlJ5SUxSN2JobFJCQkpRVnppREJRTkZQeWg5dFRyZ294akR1dlVRTm5CZG9JMFNvYkhYZmJ2ZlZOTlNGaGhqTzZfaGF4QQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxPc0NIRklEcTV5TnZ1TEdaNWJ2S0VLSENDTXJZaGhDMWQ3OGY1aXFFMXpDVEZfNTVrQjRqdmx4dVFOME4tUE9CSzhyOThPTlJ5SUxSN2JobFJCQkpRVnppREJRTkZQeWg5dFRyZ294akR1dlVRTm5CZG9JMFN...",
       "date": "2026-09-11T21:33:57.000Z",
-      "source": "football.london",
+      "source": "Football London",
       "feedSource": "Media – Tottenham Hotspur",
       "clubs": [
         "Tottenham Hotspur"
@@ -2553,11 +2577,11 @@
       "category": "media"
     },
     {
-      "title": "Newcastle United want to sign midfielder with 21 goal contributions in 20 games - Read Newcastle",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUVpJZkZlSDdFMDdhSUotR2tHNmlBWjBxcXVabTRMMUg0RFh0Y3Vtb2ZzWHU1cUEwSjFxeEZzLTFfYTF1eGJuT2VJQUhRZ0YzZHktTF9xQVM4RHNoUHpsaW54RmQyeU9IVnR5aGQ3dHZ2VXp0ak10ZVMtbWQtSlM0MVQ0OHE0cjJLRndScmR3V1RGQVNCQURPNXJqLVJabnJ4NGVCQW9FRnZOdw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUVpJZkZlSDdFMDdhSUotR2tHNmlBWjBxcXVabTRMMUg0RFh0Y3Vtb2ZzWHU1cUEwSjFxeEZzLTFfYTF1eGJuT2VJQUhRZ0YzZHktTF9xQVM4RHNoUHpsaW54RmQyeU9IVnR5aGQ3dHZ2VXp0ak10ZVMtbWQ...",
-      "date": "2026-09-11T21:09:22.000Z",
-      "source": "Read Newcastle",
+      "title": "Latest. Matthias Jaissle's team news update: Fernandez-Pardo and Hall latest ahead of Leeds trip - Newcastle United",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObGJObnR1SWp2NXdqQmE5d05fT2h0ZTdBNXFnaFg0d24zeGR5NmtGa3UzdmJwZWEtWTlMSDUtYTh5bnA0NDNLMVJ6VGs3c2x5cWM1TG9kd2x6RDBfQ2djX0hDbUFoMjViZ1FTRTFkaXFPMkc3eF85VzRubExWSEdpRVZkZ0dMVFRSRU5GY1BfcWZwZDRsN0pGenAxai10VHprbWtoMS1rajFlTGx5d25HQ3p0TmM4cmYwTzhsUmtBWWNLMHpW?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxObGJObnR1SWp2NXdqQmE5d05fT2h0ZTdBNXFnaFg0d24zeGR5NmtGa3UzdmJwZWEtWTlMSDUtYTh5bnA0NDNLMVJ6VGs3c2x5cWM1TG9kd2x6RDBfQ2djX0hDbUFoMjViZ1FTRTFkaXFPMkc3eF85VzRubEx...",
+      "date": "2026-09-11T21:06:53.000Z",
+      "source": "Newcastle United",
       "feedSource": "Media – Newcastle United",
       "clubs": [
         "Newcastle United"
@@ -2577,14 +2601,14 @@
       "category": "media"
     },
     {
-      "title": "Bayern Munich News: The aftermath of FC Bayern’s 5-0 win vs. Bodø/Glimt - Bavarian Football Works",
-      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPS0xmRGFnT1diaXRYZjJ2YjlmVnBOWFJzXzNsRzFLeTJrSXVXUTI3RGxWdGZLZjJVS3RHV0FRbGlvS3ZBbTRnTzhWTlJFSFlBWUVKRDc5UTh4S2FLaElsMlM5cmlmcllmWUxybTV3VGhMRk5mRndTWE9ES3U4bEphQ2pBUGxNTHBmcmdIWWlUeUJHVVM0azVoQjYtaFJNU1ItSVJfUGFLWjBOZFJiUDRocG83OEE4Z3BpdVpRbVBWWmNiVFliQVlZVW5uUUZDNmRreFVoc2RNM1JuRlN0b0xKUWY5NExBemZBalBkbTc5b2Z6YzN0RTRkR1k1eDhtUU1mNGpXUTREWi0wZXhGSVp1SGVSWnZQVTZnVWc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgJBVV95cUxPS0xmRGFnT1diaXRYZjJ2YjlmVnBOWFJzXzNsRzFLeTJrSXVXUTI3RGxWdGZLZjJVS3RHV0FRbGlvS3ZBbTRnTzhWTlJFSFlBWUVKRDc5UTh4S2FLaElsMlM5cmlmcllmWUxybTV3VGhMRk5mRndTWE9ES3U...",
-      "date": "2026-09-11T21:00:00.000Z",
-      "source": "Bavarian Football Works",
-      "feedSource": "Media – Manchester United",
+      "title": "Match Report | Hammers hit Wrexham for six on record-breaking Friday night - West Ham United",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVkc3ZFNoRUZsV2FxV3hLTVpVdTBLWFFkSHJuT3ZQMGdlakdtYXYwZ2JpWjBxNVp4cTEtZDhUc29MamhvMnRUUVpwSzVZb19ZSXl4N0xSTXVtVVFNTndjWUFpQVkzT0RMMDhQUEdpYTJkWGVJMElRMVZycXFqbUVDSnM4d1dUdzc5ODA2UVVvQUFtRDBac2k5d09rM2p2N2xxRzhHZ2dxNVk?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVkc3ZFNoRUZsV2FxV3hLTVpVdTBLWFFkSHJuT3ZQMGdlakdtYXYwZ2JpWjBxNVp4cTEtZDhUc29MamhvMnRUUVpwSzVZb19ZSXl4N0xSTXVtVVFNTndjWUFpQVkzT0RMMDhQUEdpYTJkWGVJMElRMVZycXF...",
+      "date": "2026-09-11T21:04:49.000Z",
+      "source": "West Ham United",
+      "feedSource": "Media – Wrexham",
       "clubs": [
-        "Manchester United"
+        "Wrexham"
       ],
       "category": "media"
     },
@@ -2687,18 +2711,6 @@
       "category": "fan"
     },
     {
-      "title": "Alvaro Arbeloa issues Liverpool warning as Fulham 'statement' promised after winless start - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlpTblZRbHBfLW85NGI3TjJUUmdnaXhGc0VicGRqbzQyd215WUZCQkw0dnVEckFIWFVQY09jUTRLRWpONmUxbVhxaWtaa3pFaWpiOTUwVFBSWTR2RnhwTEQ3ZWxFeW9vT0p4dERtZ2ViNkxSU2ZkS0ZJQ2w2bXNPNHU4MktWbUJaek12ZmRWYlhMd0xxNEE?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlpTblZRbHBfLW85NGI3TjJUUmdnaXhGc0VicGRqbzQyd215WUZCQkw0dnVEckFIWFVQY09jUTRLRWpONmUxbVhxaWtaa3pFaWpiOTUwVFBSWTR2RnhwTEQ3ZWxFeW9vT0p4dERtZ2ViNkxSU2ZkS0ZJQ2w...",
-      "date": "2026-09-11T20:26:28.000Z",
-      "source": "London Evening Standard",
-      "feedSource": "Media – Liverpool",
-      "clubs": [
-        "Liverpool"
-      ],
-      "category": "media"
-    },
-    {
       "title": "£43m-rated 20-year-old defender sparks Liverpool battle: Is he the right option for Iraola?",
       "link": "https://vitalfootball.co.uk/liverpool-transfer-news-50m-star-sparks-reds-concern/",
       "summary": "Source",
@@ -2723,26 +2735,14 @@
       "category": "media"
     },
     {
-      "title": "Inside the stunning Spartans-led takeover of Shrewsbury Town and the Brad Friedel link - The Scotsman",
+      "title": "Inside the stunning Spartans-led takeover of Shrewsbury Town and the Brad Friedel link - scotsman.com",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQN1FwaS1KS2FhcXRIU3lpWFlQNWU1Rmc1ZzRKVEpVdTM1a3JHa0RkdTB4cnRxbHpBMG5qOFZxa1RzaHBmZHFOaGF0TjVvajY0bjBpSmdHM2VwNi1lM01xX1FFZGlGNXJpZkszUnNlVmlXOTZ1NXRoTWdTa1FvanliZFB4R3dwckNwVlp2ZEpUaTdadkFjY3c5RlpBNENNZ1B0eFRYM1ZjdHdHU2QydTVJTWtJNzdvNllFajRHZWNlSjUtSkU0Qjl1RXZPRFdLRE0?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxQN1FwaS1KS2FhcXRIU3lpWFlQNWU1Rmc1ZzRKVEpVdTM1a3JHa0RkdTB4cnRxbHpBMG5qOFZxa1RzaHBmZHFOaGF0TjVvajY0bjBpSmdHM2VwNi1lM01xX1FFZGlGNXJpZkszUnNlVmlXOTZ1NXRoTWdTa1F...",
       "date": "2026-09-11T20:00:00.000Z",
-      "source": "The Scotsman",
+      "source": "scotsman.com",
       "feedSource": "Media – Shrewsbury Town",
       "clubs": [
         "Shrewsbury Town"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "West Ham vs Wrexham: Jarrod Bowen strike opens the scoring - Sky Sports",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ0ZLMHBNbm94ZEd1SzkwQTVHaFoza3JmSFdHUkxJSHVaakU1SU51Zk4zckVFajYwYlB3TmlDY0UwclZZd0tsQzBpWDJEaHREeXhfM3N6LU10dll6RXNkUUl5SWJUbUNnVkhocGtXRXNsaUdUUzU2Z2gzNXFnQ19sbzhYWnZCUXVwckNtOVo2V1B3QlFKcXpTU0Qwc1NmWENJR3NxNG40aUNQZ2dlN2l6OEZPaw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ0ZLMHBNbm94ZEd1SzkwQTVHaFoza3JmSFdHUkxJSHVaakU1SU51Zk4zckVFajYwYlB3TmlDY0UwclZZd0tsQzBpWDJEaHREeXhfM3N6LU10dll6RXNkUUl5SWJUbUNnVkhocGtXRXNsaUdUUzU2Z2gzNXF...",
-      "date": "2026-09-11T19:43:27.000Z",
-      "source": "Sky Sports",
-      "feedSource": "Media – Wrexham",
-      "clubs": [
-        "Wrexham"
       ],
       "category": "media"
     },
@@ -2815,6 +2815,18 @@
       "feedSource": "Media – Shrewsbury Town",
       "clubs": [
         "Shrewsbury Town"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Man Utd disadvantage brushed off by Enzo Maresca ahead of derby - 'It happens in football' - The Mirror",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZXotT2stT3l0VFg0ejhBOWNQYm9LSjN1VkxFbEpwaldCbTlObXFWN1FZOVFVMVdJNm1vVTNaYXVzN1NjSERqb0VMMTBVbDB4b3VNbG9zQjJjTWV4MkZMdVRDOUZDNEZPYV93MXZIMnd2Uk5WUmZSVFJILUR1Y1hYX0Z2RHFianfSAYwBQVVfeXFMTnlqcHhOTm1qbFVxQnk3TkFvcTlfZzk1dkxTMkZLV3JPRlQwSzZfVGVYMzA5R3JuaUZSY21NZ2M2aEhyWWZETFF3aEJ0eFZGSHQ5OUxUeDFmWENPRmFKSmVzdUg5RERzdzBEMmxvdzZ2eFJ3OXI5TzZTb3d2bk1QNHBNbXhiYzdXZ1NtUjA?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPZXotT2stT3l0VFg0ejhBOWNQYm9LSjN1VkxFbEpwaldCbTlObXFWN1FZOVFVMVdJNm1vVTNaYXVzN1NjSERqb0VMMTBVbDB4b3VNbG9zQjJjTWV4MkZMdVRDOUZDNEZPYV93MXZIMnd2Uk5WUmZSVFJILUR...",
+      "date": "2026-09-11T19:18:00.000Z",
+      "source": "The Mirror",
+      "feedSource": "Media – Manchester City",
+      "clubs": [
+        "Manchester City"
       ],
       "category": "media"
     },
@@ -2915,6 +2927,18 @@
       "category": "official"
     },
     {
+      "title": "GPS Group unveiled as official fan zone sponsor - Gillingham Football Club",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYXZiWTh2bHZ0cEFSdlhjMXdFb0JDeElCWHd6cmFaRzEySTJDZUFEZmpJcWtUT2dyU3gtOWgxYVFlb2lvTmRxenhJdWM5YzdtZk9tY2h1bHRuWGowc3NmelZOSER3dDJKVGVIWjhyYmhvcUtIdTQtQUZBVjVqczNFNDc5Q3R3SERrLU43endtbllNZw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxPYXZiWTh2bHZ0cEFSdlhjMXdFb0JDeElCWHd6cmFaRzEySTJDZUFEZmpJcWtUT2dyU3gtOWgxYVFlb2lvTmRxenhJdWM5YzdtZk9tY2h1bHRuWGowc3NmelZOSER3dDJKVGVIWjhyYmhvcUtIdTQtQUZBVjV...",
+      "date": "2026-09-11T18:53:14.000Z",
+      "source": "Gillingham Football Club",
+      "feedSource": "Official – Gillingham",
+      "clubs": [
+        "Gillingham"
+      ],
+      "category": "official"
+    },
+    {
       "title": "AFC Bournemouth vs Brentford: Premier League Preview, Gameweek 4, 2026 - VAVEL.com",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNjk1S1RLa3J2QmpoSFJlTU9WelZtV2REaDRDYWtLM3ZoWExZZXJHa0tjWVQ4M0ppOUNlV2hGaXlxWjNNUzQ1Q0M2TWcxcnpnQVBBM0kwNldJa0lsbVE0U2Y0U1ZOWUh6Y3dBenJkU003eENXR0x5V0JKSXh2QmVjZ1NxNmZDc05qWEpzUDZ2UzFOVjhTM1o2ZVZiMGJWcXY5WVdIN1F4MXNIcEFaV3RuMXppNnRzcGo1MF81RFJjRVBBbDgxZ041aFdVQ3BwQ1BjTmhNVkZJQdIB3AFBVV95cUxQRG5HZUFONTVNVWstZzZTZmtyUXVJWHBBQUwwc2FVSV81YWNnT3BPaHRab0xJWlJDbk9nOVRwb1FEYmcydEppV19xbU9xVExBNmVEUGhZN0RKLS04aGlBRnc0TDRZT1lJcjc1bEx6N3dxLVVqRDRnZXpuS3pIVDQ1cmJZdmxxYm5jWEdKZVRrSWcyZVRXclAyVjR1a252a2pNVUJJbC11dk9SdGxUd1BnWXZ1cVRpUzBTVE9DWmVQNmFBRFBMWFFvdUtTaThWa1hZZGRKcm0wRGxtbjZh?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNjk1S1RLa3J2QmpoSFJlTU9WelZtV2REaDRDYWtLM3ZoWExZZXJHa0tjWVQ4M0ppOUNlV2hGaXlxWjNNUzQ1Q0M2TWcxcnpnQVBBM0kwNldJa0lsbVE0U2Y0U1ZOWUh6Y3dBenJkU003eENXR0x5V0JKSXh...",
@@ -2975,6 +2999,18 @@
       "category": "media"
     },
     {
+      "title": "Derby County - Birmingham City Live - Championship: Football Scores & Highlights - 12/09/2026 - TNT Sports",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaml5Nmp2blBvdzRxQ0lTZkJhSkZDRkRpRjVJcm54OVAtc0E1TU1tb182cWtkQkQwVVBTbk5wV3pUVlBoMEtnMzNWMTlrMHJIdThlal9UbXRnd0p5ZlJNSTUwSy1EMW9fcU9qb3htYjR0UG5NOTdYcnVlMndISmZxbG00aklMQTNLVHl2RmhBQVAwUXZnM0lYaHljUGdXUUNOX2x4Z2pvYWdwcGw5VjdtMjZJc1VjVTg?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxPaml5Nmp2blBvdzRxQ0lTZkJhSkZDRkRpRjVJcm54OVAtc0E1TU1tb182cWtkQkQwVVBTbk5wV3pUVlBoMEtnMzNWMTlrMHJIdThlal9UbXRnd0p5ZlJNSTUwSy1EMW9fcU9qb3htYjR0UG5NOTdYcnVlMnd...",
+      "date": "2026-09-11T18:32:14.000Z",
+      "source": "TNT Sports",
+      "feedSource": "Media – Derby County",
+      "clubs": [
+        "Derby County"
+      ],
+      "category": "media"
+    },
+    {
       "title": "Aaron Ramsdale transfer reveal made at Leeds United after 'ambitious' bid - Yahoo Sports UK",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQmZ0bnIxdnFXQ3VGbm1kbDRVZjlRZ3ltRjZsVEg5MWVybUtjd3ZmelpKMXJJb2UwU3V3S2hTZ1h6dGNvVDAtQm54OVc4OWRRSXVhOTlXU29hV3d1c3NETi02aHdIdXh3R2lpSG9IQzBvNDk2QTVPTVFEREZUbEhWOGpDajhOVUZPbWhz?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQmZ0bnIxdnFXQ3VGbm1kbDRVZjlRZ3ltRjZsVEg5MWVybUtjd3ZmelpKMXJJb2UwU3V3S2hTZ1h6dGNvVDAtQm54OVc4OWRRSXVhOTlXU29hV3d1c3NETi02aHdIdXh3R2lpSG9IQzBvNDk2QTVPTVFEREZ...",
@@ -2995,18 +3031,6 @@
       "feedSource": "Media – Coventry City",
       "clubs": [
         "Coventry City"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Latest. Matthias Jaissle's team news update: Fernandez-Pardo and Hall latest ahead of Leeds trip - Newcastle United",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObGJObnR1SWp2NXdqQmE5d05fT2h0ZTdBNXFnaFg0d24zeGR5NmtGa3UzdmJwZWEtWTlMSDUtYTh5bnA0NDNLMVJ6VGs3c2x5cWM1TG9kd2x6RDBfQ2djX0hDbUFoMjViZ1FTRTFkaXFPMkc3eF85VzRubExWSEdpRVZkZ0dMVFRSRU5GY1BfcWZwZDRsN0pGenAxai10VHprbWtoMS1rajFlTGx5d25HQ3p0TmM4cmYwTzhsUmtBWWNLMHpW?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxObGJObnR1SWp2NXdqQmE5d05fT2h0ZTdBNXFnaFg0d24zeGR5NmtGa3UzdmJwZWEtWTlMSDUtYTh5bnA0NDNLMVJ6VGs3c2x5cWM1TG9kd2x6RDBfQ2djX0hDbUFoMjViZ1FTRTFkaXFPMkc3eF85VzRubEx...",
-      "date": "2026-09-11T18:06:23.000Z",
-      "source": "Newcastle United",
-      "feedSource": "Media – Newcastle United",
-      "clubs": [
-        "Newcastle United"
       ],
       "category": "media"
     },
@@ -3043,6 +3067,18 @@
       "feedSource": "Media – Everton",
       "clubs": [
         "Everton"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Carrick encouraged by connections - manutd.com",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTFhUeUk0c29QVDA3QkFDTHBDblRTUnVfTFo0eUZHT1JGUm1qTmFMa0Noa3pZVF81NzdfVjRWbFBDbGdSVS1DM1VKaFR4cVZobnAzVlh2Y29tYTdkdGRWTFYyTlZXWmZUT2NzSHA5QlBuTEoxX3I2Rk1yUk1WNkw2MUEwTE1XUHZzaElBRTd2MVY5bm84YmZMUlo2NmNvYThBbFhnVGZzZEtFUQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTFhUeUk0c29QVDA3QkFDTHBDblRTUnVfTFo0eUZHT1JGUm1qTmFMa0Noa3pZVF81NzdfVjRWbFBDbGdSVS1DM1VKaFR4cVZobnAzVlh2Y29tYTdkdGRWTFYyTlZXWmZUT2NzSHA5QlBuTEoxX3I2Rk1yUk1...",
+      "date": "2026-09-11T18:04:18.000Z",
+      "source": "manutd.com",
+      "feedSource": "Media – Manchester United",
+      "clubs": [
+        "Manchester United"
       ],
       "category": "media"
     },
@@ -3107,14 +3143,14 @@
       "category": "media"
     },
     {
-      "title": "Record Wrexham attendance witnesses six-goal hammering at West Ham - Border Counties Advertizer",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMHlfR2NaeEdYUTVza19MaVdLUkp1Q3Y4d1R1cm1IQ01lT0FWZEpGT3dsUEd1VDYwT3dMSU00V3oxZ3NkaXVWbUVkU1RiTUkzekVGbFcxTlU4UngycEdmWEttV3hUSm1PQmt1a2JrdXRBT3JOQ2IzUWN4YlJWYUR3Y093MDRxdEpFQkpwdzZlZXdNMWdhY3RZSWJpV2RLVUhfWW9vclUwUk52bWg4NFkzdWZhMA?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQMHlfR2NaeEdYUTVza19MaVdLUkp1Q3Y4d1R1cm1IQ01lT0FWZEpGT3dsUEd1VDYwT3dMSU00V3oxZ3NkaXVWbUVkU1RiTUkzekVGbFcxTlU4UngycEdmWEttV3hUSm1PQmt1a2JrdXRBT3JOQ2IzUWN4YlJ...",
-      "date": "2026-09-11T17:39:56.000Z",
-      "source": "Border Counties Advertizer",
-      "feedSource": "Media – Wrexham",
+      "title": "Tottenham vs Everton predictions: 11-2 Bet Builder tip, team news and odds - Racing Post",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQk12bGcxTm92V3BJc3dlTVR0OW5pLUF4aWxaQzZPT1RaaXIwSnVNWWRfZ01uVkFUSmZ6NXNaQ2dBazFsU3liaUxQdWVqbGlRN0Q3UnllSGVuaUM1cTAzcDczb1RPUVZiZWJ3eXV6RFg3VmpqMzZXbUp2blZXdHBiOFo4djRGSkcybGx0bmw1N2dGUzZmempNQWNsRzY1Vnh6RGlMUEVrbE1ucWZicW1ibEhMUDRaV2lMTXVoZ2xmN1EteWRtSFU4a2p2SmZtM0RKTng5ZWI2WndwQUpLWW5XdDh3?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQk12bGcxTm92V3BJc3dlTVR0OW5pLUF4aWxaQzZPT1RaaXIwSnVNWWRfZ01uVkFUSmZ6NXNaQ2dBazFsU3liaUxQdWVqbGlRN0Q3UnllSGVuaUM1cTAzcDczb1RPUVZiZWJ3eXV6RFg3VmpqMzZXbUp2blZ...",
+      "date": "2026-09-11T17:30:00.000Z",
+      "source": "Racing Post",
+      "feedSource": "Media – Everton",
       "clubs": [
-        "Wrexham"
+        "Everton"
       ],
       "category": "media"
     },
@@ -3155,14 +3191,14 @@
       "category": "media"
     },
     {
-      "title": "Everton FC: An assessment of a prospective sale by The Friedkin Group - ToffeeWeb",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5qR1ZLNExxOGxHN2s1QVN3NGYxRVpPeFdteV9FS05IeDRhWWlOM25WLTVadldxbW1qSEc2T1JZNjlvRTI5Zi1BR04ycTN6MXNzcUxSdWFaUWFkOHlWRklNS1pZWXY?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5qR1ZLNExxOGxHN2s1QVN3NGYxRVpPeFdteV9FS05IeDRhWWlOM25WLTVadldxbW1qSEc2T1JZNjlvRTI5Zi1BR04ycTN6MXNzcUxSdWFaUWFkOHlWRklNS1pZWXY?oc=5\" target=\"_blank\">Everton F...",
-      "date": "2026-09-11T17:16:07.000Z",
-      "source": "ToffeeWeb",
-      "feedSource": "Media – Everton",
+      "title": "Grimsby Town vs. Bristol Rovers - Boxscore - Live Score - September 12, 2026 - FOX Sports",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZEJuLURtRlVJVzZ0Szd1Q1Y5UkJSTWRqeFFXdUtWOWFDYVVfZHRMZVpvY1Q0ZVI3WnRrTmlHdkY3WVRVenJrYkNpT1NLX0xTTk5WOVl5cktiWEd0dFZKYVZwRnc2NTJEeTU0SnAydXh5Uno0ZkpHLXdwaW9mUzRWdjNSeWVtMGJSVGRHbEpHSlV1T3M3ZUpWQVZTQVltdHpWMEdVcjk4VWd6ZFdrOWs0U2pleFZNenJSMFh1bHA0VTgyZlZvUlB3?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxOZEJuLURtRlVJVzZ0Szd1Q1Y5UkJSTWRqeFFXdUtWOWFDYVVfZHRMZVpvY1Q0ZVI3WnRrTmlHdkY3WVRVenJrYkNpT1NLX0xTTk5WOVl5cktiWEd0dFZKYVZwRnc2NTJEeTU0SnAydXh5Uno0ZkpHLXdwaW9...",
+      "date": "2026-09-11T17:07:56.000Z",
+      "source": "FOX Sports",
+      "feedSource": "Media – Grimsby Town",
       "clubs": [
-        "Everton"
+        "Grimsby Town"
       ],
       "category": "media"
     },
@@ -3223,6 +3259,18 @@
       "feedSource": "CaughtOffside",
       "clubs": [
         "Leeds United"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Predicted line-ups for every Premier League team in Matchweek 4 - Premier League",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbUN3YnBaMlNnX3hNWlBJemttUGxvSnBSVVB5Mk9tX19BR1A0TkNQazYtRWJRVEtnVmZ1ZjNobUF5VXhrUEUwNzBNc0ZSTXdUWDJzc3ctN3BES25JRVMwNWZZWnp3aGd2cW5qdmxPN3F3bDA5bmlfVWsyakg0azVQa04wVmprRnlQbHA0Ul9EMGVfM2NIZEMyUTBWWjBTTnpEcDNNOEp6RlpkdDZJQWc?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxPbUN3YnBaMlNnX3hNWlBJemttUGxvSnBSVVB5Mk9tX19BR1A0TkNQazYtRWJRVEtnVmZ1ZjNobUF5VXhrUEUwNzBNc0ZSTXdUWDJzc3ctN3BES25JRVMwNWZZWnp3aGd2cW5qdmxPN3F3bDA5bmlfVWsyakg...",
+      "date": "2026-09-11T16:56:05.000Z",
+      "source": "Premier League",
+      "feedSource": "Media – Ipswich Town",
+      "clubs": [
+        "Ipswich Town"
       ],
       "category": "media"
     },
@@ -3299,18 +3347,6 @@
       "category": "fan"
     },
     {
-      "title": "GARY ON PALACE CHALLENGE - Ipswich Town FC",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ucG5zNGFSSVo0RXN5bFM0ZXotWmxEWWt1QlNtUGkyTmh2c3hMRTRwcGd2RTdrYnlyVFU3WldacDlVZV9HUDd3eUQ4UlhzdWk2amFQYmlZZGtuME9DY3ZoUlplX3Z0STMxTjVSWi1NNnN3bXY4SXhNLU5PQQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE5ucG5zNGFSSVo0RXN5bFM0ZXotWmxEWWt1QlNtUGkyTmh2c3hMRTRwcGd2RTdrYnlyVFU3WldacDlVZV9HUDd3eUQ4UlhzdWk2amFQYmlZZGtuME9DY3ZoUlplX3Z0STMxTjVSWi1NNnN3bXY4SXhNLU5PQQ?...",
-      "date": "2026-09-11T16:16:06.000Z",
-      "source": "Ipswich Town FC",
-      "feedSource": "Media – Ipswich Town",
-      "clubs": [
-        "Ipswich Town"
-      ],
-      "category": "media"
-    },
-    {
       "title": "Preview | Gillingham v Tranmere Rovers - Gillingham Football Club",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPby1OMjZMcEd5MlVwV0duQWhOcS10RWJCTG5Gby0tUjZwRXNPcVdHY2pIU05vU0ZUVWYyalU5TEdLMkZqQ3A3VWVoczNITUtQZ09ydkN4SExJVzE0cGU5NEUtZnNuSENKdzhrbk1uLWtYd2dfSHp3TEdyT2dEcWFJZWI3VWRHdkRRdnc?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPby1OMjZMcEd5MlVwV0duQWhOcS10RWJCTG5Gby0tUjZwRXNPcVdHY2pIU05vU0ZUVWYyalU5TEdLMkZqQ3A3VWVoczNITUtQZ09ydkN4SExJVzE0cGU5NEUtZnNuSENKdzhrbk1uLWtYd2dfSHp3TEdyT2d...",
@@ -3345,18 +3381,6 @@
         "Watford"
       ],
       "category": "media"
-    },
-    {
-      "title": "GPS Group unveiled as official fan zone sponsor - Gillingham Football Club",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYXZiWTh2bHZ0cEFSdlhjMXdFb0JDeElCWHd6cmFaRzEySTJDZUFEZmpJcWtUT2dyU3gtOWgxYVFlb2lvTmRxenhJdWM5YzdtZk9tY2h1bHRuWGowc3NmelZOSER3dDJKVGVIWjhyYmhvcUtIdTQtQUZBVjVqczNFNDc5Q3R3SERrLU43endtbllNZw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxPYXZiWTh2bHZ0cEFSdlhjMXdFb0JDeElCWHd6cmFaRzEySTJDZUFEZmpJcWtUT2dyU3gtOWgxYVFlb2lvTmRxenhJdWM5YzdtZk9tY2h1bHRuWGowc3NmelZOSER3dDJKVGVIWjhyYmhvcUtIdTQtQUZBVjV...",
-      "date": "2026-09-11T16:11:13.000Z",
-      "source": "Gillingham Football Club",
-      "feedSource": "Official – Gillingham",
-      "clubs": [
-        "Gillingham"
-      ],
-      "category": "official"
     },
     {
       "title": "Peterborough United's Rio Adebisi is not giving up on return to the pitch despite two years of injury hell - Peterborough Telegraph",
@@ -3421,6 +3445,18 @@
       "category": "media"
     },
     {
+      "title": "Linda Lif Boama injury update - Charlton Athletic Football Club",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VOGlkTEZfc1pab2FEUWp6SVlDOEFKdHdHVjhEU19oUl9OajFHcmlxYUlKZU5JRktzcngxVERzY3lySnVWRnBibEVuYjJQUFJBaDI1X0ktQWhFNUg4MUlSVzRBNHN5c1BQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VOGlkTEZfc1pab2FEUWp6SVlDOEFKdHdHVjhEU19oUl9OajFHcmlxYUlKZU5JRktzcngxVERzY3lySnVWRnBibEVuYjJQUFJBaDI1X0ktQWhFNUg4MUlSVzRBNHN5c1BQ?oc=5\" target=\"_blank\">Lind...",
+      "date": "2026-09-11T16:02:19.000Z",
+      "source": "Charlton Athletic Football Club",
+      "feedSource": "Media – Charlton Athletic",
+      "clubs": [
+        "Charlton Athletic"
+      ],
+      "category": "media"
+    },
+    {
       "title": "Martin issues updates on Leicester City trio ahead of Stockport County test - hayters.com",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeHdBeV9FNWpKUjBtc1dmM0ZvWnZrRlhQaVlYa01tVWduUGYzMl9jcENzeVlWekFXU2lkN1hqR2lSdlMzblR1aERNZXAyV0ZlT1V0M21odGtVdVFXOHFZUVpDT2FXMDRoTm92c09qTk9Xd2dxZUMyVWdkZktFMG9BNTFPdlJyUDI3ZU80dVhnNkc2TGQxODBiMld0eHXSAaIBQVVfeXFMT05UVWNfcXZJMnUxWkxGaHhGd0xERDhLUHR6WFZyNWp0M3dBNzI4Qjlnd0lQdTJxaENWSUJvN202S2pTeV9hRGhWUGxMR0JyLXd5Ujk1QWppaTZMLXh1WHc2ZHhsUkhQeVFKbkJJMUlSbmFXNjBvTl9pb0FyVGhaSkt2QWZKbW1LbkxpZGw0SWluQjFhMmhCcFNLUldtR3FuLVFn?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOeHdBeV9FNWpKUjBtc1dmM0ZvWnZrRlhQaVlYa01tVWduUGYzMl9jcENzeVlWekFXU2lkN1hqR2lSdlMzblR1aERNZXAyV0ZlT1V0M21odGtVdVFXOHFZUVpDT2FXMDRoTm92c09qTk9Xd2dxZUMyVWdkZkt...",
@@ -3469,6 +3505,30 @@
       "category": "media"
     },
     {
+      "title": "SWFC News: Owls predicted XI vs Wigan as Henrik Pedersen faces attacking conundrum - thestar.co.uk",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRDRYZ2J4ak5qaEF0VW54Sm9CSjZmZjhwNTlBQ1hTeFg4T0dzZ2FEcmhpaUpVVzc5RmlZNU1SVTVFTW9iY0MxR2daSEpfNjlUaXZId2ZfRDh3Zm5mYjkzUzhOUlF3V2NNalFiS3lIODEyVWNRWnZIMEVCVVRYRE9qTFR1QVZjZl9UU1l3VFdCazZBTHhreTlNS1lyckhud2NzbXNTWVlyRkc?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRDRYZ2J4ak5qaEF0VW54Sm9CSjZmZjhwNTlBQ1hTeFg4T0dzZ2FEcmhpaUpVVzc5RmlZNU1SVTVFTW9iY0MxR2daSEpfNjlUaXZId2ZfRDh3Zm5mYjkzUzhOUlF3V2NNalFiS3lIODEyVWNRWnZIMEVCVVR...",
+      "date": "2026-09-11T16:00:00.000Z",
+      "source": "thestar.co.uk",
+      "feedSource": "Media – Wigan Athletic",
+      "clubs": [
+        "Wigan Athletic"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "'There are players you just don't want to sell' - fans on 'win-win' Hall deal - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11WF9NUHlMbE1weU5KN2tfVlJlajAxZjlaSHlCUVFTM0l6R01ZLUpXdE82SW43dmhfa2FsMFFaMlhOQ3oyUUNydW54QWVpMzV1ZXdvWmNXR3NpamdhSUdGUS1TcWs3cGRGOWc?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE11WF9NUHlMbE1weU5KN2tfVlJlajAxZjlaSHlCUVFTM0l6R01ZLUpXdE82SW43dmhfa2FsMFFaMlhOQ3oyUUNydW54QWVpMzV1ZXdvWmNXR3NpamdhSUdGUS1TcWs3cGRGOWc?oc=5\" target=\"_blank\">'...",
+      "date": "2026-09-11T15:53:07.000Z",
+      "source": "BBC",
+      "feedSource": "Media – Newcastle United",
+      "clubs": [
+        "Newcastle United"
+      ],
+      "category": "media"
+    },
+    {
       "title": "Alfie Pond and his push for a first big run of regular senior football - Derbyshire Times",
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPN2RoLVF0QUFFUkxoMEZObEZCT2hBWFZKNmFYaW92Ukd6RFduU2loSTN4bXpxZTVpMEhNRGpVYWpLYktGVHNtRVBab25jSnB1NU83a1ZGRXVaSDRvdC0tdWUyVXVuUGdXd25uajBDMW00QUg1bnpNZlMyajAzWE9OSmFZYTkxOWJjTHRMY0NaUTZzUFdjMHZuV1lsZ1dqS1A2R0tFR0tOQ0RUckx3eEROdWRxNW5NOExiem1sOFVoMFlTRXJxVW93TlRtRTJLbU5xOUk3Sl9mXy1pUFU?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxPN2RoLVF0QUFFUkxoMEZObEZCT2hBWFZKNmFYaW92Ukd6RFduU2loSTN4bXpxZTVpMEhNRGpVYWpLYktGVHNtRVBab25jSnB1NU83a1ZGRXVaSDRvdC0tdWUyVXVuUGdXd25uajBDMW00QUg1bnpNZlMyajA...",
@@ -3477,18 +3537,6 @@
       "feedSource": "Media – Chesterfield",
       "clubs": [
         "Chesterfield"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Jones: \"We would like a packed Valley\" - Charlton Athletic Football Club",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQUTdiNUJaaTJFLTZWOXNzaWtqam5TR0hwa002X3NsOHdGZ1p2WWRoR3lNWmlqZEFRU3JjbFV3akNCbDVXT01QZzdrQVJaUTNIVDRFcGdQTzYxeWZJdjJjZThRdmMyMm8?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQUTdiNUJaaTJFLTZWOXNzaWtqam5TR0hwa002X3NsOHdGZ1p2WWRoR3lNWmlqZEFRU3JjbFV3akNCbDVXT01QZzdrQVJaUTNIVDRFcGdQTzYxeWZJdjJjZThRdmMyMm8?oc=5\" target=\"_blank\">Jones...",
-      "date": "2026-09-11T15:42:12.000Z",
-      "source": "Charlton Athletic Football Club",
-      "feedSource": "Media – Charlton Athletic",
-      "clubs": [
-        "Charlton Athletic"
       ],
       "category": "media"
     },
@@ -3517,18 +3565,6 @@
       "category": "media"
     },
     {
-      "title": "Swindon get pair back as Holloway debates selection dilemmas at York - Wilts and Gloucestershire Standard",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOVNUNnFwUFBZVm13Z2pUUmFmY3IxYUdGZ2dxdDc3d3RyQzl1bXdwTFRXc283QVMzV2FGZjd1ODhVX1pmZW5FSXZCZWQ3T0RWcnotWm9xNUhQcmJ1N3ZlaHN2Nlo2VW15VHgxUDE0Z09QOXlIeno2OU1mRE5SbTRFc3drNml4X2EwUDBYTUdiUU5HLWdRUk5mZnhlRkl6djFMeXNySVZB?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNOVNUNnFwUFBZVm13Z2pUUmFmY3IxYUdGZ2dxdDc3d3RyQzl1bXdwTFRXc283QVMzV2FGZjd1ODhVX1pmZW5FSXZCZWQ3T0RWcnotWm9xNUhQcmJ1N3ZlaHN2Nlo2VW15VHgxUDE0Z09QOXlIeno2OU1mRE5...",
-      "date": "2026-09-11T15:32:13.000Z",
-      "source": "Wilts and Gloucestershire Standard",
-      "feedSource": "Media – Swindon Town",
-      "clubs": [
-        "Swindon Town"
-      ],
-      "category": "media"
-    },
-    {
       "title": "SUFC News: United should relish Wolves test as new boy handed debut chance boost - thestar.co.uk",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOeEd6elFnaTRDeFRtQ0JoYmpOa3pmaTZRZ0liRlllblRNQ2NZTWJUYXIwVGNzdkdmeDFseWdrWjMwUGxHYlRqT1p1WEhBYlZIaGE1VG11Nm9aUE1EQzF2OVVqbV9RYmxGai1QNlY3LVAtUm1Ydzg1SXktQ2Z3TnpzTXNqMmtGbUtBRWVrNDEzZzJLSE13QnFlWlUwejBSYkRIbm44Yk5DSEN3TzdFTVozQy1hUlZaOXNQLTdNYnhfWXFucVR3RjhDZHVTQmNMV19BbzAwX2tQZVcwSVpVWmhyLUFJTmx3d1lkWG5iaHZXQ2I0aUxmQmc?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxOeEd6elFnaTRDeFRtQ0JoYmpOa3pmaTZRZ0liRlllblRNQ2NZTWJUYXIwVGNzdkdmeDFseWdrWjMwUGxHYlRqT1p1WEhBYlZIaGE1VG11Nm9aUE1EQzF2OVVqbV9RYmxGai1QNlY3LVAtUm1Ydzg1SXktQ2Z...",
@@ -3549,18 +3585,6 @@
       "feedSource": "Media – Watford",
       "clubs": [
         "Watford"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Linda Lif Boama injury update - Charlton Athletic Football Club",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VOGlkTEZfc1pab2FEUWp6SVlDOEFKdHdHVjhEU19oUl9OajFHcmlxYUlKZU5JRktzcngxVERzY3lySnVWRnBibEVuYjJQUFJBaDI1X0ktQWhFNUg4MUlSVzRBNHN5c1BQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VOGlkTEZfc1pab2FEUWp6SVlDOEFKdHdHVjhEU19oUl9OajFHcmlxYUlKZU5JRktzcngxVERzY3lySnVWRnBibEVuYjJQUFJBaDI1X0ktQWhFNUg4MUlSVzRBNHN5c1BQ?oc=5\" target=\"_blank\">Lind...",
-      "date": "2026-09-11T15:30:15.000Z",
-      "source": "Charlton Athletic Football Club",
-      "feedSource": "Media – Charlton Athletic",
-      "clubs": [
-        "Charlton Athletic"
       ],
       "category": "media"
     },
@@ -3609,6 +3633,18 @@
       "feedSource": "Media – Exeter City",
       "clubs": [
         "Exeter City"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Oxford United vs Burton Albion | Match Preview - Oxford United Football Club",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44a0V3UnBHRmhOM2hyWUlXNjZydjJvbHBZMDEyNUZZTmlYd09sRm14SGlncnJGSENpSG1UTl9taVVwM1lNaHRuSVBMYzE5YnMwdXZOaFAyUklveDgwTjV4dTZtRnFBRVlWX0dITDJUMnBlUzB2UmVZUGNFTVQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE44a0V3UnBHRmhOM2hyWUlXNjZydjJvbHBZMDEyNUZZTmlYd09sRm14SGlncnJGSENpSG1UTl9taVVwM1lNaHRuSVBMYzE5YnMwdXZOaFAyUklveDgwTjV4dTZtRnFBRVlWX0dITDJUMnBlUzB2UmVZUGNFTVQ...",
+      "date": "2026-09-11T15:21:48.000Z",
+      "source": "Oxford United Football Club",
+      "feedSource": "Media – Burton Albion",
+      "clubs": [
+        "Burton Albion"
       ],
       "category": "media"
     },
@@ -3685,23 +3721,11 @@
       "category": "media"
     },
     {
-      "title": "Oxford United vs Burton Albion | Match Preview - Oxford United Football Club",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44a0V3UnBHRmhOM2hyWUlXNjZydjJvbHBZMDEyNUZZTmlYd09sRm14SGlncnJGSENpSG1UTl9taVVwM1lNaHRuSVBMYzE5YnMwdXZOaFAyUklveDgwTjV4dTZtRnFBRVlWX0dITDJUMnBlUzB2UmVZUGNFTVQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE44a0V3UnBHRmhOM2hyWUlXNjZydjJvbHBZMDEyNUZZTmlYd09sRm14SGlncnJGSENpSG1UTl9taVVwM1lNaHRuSVBMYzE5YnMwdXZOaFAyUklveDgwTjV4dTZtRnFBRVlWX0dITDJUMnBlUzB2UmVZUGNFTVQ...",
-      "date": "2026-09-11T15:03:32.000Z",
-      "source": "Oxford United Football Club",
-      "feedSource": "Media – Burton Albion",
-      "clubs": [
-        "Burton Albion"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Russell Martin hits out at Oxford United fans after 'sacked' calls at Leicester - heraldseries.co.uk",
+      "title": "Russell Martin hits out at Oxford United fans after 'sacked' calls at Leicester - Herald Series",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMHBDaG1HYzl4QVY5ZlFLeHhHRzRzZXhLRVoyLVA4WElkQ2R0dFdZdHN2ZWJ4RzlWdVVJb01VOTFQUG9ZbWJnODZ3ZjAyOEVIVVliLW5xVGFjWGxpX25hbjF5Ym1lMmtuUVdHMjZyejltVm1YNlB5VjVYaEtsc1NOXzZITHRvdURSV1JsU2F3SEhKcU9xOEpNQlh1Zw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQMHBDaG1HYzl4QVY5ZlFLeHhHRzRzZXhLRVoyLVA4WElkQ2R0dFdZdHN2ZWJ4RzlWdVVJb01VOTFQUG9ZbWJnODZ3ZjAyOEVIVVliLW5xVGFjWGxpX25hbjF5Ym1lMmtuUVdHMjZyejltVm1YNlB5VjVYaEt...",
       "date": "2026-09-11T15:03:09.000Z",
-      "source": "heraldseries.co.uk",
+      "source": "Herald Series",
       "feedSource": "Fan – Oxford United",
       "clubs": [
         "Oxford United"
@@ -3757,11 +3781,11 @@
       "category": "fan"
     },
     {
-      "title": "Who are Tottenham Hotspur’s biggest rivals? Spurs’ top five fiercest football rivalries - Football Ground Guide",
+      "title": "Who are Tottenham Hotspur’s biggest rivals? Spurs’ top five fiercest football rivalries - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yS01tTnMtcXhvQ2ExakVwRnlSZnJhX1JwVVp1Y1ZDSlZlM0R3SVdyalVIdE84Ni1UR25MQXdrbkpBZW0tNWVBenRCS2Qwb05tUHJOaVJGck5uZjhIN3o5TEVsQmloN1pXOGpXU3FXenhWZDREbVI0b2ZZTHJDZ1k?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE0yS01tTnMtcXhvQ2ExakVwRnlSZnJhX1JwVVp1Y1ZDSlZlM0R3SVdyalVIdE84Ni1UR25MQXdrbkpBZW0tNWVBenRCS2Qwb05tUHJOaVJGck5uZjhIN3o5TEVsQmloN1pXOGpXU3FXenhWZDREbVI0b2ZZTHJ...",
       "date": "2026-09-11T14:54:44.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Media – Tottenham Hotspur",
       "clubs": [
         "Tottenham Hotspur"
@@ -3781,11 +3805,11 @@
       "category": "media"
     },
     {
-      "title": "Mudryk, Maddison, Kulusevski - Latest Tottenham injury news and possible return dates vs Everton - football.london",
+      "title": "Mudryk, Maddison, Kulusevski - Latest Tottenham injury news and possible return dates vs Everton - Football London",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejQ0MkpmbzNlUnVCMVl0OUNzbHI4akNQdDFCQTV0ckpsX2t4SFU1dHdhTVNYUHUtclhXVFBRSWYtdWpHSDdvZ3paWGc0TzJraGVlY256Mmd0ZG1xMG1HQkFSN0pRMERrRjU2V1E3QzRkNkRaZ181Qm5TWVV3UFlkMjFzWGdEajA1cHg1ZU9wbDRYVDNrQ29FRW8ybi0xN3MzMHBmLdIBqgFBVV95cUxPMXNZTjVFbnZ5RjZfN2lNSko3X1cyVjdUQkswS2o1aW5xNVRDN0pVQUMzN0RSMVZkdDVpc0Z4QXpYaU1xczRHOExMbjZlT2VHZTBjTVY3NzVCeWlST2RLaHAwVlZPemE3eDlYNFBaTHFzUVhDS29fczdpVWI3SmR1S1J4aHVqcVI5bUFzYl81d2tHV1g3R05USk9WbFowY1AwU290b1JSLWxWQQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPejQ0MkpmbzNlUnVCMVl0OUNzbHI4akNQdDFCQTV0ckpsX2t4SFU1dHdhTVNYUHUtclhXVFBRSWYtdWpHSDdvZ3paWGc0TzJraGVlY256Mmd0ZG1xMG1HQkFSN0pRMERrRjU2V1E3QzRkNkRaZ181Qm5TWVV...",
       "date": "2026-09-11T14:53:49.000Z",
-      "source": "football.london",
+      "source": "Football London",
       "feedSource": "Media – Tottenham Hotspur",
       "clubs": [
         "Tottenham Hotspur"
@@ -3890,8 +3914,8 @@
     },
     {
       "title": "West Bromwich Albion: Nolan Galves joins Baggies' injury list - BBC",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMzF0aTljY0d4MmpuYXpIVE9XU1hETk9SSlBsYXFRQnNMNGZ0bUtCclpWOGFOcm5mT2F2MGpXbkxEb25VZjBoMFNEcnVwWVowUElNemtGZEM0M19Od2c0YWQ3Tm84U19QSTVTZDFzYUgyT3dTQWt6LXZ0MDZoVndpeDQxalQ1bTJ0UVoxNlZkVTBsNXp3Tk96aEtYY3NsV1JheDhRZlZkZWEyenBLMWp6Wm85X3Z5blItWmtaanQzU29oTkk3TjRyN3gwQXl4ZUpyRnFhSU9Sb0hLT0otVGVYUnN3ZGMycjFFN3FTOWtwNzg?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMzF0aTljY0d4MmpuYXpIVE9XU1hETk9SSlBsYXFRQnNMNGZ0bUtCclpWOGFOcm5mT2F2MGpXbkxEb25VZjBoMFNEcnVwWVowUElNemtGZEM0M19Od2c0YWQ3Tm84U19QSTVTZDFzYUgyT3dTQWt6LXZ0MDZ...",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeGppYjRQMS1SbVZXSG9DV0lEaHdjYm5HY19tdkI0WFhUcEs5MTZid19PYXBqdnBmSGpUZ3Uyd0VUUEhBdGJlS0FINFJiU09IVGE3YzdJNjc4SE9rZUNSUE1sbHlSSEZlRmc?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeGppYjRQMS1SbVZXSG9DV0lEaHdjYm5HY19tdkI0WFhUcEs5MTZid19PYXBqdnBmSGpUZ3Uyd0VUUEhBdGJlS0FINFJiU09IVGE3YzdJNjc4SE9rZUNSUE1sbHlSSEZlRmc?oc=5\" target=\"_blank\">W...",
       "date": "2026-09-11T14:31:20.000Z",
       "source": "BBC",
       "feedSource": "Media – West Bromwich Albion",
@@ -3923,18 +3947,6 @@
         "Huddersfield Town"
       ],
       "category": "media"
-    },
-    {
-      "title": "OFFICIAL: Freddie Issaka joins Gateshead FC on loan - Ghana Sports Online",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV3BUb2Ixa19ZUVpHcm4wN3BFcmFvbnEzM3k1SnVmZjgxWVVOeWp2V19aeDd2QVVvNFZZcFRUNVpCYnJFRnRjYjU0cEo4d2E5UVBSQzhJa3RBM0h3NDFlT1phdkpjeXpmdlRrVkFITTlxcVJBa0pYc25lb1ZuRnFYZTZCNnZiLWNK0gGQAUFVX3lxTE9iWmhDblplR2J4b0JuM0NMMTlrMmdNanpSLVlaanFCZVlIYmlrM2tSRHJwQVdqdy1PaUNIY0ZZVnlxVXpxYzhZWWprNjBsLTYwdnlKX0M2ZzI5SXd2Z01WRGNZQTlZVTNyek1ETWR3NF9aQ1duaHVtbTAxSGxqREJKcVZRcVdJU3VPQjJCRjFkSw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV3BUb2Ixa19ZUVpHcm4wN3BFcmFvbnEzM3k1SnVmZjgxWVVOeWp2V19aeDd2QVVvNFZZcFRUNVpCYnJFRnRjYjU0cEo4d2E5UVBSQzhJa3RBM0h3NDFlT1phdkpjeXpmdlRrVkFITTlxcVJBa0pYc25lb1Z...",
-      "date": "2026-09-11T14:24:26.000Z",
-      "source": "Ghana Sports Online",
-      "feedSource": "Official – Plymouth Argyle",
-      "clubs": [
-        "Plymouth Argyle"
-      ],
-      "category": "official"
     },
     {
       "title": "Pick of the stats: Middlesbrough v Norwich City - BBC",
@@ -3997,11 +4009,11 @@
       "category": "media"
     },
     {
-      "title": "Cardiff City selection dilemma emerges again after just six games as fans divided - walesonline.co.uk",
+      "title": "Cardiff City selection dilemma emerges again after just six games as fans divided - Wales Online",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM1NXNXJLc25kcF9sZklPQWktLXB2OXdCYlpyZUFrX0R0VlJ5T1pMU3pTRGoyQ2M0ZnU2VnF2ZHJ5SUVieU1LMC1PQ1JXYnM0QVhLcjkwUmVxME16YzJSdWxVemI1NlNiRTU4cmhZOHdHVXZpNnRvQk41T2FKcVBwNjBOMmRGMHhTMjN5bVEwaE1kUHV4SUg5YXBNZHV3djNKejNhZ3JSblFpZw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM1NXNXJLc25kcF9sZklPQWktLXB2OXdCYlpyZUFrX0R0VlJ5T1pMU3pTRGoyQ2M0ZnU2VnF2ZHJ5SUVieU1LMC1PQ1JXYnM0QVhLcjkwUmVxME16YzJSdWxVemI1NlNiRTU4cmhZOHdHVXZpNnRvQk41T2F...",
       "date": "2026-09-11T14:17:00.000Z",
-      "source": "walesonline.co.uk",
+      "source": "Wales Online",
       "feedSource": "Fan – Cardiff City",
       "clubs": [
         "Cardiff City"
@@ -4017,6 +4029,18 @@
       "feedSource": "Media – West Bromwich Albion",
       "clubs": [
         "West Bromwich Albion"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Charlton Athletic v Portsmouth: play-off push meets mid-table climb - OneFootball",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMDV3UENBcG51YjhIOTFtV2RvaUV5ekNHeThiTGlUUlZ4ZkpvR0xGTFJCZXE2OWZMM1NpYTJqTEdiS1hEaGItZGUtYWoxU21aOGRzUGpHVWYyYjBSdEVqZXZsRURXQWRKTnVkSGIweWNJWHpYNFJ6Y2FFZXRDVzFqenJJUTVMaEExTnN4eTlmWF9BOVdMUk1jUTRDRkdXc1pTSWwtblplX0FtZkE?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMDV3UENBcG51YjhIOTFtV2RvaUV5ekNHeThiTGlUUlZ4ZkpvR0xGTFJCZXE2OWZMM1NpYTJqTEdiS1hEaGItZGUtYWoxU21aOGRzUGpHVWYyYjBSdEVqZXZsRURXQWRKTnVkSGIweWNJWHpYNFJ6Y2FFZXR...",
+      "date": "2026-09-11T14:15:08.000Z",
+      "source": "OneFootball",
+      "feedSource": "Media – Charlton Athletic",
+      "clubs": [
+        "Charlton Athletic"
       ],
       "category": "media"
     },
@@ -4202,11 +4226,11 @@
       "category": "fan"
     },
     {
-      "title": "Grimsby Town v Bristol Rovers - Mariners prepare to face early league leaders - Grimsby Live",
+      "title": "Grimsby Town v Bristol Rovers - Mariners prepare to face early league leaders - grimsbytelegraph.co.uk",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSUpLclpoQ2N6NDBkWkNORk40Ulk2UV9ZNTBrLTZyQkp6UDhYRUtMa0J3eVpfcWo4Q19qejl1dENnUjRLc05Id0VNY2NCSEd1QkVoTDhIaEtlQkFFbDRiaG50QlBpR0xHWnVRUFktY1REejRVSzd2TEFkV2szY3M2aWZNNVpzX0haWFRRU2lTUEU3UdIBlwFBVV95cUxPWS1zRmVmMGpTbGhsMmNDaTE4QUs0V1VpejhJX1VQRDM4cjZydlBnTVVEOFEwSXRuLUw3OEtOV3RtVmRoWS1ONGc2VDU4NDRBaUJjcFdyczYxZmZwem9BaVJOMUEtcHJrMzlDTGNmN2RwZFVqT0ZuNjJOMm4yRU83aWhKQ0RWOWZsdXQ5bjJaLWd5eUZGT2J3?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQSUpLclpoQ2N6NDBkWkNORk40Ulk2UV9ZNTBrLTZyQkp6UDhYRUtMa0J3eVpfcWo4Q19qejl1dENnUjRLc05Id0VNY2NCSEd1QkVoTDhIaEtlQkFFbDRiaG50QlBpR0xHWnVRUFktY1REejRVSzd2TEFkV2s...",
       "date": "2026-09-11T13:54:00.000Z",
-      "source": "Grimsby Live",
+      "source": "grimsbytelegraph.co.uk",
       "feedSource": "Media – Grimsby Town",
       "clubs": [
         "Grimsby Town"
@@ -4505,6 +4529,18 @@
       "category": "fan"
     },
     {
+      "title": "Pompey Lottery: Week 11 Winners - Portsmouth FC",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVm04UUpibHlMeHFzNWl4YnNsSXotb1pTQ3lZYjVhQjRJckxTTDJZRVBZVmw5SVM1UF9vT0pTSndqZ29yczIzaHZLVmdNNENkU3BCd2ZUTHFUdThscVdfcV93NmplTE4yV3l4QklmbFBQcW9HNmVxMVhMT3JONzhGck5OdVhQWUEwTThxMXhnSQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxQVm04UUpibHlMeHFzNWl4YnNsSXotb1pTQ3lZYjVhQjRJckxTTDJZRVBZVmw5SVM1UF9vT0pTSndqZ29yczIzaHZLVmdNNENkU3BCd2ZUTHFUdThscVdfcV93NmplTE4yV3l4QklmbFBQcW9HNmVxMVhMT3J...",
+      "date": "2026-09-11T12:06:55.000Z",
+      "source": "Portsmouth FC",
+      "feedSource": "Media – Portsmouth",
+      "clubs": [
+        "Portsmouth"
+      ],
+      "category": "media"
+    },
+    {
       "title": "Birmingham City line up two ex-Premier League bosses amid fresh Chris Davies pressure",
       "link": "https://the72.co.uk/2026/09/11/birmingham-city-dyche-parker-eyed-amid-chris-davies-doubts/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=birmingham-city-dyche-parker-eyed-amid-chris-davies-doubts",
       "summary": "Chris Davies is facing pressure to keep his job at Birmingham City, with two promotion-winning managers eyed. The post Birmingham City line up two ex-Premier League bosses amid fresh Chris Davies pressure appeared fir...",
@@ -4541,18 +4577,6 @@
       "category": "media"
     },
     {
-      "title": "Man Utd strip 685 fans of season tickets in clampdown on touting - The Telegraph",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFp5WE1uT20xbnhmd21PeE9jSUIwRnhnT0RQN2lSakdxZ3B2WldPb1RkanRvNV9XUmNUTXBCTUxGWWNTWUp0THRHd3ZaSVY3OFAwRVotS045cGZSUHllUkF4ZE1EQUpmSjQzUDNxVGZiN2NoeHZkS0t3QkR0bEpyVWp5VDVCbjltcU5pbWhLREdvbGhKQmNWZ0QxWHU1dGFKMEJ1Nm1saWpmdw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFp5WE1uT20xbnhmd21PeE9jSUIwRnhnT0RQN2lSakdxZ3B2WldPb1RkanRvNV9XUmNUTXBCTUxGWWNTWUp0THRHd3ZaSVY3OFAwRVotS045cGZSUHllUkF4ZE1EQUpmSjQzUDNxVGZiN2NoeHZkS0t3QkR...",
-      "date": "2026-09-11T11:51:00.000Z",
-      "source": "The Telegraph",
-      "feedSource": "Fan – Manchester United",
-      "clubs": [
-        "Manchester United"
-      ],
-      "category": "fan"
-    },
-    {
       "title": "Sheffield United - Wolverhampton Wanderers Live - Championship: Football Scores & Highlights - 13/09/2026 - TNT Sports",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPOU5IdEdUV0hkSmRaWXItNnE1ajR4UjFLcWZibDBURXM3dEV6NDFUSEdMdndKbVBFc0xyQ1BZbS1xTU9Ea0pkc0RpaEpDQ3M4dnJKd2dlVTdsZlB2NllCdzJqc2FUOXBOTWVUYTVqZEY4d21CSzRNRHE4c3NUSDFZZEY1MTFPM1NMWXRaSGIyLXJlWDJ6QllLN1I2Vl9HZVBCamcyMHI0NFR6ZTZ0LUUzNTk3em13azJvcGppaHJfajA?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxPOU5IdEdUV0hkSmRaWXItNnE1ajR4UjFLcWZibDBURXM3dEV6NDFUSEdMdndKbVBFc0xyQ1BZbS1xTU9Ea0pkc0RpaEpDQ3M4dnJKd2dlVTdsZlB2NllCdzJqc2FUOXBOTWVUYTVqZEY4d21CSzRNRHE4c3N...",
@@ -4563,18 +4587,6 @@
         "Wolverhampton Wanderers"
       ],
       "category": "fan"
-    },
-    {
-      "title": "Pompey Lottery: Week 11 Winners - Portsmouth FC",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVm04UUpibHlMeHFzNWl4YnNsSXotb1pTQ3lZYjVhQjRJckxTTDJZRVBZVmw5SVM1UF9vT0pTSndqZ29yczIzaHZLVmdNNENkU3BCd2ZUTHFUdThscVdfcV93NmplTE4yV3l4QklmbFBQcW9HNmVxMVhMT3JONzhGck5OdVhQWUEwTThxMXhnSQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxQVm04UUpibHlMeHFzNWl4YnNsSXotb1pTQ3lZYjVhQjRJckxTTDJZRVBZVmw5SVM1UF9vT0pTSndqZ29yczIzaHZLVmdNNENkU3BCd2ZUTHFUdThscVdfcV93NmplTE4yV3l4QklmbFBQcW9HNmVxMVhMT3J...",
-      "date": "2026-09-11T11:44:54.000Z",
-      "source": "Portsmouth FC",
-      "feedSource": "Media – Portsmouth",
-      "clubs": [
-        "Portsmouth"
-      ],
-      "category": "media"
     },
     {
       "title": "Sheffield United: Team News - Jordan Ayew set for Blades debut against Wolves - BBC",
@@ -4597,18 +4609,6 @@
       "feedSource": "Media – Bolton Wanderers",
       "clubs": [
         "Bolton Wanderers"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Clare Martin To Step Down As CEO Of Pompey in the Community - Portsmouth FC",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRVBFS091UWh2UTZCZ0liOVg2UW5wUnlMNkY3Mmc0eFd1WWtaeU40TU10Q1NoMjVaUjJDd1FvTFhnZWg1SnVJWEd0Q2JSZFVtdjNoVlRxRjVDYVotSFR2UnpRQy0tQlZENjEzejZyRjJCdk5ud0h4RWRSOXpDMzE2MUFIVVFEMGszNHJzem9TcDJEVUI1bENKTWZDcFZiWmRXNENTYXpTQ1Uxd2tlb2FhQTdfTEw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQRVBFS091UWh2UTZCZ0liOVg2UW5wUnlMNkY3Mmc0eFd1WWtaeU40TU10Q1NoMjVaUjJDd1FvTFhnZWg1SnVJWEd0Q2JSZFVtdjNoVlRxRjVDYVotSFR2UnpRQy0tQlZENjEzejZyRjJCdk5ud0h4RWRSOXp...",
-      "date": "2026-09-11T11:42:53.000Z",
-      "source": "Portsmouth FC",
-      "feedSource": "Media – Portsmouth",
-      "clubs": [
-        "Portsmouth"
       ],
       "category": "media"
     },
@@ -4673,18 +4673,6 @@
       "category": "fan"
     },
     {
-      "title": "Bolton Wanderers vs Cardiff City: Championship stats & head-to-head - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5bFhkemZOVGt3cFg4RG5YdXBHODZSek50b0RoNVlWOWNBcF9COU5aaTdrYjVQaU5XbkVXRkZQbnduZ3V1NUg2UEZ6WDJ3ckhQbmtNNVVDNlNuQXlvdnhkTDJ6SnVXQQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5bFhkemZOVGt3cFg4RG5YdXBHODZSek50b0RoNVlWOWNBcF9COU5aaTdrYjVQaU5XbkVXRkZQbnduZ3V1NUg2UEZ6WDJ3ckhQbmtNNVVDNlNuQXlvdnhkTDJ6SnVXQQ?oc=5\" target=\"_blank\">Bolton...",
-      "date": "2026-09-11T11:30:34.000Z",
-      "source": "BBC",
-      "feedSource": "Media – Bolton Wanderers",
-      "clubs": [
-        "Bolton Wanderers"
-      ],
-      "category": "media"
-    },
-    {
       "title": "Crystal Palace ultras disbanding proves England’s football culture is eroding - The Telegraph",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSXBBQkwydGN2c1gwWjJWZXpsbVZ1Q2Ezd0IydnhvQ1ZDdlRGOFdYMmxRcjlwM0xxM1JHN3BqdWpvTXREYnVRN0g1VXBkcFFnUUVkSnZSQ2pFY3czdE1zTnQwTzJtT3pxOVc2Nmk2eDB3UHgxOEVReG5lX0UwVm1SOHgzbXlSN1puR3Jpc1VXZFRwOEpOeGNvanJwdXVyZlNSVHZKQnd5S09KV1Ni?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPSXBBQkwydGN2c1gwWjJWZXpsbVZ1Q2Ezd0IydnhvQ1ZDdlRGOFdYMmxRcjlwM0xxM1JHN3BqdWpvTXREYnVRN0g1VXBkcFFnUUVkSnZSQ2pFY3czdE1zTnQwTzJtT3pxOVc2Nmk2eDB3UHgxOEVReG5lX0U...",
@@ -4709,11 +4697,11 @@
       "category": "fan"
     },
     {
-      "title": "Championship attendances 2026-27: The early season numbers - Football Ground Guide",
+      "title": "Championship attendances 2026-27: The early season numbers - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZTlItMEQ3NjNzVDQ3NlRRVVdVNjZad2wxbW5iNDd6LWhwaWlqSmdsc19vZVZ4SDVyTlJGQkxlZFdRd1QxVkVESG5kVDQtS0tYMHZ5OWZrWjJ1elpOMl9SNFNrSTE0SllmV2hJWVRB?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZTlItMEQ3NjNzVDQ3NlRRVVdVNjZad2wxbW5iNDd6LWhwaWlqSmdsc19vZVZ4SDVyTlJGQkxlZFdRd1QxVkVESG5kVDQtS0tYMHZ5OWZrWjJ1elpOMl9SNFNrSTE0SllmV2hJWVRB?oc=5\" target=\"_bla...",
       "date": "2026-09-11T11:27:53.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Derby County",
       "clubs": [
         "Derby County"
@@ -4745,18 +4733,6 @@
       "category": "fan"
     },
     {
-      "title": "SUFC News: Investment importance underlined as Blades look to keep pace with rivals - thestar.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPelY5bmQxcGhjcC1FTXpaMkdLOVhtS2kxX0dfQnNNTy1jeWtlTzFfbzI5UDJwTnNZYjFnaXlTR29sYVF6YXoteGxCSk5VQTZabWRxRHY5MWlUYWpDN09fSi1PbkktMlFGYXE2Q1ZGdUZWM3RDTTFrdDJ3QTFDdVZDdkwyUUM2OUlWTDNWQ2g4OWpaUTZJVEk3OGZrTzZQcGtxSzJMcXlNTjFxdEtvRTV5V2VnN0YxRF9KR2ZNc2VsRW5lN0VoWERRTkN5aXdyeHdUSkZFUEJ5a1lhQjNpcUdvMWtXbW1WS0Q2VUtkRkJjNnI4TmNvbjQ0RGc2UGFsalVTNzBfWjltY2RhMGlMeHJFZEJR?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgJBVV95cUxPelY5bmQxcGhjcC1FTXpaMkdLOVhtS2kxX0dfQnNNTy1jeWtlTzFfbzI5UDJwTnNZYjFnaXlTR29sYVF6YXoteGxCSk5VQTZabWRxRHY5MWlUYWpDN09fSi1PbkktMlFGYXE2Q1ZGdUZWM3RDTTFrdDJ3QTF...",
-      "date": "2026-09-11T11:14:00.000Z",
-      "source": "thestar.co.uk",
-      "feedSource": "Media – Sheffield United",
-      "clubs": [
-        "Sheffield United"
-      ],
-      "category": "media"
-    },
-    {
       "title": "'Things were promised that never came to fruition' - Williams on Town exit - Wilts and Gloucestershire Standard",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbTJLSGFPWFljUjBwdUJlTzFtS1lmVjBtRXJsLWVKak1RbTdUSF8tU0FYb25qZG9BWnAzVE5FYzdRcXpoZ1ppZlVCYWRDM1dWeW50Qkw4VnNJSlRHQlFwSkV5RDVJXzI3eWVLVGMwNmkxMlBfRmN4VVVoeHdVRUUySjhYSVM1djBPUk16TGtsdFB6N0k0bVhtYVFoSEs2Z3lJMFVZ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNbTJLSGFPWFljUjBwdUJlTzFtS1lmVjBtRXJsLWVKak1RbTdUSF8tU0FYb25qZG9BWnAzVE5FYzdRcXpoZ1ppZlVCYWRDM1dWeW50Qkw4VnNJSlRHQlFwSkV5RDVJXzI3eWVLVGMwNmkxMlBfRmN4VVVoeHd...",
@@ -4769,11 +4745,11 @@
       "category": "media"
     },
     {
-      "title": "Erol Bulut: My love for Cardiff City, why it went wrong and what they must do now - walesonline.co.uk",
+      "title": "Erol Bulut: My love for Cardiff City, why it went wrong and what they must do now - Wales Online",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWlZnS1dXNW8wTzFHajRnVGdqZ2pwbTVPYk15dE1ZMEd3c21kak51ZDc2N0tsVDR4dFNvN0hTcXJBUENVWWVOamV0aWhSUnQ3UEQyQ1FINFZEYkF3SmMyM0R5ckxRblJVbnVSbzNaalpBOGNfM1o0ejh3b3cxSWFkUjdqVDg4M25mRGxxbW9fV2NRRl9PNTh0YWZRUkM?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPWlZnS1dXNW8wTzFHajRnVGdqZ2pwbTVPYk15dE1ZMEd3c21kak51ZDc2N0tsVDR4dFNvN0hTcXJBUENVWWVOamV0aWhSUnQ3UEQyQ1FINFZEYkF3SmMyM0R5ckxRblJVbnVSbzNaalpBOGNfM1o0ejh3b3c...",
       "date": "2026-09-11T11:09:00.000Z",
-      "source": "walesonline.co.uk",
+      "source": "Wales Online",
       "feedSource": "Media – Cardiff City",
       "clubs": [
         "Cardiff City"
@@ -4793,11 +4769,11 @@
       "category": "media"
     },
     {
-      "title": "Coventry City v Brighton: Prediction, team news, lineups and odds - Football365",
+      "title": "Coventry City v Brighton: Prediction, team news, lineups and odds - football365.com",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdHIwNEd5TnpyVDBFYkdDaUVFNERROWhJZ0hBWVlHcmxnclRxR2lGdU5uaGFsY2wxdlNjNmVnX1dLSUVxR3BkbFN3QjdUN3J3R2c3TklJakJnd2txMEdBaHNCSmJfUmlXd3VOem11YkJiTWVZSFAxb0o4QUtBM1BUSmFONzBVbXc3RlRsZE1R?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNdHIwNEd5TnpyVDBFYkdDaUVFNERROWhJZ0hBWVlHcmxnclRxR2lGdU5uaGFsY2wxdlNjNmVnX1dLSUVxR3BkbFN3QjdUN3J3R2c3TklJakJnd2txMEdBaHNCSmJfUmlXd3VOem11YkJiTWVZSFAxb0o4QUt...",
       "date": "2026-09-11T11:02:10.000Z",
-      "source": "Football365",
+      "source": "football365.com",
       "feedSource": "Media – Brighton & Hove Albion",
       "clubs": [
         "Brighton & Hove Albion"
@@ -4969,6 +4945,18 @@
       "feedSource": "Media – Sheffield Wednesday",
       "clubs": [
         "Sheffield Wednesday"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Swindon Town v Crewe Alexandra 10/10/2026, Player stats - Flashscore UK",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUUJxVVVNSXpGX1BJMTA5NmhHenhDZWpJQkZVVzlQTTBNbWJwazNydzFwQjlmdmwtb0Q2NEdMV1JaWU16NUZoazlwNVJHQjJEZGUzd08tRHBrbU5va2tjdDktUXNaV01fa3JsemNNWld0ckYta0pxWDFwbmZmZXFkektseC0teWViUjdvSWtfRjVUMDNVbWdzS0h4SGRyZw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNUUJxVVVNSXpGX1BJMTA5NmhHenhDZWpJQkZVVzlQTTBNbWJwazNydzFwQjlmdmwtb0Q2NEdMV1JaWU16NUZoazlwNVJHQjJEZGUzd08tRHBrbU5va2tjdDktUXNaV01fa3JsemNNWld0ckYta0pxWDFwbmZ...",
+      "date": "2026-09-11T10:22:47.000Z",
+      "source": "Flashscore UK",
+      "feedSource": "Media – Swindon Town",
+      "clubs": [
+        "Swindon Town"
       ],
       "category": "media"
     },
@@ -5285,11 +5273,23 @@
       "category": "media"
     },
     {
-      "title": "Mosquera, White, Timber - Latest Arsenal injury news for Sunderland clash - football.london",
+      "title": "'It's not how we play' - Steve Evans on Bristol Rovers' low possession stats in league games so far - Bristol Live",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdHVjbE1fbzlDRVVSWXlkY2QyeFE3a3hQdUNrX3hkZUhJM0gzSnZTZVNiRGprVVh1RzEyRUV3RTExbGVsRWJOc3pwNkI2bFVhWExIU3ptdDBvZk43Nl96QUpBSDR1TFozeFNKRHBnd2xMcDhvUnZhTHJUeVVIU01aRlhiT3kzZkdOTTN2VEdrczByX2dw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOdHVjbE1fbzlDRVVSWXlkY2QyeFE3a3hQdUNrX3hkZUhJM0gzSnZTZVNiRGprVVh1RzEyRUV3RTExbGVsRWJOc3pwNkI2bFVhWExIU3ptdDBvZk43Nl96QUpBSDR1TFozeFNKRHBnd2xMcDhvUnZhTHJUeVV...",
+      "date": "2026-09-11T09:18:43.000Z",
+      "source": "Bristol Live",
+      "feedSource": "Media – Bristol Rovers",
+      "clubs": [
+        "Bristol Rovers"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Mosquera, White, Timber - Latest Arsenal injury news for Sunderland clash - Football London",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVNDYzNLRTl0ZXRLLVVrRnpHQTEwaU1qeU9GNUdwUU5rc0lXMm1jRWxXdVRJSzdnVW8wV3hEVDF5SzB2VjNuSWpfYWMtM3BvLTZyQmF5WEJPSk1oTVU2dFBjTTVZNzVlLUpsUTRfUWR6ekx4azQ4WURCdUFyb1hHSXNTNkZOOWZiMEQtdFNiNDdYZDBNMzAxTUxR0gGaAUFVX3lxTFBlU0NjM0tFOXRldEstVWtGekdBMTBpTWp5T0Y1R3BRTmtzSVcybWNFbFd1VElLN2dVbzBXeERUMXlLMHZWM25Jal9hYy0zcG8tNnJCYXlYQk9KTWhNVTZ0UGNNNVk3NWUtSmxRNF9RZHp6THhrNDhZREJ1QXJvWEdJc1M2Rk45ZmIwRC10U2I0N1hkME0zMDFNTFE?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVNDYzNLRTl0ZXRLLVVrRnpHQTEwaU1qeU9GNUdwUU5rc0lXMm1jRWxXdVRJSzdnVW8wV3hEVDF5SzB2VjNuSWpfYWMtM3BvLTZyQmF5WEJPSk1oTVU2dFBjTTVZNzVlLUpsUTRfUWR6ekx4azQ4WURCdUF...",
       "date": "2026-09-11T09:18:32.000Z",
-      "source": "football.london",
+      "source": "Football London",
       "feedSource": "Media – Sunderland",
       "clubs": [
         "Sunderland"
@@ -5305,18 +5305,6 @@
       "feedSource": "Media – Cheltenham Town",
       "clubs": [
         "Cheltenham Town"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Raised in the EFL: Mo Missanga - Oxford United Football Club",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KYV9VaEdYZnZRaFJNd0pZQzF3Ty1QbUNtZDJJWk9kMl85TnNxVGc3VE1iVkR1N3lBcTVHSEFGdUJzWDNqYmFBQ1JGSGt3RGVvZS1jR2RiaEhzVm14eXN3?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KYV9VaEdYZnZRaFJNd0pZQzF3Ty1QbUNtZDJJWk9kMl85TnNxVGc3VE1iVkR1N3lBcTVHSEFGdUJzWDNqYmFBQ1JGSGt3RGVvZS1jR2RiaEhzVm14eXN3?oc=5\" target=\"_blank\">Raised in the EF...",
-      "date": "2026-09-11T09:14:51.000Z",
-      "source": "Oxford United Football Club",
-      "feedSource": "Media – Oxford United",
-      "clubs": [
-        "Oxford United"
       ],
       "category": "media"
     },
@@ -5341,6 +5329,30 @@
       "feedSource": "Fan – Wrexham",
       "clubs": [
         "Wrexham"
+      ],
+      "category": "fan"
+    },
+    {
+      "title": "Clare Martin To Step Down As CEO Of Pompey in the Community - Portsmouth FC",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRVBFS091UWh2UTZCZ0liOVg2UW5wUnlMNkY3Mmc0eFd1WWtaeU40TU10Q1NoMjVaUjJDd1FvTFhnZWg1SnVJWEd0Q2JSZFVtdjNoVlRxRjVDYVotSFR2UnpRQy0tQlZENjEzejZyRjJCdk5ud0h4RWRSOXpDMzE2MUFIVVFEMGszNHJzem9TcDJEVUI1bENKTWZDcFZiWmRXNENTYXpTQ1Uxd2tlb2FhQTdfTEw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQRVBFS091UWh2UTZCZ0liOVg2UW5wUnlMNkY3Mmc0eFd1WWtaeU40TU10Q1NoMjVaUjJDd1FvTFhnZWg1SnVJWEd0Q2JSZFVtdjNoVlRxRjVDYVotSFR2UnpRQy0tQlZENjEzejZyRjJCdk5ud0h4RWRSOXp...",
+      "date": "2026-09-11T09:06:55.000Z",
+      "source": "Portsmouth FC",
+      "feedSource": "Media – Portsmouth",
+      "clubs": [
+        "Portsmouth"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "MATCH REPORT | BARNET FC 1-2 NEWPORT COUNTY - Barnet FC",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE11aG5nUFJXZnFGc3ZLQzBFUUllNWdZT3BxVURwN2hzcFV3bjkwQkZQZjlCQzVucFhsN1Q3bXROb0FJTUQ2cTlpemMyY2p6ZkJ4UzZGQnNGdy02dEtBQjJ2Q1ZqM2JjTDFTbUl4VGlNMA?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE11aG5nUFJXZnFGc3ZLQzBFUUllNWdZT3BxVURwN2hzcFV3bjkwQkZQZjlCQzVucFhsN1Q3bXROb0FJTUQ2cTlpemMyY2p6ZkJ4UzZGQnNGdy02dEtBQjJ2Q1ZqM2JjTDFTbUl4VGlNMA?oc=5\" target=\"_b...",
+      "date": "2026-09-11T09:05:42.000Z",
+      "source": "Barnet FC",
+      "feedSource": "Fan – Barnet",
+      "clubs": [
+        "Barnet"
       ],
       "category": "fan"
     },
@@ -5425,6 +5437,18 @@
       "feedSource": "Media – Derby County",
       "clubs": [
         "Derby County"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Raised in the EFL: Mo Missanga - Oxford United Football Club",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KYV9VaEdYZnZRaFJNd0pZQzF3Ty1QbUNtZDJJWk9kMl85TnNxVGc3VE1iVkR1N3lBcTVHSEFGdUJzWDNqYmFBQ1JGSGt3RGVvZS1jR2RiaEhzVm14eXN3?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KYV9VaEdYZnZRaFJNd0pZQzF3Ty1QbUNtZDJJWk9kMl85TnNxVGc3VE1iVkR1N3lBcTVHSEFGdUJzWDNqYmFBQ1JGSGt3RGVvZS1jR2RiaEhzVm14eXN3?oc=5\" target=\"_blank\">Raised in the EF...",
+      "date": "2026-09-11T08:18:47.000Z",
+      "source": "Oxford United Football Club",
+      "feedSource": "Media – Oxford United",
+      "clubs": [
+        "Oxford United"
       ],
       "category": "media"
     },
@@ -5717,16 +5741,28 @@
       "category": "media"
     },
     {
-      "title": "‘Basque Gaz’ embraces fans and English football challenge at Bolton Wanderers - The Bolton News",
+      "title": "‘Basque Gaz’ embraces fans and English football challenge at Bolton Wanderers - theboltonnews.co.uk",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUFdRdHZLNDJfNG1zTXZDS0ZIa25NRnJVX2ZQQXQ3UUNDUE4zelVocmxuU1VDM1NpWlduOEttUG9zR21MVnlGd1JxMzYteERsNm5NenNVSEwyRDJFYUZtOGZUcTNZcnZVZkR3V1cyZDN6aFhiM0J4M1NIWTFQSlBUaWc2OHB3UHlaQVdWcXJaSWNvbUltdlhQbUtyTUdFSUxo?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOUFdRdHZLNDJfNG1zTXZDS0ZIa25NRnJVX2ZQQXQ3UUNDUE4zelVocmxuU1VDM1NpWlduOEttUG9zR21MVnlGd1JxMzYteERsNm5NenNVSEwyRDJFYUZtOGZUcTNZcnZVZkR3V1cyZDN6aFhiM0J4M1NIWTF...",
       "date": "2026-09-11T04:00:00.000Z",
-      "source": "The Bolton News",
+      "source": "theboltonnews.co.uk",
       "feedSource": "Fan – Bolton Wanderers",
       "clubs": [
         "Bolton Wanderers"
       ],
       "category": "fan"
+    },
+    {
+      "title": "Conway praise after Bolton Wanderers youngster steps up FIVE years in a row - theboltonnews.co.uk",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa0dmZXgteVQ0NC1NbVM0d2cxYVlnd3dlYjZzZHdfZjdMdEk5UjNqTk9jWU0yT1NxUnN0bVZYWkFiN3hldG50MFJ0SXphc1YxYmllcExZQmV5SEtlMmM1VWlIdjlTQWhxR2tlazFTX0JfeVFyaE9WamctakxQdVhhbkxYUXRVNmFRUThUbTBEbmZSdy1UVHliekJ6clM?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxQa0dmZXgteVQ0NC1NbVM0d2cxYVlnd3dlYjZzZHdfZjdMdEk5UjNqTk9jWU0yT1NxUnN0bVZYWkFiN3hldG50MFJ0SXphc1YxYmllcExZQmV5SEtlMmM1VWlIdjlTQWhxR2tlazFTX0JfeVFyaE9Wamctakx...",
+      "date": "2026-09-11T04:00:00.000Z",
+      "source": "theboltonnews.co.uk",
+      "feedSource": "Media – Bolton Wanderers",
+      "clubs": [
+        "Bolton Wanderers"
+      ],
+      "category": "media"
     },
     {
       "title": "Oxford United launches suicide prevention training for grassroots football clubs - Oxford Mail",
@@ -5825,11 +5861,11 @@
       "category": "media"
     },
     {
-      "title": "Everton Women return to Goodison Park this weekend with new matchday experiences for fans - The Guide Liverpool |",
+      "title": "Everton Women return to Goodison Park this weekend with new matchday experiences for fans - theguideliverpool.com",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbW1IcE1jU0ptY29vckFHdXczZlJiYlZkVlRfMmNMMm9ReUJRVUczY2VhTEdpWmpSQ0RaRXU3OHpOZE4tRGkxYkJSSk01V2xYdkEzZHM5c0c5X1phemoza0RYZ191OUwwXzZIZllHeF9pRnFTelFsWXlXM1NEMHVtdzBnZ2NDTTd1MUJyaDF0S3lGb3lzU0E2N2dpOU9mV1BvVl9UeWlnRUpacjFyNUxCa1VvWDFLc18tc0tuTg?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxQbW1IcE1jU0ptY29vckFHdXczZlJiYlZkVlRfMmNMMm9ReUJRVUczY2VhTEdpWmpSQ0RaRXU3OHpOZE4tRGkxYkJSSk01V2xYdkEzZHM5c0c5X1phemoza0RYZ191OUwwXzZIZllHeF9pRnFTelFsWXlXM1N...",
       "date": "2026-09-11T02:18:59.000Z",
-      "source": "The Guide Liverpool |",
+      "source": "theguideliverpool.com",
       "feedSource": "Fan – Everton",
       "clubs": [
         "Everton"
@@ -6137,6 +6173,18 @@
       "category": "official"
     },
     {
+      "title": "Official Manchester United vs Sabah Lineups: UEFA Champions League 2026/27 Matchday 1 Fixture - SportPesa Blog",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR3NwQk1FOUFrVWtVZG1UWEdXNVdXYmNCXzBkTGh2Wmh5ZF82M2FkV0J1LXhxR2hJVjhVVURPX0dZUzZVSXRfX3RoM1JIN1Q4UGN0UmZ0QXJZdUdqM3pDZ1ZSR29ZaERUa3JZWi1ZU0o4SjFvZ21mODl0bkEtZ0E2Q0RR?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQR3NwQk1FOUFrVWtVZG1UWEdXNVdXYmNCXzBkTGh2Wmh5ZF82M2FkV0J1LXhxR2hJVjhVVURPX0dZUzZVSXRfX3RoM1JIN1Q4UGN0UmZ0QXJZdUdqM3pDZ1ZSR29ZaERUa3JZWi1ZU0o4SjFvZ21mODl0bkE...",
+      "date": "2026-09-10T18:35:24.000Z",
+      "source": "SportPesa Blog",
+      "feedSource": "Official – Manchester United",
+      "clubs": [
+        "Manchester United"
+      ],
+      "category": "official"
+    },
+    {
       "title": "Celebrate two milestones with us at SJP! - Exeter City Football",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZRTZjbGU1aHlmdGtYb21halJ0ZDJZOGNEMndEU3hBaHZQLVZwc293TXNBUkF3eDYwWURDTnUwcVRNcF9vYXhDT2lNcGRJX2ROR01ZclpRaw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZRTZjbGU1aHlmdGtYb21halJ0ZDJZOGNEMndEU3hBaHZQLVZwc293TXNBUkF3eDYwWURDTnUwcVRNcF9vYXhDT2lNcGRJX2ROR01ZclpRaw?oc=5\" target=\"_blank\">Celebrate two milestones w...",
@@ -6185,11 +6233,11 @@
       "category": "media"
     },
     {
-      "title": "Applications open for Fan Advisory Board - Sheffield Wednesday FC",
+      "title": "Applications open for Fan Advisory Board - swfc.co.uk",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE55UEp1Yi1HaUlOOTY2YmU2dF9McHVNc0p1S0FWMm9HZTZHZGpjQXZ4TENaRks5cFVyNHFHRDFuSTh0NTQwZzhLd2xSQ1BidklfTTVCdWlSSE5KMzdmd0FKbThkc0QzSjNjeVJVdHNLMnVmMGNia1BLWGZVZ2diQQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE55UEp1Yi1HaUlOOTY2YmU2dF9McHVNc0p1S0FWMm9HZTZHZGpjQXZ4TENaRks5cFVyNHFHRDFuSTh0NTQwZzhLd2xSQ1BidklfTTVCdWlSSE5KMzdmd0FKbThkc0QzSjNjeVJVdHNLMnVmMGNia1BLWGZVZ2d...",
       "date": "2026-09-10T18:04:33.000Z",
-      "source": "Sheffield Wednesday FC",
+      "source": "swfc.co.uk",
       "feedSource": "Fan – Sheffield Wednesday",
       "clubs": [
         "Sheffield Wednesday"
@@ -6365,18 +6413,6 @@
       "category": "media"
     },
     {
-      "title": "Eustace gives latest update on injured Derby County strikers - LiveScore",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVl9MLVBvVzNMaE5YaFpaNXlKNXNTLVpCTjJTSUxoV0dmZW9ZQUwwLXJhN3VWanE2NVdabHMxU0MzMlB1RG9rRHE2a1dzUVgzTzJIVXZMazVDR1B4X0szLWMtWmNCVkdPVFNwZkFGeEN2SjRQT2JPcWQ4TFB1QXJvWVJzY2t2ZFNHOGhvQUFLaTFPdjFIVDVRNjhTSEJkYUxad3VyNTZSMG9VYVEzV1lLaDlaa2F5eG9Y?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVl9MLVBvVzNMaE5YaFpaNXlKNXNTLVpCTjJTSUxoV0dmZW9ZQUwwLXJhN3VWanE2NVdabHMxU0MzMlB1RG9rRHE2a1dzUVgzTzJIVXZMazVDR1B4X0szLWMtWmNCVkdPVFNwZkFGeEN2SjRQT2JPcWQ4TFB...",
-      "date": "2026-09-10T15:49:34.000Z",
-      "source": "LiveScore",
-      "feedSource": "Media – Derby County",
-      "clubs": [
-        "Derby County"
-      ],
-      "category": "media"
-    },
-    {
       "title": "Frank Lampard press conference: Coventry City vs Brighton - BBC",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vbWxROVp0R3lET0l6Nmw2RWJiT2FDMWNXR0FVNk9vZVV0SnVZOTN5eW90dzN5QUtJYVZYTHhaYWhRX25fOGxjQjVrYkRXejhpMkZuNDVWcTdVa194Mlo0eWIteTNxYnM?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vbWxROVp0R3lET0l6Nmw2RWJiT2FDMWNXR0FVNk9vZVV0SnVZOTN5eW90dzN5QUtJYVZYTHhaYWhRX25fOGxjQjVrYkRXejhpMkZuNDVWcTdVa194Mlo0eWIteTNxYnM?oc=5\" target=\"_blank\">Frank...",
@@ -6437,11 +6473,11 @@
       "category": "media"
     },
     {
-      "title": "Aston Villa Christmas Fixtures 2026: Dates and Kick-Offs - myoldmansaid.com",
+      "title": "Aston Villa Christmas Fixtures 2026: Dates and Kick-Offs - My Old Man Said",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQLTBqdVh4ZVJ6OUVkVDl6VmRlSnMxc3RjYXV1Y3JyYjYwblZxXzZCQkJFM2RQMG5TN3NHY25XNEpJVXdmVDBIVGxrOHNBakZ2eGZyeWw2XzBlNWdfVlBYUDNqN0REY1kzb0pOSG5jS2dGdTRRVmhYTFNaWnI5Rm5XS0I0Y0s5bWwzQUNwcVNOU0dZclVobEJN?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQLTBqdVh4ZVJ6OUVkVDl6VmRlSnMxc3RjYXV1Y3JyYjYwblZxXzZCQkJFM2RQMG5TN3NHY25XNEpJVXdmVDBIVGxrOHNBakZ2eGZyeWw2XzBlNWdfVlBYUDNqN0REY1kzb0pOSG5jS2dGdTRRVmhYTFNaWnI...",
       "date": "2026-09-10T15:02:46.000Z",
-      "source": "myoldmansaid.com",
+      "source": "My Old Man Said",
       "feedSource": "Fan – Aston Villa",
       "clubs": [
         "Aston Villa"
@@ -6495,18 +6531,6 @@
         "Stoke City"
       ],
       "category": "official"
-    },
-    {
-      "title": "Roberto De Zerbi boost as more of Tottenham's Premier League fixtures are confirmed - football.london",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbWNkYmNWR3RWYXRyemhKRzBTTTcybnBQYzBOY0h6elFRTURHeVJxODFTeTFjZHEwcjBUMU5YQndlVHFDVTZRUE1rZkpYd01xOHBLRkVEMDdLMU5fT3lUUmF2bFA4b2xRMjBzdkMxTlpzZDR2NkxlTFY3eFVaMFZXVVk0OFNFUXdmYXVpWTFRTDNuakVOM3BHMWJGYjBLU0FXODhUa9IBqgFBVV95cUxQTGpYbHlPd3kzTjFyVURCQkcxZHMySEpFNzRjLUpuMExaaThCdHJfV2ZqNFFaQnJxMnE3bkFWYXN4aUhlM1ROVEZPdVQ4QUl4cEVKVzZSckxqOTFlVDhNSHloV0pmZFRzc1NFSUNranlTWWJzMS0xamV4ckE5WHBsenNKd0F4S0V0VW1RcUx1NXMxSlVWNmtaZVdCTEtjZk1Ka1lURG5mMDAzUQ?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQbWNkYmNWR3RWYXRyemhKRzBTTTcybnBQYzBOY0h6elFRTURHeVJxODFTeTFjZHEwcjBUMU5YQndlVHFDVTZRUE1rZkpYd01xOHBLRkVEMDdLMU5fT3lUUmF2bFA4b2xRMjBzdkMxTlpzZDR2NkxlTFY3eFV...",
-      "date": "2026-09-10T14:32:52.000Z",
-      "source": "football.london",
-      "feedSource": "Fan – Tottenham Hotspur",
-      "clubs": [
-        "Tottenham Hotspur"
-      ],
-      "category": "fan"
     },
     {
       "title": "Plymouth Argyle defender Alex Hartridge ruled out by ankle injury - Yahoo Sports UK",
@@ -6929,18 +6953,6 @@
       "category": "official"
     },
     {
-      "title": "Match Preview | Grimsby Town v Bristol Rovers - Bristol Rovers Football Club",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYl9VVF9PY2xLVDRuMW1ITno0WXJWQmlWb1JSRTd2Q0s4QjEyQ2dkOXphcjh1eEdtZHZibDRsXzh6YnAtVEtjeGpOYUEyeDY4bWxDOE9sVm9xd0U0NHFMZzYtbkpkZzRTS09ENFBFaVpyRmR0SnZqWTBRemZzRkttM1ozR3hNWVh4dmc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNYl9VVF9PY2xLVDRuMW1ITno0WXJWQmlWb1JSRTd2Q0s4QjEyQ2dkOXphcjh1eEdtZHZibDRsXzh6YnAtVEtjeGpOYUEyeDY4bWxDOE9sVm9xd0U0NHFMZzYtbkpkZzRTS09ENFBFaVpyRmR0SnZqWTBRemZ...",
-      "date": "2026-09-10T06:47:10.000Z",
-      "source": "Bristol Rovers Football Club",
-      "feedSource": "Media – Grimsby Town",
-      "clubs": [
-        "Grimsby Town"
-      ],
-      "category": "media"
-    },
-    {
       "title": "'I would have loved it' - Anderson on Glasner's wing-back system - BBC",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nZmxTSEU0bUFqd3Z4T1FyVDBLTGtONi1IYURraHdFLXgtemdkaC1IbERzM2Z1NE5PYVlpZGRfck1ITEJKTnlIczZIeUU3UFprX09nblVkRFJtSkJlYk44M0VSbWFCSEZXanc?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE5nZmxTSEU0bUFqd3Z4T1FyVDBLTGtONi1IYURraHdFLXgtemdkaC1IbERzM2Z1NE5PYVlpZGRfck1ITEJKTnlIczZIeUU3UFprX09nblVkRFJtSkJlYk44M0VSbWFCSEZXanc?oc=5\" target=\"_blank\">'...",
@@ -7073,6 +7085,18 @@
       "category": "fan"
     },
     {
+      "title": "Championship: Charlton Athletic 0-0 Queens Park Rangers - Addicks and R's miss chance to go top with draw - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuQlBVS2pieEdWN2FUdDYzVkF4d1djOHlvOEN4R1RuSmhKS1NfVk9nVHozNE9ZSWpHOTJSMGQyTmxzdWZqN1U4d3RhVXh4N2F0SlozUmU3eHVSQXJUNFR6YzZYNlB6QQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuQlBVS2pieEdWN2FUdDYzVkF4d1djOHlvOEN4R1RuSmhKS1NfVk9nVHozNE9ZSWpHOTJSMGQyTmxzdWZqN1U4d3RhVXh4N2F0SlozUmU3eHVSQXJUNFR6YzZYNlB6QQ?oc=5\" target=\"_blank\">Champi...",
+      "date": "2026-09-09T20:53:00.000Z",
+      "source": "BBC",
+      "feedSource": "Media – Queens Park Rangers",
+      "clubs": [
+        "Queens Park Rangers"
+      ],
+      "category": "media"
+    },
+    {
       "title": "Brentford transfers, latest news, rumours and gossip: Live updates, goals and highlights - Sky Sports",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM1pRVzYzejBSaTdvM2x4VjkzM0pHck5mQUxKU3dYc2pELVFhVXNwZmdhX3pOejljdllKajFLd3ROWDlpT2pOTndSUWo1cy1CbDh5X1lYSnQxZUZ6bEVlcWoyV3dfdkhDeVlsaGxjRjAzMEhhcTYzcGx2endhdWdkM09VVGRUVXNmYWd4UHBkSXNXazQ0VEh4bmIydV9ZOTFGdXpZSUxpeWdJcnhMRDdYUkNjWUloWWdXWEZzWGlEbktybExJdE9aOTFRVTRaVWVVdnl1Qkxza1U1eGNB?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM1pRVzYzejBSaTdvM2x4VjkzM0pHck5mQUxKU3dYc2pELVFhVXNwZmdhX3pOejljdllKajFLd3ROWDlpT2pOTndSUWo1cy1CbDh5X1lYSnQxZUZ6bEVlcWoyV3dfdkhDeVlsaGxjRjAzMEhhcTYzcGx2end...",
@@ -7170,8 +7194,8 @@
     },
     {
       "title": "Scott Malone: Former Crawley Town defender targets League Two return - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xRGl0cFdKME1NNU1GQ1pCM3FneXhtaW5wdEdvWWJjYnNtWWdyaFAteUNKaEtEZWNRYWlaOFlfWnl6NkNkMFQ3aGNpLXNHMUNfOXlJN2I0TWdTMm8yWTJFekRSZERZVmpJWWc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE5xRGl0cFdKME1NNU1GQ1pCM3FneXhtaW5wdEdvWWJjYnNtWWdyaFAteUNKaEtEZWNRYWlaOFlfWnl6NkNkMFQ3aGNpLXNHMUNfOXlJN2I0TWdTMm8yWTJFekRSZERZVmpJWWc?oc=5\" target=\"_blank\">S...",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1QZFhEekptNVJkNDhDb1EyR2JYYnR0eUg2eXB0MHVHSnI5eEtOMm5ySFExV3dBeExWQmRFeTNJUFdndnl1RE1JbkpKeEFEeVd3U3FpellDZnF5eXFMQ0VIWEU5YVBxNG8?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1QZFhEekptNVJkNDhDb1EyR2JYYnR0eUg2eXB0MHVHSnI5eEtOMm5ySFExV3dBeExWQmRFeTNJUFdndnl1RE1JbkpKeEFEeVd3U3FpellDZnF5eXFMQ0VIWEU5YVBxNG8?oc=5\" target=\"_blank\">Scott...",
       "date": "2026-09-09T16:40:51.000Z",
       "source": "BBC",
       "feedSource": "Media – Crawley Town",
@@ -7745,30 +7769,6 @@
       "category": "media"
     },
     {
-      "title": "Carabao Cup: Leyton Orient take the lead against Bradford after BIZARRE own goal - Sky Sports",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLVZMQVlLdHlsZDZpcUNFYXJmcGxmeVR2SkFSN3M3OTE1bWlhb2kwRUlaTUVVQ3phZTY0Q2kxbE5EZjM1ZG5haDdROEF0cGMzZjh0WjBjdGVFZ3JOSWMxUXBoNkJkbGNBSUNiRjNncC1CeE5hZTlaenhLYndFbUlxcURYOGh3UFJxZTZOSk9LU21JckRfU2N3M2xCNEFOSnUySElTd0pHZlVwMGNqcDVUaThuRm02MVNDODFUZkctSHF1akt5Zmczd1JKTFpzSWU4?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLVZMQVlLdHlsZDZpcUNFYXJmcGxmeVR2SkFSN3M3OTE1bWlhb2kwRUlaTUVVQ3phZTY0Q2kxbE5EZjM1ZG5haDdROEF0cGMzZjh0WjBjdGVFZ3JOSWMxUXBoNkJkbGNBSUNiRjNncC1CeE5hZTlaenhLYnd...",
-      "date": "2026-09-08T19:37:50.000Z",
-      "source": "Sky Sports",
-      "feedSource": "Media – Leyton Orient",
-      "clubs": [
-        "Leyton Orient"
-      ],
-      "category": "media"
-    },
-    {
-      "title": "Official FC Porto vs Manchester City Lineups: Champions League 2026/27 - blog.ke.sportpesa.com",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWJES0J3OXd4RXgzYlBJNlphQ1hZWWJVa2lLSlRmTXFsWmZ1VVJIc3VqdFowVGo0SEliMWVxRE8yMXdNbkd5MGNSc1o1RXFnZ1BfVm9LOG1KRDR0MXBrampLbzdHYU1QRTVLRjNJbHY4MlRpXzNCNERXbklRYnRnZDZTZw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWJES0J3OXd4RXgzYlBJNlphQ1hZWWJVa2lLSlRmTXFsWmZ1VVJIc3VqdFowVGo0SEliMWVxRE8yMXdNbkd5MGNSc1o1RXFnZ1BfVm9LOG1KRDR0MXBrampLbzdHYU1QRTVLRjNJbHY4MlRpXzNCNERXbkl...",
-      "date": "2026-09-08T18:43:08.000Z",
-      "source": "blog.ke.sportpesa.com",
-      "feedSource": "Official – Manchester City",
-      "clubs": [
-        "Manchester City"
-      ],
-      "category": "official"
-    },
-    {
       "title": "25 photos of Burnley fans arriving at the Racecourse Ground for Championship game against Wrexham - Burnley Express",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNV3RyOEZramV0OEU3SEpUSGdNVm1qQmlGVEFXdVlycWlsdG11MjJDRUJBZDV3QU5xT3FINTFGeS1wUV9KZ2xrMDNzN3FQNnV0V052Vnd4Z3N6Z2QzY0c5U0xuTUx2OWxxTnlPd1I1ckdFMjNiaURMWGlOZG5nYWxQQmtrdE1FelRFQVhBWWtqa3ZFSlNad3NYS3BUeVpXaURrcEpqdHpIaHYyTklrMTNPRzdFTGdjaWljb1Z3MVpPaDhXQ2ZqVzVGeW9ZTzJtTnVIS3NGU19SZDhmeWIwZERUNlpxX0V4OEl6aG1CdmRRcXhIaXVo?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxNV3RyOEZramV0OEU3SEpUSGdNVm1qQmlGVEFXdVlycWlsdG11MjJDRUJBZDV3QU5xT3FINTFGeS1wUV9KZ2xrMDNzN3FQNnV0V052Vnd4Z3N6Z2QzY0c5U0xuTUx2OWxxTnlPd1I1ckdFMjNiaURMWGlOZG5...",
@@ -7839,18 +7839,6 @@
         "Birmingham City"
       ],
       "category": "official"
-    },
-    {
-      "title": "Adel Taarabt: Former Queens Park Rangers midfielder retires - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50R2h3RXpKQkc3c0ZDTFh1TzZTeWpOM3g1TzhiQ09rRDJnWjJpdEJDNVI3WkR4a244a3hxZ2tjbEJTUWRDVHdRY29KZGhrODc1aHBnRVR0VEFSVnlhaldPcUZTdzZvdWs?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50R2h3RXpKQkc3c0ZDTFh1TzZTeWpOM3g1TzhiQ09rRDJnWjJpdEJDNVI3WkR4a244a3hxZ2tjbEJTUWRDVHdRY29KZGhrODc1aHBnRVR0VEFSVnlhaldPcUZTdzZvdWs?oc=5\" target=\"_blank\">Adel ...",
-      "date": "2026-09-08T16:31:46.000Z",
-      "source": "BBC",
-      "feedSource": "Media – Queens Park Rangers",
-      "clubs": [
-        "Queens Park Rangers"
-      ],
-      "category": "media"
     },
     {
       "title": "⚔️🧱 Why Sheffield United Fans Should Be Excited About New Signing Liam Kitching - Yahoo Sports",
@@ -8249,11 +8237,11 @@
       "category": "fan"
     },
     {
-      "title": "Nottingham Forest football chants: Lyrics of Mull of Kintyre, You Are My Forest and much more - Football Ground Guide",
+      "title": "Nottingham Forest football chants: Lyrics of Mull of Kintyre, You Are My Forest and much more - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORUtiN0JvWGlwOV9GUU1NZy1TTzZpN2w2UXR6b0VYZXlwbExVdHJUeVk5NXBETjZia3hwVlRyVnBqSk02anlRRktIb2xieFozdGZ6b1M3ZzE2bzlWYlJ0UEJfenRDblhMc3F0T0ZrZ3NHN0dNdGYyUmJpTWhoUEE2ZkpXVmJmYlpwQ2c?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxORUtiN0JvWGlwOV9GUU1NZy1TTzZpN2w2UXR6b0VYZXlwbExVdHJUeVk5NXBETjZia3hwVlRyVnBqSk02anlRRktIb2xieFozdGZ6b1M3ZzE2bzlWYlJ0UEJfenRDblhMc3F0T0ZrZ3NHN0dNdGYyUmJpTWh...",
       "date": "2026-09-07T14:48:18.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Nottingham Forest",
       "clubs": [
         "Nottingham Forest"
@@ -8273,11 +8261,11 @@
       "category": "media"
     },
     {
-      "title": "Ex-Swansea City duo named in new-look Wales coaching team in shock announcement - walesonline.co.uk",
+      "title": "Ex-Swansea City duo named in new-look Wales coaching team in shock announcement - Wales Online",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQT0l5ZVcxQ1ZiMDlWemxzRXc5Tk9KRWNNZG14alQ3UzVlcVZnME5tbWZNV0xmdUM5a0MzVGRKM2hFLS1Mam1qcjVWTXprVDNENlZOb19KM3lCeXlQNEFRRHFSUFpDSGtwejZwZFhPUmcxLWhBYll1YWhxU0NuZkFaS2g0OENyRkRJZFR0YzA5a1N6VG1YSlZSU9IBngFBVV95cUxQa1BjWUx0SlhFTUhjSFE5M19pdGdCRlhkQ1BmckZlNUhEMjk4RkpoaXhWSk9sYnFzcHFOY3ZKUWpLeVVZVzQzbHFvNXBHOXA5YTBscWF1eklHblgzU0NzNVp6MGhnM3Q0TzdPS01kYk5rUG1uVUdTaWRtd1hKczlCdTdTMktmZGFwUS1MWXZTVU9HN0Vxc09BTlZpY01WZw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQT0l5ZVcxQ1ZiMDlWemxzRXc5Tk9KRWNNZG14alQ3UzVlcVZnME5tbWZNV0xmdUM5a0MzVGRKM2hFLS1Mam1qcjVWTXprVDNENlZOb19KM3lCeXlQNEFRRHFSUFpDSGtwejZwZFhPUmcxLWhBYll1YWhxU0N...",
       "date": "2026-09-07T14:01:00.000Z",
-      "source": "walesonline.co.uk",
+      "source": "Wales Online",
       "feedSource": "Official – Swansea City",
       "clubs": [
         "Swansea City"
@@ -8491,6 +8479,18 @@
       "category": "fan"
     },
     {
+      "title": "Official | Mahamadou Sangaré leaves Manchester City to join Al-Qadsiah - Yahoo Sports",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSlFMWnlBU0M2RFdzc1BxQS1rdlpNRkt1MVBVUUs2WGEwUEl4dVdDMEdvbl9wc2Uwb0ZGUy01b0VncVQ1Ukd0LVZsdTNwd0ExbU94aVlOY0Y3NUFndnpfVHVBX1pjQVgxUkl6d1BxY3BfRk15Yk9UdW1WQ3lfcVNHaTM1V2haVTFZVDAyZWZUdlJBNDBJMU1F?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOSlFMWnlBU0M2RFdzc1BxQS1rdlpNRkt1MVBVUUs2WGEwUEl4dVdDMEdvbl9wc2Uwb0ZGUy01b0VncVQ1Ukd0LVZsdTNwd0ExbU94aVlOY0Y3NUFndnpfVHVBX1pjQVgxUkl6d1BxY3BfRk15Yk9UdW1WQ3l...",
+      "date": "2026-09-07T08:55:00.000Z",
+      "source": "Yahoo Sports",
+      "feedSource": "Official – Manchester City",
+      "clubs": [
+        "Manchester City"
+      ],
+      "category": "official"
+    },
+    {
       "title": "'Something is coming' - Holloway praises fans for fostering exciting play - Wilts and Gloucestershire Standard",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVHh4djh4aG9DUGlEQ0NmNnJGN1JPaW1yTmVPN1FwbnpScTd5UjVhay11U0I4NEYzTFVMQkNfZXN5MldhMWNtRVBFTWM3bWVfSkVLUm5VdVhpNkw1NUppV2x4RHhzMzg2bDhGdWVmOXAzRVpLTUpQX19KWlRnQmFpWnRWVnFra09NUzB5TU9lNEdQVlRRS1lZZ1JPelQ5M3UxOGFTTUEtWU16UQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVHh4djh4aG9DUGlEQ0NmNnJGN1JPaW1yTmVPN1FwbnpScTd5UjVhay11U0I4NEYzTFVMQkNfZXN5MldhMWNtRVBFTWM3bWVfSkVLUm5VdVhpNkw1NUppV2x4RHhzMzg2bDhGdWVmOXAzRVpLTUpQX19KWlR...",
@@ -8599,18 +8599,6 @@
       "category": "fan"
     },
     {
-      "title": "Crawley Town vs Crewe Alexandra Box Score - March 06, 2027 - The Athletic - The New York Times",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVEExaEtIR0ZmeW12T1d4MEFHZG5CeTZpaU9TYUtaTkFfRW1zXzdGUDQ0akFMSDhuVVdqQmdLZWhndjdrYXl6QXhETl9KV2NQZjhMeExKai14TEpGMlpZdW1zbWx2aVc0Z0M2ZGFmNnp1dm42X0FWaTF5Q0FjUXNOSk5ocTlOSDlkU1RXTk1Bd29XbmozMG1hZDU3blU?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPVEExaEtIR0ZmeW12T1d4MEFHZG5CeTZpaU9TYUtaTkFfRW1zXzdGUDQ0akFMSDhuVVdqQmdLZWhndjdrYXl6QXhETl9KV2NQZjhMeExKai14TEpGMlpZdW1zbWx2aVc0Z0M2ZGFmNnp1dm42X0FWaTF5Q0F...",
-      "date": "2026-09-06T23:14:13.000Z",
-      "source": "The New York Times",
-      "feedSource": "Media – Crawley Town",
-      "clubs": [
-        "Crawley Town"
-      ],
-      "category": "media"
-    },
-    {
       "title": "Bromley vs Wimbledon predictions, 11-2 Bet Builder tip, team news and odds - Racing Post",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTHg2aWdHMWdhVi1Fa01HcFZlQTF0bUZia3pzRUVfMEN2SlVvSGdJTDRwRnRVVGQteHo3a1RlLUFrYk4xVy02VnlxTThkaWVUNkllajNmOHFOLXFXUTc2Uy1VZ2I3OUQxTnZONG5pNFM5aXBhQ1Iyc1VnOE9rM2F4V2tfSHlGem91R29makhvQzliN1lkZzRLMzZlb0pVdndsSDFUbXBrQWlNcTl3V1A5b1lnMVBGSnV3V3VNeEFIYUs5RnFndGVtOG9HVl9uMFJMdHZB?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTHg2aWdHMWdhVi1Fa01HcFZlQTF0bUZia3pzRUVfMEN2SlVvSGdJTDRwRnRVVGQteHo3a1RlLUFrYk4xVy02VnlxTThkaWVUNkllajNmOHFOLXFXUTc2Uy1VZ2I3OUQxTnZONG5pNFM5aXBhQ1Iyc1VnOE9...",
@@ -8645,18 +8633,6 @@
         "Portsmouth"
       ],
       "category": "fan"
-    },
-    {
-      "title": "【OffiCial/Updates】WC]# Chelsea FC vs Arsenal Free English Premier League Thursday, 06.09.2026 - rikkyo.ac.jp",
-      "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPZ3l5b2FiUS1zb3FuVVVmcXh4Zi1MOVF5dDQ4VE43bzJjTkgtTk44TFNuQmtabkd6S1VWMVE2T2x1V0JrLWZEZGxJbUJlQ3BtbHZnQ09XbHA5MjRReEYxNUZsalBoay1pQk1qVTFhZnhUb3hJeERSY3JXbjBvRUhNV3dxRDdzR0dQVUdhZ0tZX1hfQkM0dlBPT3daLXhCTW4wRVFwWDl5OVR1cHNvRHBjRWxNb1VzNnJIU3IxMlprc0RxSF90cW1RY2tZNUY0VTU5T3RqbVQyelJmU3NLdnA5MWROR1lKVF9Vd0RfSVdteF9ITkVqdEh3bW5KNjhXcHB3aUVRcVFOYnZRRXV5WFFGQjdIOWdIa1E?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwJBVV95cUxPZ3l5b2FiUS1zb3FuVVVmcXh4Zi1MOVF5dDQ4VE43bzJjTkgtTk44TFNuQmtabkd6S1VWMVE2T2x1V0JrLWZEZGxJbUJlQ3BtbHZnQ09XbHA5MjRReEYxNUZsalBoay1pQk1qVTFhZnhUb3hJeERSY3JXbjB...",
-      "date": "2026-09-06T15:31:24.000Z",
-      "source": "rikkyo.ac.jp",
-      "feedSource": "Official – Queens Park Rangers",
-      "clubs": [
-        "Queens Park Rangers"
-      ],
-      "category": "official"
     },
     {
       "title": "Why Lincoln City Should Embrace Their Growing ‘Anti-Football’ Reputation After Southampton Draw - The Stacey West",
@@ -8739,6 +8715,18 @@
       "feedSource": "Media – Fleetwood Town",
       "clubs": [
         "Fleetwood Town"
+      ],
+      "category": "media"
+    },
+    {
+      "title": "Luton 1-1 Leyton Orient - Sky Sports",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTDlEZHlqSlRXay0yQm9PYUhUQzl1R1J0MG12dG5uWjRVQU9OWjN3dV9YRXFrUFJrMnhpYXFGNEZFX2VWRUIwVngydTNWZ3p6TTB3dXJtVW83QlZWWXJBZGNSeXJ5TFlnUmx6NzYzcTZacUFXZDd6MHJLbHE4UlJqUG5ZQ1Y?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNTDlEZHlqSlRXay0yQm9PYUhUQzl1R1J0MG12dG5uWjRVQU9OWjN3dV9YRXFrUFJrMnhpYXFGNEZFX2VWRUIwVngydTNWZ3p6TTB3dXJtVW83QlZWWXJBZGNSeXJ5TFlnUmx6NzYzcTZacUFXZDd6MHJLbHE...",
+      "date": "2026-09-06T04:40:36.000Z",
+      "source": "Sky Sports",
+      "feedSource": "Media – Leyton Orient",
+      "clubs": [
+        "Leyton Orient"
       ],
       "category": "media"
     },
@@ -9303,18 +9291,6 @@
       "category": "fan"
     },
     {
-      "title": "+!(OFFICIAL-TV) Stevenage vs Barnsley 𝐋𝐈𝐕𝐄 Ｆｒｅｅ 𝐒𝐭𝐑𝐞𝐀𝐦 On 29 July 2026 - rikkyo.ac.jp",
-      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPSWZ2VnR1cFl1N1ctUVNhSnYzbVk5Sjc1b3ROd211TURnWjJ2d1YtdGx3aFgxZGx4MjBicjM0S2VqMVdxY19uYVk2RW1CdndDR2VTQ2xZbEhRU3BETENWUk8tVVV5QkpyampwZVVRbUd5TTBEbTlLVEZrRDZMU1c1SkxsOEdHdlFVSmhpSUdxc2J2dHNGSnYxdmJSWGJpUWp0czVjTFNuTUp0UG94akJ6SDdrYTc1V0RIR0MxRTlPVGJpWnNvclZzZFc3RF9mT1FwbHozRmdDcF9mOVFrWmp6Q29GdjktcG1TVG80Nk40VVhaUVMwZTktZFJnSFpMLTRQY0x1djN2TFZadUIxZHRSR2J6UG5zdw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgJBVV95cUxPSWZ2VnR1cFl1N1ctUVNhSnYzbVk5Sjc1b3ROd211TURnWjJ2d1YtdGx3aFgxZGx4MjBicjM0S2VqMVdxY19uYVk2RW1CdndDR2VTQ2xZbEhRU3BETENWUk8tVVV5QkpyampwZVVRbUd5TTBEbTlLVEZrRDZ...",
-      "date": "2026-09-05T12:30:53.000Z",
-      "source": "rikkyo.ac.jp",
-      "feedSource": "Official – Stevenage",
-      "clubs": [
-        "Stevenage"
-      ],
-      "category": "official"
-    },
-    {
       "title": "Tavernier fires Bournemouth in front while 'Newcastle fans are still complaining' about decision - TNT Sports",
       "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNR3BOV3ZaVWN0dF9nZWxwQW5tc2lVVVA2VlppYzZ5eGNnYUtTZ2QtWUhxb05EcFdrYjVsMU8xSmE3WW5FaWdFQW9KRlJkMXhpSkRCZ0YxWHZJbWJPUG5kREgyanV4ejFKVFJ0bkpmZGZ2VlZjWXFRVGd6THFwdWdQbWpkby1RSGJsd3k3cVZESmhMRDBoeW1NQ3JxT01yVFBjS3pjLUZZR1V4WHZhQV9ITGtEZHJKU1dmSmEzN2Q0WDFkZURtMnJpUHZDdjR1SFFBcUt6NnQxZXMtUG9CcVpfWFpXenJSWTF6aERUZDdCcVBEbWxLMUpEQWR4OWFpWVkwVDhVLTBQLVo0Q1FTZmVja2lGV0dfdGRZUHYzT0U1TUN6N0FabllFVWVJdDZ0REVPSlRqQ2pFOVNiS1dGUDVTNUxSR0M?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAJBVV95cUxNR3BOV3ZaVWN0dF9nZWxwQW5tc2lVVVA2VlppYzZ5eGNnYUtTZ2QtWUhxb05EcFdrYjVsMU8xSmE3WW5FaWdFQW9KRlJkMXhpSkRCZ0YxWHZJbWJPUG5kREgyanV4ejFKVFJ0bkpmZGZ2VlZjWXFRVGd6THF...",
@@ -9411,11 +9387,11 @@
       "category": "official"
     },
     {
-      "title": "Nevitt's gratitude to Micky Mellon for football chance, and why reunion happened - The Bolton News",
+      "title": "Nevitt's gratitude to Micky Mellon for football chance, and why reunion happened - theboltonnews.co.uk",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVkxNT2l3aEtsXzVtbzNmdG1MM2c2VE13eUM2a3Q2VFA2SkZVRlI0NVF1SUpJUEFCemY3dHF6LWt3Vnp1NjZmUDZmSmY2VVpNbFFzYXdkeElFT3N4bVllbmRhLUxmNE9IRE9wX2s3T2xrNkM3Sk1UWUU5WjV3bzl3Q1hnd0FWdm9DQWxSVU5nTlgzbVMyeW4zaEZNNE40RzJ1eUxFZg?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNVkxNT2l3aEtsXzVtbzNmdG1MM2c2VE13eUM2a3Q2VFA2SkZVRlI0NVF1SUpJUEFCemY3dHF6LWt3Vnp1NjZmUDZmSmY2VVpNbFFzYXdkeElFT3N4bVllbmRhLUxmNE9IRE9wX2s3T2xrNkM3Sk1UWUU5WjV...",
       "date": "2026-09-05T04:14:00.000Z",
-      "source": "The Bolton News",
+      "source": "theboltonnews.co.uk",
       "feedSource": "Media – Oldham Athletic",
       "clubs": [
         "Oldham Athletic"
@@ -9831,16 +9807,28 @@
       "category": "fan"
     },
     {
-      "title": "How to buy Tottenham Hotspur tickets in 2026: Prices, membership and everything else you need to know - Football Ground Guide",
+      "title": "How to buy Tottenham Hotspur tickets in 2026: Prices, membership and everything else you need to know - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPaVMtTGtYRGEwY0xkdHhpUV9YbERVSGhwaERUczMxSGZHbzdubVlXZEx2VUZBTGFidnhVLXFGR004SmZQRGpKWnhxRlRrZ2FNbnM0SEtpbkEtaDg3YVJJU2otVGVKbHpxbFhieUZLVmpacTRjZjROSzlMSHZNSWZYd1o4YzVlYVMwcmxfd1lwWXI3TnRfdENpRkg2VFdZaG5IdmtPVG5hQXgyTUFudS1EVEFqSGpWTFNnbEtZWlNNaG9CZlYwR3VDS3h5ZWhDZw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPaVMtTGtYRGEwY0xkdHhpUV9YbERVSGhwaERUczMxSGZHbzdubVlXZEx2VUZBTGFidnhVLXFGR004SmZQRGpKWnhxRlRrZ2FNbnM0SEtpbkEtaDg3YVJJU2otVGVKbHpxbFhieUZLVmpacTRjZjROSzlMSHZ...",
       "date": "2026-09-03T18:27:40.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Tottenham Hotspur",
       "clubs": [
         "Tottenham Hotspur"
       ],
       "category": "fan"
+    },
+    {
+      "title": "Reading Home Fixture Date Confirmed - Oxford United Football Club",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKTlp3SXcyUFZZUXZuNXVfcjdPaVM3NGpBUS1Jc21zSXlObXNNbTZZV1BwTExEeGhTa0VHdnA2bU9EMnFhZGt6RjJ0VTJIUlI3X2NhcXViTWNDSkhoNFJOY3lYck1fTmp5LXg5UVBPSUc?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFBKTlp3SXcyUFZZUXZuNXVfcjdPaVM3NGpBUS1Jc21zSXlObXNNbTZZV1BwTExEeGhTa0VHdnA2bU9EMnFhZGt6RjJ0VTJIUlI3X2NhcXViTWNDSkhoNFJOY3lYck1fTmp5LXg5UVBPSUc?oc=5\" target=\"_...",
+      "date": "2026-09-03T16:59:13.000Z",
+      "source": "Oxford United Football Club",
+      "feedSource": "Media – Reading",
+      "clubs": [
+        "Reading"
+      ],
+      "category": "media"
     },
     {
       "title": "MK Dons fans make their feelings known after winless run extends to four league games - Fan Banter",
@@ -9877,6 +9865,30 @@
         "Crystal Palace"
       ],
       "category": "official"
+    },
+    {
+      "title": "Louza's final message to Watford fans - 'No-one knows how much I love the club' - Yahoo Sports UK",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWmFhWUNmVV95MVpwZ0hmSTl4Ty11eERScV9LM3REWS01N1pXVE5ITm1hY0NaTlFodXVrMHJuMHZfNzBRVnhIYnNwQmdtaFR3YTAtUF9PalM3MkJZVTc4MHVNZ09iTU01VFRBTllMMDg0MkZYLS1FVkMxOWFweEZXM0Vlbk5VUHl5?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWmFhWUNmVV95MVpwZ0hmSTl4Ty11eERScV9LM3REWS01N1pXVE5ITm1hY0NaTlFodXVrMHJuMHZfNzBRVnhIYnNwQmdtaFR3YTAtUF9PalM3MkJZVTc4MHVNZ09iTU01VFRBTllMMDg0MkZYLS1FVkMxOWF...",
+      "date": "2026-09-03T09:05:18.000Z",
+      "source": "Yahoo Sports UK",
+      "feedSource": "Fan – Watford",
+      "clubs": [
+        "Watford"
+      ],
+      "category": "fan"
+    },
+    {
+      "title": "Colchester United vs Crawley Town Box Score - April 03, 2027 - The Athletic - The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRnIwRldBc05sb2hYbmphOHFRY3JVeG1scGdCcnhnakJPUVRuN2NqdG50VmxxbTZiaFVubTNVX3ZUWGVjczRRdXFxRWRJczlDVElOTGJrVUdETzRxSTRPQmtUVG1UMDRPd1BJUWh0bFRqQk5NYW1kSE9IZnAwS2tjMXpqTmlPeWtsajZTV1JhVzdsTjl4RU9MQTlGRUd0Szg?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQRnIwRldBc05sb2hYbmphOHFRY3JVeG1scGdCcnhnakJPUVRuN2NqdG50VmxxbTZiaFVubTNVX3ZUWGVjczRRdXFxRWRJczlDVElOTGJrVUdETzRxSTRPQmtUVG1UMDRPd1BJUWh0bFRqQk5NYW1kSE9IZnA...",
+      "date": "2026-09-03T09:00:32.000Z",
+      "source": "The New York Times",
+      "feedSource": "Media – Crawley Town",
+      "clubs": [
+        "Crawley Town"
+      ],
+      "category": "media"
     },
     {
       "title": "Stockport County - News, Schedule, Scores, Roster, and Stats - The Athletic - The New York Times",
@@ -10131,11 +10143,11 @@
       "category": "official"
     },
     {
-      "title": "Supporters’ forum drop-in - chesterfield-fc.co.uk",
+      "title": "Supporters’ forum drop-in - Chesterfield FC",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PWXdwR05rd2F3U202TmpLMERXTGhRNl9FUDk4THI2bmttSm50U3k4cmZwZkw3d3lEMXZLSXMxbW1sT1V6ZTZ2bEFBc1VMVWJURUZQVHBkUnZVTklvQWcxVWFNTnZnWS1fR1EwQWNKbw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE9PWXdwR05rd2F3U202TmpLMERXTGhRNl9FUDk4THI2bmttSm50U3k4cmZwZkw3d3lEMXZLSXMxbW1sT1V6ZTZ2bEFBc1VMVWJURUZQVHBkUnZVTklvQWcxVWFNTnZnWS1fR1EwQWNKbw?oc=5\" target=\"_b...",
       "date": "2026-09-02T08:51:10.000Z",
-      "source": "chesterfield-fc.co.uk",
+      "source": "Chesterfield FC",
       "feedSource": "Fan – Chesterfield",
       "clubs": [
         "Chesterfield"
@@ -10179,16 +10191,28 @@
       "category": "official"
     },
     {
-      "title": "Moorhouse joins from Manchester United on loan - Dundee Football Club - Official Website",
+      "title": "Moorhouse joins from Manchester United on loan - dundeefc.co.uk",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVm84RmdfMC1GTkJNeWItaWNqZ2s2R2Jpemt4RmpEZEFwS2tFblVDRUwtUjY5eWVWdm45N3cyZ09XQVVvN25FZVFxaVdGWExhNW1rWjJoQkE0QjBiNGdxa1Zsd3Q1dFJZVzR5YzN3MW1RT1FSS3pvcUJvNjRNRXN2VA?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQVm84RmdfMC1GTkJNeWItaWNqZ2s2R2Jpemt4RmpEZEFwS2tFblVDRUwtUjY5eWVWdm45N3cyZ09XQVVvN25FZVFxaVdGWExhNW1rWjJoQkE0QjBiNGdxa1Zsd3Q1dFJZVzR5YzN3MW1RT1FSS3pvcUJvNjR...",
       "date": "2026-09-02T07:00:00.000Z",
-      "source": "Dundee Football Club - Official Website",
+      "source": "dundeefc.co.uk",
       "feedSource": "Official – Manchester United",
       "clubs": [
         "Manchester United"
       ],
       "category": "official"
+    },
+    {
+      "title": "'A decent start but tougher tests to come' - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PRkRySmVjczY0cmFqRVdReDN4VEZsSjJNWmVoZXRsR3dXMjByX3pCTGpzX2NNNFNoTU5QMkwtOGdWSTNzbGJRM1BOcEhCbmtwSDBxUTJyQV9SUnRvTC16eHdVWkRRVzA?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PRkRySmVjczY0cmFqRVdReDN4VEZsSjJNWmVoZXRsR3dXMjByX3pCTGpzX2NNNFNoTU5QMkwtOGdWSTNzbGJRM1BOcEhCbmtwSDBxUTJyQV9SUnRvTC16eHdVWkRRVzA?oc=5\" target=\"_blank\">'A de...",
+      "date": "2026-09-02T07:00:00.000Z",
+      "source": "BBC",
+      "feedSource": "Fan – Bristol City",
+      "clubs": [
+        "Bristol City"
+      ],
+      "category": "fan"
     },
     {
       "title": "Preston North End: Fans have their say after Bristol City defeat - BBC",
@@ -10335,11 +10359,11 @@
       "category": "media"
     },
     {
-      "title": "EVERTON U21 v MILAN FUTURO LIVE ON THE AC MILAN OFFICIAL APP - acmilan.com",
+      "title": "EVERTON U21 v MILAN FUTURO LIVE ON THE AC MILAN OFFICIAL APP - AC Milan | Sito Ufficiale",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdEt3UE85c3d3WUQ0SzM1Q3pOUUhPbF9xOGtUQ2dwdmNSc2JfY29Ncks0ck4yY2htdHl2SUNhVjdQZTN6Y3Q3Zmh5RXg0SGJuZzJwUGkyeFNGN2JKV1BFdnNZV2d6bTBkTWVhdGVUM0daMVNjLUFIY0xnbTlXT280cGE1YlM5dmxaMkthd0YzM0JoTWJsN2l2QXo3QUdUZjBNYzdndW9laWRYSUJWQzZBOThBUXAzZFpyeHBFN04tVTZwVGs?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdEt3UE85c3d3WUQ0SzM1Q3pOUUhPbF9xOGtUQ2dwdmNSc2JfY29Ncks0ck4yY2htdHl2SUNhVjdQZTN6Y3Q3Zmh5RXg0SGJuZzJwUGkyeFNGN2JKV1BFdnNZV2d6bTBkTWVhdGVUM0daMVNjLUFIY0xnbTl...",
       "date": "2026-09-01T10:00:00.000Z",
-      "source": "acmilan.com",
+      "source": "AC Milan | Sito Ufficiale",
       "feedSource": "Official – Everton",
       "clubs": [
         "Everton"
@@ -10587,11 +10611,11 @@
       "category": "official"
     },
     {
-      "title": "Official: AFC Wimbledon sign Dujuan Richards on loan from Chelsea - We Ain't Got No History",
+      "title": "Official: AFC Wimbledon sign Dujuan Richards on loan from Chelsea - weaintgotnohistory.sbnation.com",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzdk9sM0N3S0lGMDlRckdjNVZxY1VPbTdrVkg3cDFhQ3U5bjEyMTd0azA2c3M2aXZpNzY1cEZYclF0SWx4eG5aUGhUaWt2VE83dVB4WjhkeFVWWmxpZmhVX2x5RnBubUpYVWU0VjdXMHN5Y2VaVEtHVm85d1lPd2tVM2R6cldRUGFmQ3BLWDIxeXhQLWlpVVItTW9YWXZvZVJUNE9WQ3UyZGI2ckdKbzV2ZjE1UTZWaFhJaElMTkFXMFc2TnozZGtXX2xFVTVjUklTT2lrLWE5NU1V?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzdk9sM0N3S0lGMDlRckdjNVZxY1VPbTdrVkg3cDFhQ3U5bjEyMTd0azA2c3M2aXZpNzY1cEZYclF0SWx4eG5aUGhUaWt2VE83dVB4WjhkeFVWWmxpZmhVX2x5RnBubUpYVWU0VjdXMHN5Y2VaVEtHVm8...",
       "date": "2026-09-01T07:00:00.000Z",
-      "source": "We Ain't Got No History",
+      "source": "weaintgotnohistory.sbnation.com",
       "feedSource": "Official – AFC Wimbledon",
       "clubs": [
         "AFC Wimbledon"
@@ -10669,18 +10693,6 @@
         "Notts County"
       ],
       "category": "fan"
-    },
-    {
-      "title": "Reading sign NI striker Jamie Reid from Stevenage - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4T2JPRlc1SWg2TGtQb2Y4ODE3RldhWHk2b2s5NGJFNUFiU3BJWGxCbHE4TklaSm5rbTRiek9mNkhiY2ltTGRGRDNQblhfMTFnMW9ESi1CV0lTVUh2eGxlR3NvUjdpdDg?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4T2JPRlc1SWg2TGtQb2Y4ODE3RldhWHk2b2s5NGJFNUFiU3BJWGxCbHE4TklaSm5rbTRiek9mNkhiY2ltTGRGRDNQblhfMTFnMW9ESi1CV0lTVUh2eGxlR3NvUjdpdDg?oc=5\" target=\"_blank\">Readi...",
-      "date": "2026-09-01T07:00:00.000Z",
-      "source": "BBC",
-      "feedSource": "Media – Reading",
-      "clubs": [
-        "Reading"
-      ],
-      "category": "media"
     },
     {
       "title": "Tommy Setford joins Stevenage on loan - Arsenal.com",
@@ -10803,6 +10815,18 @@
       "category": "fan"
     },
     {
+      "title": "OFFICIAL: Port Vale confirm signing of Liverpool forward Keyrol Figueroa - Tribuna.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUlsOXhZazhuRlFkUHBpX3J5eU85OE9ZcnZ6a3lOaFlDZXIxR0ZSNmlxckVmNFdEX0xNdHVaZXhQMmhpdjJUN2F5TVRzak14ZnR5UW1aNHo3UmZWNGRXRkVPUDl2N0FhMDRZZDhNRDgwcWRSWi1laEh0WGR0NHVIQVYyQy1ZRm56elBVMFZGZk5RS05yR0d1WjNPUGl0SkJEazNhNnZxWFRERmY5dklscNIBtgFBVV95cUxPWjdBYXEzbWYxLUFRdlJGRkd4V0RoVEYyZEM5cEFiYTNxcjhyc1NOWm1DYjZCcFNTVTYtRXJaLXE1R2l0a0o2cWI5LV9CenpFU3NjT3I2dlBPZmJueXZfbVlDYU9sZDFweUJURjhIcW5hVUw0d2VHMnZnQU9sNHFPV1pjSUtJcFJYaXdlZjFyLWdHSVp3RXpSWmptanNXakpiUWxCVFQ2YzNqeFhPbnFaLVhiZ1BrUQ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUlsOXhZazhuRlFkUHBpX3J5eU85OE9ZcnZ6a3lOaFlDZXIxR0ZSNmlxckVmNFdEX0xNdHVaZXhQMmhpdjJUN2F5TVRzak14ZnR5UW1aNHo3UmZWNGRXRkVPUDl2N0FhMDRZZDhNRDgwcWRSWi1laEh0WGR...",
+      "date": "2026-09-01T07:00:00.000Z",
+      "source": "Tribuna.com",
+      "feedSource": "Official – Port Vale",
+      "clubs": [
+        "Port Vale"
+      ],
+      "category": "official"
+    },
+    {
       "title": "Swindon Town - Port Vale Live - League Two: Football Scores & Highlights - 01/09/2026 - TNT Sports",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQWJzTWFvbjZvTGMxUmVkYWsxVDFfRUpYY1JDZFVDai1iY1lack8xUlB6WU4tUHJSVVJrU2NhS0JoTEFhaE9zcVlLWWVxYnQ5cUxHemtQS3YzS2E3THctTWZmUGRGTkhpNVh2cjhxZlVQWFJ6dVBwb3NTYk8xUmROdWNfNFNZN19oYzQwZTl2OU1FbmNQcFVwVmRhS2JwemlhZU5QY2VnZERucnAx?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPQWJzTWFvbjZvTGMxUmVkYWsxVDFfRUpYY1JDZFVDai1iY1lack8xUlB6WU4tUHJSVVJrU2NhS0JoTEFhaE9zcVlLWWVxYnQ5cUxHemtQS3YzS2E3THctTWZmUGRGTkhpNVh2cjhxZlVQWFJ6dVBwb3NTYk8...",
@@ -10911,6 +10935,18 @@
       "category": "fan"
     },
     {
+      "title": "Lincoln City - Blackburn Rovers Live - Championship: Football Scores & Highlights - 01/09/2026 - TNT Sports",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMTkyTVV6X0thVGJSV2xub0ZPc1oyaVRpcVFGcDFDWkM2dVZzWWJzbGxtMTB6a200Z2IxV042YUtJY2h5bUNJU016NmR2NGVoTXkzN18zbXVvenZJTTB2dHJCTUdHeTVLV3AySTVFU1FfcmlPR1ExcFJ5UVlFWmxweDA2WThsZWFvRmVla0FjNGlYb1E3dHhIWTZKRlhxbGJwN2J1QVVCcEFNRktvMjA5LTJVRlo2OXZD?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMTkyTVV6X0thVGJSV2xub0ZPc1oyaVRpcVFGcDFDWkM2dVZzWWJzbGxtMTB6a200Z2IxV042YUtJY2h5bUNJU016NmR2NGVoTXkzN18zbXVvenZJTTB2dHJCTUdHeTVLV3AySTVFU1FfcmlPR1ExcFJ5UVl...",
+      "date": "2026-08-31T23:06:44.000Z",
+      "source": "TNT Sports",
+      "feedSource": "Fan – Blackburn Rovers",
+      "clubs": [
+        "Blackburn Rovers"
+      ],
+      "category": "fan"
+    },
+    {
       "title": "On This Day: Allan Clarke Promises Lincoln City Fans Entertainment - The Stacey West",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV291X1ZZRlZwY2NMNUg5YmE5RjA1Ry1yN0Z0Y1c3YVdROWdaZ253YUZQbVBfM0NNdVN6QkZiOXlGME45ZExDZlRSdC16Zjg1eTROWENlS05YYWc1S1NNa05IdGRGa0xWNl9lMzd3QUlfNVV3dW43U0Nmal9OZnhWNmE2Z000S3FFSXFmRko1YVNYcHAyTUhhQVZJTzFseHVkc3c?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQV291X1ZZRlZwY2NMNUg5YmE5RjA1Ry1yN0Z0Y1c3YVdROWdaZ253YUZQbVBfM0NNdVN6QkZiOXlGME45ZExDZlRSdC16Zjg1eTROWENlS05YYWc1S1NNa05IdGRGa0xWNl9lMzd3QUlfNVV3dW43U0Nmal9...",
@@ -10923,11 +10959,11 @@
       "category": "fan"
     },
     {
-      "title": "Bournemouth fans react to Vitality Stadium developments as Cherries board sent 18k upgrade message - Football Ground Guide",
+      "title": "Bournemouth fans react to Vitality Stadium developments as Cherries board sent 18k upgrade message - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNXBkeFM3YmkxaGs3OFp0eTBSeHJKYXZ2VGZrMk5ycVpEWHIzQ242aTRfY1dGX3RJVmNaVFRUVjFKYkZtcU5kczFjMWJMQWJ2ek9TWTBmZ05wY01kN3ZQVW1JbnhRV3QxcUZ0enM1dzluMllBeWFfTEhvTWxjdS1mTWFuZzFIWVBodzdrTzFYaU84YW1qVl9nOG9wUFU4QjhiYTNQc0llTDRkWUd1R1FrbE5LaFBxay1jQXlNLXN5LUtTVk9LTTlnNUVKMjF3V2ZZTDBWY1VCRQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNXBkeFM3YmkxaGs3OFp0eTBSeHJKYXZ2VGZrMk5ycVpEWHIzQ242aTRfY1dGX3RJVmNaVFRUVjFKYkZtcU5kczFjMWJMQWJ2ek9TWTBmZ05wY01kN3ZQVW1JbnhRV3QxcUZ0enM1dzluMllBeWFfTEhvTWx...",
       "date": "2026-08-31T14:56:05.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Bournemouth",
       "clubs": [
         "Bournemouth"
@@ -10947,19 +10983,6 @@
       "category": "fan"
     },
     {
-      "title": "AFC Wimbledon 1-0 Wigan Athletic: Johnnie Jackson admits Junior Nkeng’s future is uncertain",
-      "link": "https://www.theleaguepaper.com/latest-news/football-league-division-one/afc-wimbledon/465054/afc-wimbledon-1-0-wigan-athletic-johnnie-jackson-admits-junior-nkengs-future-is-uncertain/",
-      "summary": "Myles Hippolyte’s late goal earned AFC Wimbledon a first League One win of the season as they beat Wigan Athletic. The post AFC Wimbledon 1-0 Wigan Athletic: Johnnie Jackson admits Junior Nkeng’s future is uncertain a...",
-      "date": "2026-08-31T14:08:41.000Z",
-      "source": "The League Paper",
-      "feedSource": "The League Paper",
-      "clubs": [
-        "AFC Wimbledon",
-        "Wigan Athletic"
-      ],
-      "category": "media"
-    },
-    {
       "title": "Portsmouth - Derby County Live - Championship: Football Scores & Highlights - 01/09/2026 - TNT Sports",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRkNuRHdFVUw3S2lVMHNLaHZQd3VocHRoVFJzOWwzeWs1NjVaTGFpUmI4MmZWblRpUXhTTWpfd3hfbUVhV1JUMXN4ZmxEM2U3cmRxNHk2by1qZ0lZTE1yRlN6dXBFWk1KY1ozN3RVeERaR2NONTQzTFJrZFVnakhYREY2QTA0cWFEc19Rdk9GUE03dnNsb3g4U3RoTlNuY3NnQnhkeE56eEgwZw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRkNuRHdFVUw3S2lVMHNLaHZQd3VocHRoVFJzOWwzeWs1NjVaTGFpUmI4MmZWblRpUXhTTWpfd3hfbUVhV1JUMXN4ZmxEM2U3cmRxNHk2by1qZ0lZTE1yRlN6dXBFWk1KY1ozN3RVeERaR2NONTQzTFJrZFV...",
@@ -10968,18 +10991,6 @@
       "feedSource": "Fan – Derby County",
       "clubs": [
         "Derby County"
-      ],
-      "category": "fan"
-    },
-    {
-      "title": "Lincoln City - Blackburn Rovers Live - Championship: Football Scores & Highlights - 01/09/2026 - TNT Sports",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWkFnWC1WUjZ0UEpzOWlRdVhHMHpQZ3czNjZtZmpvNDZsUEFtOVFfN1VVTHB0SG1HNWY3cFI1WUxfQ0lWRXJlbW41QmxXYVpmUWRwUkY4eW1rWUI5VkRzOENYTHpHNFlieU5QQ0FBWG1MT1RhYlBWZ1ljdnZ1Q2dFQzUtNnpmQzdYRF9Rb0V2NmZ5TGhrN2pVeEh1cWFwdUw0SElzYnVYOUlJX1lhUDFYNjZ3?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOWkFnWC1WUjZ0UEpzOWlRdVhHMHpQZ3czNjZtZmpvNDZsUEFtOVFfN1VVTHB0SG1HNWY3cFI1WUxfQ0lWRXJlbW41QmxXYVpmUWRwUkY4eW1rWUI5VkRzOENYTHpHNFlieU5QQ0FBWG1MT1RhYlBWZ1ljdnZ...",
-      "date": "2026-08-31T08:34:51.000Z",
-      "source": "TNT Sports",
-      "feedSource": "Fan – Blackburn Rovers",
-      "clubs": [
-        "Blackburn Rovers"
       ],
       "category": "fan"
     },
@@ -11032,11 +11043,11 @@
       "category": "fan"
     },
     {
-      "title": "Joe Wright becomes latest summer signing - Dundee Football Club - Official Website",
+      "title": "Joe Wright becomes latest summer signing - dundeefc.co.uk",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nZjNpaUpSa2E5MTJILWJlYjViQnJNa0dYdThrR09ic01YZ2ZEcjQ2NS1YamlqenJONHRtY19Yc3RDUk1WWlFsQ2wzeTM1Q0o1Rm1GeEJfbTE0VUhCM1ZlMURHR0RhQ3VUemRFcXpjU0NXc1RScndVZw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE5nZjNpaUpSa2E5MTJILWJlYjViQnJNa0dYdThrR09ic01YZ2ZEcjQ2NS1YamlqenJONHRtY19Yc3RDUk1WWlFsQ2wzeTM1Q0o1Rm1GeEJfbTE0VUhCM1ZlMURHR0RhQ3VUemRFcXpjU0NXc1RScndVZw?oc=5...",
       "date": "2026-08-31T07:00:00.000Z",
-      "source": "Dundee Football Club - Official Website",
+      "source": "dundeefc.co.uk",
       "feedSource": "Official – Bradford City",
       "clubs": [
         "Bradford City"
@@ -11080,6 +11091,18 @@
       "category": "fan"
     },
     {
+      "title": "Fans demand Spurs stadium announcer be FIRED after pre-match rally backfires - The Sun",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZjlvOTg0amplQWR3ZVlNbUpYeXFab19KdXF2SDBzNWdiRUh4a1VjR1dZZnEzdXhZYlljblVGZkZ2WEpBazktYVE5Mm56NTVHVGRxeUJBSHhUM0tLSFVrTmRKbFZlTWRjNGxrYUZTNkluQlVqSEVyRmJ2SS1jdXUxejZXaU9NVm10cU1ScFZSOS1pRlo4R3NpY01wYUpnMW9aNEVlZjZvdw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxOZjlvOTg0amplQWR3ZVlNbUpYeXFab19KdXF2SDBzNWdiRUh4a1VjR1dZZnEzdXhZYlljblVGZkZ2WEpBazktYVE5Mm56NTVHVGRxeUJBSHhUM0tLSFVrTmRKbFZlTWRjNGxrYUZTNkluQlVqSEVyRmJ2SS1...",
+      "date": "2026-08-30T07:00:00.000Z",
+      "source": "The Sun",
+      "feedSource": "Fan – Tottenham Hotspur",
+      "clubs": [
+        "Tottenham Hotspur"
+      ],
+      "category": "fan"
+    },
+    {
       "title": "‘We’re ruining Bishop’s legacy…Pompey woeful…Bristol City worst atmosphere - portsmouth.co.uk",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQWZISlQ5amttMXRnandOMmVPVXJUVzZvanVqaUJkRkRJT0d3VVNJTlhUaDdhMllOQ3R2am1xc2cyWV9zcXduSDZHSXhGN0pKYy1aUF95QnpWNmxUVElTUGQ1a0dtUDdSWmJ6bW5ldGJ6QzgxaWJncHNtOTYxbzRKWmduQnNZTnRucTZXNFpkZmpOVTJFNktoWEJmTkg1M3djTzlDT2dyMFBRX21mRUlpTjFBM1BGbUNn?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQWZISlQ5amttMXRnandOMmVPVXJUVzZvanVqaUJkRkRJT0d3VVNJTlhUaDdhMllOQ3R2am1xc2cyWV9zcXduSDZHSXhGN0pKYy1aUF95QnpWNmxUVElTUGQ1a0dtUDdSWmJ6bW5ldGJ6QzgxaWJncHNtOTY...",
@@ -11092,11 +11115,11 @@
       "category": "fan"
     },
     {
-      "title": "Arsenal strike Cardiff City transfer deal as announcement made - walesonline.co.uk",
+      "title": "Arsenal strike Cardiff City transfer deal as announcement made - Wales Online",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbzlqamhVZ0ZwaEdKZzZMZlhtenRSc1BQRktjbEpiam1RNFZzQ05JSnVKcnNWRUxubnljWm53UVI3MGNYeGVDS3JIOUlkdFBnN1pYQ3FQdW5RYjliaWJCWkl2aURzLUFtYlBIZEVuU0kyN2ZWNFktcVJ6VjVoTlFKazN1UHJMeUhkUms2RHU4X3lrQ3J5SHhRRlZKSkZ4SmRNaVFLOTI0RdIBrAFBVV95cUxQbjJHaEFma1lNYXJhbHVsNzVvM2p4WDc2bzYyX0FnZ3dMaTlzdVhuZUhGbG5WMVhqRl92WDljbFlhUE1pN1FTS2Y3MTIxNHlZSGdPWVV6OUtXN3l1cUVhQlliR3hodUdWUXNJWFdtSVRmM2dwZFkyNVI1RlhuTGdaZGt1WmR6NDF0bkxfUFVjTmktdFFyS25kWGZrV2lVYUxSZTNXNjhpbjRnbTVX?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxPbzlqamhVZ0ZwaEdKZzZMZlhtenRSc1BQRktjbEpiam1RNFZzQ05JSnVKcnNWRUxubnljWm53UVI3MGNYeGVDS3JIOUlkdFBnN1pYQ3FQdW5RYjliaWJCWkl2aURzLUFtYlBIZEVuU0kyN2ZWNFktcVJ6VjV...",
       "date": "2026-08-30T07:00:00.000Z",
-      "source": "walesonline.co.uk",
+      "source": "Wales Online",
       "feedSource": "Official – Cardiff City",
       "clubs": [
         "Cardiff City"
@@ -11625,11 +11648,11 @@
       "category": "official"
     },
     {
-      "title": "Official: Preston North End sign Caleb Wiley on loan from Chelsea - We Ain't Got No History",
+      "title": "Official: Preston North End sign Caleb Wiley on loan from Chelsea - weaintgotnohistory.sbnation.com",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNem1lRExlU0lmZkdXQ1lYU3JJMm1HVVMtY1Jlb1hkbnVpc1A3QkY4a003YzZBLUVpMmxsd2FWNXZVaGFHU2RhWmdsZkZqRGgzcy1GQUtkal85WU84MGZKV3R1eFI0THZlQmttSDRCQUMxcm9FZzBUT0hOamFiMlZyOExIVFFxaEhwa2ExS1RqTVNPLXUwdnhkbW9rQU9JZTJ3bnJBeVpERUVkMnExLUVVelFBYnNib2hBQ2RtcWNNellPTmFKNW8yWko5dmtGZEJmVnBLYlpQT1czMnJR?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNem1lRExlU0lmZkdXQ1lYU3JJMm1HVVMtY1Jlb1hkbnVpc1A3QkY4a003YzZBLUVpMmxsd2FWNXZVaGFHU2RhWmdsZkZqRGgzcy1GQUtkal85WU84MGZKV3R1eFI0THZlQmttSDRCQUMxcm9FZzBUT0hOamF...",
       "date": "2026-08-28T07:00:00.000Z",
-      "source": "We Ain't Got No History",
+      "source": "weaintgotnohistory.sbnation.com",
       "feedSource": "Official – Preston North End",
       "clubs": [
         "Preston North End"
@@ -11719,6 +11742,18 @@
         "Blackpool"
       ],
       "category": "official"
+    },
+    {
+      "title": "Women's Matchday Guide: Cambridge United vs Dulwich Hamlet - Cambridge United",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOblA2LUd5ZzB5XzRMUVRTa1VHODZGdnhXYVNPbmFQeWRlSHFETXl6QWYyeUFweDc4SmZqeXZfdDFmYkxOTlNOWGItNElMaTYtaUhBdlpsYU83elNpSTJxNmNPVGxDeW5ZUzdDWjZucnQ4Q2Zxc1ctTmswWmxaN1JqcHI1eFlwc3N1dUp1bENhQ3dxT2N0OUhhYg?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOblA2LUd5ZzB5XzRMUVRTa1VHODZGdnhXYVNPbmFQeWRlSHFETXl6QWYyeUFweDc4SmZqeXZfdDFmYkxOTlNOWGItNElMaTYtaUhBdlpsYU83elNpSTJxNmNPVGxDeW5ZUzdDWjZucnQ4Q2Zxc1ctTmswWmx...",
+      "date": "2026-08-28T07:00:00.000Z",
+      "source": "Cambridge United",
+      "feedSource": "Fan – Cambridge United",
+      "clubs": [
+        "Cambridge United"
+      ],
+      "category": "fan"
     },
     {
       "title": "Leyton Orient 26-27 Third Kit Released - Footy Headlines",
@@ -11837,18 +11872,6 @@
       "feedSource": "Official – Ipswich Town",
       "clubs": [
         "Ipswich Town"
-      ],
-      "category": "official"
-    },
-    {
-      "title": "Fiorentina hope to beat Juventus to Zirkzee with official bid for Manchester United - Football Italia",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9PMGw3QUc2THc1TDNNNHBTeWZoQWlfVzlzRE1DQUZuREs2VVAxMXVyR0h6MGNVcnUyeWZJRGN6eGlxeWYySXZJMWNRNXVDejZXLUoxTy00YlFPNDZOWlZzVmF4UXg5LU1XQl9fREllUVRkWm5iYmVwNmF6QXI1QdIBgwFBVV95cUxOblQwbnNKSnZnbFJ4Z2FvUjN4SXFtRDBIMHZER191bkFjQ05VZWFCZGt0c1pZZk1nRVZqbEEzZy1FU0hQQ3BZbURZeEN0OXRKdmRkaFBHU2gxc2Fqb2lxNzEtRkhwR0s2YklLelI3OTM4LXM3ekZrNXNsOFN4WTQ3QndtMA?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE9PMGw3QUc2THc1TDNNNHBTeWZoQWlfVzlzRE1DQUZuREs2VVAxMXVyR0h6MGNVcnUyeWZJRGN6eGlxeWYySXZJMWNRNXVDejZXLUoxTy00YlFPNDZOWlZzVmF4UXg5LU1XQl9fREllUVRkWm5iYmVwNmF6QXI...",
-      "date": "2026-08-27T07:00:00.000Z",
-      "source": "Football Italia",
-      "feedSource": "Official – Manchester United",
-      "clubs": [
-        "Manchester United"
       ],
       "category": "official"
     },
@@ -12009,18 +12032,6 @@
       "category": "fan"
     },
     {
-      "title": "City fans forum round-up: Transfers, injuries and contract 'opportunities' - Bristol Live",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWUt3WVlnaGtzc054ajY0X214dHZodV80TmN2ZmI4S0ZEMEQ5MGl2MnVlWW5DTkRZNm53aVk3YnBJWEVKWFdQZzBsOHlqWjl1bEE5RnZkeWFCb3pFTi05QjhJMk5sd3RKdFBJR01hdmg4d19Ld2ItY1d0bE1CY3JQZTFmNHlSdWpKMjNLQ1pub2F0bEVLeGpmUmljc2RsNGJNV0E?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPWUt3WVlnaGtzc054ajY0X214dHZodV80TmN2ZmI4S0ZEMEQ5MGl2MnVlWW5DTkRZNm53aVk3YnBJWEVKWFdQZzBsOHlqWjl1bEE5RnZkeWFCb3pFTi05QjhJMk5sd3RKdFBJR01hdmg4d19Ld2ItY1d0bE1...",
-      "date": "2026-08-26T07:00:00.000Z",
-      "source": "Bristol Live",
-      "feedSource": "Fan – Bristol City",
-      "clubs": [
-        "Bristol City"
-      ],
-      "category": "fan"
-    },
-    {
       "title": "'Disastrous timing' - How Derby County snatched West Brom's captain and sparked outcry - Derbyshire Live",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPY1k2M01YdTJUTW5TWUk0bUVIRmtGYTh4dUxTNWlfNmVtalliU1BtSUs4RkN6U3lReldpOGE0Y3ppZXlMWm53Sm52S0FjM3FTbmx6bzdUckZXYkZKdEFLeU55Yy1Pd2dUbWUtemRUWUlYWWJUUW95V281bHNoU1hJNWRXNnhFaW5YZnJXLU9LVWlwT0pwdlNZQ0ZBX1otZ1Q5Wm8zallxeHQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPY1k2M01YdTJUTW5TWUk0bUVIRmtGYTh4dUxTNWlfNmVtalliU1BtSUs4RkN6U3lReldpOGE0Y3ppZXlMWm53Sm52S0FjM3FTbmx6bzdUckZXYkZKdEFLeU55Yy1Pd2dUbWUtemRUWUlYWWJUUW95V281bHN...",
@@ -12045,11 +12056,11 @@
       "category": "official"
     },
     {
-      "title": "Wolverhampton Wanderers FC Welcomes Pip Global Safety as Official PPE and Workwear Partner - sportscapemagazine.com",
+      "title": "Wolverhampton Wanderers FC Welcomes Pip Global Safety as Official PPE and Workwear Partner - Sportscape Magazine",
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYUw0VmJVUTJ5RVQ4Y0NOOTNDZ1IyRFJ2NHZXSWhXSldQcGQ4dUcxZDluQUZmaUVZT0RFLUpza25kOWpJSVBKdGdoQkxadVRkTDlJX2FaNy12WFI0VmZHLXZYMW9RbVdPRV8teGp2WHllQ1VCNVFoVXhrVVVYZE1uaU8yZWlaek9VdWV5QkNHSndyeWJicFFlbnBnOXFoNUs1c2NkSG5GYjR3ODB3U3ZMaDNoZkk4Y1FqSHkwZzZ6MU4yZzFkUzhGbl93?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxOYUw0VmJVUTJ5RVQ4Y0NOOTNDZ1IyRFJ2NHZXSWhXSldQcGQ4dUcxZDluQUZmaUVZT0RFLUpza25kOWpJSVBKdGdoQkxadVRkTDlJX2FaNy12WFI0VmZHLXZYMW9RbVdPRV8teGp2WHllQ1VCNVFoVXhrVVV...",
       "date": "2026-08-26T07:00:00.000Z",
-      "source": "sportscapemagazine.com",
+      "source": "Sportscape Magazine",
       "feedSource": "Official – Wolverhampton Wanderers",
       "clubs": [
         "Wolverhampton Wanderers"
@@ -12081,11 +12092,11 @@
       "category": "fan"
     },
     {
-      "title": "Wednesday sign Ali Al-Hamadi on loan - Sheffield Wednesday FC",
+      "title": "Wednesday sign Ali Al-Hamadi on loan - swfc.co.uk",
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9SYXFRbW90XzNqRThKZ0poY2g2VDZNZnZvenNDWk44UnpPTkdMclpPY0dGSWVRbjVubmc3TkpMakFIQWUtTFRfd0JsNXlOak0xcHhXU0NvNmxyQ3N2a3hlOWFOckF4MmtZUXFMZ0xzY2plbFppcHFuYUREX0E?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE9SYXFRbW90XzNqRThKZ0poY2g2VDZNZnZvenNDWk44UnpPTkdMclpPY0dGSWVRbjVubmc3TkpMakFIQWUtTFRfd0JsNXlOak0xcHhXU0NvNmxyQ3N2a3hlOWFOckF4MmtZUXFMZ0xzY2plbFppcHFuYUREX0E...",
       "date": "2026-08-26T07:00:00.000Z",
-      "source": "Sheffield Wednesday FC",
+      "source": "swfc.co.uk",
       "feedSource": "Official – Sheffield Wednesday",
       "clubs": [
         "Sheffield Wednesday"
@@ -12393,11 +12404,11 @@
       "category": "media"
     },
     {
-      "title": "Stevenage stadium’s new name revealed as 10-year deal agreed with League One club - Football Ground Guide",
+      "title": "Stevenage stadium’s new name revealed as 10-year deal agreed with League One club - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEdnOE81cXVZOEkxVnhEd3Q1QzZxWnN1YXRlUXEtTG41ZHNZN0dhRG5LeVBpSkk0OXJTUTg0U285OEVqcWZCX2FrWEl1VW4xMnBVTFp4a2ZuOWRSWjZ2Rl9WN1ItM3JmMlA5NV9FejlDYzhFTk5jUmdnY2xsaktVSG4wb3p2VXVJcmJoMmlRQl9RWjE2SmVLZHdrbHE4RWJDZVcyTDJhY0tadThCN2hGQmQyRFRxWm8wbVNFQzMxSQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEdnOE81cXVZOEkxVnhEd3Q1QzZxWnN1YXRlUXEtTG41ZHNZN0dhRG5LeVBpSkk0OXJTUTg0U285OEVqcWZCX2FrWEl1VW4xMnBVTFp4a2ZuOWRSWjZ2Rl9WN1ItM3JmMlA5NV9FejlDYzhFTk5jUmdnY2x...",
       "date": "2026-08-22T14:51:59.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Official – Stevenage",
       "clubs": [
         "Stevenage"
@@ -12453,11 +12464,11 @@
       "category": "fan"
     },
     {
-      "title": "Leicester City Partners With Cromwell as Official Back-of-Shirt and Tooling Partner - sportscapemagazine.com",
+      "title": "Leicester City Partners With Cromwell as Official Back-of-Shirt and Tooling Partner - Sportscape Magazine",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVm02VTJNMi1HUHhfenFjbGJScl9pOVFFd3dlc0xDaDlxZkFnYU9vQ29wajNYeHFlb3NJM2doT0M2ZTM0QXBqcG9PSWRMcldmWDhMcUdTTzczRExaeDU0NkhEa1o0dGZnd3FCdmI0V2tFSDRKMndORXRnR2R5YVRVa013LTdIaEd4eXBpcllJcDF4UW9YV090V2x2UXZ6dGtvZUM0QmxZQnNZQ3hBVjN2b214c0kwcERlYUI2TzJ4OF8?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVm02VTJNMi1HUHhfenFjbGJScl9pOVFFd3dlc0xDaDlxZkFnYU9vQ29wajNYeHFlb3NJM2doT0M2ZTM0QXBqcG9PSWRMcldmWDhMcUdTTzczRExaeDU0NkhEa1o0dGZnd3FCdmI0V2tFSDRKMndORXRnR2R...",
       "date": "2026-08-22T07:00:00.000Z",
-      "source": "sportscapemagazine.com",
+      "source": "Sportscape Magazine",
       "feedSource": "Official – Leicester City",
       "clubs": [
         "Leicester City"
@@ -12585,6 +12596,18 @@
       "category": "official"
     },
     {
+      "title": "Burton Albion Football Club - Burton Albion FC",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObXFrWTl6ZUpadGZjbXlmT2Q2S25lZVNNTUM4dkJONEc4NFMybE9MMVFpWnVYVklHZ21UUzJJQmJFcTBIcDV1UHUzRTJiVW0yYUxOSTc1OGN3aVB6b05ZeUprekttOEQwQzVqSk9JOEl2cEtyTDlsaFU4cGExMHlJZ0dfME1jbXFBX3dlU2FZeGlkam84V1BCYg?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxObXFrWTl6ZUpadGZjbXlmT2Q2S25lZVNNTUM4dkJONEc4NFMybE9MMVFpWnVYVklHZ21UUzJJQmJFcTBIcDV1UHUzRTJiVW0yYUxOSTc1OGN3aVB6b05ZeUprekttOEQwQzVqSk9JOEl2cEtyTDlsaFU4cGE...",
+      "date": "2026-08-21T07:00:00.000Z",
+      "source": "Burton Albion FC",
+      "feedSource": "Fan – Burton Albion",
+      "clubs": [
+        "Burton Albion"
+      ],
+      "category": "fan"
+    },
+    {
       "title": "Green Taverners looking forward to exciting Home Park future - Plymouth Live",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVNoWHdZOGFJYXNJTkpJRklQUnB5djRLYXpLOExhejdMd0R2OG16QlF5MnRPRENNY0pKZnpmNzFTSlpFbDNjRHJjZnhhOWV4aDJhMTNYSWpqc3FHSkV6NXA5NGY4bm5TNUpWMHk3RTJyTk9FU05ZZWc3Vy1ZcDVZVFNvLUgxai1hdjV4eEdlczlhWlhOeGJ4MHRXeUlLQQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxPTVNoWHdZOGFJYXNJTkpJRklQUnB5djRLYXpLOExhejdMd0R2OG16QlF5MnRPRENNY0pKZnpmNzFTSlpFbDNjRHJjZnhhOWV4aDJhMTNYSWpqc3FHSkV6NXA5NGY4bm5TNUpWMHk3RTJyTk9FU05ZZWc3Vy1...",
@@ -12614,18 +12637,6 @@
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTFBlc1hTc2FXSktPa3BCcTluVHlyWkZoOWZ5b2ZvbzJWaGhkN2hDM0Nmd3JnY3BrdlMyamgybkpWSjRXWXRWQlNpTWFwdy0xSkZJMzhXSm5fVQ?oc=5\" target=\"_blank\">Away Day Guide: Walsall</a...",
       "date": "2026-08-21T07:00:00.000Z",
       "source": "Grimsby Town Football Club",
-      "feedSource": "Fan – Walsall",
-      "clubs": [
-        "Walsall"
-      ],
-      "category": "fan"
-    },
-    {
-      "title": "Alan Buckley to Collect 'Honour Cap' Ahead of Walsall v Grimsby Town - Bescot Banter",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbTVhSTIwa2YxU3NXUVdvTmwxMHEwc0M4UF9raGdNaU1BVnI4MERBZFVjMFZ4V0R4WGRWbEEwazN0STdyc21Xa3hQMFI1d0o2WXlnUDZfMTdwLUVtWi1tZjRPV2ZLLUx0cGFZR2Y3MWNaMEhNNnFUZWh1YVh3MmU0Ty1n?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQbTVhSTIwa2YxU3NXUVdvTmwxMHEwc0M4UF9raGdNaU1BVnI4MERBZFVjMFZ4V0R4WGRWbEEwazN0STdyc21Xa3hQMFI1d0o2WXlnUDZfMTdwLUVtWi1tZjRPV2ZLLUx0cGFZR2Y3MWNaMEhNNnFUZWh1YVh...",
-      "date": "2026-08-21T07:00:00.000Z",
-      "source": "Bescot Banter",
       "feedSource": "Fan – Walsall",
       "clubs": [
         "Walsall"
@@ -12669,11 +12680,11 @@
       "category": "fan"
     },
     {
-      "title": "Brentford Names Triangle Tyre Official Tyre Partner in Two-Year Deal - sportscapemagazine.com",
+      "title": "Brentford Names Triangle Tyre Official Tyre Partner in Two-Year Deal - Sportscape Magazine",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZEVvWVVPMnRoLVVheHFNc3RQdC1vYlZ6M3BoRWxwckdYd3d2LXlZSV9OVVBNc2c2S05OYkhTcHRURzl4WWt4blQ5WXBSR3lHbU1DQVpYeVNpR0Rzc0JxMUtYNm5kaTlxelpRaEFING5RUUdkclIxVGpMNi1aT0I0NF9DRDJiVXMxSU5KQWpXelFQQkxVblpCamZBUDg2MnhUamw0TDJfa2gyeDRy?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOZEVvWVVPMnRoLVVheHFNc3RQdC1vYlZ6M3BoRWxwckdYd3d2LXlZSV9OVVBNc2c2S05OYkhTcHRURzl4WWt4blQ5WXBSR3lHbU1DQVpYeVNpR0Rzc0JxMUtYNm5kaTlxelpRaEFING5RUUdkclIxVGpMNi1...",
       "date": "2026-08-20T07:00:00.000Z",
-      "source": "sportscapemagazine.com",
+      "source": "Sportscape Magazine",
       "feedSource": "Official – Brentford",
       "clubs": [
         "Brentford"
@@ -12765,11 +12776,23 @@
       "category": "fan"
     },
     {
-      "title": "Kieran Morrison joins Owls on loan - Sheffield Wednesday FC",
+      "title": "Reading extends partnership with Village Hotel Club - Reading Chronicle",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR19IaEo2TzVCNlVOcXBNY3ptbmJLQXFjYk9kcFhHb1JZNHpwSGFXcFdmUTBVQ0kwYkZjMG1LNHFOZXJmUWtqOUxMVlZsMXhnNnljZFBFQWVfaHZwNE1oSGdnM2xHbWh2TGUtZ2RZMm5hajNlRjhHT2Z1RFQ0bEgyQmV5em1WNDhValpIWko2QTJuVEJuenV1TU03ZEgxM0pl?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPR19IaEo2TzVCNlVOcXBNY3ptbmJLQXFjYk9kcFhHb1JZNHpwSGFXcFdmUTBVQ0kwYkZjMG1LNHFOZXJmUWtqOUxMVlZsMXhnNnljZFBFQWVfaHZwNE1oSGdnM2xHbWh2TGUtZ2RZMm5hajNlRjhHT2Z1RFQ...",
+      "date": "2026-08-20T07:00:00.000Z",
+      "source": "Reading Chronicle",
+      "feedSource": "Official – Reading",
+      "clubs": [
+        "Reading"
+      ],
+      "category": "official"
+    },
+    {
+      "title": "Kieran Morrison joins Owls on loan - swfc.co.uk",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13QlcwZnRMTF9CSzJneVNkTllUN3RxU0paSGJzOG5mWWlfT0ZrTXV1LUROdGJRdHRBQ1hPVkRQbFZJWEFXVUNZelRFakVaci1XVElERS14V0E2X1BxUzJtay1ORTBjQQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE13QlcwZnRMTF9CSzJneVNkTllUN3RxU0paSGJzOG5mWWlfT0ZrTXV1LUROdGJRdHRBQ1hPVkRQbFZJWEFXVUNZelRFakVaci1XVElERS14V0E2X1BxUzJtay1ORTBjQQ?oc=5\" target=\"_blank\">Kieran...",
       "date": "2026-08-20T07:00:00.000Z",
-      "source": "Sheffield Wednesday FC",
+      "source": "swfc.co.uk",
       "feedSource": "Official – Sheffield Wednesday",
       "clubs": [
         "Sheffield Wednesday"
@@ -12885,11 +12908,11 @@
       "category": "official"
     },
     {
-      "title": "Sheffield United co-chair could be disqualified after dispute over £35m debt from club purchase - aol.co.uk",
+      "title": "Sheffield United co-chair could be disqualified after dispute over £35m debt from club purchase - AOL.co.uk",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRktFQkQwLWRlS1oyY21RdG9FeUkyaFdhWWdQZ0wwS2haZm15ZHZKVUcwWUNjSWg0T2pJam9YR0NZLXRTRDA5OVdnVnZTaDFNYXBGT1VKV1R2VmFzcnJtSm5zSG9BQ0hxZmRZSHljdlVrRXJpUWh4YURMaXpTUVdsSElKNHpCYzdEZjNrelFzZmo?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPRktFQkQwLWRlS1oyY21RdG9FeUkyaFdhWWdQZ0wwS2haZm15ZHZKVUcwWUNjSWg0T2pJam9YR0NZLXRTRDA5OVdnVnZTaDFNYXBGT1VKV1R2VmFzcnJtSm5zSG9BQ0hxZmRZSHljdlVrRXJpUWh4YURMaXp...",
       "date": "2026-08-19T07:00:00.000Z",
-      "source": "aol.co.uk",
+      "source": "AOL.co.uk",
       "feedSource": "Official – Sheffield United",
       "clubs": [
         "Sheffield United"
@@ -13089,14 +13112,26 @@
       "category": "fan"
     },
     {
-      "title": "Burnley Introduces Vertu as Front of Shirt Sponsor - sportscapemagazine.com",
+      "title": "Burnley Introduces Vertu as Front of Shirt Sponsor - Sportscape Magazine",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWkydU5jSVlOdjkxUEUwaEhNcmVpMkFJRi1ldVVBdnp6bkZYZEhIai1fejN3VEJ2QmRaTkV2WHMwaWpvM25qcUhPWVMyZlpnMzBzZngyMGxqeHV3TGlTWE5YUU9fT1ZyejZDazEtV1N6QWR3djZDamxFM2daLVVYcXpCWHRFQ3haakJncVhwaVVHSHhm?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWkydU5jSVlOdjkxUEUwaEhNcmVpMkFJRi1ldVVBdnp6bkZYZEhIai1fejN3VEJ2QmRaTkV2WHMwaWpvM25qcUhPWVMyZlpnMzBzZngyMGxqeHV3TGlTWE5YUU9fT1ZyejZDazEtV1N6QWR3djZDamxFM2d...",
       "date": "2026-08-17T07:00:00.000Z",
-      "source": "sportscapemagazine.com",
+      "source": "Sportscape Magazine",
       "feedSource": "Official – Burnley",
       "clubs": [
         "Burnley"
+      ],
+      "category": "official"
+    },
+    {
+      "title": "GALLERY | Charlton 2 Derby County 1 - Charlton Athletic Football Club",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9nZV8xLVVfQVVmT2hRSXpPS0hkMVItcUFIZFd4SHlUemUzOE1NMEJucEV2UkVhUnJZSk1nbGowbWNkdDVMZUlid0FGMzFReFFERWxWZUtDT1VmdlJLMzlRM05RTG5JdWdSOXlhLXBB?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9nZV8xLVVfQVVmT2hRSXpPS0hkMVItcUFIZFd4SHlUemUzOE1NMEJucEV2UkVhUnJZSk1nbGowbWNkdDVMZUlid0FGMzFReFFERWxWZUtDT1VmdlJLMzlRM05RTG5JdWdSOXlhLXBB?oc=5\" target=\"_bla...",
+      "date": "2026-08-17T07:00:00.000Z",
+      "source": "Charlton Athletic Football Club",
+      "feedSource": "Official – Derby County",
+      "clubs": [
+        "Derby County"
       ],
       "category": "official"
     },
@@ -13111,18 +13146,6 @@
         "Huddersfield Town"
       ],
       "category": "fan"
-    },
-    {
-      "title": "Reading FC makes Siren Craft Brew its official local beer partner - The Drinks Business",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY09HZEJrY1dzSlhfeXg4QS1MLTdwVXo1azlMcndZYlpkdk92ZHNha05xOThGdHltcEhKYWxDVnI2d0dGdm53ckNsVE9wMnR3N29GTzhjUUlGdnZpaXotY1J6dXlleElEaFpveGFKUEVncm1FMEwzTURkb1ZBNW1IbDBEOFVaS3NiMEhGYXRRZGVZUW9Cc0NOX2F0OG1jRnMxU09fQ2xHbWtoTGQt?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOY09HZEJrY1dzSlhfeXg4QS1MLTdwVXo1azlMcndZYlpkdk92ZHNha05xOThGdHltcEhKYWxDVnI2d0dGdm53ckNsVE9wMnR3N29GTzhjUUlGdnZpaXotY1J6dXlleElEaFpveGFKUEVncm1FMEwzTURkb1Z...",
-      "date": "2026-08-17T07:00:00.000Z",
-      "source": "The Drinks Business",
-      "feedSource": "Official – Reading",
-      "clubs": [
-        "Reading"
-      ],
-      "category": "official"
     },
     {
       "title": "U21s preview: Barnet v Arsenal - Arsenal.com",
@@ -13269,26 +13292,14 @@
       "category": "official"
     },
     {
-      "title": "OFFICIAL: Chelsea confirm impressive loan for teenage wonderkid - talkchelsea.net",
+      "title": "OFFICIAL: Chelsea confirm impressive loan for teenage wonderkid - Talk Chelsea",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNREtqT3ZmSnV1ZDdHOUdUSVJhblBxLWN6QW9kLUhWTlMyWGJfaGZmRUZhQVNmNTR2RnFUYnAxd3RlcmdvazhpUDE1Nmt5UkU1VVNFN1IwZDFTUDM2SnBEckp5Q2VXWFRyQkZBLTFlMzFwbzlEalcwd2dGb0pOWXphVWhGVzFybkZmeWRpaTVQTWVseDjSAZgBQVVfeXFMTUtjLWlqTVp4UkRGMUNBQjJKWTFKeWFtU3Y1SHZpdk1KOVEtMVdwVmVVN25zU21rYU1vT2RCNm4zVEFHMUtreFZWQ3YwV0xWZV94UjdSc2dTX0ZDd1FYMVZ1NjJpbEdGLTdsRGdPN09oNW52NW5LM2trYU9ORTNIaUJnbzdibE1YSW84azlWd3A2T2E4TWFhS1U?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNREtqT3ZmSnV1ZDdHOUdUSVJhblBxLWN6QW9kLUhWTlMyWGJfaGZmRUZhQVNmNTR2RnFUYnAxd3RlcmdvazhpUDE1Nmt5UkU1VVNFN1IwZDFTUDM2SnBEckp5Q2VXWFRyQkZBLTFlMzFwbzlEalcwd2dGb0p...",
       "date": "2026-08-14T07:00:00.000Z",
-      "source": "talkchelsea.net",
+      "source": "Talk Chelsea",
       "feedSource": "Official – Portsmouth",
       "clubs": [
         "Portsmouth"
-      ],
-      "category": "official"
-    },
-    {
-      "title": "An update from the Chairman - Coventry City Football Club",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBVREhnaHhmSVA5X3JsV2I0RjNFR0ZUaG5UNG42RHZKTm5DWFgtc216R0FScjlIZ1o4WFB4NzBxdy02VmVDVW4zV0ZWTHppQVB4M0hZTmtjSWJnQ0FtMTdDMmt0VklyQ0xQS0dVNVdTOWxoSjJkWmhacVNn?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTFBVREhnaHhmSVA5X3JsV2I0RjNFR0ZUaG5UNG42RHZKTm5DWFgtc216R0FScjlIZ1o4WFB4NzBxdy02VmVDVW4zV0ZWTHppQVB4M0hZTmtjSWJnQ0FtMTdDMmt0VklyQ0xQS0dVNVdTOWxoSjJkWmhacVNn?oc...",
-      "date": "2026-08-14T07:00:00.000Z",
-      "source": "Coventry City Football Club",
-      "feedSource": "Official – Preston North End",
-      "clubs": [
-        "Preston North End"
       ],
       "category": "official"
     },
@@ -13387,18 +13398,6 @@
         "Accrington Stanley"
       ],
       "category": "official"
-    },
-    {
-      "title": "Matchday Guide: Cambridge United vs Wigan Athletic - Cambridge United",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR24yaVJZMl93OHZZd0J4YTJ2SFk5bXJlcnJZbWM2bFVqT0paRTlqX3lMVGthSXdoWWRWVTZWejZNS2MzcURLWTM3UU9MelBkS3loQnQyWGZtSUVEZEpYcTFPOE9CZ0lXRFZjOGR4OFIyejNsVk9jSFFhOTIyTDQ2YTVYZ0FPTFk4X21VSVo1TWFqdw?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQR24yaVJZMl93OHZZd0J4YTJ2SFk5bXJlcnJZbWM2bFVqT0paRTlqX3lMVGthSXdoWWRWVTZWejZNS2MzcURLWTM3UU9MelBkS3loQnQyWGZtSUVEZEpYcTFPOE9CZ0lXRFZjOGR4OFIyejNsVk9jSFFhOTI...",
-      "date": "2026-08-13T07:00:00.000Z",
-      "source": "Cambridge United",
-      "feedSource": "Fan – Cambridge United",
-      "clubs": [
-        "Cambridge United"
-      ],
-      "category": "fan"
     },
     {
       "title": "Caldwell’s eve-of-season declaration - 'It's the hope that kills you!' - Wigan Today",
@@ -13593,18 +13592,6 @@
       "category": "fan"
     },
     {
-      "title": "CLUB STATEMENT: 10th August 2026 - Derby County",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA0V1JoWTNuR0ZMVXprSVFiNkRxSE1fTnRzci1aNXhXNlNyamFmbm5Ba3NWa1U0bzR4cjhBamxXX21QMlhvMTFmZnRVVW90UHN0ZVRDYkZnbEJTaTRZQ21wUHBOZUZacm1ZWGZKSXVXS2EwVkRqZkE?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTFA0V1JoWTNuR0ZMVXprSVFiNkRxSE1fTnRzci1aNXhXNlNyamFmbm5Ba3NWa1U0bzR4cjhBamxXX21QMlhvMTFmZnRVVW90UHN0ZVRDYkZnbEJTaTRZQ21wUHBOZUZacm1ZWGZKSXVXS2EwVkRqZkE?oc=5\" t...",
-      "date": "2026-08-10T07:00:00.000Z",
-      "source": "Derby County",
-      "feedSource": "Official – Derby County",
-      "clubs": [
-        "Derby County"
-      ],
-      "category": "official"
-    },
-    {
       "title": "Arsenal Are In The Running To Recruit This Leicester City Youngster: One For The Future? - Yahoo Sports",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUmRGZ1djLVEyOG5UVlh4Rjc5VXA5aGdCQWRNZmJTc0ZhMjZOOEowN3VaQW1qQ1pYSmNGbVNBVFF4QlFBeDluUXcwNnZJT0V0N2tpOEtGdm4tNGR3MUxFUDhOSFRQaWZHVzhvYld4eEdPbnVvT3U4SWJHLTE4M1J2aXM3SFRiTGo1VDdSZUFsWkY?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPUmRGZ1djLVEyOG5UVlh4Rjc5VXA5aGdCQWRNZmJTc0ZhMjZOOEowN3VaQW1qQ1pYSmNGbVNBVFF4QlFBeDluUXcwNnZJT0V0N2tpOEtGdm4tNGR3MUxFUDhOSFRQaWZHVzhvYld4eEdPbnVvT3U4SWJHLTE...",
@@ -13625,18 +13612,6 @@
       "feedSource": "Fan – York City",
       "clubs": [
         "York City"
-      ],
-      "category": "fan"
-    },
-    {
-      "title": "Every League One club's ticket prices revealed as fans charged £47 for third division football - The Mirror",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOazFZQUlrQ1dnU2ZzZTdPNUZYVXVva2hrOVNxaGlfQi1zMEVLby1yQU9MQ2Z1Ui00OEtqT09uZ0Y0Q0NnN196VzRrYmdjQ0pZQUVKMWg2MHJ2YnAwOFRrZE9FUDFJRHEzS1RVcVJsTGRvVFFFUFZyZkdBaWtFT3RJVktOSUNSV2RteC1fRnd4dVdDUdIBlwFBVV95cUxQdl96bGFSQ0xMTTV6bWJacDE2U2YwOUZkWHFnTjBIMlJoQ01pUENMUzBvNFFpQjREZm4wZ3YwbUpIbmJNUWVJVWMzS1libDJuc1VoWkEwX19EWEQzeWlkRXdhWTFCVWV2NG9fNnZwNG9Wb3NjVzZvVENjTE4yeTMyTXVzQWlMZGM5emlWRlpzdDJkZGE1WTRB?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOazFZQUlrQ1dnU2ZzZTdPNUZYVXVva2hrOVNxaGlfQi1zMEVLby1yQU9MQ2Z1Ui00OEtqT09uZ0Y0Q0NnN196VzRrYmdjQ0pZQUVKMWg2MHJ2YnAwOFRrZE9FUDFJRHEzS1RVcVJsTGRvVFFFUFZyZkdBaWt...",
-      "date": "2026-08-08T07:00:00.000Z",
-      "source": "The Mirror",
-      "feedSource": "Fan – Burton Albion",
-      "clubs": [
-        "Burton Albion"
       ],
       "category": "fan"
     },
@@ -13713,6 +13688,18 @@
       "category": "fan"
     },
     {
+      "title": "Preston North End announces Thompson as Official Teamsheet Sponsor - Coventry City Football Club",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbVEzQnl0ZVRobjhhSGVIOThubS1TWFQ5cFdTanpfdEtfYzk4ZzljR21ieHRvYTk1VTdKSU5FSXRuNzFpQm1sWFZOUTNrazdqTEoyQ2EybjAwREtGRi1LUjlFOWtyeFhrUnJhMG5CVmY2bFc5ejJobmZzRG1UZV9qMUVhRkQ2S0tpTHVEcmNQYXFUQjlYdXhMbmp1RVJqZFRjQW50c2ZhSDN3aUVVZjJZ?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNbVEzQnl0ZVRobjhhSGVIOThubS1TWFQ5cFdTanpfdEtfYzk4ZzljR21ieHRvYTk1VTdKSU5FSXRuNzFpQm1sWFZOUTNrazdqTEoyQ2EybjAwREtGRi1LUjlFOWtyeFhrUnJhMG5CVmY2bFc5ejJobmZzRG1...",
+      "date": "2026-08-07T07:00:00.000Z",
+      "source": "Coventry City Football Club",
+      "feedSource": "Official – Preston North End",
+      "clubs": [
+        "Preston North End"
+      ],
+      "category": "official"
+    },
+    {
       "title": "Oyekunle joins Orient on loan - Southampton FC Official Site",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX1VjdC1DaHNxV01jaVdrZ3lNaGhnTHFuM21mUjJSRkdaYUJaQklvNTNMX2dmRkdOa1JIbE1zUHRvS2NlQkdXMGJiRGthcEdpRklnZTFIR3Jzd0JOcFFFeUg5emtDQ0g4TGdxR2I3c3dJZTVDRmtwcHlrR3QxSkxYYQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNX1VjdC1DaHNxV01jaVdrZ3lNaGhnTHFuM21mUjJSRkdaYUJaQklvNTNMX2dmRkdOa1JIbE1zUHRvS2NlQkdXMGJiRGthcEdpRklnZTFIR3Jzd0JOcFFFeUg5emtDQ0g4TGdxR2I3c3dJZTVDRmtwcHlrR3Q...",
@@ -13785,11 +13772,23 @@
       "category": "official"
     },
     {
-      "title": "Supporters’ Forum Drop-In August 2026 - chesterfield-fc.co.uk",
+      "title": "Notts County 26-27 Third Kit Released - Footy Headlines",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSFFOQUt1R2NHdG12S3pOeTNDTl80SmxhYWtDa2gwR0VwangwZERZNUlvbjlMSjJZa21raFI5NlBFN3BwclVNeGphZ3ZOOHdBRzNFOGdXMHVIQk1fR2RnSGtSSC1URFMzTGYzeDZmRTVlRUpsRU1QU2lpWmFxeWpWTG1NVlBuRDB5VGFmZA?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxPSFFOQUt1R2NHdG12S3pOeTNDTl80SmxhYWtDa2gwR0VwangwZERZNUlvbjlMSjJZa21raFI5NlBFN3BwclVNeGphZ3ZOOHdBRzNFOGdXMHVIQk1fR2RnSGtSSC1URFMzTGYzeDZmRTVlRUpsRU1QU2lpWmF...",
+      "date": "2026-08-06T07:00:00.000Z",
+      "source": "Footy Headlines",
+      "feedSource": "Official – Notts County",
+      "clubs": [
+        "Notts County"
+      ],
+      "category": "official"
+    },
+    {
+      "title": "Supporters’ Forum Drop-In August 2026 - Chesterfield FC",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB5RTh4YmNPNV9VandGdGJtcHVQVnpvejBoY1JjUzgtSDZtZHl4d2xaM01hNkRYNkxTZ3gxU1RJR3pZX0Y4YmZleW9MVmp3Y0VXVDkyZWVvSzMwU0plSldnMUR6S0psZW9CWE1YUF9CQUFwaGN1dEJRdll6TQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFB5RTh4YmNPNV9VandGdGJtcHVQVnpvejBoY1JjUzgtSDZtZHl4d2xaM01hNkRYNkxTZ3gxU1RJR3pZX0Y4YmZleW9MVmp3Y0VXVDkyZWVvSzMwU0plSldnMUR6S0psZW9CWE1YUF9CQUFwaGN1dEJRdll6TQ?...",
       "date": "2026-08-06T07:00:00.000Z",
-      "source": "chesterfield-fc.co.uk",
+      "source": "Chesterfield FC",
       "feedSource": "Fan – Chesterfield",
       "clubs": [
         "Chesterfield"
@@ -13941,11 +13940,11 @@
       "category": "fan"
     },
     {
-      "title": "Prenton Park - Tranmere Rovers Stadium - Football Ground Guide",
+      "title": "Prenton Park - Tranmere Rovers Stadium - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWTNmaXg4QWNBajVIcXlCa3hla3FMZWZSM24zamdSN1JqVUR3cjlsT2ptUDJCNWdIUmRwSEdvWUV4RU4tYjlCS3hpMjF0WTNOcHNhemxoZjhtV0lYZk1jQXdjOThKb1JVVURlZXZ0d01OcjZmUmFpS0xrNTNzQXVHb0NWMlNJQlk1OGxwZ00yQkd0c2pOWFRZ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQWTNmaXg4QWNBajVIcXlCa3hla3FMZWZSM24zamdSN1JqVUR3cjlsT2ptUDJCNWdIUmRwSEdvWUV4RU4tYjlCS3hpMjF0WTNOcHNhemxoZjhtV0lYZk1jQXdjOThKb1JVVURlZXZ0d01OcjZmUmFpS0xrNTN...",
       "date": "2026-08-03T07:00:00.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Tranmere Rovers",
       "clubs": [
         "Tranmere Rovers"
@@ -13953,23 +13952,11 @@
       "category": "fan"
     },
     {
-      "title": "'If the lads hate me on the pitch then so be it' - Pollock on leadership style - Watford Observer",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNamN5NlNBNnRYVlFqdUt0U0piOUhTNEZLUHlvZWRQRko0bXpHWk9hUTdYUUl4TmVSa19IVGtsNHFTdUtTNW90eUR4RVNXSFBSTEdMUW9ITFZGQmZBU2tHdHZ2S2VXeTUxSzdZUEx4c0s1OU5hNmNLeDkxS0ZkR3RDWENJQTdTcnRZaTVmbVBZY2JLMnloOVgzX1g1dGdJMmM?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNamN5NlNBNnRYVlFqdUt0U0piOUhTNEZLUHlvZWRQRko0bXpHWk9hUTdYUUl4TmVSa19IVGtsNHFTdUtTNW90eUR4RVNXSFBSTEdMUW9ITFZGQmZBU2tHdHZ2S2VXeTUxSzdZUEx4c0s1OU5hNmNLeDkxS0Z...",
-      "date": "2026-08-02T04:30:00.000Z",
-      "source": "Watford Observer",
-      "feedSource": "Fan – Watford",
-      "clubs": [
-        "Watford"
-      ],
-      "category": "fan"
-    },
-    {
-      "title": "Bromley FC | Hayes Lane - Football Ground Guide",
+      "title": "Bromley FC | Hayes Lane - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWjBHbS1MMTdwaXdLRUxCbVpzNGE1VTk1QU1zTnoxV1phSk0zY3luZ1VkRHhBLXJZQUpIS3FfZktURFBfTlAtTDQ0ZzVpd1RZUThPYnFwbFhsWUhvcUFIcWJrdXNyOGVULVlEbXRCeEFtc3J0aUpNbWFTMDZ6bEExY05WTmlLNE5UeHUwTTJPR280eFhidVBoZg?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOWjBHbS1MMTdwaXdLRUxCbVpzNGE1VTk1QU1zTnoxV1phSk0zY3luZ1VkRHhBLXJZQUpIS3FfZktURFBfTlAtTDQ0ZzVpd1RZUThPYnFwbFhsWUhvcUFIcWJrdXNyOGVULVlEbXRCeEFtc3J0aUpNbWFTMDZ...",
       "date": "2026-08-01T07:00:00.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Bromley",
       "clubs": [
         "Bromley"
@@ -14121,11 +14108,11 @@
       "category": "official"
     },
     {
-      "title": "League Two away following: Who had the most support in 2025/26? - Football Ground Guide",
+      "title": "League Two away following: Who had the most support in 2025/26? - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcklvYVp5UllxOXN6M0R1WkFGTU1rc3FTXzhmNFV0LUxTZURCOFlsdTBINVhEOEk1bzIzRWQyamRoLUNuWHIwaGFNZ2NYXzlNVzhFS3ZLOS1GY09vVTJhQmFxd083RnNUMS1kN1dOekl2YTlUZTdRRmlYX19DemwxRlp0dHcwVElkY09pSGYxZXY0MDY5eHM4dWxB?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxOcklvYVp5UllxOXN6M0R1WkFGTU1rc3FTXzhmNFV0LUxTZURCOFlsdTBINVhEOEk1bzIzRWQyamRoLUNuWHIwaGFNZ2NYXzlNVzhFS3ZLOS1GY09vVTJhQmFxd083RnNUMS1kN1dOekl2YTlUZTdRRmlYX19...",
       "date": "2026-07-29T07:00:00.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Bromley",
       "clubs": [
         "Bromley"
@@ -14145,11 +14132,11 @@
       "category": "fan"
     },
     {
-      "title": "Boundary Park set for major upgrades as Oldham Athletic reveal new fan facilities for 26/27 season - Football Ground Guide",
+      "title": "Boundary Park set for major upgrades as Oldham Athletic reveal new fan facilities for 26/27 season - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ3E5RFRnbGp0dVotZC1sN0tRN1FxaXhPR1ZzUW83MHAwNm9tLVRnSi0tRERtcmx3OHM4TzFYWnBhN080ZTNNNHhXWnFQWG5XN0Uwd0Z3cHZLcFJlWEhvRmlFUDB2U3NobUhLd24wRGt3X1FqcXBfN080b3J2LXFwRUQxakFmOWo4V3VBVG5qM2pxQlkxUkZ1MzZQZjVtREJDemhIRWZrOXFGZXVVS2tMYl84V3BRcWJCYzg5T2p0ZGJUTmpNZ1VTQ09aWEpMbVlfWEVBSklTcw?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ3E5RFRnbGp0dVotZC1sN0tRN1FxaXhPR1ZzUW83MHAwNm9tLVRnSi0tRERtcmx3OHM4TzFYWnBhN080ZTNNNHhXWnFQWG5XN0Uwd0Z3cHZLcFJlWEhvRmlFUDB2U3NobUhLd24wRGt3X1FqcXBfN080b3J...",
       "date": "2026-07-29T07:00:00.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Oldham Athletic",
       "clubs": [
         "Oldham Athletic"
@@ -14349,6 +14336,18 @@
       "category": "official"
     },
     {
+      "title": "Stevenage 26-27 Away Kit Released - Footy Headlines",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUDVZMmVicHVqUktOSGxpOXo2c2NmZFJ5NGJ2emNPbHpiRG1HNDY5cWVyQnlFdU4zLUs2Qk93Y0FTNFlnMm1qb2luajZYanJRS0VEZ1VCQXNOM0wxcXFheHE1RTYzOFRPMFo4SkI3WF9RbUJ5N3ZwdmFDOFYtVEc3UTRiT29iN0E?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPUDVZMmVicHVqUktOSGxpOXo2c2NmZFJ5NGJ2emNPbHpiRG1HNDY5cWVyQnlFdU4zLUs2Qk93Y0FTNFlnMm1qb2luajZYanJRS0VEZ1VCQXNOM0wxcXFheHE1RTYzOFRPMFo4SkI3WF9RbUJ5N3ZwdmFDOFY...",
+      "date": "2026-07-24T07:00:00.000Z",
+      "source": "Footy Headlines",
+      "feedSource": "Official – Stevenage",
+      "clubs": [
+        "Stevenage"
+      ],
+      "category": "official"
+    },
+    {
       "title": "\"These are the moments players remember\" - Slimbridge boss excited for Cheltenham Town visit - Gloucestershire Live",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdExGUUlpZTJ0WXhXQldMOTZJUklFSHVpV2N1SHBtY0NRQ05LQ3FsSURiSkpaVXJtakJzUkZQeGxnVUtLbDgzWjJhTEw4eTl3U2g2VmQzYUtxeFdLZmRwV2VsVnBMSlQwSzN1MXkwdnNHUXRiRHFwc2tOeXdYWHZQbmo4UHBOc2ZJT0VEQ2h0b0J1aUNINlJXS19FMWtxU1VyR0RXd3VtcFJEOThnMWdCYlhQbTBqRDJG0gG-AUFVX3lxTE9aYV93c05fdkxoelFCWlhVS0lZZS1NaWdtQTBoQnJiYmdwbG9vVXJhOXpMd0h6UC00c0Qxejd4bzNjQng1bDdXZ2xYUkkzQVZyRDE1emE3ZXZ3NnpWRUdHWkFycU9PUlJTRXFkd2RSUmVTa25GakhqczF2ZGhNckZ3dm83U0E0OHpyeVg3TThEcGZaUmdqWW5tbTFsRjE4WFA0X3VleUtCVGpSV2w5aklneFBoNzJRMkJuZWhSeGc?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdExGUUlpZTJ0WXhXQldMOTZJUklFSHVpV2N1SHBtY0NRQ05LQ3FsSURiSkpaVXJtakJzUkZQeGxnVUtLbDgzWjJhTEw4eTl3U2g2VmQzYUtxeFdLZmRwV2VsVnBMSlQwSzN1MXkwdnNHUXRiRHFwc2tOeXd...",
@@ -14361,11 +14360,11 @@
       "category": "fan"
     },
     {
-      "title": "Crawley Town Football Club - Crawley Town Football Club",
+      "title": "Crawley Town Football Club - crawleytownfc.com",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNTBveE5wRk1iVWhSaWZYaG9NQTRFcHVUWTdHcjRMXzBjWWY3ZXJLMUNiVkxlT0hab2ZYUFNVdDdwT0dTb2g0T2ZnMkZPWmlVUzVVVjBUcmF2bldZeXFkUmlqMXZjakdBdU1jWW1Wa1VmYWFnbGw3VFBzZTV1NGhZeGxUWnh1WEhUcVhYQ2J3bkxlQQ?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQNTBveE5wRk1iVWhSaWZYaG9NQTRFcHVUWTdHcjRMXzBjWWY3ZXJLMUNiVkxlT0hab2ZYUFNVdDdwT0dTb2g0T2ZnMkZPWmlVUzVVVjBUcmF2bldZeXFkUmlqMXZjakdBdU1jWW1Wa1VmYWFnbGw3VFBzZTV...",
       "date": "2026-07-24T07:00:00.000Z",
-      "source": "Crawley Town Football Club",
+      "source": "crawleytownfc.com",
       "feedSource": "Official – Crawley Town",
       "clubs": [
         "Crawley Town"
@@ -14373,11 +14372,11 @@
       "category": "official"
     },
     {
-      "title": "Bescot Stadium | Walsall FC - Football Ground Guide",
+      "title": "Bescot Stadium | Walsall FC - footballgroundguide.com",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLWZMTWNfakpzWjBPTVFpUkhqU1Q0NlN4ZTFGNFdfQ1JNV3AzV0RIRmdnOUVuQW56SGxITUFQVm9QcEhiWEYxUG40LUQwLTQ4R18xYS15cllZZ3M1czFfUFc1Z3ZBLTVBZlZkVFpSaFRab2U3STlQSi13dEs1ZE90aVRKbDY5ZVRzMXdCQkVqaEI4QnJ4aFVN?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNLWZMTWNfakpzWjBPTVFpUkhqU1Q0NlN4ZTFGNFdfQ1JNV3AzV0RIRmdnOUVuQW56SGxITUFQVm9QcEhiWEYxUG40LUQwLTQ4R18xYS15cllZZ3M1czFfUFc1Z3ZBLTVBZlZkVFpSaFRab2U3STlQSi13dEs...",
       "date": "2026-07-24T07:00:00.000Z",
-      "source": "Football Ground Guide",
+      "source": "footballgroundguide.com",
       "feedSource": "Fan – Walsall",
       "clubs": [
         "Walsall"
@@ -14457,6 +14456,18 @@
       "category": "official"
     },
     {
+      "title": "Rail alert for fans travelling to Walsall v Aston Villa tonight - OneFootball",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQXRmdnFGeEtVdGtHZ3JBeFBhMnpUTnpFNmZ3SW1PN05NUC10a3luNzhLOWliV2d3bEdKSGxYYXRyUThwUmNwUk5MOWF0ZnItNmppa3hMbFFYVDhNclpmdEVyd1VJTE5rWGpoRnAtQXdsV1p1VjhhRllXTG1YbG1WR0hwYXk3eDAxWTMwZ1F3dG0tQml4VkY1YkhxcG1sMUwwZGtNbDNfYw?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxOQXRmdnFGeEtVdGtHZ3JBeFBhMnpUTnpFNmZ3SW1PN05NUC10a3luNzhLOWliV2d3bEdKSGxYYXRyUThwUmNwUk5MOWF0ZnItNmppa3hMbFFYVDhNclpmdEVyd1VJTE5rWGpoRnAtQXdsV1p1VjhhRllXTG1...",
+      "date": "2026-07-22T07:00:00.000Z",
+      "source": "OneFootball",
+      "feedSource": "Fan – Walsall",
+      "clubs": [
+        "Walsall"
+      ],
+      "category": "fan"
+    },
+    {
       "title": "Vacancy: Academy Head of Education - Cambridge United",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5SM2VWWmNseTlTYng1dThXZXFuTEc4ZmtabGRadUktOG9LdlNhTld4NXV1bDRkc3ZlWkRZRlc5RHpiV0lOV1NmMXNIRmZ0VUYzU19JMWJZSzk4RDBCbnRycEFBRnpWRDhDWXVJcFduWVhQOFlOVlE?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5SM2VWWmNseTlTYng1dThXZXFuTEc4ZmtabGRadUktOG9LdlNhTld4NXV1bDRkc3ZlWkRZRlc5RHpiV0lOV1NmMXNIRmZ0VUYzU19JMWJZSzk4RDBCbnRycEFBRnpWRDhDWXVJcFduWVhQOFlOVlE?oc=5\" t...",
@@ -14513,6 +14524,18 @@
       "feedSource": "Official – Doncaster Rovers",
       "clubs": [
         "Doncaster Rovers"
+      ],
+      "category": "official"
+    },
+    {
+      "title": "Lorent Tolaj completes Plymouth Argyle transfer to Bristol City - Plymouth Live",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdGQ0VllEWWNRU3hTaUFZSEttVWY5b3ZDODRCbDk0MTYybjI2dGgwNlRpYkthWVhZd0ZjN3NOSmptaGpBNEZpTEVIeG5wUVV3dkhUWTdaa1VERkd4a3VoalRVbWZlZlJVS1lyRVNydEppbWlDeFZaNWhLSndsM1lwc1VLSnlLQXVIeU9XQjNGam1EcnJKVUtkVDV4WdIBoAFBVV95cUxQbEZqd2ljTlI5eC02emFnR05qbEluUTh4dmhlWXJQVVRNb0k1WnZtSHRrQTNOemswenpBQmY4X2RiSHAyOE9QQlhrc0ZBT0hjQVhqN3RJampwRmpSNU95Y21zTXhPTFQ3MXlsRElleldhemZfN2NRckg2OTZHQlpybTBfV1R5Q09VV2pFUXZzcWJ4Z3lBX3JSbGl3UktCOWxV?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNdGQ0VllEWWNRU3hTaUFZSEttVWY5b3ZDODRCbDk0MTYybjI2dGgwNlRpYkthWVhZd0ZjN3NOSmptaGpBNEZpTEVIeG5wUVV3dkhUWTdaa1VERkd4a3VoalRVbWZlZlJVS1lyRVNydEppbWlDeFZaNWhLSnd...",
+      "date": "2026-07-20T07:00:00.000Z",
+      "source": "Plymouth Live",
+      "feedSource": "Official – Plymouth Argyle",
+      "clubs": [
+        "Plymouth Argyle"
       ],
       "category": "official"
     },
@@ -14865,18 +14888,6 @@
       "category": "official"
     },
     {
-      "title": "CLUB STATEMENT: MARTIN FOYLE DEPARTS CARLISLE UNITED - Carlisle United Football Club",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTWdVaThfc1N6S3dGYnRRcEkxWGNqZlBwSXRDanBYeFJpLWxGdGpYUHpTaGdfRW4wcTNkZy11S0oxUERwNG9wQnZ2cFpLbWxtNW9rTUNBa2E4WXNWOEhXc2VhUHpYWV8zcEplQ1JtcEQta3p3VXpCbG9BTVNKTTdMc2FMQXZOenZoT3I5RE44UW54UGc?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOTWdVaThfc1N6S3dGYnRRcEkxWGNqZlBwSXRDanBYeFJpLWxGdGpYUHpTaGdfRW4wcTNkZy11S0oxUERwNG9wQnZ2cFpLbWxtNW9rTUNBa2E4WXNWOEhXc2VhUHpYWV8zcEplQ1JtcEQta3p3VXpCbG9BTVN...",
-      "date": "2026-06-28T07:00:00.000Z",
-      "source": "Carlisle United Football Club",
-      "feedSource": "Official – Port Vale",
-      "clubs": [
-        "Port Vale"
-      ],
-      "category": "official"
-    },
-    {
       "title": "GET THE 2026/27 CHELTENHAM TOWN HOME KIT! - Cheltenham Town FC",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSURXRWU1RFF0MjJ4OHNYVHpOZTNDVkxYSkZTVnEteE4tOHRhR3FKOXVJekpRdEdKQ2NtSTRPODJCMVlyN21YLVc5M01ISDlzQjJoajIzRHY4U3Nra2tDU0dMR0NwYjNmeWU1cElDeXdQc2lPRDBUN0xrRTBYdTVsWVdGTk9jTWVo?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSURXRWU1RFF0MjJ4OHNYVHpOZTNDVkxYSkZTVnEteE4tOHRhR3FKOXVJekpRdEdKQ2NtSTRPODJCMVlyN21YLVc5M01ISDlzQjJoajIzRHY4U3Nra2tDU0dMR0NwYjNmeWU1cElDeXdQc2lPRDBUN0xrRTB...",
@@ -15201,23 +15212,11 @@
       "category": "official"
     },
     {
-      "title": "IN PICTURES: 25 photos capturing fans’ rollercoaster of emotions as Harrogate Town suffer relegation heartbreak - Harrogate Advertiser",
+      "title": "IN PICTURES: 25 photos capturing fans’ rollercoaster of emotions as Harrogate Town suffer relegation heartbreak - harrogateadvertiser.co.uk",
       "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPbTk0Z2hUNVdmRURCNTloR3dBYWI2clNBVzAxOVc3cG5ZOVR4Sjd4MGZZVUxEcGRuN3RQM1pYSVFWWDJNSWNvZTkySmhkSFBFTUFtWllsM3lOb1IweXB3enFvdkQ3bzlrMlV3THBLeTRqeGZiZUlsd2NlSkZSclowZnlzTzV1cnBHbzhQMFpJMU9kSVRvR1BHQmJFYTNIU3N6NllHZ3FrV3puVlF5d0NnQnZwMmVUVzJGMWdnNmhWcUNXVXlvbUViX3oxekcxeXJaLXpzNGx5WHlEajgyanFJVlN2MmNxUXMydHc2bXFOb2M5NGR0RmlwQU1KSWRYUi0xZnA5eUVBOXI?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAJBVV95cUxPbTk0Z2hUNVdmRURCNTloR3dBYWI2clNBVzAxOVc3cG5ZOVR4Sjd4MGZZVUxEcGRuN3RQM1pYSVFWWDJNSWNvZTkySmhkSFBFTUFtWllsM3lOb1IweXB3enFvdkQ3bzlrMlV3THBLeTRqeGZiZUlsd2NlSkZ...",
       "date": "2026-05-04T07:00:00.000Z",
-      "source": "Harrogate Advertiser",
-      "feedSource": "Fan – Barnet",
-      "clubs": [
-        "Barnet"
-      ],
-      "category": "fan"
-    },
-    {
-      "title": "MATCH REPORT | HARROGATE TOWN AFC 1-2 BARNET FC - Barnet FC",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOTjZqcE1rcHFYX0QtZjd6N3pwZ3NER1JYYUdvZ2VFNTZmTzV6UklZdmZlSFRhX3BDUkxBcG96ZFF5RHFmc0t3NU1MbG9qRUVmQml2cy1XcTY5MmlKaFZ2UXJqcmpzaUlRa0E0dVZNbUxJcjRY?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTFBOTjZqcE1rcHFYX0QtZjd6N3pwZ3NER1JYYUdvZ2VFNTZmTzV6UklZdmZlSFRhX3BDUkxBcG96ZFF5RHFmc0t3NU1MbG9qRUVmQml2cy1XcTY5MmlKaFZ2UXJqcmpzaUlRa0E0dVZNbUxJcjRY?oc=5\" targ...",
-      "date": "2026-05-02T07:00:00.000Z",
-      "source": "Barnet FC",
+      "source": "harrogateadvertiser.co.uk",
       "feedSource": "Fan – Barnet",
       "clubs": [
         "Barnet"
@@ -15285,18 +15284,6 @@
       "category": "official"
     },
     {
-      "title": "Welcome to Walsall FC – Latest News, Fixtures, and Tickets - saddlers.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOakFmTFUzWFZIU2F1blRHYXhEWUJHOWhVZ3NGeUdKRGt5LW84QXFSZzJnenA4TFdvOEZ3YXkzci1tLWFTTXhQaTZyekxWZU5fMVQtalVhcGtkVGE2YlFVV1ZVRHRLTTZBejNZZ2FqV01zUDN6STk0Zkc1a3BMby1NQjNqYmNJUDdRXzBjcl82cFM?oc=5",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxOakFmTFUzWFZIU2F1blRHYXhEWUJHOWhVZ3NGeUdKRGt5LW84QXFSZzJnenA4TFdvOEZ3YXkzci1tLWFTTXhQaTZyekxWZU5fMVQtalVhcGtkVGE2YlFVV1ZVRHRLTTZBejNZZ2FqV01zUDN6STk0Zkc1a3B...",
-      "date": "2026-03-06T08:00:00.000Z",
-      "source": "saddlers.co.uk",
-      "feedSource": "Official – Notts County",
-      "clubs": [
-        "Notts County"
-      ],
-      "category": "official"
-    },
-    {
       "title": "Andy Crosby Sacked by Tranmere Rovers After Horrendous Run - Vital Football",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPODFtY1JsYlRJTUpobUF2S3d6R0ZXWVZiWkJ5YnhvX2JnRjM4V3RBVUp1VlBzM1VyXzlkNlg0Ui1jRXZJSmx4Vk5JS1pJdjZvN2JUbldZclF0enR1MUEybDRObmwwNDUtRlVyZ3M2aU5Tem91T1pKclkyeTcwRnktR05KbEVOM3F4ZHQ3YnJ0Z3g?oc=5",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPODFtY1JsYlRJTUpobUF2S3d6R0ZXWVZiWkJ5YnhvX2JnRjM4V3RBVUp1VlBzM1VyXzlkNlg0Ui1jRXZJSmx4Vk5JS1pJdjZvN2JUbldZclF0enR1MUEybDRObmwwNDUtRlVyZ3M2aU5Tem91T1pKclkyeTc...",
@@ -15305,6 +15292,18 @@
       "feedSource": "Official – Tranmere Rovers",
       "clubs": [
         "Tranmere Rovers"
+      ],
+      "category": "official"
+    },
+    {
+      "title": "Match Pack: Saints vs QPR - Southampton FC Official Site",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBwU0hXeFloZXVKbUlTUVdXVHlwWmp2Y3F5eFZPd2NPN0N1X1VxVXR6bVRqa0ZjRkFkeERSbGVQa3llNFdOWThNRF96d3hVUlZFNmtrUnJiYlQ4X1ZGalpyZVAxQ3dlS2FHNkhNWVZNVDZtZTBoeksxVWt3?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTFBwU0hXeFloZXVKbUlTUVdXVHlwWmp2Y3F5eFZPd2NPN0N1X1VxVXR6bVRqa0ZjRkFkeERSbGVQa3llNFdOWThNRF96d3hVUlZFNmtrUnJiYlQ4X1ZGalpyZVAxQ3dlS2FHNkhNWVZNVDZtZTBoeksxVWt3?oc...",
+      "date": "2026-02-23T08:00:00.000Z",
+      "source": "Southampton FC Official Site",
+      "feedSource": "Official – Queens Park Rangers",
+      "clubs": [
+        "Queens Park Rangers"
       ],
       "category": "official"
     },
