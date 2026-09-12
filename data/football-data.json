@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T13:36:10.987Z",
+  "updatedAt": "2026-09-12T13:43:38.164Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -6560,21 +6560,73 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "347",
         "name": "Cardiff City",
-        "score": null
+        "score": 0
       },
       "venue": "Toughsheet Community Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Thierry Gale",
+          "minute": "90'",
+          "team": "Bolton Wanderers",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Ben Davies",
+          "minute": "31'",
+          "team": "Bolton Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Kyliane Dong",
+          "minute": "32'",
+          "team": "Bolton Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Samuel Iling-Junior",
+          "minute": "37'",
+          "team": "Bolton Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Joel Colwill",
+          "minute": "42'",
+          "team": "Cardiff City",
+          "card": "yellow"
+        },
+        {
+          "player": "Perry Ng",
+          "minute": "54'",
+          "team": "Cardiff City",
+          "card": "yellow"
+        },
+        {
+          "player": "Jayden Nelson",
+          "minute": "78'",
+          "team": "Bolton Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Thierry Gale",
+          "minute": "90'+1'",
+          "team": "Bolton Wanderers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880265",
@@ -6582,21 +6634,67 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "374",
         "name": "Derby County",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "392",
         "name": "Birmingham City",
-        "score": null
+        "score": 2
       },
       "venue": "Pride Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Bobby Clark",
+          "minute": "40'",
+          "team": "Derby County",
+          "ownGoal": false
+        },
+        {
+          "player": "Carlos Vicente",
+          "minute": "42'",
+          "team": "Birmingham City",
+          "ownGoal": false
+        },
+        {
+          "player": "Paik Seung-Ho",
+          "minute": "63'",
+          "team": "Birmingham City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Mohammed Fuseini",
+          "minute": "19'",
+          "team": "Derby County",
+          "card": "yellow"
+        },
+        {
+          "player": "Alex Cochrane",
+          "minute": "21'",
+          "team": "Birmingham City",
+          "card": "yellow"
+        },
+        {
+          "player": "August Priske",
+          "minute": "44'",
+          "team": "Birmingham City",
+          "card": "yellow"
+        },
+        {
+          "player": "Carlos Vicente",
+          "minute": "90'+4'",
+          "team": "Birmingham City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880258",
@@ -6604,21 +6702,67 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "88'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "383",
         "name": "West Bromwich Albion",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "334",
         "name": "Queens Park Rangers",
-        "score": null
+        "score": 1
       },
       "venue": "The Hawthorns",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Chris Mepham",
+          "minute": "38'",
+          "team": "Queens Park Rangers",
+          "ownGoal": true
+        },
+        {
+          "player": "Callum Styles",
+          "minute": "41'",
+          "team": "West Bromwich Albion",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Glen Kamara",
+          "minute": "51'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        },
+        {
+          "player": "Jake Clark-Salter",
+          "minute": "63'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        },
+        {
+          "player": "Jonathan Varane",
+          "minute": "64'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        },
+        {
+          "player": "Rumarn Burrell",
+          "minute": "80'",
+          "team": "Queens Park Rangers",
+          "card": "yellow"
+        },
+        {
+          "player": "Ousmane Diakite",
+          "minute": "90'+3'",
+          "team": "West Bromwich Albion",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880851",
@@ -6626,21 +6770,73 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "88'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "344",
         "name": "Wycombe Wanderers",
-        "score": null
+        "score": 3
       },
       "venue": "Gaughan Group Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Jayden Wareham",
+          "minute": "13'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Jack Grimmer",
+          "minute": "37'",
+          "team": "Leyton Orient",
+          "ownGoal": true
+        },
+        {
+          "player": "Fred Onyedinma",
+          "minute": "45'+2'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Daniel Harvie",
+          "minute": "47'",
+          "team": "Wycombe Wanderers",
+          "ownGoal": false
+        },
+        {
+          "player": "Jaze Kabia",
+          "minute": "52'",
+          "team": "Leyton Orient",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Daniel Harvie",
+          "minute": "30'",
+          "team": "Wycombe Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Cauley Woodrow",
+          "minute": "86'",
+          "team": "Wycombe Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Caolan Boyd-Munce",
+          "minute": "90'+1'",
+          "team": "Wycombe Wanderers",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401880860",
@@ -6648,21 +6844,79 @@
       "competitionCode": "eng.3",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "340",
         "name": "Notts County",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "387",
         "name": "Bradford City",
-        "score": null
+        "score": 1
       },
       "venue": "Meadow Lane",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "George Pratt",
+          "minute": "52'",
+          "team": "Bradford City",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Ibou Touray",
+          "minute": "11'",
+          "team": "Bradford City",
+          "card": "yellow"
+        },
+        {
+          "player": "Antoni Sarcevic",
+          "minute": "14'",
+          "team": "Bradford City",
+          "card": "yellow"
+        },
+        {
+          "player": "Jack Evans",
+          "minute": "39'",
+          "team": "Notts County",
+          "card": "yellow"
+        },
+        {
+          "player": "Lucas Ness",
+          "minute": "58'",
+          "team": "Notts County",
+          "card": "yellow"
+        },
+        {
+          "player": "Daniel Kanu",
+          "minute": "69'",
+          "team": "Notts County",
+          "card": "yellow"
+        },
+        {
+          "player": "George Pratt",
+          "minute": "71'",
+          "team": "Bradford City",
+          "card": "yellow"
+        },
+        {
+          "player": "Jacob Bedeau",
+          "minute": "77'",
+          "team": "Notts County",
+          "card": "yellow"
+        },
+        {
+          "player": "Nick Powell",
+          "minute": "90'",
+          "team": "Bradford City",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881382",
@@ -6670,21 +6924,85 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+1'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "2594",
         "name": "Crawley Town",
-        "score": null
+        "score": 1
       },
       "away": {
         "id": "320",
         "name": "Cheltenham Town",
-        "score": null
+        "score": 3
       },
       "venue": "Broadfield Stadium",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Dylan Morgan",
+          "minute": "7'",
+          "team": "Crawley Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Charlie Mccann",
+          "minute": "32'",
+          "team": "Cheltenham Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Andreas Weimann",
+          "minute": "35'",
+          "team": "Cheltenham Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Charlie Mccann",
+          "minute": "54'",
+          "team": "Cheltenham Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Dylan Morgan",
+          "minute": "35'",
+          "team": "Crawley Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Charlie Barker",
+          "minute": "42'",
+          "team": "Crawley Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Jake Evans",
+          "minute": "45'",
+          "team": "Cheltenham Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Jude Arthurs",
+          "minute": "67'",
+          "team": "Crawley Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Priestley Farquharson",
+          "minute": "72'",
+          "team": "Crawley Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Jordan Shipley",
+          "minute": "85'",
+          "team": "Cheltenham Town",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401881380",
@@ -6692,21 +7010,73 @@
       "competitionCode": "eng.4",
       "type": "league",
       "date": "2026-09-12T11:30Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "88'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "386",
         "name": "Grimsby Town",
-        "score": null
+        "score": 2
       },
       "away": {
         "id": "308",
         "name": "Bristol Rovers",
-        "score": null
+        "score": 0
       },
       "venue": "Blundell Park",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Kieran Green",
+          "minute": "22'",
+          "team": "Grimsby Town",
+          "ownGoal": false
+        },
+        {
+          "player": "Géza Dávid Turi",
+          "minute": "40'",
+          "team": "Grimsby Town",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Ben Purrington",
+          "minute": "10'",
+          "team": "Bristol Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Shaqai Forde",
+          "minute": "38'",
+          "team": "Bristol Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Kieran Green",
+          "minute": "64'",
+          "team": "Grimsby Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Kofi Balmer",
+          "minute": "64'",
+          "team": "Bristol Rovers",
+          "card": "yellow"
+        },
+        {
+          "player": "Charles Vernam",
+          "minute": "71'",
+          "team": "Grimsby Town",
+          "card": "yellow"
+        },
+        {
+          "player": "Tommy Leigh",
+          "minute": "75'",
+          "team": "Bristol Rovers",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401879285",
