@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T17:34:20.807Z",
+  "updatedAt": "2026-09-12T17:42:36.995Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9121,8 +9121,8 @@
       "type": "league",
       "date": "2026-09-12T16:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "45'+2'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "367",
         "name": "Tottenham Hotspur",
