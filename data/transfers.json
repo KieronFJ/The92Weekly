@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-12T22:17:55.596Z",
+  "updatedAt": "2026-09-12T22:27:45.533Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Tottenham"
-        ],
-        "title": "Papers: Richarlison takes aim at Spurs after failed Vasco da Gama move",
-        "summary": "The top stories and transfer rumours from Sunday's newspapers...",
-        "link": "https://www.skysports.com/football/news/12040/13585182/tottenham-transfer-news-spurs-forward-richarlison-takes-aim-at-spurs-following-collapse-of-proposed-vasco-da-gama-transfer-paper-talk",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-12T22:17:55.407Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -28,7 +15,20 @@
         "summary": "Bruno Guimaraes scored a stunning goal two minutes after David Raya had saved a penalty as Arsenal beat Sunderland 2-0 to move above Manchester City at the top of the Premier League.",
         "link": "https://www.skysports.com/football/sunderland-vs-arsenal/report/559482",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-12T22:17:55.407Z",
+        "publishedAt": "2026-09-12T22:27:45.392Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Papers: Richarlison takes aim at Spurs after failed Vasco da Gama move",
+        "summary": "The top stories and transfer rumours from Sunday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13585182/tottenham-transfer-news-spurs-forward-richarlison-takes-aim-at-spurs-following-collapse-of-proposed-vasco-da-gama-transfer-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-12T22:27:45.391Z",
         "status": "Rumour"
       },
       {
@@ -3259,7 +3259,7 @@
           "Brentford",
           "Portsmouth"
         ],
-        "title": "Portsmouth finalising loan deal for Brentford starlet in problem area - uk.sports.yahoo.com",
+        "title": "Portsmouth finalising loan deal for Brentford starlet in problem area - Yahoo Sports UK",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdXh5cU10a1p6cmM2Qm52N09MQVM5dGhuZm1jY3lzbHRsRE5SRjM0Qzc2SG1tdVFxSUFFZV9wdDQ5OXd0X3VQalk3R3lHcFdZOFl2em1Rb0lSbUVVbjFEQzBmSkFDR0FNbHBkMTliRVJVa21ycVFKWC0wZkpRVnBXQnc0YkwxUGEwZmJHaWZBQ0ZQckE?oc=5",
         "source": "Google News Premier League",
@@ -11444,19 +11444,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Portsmouth"
-        ],
-        "title": "League One trio miss out as former Portsmouth striker closes in on Japanese loan switch - The72",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUFRqU0s3djc5aXhPdzlqT3dwUkRNa013anVSSUo0dUdZN2poRGdQZVF0Y3BHZzFzeTEyMTFYaFFrSWJJaHVaQTFMRWw0bDdMRmRic2N0ZE1WRk5wQzlCSHpXY3FCQVNqYmR3S0V2ZVRVUDNSU2JGcmI3dTZsdXF0YWtjM3NsVEh4NHc?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-01-15T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Middlesbrough"
         ],
         "title": "Middlesbrough complete second January transfer deal very much in the vein of their first - gazettelive.co.uk",
@@ -11465,6 +11452,19 @@
         "source": "Google News League Two",
         "publishedAt": "2026-01-15T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Portsmouth"
+        ],
+        "title": "League One trio miss out as former Portsmouth striker closes in on Japanese loan switch - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUFRqU0s3djc5aXhPdzlqT3dwUkRNa013anVSSUo0dUdZN2poRGdQZVF0Y3BHZzFzeTEyMTFYaFFrSWJJaHVaQTFMRWw0bDdMRmRic2N0ZE1WRk5wQzlCSHpXY3FCQVNqYmR3S0V2ZVRVUDNSU2JGcmI3dTZsdXF0YWtjM3NsVEh4NHc?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-01-15T08:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 2,
