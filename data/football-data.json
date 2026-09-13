@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T12:57:08.208Z",
+  "updatedAt": "2026-09-13T13:06:31.687Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9215,21 +9215,49 @@
       "competitionCode": "eng.2",
       "type": "league",
       "date": "2026-09-13T11:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "398",
         "name": "Sheffield United",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
-        "score": null
+        "score": 1
       },
       "venue": "Bramall Lane",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Raúl Jiménez",
+          "minute": "90'",
+          "team": "Wolverhampton Wanderers",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Sam McCallum",
+          "minute": "2'",
+          "team": "Sheffield United",
+          "card": "yellow"
+        },
+        {
+          "player": "Ladislav Krejcí",
+          "minute": "17'",
+          "team": "Wolverhampton Wanderers",
+          "card": "yellow"
+        },
+        {
+          "player": "Japhet Tanganga",
+          "minute": "48'",
+          "team": "Sheffield United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401879282",
