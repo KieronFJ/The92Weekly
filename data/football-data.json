@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T18:36:45.570Z",
+  "updatedAt": "2026-09-13T18:47:31.987Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5347,47 +5347,7 @@
         "score": 2
       },
       "venue": "Ewood Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Kristi Montgomery",
-          "minute": "20'",
-          "team": "Blackburn Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Thomas Cannon",
-          "minute": "35'",
-          "team": "Sheffield United",
-          "ownGoal": false
-        },
-        {
-          "player": "Sydie Peck",
-          "minute": "44'",
-          "team": "Sheffield United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Romelle Donovan",
-          "minute": "48'",
-          "team": "Sheffield United",
-          "card": "yellow"
-        },
-        {
-          "player": "Kristi Montgomery",
-          "minute": "59'",
-          "team": "Blackburn Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Japhet Tanganga",
-          "minute": "76'",
-          "team": "Sheffield United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880273",
@@ -5409,41 +5369,7 @@
         "score": 1
       },
       "venue": "Cardiff City Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Ben Johnson",
-          "minute": "22'",
-          "team": "Stoke City",
-          "ownGoal": false
-        },
-        {
-          "player": "Joel Colwill",
-          "minute": "63'",
-          "team": "Cardiff City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Ben Wilmot",
-          "minute": "27'",
-          "team": "Stoke City",
-          "card": "yellow"
-        },
-        {
-          "player": "Perry Ng",
-          "minute": "45'+2'",
-          "team": "Cardiff City",
-          "card": "yellow"
-        },
-        {
-          "player": "Luke Graham",
-          "minute": "81'",
-          "team": "Stoke City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880279",
@@ -5465,41 +5391,7 @@
         "score": 1
       },
       "venue": "St. Mary's Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Finn Azaz",
-          "minute": "9'",
-          "team": "Southampton",
-          "ownGoal": false
-        },
-        {
-          "player": "Cyle Larin",
-          "minute": "33'",
-          "team": "Southampton",
-          "ownGoal": false
-        },
-        {
-          "player": "Léo Scienza",
-          "minute": "78'",
-          "team": "Southampton",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Zan Vipotnik",
-          "minute": "52'",
-          "team": "Swansea City",
-          "card": "red"
-        },
-        {
-          "player": "Ronald",
-          "minute": "54'",
-          "team": "Swansea City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880278",
@@ -5521,41 +5413,7 @@
         "score": 1
       },
       "venue": "Vicarage Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Callum Lang",
-          "minute": "5'",
-          "team": "Preston North End",
-          "ownGoal": false
-        },
-        {
-          "player": "Edo Kayembe",
-          "minute": "69'",
-          "team": "Watford",
-          "ownGoal": false
-        },
-        {
-          "player": "Mamadou Doumbia",
-          "minute": "76'",
-          "team": "Watford",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Andrija Vukcevic",
-          "minute": "62'",
-          "team": "Preston North End",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Gibson",
-          "minute": "67'",
-          "team": "Preston North End",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880269",
@@ -5577,53 +5435,7 @@
         "score": 1
       },
       "venue": "STōK Cae Ras",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Zeki Amdouni",
-          "minute": "26'",
-          "team": "Burnley",
-          "ownGoal": false
-        },
-        {
-          "player": "Jacques Ekomie",
-          "minute": "55'",
-          "team": "Wrexham",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Issa Kaboré",
-          "minute": "14'",
-          "team": "Wrexham",
-          "card": "yellow"
-        },
-        {
-          "player": "Aaron Ramsey",
-          "minute": "65'",
-          "team": "Burnley",
-          "card": "yellow"
-        },
-        {
-          "player": "Dominic Hyam",
-          "minute": "84'",
-          "team": "Wrexham",
-          "card": "yellow"
-        },
-        {
-          "player": "Lucas Pires",
-          "minute": "86'",
-          "team": "Burnley",
-          "card": "yellow"
-        },
-        {
-          "player": "Reo Hatate",
-          "minute": "90'",
-          "team": "Burnley",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914267",
@@ -5645,65 +5457,7 @@
         "score": 0
       },
       "venue": "Vitality Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Ryan Christie",
-          "minute": "7'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Ryan Christie",
-          "minute": "69'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Ryan Christie",
-          "minute": "88'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        },
-        {
-          "player": "Rayan",
-          "minute": "90'+4'",
-          "team": "AFC Bournemouth",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Callum Elder",
-          "minute": "27'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "Justin Kluivert",
-          "minute": "41'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        },
-        {
-          "player": "Dom Jefferies",
-          "minute": "48'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        },
-        {
-          "player": "António Silva",
-          "minute": "61'",
-          "team": "AFC Bournemouth",
-          "card": "yellow"
-        },
-        {
-          "player": "Daniel Oyegoke",
-          "minute": "67'",
-          "team": "Lincoln City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914269",
@@ -5725,41 +5479,7 @@
         "score": 0
       },
       "venue": "Selhurst Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Jørgen Strand Larsen",
-          "minute": "37'",
-          "team": "Crystal Palace",
-          "ownGoal": false
-        },
-        {
-          "player": "Jørgen Strand Larsen",
-          "minute": "53'",
-          "team": "Crystal Palace",
-          "ownGoal": false
-        },
-        {
-          "player": "Daichi Kamada",
-          "minute": "72'",
-          "team": "Crystal Palace",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Adilson Malanda",
-          "minute": "65'",
-          "team": "Middlesbrough",
-          "card": "yellow"
-        },
-        {
-          "player": "Myles Peart-Harris",
-          "minute": "83'",
-          "team": "Middlesbrough",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914254",
@@ -5781,59 +5501,7 @@
         "score": 3
       },
       "venue": "Gaughan Group Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Macaulay Gillesphey",
-          "minute": "38'",
-          "team": "Leyton Orient",
-          "ownGoal": true
-        },
-        {
-          "player": "Will Swan",
-          "minute": "45'",
-          "team": "Bradford City",
-          "ownGoal": false
-        },
-        {
-          "player": "Stephen Humphrys",
-          "minute": "58'",
-          "team": "Bradford City",
-          "ownGoal": false
-        },
-        {
-          "player": "Nick Powell",
-          "minute": "88'",
-          "team": "Bradford City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Theo Archibald",
-          "minute": "23'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        },
-        {
-          "player": "George Lapslie",
-          "minute": "40'",
-          "team": "Bradford City",
-          "card": "yellow"
-        },
-        {
-          "player": "Idris El Mizouni",
-          "minute": "44'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        },
-        {
-          "player": "Phillip Chinedu",
-          "minute": "49'",
-          "team": "Leyton Orient",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914259",
@@ -5855,41 +5523,7 @@
         "score": 0
       },
       "venue": "Stadium of Light",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Chemsdine Talbi",
-          "minute": "71'",
-          "team": "Sunderland",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Lucas Gourna-Douath",
-          "minute": "54'",
-          "team": "Hull City",
-          "card": "yellow"
-        },
-        {
-          "player": "Luke O'Nien",
-          "minute": "62'",
-          "team": "Sunderland",
-          "card": "yellow"
-        },
-        {
-          "player": "John Egan",
-          "minute": "72'",
-          "team": "Hull City",
-          "card": "yellow"
-        },
-        {
-          "player": "Elliot Stroud",
-          "minute": "90'+4'",
-          "team": "Hull City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880275",
