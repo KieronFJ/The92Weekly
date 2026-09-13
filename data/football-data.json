@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T18:55:41.066Z",
+  "updatedAt": "2026-09-13T19:03:15.554Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5545,53 +5545,7 @@
         "score": 3
       },
       "venue": "Toughsheet Community Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Jarrod Bowen",
-          "minute": "13'",
-          "team": "West Ham United",
-          "ownGoal": false
-        },
-        {
-          "player": "Ethan Erhahon",
-          "minute": "18'",
-          "team": "Bolton Wanderers",
-          "ownGoal": false
-        },
-        {
-          "player": "Konstantinos Mavropanos",
-          "minute": "31'",
-          "team": "West Ham United",
-          "ownGoal": false
-        },
-        {
-          "player": "Jarrod Bowen",
-          "minute": "77'",
-          "team": "West Ham United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Oliver Scarles",
-          "minute": "7'",
-          "team": "West Ham United",
-          "card": "yellow"
-        },
-        {
-          "player": "Ruben Rodrigues",
-          "minute": "27'",
-          "team": "Bolton Wanderers",
-          "card": "red"
-        },
-        {
-          "player": "Konstantinos Mavropanos",
-          "minute": "62'",
-          "team": "West Ham United",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401914255",
@@ -5613,35 +5567,7 @@
         "score": 1
       },
       "venue": "The Den",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Joe Willock",
-          "minute": "81'",
-          "team": "Newcastle United",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jenson Metcalfe",
-          "minute": "67'",
-          "team": "Millwall",
-          "card": "yellow"
-        },
-        {
-          "player": "Jacob Ramsey",
-          "minute": "69'",
-          "team": "Newcastle United",
-          "card": "yellow"
-        },
-        {
-          "player": "Alfie Massey",
-          "minute": "90'+1'",
-          "team": "Millwall",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880271",
