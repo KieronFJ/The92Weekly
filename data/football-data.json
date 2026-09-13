@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T17:51:41.257Z",
+  "updatedAt": "2026-09-13T18:03:17.747Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5303,53 +5303,7 @@
         "score": 3
       },
       "venue": "Eco-Power Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Leon Ayinde",
-          "minute": "40'",
-          "team": "Doncaster Rovers",
-          "ownGoal": false
-        },
-        {
-          "player": "Jamie Spencer",
-          "minute": "67'",
-          "team": "Huddersfield Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Joe Low",
-          "minute": "74'",
-          "team": "Huddersfield Town",
-          "ownGoal": false
-        },
-        {
-          "player": "Lasse Sorenson",
-          "minute": "77'",
-          "team": "Huddersfield Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "George Broadbent",
-          "minute": "7'",
-          "team": "Doncaster Rovers",
-          "card": "yellow"
-        },
-        {
-          "player": "Bali Mumba",
-          "minute": "32'",
-          "team": "Huddersfield Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Ibane Bowat",
-          "minute": "83'",
-          "team": "Huddersfield Town",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401906381",
@@ -5371,53 +5325,7 @@
         "score": 0
       },
       "venue": "St James Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Danny Rose",
-          "minute": "35'",
-          "team": "Exeter City",
-          "ownGoal": false
-        },
-        {
-          "player": "Louie Cayless",
-          "minute": "86'",
-          "team": "Exeter City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Danny Rose",
-          "minute": "37'",
-          "team": "Exeter City",
-          "card": "yellow"
-        },
-        {
-          "player": "George Feeney",
-          "minute": "44'",
-          "team": "Tottenham Hotspur U21",
-          "card": "yellow"
-        },
-        {
-          "player": "Louie Cayless",
-          "minute": "52'",
-          "team": "Exeter City",
-          "card": "yellow"
-        },
-        {
-          "player": "Liam Oakes",
-          "minute": "73'",
-          "team": "Exeter City",
-          "card": "yellow"
-        },
-        {
-          "player": "Maxwell Henry Oliver Sebastian Adeyemi Adeo Adedeji",
-          "minute": "85'",
-          "team": "Tottenham Hotspur U21",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880276",
