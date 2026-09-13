@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T15:02:46.323Z",
+  "updatedAt": "2026-09-13T15:18:17.586Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9265,21 +9265,61 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-13T13:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "90'+4'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "388",
         "name": "Coventry City",
-        "score": null
+        "score": 0
       },
       "away": {
         "id": "331",
         "name": "Brighton & Hove Albion",
-        "score": null
+        "score": 5
       },
       "venue": "Coventry Building Society Arena",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Charalambos Kostoulas",
+          "minute": "35'",
+          "team": "Brighton & Hove Albion",
+          "ownGoal": false
+        },
+        {
+          "player": "Malick Yalcouyé",
+          "minute": "51'",
+          "team": "Brighton & Hove Albion",
+          "ownGoal": false
+        },
+        {
+          "player": "Lewis Dunk",
+          "minute": "83'",
+          "team": "Brighton & Hove Albion",
+          "ownGoal": false
+        },
+        {
+          "player": "Yasin Ayari",
+          "minute": "90'+4'",
+          "team": "Brighton & Hove Albion",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Taiwo Awoniyi",
+          "minute": "53'",
+          "team": "Coventry City",
+          "card": "red"
+        },
+        {
+          "player": "Pascal Gross",
+          "minute": "70'",
+          "team": "Brighton & Hove Albion",
+          "card": "red"
+        }
+      ]
     },
     {
       "id": "401879278",
