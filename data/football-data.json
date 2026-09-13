@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T11:51:42.570Z",
+  "updatedAt": "2026-09-13T12:03:29.934Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -9216,8 +9216,8 @@
       "type": "league",
       "date": "2026-09-13T11:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "36'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "398",
         "name": "Sheffield United",
