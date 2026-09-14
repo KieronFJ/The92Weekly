@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T18:40:14.273Z",
+  "updatedAt": "2026-09-14T18:57:34.065Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5589,41 +5589,7 @@
         "score": 1
       },
       "venue": "Pride Park",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Aune Heggebo",
-          "minute": "16'",
-          "team": "West Bromwich Albion",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Harry Whitwell",
-          "minute": "10'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Brayann Pereira",
-          "minute": "26'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        },
-        {
-          "player": "Brayann Pereira",
-          "minute": "34'",
-          "team": "West Bromwich Albion",
-          "card": "red"
-        },
-        {
-          "player": "Jimmy Morgan",
-          "minute": "82'",
-          "team": "West Bromwich Albion",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880270",
@@ -5645,77 +5611,7 @@
         "score": 1
       },
       "venue": "Carrow Road",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Oscar Schwartau",
-          "minute": "28'",
-          "team": "Norwich City",
-          "ownGoal": false
-        },
-        {
-          "player": "Pape Diallo",
-          "minute": "39'",
-          "team": "Norwich City",
-          "ownGoal": false
-        },
-        {
-          "player": "Carlos Vicente",
-          "minute": "64'",
-          "team": "Birmingham City",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Benjamin Chrisene",
-          "minute": "13'",
-          "team": "Norwich City",
-          "card": "yellow"
-        },
-        {
-          "player": "José Córdoba",
-          "minute": "25'",
-          "team": "Norwich City",
-          "card": "yellow"
-        },
-        {
-          "player": "Jack Stacey",
-          "minute": "59'",
-          "team": "Norwich City",
-          "card": "yellow"
-        },
-        {
-          "player": "Oscar Schwartau",
-          "minute": "60'",
-          "team": "Norwich City",
-          "card": "yellow"
-        },
-        {
-          "player": "Carlos Vicente",
-          "minute": "60'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Phil Neumann",
-          "minute": "83'",
-          "team": "Birmingham City",
-          "card": "yellow"
-        },
-        {
-          "player": "Jovon Makama",
-          "minute": "83'",
-          "team": "Norwich City",
-          "card": "yellow"
-        },
-        {
-          "player": "Ante Crnac",
-          "minute": "90'+4'",
-          "team": "Norwich City",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880272",
