@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T21:03:02.265Z",
+  "updatedAt": "2026-09-14T21:19:18.519Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8668,21 +8668,73 @@
       "competitionCode": "eng.1",
       "type": "league",
       "date": "2026-09-14T19:00Z",
-      "completed": false,
-      "status": "STATUS_SECOND_HALF",
-      "statusDetail": "88'",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
       "home": {
         "id": "357",
         "name": "Leeds United",
-        "score": null
+        "score": 4
       },
       "away": {
         "id": "361",
         "name": "Newcastle United",
-        "score": null
+        "score": 1
       },
       "venue": "Elland Road",
-      "source": "ESPN"
+      "source": "ESPN",
+      "goals": [
+        {
+          "player": "Lewis Miley",
+          "minute": "32'",
+          "team": "Leeds United",
+          "ownGoal": true
+        },
+        {
+          "player": "Jayden Bogle",
+          "minute": "34'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Dominic Calvert-Lewin",
+          "minute": "45'+1'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Noah Okafor",
+          "minute": "59'",
+          "team": "Leeds United",
+          "ownGoal": false
+        },
+        {
+          "player": "Bazoumana Touré",
+          "minute": "90'",
+          "team": "Newcastle United",
+          "ownGoal": false
+        }
+      ],
+      "cards": [
+        {
+          "player": "Dominic Calvert-Lewin",
+          "minute": "44'",
+          "team": "Leeds United",
+          "card": "yellow"
+        },
+        {
+          "player": "Jacob Murphy",
+          "minute": "54'",
+          "team": "Newcastle United",
+          "card": "yellow"
+        },
+        {
+          "player": "Tino Livramento",
+          "minute": "90'+1'",
+          "team": "Newcastle United",
+          "card": "yellow"
+        }
+      ]
     },
     {
       "id": "401906263",
