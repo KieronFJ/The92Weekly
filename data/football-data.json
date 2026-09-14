@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T19:53:49.607Z",
+  "updatedAt": "2026-09-14T20:03:23.516Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8669,8 +8669,8 @@
       "type": "league",
       "date": "2026-09-14T19:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "45'",
+      "status": "STATUS_HALFTIME",
+      "statusDetail": "HT",
       "home": {
         "id": "357",
         "name": "Leeds United",
