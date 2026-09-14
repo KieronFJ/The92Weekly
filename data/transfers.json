@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T11:20:46.506Z",
+  "updatedAt": "2026-09-14T11:37:44.570Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -110,17 +110,6 @@
         "link": "https://www.bbc.co.uk/sport/football/articles/cj9x7e40gr2o?at_medium=RSS&at_campaign=rss",
         "source": "BBC Sport",
         "publishedAt": "2026-09-12T10:07:36.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Ranking all 155 Premier League transfers in the 2026 summer window from worst to best - The Athletic - nytimes.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOWx6eE1EWkd3N3FfY2g2eF9tLVZ4Vjl4Yy03T2hkWGh0Sjc1S3NDUE8xZkFMR29DZ0VRZkczSnFGbkhnaUFSWlpBRGRIWVpxTXpZQl93S25Ial9hZUktQjA3aUl0VDFRaGJqR3BITHVGcDcyTEoyY01qeGlQVWVSZ1NKamVxbHBvYzFiaC1EQzAtNDMzLUhNUVA2eEQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-12T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -4275,7 +4264,7 @@
         "clubs": [
           "Manchester City"
         ],
-        "title": "Man City midfielder close to exit as new signing confirmed - Manchester Evening News",
+        "title": "Man City midfielder close to exit as new signing confirmed - manchestereveningnews.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTnMzZUV0YlNNbXNUMWhpcVBfbmFNakV3eTl1RmZ2QjgxbW4zYzB6SWw1TU5aVU5JZ0xNWXpjbjhSOWsyTTVHdjd5RndpQ0lMc1ZIa3NqMmFIT2M4a0s1c2xfa1lodE1MWmJzdW4wU0pZNW4zak9LYWxickZaTm5yTnpQVW10SkVFcGoyS1pLN2p6WFVoM3hlLXQ3QlF0cXd3dG9LbklUSk5wRTRB?oc=5",
         "source": "Google News League One",
@@ -4304,7 +4293,7 @@
           "Manchester City",
           "Wigan Athletic"
         ],
-        "title": "Reggie Walsh & Charlie Gray: Wigan Athletic sign Chelsea and Manchester City midfielders on loan - bbc.co.uk",
+        "title": "Reggie Walsh & Charlie Gray: Wigan Athletic sign Chelsea and Manchester City midfielders on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA1bFlYLVNCNkpQU1pDdlFOSVNlSVdOSnlBWS1vQkkxQ0RVUnhOOFNscnBPbVRjTlNIQlJqaS0zM05QbVpaYTZvRExDUnpPSS1Nd3lRYWdLd0E3YzQwNEZCVklBbHh6WXB4dkE?oc=5",
         "source": "Google News League One",
@@ -4405,9 +4394,10 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Liverpool"
+          "Liverpool",
+          "York City"
         ],
-        "title": "Liverpool rarely sign loan players – and the ones they do rarely succeed. Ronald Araujo is their latest hope… - nytimes.com",
+        "title": "Liverpool rarely sign loan players – and the ones they do rarely succeed. Ronald Araujo is their latest hope… - The New York Times",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaS1wZ2FzTW4yYVpXLTd2b2J5WjNlQ1dJX2Yya1lLTUxQMEZtZkh1TWZBZUpraVludV82YU5TNXlONmRLc05JdmtPbHdtZDY1NTQxT016UEZCQ2NmSmFSV2NjNHZQdFNoeGpBYWppaHFON0FFanpIa1BJaUJvZ3V0RjA1OVdnN0JtVUNLZHNGZ2ZzR2c?oc=5",
         "source": "Google News Premier League",
@@ -4801,7 +4791,7 @@
         "clubs": [
           "Liverpool"
         ],
-        "title": "Liverpool transfers: Ronald Araujo close to season-long loan from Barcelona - bbc.co.uk",
+        "title": "Liverpool transfers: Ronald Araujo close to season-long loan from Barcelona - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlTllIeEdNT0cxS2w5Wk1uQkJPenVEN2dyTktyc2czYW5FV3B1WTQwMlBxUlBaLW44cWh4OHJkeWdZY2lXQ0htV3NsRGd0OVh2RFBOUmpSaWNvRzVSNzhINHpPaHMtWUNJN3c?oc=5",
         "source": "Google News Premier League",
@@ -5920,6 +5910,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Signing of the Season: Rayan Cherki, Dominic Calvert-Lewin and GOAL's top 20 for 2025-26 - ranked - goal.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcFhIRTYzQUtPc3NSOGE2blJ1cE1qUDRZYUxib3M2ZUVoMUR0dmk1ZllkcDBGa01zQUFQd2FTSW0yQU1FMVhPQ0tOZHVobVNqLWlGdWF6TFU0bmNkczM5azA5Q1Rwb082cUlKdzRIUUk5TWtqTWtXeUJBZkZtUHh6UXJ4WmRzaVBkUjJMcjRXZ0UwLVZyVFFsX2p1OTlnZVdUX3hSa0xMMmpXcWdPbE1XOQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-05-21T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Coventry City"
         ],
@@ -6238,7 +6239,7 @@
         "clubs": [
           "Manchester United"
         ],
-        "title": "Man United confirm next transfer as three deals done in 24 hours before deadline - Manchester Evening News",
+        "title": "Man United confirm next transfer as three deals done in 24 hours before deadline - manchestereveningnews.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHAwSksxek5WNVJjN3A3MXdVV0tvcEtBcmZHVzlGZDRxa1Nra3d0LUgtbjltSmxuX0lTVlNLdGYzSDd3Q1RRSU42ZFVxb2h6SGhGTklUc0pjTVB3eUhmYk1UMU1qeU9QNGstRlF5YXMwaHZzMEVOY1Z0RHU5OG5wZHJLRXZ1c0Vsdmpub0hDdV91dEpxLVQ5MzJISTdmQnlXZk1jUDFHX3hFS1pDTndN0gG0AUFVX3lxTE1MTENhNVBpSlF4cTd6Sko2TlBhWXdOeUxGX2xiWjU4cUlELVlBWTFzY3R6WG1yV29CS0pMNTgyZElraTRuak03by1kbmc4ZGZ4Z2hKajdSTXV3NWJacHdEN3E4dUpIYVdMVldFZERhVWJjUFk5bVJOY1lyQ0VmbFpMcnR0ZEJ5T0pMUWJIdUNoQzR6aHZiZ3pCVHFqaGktRWVCNVpNMFRXNFd0cnNHa2FCNW5EcQ?oc=5",
         "source": "Google News League Two",
@@ -10987,7 +10988,7 @@
           "Portsmouth",
           "Barnsley"
         ],
-        "title": "Makenzie Kirk: Barnsley sign Portsmouth striker on season-long loan - bbc.co.uk",
+        "title": "Makenzie Kirk: Barnsley sign Portsmouth striker on season-long loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90aHdLbUpiMzlCMjUySnY4Z0JfcUJ5TmdBSDlQME1GQ255MEZYU0RLbTZMWUp1V2tXU2hwSmNqbWFTQXVBQlhiSFhpQzhJU0YwdXNaY25nbHdBT2lVNTltdnNYeDhjanVGVGc?oc=5",
         "source": "Google News League One",
@@ -11053,7 +11054,7 @@
           "Birmingham City",
           "Middlesbrough"
         ],
-        "title": "Dael Fry: Birmingham sign former Middlesbrough captain - bbc.co.uk",
+        "title": "Dael Fry: Birmingham sign former Middlesbrough captain - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oZnp6dmJKX2l6NU1zTnFSTHpOVTlLcWczVDZES2RHVUdpUGZubGFVVmgwbVZoQ3daTll5eXpQVnJNUXpmdTczUWpWVWNnN1pLSnUtWi1XcWczdGdYT0Z6TkwteC0ySFc5aFE?oc=5",
         "source": "Google News Championship",
@@ -13110,7 +13111,7 @@
           "Leicester City",
           "Cheltenham Town"
         ],
-        "title": "Jake Evans: Cheltenham Town sign 17-year-old on loan from Leicester City - bbc.co.uk",
+        "title": "Jake Evans: Cheltenham Town sign 17-year-old on loan from Leicester City - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE01a2ZUMDFtYU5faXhTdGlucF9VdlJUUEN0aHg0eG96bXJ1S3ZBZHZrZ2kyOHdtUWI1U0VCQ1YxTHZqSzBMckM0M0pkSWNoWUlnZFZ4cUp4RnpKTl9XX0lfTmZDbUU0UVB0OVE?oc=5",
         "source": "Google News League Two",
@@ -14053,6 +14054,19 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
+          "York City"
+        ],
+        "title": "Ranking all 155 Premier League transfers in the 2026 summer window from worst to best - The Athletic - The New York Times",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOWx6eE1EWkd3N3FfY2g2eF9tLVZ4Vjl4Yy03T2hkWGh0Sjc1S3NDUE8xZkFMR29DZ0VRZkczSnFGbkhnaUFSWlpBRGRIWVpxTXpZQl93S25Ial9hZUktQjA3aUl0VDFRaGJqR3BITHVGcDcyTEoyY01qeGlQVWVSZ1NKamVxbHBvYzFiaC1EQzAtNDMzLUhNUVA2eEQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
           "Rochdale"
         ],
         "title": "Rochdale complete deals for Glenn Middleton and Charlie Tasker - BBC",
@@ -14119,7 +14133,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "Every signing completed in League Two on transfer deadline day - Wilts and Gloucestershire Standard",
+        "title": "Every signing completed in League Two on transfer deadline day - wiltsglosstandard.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU3V5UlhNbXpTMnhBc2p0Z1VWWmlseS15eUxXTHZKUzNJb0xkVzVxWGpVMGtYekplZ3AxUzlxbnAyeVd6dzdJMzJEcUxldTBKMWpoYnkwM2RyeWN2UUxoVk1PRC1hV04xQVFlaGY2blk4OWhnSkpCc0pqZ1pHa0xYM01EMC05Vk5EbDFnQ2RGdXFBSl9tUVBDazZzTXRDUQ?oc=5",
         "source": "Google News League Two",
