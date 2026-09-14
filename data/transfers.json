@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T19:54:01.323Z",
+  "updatedAt": "2026-09-14T20:02:50.220Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -138,17 +138,6 @@
         "link": "https://www.bbc.co.uk/sport/football/articles/cj9x7e40gr2o?at_medium=RSS&at_campaign=rss",
         "source": "BBC Sport",
         "publishedAt": "2026-09-12T10:07:36.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Ranking all 155 Premier League transfers in the 2026 summer window from worst to best - The Athletic - nytimes.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOWx6eE1EWkd3N3FfY2g2eF9tLVZ4Vjl4Yy03T2hkWGh0Sjc1S3NDUE8xZkFMR29DZ0VRZkczSnFGbkhnaUFSWlpBRGRIWVpxTXpZQl93S25Ial9hZUktQjA3aUl0VDFRaGJqR3BITHVGcDcyTEoyY01qeGlQVWVSZ1NKamVxbHBvYzFiaC1EQzAtNDMzLUhNUVA2eEQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-12T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -4588,6 +4577,19 @@
         "clubs": [
           "Manchester City"
         ],
+        "title": "Premier League clubs face financial hurdle to sign Manchester City star - Club officials prefer loan exit - cityxtra.co.uk",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYWx4Skl1QUhkbUZOTmVPSTJJRjh1YVhuaW5uaFNSNzZfSGxRU3hlWWl4TzZTZ1FITmdaQjd1bVNEOTV2MFROWDNoZmJpOVpKUi1GWTl2VkVOZXNaRnB0aEFBUkd4TDRHeTVqc3J3bFFQck5WRE9CWTkwWEpNczl0ejB6REV0QjF3bkZ1eVdRMjRadE5ENUVhR2xrQ2pZcGdRVnZzTktTUk5xTHdEWnY4cXZBLTFQREdzSm02OXpXTWhBa2thM2dka0dsWQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-12T14:06:14.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
         "title": "Manchester City agree £10 million package for League One goalkeeper - Championship loan expected - cityxtra.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ28wdUh0Y3FSLW80cWZVX2hQWmNhaXdfRTRGVkg3RmlqV1ZTZ0ZDQzNkdWJxZi1CdW9XZ252WGJBRklRRVpkMGNWZmNWTjBncUZJTmwzNkdGb0xoMzhYVGZ1empNTllJVUhKc05yTl9zSzFPZ1ZEeE5CUk5iRHAwOVQyMkIwLXJvaUxKTkdudWVHaDlEaHI4TWxMd2p5WHRzcHFUemwyNWZFdm1wSXdFU1Zpa2hGaWtjU2pFYWpjSHpCQ0o2?oc=5",
@@ -5526,9 +5528,10 @@
         "clubs": [
           "Arsenal",
           "Liverpool",
-          "Manchester United"
+          "Manchester United",
+          "York City"
         ],
-        "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic - nytimes.com",
+        "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic - The New York Times",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSTZqS3RJUklXWk5icW1DaDZ5bEx0LTVDV29FemdSZER4bnc3d2Y4Nmg4NjFLQnNwalV2eEVKVGhNcVNEUWQ2UzFXbzdyV2ZITmVxTFZaUzRVYnlzcjBQRHV6bTUtRDQtTG9SNjltUllsVHRqcjFVTmJLMGt4MmE0Sks2VkZKd3dLaWk4TzJwZFg1SE9nM2d5R0FQRTZubXhvNjZGMUxia2UwNVZaWXBWOWVnY0VweTk0TUF1UlM3a0Qtc0p4YmpaNmRLZw?oc=5",
         "source": "Google News Premier League",
@@ -5702,9 +5705,10 @@
         "clubs": [
           "Arsenal",
           "Liverpool",
-          "Manchester United"
+          "Manchester United",
+          "York City"
         ],
-        "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic - nytimes.com",
+        "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic - The New York Times",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVGxHRlhHeVg3WXhsdzV2QllUUG5WRnI3cXphMkhHbVJ0Z0tETjZHeVQwWEJ6bEFJRWJDLW9kZTZTN3ZnSTRaeU5tdmxzME5nSXEwQUJPTEtiRzJ3MXpqc3o1UjdBUXkzb0Z2V3FlbFd3WnQwMzN1WHBpSnRHb3FZUkk3WTBvZDhPZlA5LW9vM29DM1hrajJDdkR2WEtJek10eWFhLXRzQzBBeWVrYlE?oc=5",
         "source": "Google News Premier League",
@@ -11681,6 +11685,17 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [],
+        "title": "£19m chase, top scorer gossip - Every Championship club's transfer state of play - Derbyshire Live",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWmRNVlNmOHYyeTUwOWhzNmN0cHViWVVuVVJvNjhzRS1KVmtGdkpJTGM0WFdmemNqNE5lZ216UVQwdWJKV3hKazZ2R2lWUEp3WjBQcjZCMkV4YVdJdTNVT0RJYmxYYk5sejZCaExoYjBQVkVDU3BrcV9KR1FDZnJ2QXh1XzlDMjVkUHp2Ql9jMXZxTEh3RmFWNkxVOFJPUDBDcC1pTUpOZkNXT3RBb0tLNkZn0gG3AUFVX3lxTE13OHI4SDJuVTJtR0dWc3J2OENWaEZzUkdXejNOSnJkdWlpZW1YVVoyUGV3ZzBPN21FdkpKNkNnS0NrVkM5YmdIN3lCUWFubS1TVm5HV2RTQklkOWh3N1BWYnJRUzRWb2YwMEVfZ3RZV1BOcmV5d3cwYXp5eklHcHEwQ3lvYTQwVURuaWd3dTJZTG1wSXlUR1RGS2pIMlV3d2gwLXl1SzNyOFlCUlJEQ1FMRUh5d2JLZw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-27T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
         "title": "Championship January transfers: Confirmed deals and net spend for 2026 winter window - sportsmole.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxON0NzdjZ4d1lWRjFBTjl2U25RQm9kOWpidEwzVjZGMUFaVjFmS1QxanE1UVF3czdjUGRic3RoUWdSLUdfcXljM1lnOTVCQ24xdFhJYkNQaHFMc1k3UW1pSEk0aTkxVjlTS2pXdG1jYkhvUm9XN0Q4dHlEX1ZBTWpuT0JjYTh0d051WVRuRU5abE9DOWIwbE5KQ0ViNTlMNFkzYzJEN0FOR1FYLWl6WXkxaEdKNG5SWGdIak1CUmpRMjNGcEczWnJxWGFYQXNqVHUzZ0phNXRyZTBxelIxa3BqUENn?oc=5",
@@ -14002,6 +14017,19 @@
       }
     ],
     "4": [
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
+          "York City"
+        ],
+        "title": "Ranking all 155 Premier League transfers in the 2026 summer window from worst to best - The Athletic - The New York Times",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOWx6eE1EWkd3N3FfY2g2eF9tLVZ4Vjl4Yy03T2hkWGh0Sjc1S3NDUE8xZkFMR29DZ0VRZkczSnFGbkhnaUFSWlpBRGRIWVpxTXpZQl93S25Ial9hZUktQjA3aUl0VDFRaGJqR3BITHVGcDcyTEoyY01qeGlQVWVSZ1NKamVxbHBvYzFiaC1EQzAtNDMzLUhNUVA2eEQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-12T07:00:00.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 4,
         "divisionName": "League Two",
