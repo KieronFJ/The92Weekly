@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T19:08:24.725Z",
+  "updatedAt": "2026-09-14T19:22:22.934Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5655,71 +5655,7 @@
         "score": 3
       },
       "venue": "Stamford Bridge",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Tarik Muharemovic",
-          "minute": "23'",
-          "team": "Leeds United",
-          "ownGoal": false
-        },
-        {
-          "player": "Brenden Aaronson",
-          "minute": "48'",
-          "team": "Leeds United",
-          "ownGoal": false
-        },
-        {
-          "player": "Cole Palmer",
-          "minute": "55'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Pedro Neto",
-          "minute": "60'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Danny Welbeck",
-          "minute": "65'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Dominic Calvert-Lewin",
-          "minute": "75'",
-          "team": "Leeds United",
-          "ownGoal": false
-        },
-        {
-          "player": "Valentín Barco",
-          "minute": "80'",
-          "team": "Chelsea",
-          "ownGoal": false
-        },
-        {
-          "player": "Danny Welbeck",
-          "minute": "90'+4'",
-          "team": "Chelsea",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Reggie Watson",
-          "minute": "45'+1'",
-          "team": "Chelsea",
-          "card": "yellow"
-        },
-        {
-          "player": "Cole Palmer",
-          "minute": "53'",
-          "team": "Chelsea",
-          "card": "red"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880856",
@@ -8733,8 +8669,8 @@
       "type": "league",
       "date": "2026-09-14T19:00Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Mon, September 14th at 3:00 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "8'",
       "home": {
         "id": "357",
         "name": "Leeds United",
