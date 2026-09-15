@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T18:58:19.872Z",
+  "updatedAt": "2026-09-15T19:08:15.566Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -5677,71 +5677,7 @@
         "score": 1
       },
       "venue": "Lamex Stadium",
-      "source": "ESPN",
-      "goals": [
-        {
-          "player": "Daniel Kemp",
-          "minute": "23'",
-          "team": "Stevenage",
-          "ownGoal": false
-        },
-        {
-          "player": "Josh Magennis",
-          "minute": "70'",
-          "team": "Stevenage",
-          "ownGoal": false
-        },
-        {
-          "player": "Mads Andersen",
-          "minute": "75'",
-          "team": "Luton Town",
-          "ownGoal": false
-        }
-      ],
-      "cards": [
-        {
-          "player": "Daniel Phillips",
-          "minute": "4'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Lewis Freestone",
-          "minute": "26'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Liam Walsh",
-          "minute": "30'",
-          "team": "Luton Town",
-          "card": "yellow"
-        },
-        {
-          "player": "Daniel Kemp",
-          "minute": "44'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Saxon Earley",
-          "minute": "80'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Luther Wildin",
-          "minute": "90'+3'",
-          "team": "Stevenage",
-          "card": "yellow"
-        },
-        {
-          "player": "Mads Andersen",
-          "minute": "90'+5'",
-          "team": "Luton Town",
-          "card": "yellow"
-        }
-      ]
+      "source": "ESPN"
     },
     {
       "id": "401880257",
@@ -8744,7 +8680,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "21'",
       "home": {
         "id": "343",
         "name": "Chesterfield",
@@ -8765,8 +8701,8 @@
       "type": "cup",
       "date": "2026-09-15T18:00Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "status": "STATUS_IN_PROGRESS",
+      "statusDetail": "21'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -8788,7 +8724,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "22'",
       "home": {
         "id": "341",
         "name": "Swindon Town",
@@ -8810,7 +8746,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "21'",
       "home": {
         "id": "344",
         "name": "Wycombe Wanderers",
@@ -8832,7 +8768,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "3'",
+      "statusDetail": "21'",
       "home": {
         "id": "315",
         "name": "York City",
@@ -8853,8 +8789,8 @@
       "type": "cup",
       "date": "2026-09-15T18:30Z",
       "completed": false,
-      "status": "STATUS_SCHEDULED",
-      "statusDetail": "Tue, September 15th at 2:30 PM EDT",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "8'",
       "home": {
         "id": "342",
         "name": "Peterborough United",
