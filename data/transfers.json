@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T06:12:44.479Z",
+  "updatedAt": "2026-09-15T06:29:56.911Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,8 +13,21 @@
         "summary": "The top stories and transfer rumours from Tuesday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13585971/blundering-var-duo-set-to-be-blocked-from-officiating-on-manchester-united-games-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-15T06:12:44.285Z",
+        "publishedAt": "2026-09-15T06:29:56.713Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Liverpool"
+        ],
+        "title": "Coutinho joins Neymar at Santos for rest of season",
+        "summary": "The former Liverpool and Barcelona midfielder joins Brazilian side Santos from his boyhood club Vasco da Gama.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ckd79411vynlo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-09-15T06:15:29.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -5775,7 +5788,7 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal 'agree first signing of the summer' with Gunners man now set to leave on loan too - football.london",
+        "title": "Arsenal 'agree first signing of the summer' with Gunners man now set to leave on loan too - Football London",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQmRXVkNLVTc2Ym9sUmlidll0R2d3QTZRR2tRdTV0eDRzSHVmVTE3OVRCc3J6V1ZUMDNKNU5XYm5CVHJndlRfY1ptYVdQOVYxTzN5R3RhVFY5dkpIamNaZFB3SW5ybkhreFdtOGVBR2NfUFhYeWx4YTB1bjE4VGlOTHBfaDU5QUcwam9RV1lWR2hkRGg4X1FwRWJCSlpwc1HSAaQBQVVfeXFMTXRxNHN1RVRobk5WcEc0RUY5SUdVWEtCd3Z5YlI0bkJFQldGNVZ3UHpBSXBlUm1ORm4zbDZDU1BYSkVpcnIzVVhTUXFuTmNTYjZTNnlFcjFyVVR3YVV1dnVhNll0bUZYRHZRNE4tS1RhUnJmVUFzOHFSTGRZbm14OGlOSExmNXBWbXprOHVqU09RZ0d2Q2ZYMFJKYk1SN1ViSkdqV2o?oc=5",
         "source": "Google News Premier League",
@@ -6664,7 +6677,7 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "First Arsenal January transfer deal confirmed as announcement made - football.london",
+        "title": "First Arsenal January transfer deal confirmed as announcement made - Football London",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYkFpS2MtN3c4dXJBWFhOVXJ1b21fbVZkTGhLODlDQk1XMnVZUm5tUFp3bjBZZGdyRGUzejgyX1pnaFFBMHUxbEdNVXVfVXBZWkFJdUhmcmtVb3dBNV83WVZPTUNGVm5xVUZJVFlIdUdRaTExaHU3VUNOUmxrQzY3WmN3N1RqVHhMRGRza2MwazAwS0xvWEdGSnJpeXFYQdIBowFBVV95cUxPU1ljTWtvNVNSM0l1dWI3MDJocTRVeTlHTFBCMDVBQjEweDE3OS1WYkl3TVBYZGRVYXFvaXhfc3EyTEdBaVBITmRpS09DOHZ6eGZmVk5ZbVByb25uZXZGYWEwTjNFeU9GRkE5TEhobUhOQWdEWFQ5azhBMUNfcFJCLUFubjFsUVVOMGNmdVlvTkdQWHg5TkZfRkxYeFl1dzA1LVNF?oc=5",
         "source": "Google News League Two",
@@ -7735,6 +7748,21 @@
       }
     ],
     "2": [
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Burnley",
+          "Preston North End",
+          "West Bromwich Albion"
+        ],
+        "title": "Why Burnley and Preston North End must react as ex-West Brom boss gets sacked",
+        "summary": "Burnley and Preston should consider moves for former West Brom boss Carlos Corberan following his recent dismissal from Valencia",
+        "link": "https://footballleagueworld.co.uk/ex-west-brom-boss-faces-la-liga-dismissal-burnley-and-preston-must-consider-pouncing/",
+        "source": "Football League World",
+        "publishedAt": "2026-09-15T06:15:11.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -12015,7 +12043,7 @@
           "Bristol Rovers",
           "Newport County"
         ],
-        "title": "Bristol Rovers, Newport County plotting transfer moves for player who Cardiff City 'really value' - footballleagueworld.co.uk",
+        "title": "Bristol Rovers, Newport County plotting transfer moves for player who Cardiff City 'really value' - Football League World",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTHBMc1BuRG9feE1rR1RoS3oxcTZmNlhLcHZzVjM2V0hocWFKc2NxR01uX1JTdGRIOFNQWkk5NW9KZUNZSXVSTW9sX2VscEhLN1c5M0FDSXpoMXBMSzRMM3hmbnp3ZDRHSmIwYUw5ZXYzUWw0ZnRBdm5TcXRRaVZXMXRtd3cwT1NzQ0J2V1M5ZHNxSm9vNU5od3FleEdabW1LQjdvUDVDbTdfUUVyWVRSOERrS0RGS3liYTVXTzNlaE83N1JyUm1r?oc=5",
         "source": "Google News League Two",
@@ -13381,7 +13409,7 @@
         "clubs": [
           "Leicester City"
         ],
-        "title": "Leicester City next two transfers decided after loan agreement confirmed - leicestermercury.co.uk",
+        "title": "Leicester City next two transfers decided after loan agreement confirmed - Leicester Mercury",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRnJSU0NLQm1sd3pBUk5FV2o2WGp1NFl4OWJzU2NfSFJfcUFSVEF4N1lLU0U3OG9ZNE1GU1J3TzIwcVdPTnkxeFE4aFZPd2dQbHFNRmtNWEJNNl9KelNqMWVnRUhqeHpjMXNwLUZfT0dOak5pd1JCbkppdHprYlp6LWJqNGtvSC1tSVJHaS1RaFRtTS11QnQwRmNoT2xVX3lXM2M3UjYxaEtMOHVBUHc?oc=5",
         "source": "Google News League Two",
@@ -13589,7 +13617,7 @@
         "clubs": [
           "Leicester City"
         ],
-        "title": "'Perfect sense' - Leicester City plot loan move for Premier League winger as conditions clear - leicestermercury.co.uk",
+        "title": "'Perfect sense' - Leicester City plot loan move for Premier League winger as conditions clear - Leicester Mercury",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSW5mdlNqQmo4UTJRNFNqbTh6ZUh3WU5UQ28wRXlhNU1ZVDc1cGZlQ25JWkoyUThYYkhldTdsU2lWc1lYdmlxYlRHcWp2ZzNFalNUZnJkSmUyQjl3c2J6NkYzUmRNM29YWUdIcGJNRVpPRUhQaUh4M3NxMTM1NmtRVzhyb2lCVlF5ci16cTduRXh3d0N5Rlh0ekJhSmktN1VCSndpeFZiTHg?oc=5",
         "source": "Google News League One",
@@ -14122,7 +14150,7 @@
         "summary": "England star Henry Pollock would consider playing abroad or changing sports altogether and has an open-minded approach to his career as talks with Northampton Saints continue.",
         "link": "https://www.skysports.com/rugby-union/news/12040/13585938/henry-pollock-northampton-saints-star-open-to-exploring-opportunities-in-future-and-says-eddie-hearns-1m-valuation-isnt-a-pressure",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-15T06:12:44.285Z",
+        "publishedAt": "2026-09-15T06:29:56.714Z",
         "status": "Rumour"
       },
       {
