@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T18:50:00.661Z",
+  "updatedAt": "2026-09-15T18:58:19.872Z",
   "source": "ESPN",
   "season": "2026/27",
   "matches": [
@@ -8744,7 +8744,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "21'",
+      "statusDetail": "3'",
       "home": {
         "id": "343",
         "name": "Chesterfield",
@@ -8765,8 +8765,8 @@
       "type": "cup",
       "date": "2026-09-15T18:00Z",
       "completed": false,
-      "status": "STATUS_IN_PROGRESS",
-      "statusDetail": "21'",
+      "status": "STATUS_FIRST_HALF",
+      "statusDetail": "3'",
       "home": {
         "id": "309",
         "name": "Leyton Orient",
@@ -8788,7 +8788,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "22'",
+      "statusDetail": "3'",
       "home": {
         "id": "341",
         "name": "Swindon Town",
@@ -8810,7 +8810,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "21'",
+      "statusDetail": "3'",
       "home": {
         "id": "344",
         "name": "Wycombe Wanderers",
@@ -8832,7 +8832,7 @@
       "date": "2026-09-15T18:00Z",
       "completed": false,
       "status": "STATUS_FIRST_HALF",
-      "statusDetail": "21'",
+      "statusDetail": "3'",
       "home": {
         "id": "315",
         "name": "York City",
@@ -8853,8 +8853,8 @@
       "type": "cup",
       "date": "2026-09-15T18:30Z",
       "completed": false,
-      "status": "STATUS_FIRST_HALF",
-      "statusDetail": "8'",
+      "status": "STATUS_SCHEDULED",
+      "statusDetail": "Tue, September 15th at 2:30 PM EDT",
       "home": {
         "id": "342",
         "name": "Peterborough United",
