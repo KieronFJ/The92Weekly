@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T22:52:40.722Z",
+  "updatedAt": "2026-09-16T22:54:19.499Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,7 @@
         "summary": "The top stories and transfer rumours from Thursday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13588777/luke-shaw-may-leave-manchester-united-next-summer-with-no-new-deal-in-sight-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-16T22:52:40.515Z",
+        "publishedAt": "2026-09-16T22:54:19.293Z",
         "status": "Rumour"
       },
       {
@@ -14417,8 +14417,10 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "Here's the latest transfer news from around League One - chad.co.uk",
+        "clubs": [
+          "Mansfield Town"
+        ],
+        "title": "Here's the latest transfer news from around League One - Mansfield and Ashfield Chad",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOLUtlcUMzUXlDcjFpSkNWemo5WVVlTGlGWU1Fd1djNUpVZTJFRmp0b1RmVHNCQV9JMTJLTjltbWxiZHhrTTNZa3ZhRi0tOGZoR2ZvTEp3SWljbEtjanRQVUV5TnlFc3ZhS3EtUURzRUowNEllQk5GdkVNN3l4SVZ0LWVqdG8zMVZWNnN3RXcwR0FQWlVBNlhVR0prR1VFNXpXUlBfZmQ4ZW1NaU1wMWpLQ25lQnhvNWkwTkxSdUJBbVBFdXI2UHc1NDFoSzhaWFp3dGlPY2pPRFI5cTJnS2NxMWFJQU1aeGhYTmpoSXJrd2s0R3EtaVpHNmhtV2dRQ1loeUxjWVNpWTdEeXlvMDV2WWdsMTdQb1hMdVNrbA?oc=5",
         "source": "Google News League One",
