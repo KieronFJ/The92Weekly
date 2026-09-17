@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-17T08:36:41.501Z",
+  "updatedAt": "2026-09-17T08:46:09.542Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Papers: Shaw could leave Man Utd next summer",
-        "summary": "The top stories and transfer rumours from Thursday's newspapers...",
-        "link": "https://www.skysports.com/football/news/12040/13588777/luke-shaw-may-leave-manchester-united-next-summer-with-no-new-deal-in-sight-paper-talk",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-17T08:36:41.340Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "Chelsea chairman Todd Boehly and director Mark Walter have agreed to sell their 25 per cent stake in the club to majority shareholders Clearlake Capital in a deal which values Chelsea at &#163;5bn.&#160;",
         "link": "https://www.skysports.com/football/news/12040/13584180/chelsea-todd-boehly-and-fellow-co-owner-mark-walter-to-sell-stakes-in-premier-league-club",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-17T08:36:41.339Z",
+        "publishedAt": "2026-09-17T08:46:09.334Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Papers: Shaw could leave Man Utd next summer",
+        "summary": "The top stories and transfer rumours from Thursday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13588777/luke-shaw-may-leave-manchester-united-next-summer-with-no-new-deal-in-sight-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-17T08:46:09.334Z",
         "status": "Rumour"
       },
       {
@@ -63,7 +63,7 @@
           "Sunderland"
         ],
         "title": "Manchester United’s latest nightmare & Sunderland shine in Europe",
-        "summary": "Aaron Paul is joined by Jobi McAnuff, Clinton Morrison and, John Murray.",
+        "summary": "Aaron Paul is joined by Jobi McAnuff, Clinton Morrison and John Murray.",
         "link": "https://www.bbc.co.uk/sounds/play/p0p9zfpn?at_medium=RSS&at_campaign=rss",
         "source": "BBC Sport",
         "publishedAt": "2026-09-16T22:34:00.000Z",
@@ -2808,6 +2808,17 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
+        "title": "The Wrap: What happened on Transfer Deadline Day - Premier League",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX1dxa0Rta3hBX3lYVmVTempFQ3lHblBkb0VnTTZMa2JLX0p2d093Umc1YldSdlNpNEVZcXRBcEN6cUJpLWh6RkFLX2IyeC1sVWp3YWdfVXhyUFYzY2VsNmlzellpYWF4OFQwUUdHUVBUT2VvLUUtZXdJcjh0Xzh5X1JSMFFWMFhhazZJSGJRNFFvampudEpucHJn?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
         "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYmFlbDlPS2o3V3lhSzVSdlZCZ2FZVTZfbU94a29DcnUxanRCem10M1pNVlJiZDItVGxqeFg4VEt0eHFKVG1GSE1sMWRralY1MzBIV2Y0UXluWmM0TEFFQkR4TjluUWdVSDJka1V4VU5jWDFRREJ5dDhBQVhDYVYwdjFXWkNwbDFzSVl1bm9obDQ?oc=5",
@@ -4271,6 +4282,20 @@
           "Manchester City",
           "Tottenham"
         ],
+        "title": "Omar Marmoush transfer news: Tottenham agree deal to sign Man City forward on loan with £60m obligation to buy - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWjV1eE5sUXppdlZGN0lDRm0xekJJNHpHczBMNzg2TFIxbVNlWVYxdHY0a2pGUHVtS2ZBTWhLUkZUVHYtLUhtVWJBOS1aQ2gyY21YNHBrWG1CWEp1bUd0T1MxOEtHUm13V29uSVZORWhUWXJUYTBmbGJEWV9uLWItMmVhYV9xcENjTWZHYVpaX19UMEloR25oRkpCamNXNlFvaUEtTDVpeFdHamZHaFJvQktUVVNlMDBjcjBkUUo5MEY0N0xuT0FpSjBSdU94SFNFaFZsbno5eXAwM0ptRFRZVzhlakdJWHp3cTFDdXpnYnVZMUlGYi10cg?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City",
+          "Tottenham"
+        ],
         "title": "Omar Marmoush: Tottenham agree loan for Manchester City forward - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1JV2lHTjNmUm5ES3YwaHVNNUxnOWRqd0pMaFN4OE9mMENVVEItSFFKS0o4LVU3eEJ5bkF1VmFUX2poLTk2djN6ZUVlSWVDYVRxRTJRMy1NTlBmbzdBNWUxOHE1bXp0cFE?oc=5",
@@ -4290,20 +4315,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-26T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City",
-          "Tottenham"
-        ],
-        "title": "Omar Marmoush transfer news: Tottenham agree deal to sign Man City forward on loan with £60m obligation to buy - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWjV1eE5sUXppdlZGN0lDRm0xekJJNHpHczBMNzg2TFIxbVNlWVYxdHY0a2pGUHVtS2ZBTWhLUkZUVHYtLUhtVWJBOS1aQ2gyY21YNHBrWG1CWEp1bUd0T1MxOEtHUm13V29uSVZORWhUWXJUYTBmbGJEWV9uLWItMmVhYV9xcENjTWZHYVpaX19UMEloR25oRkpCamNXNlFvaUEtTDVpeFdHamZHaFJvQktUVVNlMDBjcjBkUUo5MEY0N0xuT0FpSjBSdU94SFNFaFZsbno5eXAwM0ptRFRZVzhlakdJWHp3cTFDdXpnYnVZMUlGYi10cg?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-26T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -4703,17 +4714,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Juventus to sign Premier League goalkeeper after Emiliano Martinez transfer collapses - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzI3RXpxS2NDWjFmWTlNOTlxcVlxZGZxYUZwTndreDIwcm5PR3J0Q29qVU5DRlVaOTdsbEFHR3dieFduNXdzT2hON3pocVlST2steG9WQmtISzBYYXJ4cHJreXBCUFBZZ0lnemhwQ0Y3U0lWQmlUVkRuMWxmeFRzNlBtcjBJNkdndnRVakw5eFhEVWQtY2IyZGZfalJCNU5hNWJCWWJZWEJocnJ1?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-17T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Manchester United"
         ],
@@ -4956,12 +4956,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City",
-          "Sheffield United"
+          "Aston Villa"
         ],
-        "title": "Kalvin Phillips: Sheffield United re-sign Manchester City midfielder on loan - BBC",
+        "title": "Aston Villa keen on loan deal for Real Madrid wonderkid Endrick - Paper Talk - Sky Sports",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBCWTZIdHlCdGxaeUcxRHc4cktKcWtUMThCbjV2UGUwcW10ZVJCWnM4Q3p3Z1VZbkpibVB3dTBIbFJfWVpOV0RMSEQtS2hQMlo1WVEtclBEX2VxYXVrTFhGWGlmam1HVzA?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOFQ0aXk3YWlVMlY1QklOUUQ3NFd1WkR1UWk4cHJHVDZYN24yUEVsb3NfNnJzMkN4ZzJiaHZIcWxHY2RYNlRsTi1lazR2Z3M4UDZUdGtvb2xJa2VXbjNOc0ZsakdsamlYRW81UGtkTlNYNFBHVjcwWHZ3bHFrdmpkSDNwNEJWVVNHdVpQekJEOW1majhBRDRhY0pQV0dheWpOanhkcE55ZDlDc1dUYkdwNVlQc0s2bm5kOWRtUHh6eXNmSU9IOXBVWEhrZW9ZZmt1THdBdHFyWk0tYjlZ?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
@@ -4981,12 +4980,13 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
+          "Manchester City",
+          "Sheffield United"
         ],
-        "title": "Man City transfer news: Max Alleyne to 'undergo medical' ahead of Championship loan move - Sports Mole",
+        "title": "Kalvin Phillips: Sheffield United re-sign Manchester City midfielder on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYUxnblBzaWxTa3g5b1BvdTNrQTh6M3F2TWNONGZkdjdYTU8xakxVOXFtYV9BWmtZdTJ1dFRvejMxcVg1NGJsRW1nME8ySVRLQmZOS2s2RHJBeWpvSFNxY0hVTUwwLWxUZnNwUXBlRTdMOWhWaElVRnFRdVJ3ZjNUWmVaOFJZbXJhem5ROWVodUl0RGV2d2szb0htM0NJVUV5bEZCbTZGM3hhRXJ5S3RnaGlNeEZkVi1JWGlRbUpOcnNNVWpPNTJ2WWsydnJMdE0zUERTclNYaEdvSm9UcnVZ?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBCWTZIdHlCdGxaeUcxRHc4cktKcWtUMThCbjV2UGUwcW10ZVJCWnM4Q3p3Z1VZbkpibVB3dTBIbFJfWVpOV0RMSEQtS2hQMlo1WVEtclBEX2VxYXVrTFhGWGlmam1HVzA?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -4994,12 +4994,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Aston Villa"
+          "Manchester City"
         ],
-        "title": "Aston Villa keen on loan deal for Real Madrid wonderkid Endrick - Paper Talk - Sky Sports",
+        "title": "Man City transfer news: Max Alleyne to 'undergo medical' ahead of Championship loan move - Sports Mole",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOFQ0aXk3YWlVMlY1QklOUUQ3NFd1WkR1UWk4cHJHVDZYN24yUEVsb3NfNnJzMkN4ZzJiaHZIcWxHY2RYNlRsTi1lazR2Z3M4UDZUdGtvb2xJa2VXbjNOc0ZsakdsamlYRW81UGtkTlNYNFBHVjcwWHZ3bHFrdmpkSDNwNEJWVVNHdVpQekJEOW1majhBRDRhY0pQV0dheWpOanhkcE55ZDlDc1dUYkdwNVlQc0s2bm5kOWRtUHh6eXNmSU9IOXBVWEhrZW9ZZmt1THdBdHFyWk0tYjlZ?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYUxnblBzaWxTa3g5b1BvdTNrQTh6M3F2TWNONGZkdjdYTU8xakxVOXFtYV9BWmtZdTJ1dFRvejMxcVg1NGJsRW1nME8ySVRLQmZOS2s2RHJBeWpvSFNxY0hVTUwwLWxUZnNwUXBlRTdMOWhWaElVRnFRdVJ3ZjNUWmVaOFJZbXJhem5ROWVodUl0RGV2d2szb0htM0NJVUV5bEZCbTZGM3hhRXJ5S3RnaGlNeEZkVi1JWGlRbUpOcnNNVWpPNTJ2WWsydnJMdE0zUERTclNYaEdvSm9UcnVZ?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -6086,19 +6086,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Arsenal"
-        ],
-        "title": "Arsenal 'agree first signing of the summer' with Gunners man now set to leave on loan too - Football London",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQmRXVkNLVTc2Ym9sUmlidll0R2d3QTZRR2tRdTV0eDRzSHVmVTE3OVRCc3J6V1ZUMDNKNU5XYm5CVHJndlRfY1ptYVdQOVYxTzN5R3RhVFY5dkpIamNaZFB3SW5ybkhreFdtOGVBR2NfUFhYeWx4YTB1bjE4VGlOTHBfaDU5QUcwam9RV1lWR2hkRGg4X1FwRWJCSlpwc1HSAaQBQVVfeXFMTXRxNHN1RVRobk5WcEc0RUY5SUdVWEtCd3Z5YlI0bkJFQldGNVZ3UHpBSXBlUm1ORm4zbDZDU1BYSkVpcnIzVVhTUXFuTmNTYjZTNnlFcjFyVVR3YVV1dnVhNll0bUZYRHZRNE4tS1RhUnJmVUFzOHFSTGRZbm14OGlOSExmNXBWbXprOHVqU09RZ0d2Q2ZYMFJKYk1SN1ViSkdqV2o?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-07-07T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Leeds United",
           "Sheffield Wednesday"
         ],
@@ -6108,6 +6095,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-07-07T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "Arsenal 'agree first signing of the summer' with Gunners man now set to leave on loan too - Football London",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQmRXVkNLVTc2Ym9sUmlidll0R2d3QTZRR2tRdTV0eDRzSHVmVTE3OVRCc3J6V1ZUMDNKNU5XYm5CVHJndlRfY1ptYVdQOVYxTzN5R3RhVFY5dkpIamNaZFB3SW5ybkhreFdtOGVBR2NfUFhYeWx4YTB1bjE4VGlOTHBfaDU5QUcwam9RV1lWR2hkRGg4X1FwRWJCSlpwc1HSAaQBQVVfeXFMTXRxNHN1RVRobk5WcEc0RUY5SUdVWEtCd3Z5YlI0bkJFQldGNVZ3UHpBSXBlUm1ORm4zbDZDU1BYSkVpcnIzVVhTUXFuTmNTYjZTNnlFcjFyVVR3YVV1dnVhNll0bUZYRHZRNE4tS1RhUnJmVUFzOHFSTGRZbm14OGlOSExmNXBWbXprOHVqU09RZ0d2Q2ZYMFJKYk1SN1ViSkdqV2o?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-07-07T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -6194,19 +6194,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Arsenal"
-        ],
-        "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - The Mirror",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1psTGRWRWtCT3JCbnJncEg3a0ZVU3ctc1p4S3RDWGs3ZFdNbjQ4UldGSGtfODNKNWprXzg2dzdFTzRzTkVhZ2dXRHpMa3VyXzZYYThZWEJhQnlac0R0b3dCWE1WLXRsQlhNaV9hLU1La3V0S0hmRE40TEhfSzF1Y1RNZGFNVVl1UmxhTVB3blpvaExjVVNBZjNTWjI2dDh2a1RocNIBqgFBVV95cUxOUzlvbWNFcmRFRUd5ZnVlbUxaUHJkMUVVd0twVzIyMW1Qa0JRRU5Sa1I1MGhsN21IQzd6T1B4UkRtbGltUFJGVXdLODBwaVRRRk9GUllIUDFwQkEwRVJUVU9rZ0syWTUwclNKX0xFbTZpamgtRVVWRzdmbW1TYjRZSjRRcFFFTTVkdi1qQWlSYzJTUFdqRzFIUldqTGI2dWxNa2RJNDZFYWlPQQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-25T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Aston Villa",
           "Middlesbrough"
         ],
@@ -6216,6 +6203,19 @@
         "source": "Google News Championship",
         "publishedAt": "2026-06-25T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "Arsenal confirm £34.5m transfer is done as Mikel Arteta lands first summer signing - The Mirror",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1psTGRWRWtCT3JCbnJncEg3a0ZVU3ctc1p4S3RDWGs3ZFdNbjQ4UldGSGtfODNKNWprXzg2dzdFTzRzTkVhZ2dXRHpMa3VyXzZYYThZWEJhQnlac0R0b3dCWE1WLXRsQlhNaV9hLU1La3V0S0hmRE40TEhfSzF1Y1RNZGFNVVl1UmxhTVB3blpvaExjVVNBZjNTWjI2dDh2a1RocNIBqgFBVV95cUxOUzlvbWNFcmRFRUd5ZnVlbUxaUHJkMUVVd0twVzIyMW1Qa0JRRU5Sa1I1MGhsN21IQzd6T1B4UkRtbGltUFJGVXdLODBwaVRRRk9GUllIUDFwQkEwRVJUVU9rZ0syWTUwclNKX0xFbTZpamgtRVVWRzdmbW1TYjRZSjRRcFFFTTVkdi1qQWlSYzJTUFdqRzFIUldqTGI2dWxNa2RJNDZFYWlPQQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-06-25T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -12409,7 +12409,7 @@
         "clubs": [
           "Cardiff City"
         ],
-        "title": "Cardiff City tipped to move for League One star as contract uncertainty rumbles on - walesonline.co.uk",
+        "title": "Cardiff City tipped to move for League One star as contract uncertainty rumbles on - Wales Online",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNVdVSFB0ZnB6cU9hMHhvWldaYzdFc1k5akt1Wmg1NVZ4VDFGQVFIanJ5aGk1OEFLSE1MaTVVTGJ5ZDRjMmJKQlRFcmd5eXpNNkRyX2xTMW1UaV9UZjdBOThaUGZRdmZLSG8zalN6MS1Fd2hzYURrc05pVTFnd2EwLXVPUHhUbzdKbmdzUEMxeVlRWi0tYkxvVlZrTWs2QzJV0gGmAUFVX3lxTFBTOVNyN2laTWl0cmEwdThrYnNRd3RhUVNLSi1kV0hsbWRLcF93aEVJUHQ5ei14S3ZsYVEzc2xuZnZBQ1VUX0NMcU5vN2dGUVYxbHBPN29OY3FrX0hjbjBRQzVZZHBxRU55WUprbG1NMGNzcEx6Y0R5Z1dSSzdfcVdFempFMlh6QjdTNDRLT1lCbEJINnNNcUtpM20xaS1IYVVLSzR6U2c?oc=5",
         "source": "Google News League One",
@@ -15701,6 +15701,19 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
+          "Rotherham United"
+        ],
+        "title": "Rotherham United transfer latest: Premier League goalkeeper and international joins on season-long loan - Yorkshire Post",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxONkF3YVBYYm4yQm5WZW14TWxiU3R1OHVqMnRGeXFKQ3ZJNk1zXzRvWDlpR2ptbDdJNGJkdGQ3VUxjb0M3UjJmb2hzUlFtdS0yelZFN0hYTGFHdEhJajlHZ2dobkdIdWF1ZmFrUXVlTm5jN0stNG9tV3ZldmhObjFXSjZEZGJEQ29Ic1RDU0pqX0J4Z0tSRVpKcjNJeWV1UkNHU0Z1aTlUTVdNNFV2QnQyeUpDeF83NkUtaWt3cFZxdU9VeHVUVWNZX1lsbDNrOV9CeHFTdS0tZXFWSjZVSndacm81elRmcHZmdms0WnNR?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
           "Bristol Rovers"
         ],
         "title": "Bristol Rovers sign midfielders Gough and Russell-Denny on loan - BBC",
@@ -16032,7 +16045,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "When does the 2026 January transfer window open? Deadline day and time it closes - walesonline.co.uk",
+        "title": "When does the 2026 January transfer window open? Deadline day and time it closes - Wales Online",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdHktV1hqQzVUdjUzdS1vbkx3TDctME0ydnZocWRZcXRjc1ZEYUc5b29DMUplcXpQLXN4VzN4ZXFKVVJtdW45cU9WUjhDN093bG84MDZZWjVTQklCZ281QmhGTTN6cEpzem45U2tJR0ZqTlhOQ2ZQaTF6SjR0cWIzM3QzaTJyNEdBTmI5XzdXa1J6c1l1TEJGTFNGTzFDa0dMTFZIMTFyY9IBrAFBVV95cUxQZ05QVWk2a1lkdHhlNnozMExnOGhIaXg2WFpwa2ROQ3oyY2t6T2hTSEhoQVpPQlJZcHZRXzZPM1BMdXNDMFhoYmtOTVA4WVlWYlZiS29BOGJpVEhiblJLZGFVYWFrdG42ZTM5NUhnWnZKUVE0OEx5NzBVMTBvNVk3azBWM2Z6Z0RyczRUaS00MkZIa18zVnRhWG1HUFFyMEJHUU1zcHRIeTVNMkNV?oc=5",
         "source": "Google News League Two",
