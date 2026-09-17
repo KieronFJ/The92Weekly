@@ -1,8 +1,185 @@
 {
-  "updatedAt": "2026-09-17T10:05:08.499Z",
+  "updatedAt": "2026-09-17T10:20:34.449Z",
   "source": "ESPN",
   "season": "2026/27",
-  "matches": [],
+  "matches": [
+    {
+      "id": "401906384",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-18T18:00Z",
+      "completed": true,
+      "status": "STATUS_FINAL_PEN",
+      "statusDetail": "FT-Pens",
+      "home": {
+        "id": "309",
+        "name": "Leyton Orient",
+        "score": 1
+      },
+      "away": {
+        "id": "3802",
+        "name": "AFC Wimbledon",
+        "score": 1
+      },
+      "venue": "Gaughan Group Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906266",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-18T18:00Z",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
+      "home": {
+        "id": "353",
+        "name": "Northampton Town",
+        "score": 0
+      },
+      "away": {
+        "id": "18774",
+        "name": "Brighton & Hove Albion U21",
+        "score": 3
+      },
+      "venue": "Sixfields Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906385",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-18T18:00Z",
+      "completed": true,
+      "status": "STATUS_FINAL_PEN",
+      "statusDetail": "FT-Pens",
+      "home": {
+        "id": "338",
+        "name": "Reading",
+        "score": 1
+      },
+      "away": {
+        "id": "344",
+        "name": "Wycombe Wanderers",
+        "score": 1
+      },
+      "venue": "Madejski Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906267",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-18T18:00Z",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
+      "home": {
+        "id": "400",
+        "name": "Stockport County",
+        "score": 6
+      },
+      "away": {
+        "id": "18776",
+        "name": "Everton U21",
+        "score": 3
+      },
+      "venue": "Edgeley Park",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906268",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-18T18:00Z",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
+      "home": {
+        "id": "350",
+        "name": "Wigan Athletic",
+        "score": 3
+      },
+      "away": {
+        "id": "20075",
+        "name": "Aston Villa U21",
+        "score": 2
+      },
+      "venue": "DW Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906383",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-18T18:45Z",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
+      "home": {
+        "id": "280",
+        "name": "Barnet",
+        "score": 5
+      },
+      "away": {
+        "id": "19299",
+        "name": "Arsenal U21",
+        "score": 1
+      },
+      "venue": "The Hive Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906265",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-19T18:00Z",
+      "completed": true,
+      "status": "STATUS_FULL_TIME",
+      "statusDetail": "FT",
+      "home": {
+        "id": "304",
+        "name": "Mansfield Town",
+        "score": 1
+      },
+      "away": {
+        "id": "18779",
+        "name": "Manchester City U21",
+        "score": 4
+      },
+      "venue": "One Call Stadium",
+      "source": "ESPN"
+    },
+    {
+      "id": "401906382",
+      "competition": "EFL Trophy",
+      "competitionCode": "eng.trophy",
+      "type": "cup",
+      "date": "2026-08-25T18:00Z",
+      "completed": true,
+      "status": "STATUS_FINAL_PEN",
+      "statusDetail": "FT-Pens",
+      "home": {
+        "id": "308",
+        "name": "Bristol Rovers",
+        "score": 2
+      },
+      "away": {
+        "id": "18775",
+        "name": "Chelsea U21",
+        "score": 2
+      },
+      "venue": "Memorial Stadium",
+      "source": "ESPN"
+    }
+  ],
   "competitions": {
     "eng.1": {
       "name": "Premier League",
@@ -27,7 +204,7 @@
     "eng.trophy": {
       "name": "EFL Trophy",
       "success": true,
-      "matches": 0
+      "matches": 8
     },
     "eng.league_cup": {
       "name": "Carabao Cup",
@@ -40,5 +217,22 @@
       "matches": 0
     }
   },
-  "teamLogos": {}
+  "teamLogos": {
+    "Leyton Orient": "https://a.espncdn.com/i/teamlogos/soccer/500/309.png",
+    "AFC Wimbledon": "https://a.espncdn.com/i/teamlogos/soccer/500/3802.png",
+    "Northampton Town": "https://a.espncdn.com/i/teamlogos/soccer/500/353.png",
+    "Brighton & Hove Albion U21": "https://a.espncdn.com/i/teamlogos/soccer/500/18774.png",
+    "Reading": "https://a.espncdn.com/i/teamlogos/soccer/500/338.png",
+    "Wycombe Wanderers": "https://a.espncdn.com/i/teamlogos/soccer/500/344.png",
+    "Stockport County": "https://a.espncdn.com/i/teamlogos/soccer/500/400.png",
+    "Everton U21": "https://a.espncdn.com/i/teamlogos/soccer/500/18776.png",
+    "Wigan Athletic": "https://a.espncdn.com/i/teamlogos/soccer/500/350.png",
+    "Aston Villa U21": "https://a.espncdn.com/i/teamlogos/soccer/500/20075.png",
+    "Barnet": "https://a.espncdn.com/i/teamlogos/soccer/500/280.png",
+    "Arsenal U21": "https://a.espncdn.com/i/teamlogos/soccer/500/19299.png",
+    "Mansfield Town": "https://a.espncdn.com/i/teamlogos/soccer/500/304.png",
+    "Manchester City U21": "https://a.espncdn.com/i/teamlogos/soccer/500/18779.png",
+    "Bristol Rovers": "https://a.espncdn.com/i/teamlogos/soccer/500/308.png",
+    "Chelsea U21": "https://a.espncdn.com/i/teamlogos/soccer/500/18775.png"
+  }
 }
