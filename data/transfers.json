@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-18T19:34:47.353Z",
+  "updatedAt": "2026-09-18T19:35:40.883Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Gabriel edging closer to Man Utd exit after Barca talks",
-        "summary": "JJ Gabriel and his family are in Barcelona for talks about a potential move to the Catalan club.",
-        "link": "https://www.skysports.com/football/news/12040/13589387/jj-gabriel-edging-closer-to-manchester-united-exit-amid-barcelona-talks-about-a-potential-move-for-the-forward",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-18T19:34:47.222Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -27,7 +14,20 @@
         "summary": "Alice Bergstrom and Vivien Endemann both scored as Liverpool came from 1-0 down to lead Manchester City after 29 minutes.",
         "link": "https://www.skysports.com/watch/video/13589441/wsl-alice-bergstrom-and-vivien-endemann-on-target-as-liverpool-come-from-behind-to-lead-manchester-city",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-18T19:34:47.222Z",
+        "publishedAt": "2026-09-18T19:35:40.674Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Gabriel edging closer to Man Utd exit after Barca talks",
+        "summary": "JJ Gabriel and his family are in Barcelona for talks about a potential move to the Catalan club.",
+        "link": "https://www.skysports.com/football/news/12040/13589387/jj-gabriel-edging-closer-to-manchester-united-exit-amid-barcelona-talks-about-a-potential-move-for-the-forward",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-18T19:35:40.673Z",
         "status": "Rumour"
       },
       {
@@ -5198,19 +5198,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester United"
-        ],
-        "title": "Manchester United youngster set for Championship loan despite contract worries - The72",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRXVfc2hDRkUzeW5PMTdDX0ZSbGplVTRacW9QWERLZGg5cE5TRXJvT0FGNmk3RmZ1VXJ2dTFEUWJNdlhlZWVwS1Mwd1QyM2traEpMNUd6bzNWQXFkRnF2OTM0cDBZbDhybTVOOTRKV0xOVUtuOFFhUTR6elZLMEFocTE3dnJ6TzliRnNTUTRiWFlXdTBfWElkTVV3NXdSSFByX2h5NGRyclYzZGRPYkMxdGZ1MW84S3c5bHVfRklIQXpiVWlVLUpV?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-13T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Brighton",
           "Leicester City"
         ],
@@ -5218,6 +5205,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FNnd3MGt2RUwxdWxSb2ZqT0pES2Fsblh0M1U4UnlrQ1dHZ0NJTzFMTG5SZGlHYkpCRlRWZ1NyYzVXM3ZHNWNjdDRKbG9zVVNNeXVmNnJ4a3hQSTN2TUx3SkI2SDVrZUU?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Manchester United youngster set for Championship loan despite contract worries - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRXVfc2hDRkUzeW5PMTdDX0ZSbGplVTRacW9QWERLZGg5cE5TRXJvT0FGNmk3RmZ1VXJ2dTFEUWJNdlhlZWVwS1Mwd1QyM2traEpMNUd6bzNWQXFkRnF2OTM0cDBZbDhybTVOOTRKV0xOVUtuOFFhUTR6elZLMEFocTE3dnJ6TzliRnNTUTRiWFlXdTBfWElkTVV3NXdSSFByX2h5NGRyclYzZGRPYkMxdGZ1MW84S3c5bHVfRklIQXpiVWlVLUpV?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-08-13T07:00:00.000Z",
         "status": "Loan"
       },
@@ -8451,17 +8451,6 @@
       }
     ],
     "2": [
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two | Football News - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQYjdtT0g4WFYxMnFSWXp0a1JZMWQwNHZQRHdoSXNqbi1DR0RfZExIQ3VrWVR2ajlSeGI5SDl1ZWdKVDNIY01iVmctNnM4cm5ScF81NjJ1OWJ3YzJMSHRRNTVqV1E0Mjc0bXQxWHBjd25lbklLN3hDc1FDMmFfQmNQSmUwS0pLLU84T3pZR2ZyWHo4Q29uM0FPVm9aWExNRmplTnBVNHpocnZiRy1USXFyN2k3WkhNQ3dQVGVTVHZoOVBzVGQ5bHB4RDBIWHJzVGRUZDVET2VCVEJIdkJQU2dXektSMWNCLTA?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-09-18T13:36:42.000Z",
-        "status": "Rumour"
-      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -14158,6 +14147,17 @@
       }
     ],
     "3": [
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [],
+        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two | Football News - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQYjdtT0g4WFYxMnFSWXp0a1JZMWQwNHZQRHdoSXNqbi1DR0RfZExIQ3VrWVR2ajlSeGI5SDl1ZWdKVDNIY01iVmctNnM4cm5ScF81NjJ1OWJ3YzJMSHRRNTVqV1E0Mjc0bXQxWHBjd25lbklLN3hDc1FDMmFfQmNQSmUwS0pLLU84T3pZR2ZyWHo4Q29uM0FPVm9aWExNRmplTnBVNHpocnZiRy1USXFyN2k3WkhNQ3dQVGVTVHZoOVBzVGQ5bHB4RDBIWHJzVGRUZDVET2VCVEJIdkJQU2dXektSMWNCLTA?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-09-18T16:36:42.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 3,
         "divisionName": "League One",
