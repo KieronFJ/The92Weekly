@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T10:31:11.459Z",
+  "updatedAt": "2026-09-18T10:31:55.603Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -5054,20 +5054,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Aston Villa",
-          "Bolton Wanderers"
-        ],
-        "title": "Samuel Iling-Junior: Bolton Wanderers sign Aston Villa winger on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SZGl2UWJCVTNPUDljY0FFQWdYZTlKQi13eEJ0amZBQWhhVllkeF9pSUZ4aHBPR192a0tKQ1VUQ3dQVHJwaV9US01JeGdTRWExM19GU3NWa3F5Sld5MmpMcmRBZ3pQUnc?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City",
           "Wigan Athletic"
         ],
@@ -5077,6 +5063,20 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Bolton Wanderers"
+        ],
+        "title": "Samuel Iling-Junior: Bolton Wanderers sign Aston Villa winger on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SZGl2UWJCVTNPUDljY0FFQWdYZTlKQi13eEJ0amZBQWhhVllkeF9pSUZ4aHBPR192a0tKQ1VUQ3dQVHJwaV9US01JeGdTRWExM19GU3NWa3F5Sld5MmpMcmRBZ3pQUnc?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -5368,19 +5368,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea transfer news: League One club 'in talks' to loan 20-year-old starlet for specific reason - Sports Mole",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOckhxNl90Rl9vLU5BcFRoNDZpMjMydEtrc055RHA2NDRfZVdMRmNveTNTNjRaNFRpb2ctNHVTcEZIV2hfSTd2YlJLYjduOVN1Z1pEMnBTM0xUSnZucmdteDFMQ0x6UUgwckxkNFdrM1RpZXAzcXJwb2NtQmd2V2xPdk9fRTRqNDRUdlF1dXM3bjVjZmw5NjRkSlJKWXplYUdHejVjQUhCZnFLR2t4MXNKUUN3Zy1TeWZweWYtbzRFOTA0c1RobGtFVnVqelo3MVE4eHR3?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-09T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Liverpool"
         ],
         "title": "Ranking the 11 Liverpool loan signings this century before Ronald Araujo arrives - Football365",
@@ -5389,6 +5376,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-09T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea transfer news: League One club 'in talks' to loan 20-year-old starlet for specific reason - Sports Mole",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOckhxNl90Rl9vLU5BcFRoNDZpMjMydEtrc055RHA2NDRfZVdMRmNveTNTNjRaNFRpb2ctNHVTcEZIV2hfSTd2YlJLYjduOVN1Z1pEMnBTM0xUSnZucmdteDFMQ0x6UUgwckxkNFdrM1RpZXAzcXJwb2NtQmd2V2xPdk9fRTRqNDRUdlF1dXM3bjVjZmw5NjRkSlJKWXplYUdHejVjQUhCZnFLR2t4MXNKUUN3Zy1TeWZweWYtbzRFOTA0c1RobGtFVnVqelo3MVE4eHR3?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -6694,17 +6694,6 @@
         "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdmVxVzUwVjV6MWJmbEU2XzdYSk9JVENESUpVRk5GMGNSbHFMTkNHRmdtckpLUjl0QzBDNi1aaFE2VHE2TTNWOHpwb0lNbkVDaWhudVpGNWxLc2RwUGhhRldwRjF0emFoN0w5Y1k2ejRhdHl6czhtanhFemhHdVd2MW9DMFZwUnowZ1dSSnYzWGQybHZZUmpRSnRmaEJiZzhhR3h6dHJ5S283SlhYN3JJOGFyazM3eWZtaG02Ml92OFBMMzktYS13b3BYdDdqTDlibnFzdk5UTG9aTG1jcm1RTw?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-02-03T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "When is Transfer Deadline Day? - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPaDhTOGNIS3psZ0NYMm92Q0dlTXotbnYzQkVUYVZSTUkyZjBrY210YWplVXU0RkxGM3pWRHpONW9nT19SX1dxT05saWNaY2M0X1piVDRLclpid0V0U0JKNXd0c0l6VnI1TVljUnhJUlFRQ1J0ZnFuNjNRRFc2WUxreGJiU3dsbWVpNjU0WnROd3JMTkdBMHFPM3FDWmh2ZE9oenVnM0hsQ2QwV290RFljMFl2bWt5Z19WdTI1Tjc0azlaYlpORlhTb3BJY0ZseVIxV2dBdmpKbEptai1ScGxXNXB2UEhRc1JGNF8wX18tNHgtT3NTRjBneVNWTFdJTF9t?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -15457,6 +15446,17 @@
         "source": "Google News League One",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [],
+        "title": "When is Transfer Deadline Day? - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPaDhTOGNIS3psZ0NYMm92Q0dlTXotbnYzQkVUYVZSTUkyZjBrY210YWplVXU0RkxGM3pWRHpONW9nT19SX1dxT05saWNaY2M0X1piVDRLclpid0V0U0JKNXd0c0l6VnI1TVljUnhJUlFRQ1J0ZnFuNjNRRFc2WUxreGJiU3dsbWVpNjU0WnROd3JMTkdBMHFPM3FDWmh2ZE9oenVnM0hsQ2QwV290RFljMFl2bWt5Z19WdTI1Tjc0azlaYlpORlhTb3BJY0ZseVIxV2dBdmpKbEptai1ScGxXNXB2UEhRc1JGNF8wX18tNHgtT3NTRjBneVNWTFdJTF9t?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 3,
