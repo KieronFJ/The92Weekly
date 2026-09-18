@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T16:47:35.095Z",
+  "updatedAt": "2026-09-18T16:51:56.386Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,7 @@
         "summary": "JJ Gabriel and his representatives are in Barcelona for talks about a potential move to the Catalan club.",
         "link": "https://www.skysports.com/football/news/12040/13589387/jj-gabriel-edging-closer-to-manchester-united-exit-amid-barcelona-talks-about-a-potential-move-for-the-forward",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-18T16:47:34.956Z",
+        "publishedAt": "2026-09-18T16:51:56.198Z",
         "status": "Rumour"
       },
       {
@@ -3089,17 +3089,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - Sports Illustrated",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeU5LaUx3WUhaVEpXdFhSUTJrUDFzT0s1TWs1TXhJeV9uY1pWd2Rfb3V4WlI1bVZDRTNoVVFjNEszMW5IQVZwSWgtbGt5dHVXck1oNEhGdUV5b1ZxZHZHaGV0cjFYYVVyMXdIZ0FFUlJDMlJxV2dLeHU4TFRYNzI0Mw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Chelsea"
         ],
@@ -3109,6 +3098,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - Sports Illustrated",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeU5LaUx3WUhaVEpXdFhSUTJrUDFzT0s1TWs1TXhJeV9uY1pWd2Rfb3V4WlI1bVZDRTNoVVFjNEszMW5IQVZwSWgtbGt5dHVXck1oNEhGdUV5b1ZxZHZHaGV0cjFYYVVyMXdIZ0FFUlJDMlJxV2dLeHU4TFRYNzI0Mw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -4590,7 +4590,7 @@
         "clubs": [
           "Manchester City"
         ],
-        "title": "Manchester City confirm Bouaddi signing as Marmoush and González head out - The Guardian",
+        "title": "Manchester City confirm Bouaddi signing as Marmoush and González head out - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQXNzZG9ZWEtHMjZRWm9OSTI5SW5hdDBfV1paR3hQV3hDWnhSLWk3ZE5EOUFQa21SeGFGbFM5NVhJRU5PYllYOTVCcmxqMm9UNU5JLTVOMFUtQ2dfN1llOG5URWNyRGpkZzlYNFNKQnNPMFFVanJrWUp4NEVlZEozY2NzYUFrMDZOR2RsX2hYek50N01jTk1LcVVaelVjUEdUa2hyWEwwR1pNUzBVelA3ak9UeHdzM3M5cUNtek90MW5NUkVUdzdr?oc=5",
         "source": "Google News Premier League",
@@ -4603,7 +4603,7 @@
         "clubs": [
           "Sunderland"
         ],
-        "title": "Sunderland weigh up Jack Grealish loan with Marseille’s Igor Paixão also a target - The Guardian",
+        "title": "Sunderland weigh up Jack Grealish loan with Marseille’s Igor Paixão also a target - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTm9Eb0Q2NTRxZTNtaVFSbmZIS1g3R21SaWdYQ1VtM0M4dm1OTnRSczE1T2JqdVRaX2hpZWVISlJoNXo2WWRNMWw2TVJwcGJkZDgxYkNDNXNHVHAzQzNHUmh1MDVFOW5nMW04MXc0U1MxS2JERUM5WDRXWVVtbDlPUWIzR0NIZzBtbkNZcHRvN08tdVplbENoUlJxRmotakxDczExd1Jna1JHa1gxSXlwSDF4RzZFT1JWRThXNmR3WU9BQWVVeTFtUXpQZkM?oc=5",
         "source": "Google News Premier League",
@@ -4765,7 +4765,7 @@
           "Crystal Palace",
           "Manchester City"
         ],
-        "title": "Crystal Palace agree Disasi loan and tell Manchester City that Wharton is not for sale - The Guardian",
+        "title": "Crystal Palace agree Disasi loan and tell Manchester City that Wharton is not for sale - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQjM5U1pGU2ZwaVUtalZWV1NFZVM4Mnp1NDAtSTBZUUFUMk5NelNhUGtFUU85akNDUVVWTDZfZVVpT0Z4Z1YyZksyTDYySURnUjJ2TGVrOV9aQzBtQWxBRGN4d2ZjcFpKc3hkb2xGZkhsS2hSU2xQWnNKRWdnM29scWxsVW9EaV9zM1g3cFdmWHctNldhLXlrSzBrM244SFVnYmhMblFMb3Q1RXZkMUctUUpOTzhCdDRWaDl4cW5CWHlsbTQ1R2N5bFNmU3dncjhtQVZvU3AxTjJaTzFaUjAzOUpR?oc=5",
         "source": "Google News Premier League",
@@ -5013,7 +5013,7 @@
         "clubs": [
           "Tottenham"
         ],
-        "title": "Tottenham goalkeeper Guglielmo Vicario to leave for Juventus in loan deal - The Guardian",
+        "title": "Tottenham goalkeeper Guglielmo Vicario to leave for Juventus in loan deal - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPai1fZVJ6eXdvX3d0X01TbGRleERYY0lkelVyaTRjbnhwaGtNU0FPVVZSRTRKZlM5clZCY2dXcnRFTXBzTWlaNFZveHRVXzZ1cjZ4WUZrSFlNS253U3RESVZ4cVVQME94YXMtNDU2V0NOYTZiUlpGZ0d1ZmNCM0dVbXFUTUw5emFaNlA1S1pNQXhLZkhObzEtMjNNYWZXOHJYdVRkaDU1SlJFTVlnbk96UUhOenA3Z1JX?oc=5",
         "source": "Google News Premier League",
@@ -5045,6 +5045,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-17T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League transfers 2026/27: Every club's confirmed summer deals - Flashscore.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQUZkSkFrUjNLRlk3MU9qZm9pRmhYZ2V6dEU4M2VyVVVTQ1NPbzRTdktDeVhzWktodGQ3QjFzWExOeThnSXR3c002UnlxdlZBODgwMnltaHM0Vy1yYkpkbjlRS3dFYk9qeFI1aUpXRzgyV2VPSzNBbG1yLW9OUVBXYnpobG9YUTRvOEVHNms1eklaWEdjODMtc1QwcG9LZ3ctNGR0UTBFeGFEQ1VfLURMNTl1enRWWDM0T2E0VS0za0dmdEhMcEN2T0xOS18?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -5265,6 +5276,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Football gossip: Mudryk, Rodri, Endrick, Spence, Hall, Ndiaye. - bbc.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xLUdjSjBDejQxdzFxN19xeXhGTWF6bV80Y0Jpbjh3aUdKMmtTRzFTaGw0a2Q2SjFLb2VidzlJT3RPRzZ6RV9BOFFGMXBYbVhQSDc2MWg3eHo0QUoyb0hYUXdzU0Rod3c?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Manchester City",
           "Sheffield United"
@@ -5280,12 +5302,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Liverpool"
+          "Manchester City"
         ],
-        "title": "Ronald Araujo likened to loan signing involved in epic Liverpool transfer mistake - talkSPORT",
+        "title": "Man City transfer news: Max Alleyne to 'undergo medical' ahead of Championship loan move - Sports Mole",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYmJOTEZuTDY3ZGJZQkRhNjdEekNiekJ4U2M1dF9UOVBiVnBLLTM3ekJxd1YtY3NLNy0wb2U4Zk5hci1WVTV6QUM0VTYwWXRzV1RiMUoxUlcyTjREUm1Gb1RWd08xRlFLOEVvMENaUkJqRVBmbDlqakl1QnNMXzNQWHAyZkUxY0pQdHQ2M3Z0SFR2N0VONGtPUElQVQ?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYUxnblBzaWxTa3g5b1BvdTNrQTh6M3F2TWNONGZkdjdYTU8xakxVOXFtYV9BWmtZdTJ1dFRvejMxcVg1NGJsRW1nME8ySVRLQmZOS2s2RHJBeWpvSFNxY0hVTUwwLWxUZnNwUXBlRTdMOWhWaElVRnFRdVJ3ZjNUWmVaOFJZbXJhem5ROWVodUl0RGV2d2szb0htM0NJVUV5bEZCbTZGM3hhRXJ5S3RnaGlNeEZkVi1JWGlRbUpOcnNNVWpPNTJ2WWsydnJMdE0zUERTclNYaEdvSm9UcnVZ?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -5293,12 +5315,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
+          "Liverpool"
         ],
-        "title": "Man City transfer news: Max Alleyne to 'undergo medical' ahead of Championship loan move - Sports Mole",
+        "title": "Ronald Araujo likened to loan signing involved in epic Liverpool transfer mistake - talkSPORT",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYUxnblBzaWxTa3g5b1BvdTNrQTh6M3F2TWNONGZkdjdYTU8xakxVOXFtYV9BWmtZdTJ1dFRvejMxcVg1NGJsRW1nME8ySVRLQmZOS2s2RHJBeWpvSFNxY0hVTUwwLWxUZnNwUXBlRTdMOWhWaElVRnFRdVJ3ZjNUWmVaOFJZbXJhem5ROWVodUl0RGV2d2szb0htM0NJVUV5bEZCbTZGM3hhRXJ5S3RnaGlNeEZkVi1JWGlRbUpOcnNNVWpPNTJ2WWsydnJMdE0zUERTclNYaEdvSm9UcnVZ?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYmJOTEZuTDY3ZGJZQkRhNjdEekNiekJ4U2M1dF9UOVBiVnBLLTM3ekJxd1YtY3NLNy0wb2U4Zk5hci1WVTV6QUM0VTYwWXRzV1RiMUoxUlcyTjREUm1Gb1RWd08xRlFLOEVvMENaUkJqRVBmbDlqakl1QnNMXzNQWHAyZkUxY0pQdHQ2M3Z0SFR2N0VONGtPUElQVQ?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -5334,7 +5356,7 @@
         "clubs": [
           "Aston Villa"
         ],
-        "title": "Football transfer rumours: Endrick set for Villa loan? De Jong offered in Rodri deal? - The Guardian",
+        "title": "Football transfer rumours: Endrick set for Villa loan? De Jong offered in Rodri deal? - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNNUJzSW1IejdsUGhtRGlpTWR2SlhXamROSWxaX2pkTXFERkE5SGthQ2RTb3dpQ19nVGhXbzQ0TllFMTRZWGViLW9iZ0tXMEItS241UnV2bEpRelg5dzh3Tm5sWXFUUlVPVjhxWUNoWXlOaXBNbXUybFQzSkg4Y3VRSjFJaGFCVUNseWViSDFiMWJ0ODdleEpjckp6Y0NpLU1zaDR6UEVqRUhpSzgtbmdtUHcxSjZCMjZjWEdxeUdWS2hkNVhZYjcyRVhOYU5teHBPRVNuNW83aUxRQQ?oc=5",
         "source": "Google News Premier League",
@@ -5436,7 +5458,7 @@
         "clubs": [
           "Liverpool"
         ],
-        "title": "Liverpool agree to sign Barcelona’s Ronald Araújo on loan as Jacquet cover - The Guardian",
+        "title": "Liverpool agree to sign Barcelona’s Ronald Araújo on loan as Jacquet cover - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTjdKSUpoWllYU0tmamFJZVA1ZDBULXhKdkRzS3NISlpWaUZ4MUo1YTZjNlotSWpYb2FiSTVKZmh1YkNsSDlNWTRjMkRnVmlJLXBnZkhIa1VFc1ZfSFlBVTFXX2Nvekl5RXBWTVFqZXo2blJIZlNOMkNXTlE2Tm1pdV80V3hwbVNNa2dhTDh0bnMzb2hDcDdnSy12cktxVHFORmdmVV9zamo?oc=5",
         "source": "Google News Premier League",
@@ -5460,19 +5482,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Liverpool"
-        ],
-        "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlhKVlBjWmh5SGxKSDVRTVhZV2FVeTNTT3Y5SUs0Uk94R3plMkE1dFhGTnJkWGJocF9KRzl6M0xETVNLLU53WjhEX05ucHl1WUdFbU8xRWN2dk1wRmRlWmpjN1p1eDdkQy1iNUltVDRwa0JxekpydHBxRlk5UHFsbnMtc1RBMVh5THZ2aWxnaDZxZzdsNV9uVTJ2eVlPTS1SY3FWZEFB?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-07T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester United"
         ],
         "title": "Man Utd approve transfer with £36.5m Erik ten Hag signing set to leave - metro.co.uk",
@@ -5481,6 +5490,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-07T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Liverpool"
+        ],
+        "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlhKVlBjWmh5SGxKSDVRTVhZV2FVeTNTT3Y5SUs0Uk94R3plMkE1dFhGTnJkWGJocF9KRzl6M0xETVNLLU53WjhEX05ucHl1WUdFbU8xRWN2dk1wRmRlWmpjN1p1eDdkQy1iNUltVDRwa0JxekpydHBxRlk5UHFsbnMtc1RBMVh5THZ2aWxnaDZxZzdsNV9uVTJ2eVlPTS1SY3FWZEFB?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -5684,7 +5706,7 @@
         "clubs": [
           "Tottenham"
         ],
-        "title": "Football transfer rumours: Atlético to offer Grealish escape route? Spurs target Osimhen and Gakpo? - The Guardian",
+        "title": "Football transfer rumours: Atlético to offer Grealish escape route? Spurs target Osimhen and Gakpo? - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQS1CQ3M3REtXTnFUUEhTNkJ4T2VobUc2QjJWREpYdzY4Z19CWllvVGQ1cTdBNGdKMUs0dUZwSi1yd2tpdWRzOGgyWGtYQmpnTzJDRXYxSnB4VktQY29TWWNHRWYycDJ0LUtRdldQLVBsbXhNWlNPWUt4MnRCdHNjTVBnSi1qNEp1S01FeVppNWo3TS1xZXhKOHViRHZwOW93ekhmVEk2ZVV2MTJsaFk2RDNDdFMtM2s?oc=5",
         "source": "Google News Premier League",
@@ -5892,7 +5914,7 @@
           "Aston Villa",
           "Chelsea"
         ],
-        "title": "Aston Villa seal loan signing of Alejandro Garnacho from Chelsea - The Guardian",
+        "title": "Aston Villa seal loan signing of Alejandro Garnacho from Chelsea - theguardian.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWlBzckhCNVhGZzZVRmR6UUU4WGx6bUo1Tkl5ZFptMGd5cHprdzhVUFp2M3gyY1hYeXAxQzFUVG5KbndqNTNJYmhRXzZGWmhobU95VEhfNEI0Mk1OWUxNeGhvWUZoajJCZTMyMWF4bWQ3TkVyeTd0Si1QYUZzcmVfNTFycHhLX0M0dkJ2MU1kR2hXZDZNOXhmZjAzVVpiVUdWdkF5ZVAxLVllSWR6cF9LQmE4bnVQb0U?oc=5",
         "source": "Google News Premier League",
@@ -6016,6 +6038,20 @@
           "Aston Villa",
           "Chelsea"
         ],
+        "title": "Alejandro Garnacho transfer news: Aston Villa begin talks to sign forward from Chelsea - skysports.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR2lnOHYyOVRyNERGeUZGc1FfdmhoaFpUZVNTSi1UbzNpODRDNEI2V2hhdlNBUTYtU2Rvc3JzTzJ6bEhENkYzSXIwNmVXWnljOEFnWjFSZUpCLTBNVUp0Vl9PeF8yYmVtQm52a3pOTzhadVVLMXhqZ09MM3ZSOFJpblZFSXZrMGFnVTg4SUFreEhmVEt6ZHFQWm5ZaktNV2VpSmVmT1RiNFM5QlAxSlBVSEo0RkRIQmpXYmYyZHN2WDk2ZXdzcWV3dGR0WFVvaHdVUXk3WVIycw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Chelsea"
+        ],
         "title": "Morgan Rogers & Alejandro Garnacho - how Chelsea and Aston Villa are trying to balance the books - bbc.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5RjliTUxKNFdkSmhnZ0E5LUhHTmJBRHdId1l1NkFadjJ3X0otbjEzaUltMWk0MC1DV1VxcWkydHRSZnlXUVZJUEFST2tfdnN2NXRtVEN0YkhNVTVFMFFtU000SWh0SUE?oc=5",
@@ -6036,20 +6072,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-07-22T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Aston Villa",
-          "Chelsea"
-        ],
-        "title": "Alejandro Garnacho transfer news: Aston Villa begin talks to sign forward from Chelsea - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR2lnOHYyOVRyNERGeUZGc1FfdmhoaFpUZVNTSi1UbzNpODRDNEI2V2hhdlNBUTYtU2Rvc3JzTzJ6bEhENkYzSXIwNmVXWnljOEFnWjFSZUpCLTBNVUp0Vl9PeF8yYmVtQm52a3pOTzhadVVLMXhqZ09MM3ZSOFJpblZFSXZrMGFnVTg4SUFreEhmVEt6ZHFQWm5ZaktNV2VpSmVmT1RiNFM5QlAxSlBVSEo0RkRIQmpXYmYyZHN2WDk2ZXdzcWV3dGR0WFVvaHdVUXk3WVIycw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-07-22T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -6657,17 +6679,6 @@
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYkxrZ3p3T3FmaERrNWU4UFJwc1JVNTF0T1M5V3llU2VzakE4ODFWRlpsWWlTdGpqUlcwV1BXVHAyNmMtTTV4RS1RRjBhTVQ1YXNhMUlEOGQyU21TYmNTNWIwUzBPRWlpT0V0NkY1XzZQNmhUZGZIY2Nibk1yTVRpUUQ5MldUME5oa0NydTVrbnM1bWpWT2h2WENtcWt5bGZsaHdiMU9XRlV2Q0RGRzdqM2I3QUM?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-06-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer rumors, news: Real Madrid to sign PSG's Neves? - espn.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3ZUb0lOeVVnUnY2ZDZQR01YN3N0NFg4dk9XWGVfSDJ1Z0xmNW9pSG05YTk0Zm9hTlNzMlVrRjh1TGFQRk9nR2lWWVhpOExQU09xSWkxZW9rNzlXOHdRZ3lNa0dSWThuZFJXNlJHR0tsOHdMWmhwdV8yLTNFSUI5bU9Oa29vaG41SXNrdHg4TnZfYTFWek02SU1DRnNDMHJWaFBuTnhpRQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-05-29T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -12576,19 +12587,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Lincoln City"
-        ],
-        "title": "Lincoln City Confirm Season-Long Premier League Loan Deal - The Stacey West",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTHJrcF9Ra1BJNWxOUTlwT3NPN2I2ZllfeHYtZEhDX2x5T2gybjVzX19nWHpXc1VKR2pXbUQtS3VuX3E3YVpoR2RGVTlQVUZiUWtJcWthdVFBS09rdldGcVpvRXA0SmNyNUN6MUJVN0QyNzJvTTgtMXdTdjU4dWVjdkh1emR4TG8wMDdwamdUcVVKeGc3R01v?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-07-28T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Swansea City",
           "Wycombe Wanderers"
         ],
@@ -12609,6 +12607,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTDBVaFZ6T1BsLWF1ZVdSZ1V0OVpwM056R1NBczFuYjdlTXN3S1NQaS1yeWp3RWJrTExEdXBYaVBPbGlGa1Fnd0tVOUdyTWdUTzdzWVBwckZJMEF3RC1Kc20tNm9CMzhaWmJDZ2hhcmp6dmwtQXZCSkJSXzkxZTVCSTluNE5sRlVZT1p5a0NOTlBIeFRZVzFaa0poSEc2dk5jUldGUU1tSXA3MHhQYmtCQzZZd2gybFN5RzJFY0w0bUxOMGlD?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Lincoln City"
+        ],
+        "title": "Lincoln City Confirm Season-Long Premier League Loan Deal - The Stacey West",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTHJrcF9Ra1BJNWxOUTlwT3NPN2I2ZllfeHYtZEhDX2x5T2gybjVzX19nWHpXc1VKR2pXbUQtS3VuX3E3YVpoR2RGVTlQVUZiUWtJcWthdVFBS09rdldGcVpvRXA0SmNyNUN6MUJVN0QyNzJvTTgtMXdTdjU4dWVjdkh1emR4TG8wMDdwamdUcVVKeGc3R01v?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-07-28T07:00:00.000Z",
         "status": "Loan"
       },
