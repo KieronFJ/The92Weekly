@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-09-19T05:27:15.181Z",
+  "updatedAt": "2026-09-19T05:28:04.420Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Arsenal"
-        ],
-        "title": "Arteta: Dowman could go out on loan in future",
-        "summary": "Arsenal&#160;manager&#160;Mikel Arteta&#160;has not ruled out loaning out&#160;Max Dowman in the future and says the club evaluates the 16-year-old sensation's progress every six months.",
-        "link": "https://www.skysports.com/football/news/12040/13589421/max-dowman-mikel-arteta-admits-16-year-old-arsenal-wonderkid-could-go-out-on-loan-in-the-future",
-        "source": "Sky Sports",
-        "publishedAt": "2026-09-19T05:27:14.974Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -27,7 +14,7 @@
         "summary": "The top stories and transfer rumours from Saturday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13589426/mykhailo-mudryk-preferred-arsenal-move-before-88m-chelsea-transfer-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-19T05:27:14.974Z",
+        "publishedAt": "2026-09-19T05:28:04.203Z",
         "status": "Rumour"
       },
       {
@@ -40,7 +27,20 @@
         "summary": "Barcelona and Real Madrid are in transfer talks to sign Manchester United youngster JJ Gabriel.",
         "link": "https://www.skysports.com/football/news/12040/13589387/jj-gabriel-edging-closer-to-manchester-united-exit-amid-barcelona-talks-about-a-potential-move-for-the-forward",
         "source": "Sky Sports",
-        "publishedAt": "2026-09-19T05:27:14.974Z",
+        "publishedAt": "2026-09-19T05:28:04.203Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "Arteta: Dowman could go out on loan in future",
+        "summary": "Arsenal&#160;manager&#160;Mikel Arteta&#160;has not ruled out loaning out&#160;Max Dowman in the future and says the club evaluates the 16-year-old sensation's progress every six months.",
+        "link": "https://www.skysports.com/football/news/12040/13589421/max-dowman-mikel-arteta-admits-16-year-old-arsenal-wonderkid-could-go-out-on-loan-in-the-future",
+        "source": "Sky Sports",
+        "publishedAt": "2026-09-19T05:28:04.202Z",
         "status": "Rumour"
       },
       {
@@ -12423,7 +12423,7 @@
         "clubs": [
           "Middlesbrough"
         ],
-        "title": "Middlesbrough set to sanction League One loan exit for winter signing - The72",
+        "title": "Middlesbrough 2026 signing set to complete League One loan move - The72",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CcFExc2JLbmNzZW5DdHlVNTdNRXctZHo5WUpGWHJ2SzM2eGYzVFBMcGNDeFNPWnRrWXBudUdPdXNPMEF6V0ZFQi1xZEstaXBobWdydzRlaTNqa3ozTFJ4TnlxU0JYLXVzZXdSZGk0S3RqNERrSzVxeGhTbTdWSUk?oc=5",
         "source": "Google News League One",
@@ -15667,17 +15667,6 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "Sky Bet League One: January 2026 transfer deadline day round-up - EFL",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNEFySDNGR0JmclY5eF91TTVJZ1prSU9HSlVQSks2MnZLQkFiMGNCVDdadGRwbU5jRTZEMndkZ2NMYnZ3Q0xXTS1KZlZBd05pM0pvdy1fR21VUDZ0NVl2Wm1UZjc3OWZBU0FnVFU5U3l6YTgwXzdDZFVMRUpFSHNpNlRZT1FWNE5oR2FMSnRNd0xQTHYyM01uVEhJOEZfM0dLTmp1Tg?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-02-03T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
         "clubs": [
           "Luton Town"
         ],
@@ -16234,7 +16223,7 @@
         "clubs": [
           "Newport County"
         ],
-        "title": "Newport County sign Michael Adu-Poku, Kion Etete and Matty Jacob - bbc.com",
+        "title": "Newport County sign Michael Adu-Poku, Kion Etete and Matty Jacob - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByaFI1NnVQWDd5LVdxcmtWaWF4WWRYX2Itb0xfaWtBSzlKY2duRjFWQ1VfSnFWYXFKeUVDdU01RUFRc2JHOHRtZEpTR3lYTFZKSW5FaDQ1MTJBVTNCb1BFWGUwN1FIbDA?oc=5",
         "source": "Google News League Two",
@@ -16697,9 +16686,10 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
-          "Bristol Rovers"
+          "Gillingham",
+          "Oldham Athletic"
         ],
-        "title": "Every transfer in League Two so far, with Bristol Rovers among the busiest clubs - Bristol Live",
+        "title": "Every transfer in League Two so far as Oldham Athletic and Gillingham seal early deals - Bristol Live",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdUVUaDByMjNyd3hIM0V2bFctamJ1alRrM0dQeG5pSjN3ck5mYTdMT1VmeUoyX3htMjNGbFVnRWdubEk5LXNiSzRCUUtoanNCTGtMWk9NSVRzWWI0TWxubzcwMXBTYld2cXNRWHZmbUpQS3pXNlY3eGRfTm80UkY4LWNELXlySmdZRndIOGljTzVGVHN2c1lfS1d6X24xdw?oc=5",
         "source": "Google News League Two",
