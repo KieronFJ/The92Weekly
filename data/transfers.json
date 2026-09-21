@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-21T17:52:50.206Z",
-  "sourceCount": 8,
+  "updatedAt": "2026-09-21T17:53:21.113Z",
+  "sourceCount": 9,
   "byDivision": {
     "1": [
       {
@@ -2989,17 +2989,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOUkzY25NSzRMTzdkY0tCa2dQbTlpcV90QmY2c0JOWTFPb0VnRU1rUjJhbGVhRExlc0J2dG04cnZNdEFoRnRuaWQ1RktfTlhVbGFWeTY3R0daWnhuVk1lMGgxYm1BODFMQ1cxTGU5RTl1S1MxeHNaWWNMZWxwQXJ6TGdhYjEtY0M3QjBWWG15TWdBOURwX2pfRnJQUHZPUV9adHBYWVYwVjQzX1JlVW5sN0wtT3F6QmZ6UVM4S1NaVUJFY2M3eERTcmRR?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-03T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
         "title": "Summer transfer window: Grading big signings in men's soccer - ESPN",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNWdwRXlra1ZGOG81TnVhWkFWSDlLRU9sblVZNTBxMFVYRG9CN0ZzTk9meC1qd1lNdnBKQTNGdm5LVUxkc2xVV1VXU05nTE15bDNzNzk1T0psdGREYl9qdXh2b2U2cW4wRGJ6aDdZbi1ZUTN4Tm5ucXZiUGxibkgtVTdKeFNISEprUWhwN0ZGd0QxenowS3V3TGFtYUVqU1RKSlM5aFF3?oc=5",
@@ -3414,10 +3403,12 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Premier League Deadline Day 2026: Every Done Deal, Ins and Outs - football360.com.au",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "How Everton's deadline day debacle leaves owners facing fan mutiny - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5iMkVrcFpWa3JybWZqZFdiOWU5OFgxekV1Q1QwckFiek1nX0l2ODN5UGRYZi1vS3FzNVBQcGRlY3BLamZzREhXSzhyUVU4RW1yZlpYQUMtMkdpLXFpX08ySzA0R3Q2SWM?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
@@ -3440,19 +3431,6 @@
         "title": "Premier League Done Deals: Every 2026–27 Summer Transfer - Sports Illustrated",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeU5LaUx3WUhaVEpXdFhSUTJrUDFzT0s1TWs1TXhJeV9uY1pWd2Rfb3V4WlI1bVZDRTNoVVFjNEszMW5IQVZwSWgtbGt5dHVXck1oNEhGdUV5b1ZxZHZHaGV0cjFYYVVyMXdIZ0FFUlJDMlJxV2dLeHU4TFRYNzI0Mw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "How Everton's deadline day debacle leaves owners facing fan mutiny - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5iMkVrcFpWa3JybWZqZFdiOWU5OFgxekV1Q1QwckFiek1nX0l2ODN5UGRYZi1vS3FzNVBQcGRlY3BLamZzREhXSzhyUVU4RW1yZlpYQUMtMkdpLXFpX08ySzA0R3Q2SWM?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
@@ -5002,6 +4980,20 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Chelsea",
+          "Crystal Palace"
+        ],
+        "title": "Crystal Palace transfer news: Axel Disasi signs on loan from Chelsea - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LS21tUWZWMHlUSkNpdm1FMVo1TU50YkdnWTVieTF2VU13bDZ0Y3hJZjU3MU1MdGNVSGZDRmVWbFN2c1N1MzlIWVpNMVVJQ2sxM2RhNG5UcE1mNFF2TEQ4VG1HcWE0MkU?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City",
           "Tottenham"
         ],
@@ -5023,20 +5015,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8xdEJ4QnVad3FERXVvWUNJZnJkUERGM1VVcVJ6UTFJSy1QRjE4QWYtbzhSUEk0dmM4M3AxSG5aSE4xa0lpVHhFdzU4VkVFeUtVSUtBZEhwZlRVT0R3RWhkUnRNQ3FRRUU?oc=5",
         "source": "Google News League One",
-        "publishedAt": "2026-08-26T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Crystal Palace"
-        ],
-        "title": "Crystal Palace transfer news: Axel Disasi signs on loan from Chelsea - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LS21tUWZWMHlUSkNpdm1FMVo1TU50YkdnWTVieTF2VU13bDZ0Y3hJZjU3MU1MdGNVSGZDRmVWbFN2c1N1MzlIWVpNMVVJQ2sxM2RhNG5UcE1mNFF2TEQ4VG1HcWE0MkU?oc=5",
-        "source": "Google News Premier League",
         "publishedAt": "2026-08-26T07:00:00.000Z",
         "status": "Loan"
       },
@@ -5445,6 +5423,17 @@
         "title": "7 transfers Man United can complete this week including £34m left-back deal and five exits - manchestereveningnews.co.uk",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZUJ4TUZhWXlCQnY0bndiLWVIUWhVdWlKRE1hNExyc3JZeTJiQ0NPX25ySXpnYUI5Ukc2X01aUUlXamg0ZWQ4SU8zRXpwaTh1T0RzUkpoS0s2eGQ4ZU51cW95MHBMRDV3M1ZUcEUtNXBxRlNVOVB1ZzdNTWpEYWNyYldmdC1ZcEVxSXozbnFYV1BnZTdQN0xBMTdqMDhNaExqVkVrbVdTU0lsY0Q50gGyAUFVX3lxTE41VXJ1VzhPUE5tQVNXOTloVmdZSGRmcEp2Vk9TUTZ0Z1Q5QkRtNjNFbVR6Sy1mZzd6RVBvR1dRdndrdjlSNzBlQUdzYnJ1V1g4OExPeXM1OWcxcFV4LXM1dDNfVkJfa1l2aFQtb3dMZnhRXzNnZllma3MzTDdocHRaTWNaU0ROVU96czFBeFBKb3pYREh0RmdxbkF6TVY0ZVNSTlhQSC1CR3VtWkFZRU4xYWc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Juventus to sign Premier League goalkeeper after Emiliano Martinez transfer collapses - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzI3RXpxS2NDWjFmWTlNOTlxcVlxZGZxYUZwTndreDIwcm5PR3J0Q29qVU5DRlVaOTdsbEFHR3dieFduNXdzT2hON3pocVlST2steG9WQmtISzBYYXJ4cHJreXBCUFBZZ0lnemhwQ0Y3U0lWQmlUVkRuMWxmeFRzNlBtcjBJNkdndnRVakw5eFhEVWQtY2IyZGZfalJCNU5hNWJCWWJZWEJocnJ1?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-17T07:00:00.000Z",
         "status": "Rumour"
@@ -7149,28 +7138,6 @@
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYkxrZ3p3T3FmaERrNWU4UFJwc1JVNTF0T1M5V3llU2VzakE4ODFWRlpsWWlTdGpqUlcwV1BXVHAyNmMtTTV4RS1RRjBhTVQ1YXNhMUlEOGQyU21TYmNTNWIwUzBPRWlpT0V0NkY1XzZQNmhUZGZIY2Nibk1yTVRpUUQ5MldUME5oa0NydTVrbnM1bWpWT2h2WENtcWt5bGZsaHdiMU9XRlV2Q0RGRzdqM2I3QUM?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-06-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer rumors, news: Real Madrid to sign PSG's Neves? - ESPN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3ZUb0lOeVVnUnY2ZDZQR01YN3N0NFg4dk9XWGVfSDJ1Z0xmNW9pSG05YTk0Zm9hTlNzMlVrRjh1TGFQRk9nR2lWWVhpOExQU09xSWkxZW9rNzlXOHdRZ3lNa0dSWThuZFJXNlJHR0tsOHdMWmhwdV8yLTNFSUI5bU9Oa29vaG41SXNrdHg4TnZfYTFWek02SU1DRnNDMHJWaFBuTnhpRQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-05-29T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Barca to make Rashford decision 'in days' after Gordon signing - Euro Transfer News - TNT Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPc2FlUFVnU3ZxWTlTbXZlX2pmWXR4bU5PaU9sbjA5MjRnMElHWGlreldwUjRyNGo2STN5Q0wwbk45YWlDYkxsVWdtaUpmcFA1dElSWlJkcHlGejBlQ3RIWnFtTUtIc1RYblpVTGdJdmVRNzFkZ1ZROWItNkl6UnF6aGoyakIyYXJNazlfbnZ6cWtudWwyTVIwY2JFcm1yaHVtcTZpMUJGZXpRT2hXUUhBUXE0bUZoeV83bG42SjBlWlpYQUk5QXBOcE5DVGxfRmpJTE1iMVJBYVMzUUV3eEFHQXNJZmVhdUlQVWNfbU5HaXhhOFd5cHZBMHgxRVJlV0NSek94Vi1GTVdFbng2RWVweEdPbw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-05-28T07:00:00.000Z",
         "status": "Rumour"
       },
       {
