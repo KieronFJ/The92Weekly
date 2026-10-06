@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T19:15:50.769Z",
+  "updatedAt": "2026-10-06T19:43:22.407Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -7304,6 +7304,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City midfielder close to exit as new signing confirmed - Manchester Evening News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTnMzZUV0YlNNbXNUMWhpcVBfbmFNakV3eTl1RmZ2QjgxbW4zYzB6SWw1TU5aVU5JZ0xNWXpjbjhSOWsyTTVHdjd5RndpQ0lMc1ZIa3NqMmFIT2M4a0s1c2xfa1lodE1MWmJzdW4wU0pZNW4zak9LYWxickZaTm5yTnpQVW10SkVFcGoyS1pLN2p6WFVoM3hlLXQ3QlF0cXd3dG9LbklUSk5wRTRB?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-20T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City",
           "West Ham United"
         ],
@@ -7313,19 +7326,6 @@
         "source": "Google News Championship",
         "publishedAt": "2026-08-20T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City midfielder close to exit as new signing confirmed - Manchester Evening News",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTnMzZUV0YlNNbXNUMWhpcVBfbmFNakV3eTl1RmZ2QjgxbW4zYzB6SWw1TU5aVU5JZ0xNWXpjbjhSOWsyTTVHdjd5RndpQ0lMc1ZIa3NqMmFIT2M4a0s1c2xfa1lodE1MWmJzdW4wU0pZNW4zak9LYWxickZaTm5yTnpQVW10SkVFcGoyS1pLN2p6WFVoM3hlLXQ3QlF0cXd3dG9LbklUSk5wRTRB?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-20T07:00:00.000Z",
-        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -9623,19 +9623,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Tottenham"
-        ],
-        "title": "Tottenham transfer deadline day: Signings, exits and loan deals - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zM3p4NloxOHcxX2doZTNpZHlEcDBJSWRMbjlLUzBFeVduTkNQQTNjSkFSUUszNGdPaEduS2tQY0JCUjNSRlpnaFRMbVhpUUE3eDNZT0RGT2VWanBNeEtJeDd1ZldjdVU?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Liverpool"
         ],
         "title": "Inside Liverpool transfer deadline day plans as five deals done and one nears - Liverpool Echo",
@@ -9644,6 +9631,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Tottenham transfer deadline day: Signings, exits and loan deals - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zM3p4NloxOHcxX2doZTNpZHlEcDBJSWRMbjlLUzBFeVduTkNQQTNjSkFSUUszNGdPaEduS2tQY0JCUjNSRlpnaFRMbVhpUUE3eDNZT0RGT2VWanBNeEtJeDd1ZldjdVU?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -10450,11 +10450,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea"
+          "Manchester City",
+          "Wrexham"
         ],
-        "title": "Promising Chelsea academy product set to join Championship club on loan after signing for Strasbourg - The Chelsea Chronicle",
+        "title": "Wrexham set to sign Man City star with Champions League experience in another Premier League raid - talkSPORT",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUkV2Y2ZXRmRzUWZxZjFORG1kd0M4cTQ5Q25taFh6WXRkNVd2U1gzOVVkUVZHemlhX3k4ei1GTHVqbHV1OGJvZUxmWWViWDBBZDRrbHRaSkl4V0E0RzV5cm1heHZKOTM0QzlZOUhjUEpVMVNRSkl2cFRLQUNkY1hiRlRxQmZnYUJYZDBWSmEzQUlUVjRsOWlfR0NTRWJkSDItc3ZacDNxa1d0NEh3a3RyXzlBOXMtN1JLbmRSSkx0Z1dCTW05dnRBV3Y5Wkx0VEtYTW5fbGx0TUpiZmlBLTlhcVg2NFktdw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVGVILTdxa21hZVgwaXVjcjQ2bHFSY1UtSXVRbm9MLTc2dWd1N1JPd1VzOTNPNFhsTmdXQU5XMENGR3QyOVpSN055UlZMVFVzMkQtNmxtMUdyMnFrSERCOW1vTjNoRjk1NnhfbzMtVVZwQ2NaUUsyZ0lnZ3lMak1JNmw4SHFTdzZLVXdFNG01TlRkcEk?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -10463,12 +10464,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City",
-          "Wrexham"
+          "Chelsea"
         ],
-        "title": "Wrexham set to sign Man City star with Champions League experience in another Premier League raid - talkSPORT",
+        "title": "Promising Chelsea academy product set to join Championship club on loan after signing for Strasbourg - The Chelsea Chronicle",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVGVILTdxa21hZVgwaXVjcjQ2bHFSY1UtSXVRbm9MLTc2dWd1N1JPd1VzOTNPNFhsTmdXQU5XMENGR3QyOVpSN055UlZMVFVzMkQtNmxtMUdyMnFrSERCOW1vTjNoRjk1NnhfbzMtVVZwQ2NaUUsyZ0lnZ3lMak1JNmw4SHFTdzZLVXdFNG01TlRkcEk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUkV2Y2ZXRmRzUWZxZjFORG1kd0M4cTQ5Q25taFh6WXRkNVd2U1gzOVVkUVZHemlhX3k4ei1GTHVqbHV1OGJvZUxmWWViWDBBZDRrbHRaSkl4V0E0RzV5cm1heHZKOTM0QzlZOUhjUEpVMVNRSkl2cFRLQUNkY1hiRlRxQmZnYUJYZDBWSmEzQUlUVjRsOWlfR0NTRWJkSDItc3ZacDNxa1d0NEh3a3RyXzlBOXMtN1JLbmRSSkx0Z1dCTW05dnRBV3Y5Wkx0VEtYTW5fbGx0TUpiZmlBLTlhcVg2NFktdw?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -17996,12 +17996,12 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Southampton",
-          "Leyton Orient"
+          "Middlesbrough",
+          "Blackpool"
         ],
-        "title": "Nick Oyekunle: Leyton Orient sign Southampton forward on loan deal - BBC",
+        "title": "Finley Munroe: Blackpool sign defender on loan from Middlesbrough - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wdy1sclh6Tzd2bXNXY3dscGF3YXViLV9hTGItdmEwa0s2a3JMQlBHYW04TWp0N0UyNlczd2xWZ01BS3B3cVB6LUh5bnF1dEJIU0JuRVJEQ1oxRTZSalk0R0RlNzBMZXc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB3aXoxNGdYejZ1UGxaUmJGa191ZkVDOFFNZDVvdEFFUW5KNjJLMTllcXJoZ3RDUXZrZ1JKSGJtdTRoNXhaRnJrclowOHlhMmxjbWx5UGpfM09HUjI5ZDF3czdIX2V1V1E?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-08-10T07:00:00.000Z",
         "status": "Loan"
@@ -18010,12 +18010,12 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Middlesbrough",
-          "Blackpool"
+          "Southampton",
+          "Leyton Orient"
         ],
-        "title": "Finley Munroe: Blackpool sign defender on loan from Middlesbrough - BBC",
+        "title": "Nick Oyekunle: Leyton Orient sign Southampton forward on loan deal - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB3aXoxNGdYejZ1UGxaUmJGa191ZkVDOFFNZDVvdEFFUW5KNjJLMTllcXJoZ3RDUXZrZ1JKSGJtdTRoNXhaRnJrclowOHlhMmxjbWx5UGpfM09HUjI5ZDF3czdIX2V1V1E?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wdy1sclh6Tzd2bXNXY3dscGF3YXViLV9hTGItdmEwa0s2a3JMQlBHYW04TWp0N0UyNlczd2xWZ01BS3B3cVB6LUh5bnF1dEJIU0JuRVJEQ1oxRTZSalk0R0RlNzBMZXc?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-08-10T07:00:00.000Z",
         "status": "Loan"
@@ -19272,7 +19272,7 @@
         "clubs": [
           "Sheffield United"
         ],
-        "title": "League One promotion hopefuls set to sign Sheffield United starlet - the72.co.uk",
+        "title": "League One promotion hopefuls set to sign Sheffield United starlet - The72",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTjAxUkQ1UldreXhYX1BCS0xlc2IydEJQSHRNVUY3S2JiOUFudUJsa3NqcWZtQTdiY3RGZDNIOHRCOTdaZjJNa0dTYzJQVC1QUEJIWVhjWjl2UlktanVZMk5VRkhSRzZraGY5VXAwUlhmc2RKMVVfZVFld3hWNTB2SQ?oc=5",
         "source": "Google News League One",
@@ -19655,6 +19655,19 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Wrexham"
+        ],
+        "title": "Wrexham transfer news: Club show intent with Sheaf, Hyam and Kabore signings - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81QkhWWE90OXNpZHphdVVIdTVUSGV5MkZ0OFlaMHhsTHhCZlptMnNWeFJOZU9GbUwxeUJ5RTJFWU1jNERWMkQ5eG5XeWY2dU9BX3JRbnBnRmdOeXZxOC14aGkyMTN1MEU?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2025-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Sheffield United"
         ],
         "title": "Sheffield United transfer news: Mark McGuinness, Chiedozie Ogbene and Ben Mee join - BBC",
@@ -19668,23 +19681,10 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Wrexham"
-        ],
-        "title": "Wrexham transfer news: Club show intent with Sheaf, Hyam and Kabore signings - bbc.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81QkhWWE90OXNpZHphdVVIdTVUSGV5MkZ0OFlaMHhsTHhCZlptMnNWeFJOZU9GbUwxeUJ5RTJFWU1jNERWMkQ5eG5XeWY2dU9BX3JRbnBnRmdOeXZxOC14aGkyMTN1MEU?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2025-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Bristol City",
           "Swindon Town"
         ],
-        "title": "Swindon Town sign Bristol City's Adam Murphy and Jamie Knight-Lebel on loan - bbc.com",
+        "title": "Swindon Town sign Bristol City's Adam Murphy and Jamie Knight-Lebel on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50WHlIdXZNOERWenM4dUd0ZlY3Y0F2NGJzeU1VeVVOcUxFaWNFTEMzZEtMRzBtNXVMRW9iUnQtUXdsNTlYeDA1TktOUmUzYjFqTGFPeTgzdVJ3WWx6R1FaYUFHMmltUGM?oc=5",
         "source": "Google News League Two",
@@ -22216,7 +22216,7 @@
           "Luton Town",
           "Port Vale"
         ],
-        "title": "Ethon Archer: Luton Town winger joins Port Vale on loan - bbc.com",
+        "title": "Ethon Archer: Luton Town winger joins Port Vale on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PaXRHQXZsVU9Da2ZQN2NybEtlT0JrOS1aN2s4WXk4cEQ0cXN6TFBXOFpsSUJuWUFYYU1nWTg2eWJES2lSUV9ZVjBkQXhUQ0FTYXdrTWx4QkhYem5ja2Fzd0psbWxMc1E?oc=5",
         "source": "Google News League One",
