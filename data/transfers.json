@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T08:41:53.092Z",
+  "updatedAt": "2026-10-07T09:00:24.039Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,7 @@
         "summary": "The top stories and transfer rumours from Wednesday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13595942/arsenal-interested-in-signing-como-star-nico-paz-but-mikel-artetas-hopes-of-landing-creative-midfielder-dealt-blow-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-07T08:41:52.821Z",
+        "publishedAt": "2026-10-07T09:00:23.762Z",
         "status": "Rumour"
       },
       {
@@ -4854,6 +4854,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Rating every Premier League club’s transfer window after record deadline day - Yahoo Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV3dMZTFYOV9kSHQtZVhHT3RGU2JGVGU5SHZXQVNJd01VT3JvQjJNWlRjM2UyVWlwb3lOYUtES0RzZnBXLUozRFJjeXRrdkw2dktvSEpHUkQwWmpWTkd6bS0zVjM0djBQamk5UHJ5TEFuUFZfbjdYcnk0SW4yZkt3by1fSU92aFdp?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-03T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Newcastle United"
         ],
@@ -7307,17 +7318,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Mykhailo Mudryk handed Premier League lifeline as loan deal explored - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5aMk1USnVlei1yTWRqUHVHUzRrNkVkS2V6SmJua0NHeDhXM0JpWjBMVENHaEN4NTFjR25GNTRqRkxURTZPb09KS2prQmVTa0pkcUowRlBUMWY2b0UyOFhaMExkZVN4Qm1XQmFLT0otYzlaMFZuZi1jXzZnM190QUk?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-21T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Fulham",
           "Wigan Athletic"
@@ -9720,20 +9720,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City",
-          "Leicester City"
-        ],
-        "title": "Man City agree deal to re-sign £12.5m Championship star as Leicester City plot late loan move - ManchesterWorld",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFJIOW4xcWVWamw0bno5X21Fb2Npa3NfdVZzcHJfTWpEWDBHQmdhUUR1LUN6anVvZDVMUDlMQkJZTkZWZEJZdEdZXzhvcF9OTkduOXZ5T0I4bnRMTDZtZmhnNnZDLUJDcXRPZGRHbGpkU2FLNnptMzdnZHlxQWR0UjVackcxYkpQUWhJUmFPLTNpbHIwRFhyNFh0OVZsbmlRbUx0MVVpZ3BTdUlTNFJQZnkwdHA?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Tottenham",
           "Mansfield Town"
         ],
@@ -9756,6 +9742,20 @@
         "source": "Google News League One",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City",
+          "Leicester City"
+        ],
+        "title": "Man City agree deal to re-sign £12.5m Championship star as Leicester City plot late loan move - ManchesterWorld",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFJIOW4xcWVWamw0bno5X21Fb2Npa3NfdVZzcHJfTWpEWDBHQmdhUUR1LUN6anVvZDVMUDlMQkJZTkZWZEJZdEdZXzhvcF9OTkduOXZ5T0I4bnRMTDZtZmhnNnZDLUJDcXRPZGRHbGpkU2FLNnptMzdnZHlxQWR0UjVackcxYkpQUWhJUmFPLTNpbHIwRFhyNFh0OVZsbmlRbUx0MVVpZ3BTdUlTNFJQZnkwdHA?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
