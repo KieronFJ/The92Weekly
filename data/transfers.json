@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-10-08T00:26:32.681Z",
+  "updatedAt": "2026-10-08T01:07:54.000Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Arsenal"
-        ],
-        "title": "'We want a winning era' - Arteta signs new Arsenal contract",
-        "summary": "Mikel Arteta has signed a new long-term contract to extend his stay at Arsenal.",
-        "link": "https://www.skysports.com/football/news/12040/13590915/mikel-arteta-contract-arsenal-boss-signs-new-deal-to-extend-stay-at-premier-league-champions",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-08T00:26:32.402Z",
-        "status": "Confirmed"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,7 @@
         "summary": "Mikel Arteta has turned Arsenal into Premier League champions but does his new contract take him into a new stage of his project? And can he bring more trophies to eclipse Arsene Wenger?",
         "link": "https://www.skysports.com/football/news/12040/13595720/mikel-artetas-new-contract-the-challenges-facing-arsenal-boss-as-he-enters-step-five-of-his-project",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-08T00:26:32.402Z",
+        "publishedAt": "2026-10-08T01:07:53.709Z",
         "status": "Rumour"
       },
       {
@@ -39,7 +26,7 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-08T00:26:32.401Z",
+        "publishedAt": "2026-10-08T01:07:53.708Z",
         "status": "Rumour"
       },
       {
@@ -52,8 +39,21 @@
         "summary": "When Mikel Arteta signed his last Arsenal contract in September 2024, his quest to bring major silverware back to the club was ongoing. Two years later, he signs his new one after leading them to a long-awaited Premier League title.",
         "link": "https://www.skysports.com/football/news/12040/13590953/mikel-arteta-to-begin-new-era-at-arsenal-as-club-eye-premier-league-dominance-and-champions-league-success",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-08T00:26:32.401Z",
+        "publishedAt": "2026-10-08T01:07:53.708Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "'We want a winning era' - Arteta signs new Arsenal contract",
+        "summary": "Mikel Arteta has signed a new long-term contract to extend his stay at Arsenal.",
+        "link": "https://www.skysports.com/football/news/12040/13590915/mikel-arteta-contract-arsenal-boss-signs-new-deal-to-extend-stay-at-premier-league-champions",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-08T01:07:53.708Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -8384,19 +8384,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester United"
-        ],
-        "title": "Man Utd approve transfer with £36.5m Erik ten Hag signing set to leave - Metro.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeW1SMFhIdks2QVlGYzRpVFNhMEZEeXZlWXc1U1J6X2JLc3FWSUVQdFpPSXFDYTR6Q0x3aWZ6SDhWQzZsdmpjc1ZORlhFY0JUaVBkUWx2cjVoZlNOTC14SmtiSG84ODBzaEZlVEVvU3RUY1oyNV9oTXhYZjN3YUt4cnJGTzRwTTQxRERBQ1RQUmdocUxUU01LNlBkemZIYkdHazhsWtIBqgFBVV95cUxOR0ZrWWFUV2U0aE0zSG5kYUlYWDVkNmFOLU1mTHdwZnAxbG5URjA1S2hJVDBYakt3TjlrT2FOUTFRVTNDSTdqd0g0S3dIZ1ZPeU01bmx0emphS0I1ZFVSa3otNV83TG9SQkVTZUxzNVFhRjE2bnF6WmptQV9UOTU4MUtmaWVMaDNobkVFYUJ2WXdrZGFIX3ItOHB0ZFpoSlIzb2QyQWcya1dyUQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-07T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Liverpool"
         ],
         "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
@@ -8405,6 +8392,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-07T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Man Utd approve transfer with £36.5m Erik ten Hag signing set to leave - Metro.co.uk",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeW1SMFhIdks2QVlGYzRpVFNhMEZEeXZlWXc1U1J6X2JLc3FWSUVQdFpPSXFDYTR6Q0x3aWZ6SDhWQzZsdmpjc1ZORlhFY0JUaVBkUWx2cjVoZlNOTC14SmtiSG84ODBzaEZlVEVvU3RUY1oyNV9oTXhYZjN3YUt4cnJGTzRwTTQxRERBQ1RQUmdocUxUU01LNlBkemZIYkdHazhsWtIBqgFBVV95cUxOR0ZrWWFUV2U0aE0zSG5kYUlYWDVkNmFOLU1mTHdwZnAxbG5URjA1S2hJVDBYakt3TjlrT2FOUTFRVTNDSTdqd0g0S3dIZ1ZPeU01bmx0emphS0I1ZFVSa3otNV83TG9SQkVTZUxzNVFhRjE2bnF6WmptQV9UOTU4MUtmaWVMaDNobkVFYUJ2WXdrZGFIX3ItOHB0ZFpoSlIzb2QyQWcya1dyUQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -8951,9 +8951,9 @@
           "Aston Villa",
           "Chelsea"
         ],
-        "title": "Alejandro Garnacho: Aston Villa announce loan deal for Chelsea winger - BBC",
+        "title": "Aston Villa sign Garnacho on loan from Chelsea - TNT Sports",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MWWpLTEhUeVQ3dWFEZ1lzOXRfQkpsZ0FQTE1OX1FYeUM5aEtHOWdGb1diOWZmNHdDTC1EVDZWVU9ya2xuMUhWaENvTGU5ckZxS1RWM2Q4NUJ6cnA1bHl5OHFfY2pJaEE?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTGtGMkRGWjFZbnhiYzNwWHZPRWZ6YlRmNnZ3YjlqblJvQ09BVXMzR1NOaG91bWFNLXVpY0pCeG1rbS1aZFFFbGkxTDdVNS1UdHgzaGZZZ2pkVENVOHNJRWRub2tMbk5pQ0pld2w4TjFFdkNhQ201QldXaXEyN1J6aUgzbzhhckRYSDFYc0J2U0E0OFp2N0Rmb2pMbmh4WFR0REx2SHd2UW00TEYwRzB4RUZHVXJzbXFtSTN5Z2Q0aVk5NU45Z21Wdk5hZUtYbTNORGFnVFFtVUtfMUlTNjF0X2dB?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-07-23T07:00:00.000Z",
         "status": "Loan"
@@ -8965,9 +8965,9 @@
           "Aston Villa",
           "Chelsea"
         ],
-        "title": "Aston Villa sign Garnacho on loan from Chelsea - TNT Sports",
+        "title": "Alejandro Garnacho: Aston Villa announce loan deal for Chelsea winger - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTGtGMkRGWjFZbnhiYzNwWHZPRWZ6YlRmNnZ3YjlqblJvQ09BVXMzR1NOaG91bWFNLXVpY0pCeG1rbS1aZFFFbGkxTDdVNS1UdHgzaGZZZ2pkVENVOHNJRWRub2tMbk5pQ0pld2w4TjFFdkNhQ201QldXaXEyN1J6aUgzbzhhckRYSDFYc0J2U0E0OFp2N0Rmb2pMbmh4WFR0REx2SHd2UW00TEYwRzB4RUZHVXJzbXFtSTN5Z2Q0aVk5NU45Z21Wdk5hZUtYbTNORGFnVFFtVUtfMUlTNjF0X2dB?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MWWpLTEhUeVQ3dWFEZ1lzOXRfQkpsZ0FQTE1OX1FYeUM5aEtHOWdGb1diOWZmNHdDTC1EVDZWVU9ya2xuMUhWaENvTGU5ckZxS1RWM2Q4NUJ6cnA1bHl5OHFfY2pJaEE?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-07-23T07:00:00.000Z",
         "status": "Loan"
@@ -22162,6 +22162,19 @@
         "clubs": [
           "Leicester City"
         ],
+        "title": "Leicester City complete third summer signing with Premier League loan - Leicester Mercury",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT0YwQnczZzF0VzJGMllrb0dadHhISmVseW9YM3Q0VlIzRGdHdUlTc1M3Z3M4ZkFIU2NTMWhhYkFCUjBsenlsaDEwdXdQZFRyb1Y4bGdSa2lHM2tjUmo4QXkwbFItd0IxM2VnclZVdDJKejZxWFM1SnhRMDBldW1uQ1V1S0ZXTjU2VHFnUXljZDlVOGFCc3ZlS3VWUE9BRF9lWVZ5d0Z2QWpGbGs4TTdtVNIBtgFBVV95cUxQRi1Xa19jaTVCR0pqX1o0U3dka25DaDh1NURCc2xlVHhoRy1ISnZBS3ZWSmFPTlNwWVAyVUZXVDdMczNyajVicXdRN0l6REFlbDZHZlJqYnZEeEMzV0hlc1pLcmZZWWNDSlRFU3FuRGdvRXFlZzNMSHowT0FfVDBaTkZBSG1BUjlHYnJ1enpGTE9Jd3BtNGx2eThOcHRXVW84d2M5d29qZTBNM2NyUmxHbHZoSHBBQQ?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Leicester City"
+        ],
         "title": "Leicester City miss out on striker to League One rivals as loan transfer discussions ongoing - Leicester Mercury",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQkdpUUtoUlJHcWowMURRTTV4TmpZWlNhcVVsUDkwYVpDdVVvNWljNURjX0p0MDhaSGo3Z09GdzY1OUU1YXgyVUxDSzE5aGwtNzRaeUp3MUNKY1FDaTNqLXBPVHFWeW9tWkFhRHJ4Yk9zMXZBSEpWNkpYVnhMSEpSRDV4ejZCTEZvVzNpTENYUnJaWEM2OW5Qclk4UzZWOGI1dGdEZ0pwVWJySG5jOGfSAbMBQVVfeXFMUElsLWhRblp1NnlPSXp4QUNLUjc4VmQ1NElPNkFpdXBJRVlQWkJHQTJBTFBHTjRHb2JCdEVMMXhjdTdNTU5LaktnQ00zaW5vUjE3ZVBhTVl1bUhtY1V2dXRONktHSmFvM0h4YTdJUjAyVkFOcHlHbjhwbE9wdFZKYkl3U0cyMDBFSkZXZHhsVVl0TnByYjNvSmRRNWpHdWFOZUJkZnB1NVhyOHNfemlRTC1kMWM?oc=5",
@@ -23317,9 +23330,9 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "Every signing completed in League Two on transfer deadline day - The Wiltshire Gazette and Herald",
+        "title": "Every signing completed in League Two on transfer deadline day - Wilts and Gloucestershire Standard",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaGEzZ0M3SDZqZDI4SjdYanpNUUpPSEFTaVhkV0JPOGxUU2dxVzFIUzJYcHlLWmVJS09jbXFvQ2Z4M2tqRmJZWFYzQ1hPMjRxZ3RFSTU5amJxZDZSdVhsQWlfaDFISDBkMGxYaUlsZ2xrQkhjSm9hdEZUYk5fUVRxWFA4WFotenVLY2k2YUc0TWQwZUg5ZmV2RWRfallkQQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU3V5UlhNbXpTMnhBc2p0Z1VWWmlseS15eUxXTHZKUzNJb0xkVzVxWGpVMGtYekplZ3AxUzlxbnAyeVd6dzdJMzJEcUxldTBKMWpoYnkwM2RyeWN2UUxoVk1PRC1hV04xQVFlaGY2blk4OWhnSkpCc0pqZ1pHa0xYM01EMC05Vk5EbDFnQ2RGdXFBSl9tUVBDazZzTXRDUQ?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Confirmed"
