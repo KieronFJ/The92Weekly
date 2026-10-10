@@ -1,8 +1,34 @@
 {
-  "updatedAt": "2026-10-10T08:24:02.263Z",
+  "updatedAt": "2026-10-10T13:43:49.878Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "'We win major trophies here': Palmer signs new Chelsea contract",
+        "summary": "Cole Palmer has signed a contract extension with Chelsea.",
+        "link": "https://www.skysports.com/football/news/12040/13597179/cole-palmer-contract-chelsea-forward-signs-extension-at-stamford-bridge-until-2034",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-10T13:43:49.593Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Palmer signs new Chelsea contract until 2034",
+        "summary": "Cole Palmer signs a new Chelsea contract on improved terms until 2034, one of the longest active deals in the Premier League.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cwe9lngxzjpno?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-10T09:51:09.000Z",
+        "status": "Confirmed"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -140,6 +166,19 @@
         "source": "Sky Sports",
         "publishedAt": "2026-10-09T10:48:09.698Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-09T10:28:35.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -430,19 +469,6 @@
         "source": "Football League World",
         "publishedAt": "2026-10-07T17:15:12.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-07T15:53:35.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -6399,17 +6425,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:35:59.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Summer 2026 Transfer Watch - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wQ3hLM19obkE5LWgxa3dTZHJ4NTRDS2RJYUUzRmR3NHNqbkpMUzVndDFIdktRRHFjblBJMnQ0dmZuNlVZNGZRVTFYM0h4eWFVdEhldjU5SXhVMGlQTnAwM2otUzktNm9Xczl4SVpTd2k0MDhDZW5wZXhIWVg?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -19623,13 +19638,12 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Swansea City",
-          "Wycombe Wanderers"
+          "Portsmouth"
         ],
-        "title": "Sam Parker: Wycombe Wanderers sign defender on loan from Swansea City - BBC",
+        "title": "Report: Pompey defender to join League One side as loan deal 'agreed' - Portsmouth News",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUTGo4S2VrQkhjTFoyVXh2OWVEaU5VOEhpYXJDSFdvcDNYaWNPd0gzWHQyRTVIczRKRFQ3ODBINUZlSXp0XzVOZXl4aFRoUWhReWtWOWE4ckwtZ2lqdTU0NWtzd0JaUUk?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTDBVaFZ6T1BsLWF1ZVdSZ1V0OVpwM056R1NBczFuYjdlTXN3S1NQaS1yeWp3RWJrTExEdXBYaVBPbGlGa1Fnd0tVOUdyTWdUTzdzWVBwckZJMEF3RC1Kc20tNm9CMzhaWmJDZ2hhcmp6dmwtQXZCSkJSXzkxZTVCSTluNE5sRlVZT1p5a0NOTlBIeFRZVzFaa0poSEc2dk5jUldGUU1tSXA3MHhQYmtCQzZZd2gybFN5RzJFY0w0bUxOMGlD?oc=5",
+        "source": "Google News League One",
         "publishedAt": "2026-07-28T07:00:00.000Z",
         "status": "Loan"
       },
@@ -19637,12 +19651,13 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Portsmouth"
+          "Swansea City",
+          "Wycombe Wanderers"
         ],
-        "title": "Report: Pompey defender to join League One side as loan deal 'agreed' - Portsmouth News",
+        "title": "Sam Parker: Wycombe Wanderers sign defender on loan from Swansea City - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTDBVaFZ6T1BsLWF1ZVdSZ1V0OVpwM056R1NBczFuYjdlTXN3S1NQaS1yeWp3RWJrTExEdXBYaVBPbGlGa1Fnd0tVOUdyTWdUTzdzWVBwckZJMEF3RC1Kc20tNm9CMzhaWmJDZ2hhcmp6dmwtQXZCSkJSXzkxZTVCSTluNE5sRlVZT1p5a0NOTlBIeFRZVzFaa0poSEc2dk5jUldGUU1tSXA3MHhQYmtCQzZZd2gybFN5RzJFY0w0bUxOMGlD?oc=5",
-        "source": "Google News League One",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUTGo4S2VrQkhjTFoyVXh2OWVEaU5VOEhpYXJDSFdvcDNYaWNPd0gzWHQyRTVIczRKRFQ3ODBINUZlSXp0XzVOZXl4aFRoUWhReWtWOWE4ckwtZ2lqdTU0NWtzd0JaUUk?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-07-28T07:00:00.000Z",
         "status": "Loan"
       },
@@ -22920,7 +22935,7 @@
         "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzVU9BQXpMOVZFaEFBM1JmVmlkcEp2T2RRNTVwTXJacFAwOGlTcGVnb3hqdmY2MTJHSk02czM3dzdTeW04QjlNeVpvcjFkUG9IeUVNeUp0akZ1aHlfcEpkTmIwRVN1OWs?oc=5",
-        "source": "Google News League One",
+        "source": "Google News League Two",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
       },
