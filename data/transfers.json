@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-10-10T01:17:06.208Z",
+  "updatedAt": "2026-10-10T02:02:54.617Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Everton"
-        ],
-        "title": "'I only found out this morning' - Moyes surprised Everton are up for sale",
-        "summary": "David Moyes has admitted his surprise at Everton being put up for sale by owners The Friedkin Group - even claiming he only found out on Friday morning when the statement was released to the supporters.",
-        "link": "https://www.skysports.com/football/news/12040/13596920/david-moyes-everton-manager-admits-surprise-at-seeing-the-club-being-put-up-for-sale-by-the-friedkin-group",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-10T01:17:05.926Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "The top stories and transfer rumours from Saturday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13597035/man-utd-may-be-forced-into-transfer-market-in-january-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-10T01:17:05.925Z",
+        "publishedAt": "2026-10-10T02:02:54.315Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Everton"
+        ],
+        "title": "'I only found out this morning' - Moyes surprised Everton are up for sale",
+        "summary": "David Moyes has admitted his surprise at Everton being put up for sale by owners The Friedkin Group - even claiming he only found out on Friday morning when the statement was released to the supporters.",
+        "link": "https://www.skysports.com/football/news/12040/13596920/david-moyes-everton-manager-admits-surprise-at-seeing-the-club-being-put-up-for-sale-by-the-friedkin-group",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-10T02:02:54.315Z",
         "status": "Rumour"
       },
       {
@@ -10216,19 +10216,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
-        ],
-        "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Tottenham",
           "Mansfield Town"
         ],
@@ -10236,6 +10223,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFME5kajM5bVp6LU1mS3BSNHJ0ZmtnNzhQRlNFMDBNZnhhdTRybDBTQTF2TGFvSzMtdWRmR1VhTVJxYktobml1ck9GdFdVZXBSRzVEWnFLOVUySXM4Q1VBd2dDU0tjbGM?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
       },
@@ -12040,7 +12040,7 @@
         "summary": "Jarrod Bowen saw his 91st-minute penalty saved as West Ham missed the chance to move top of the Sky Bet Championship after a 1-1 draw with QPR.",
         "link": "https://www.skysports.com/football/west-ham-united-vs-queens-park-rangers/report/560605",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-10T01:17:05.925Z",
+        "publishedAt": "2026-10-10T02:02:54.315Z",
         "status": "Rumour"
       },
       {
@@ -20064,6 +20064,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Champions League club hold talks over signing Harvey Elliott in cut-price transfer - SPORTbible",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcURjaV9NN0tLdFAyTTlaX0FOMkhMQnRXMENXVmEyQ3ZxOGFKTXA2TnNoVlA2YWN2bEZTY2syWUZpU0E3WWxPcFdfWUZFSDg5Vm5qNzMxSjZUdDFkNXVkdXZ3YzBQb3V4bTBURW9xaDlaejBaU1BhaHluQWxINV9nVHpSMVhHZzN0NS1ZVEtFTC1aZkxnbzVoNXh2bVZNa1ZJdktJZzlqeXlvN3JONDhJT2pzb2hteEVHd1JJ?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-05-15T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Cardiff City"
         ],
@@ -22768,12 +22779,12 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Notts County",
-          "Grimsby Town"
+          "Burton Albion",
+          "Milton Keynes Dons"
         ],
-        "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - BBC",
+        "title": "Will Collar: Burton Albion sign MK Dons midfielder on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzVU9BQXpMOVZFaEFBM1JmVmlkcEp2T2RRNTVwTXJacFAwOGlTcGVnb3hqdmY2MTJHSk02czM3dzdTeW04QjlNeVpvcjFkUG9IeUVNeUp0akZ1aHlfcEpkTmIwRVN1OWs?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ERGFyOV9wRVpDaWFPVXNxVy1OVElOVktOSzcwbnRDVzRUbF93Rkpoc3dtUTVjajFncEpJRWJJQ2JobURKZnV5ZzVjVGxna0VzSXhIaW5ZR25jTnBZaUVqa0tFbVM2TVk?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
@@ -22782,13 +22793,13 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Burton Albion",
-          "Milton Keynes Dons"
+          "Notts County",
+          "Grimsby Town"
         ],
-        "title": "Will Collar: Burton Albion sign MK Dons midfielder on loan - BBC",
+        "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ERGFyOV9wRVpDaWFPVXNxVy1OVElOVktOSzcwbnRDVzRUbF93Rkpoc3dtUTVjajFncEpJRWJJQ2JobURKZnV5ZzVjVGxna0VzSXhIaW5ZR25jTnBZaUVqa0tFbVM2TVk?oc=5",
-        "source": "Google News League One",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzVU9BQXpMOVZFaEFBM1JmVmlkcEp2T2RRNTVwTXJacFAwOGlTcGVnb3hqdmY2MTJHSk02czM3dzdTeW04QjlNeVpvcjFkUG9IeUVNeUp0akZ1aHlfcEpkTmIwRVN1OWs?oc=5",
+        "source": "Google News League Two",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
       },
@@ -22899,6 +22910,17 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlWDh3MzhmOWZSN2thTEVZcHVEOG95QkFXNXhoeVpMTGxZdEhKc2g2b21YTmtOTHZuWGVsZGZiQlA5NkxKRDZBNndsWkNjb1cwbUNNcDU5ZGpNTFFEeWpCSWZXb1Z0R2M?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-08-10T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [],
+        "title": "SWFC News: Owls' rivals 'braced' for headline exit as defender 'set' for loan switch - The Star",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOU1BJTWNRZjVjMUVZVy1nZVpyWWxFeTFjLVE5STgwNkFNN3lUbnFQS1dKZGVBdXl5RTdvX25ZTTF4aGtnZjhwTzRzUEdOVGl6dk1iSG1yOG9OVUFkMmprODFYd0hackhWWTVZeUthemdGRGlqOTBLcU1FelQwY2EzRnRTUFFQaFIzUjloa1VDZ1RnMVVTYkZ6NTJVOGo3T1V5djNOZUxSWjM4V0hzZlFQbVVwQlc?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
         "status": "Loan"
       },
       {
