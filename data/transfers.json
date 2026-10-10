@@ -1,8 +1,23 @@
 {
-  "updatedAt": "2026-10-10T14:33:19.194Z",
+  "updatedAt": "2026-10-10T18:02:05.916Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Hull City",
+          "Leeds United",
+          "Birmingham City"
+        ],
+        "title": "Hull City ace breaks silence on failed Birmingham City, Leeds United transfer",
+        "summary": "Joe Gelhardt came close to a move to St. Andrew's in the summer transfer window",
+        "link": "https://footballleagueworld.co.uk/premier-league-forward-makes-birmingham-city-transfer-revelation/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-10T17:00:12.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -10262,19 +10277,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
-        ],
-        "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Tottenham",
           "Mansfield Town"
         ],
@@ -10282,6 +10284,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFME5kajM5bVp6LU1mS3BSNHJ0ZmtnNzhQRlNFMDBNZnhhdTRybDBTQTF2TGFvSzMtdWRmR1VhTVJxYktobml1ck9GdFdVZXBSRzVEWnFLOVUySXM4Q1VBd2dDU0tjbGM?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
       },
@@ -11146,12 +11161,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City",
-          "Wrexham"
+          "Chelsea"
         ],
-        "title": "Wrexham set to sign Man City star with Champions League experience in another Premier League raid - talkSPORT",
+        "title": "Promising Chelsea academy product set to join Championship club on loan after signing for Strasbourg - The Chelsea Chronicle",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVGVILTdxa21hZVgwaXVjcjQ2bHFSY1UtSXVRbm9MLTc2dWd1N1JPd1VzOTNPNFhsTmdXQU5XMENGR3QyOVpSN055UlZMVFVzMkQtNmxtMUdyMnFrSERCOW1vTjNoRjk1NnhfbzMtVVZwQ2NaUUsyZ0lnZ3lMak1JNmw4SHFTdzZLVXdFNG01TlRkcEk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUkV2Y2ZXRmRzUWZxZjFORG1kd0M4cTQ5Q25taFh6WXRkNVd2U1gzOVVkUVZHemlhX3k4ei1GTHVqbHV1OGJvZUxmWWViWDBBZDRrbHRaSkl4V0E0RzV5cm1heHZKOTM0QzlZOUhjUEpVMVNRSkl2cFRLQUNkY1hiRlRxQmZnYUJYZDBWSmEzQUlUVjRsOWlfR0NTRWJkSDItc3ZacDNxa1d0NEh3a3RyXzlBOXMtN1JLbmRSSkx0Z1dCTW05dnRBV3Y5Wkx0VEtYTW5fbGx0TUpiZmlBLTlhcVg2NFktdw?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -11160,11 +11174,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea"
+          "Manchester City",
+          "Wrexham"
         ],
-        "title": "Promising Chelsea academy product set to join Championship club on loan after signing for Strasbourg - The Chelsea Chronicle",
+        "title": "Wrexham set to sign Man City star with Champions League experience in another Premier League raid - talkSPORT",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUkV2Y2ZXRmRzUWZxZjFORG1kd0M4cTQ5Q25taFh6WXRkNVd2U1gzOVVkUVZHemlhX3k4ei1GTHVqbHV1OGJvZUxmWWViWDBBZDRrbHRaSkl4V0E0RzV5cm1heHZKOTM0QzlZOUhjUEpVMVNRSkl2cFRLQUNkY1hiRlRxQmZnYUJYZDBWSmEzQUlUVjRsOWlfR0NTRWJkSDItc3ZacDNxa1d0NEh3a3RyXzlBOXMtN1JLbmRSSkx0Z1dCTW05dnRBV3Y5Wkx0VEtYTW5fbGx0TUpiZmlBLTlhcVg2NFktdw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVGVILTdxa21hZVgwaXVjcjQ2bHFSY1UtSXVRbm9MLTc2dWd1N1JPd1VzOTNPNFhsTmdXQU5XMENGR3QyOVpSN055UlZMVFVzMkQtNmxtMUdyMnFrSERCOW1vTjNoRjk1NnhfbzMtVVZwQ2NaUUsyZ0lnZ3lMak1JNmw4SHFTdzZLVXdFNG01TlRkcEk?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -12075,6 +12090,20 @@
       }
     ],
     "2": [
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Bolton Wanderers",
+          "Stoke City"
+        ],
+        "title": "Ten-man Stoke seal first win away at Bolton for 36 years",
+        "summary": "Lamine Cisse and Ben Wilmot were on target as 10-man Stoke extended their unbeaten Sky Bet Championship run to six games with a 2-1 win over Bolton at the Toughsheet Community Stadium.",
+        "link": "https://www.skysports.com/football/bolton-wanderers-vs-stoke-city/report/560595",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-10T18:02:05.630Z",
+        "status": "Rumour"
+      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -19430,19 +19459,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Bristol City"
-        ],
-        "title": "Ex-Bristol City loan pair reportedly set for medicals as Robins' Championship rivals agree deals - Bristol Live",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbFRubUxPdjV0MHZaV3NWQWFzN3hWX2xHLTN2Rm9YSEhsczJvakhna1gyWlVUWU1CcGMzRnp5NjJIdi01NzlpQkdpdGtRSjFZMDVGZWpXOU1pWEFKSURjeGw2ZmVXODgwUV9JZXFibHRQUXlfR1pyV0o4M1VIYWUtS2QwM3l0cGtRR3IxU0JpanBsb1FQeXlnUQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-05T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Lincoln City"
         ],
         "title": "Lincoln City: Imps sign Mason Melia on loan and agree new deals with trio - BBC",
@@ -19451,6 +19467,19 @@
         "source": "Google News Championship",
         "publishedAt": "2026-08-05T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Bristol City"
+        ],
+        "title": "Ex-Bristol City loan pair reportedly set for medicals as Robins' Championship rivals agree deals - Bristol Live",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbFRubUxPdjV0MHZaV3NWQWFzN3hWX2xHLTN2Rm9YSEhsczJvakhna1gyWlVUWU1CcGMzRnp5NjJIdi01NzlpQkdpdGtRSjFZMDVGZWpXOU1pWEFKSURjeGw2ZmVXODgwUV9JZXFibHRQUXlfR1pyV0o4M1VIYWUtS2QwM3l0cGtRR3IxU0JpanBsb1FQeXlnUQ?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-05T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 2,
@@ -22938,7 +22967,7 @@
         "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzVU9BQXpMOVZFaEFBM1JmVmlkcEp2T2RRNTVwTXJacFAwOGlTcGVnb3hqdmY2MTJHSk02czM3dzdTeW04QjlNeVpvcjFkUG9IeUVNeUp0akZ1aHlfcEpkTmIwRVN1OWs?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News League One",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
       },
@@ -24996,7 +25025,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "What is an emergency loan and how do they work? - BBC",
+        "title": "What is an emergency loan and how does it work? - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ySGdLZ3RBY05iQkxyOEpVS0RLYWdiV1FJNV8weXlRdjl0MjJtZ1N2U0NMMGtBV3NrMXE4NmloWnQ2UFpiSzNtU1dkZ3J6eEdBNjlrQ00tWk5sRUYyQzdOVEtjdmoyeWM?oc=5",
         "source": "Google News League Two",
