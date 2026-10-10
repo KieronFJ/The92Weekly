@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T02:02:54.617Z",
+  "updatedAt": "2026-10-10T07:12:51.586Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,21 @@
         "summary": "The top stories and transfer rumours from Saturday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13597035/man-utd-may-be-forced-into-transfer-market-in-january-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-10T02:02:54.315Z",
+        "publishedAt": "2026-10-10T07:12:51.296Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Ipswich Town",
+          "West Bromwich Albion"
+        ],
+        "title": "West Brom missed out on £12m Ipswich Town star - One player will love it",
+        "summary": "West Brom were interested in Ipswich Town's Kasey McAteer over the summer, as Baggies winger Harry Whitwell will love their decision",
+        "link": "https://footballleagueworld.co.uk/west-brom-missed-out-on-12m-ipswich-town-star-one-player-will-love-it/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-10T06:30:12.000Z",
         "status": "Rumour"
       },
       {
@@ -5245,17 +5259,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUEhsQVljSWJlQVJYNjFsdXpXeWRGYXYwTmEzemhUaXV3S3hkOU45SV9rNmdYUW1mRmh6UkxNSkx0X00zdzM0NzF1OTdEZmZWLVc5bTVnNVFCLThyWW1NVEpuUkFDRndpODBOVjZTYlF0QkFNYjlnM0s3VW13SmFmMEk1LUlMa2F0VkhWS1RKRGZocURaaTJfMDh1NF9rZGJIdFBPUXhUeVl1YVhYeGVpcGpKTlo2ejZmdmwwU3lfVmkxQQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-03T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Newcastle United"
         ],
@@ -6744,6 +6747,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Rumour ranking: Assessing the top 20 transfer window whispers - Football365",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZUhKWWZCZjNOWkJWaFJjNUNTRlNfMDRCdW11bVVwRU85bTkybXVvYU5WQXE5MDZBa1lNS3NoOXcyU0IzdjU1TnE0YmZFckpDcFQtUmJ5Qy16T2VCRHVQRWY4bDVPMzJTSW0xQW43dTNBZUNKb1kxT05xbExBNVUtNQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Arsenal",
           "Liverpool",
@@ -7582,19 +7596,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Tottenham"
-        ],
-        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-25T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Arsenal",
           "Liverpool",
           "Manchester United",
@@ -7606,6 +7607,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-25T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -8753,11 +8767,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Liverpool"
+          "Manchester United"
         ],
-        "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
+        "title": "Romano reveals Man Utd's 'only' way to sign Lewis Hall as INEOS 'green light' loan deal - Football365",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlhKVlBjWmh5SGxKSDVRTVhZV2FVeTNTT3Y5SUs0Uk94R3plMkE1dFhGTnJkWGJocF9KRzl6M0xETVNLLU53WjhEX05ucHl1WUdFbU8xRWN2dk1wRmRlWmpjN1p1eDdkQy1iNUltVDRwa0JxekpydHBxRlk5UHFsbnMtc1RBMVh5THZ2aWxnaDZxZzdsNV9uVTJ2eVlPTS1SY3FWZEFB?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaXhEYTZhUU1mZVM2NTQ1UjJua0JPbExYOWZJMjVtcmg2RDh2UFJKR0pCb1dPc0NUaFU5Q0oyeHlXY0g2ci1henRZNlVZZHNBQzllXzgxLUs4U25SQVVlaWI2NmdndDIzYXI2MTdXRXVoU3BXbzFQQ0JXaGU3cTgzQ3Utd2c1Z2ltSmxoczc0VjdON1FIeloySXQyd0JxRVZXQ0QwNks3aHAzUnljMjhBVGJn?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-07T07:00:00.000Z",
         "status": "Loan"
@@ -8766,11 +8780,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester United"
+          "Liverpool"
         ],
-        "title": "Romano reveals Man Utd's 'only' way to sign Lewis Hall as INEOS 'green light' loan deal - Football365",
+        "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaXhEYTZhUU1mZVM2NTQ1UjJua0JPbExYOWZJMjVtcmg2RDh2UFJKR0pCb1dPc0NUaFU5Q0oyeHlXY0g2ci1henRZNlVZZHNBQzllXzgxLUs4U25SQVVlaWI2NmdndDIzYXI2MTdXRXVoU3BXbzFQQ0JXaGU3cTgzQ3Utd2c1Z2ltSmxoczc0VjdON1FIeloySXQyd0JxRVZXQ0QwNks3aHAzUnljMjhBVGJn?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlhKVlBjWmh5SGxKSDVRTVhZV2FVeTNTT3Y5SUs0Uk94R3plMkE1dFhGTnJkWGJocF9KRzl6M0xETVNLLU53WjhEX05ucHl1WUdFbU8xRWN2dk1wRmRlWmpjN1p1eDdkQy1iNUltVDRwa0JxekpydHBxRlk5UHFsbnMtc1RBMVh5THZ2aWxnaDZxZzdsNV9uVTJ2eVlPTS1SY3FWZEFB?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-07T07:00:00.000Z",
         "status": "Loan"
@@ -10216,13 +10230,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Tottenham",
-          "Mansfield Town"
+          "Manchester City"
         ],
-        "title": "Mansfield Town sign Tyler Roberts and get Tottenham's George Abbott on loan - BBC",
+        "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFME5kajM5bVp6LU1mS3BSNHJ0ZmtnNzhQRlNFMDBNZnhhdTRybDBTQTF2TGFvSzMtdWRmR1VhTVJxYktobml1ck9GdFdVZXBSRzVEWnFLOVUySXM4Q1VBd2dDU0tjbGM?oc=5",
-        "source": "Google News League One",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
       },
@@ -10230,12 +10243,13 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
+          "Tottenham",
+          "Mansfield Town"
         ],
-        "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
+        "title": "Mansfield Town sign Tyler Roberts and get Tottenham's George Abbott on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFME5kajM5bVp6LU1mS3BSNHJ0ZmtnNzhQRlNFMDBNZnhhdTRybDBTQTF2TGFvSzMtdWRmR1VhTVJxYktobml1ck9GdFdVZXBSRzVEWnFLOVUySXM4Q1VBd2dDU0tjbGM?oc=5",
+        "source": "Google News League One",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
       },
@@ -10554,6 +10568,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Liverpool"
+        ],
+        "title": "Liverpool confirms latest transfer move as Championship club eyes late swoop - Liverpool.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYkpFc2ZvdUF0VlFIcjc0Z3NDcnhoeTdFQzVfWkotUWZrZEpFV3Y5bmt0OUhEVXNtbDA1akhCaWZuei00Nm9MNXgxSnBueVRkRm51QkthQzF2b1dSOWxTanp4cFE2UlZ4bUk3dFlNMmJNQ0EyRG1uS2VkYzZ1TFpOQlE4Y0NUMmFJdXhrT0ZyMjZxSENFMGI5RFY4WFZfNTjSAaQBQVVfeXFMUEVBcVlzM09DYl9uVEhXbC0wMUtseGFqczZDbkdXSUYwNjAzSnM3R25OZEo5MkZqOVlPcTBEbTMzVDJwZERITXduZzRWSmZQSnFUdm9Yc2RrUDZHdkdXTjB6T0J0MTAwYnF6SkxDcUxiNEF0T19ZTUZlQ3lmNWxyVDVLdWhleWpnZ1YyLWEzbDUtdFpJX0dOV0NvVmVWSks3WmticGE?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-30T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Crystal Palace",
           "West Bromwich Albion"
         ],
@@ -10563,19 +10590,6 @@
         "source": "Google News League One",
         "publishedAt": "2026-01-30T08:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Liverpool"
-        ],
-        "title": "Liverpool confirms latest transfer move as Championship club eyes late swoop - Liverpool.com",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYkpFc2ZvdUF0VlFIcjc0Z3NDcnhoeTdFQzVfWkotUWZrZEpFV3Y5bmt0OUhEVXNtbDA1akhCaWZuei00Nm9MNXgxSnBueVRkRm51QkthQzF2b1dSOWxTanp4cFE2UlZ4bUk3dFlNMmJNQ0EyRG1uS2VkYzZ1TFpOQlE4Y0NUMmFJdXhrT0ZyMjZxSENFMGI5RFY4WFZfNTjSAaQBQVVfeXFMUEVBcVlzM09DYl9uVEhXbC0wMUtseGFqczZDbkdXSUYwNjAzSnM3R25OZEo5MkZqOVlPcTBEbTMzVDJwZERITXduZzRWSmZQSnFUdm9Yc2RrUDZHdkdXTjB6T0J0MTAwYnF6SkxDcUxiNEF0T19ZTUZlQ3lmNWxyVDVLdWhleWpnZ1YyLWEzbDUtdFpJX0dOV0NvVmVWSks3WmticGE?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-01-30T08:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -12040,7 +12054,61 @@
         "summary": "Jarrod Bowen saw his 91st-minute penalty saved as West Ham missed the chance to move top of the Sky Bet Championship after a 1-1 draw with QPR.",
         "link": "https://www.skysports.com/football/west-ham-united-vs-queens-park-rangers/report/560605",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-10T02:02:54.315Z",
+        "publishedAt": "2026-10-10T07:12:51.296Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Derby County"
+        ],
+        "title": "John Eustace warned against Derby County transfer action despite 'terrible situation'",
+        "summary": "FLW's Derby County fan pundit does not believe the club should look to sign a free agent left-back despite Charlie Taylor's injury.",
+        "link": "https://footballleagueworld.co.uk/john-eustace-warned-against-derby-county-transfer-action-terrible-situation/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-10T06:50:11.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Bolton Wanderers",
+          "Millwall",
+          "Swansea City"
+        ],
+        "title": "Bolton & Millwall should move for Swansea City ace in 2027",
+        "summary": "Bolton Wanderers and Millwall should prepare moves for Swansea City's out-of-contract winger Ronald next summer",
+        "link": "https://footballleagueworld.co.uk/bolton-millwall-should-move-for-swansea-city-ace-in-2027/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-10T06:30:12.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Millwall"
+        ],
+        "title": "Millwall should pre-empt 2027 transfer interest with new deal for &#8216;beast&#8217; despite injury problems",
+        "summary": "Tristan Crama has been a major absence for Millwall early on this season, and he is now in the final two years of his contract. The post Millwall should pre-empt 2027 transfer interest with new deal for &#8216;beast&#8217; despite injury problems appeared firs",
+        "link": "https://the72.co.uk/2026/10/10/millwall-tristan-crama-new-deal-opinion/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=millwall-tristan-crama-new-deal-opinion",
+        "source": "The 72",
+        "publishedAt": "2026-10-10T06:20:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Bristol City"
+        ],
+        "title": "Jason Knight&#8217;s 2027 exit options assessed after Bristol City contract development",
+        "summary": "Jason Knight is in the last year of his Bristol City, and at present, the skipper seems unlikely to pen new terms. The post Jason Knight&#8217;s 2027 exit options assessed after Bristol City contract development appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/10/bristol-city-where-next-for-jason-knight/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=bristol-city-where-next-for-jason-knight",
+        "source": "The 72",
+        "publishedAt": "2026-10-10T06:05:00.000Z",
         "status": "Rumour"
       },
       {
@@ -21174,6 +21242,32 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
+          "Sheffield Wednesday"
+        ],
+        "title": "Sheffield Wednesday reaction given as Fernando Forestieri joins shock club - 'he's wasted his career'",
+        "summary": "The former Owls favourite has just signed for the National League North side",
+        "link": "https://footballleagueworld.co.uk/sheffield-wednesday-reaction-fernando-forestieri-shock-club-wasted-his-career/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-10T07:00:12.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Stockport County"
+        ],
+        "title": "Stockport County may consider selling 30-year-old in January: Opinion",
+        "summary": "Stockport County's defender has seen his game time dry up this season and he is out of contract next summer. The post Stockport County may consider selling 30-year-old in January: Opinion appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/10/stockport-county-should-consider-josh-dacres-cogley-sale-january/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=stockport-county-should-consider-josh-dacres-cogley-sale-january",
+        "source": "The 72",
+        "publishedAt": "2026-10-10T06:30:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
           "Bradford City"
         ],
         "title": "Michael Duff can help kickstart 28-year-old’s Bradford City career after lacklustre start: Opinion",
@@ -22799,7 +22893,7 @@
         "title": "Ryley Reynolds: Grimsby Town sign Notts County midfielder on loan deal - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzVU9BQXpMOVZFaEFBM1JmVmlkcEp2T2RRNTVwTXJacFAwOGlTcGVnb3hqdmY2MTJHSk02czM3dzdTeW04QjlNeVpvcjFkUG9IeUVNeUp0akZ1aHlfcEpkTmIwRVN1OWs?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News League One",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
       },
@@ -23026,7 +23120,7 @@
         "title": "League One Leicester to sign Premier League player in major coup - talkSPORT",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQnZ4WEg5RHZ1RlcyTHd6SEI3bHpaZkhpOXJIazdSNkQ3UFJzd3lfdDRKQS1yTkdvZGpodkJjckJIcU5tSzVzbVc2eDRWSG83Z3hNSDVaTFdOSGFQd2lBTTROeGFPNERBaWNhSHQ5QmdSbHIxdi1tdkNoVmtxcDNwR2tOMHpvaWExdTNKcmpONkNueld3M2c?oc=5",
-        "source": "Google News Premier League",
+        "source": "Google News League One",
         "publishedAt": "2026-07-30T07:00:00.000Z",
         "status": "Rumour"
       },
