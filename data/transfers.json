@@ -1,22 +1,8 @@
 {
-  "updatedAt": "2026-10-13T03:08:33.700Z",
+  "updatedAt": "2026-10-13T03:41:17.124Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Hull City",
-          "Leeds United"
-        ],
-        "title": "Four Super League clubs show support for NRL deal after Leigh criticism",
-        "summary": "Leeds Rhinos, St Helens, Hull KR and Hull FC have released statements in favour of the NRL's investment in Super League after Leigh Leopards owner Derek Beaumont came out against the deal on social media.",
-        "link": "https://www.skysports.com/rugby-league/news/12040/13598221/leeds-rhinos-st-helens-hull-kr-hull-fc-release-statements-in-support-of-nrl-investment-after-leigh-leopards-owner-comes-out-against-deal",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-13T03:08:33.269Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -28,7 +14,7 @@
         "summary": "Coventry made it back-to-back Premier League wins with a thumping 4-1 home victory over Newcastle to move Frank Lampard's side out of the relegation zone.",
         "link": "https://www.skysports.com/football/coventry-city-vs-newcastle-united/report/559497",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-13T03:08:33.268Z",
+        "publishedAt": "2026-10-13T03:41:16.805Z",
         "status": "Rumour"
       },
       {
@@ -41,7 +27,21 @@
         "summary": "The top stories and transfer rumours from Tuesday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13598353/erling-haaland-man-city-star-and-father-buy-abu-dhabi-properties-on-premier-league-clubs-development-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-13T03:08:33.268Z",
+        "publishedAt": "2026-10-13T03:41:16.805Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Hull City",
+          "Leeds United"
+        ],
+        "title": "Four Super League clubs show support for NRL deal after Leigh criticism",
+        "summary": "Leeds Rhinos, St Helens, Hull KR and Hull FC have released statements in favour of the NRL's investment in Super League after Leigh Leopards owner Derek Beaumont came out against the deal on social media.",
+        "link": "https://www.skysports.com/rugby-league/news/12040/13598221/leeds-rhinos-st-helens-hull-kr-hull-fc-release-statements-in-support-of-nrl-investment-after-leigh-leopards-owner-comes-out-against-deal",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-13T03:41:16.805Z",
         "status": "Rumour"
       },
       {
@@ -7330,6 +7330,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer rumors, news: Real Madrid eye move for Roma's Koné - ESPN",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQT0ZEUG42YlFReVpBVHI3NHc0eHlOb2M5NDRjN1d1Nkw1WHdrTy1tMUJ5dkZkUEp0ZTZyTXMxb0JPVW1DYk9kaGtFYXJTQkhBT1Z2clRxUDdiaVFMeV9EM1RYODl3eEI1Z1RBcjV2NEFOZ3E1QV9LU1FJeXRXZmxXWGlsOWtERWlYUHlNaGlBWGZzaFU1akx6cHBDNXh1YWc4cm5FYzctbnkwLWFabzIxSS1iUEg?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Manchester City",
           "Tottenham"
@@ -7340,17 +7351,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-28T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer rumors, news: Real Madrid eye move for Roma's Koné - ESPN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQT0ZEUG42YlFReVpBVHI3NHc0eHlOb2M5NDRjN1d1Nkw1WHdrTy1tMUJ5dkZkUEp0ZTZyTXMxb0JPVW1DYk9kaGtFYXJTQkhBT1Z2clRxUDdiaVFMeV9EM1RYODl3eEI1Z1RBcjV2NEFOZ3E1QV9LU1FJeXRXZmxXWGlsOWtERWlYUHlNaGlBWGZzaFU1akx6cHBDNXh1YWc4cm5FYzctbnkwLWFabzIxSS1iUEg?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-28T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -7900,12 +7900,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Coventry City",
-          "Manchester City"
+          "Leeds United"
         ],
-        "title": "FOOTBALL – Coventry City set to sign Manchester City defender on loan - The Coventry Observer",
+        "title": "Mudryk loan agreed, £40m striker - Leeds United's dream attacking options if top transfer targets are signed - Yorkshire Evening Post",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcTJDZGFHdEdIQVpaVDBYaWNtdHBITGFrejJreVh6M3BiSWFfUGRzY0w3bGdEdElrZFRveFFvVXFSdmh2cnVqekpSM3A3c2E4amhWNXJaMFduRXJabWpvQVZsbnVERC1NbzBaY0dBaDNwcjFjM3cwXy1sbHJMN2diRWh1NElyQmJmcDVoN2luUWVLTjU4Y0NtWEU3WUVQNy1hc0RCbVU1eDg?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWVpSVnhsR2JvNVliVHdzZGJKZjNPcDdYTUpDN3hkTjUwTXBHMTNocUpBTm5LRFVrdjJ3bkFYbENseVVrMEpUV1ppcjQ5VTAwRHFaVzhUZ3BJWFF0VXZxNmZnQ1hNMDB4OUlGRGFRTTg5NDJIMVpSVThTamZjZXVZT2E3d0hRbGkxUjdSb1FKT2FJNTJJU3ZENGFpY1VoQlVkSEpHOHFiLUhsamFqd21NY1htYUpjbGJWR3Z1REo4Rlc3NzNr?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-23T07:00:00.000Z",
         "status": "Rumour"
@@ -7914,11 +7913,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Leeds United"
+          "Coventry City",
+          "Manchester City"
         ],
-        "title": "Mudryk loan agreed, £40m striker - Leeds United's dream attacking options if top transfer targets are signed - Yorkshire Evening Post",
+        "title": "FOOTBALL – Coventry City set to sign Manchester City defender on loan - The Coventry Observer",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWVpSVnhsR2JvNVliVHdzZGJKZjNPcDdYTUpDN3hkTjUwTXBHMTNocUpBTm5LRFVrdjJ3bkFYbENseVVrMEpUV1ppcjQ5VTAwRHFaVzhUZ3BJWFF0VXZxNmZnQ1hNMDB4OUlGRGFRTTg5NDJIMVpSVThTamZjZXVZT2E3d0hRbGkxUjdSb1FKT2FJNTJJU3ZENGFpY1VoQlVkSEpHOHFiLUhsamFqd21NY1htYUpjbGJWR3Z1REo4Rlc3NzNr?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcTJDZGFHdEdIQVpaVDBYaWNtdHBITGFrejJreVh6M3BiSWFfUGRzY0w3bGdEdElrZFRveFFvVXFSdmh2cnVqekpSM3A3c2E4amhWNXJaMFduRXJabWpvQVZsbnVERC1NbzBaY0dBaDNwcjFjM3cwXy1sbHJMN2diRWh1NElyQmJmcDVoN2luUWVLTjU4Y0NtWEU3WUVQNy1hc0RCbVU1eDg?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-23T07:00:00.000Z",
         "status": "Rumour"
@@ -8881,19 +8881,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
-        ],
-        "title": "Saints closing in on loan signing of Man City striker - Daily Echo",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNckVOVXhfYl96OGEtYlhHaElnRklkZk9xczR4MVZuUk93bjMyUTZ4LWZFNWNMRWtMdk1wck4tQXZJN0lNSHNtWHB6amN0M0w0UnNvOXZWaW9SVVdYN1lEZzl6SFpFTG85X1VHLUllQnhIMlEzOWo4bzNrQ1ota2ItRmVJR0FWclF6UDhkR0t3QW9DN0ZacXNLZHB3?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-09T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Chelsea"
         ],
         "title": "Chelsea transfer news: League One club 'in talks' to loan 20-year-old starlet for specific reason - Sports Mole",
@@ -8902,6 +8889,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-09T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Saints closing in on loan signing of Man City striker - Daily Echo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNckVOVXhfYl96OGEtYlhHaElnRklkZk9xczR4MVZuUk93bjMyUTZ4LWZFNWNMRWtMdk1wck4tQXZJN0lNSHNtWHB6amN0M0w0UnNvOXZWaW9SVVdYN1lEZzl6SFpFTG85X1VHLUllQnhIMlEzOWo4bzNrQ1ota2ItRmVJR0FWclF6UDhkR0t3QW9DN0ZacXNLZHB3?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -10901,6 +10901,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Hull City"
+        ],
+        "title": "Every Championship club's transfer state of play as Hull City prepare for deadline rush - Hull Live",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeXVwRmIxdXhZc3RsdEZMZFFsclZZdTYwUldsQTFqcXA0Q0JvZmFZNEFzbjV0TjZsUFl5V0pqcjVlOGoySHRLcHlSWFpud05UY2tXNlVPMlJiUDRtN1hfV3VsbkppUDZrcU1qaEtmOTZ3d2ZxN3R2ajBVMDFqS0VHT0RsdzBjd0pwRVExS2lqM1Rza1lLUVVBb1ZMWTlSMFA2VVA2XzFEc2ozRi04VHfSAbMBQVVfeXFMTXVpWWh2Q3VuQ2h4NE4taW9SQnB5SE9OcDlRaENuXzI5ZEFUYy11RTVMbldYQkRGeGlIdGpnUG9FUXB0V2pzWnMwQ09Wam5zcUZiZWhwaE9ia2I1VVBKTUdqdWRoU1EzRERBeTRBeXFuR2lYOGVhcHE3anppOEJDUGFzQ2xud09qOE55MTV5NURoZjhQaGYtUWF0eGZVdWowVkxRXzk4QXZIeFV0TTN6Mzl2UDg?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-27T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Ipswich Town",
           "Sunderland"
         ],
@@ -10910,19 +10923,6 @@
         "source": "Google News Championship",
         "publishedAt": "2026-01-27T08:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Hull City"
-        ],
-        "title": "Every Championship club's transfer state of play as Hull City prepare for deadline rush - Hull Live",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeXVwRmIxdXhZc3RsdEZMZFFsclZZdTYwUldsQTFqcXA0Q0JvZmFZNEFzbjV0TjZsUFl5V0pqcjVlOGoySHRLcHlSWFpud05UY2tXNlVPMlJiUDRtN1hfV3VsbkppUDZrcU1qaEtmOTZ3d2ZxN3R2ajBVMDFqS0VHT0RsdzBjd0pwRVExS2lqM1Rza1lLUVVBb1ZMWTlSMFA2VVA2XzFEc2ozRi04VHfSAbMBQVVfeXFMTXVpWWh2Q3VuQ2h4NE4taW9SQnB5SE9OcDlRaENuXzI5ZEFUYy11RTVMbldYQkRGeGlIdGpnUG9FUXB0V2pzWnMwQ09Wam5zcUZiZWhwaE9ia2I1VVBKTUdqdWRoU1EzRERBeTRBeXFuR2lYOGVhcHE3anppOEJDUGFzQ2xud09qOE55MTV5NURoZjhQaGYtUWF0eGZVdWowVkxRXzk4QXZIeFV0TTN6Mzl2UDg?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-01-27T08:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -20337,7 +20337,7 @@
         "clubs": [
           "Burnley"
         ],
-        "title": "Burnley make move to bring striker back to the Championship - The72",
+        "title": "Burnley make loan offer to bring 27-year-old striker back to the Championship - The72",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KWDhvWnBLcmNwNVBHejRMNFBBVm9lXzlMR3g3RkQ3R2hNVXpqT0FDZE5CQ1FrS2J3MURXdktiX2ljV19faDhkZWJNM3lnZ3VGbDNzSGxFQS15aFNfcEEzLVd5LVdjbGduUVFsOTVMUURIRklGTENv?oc=5",
         "source": "Google News Championship",
@@ -24636,7 +24636,7 @@
         "summary": "England have renewed the central contracts of Ollie Pope and Shoaib Bashir for one year despite the duo dropping out of the Test XI but Zak Crawley's expiring deal has not been extended.",
         "link": "https://www.skysports.com/cricket/news/12040/13592978/england-cricket-central-contracts-shoaib-bashir-ollie-pope-deals-renewed-as-henry-crocombe-jordan-cox-sign-for-two-years",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-13T03:08:33.269Z",
+        "publishedAt": "2026-10-13T03:41:16.805Z",
         "status": "Rumour"
       },
       {
@@ -25282,6 +25282,19 @@
         "clubs": [
           "Rotherham United"
         ],
+        "title": "Rotherham United Line Up Premier League Goalkeeper Loan Deal - Football Lowdown",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcVpIQ0I0SVREVFA1WUZKeFBIZzdkX2UwYXJQVDNRY1dtaTZoM054bzR0U05NVUIydGxfbDkyTWwtMjl6cndMTldSLUV3a0ZlX1FINzZXbC05N05kbzBieHRkUTBmMHl1aThuUlRuSjNMY2FpbFNCYm1fUmZUM1R0V1RqNHpMM1hfRlNQbHBuNDFtUDA?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
+          "Rotherham United"
+        ],
         "title": "Rotherham United transfer latest: Premier League goalkeeper and international joins on season-long loan - Yorkshire Post",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxONkF3YVBYYm4yQm5WZW14TWxiU3R1OHVqMnRGeXFKQ3ZJNk1zXzRvWDlpR2ptbDdJNGJkdGQ3VUxjb0M3UjJmb2hzUlFtdS0yelZFN0hYTGFHdEhJajlHZ2dobkdIdWF1ZmFrUXVlTm5jN0stNG9tV3ZldmhObjFXSjZEZGJEQ29Ic1RDU0pqX0J4Z0tSRVpKcjNJeWV1UkNHU0Z1aTlUTVdNNFV2QnQyeUpDeF83NkUtaWt3cFZxdU9VeHVUVWNZX1lsbDNrOV9CeHFTdS0tZXFWSjZVSndacm81elRmcHZmdms0WnNR?oc=5",
@@ -25536,17 +25549,6 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [],
-        "title": "Sky Bet League Two: January 2026 transfer deadline day round‑up - EFL",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRXJMS1JDbFNkeVAzZXRzZ3IzZWdSbWNub0JDc3N4NkU4WkdoOGFYbXJyUlVOMFAycS1fd0JLVnhXa2ZLaWN5LWY5RjdmckxKamRzUkQxdjNvdHZiWEJpZDJCTU1wanhTNUxWVmU1TVdTY0NaYlc0U1JvN1pwTllqT0JkOTd5QWtwbEYySno4cGdjVmdwQzVIbS1BZ2F5MkdickhvYw?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-02-03T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
         "clubs": [
           "Rotherham United"
         ],
@@ -25554,6 +25556,17 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOY1FieUpta2I3dUh0Zno5QllFS1dSR0dEX3FCV2MzQXVFNkVpeEJfdlNQVUJLcXdiRkp3NTE4cWU5RW5ETHA3cFlNQW84SGNMaHdKMFhTclhlVVVkTE5qNXdINE0wNlJScERrOXJiQWptN3VreFM5NERvaG5IQTltcDhzbXltTVNnX3k2dlVIWGo4T2xoRDdXVVJXNlMtRnYwNDRnQ0d4WFNEb1B0X1JpeEU2bWtlbS1rc3Qtb1ZCdGtUQXo2ZXgxZDlUSWI4TG5wN1ZKeHVaV2JWTWpDYlBUVm0zcE40NG4tWFE?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-02-03T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "Sky Bet League Two: January 2026 transfer deadline day round‑up - EFL",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRXJMS1JDbFNkeVAzZXRzZ3IzZWdSbWNub0JDc3N4NkU4WkdoOGFYbXJyUlVOMFAycS1fd0JLVnhXa2ZLaWN5LWY5RjdmckxKamRzUkQxdjNvdHZiWEJpZDJCTU1wanhTNUxWVmU1TVdTY0NaYlc0U1JvN1pwTllqT0JkOTd5QWtwbEYySno4cGdjVmdwQzVIbS1BZ2F5MkdickhvYw?oc=5",
+        "source": "Google News League Two",
         "publishedAt": "2026-02-03T08:00:00.000Z",
         "status": "Rumour"
       },
@@ -25686,17 +25699,6 @@
         "source": "Google News League Two",
         "publishedAt": "2026-01-10T08:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
-        "title": "When does the 2026 January transfer window open? Deadline day and time it closes - Wales Online",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdHktV1hqQzVUdjUzdS1vbkx3TDctME0ydnZocWRZcXRjc1ZEYUc5b29DMUplcXpQLXN4VzN4ZXFKVVJtdW45cU9WUjhDN093bG84MDZZWjVTQklCZ281QmhGTTN6cEpzem45U2tJR0ZqTlhOQ2ZQaTF6SjR0cWIzM3QzaTJyNEdBTmI5XzdXa1J6c1l1TEJGTFNGTzFDa0dMTFZIMTFyY9IBrAFBVV95cUxQZ05QVWk2a1lkdHhlNnozMExnOGhIaXg2WFpwa2ROQ3oyY2t6T2hTSEhoQVpPQlJZcHZRXzZPM1BMdXNDMFhoYmtOTVA4WVlWYlZiS29BOGJpVEhiblJLZGFVYWFrdG42ZTM5NUhnWnZKUVE0OEx5NzBVMTBvNVk3azBWM2Z6Z0RyczRUaS00MkZIa18zVnRhWG1HUFFyMEJHUU1zcHRIeTVNMkNV?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-01-01T08:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 4,
