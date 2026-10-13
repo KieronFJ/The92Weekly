@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-10-13T03:41:17.124Z",
+  "updatedAt": "2026-10-13T10:27:04.393Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Papers: Haaland and father buy properties on Man City's Abu Dhabi development",
+        "summary": "The top stories and transfer rumours from Tuesday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13598353/erling-haaland-man-city-star-and-father-buy-abu-dhabi-properties-on-premier-league-clubs-development-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-13T10:27:04.223Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -14,7 +27,7 @@
         "summary": "Coventry made it back-to-back Premier League wins with a thumping 4-1 home victory over Newcastle to move Frank Lampard's side out of the relegation zone.",
         "link": "https://www.skysports.com/football/coventry-city-vs-newcastle-united/report/559497",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-13T03:41:16.805Z",
+        "publishedAt": "2026-10-13T10:27:04.222Z",
         "status": "Rumour"
       },
       {
@@ -23,11 +36,24 @@
         "clubs": [
           "Manchester City"
         ],
-        "title": "Papers: Haaland and father buy properties on Man City's Abu Dhabi development",
-        "summary": "The top stories and transfer rumours from Tuesday's newspapers...",
-        "link": "https://www.skysports.com/football/news/12040/13598353/erling-haaland-man-city-star-and-father-buy-abu-dhabi-properties-on-premier-league-clubs-development-paper-talk",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-13T03:41:16.805Z",
+        "title": "Were any current Man City players signed during charges period?",
+        "summary": "BBC Sport's Ask Me Anything team looks at whether any Manchester City players were signed during the time the club have been found guilty of breaching the Premier League's financial rules.",
+        "link": "https://www.bbc.co.uk/sport/articles/cmje5wl5ek32o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-13T10:13:34.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "What Manchester's 'super-profit' deal with City owners has paid out so far",
+        "summary": "Manchester City Council has made almost £3m from the \"super-profits\" of Man City-linked developments.",
+        "link": "https://www.bbc.co.uk/news/articles/c62keg74dvxjo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-13T05:12:47.000Z",
         "status": "Rumour"
       },
       {
@@ -5900,6 +5926,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer Deadline Day 2026: Full List of Every Completed Signing And Loan Deal in Europe - NDTV Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNREVYdHQwM2toNGlQb0tzNlFqTkNFbjBzU3ZOYUNiM3RNWG9oUE1DbGhHZHBYVnJ0OHRWbDVYV0ltczhEdkdpY2k2TjhDQ00xdUhhSE52MDBjSy0xOHA3bjRldlRreFQyN1FSU3hEc0pHT2JfYlRkV2VSUnlKSGlTaGxFLVQ1S0lZVUxLTlpRLURRajJtWXVFbHltVmthTkdiUHFURU5wbFY2R0swT0FlVTFaZ0lXLS1yTi1BZGtaM0tKNldRN2FOWA?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Chelsea",
           "Manchester City"
@@ -6963,6 +7000,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Rumour ranking: Assessing the top 20 transfer window whispers - Football365",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZUhKWWZCZjNOWkJWaFJjNUNTRlNfMDRCdW11bVVwRU85bTkybXVvYU5WQXE5MDZBa1lNS3NoOXcyU0IzdjU1TnE0YmZFckpDcFQtUmJ5Qy16T2VCRHVQRWY4bDVPMzJTSW0xQW43dTNBZUNKb1kxT05xbExBNVUtNQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Manchester City"
         ],
@@ -7478,19 +7526,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Aston Villa"
-        ],
-        "title": "Tammy Abraham wanted in Premier League loan deal despite Aston Villa striker crisis - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMndrV05pS0Z0NGNhVUp6dTZwSUVfZGZfMFlQRFI4SkxDeU1TbmdZX192cDloNHhwMTdFcHNEUFFCZlVsVEFjRy02QnctNE1NT3h3Vm96R3ItZXptaDBPVnlOVHFpcVFYV1hZZEVLNjRpMEZPQ2wyeHhSSkRHLS1KdTE2N25scVAyZUhn?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-27T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City",
           "Tottenham"
         ],
@@ -7500,6 +7535,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-27T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa"
+        ],
+        "title": "Tammy Abraham wanted in Premier League loan deal despite Aston Villa striker crisis - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMndrV05pS0Z0NGNhVUp6dTZwSUVfZGZfMFlQRFI4SkxDeU1TbmdZX192cDloNHhwMTdFcHNEUFFCZlVsVEFjRy02QnctNE1NT3h3Vm96R3ItZXptaDBPVnlOVHFpcVFYV1hZZEVLNjRpMEZPQ2wyeHhSSkRHLS1KdTE2N25scVAyZUhn?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -8793,6 +8841,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Jack Grealish told fans would love perfect transfer to Premier League club - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcEl3eGxEQkpZSlozUTEteHJlUHFESTFWaThYUkNRWGxIVGNJZWh3cHNFdXV0TFpnOElYdUVoYUx2dXBfSEkwZXdWcUlJZlR3a2FXMG5odWlnYmtsdDVJemgxanBISW4wMUxiM21rYnBVck16NHhVb3ZsVDROUllLaVJqbEZVbWZlQVgxUUR4Q2RWejNZeVRBSURoV3ZsQQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-10T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Liverpool"
         ],
@@ -8802,17 +8861,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-10T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Jack Grealish told fans would love perfect transfer to Premier League club - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcEl3eGxEQkpZSlozUTEteHJlUHFESTFWaThYUkNRWGxIVGNJZWh3cHNFdXV0TFpnOElYdUVoYUx2dXBfSEkwZXdWcUlJZlR3a2FXMG5odWlnYmtsdDVJemgxanBISW4wMUxiM21rYnBVck16NHhVb3ZsVDROUllLaVJqbEZVbWZlQVgxUUR4Q2RWejNZeVRBSURoV3ZsQQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-10T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -8881,19 +8929,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea transfer news: League One club 'in talks' to loan 20-year-old starlet for specific reason - Sports Mole",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOckhxNl90Rl9vLU5BcFRoNDZpMjMydEtrc055RHA2NDRfZVdMRmNveTNTNjRaNFRpb2ctNHVTcEZIV2hfSTd2YlJLYjduOVN1Z1pEMnBTM0xUSnZucmdteDFMQ0x6UUgwckxkNFdrM1RpZXAzcXJwb2NtQmd2V2xPdk9fRTRqNDRUdlF1dXM3bjVjZmw5NjRkSlJKWXplYUdHejVjQUhCZnFLR2t4MXNKUUN3Zy1TeWZweWYtbzRFOTA0c1RobGtFVnVqelo3MVE4eHR3?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-09T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City"
         ],
         "title": "Saints closing in on loan signing of Man City striker - Daily Echo",
@@ -8902,6 +8937,19 @@
         "source": "Google News Championship",
         "publishedAt": "2026-08-09T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea transfer news: League One club 'in talks' to loan 20-year-old starlet for specific reason - Sports Mole",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOckhxNl90Rl9vLU5BcFRoNDZpMjMydEtrc055RHA2NDRfZVdMRmNveTNTNjRaNFRpb2ctNHVTcEZIV2hfSTd2YlJLYjduOVN1Z1pEMnBTM0xUSnZucmdteDFMQ0x6UUgwckxkNFdrM1RpZXAzcXJwb2NtQmd2V2xPdk9fRTRqNDRUdlF1dXM3bjVjZmw5NjRkSlJKWXplYUdHejVjQUhCZnFLR2t4MXNKUUN3Zy1TeWZweWYtbzRFOTA0c1RobGtFVnVqelo3MVE4eHR3?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -10278,17 +10326,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Summer 2026 transfer window OPENS: All you need to know - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMmM0bzFSLU5jVGVHSkpuck5Ud2RVTFoxMXFqX01qdUdVdUhLRW5sTDNYRmFjX214U3Z3aHdtUFc0dUYwSU9GTTVBVTFZQzFta1ZLUTk4aGdEWmxsSEtWcnVJdWR0X1U3czNjdnNFY3VQNGhTT2d6cGdxcVRjRENiNUZob1RtVU5BYnk4Ym1MVFZ6Y05ydTBv?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-15T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Manchester United"
         ],
@@ -10297,17 +10334,6 @@
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0hTOVdNbWZUNUFmMTBncUdRNlNHRGRfeEs0VDNqcDZicmpIUm81WHNBTkppVnJXZmRwVlIyc2hhMFZrVV8wMmhRb1puazlWUDFqd3NtdEgwMXkzVG5pMTdwVURxUXlmYl81X0VWQ0VGQlFYaEU0bS1GaW9wNjEwQ0pMZmw1NjRHM002S3RpVHR3QWdFUW9EaU1VUHplWVpkTGR2VV9hVEZ4M29U?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-06-10T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Full list of all done deals in June 2026 - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VSFRldTFTRzdZLXVnS1V1WmpuSWtpNl9wTEViZzRUNnIwdl83QU9GYWZySXdlMmxndk5DRzJiNmtjMUZpWktBcjV4akI2czJjTDc4SVZFNm5zbnlxQTdEVFoxVDhUZzg?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-05T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -11071,7 +11097,7 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal issue transfer statement as agreement officially reached before move - The Mirror",
+        "title": "Arsenal issue transfer statement as agreement officially reached before move - Daily Mirror",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3JCU1FYRDZfRkpseHZMMnBWUkxZTVdmUjhxMU5tdUNlaFQzWWZhTTNvdjRFMDQ1eGw5TUVvZjZGeS1VaExxajlCYnhjbVM2aEJkcV9COFE3LTRQdmJqVjVoa016Z2JrbnNJWnU2bkhCR2RfWlI3QTZuZEtWQnMyeHFuejdJLWFtWDRCV1p0MjU3ajJHWFVXWmdMblhIdFBoUFdOVUJn0gGrAUFVX3lxTE42RVhleHB5bXZJQkFIX1VYdFhZS3czRUNhSlVKdDRsM3VtcmxtcDBfQ2J2akVBTXFiNGxIS2VyczJ1RDZDLWJjQ1gwU1A5VHcwRTN0T2piRTFYdkg3LWN5RVUxUmR4RXoxTkY2aEE2ZVpUQzFnX0V6Rk1xTjV1Y0s5blRlYVEzazFSb1phUkRjRk5jTVkzOHdKbGFIaVhnTWpPcW4tUFJzNFJRTQ?oc=5",
         "source": "Google News League Two",
@@ -12306,6 +12332,117 @@
       }
     ],
     "2": [
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Blackburn Rovers",
+          "Derby County"
+        ],
+        "title": "Blackburn Rovers revive pursuit of former Derby County prospect amid recent U21s trialist outing",
+        "summary": "Blackburn Rovers are on the lookout for new starlets to add to their academy, and Jack Thompson is the subject of persisting interest. The post Blackburn Rovers revive pursuit of former Derby County prospect amid recent U21s trialist outing appeared first on T",
+        "link": "https://the72.co.uk/2026/10/13/blackburn-rovers-revive-interest-derby-county-jack-thompson/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=blackburn-rovers-revive-interest-derby-county-jack-thompson",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T10:05:17.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "West Bromwich Albion",
+          "Oxford United"
+        ],
+        "title": "West Brom should reignite interest in League One man in January following summer transfer links: Opinion",
+        "summary": "West Brom were linked with the Oxford United man in the summer and have the chance now to rekindle their interest in him this winter. The post West Brom should reignite interest in League One man in January following summer transfer links: Opinion appeared fir",
+        "link": "https://the72.co.uk/2026/10/13/west-brom-should-reignite-pursuit-oxford-united-brodie-spencer-january/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=west-brom-should-reignite-pursuit-oxford-united-brodie-spencer-january",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T09:20:11.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Portsmouth",
+          "Sheffield Wednesday"
+        ],
+        "title": "Sheffield Wednesday should rekindle transfer interest in Portsmouth man in January: Opinion",
+        "summary": "Sheffield Wednesday were credited with an interest in the Portsmouth man over the summer but nothing materialised in the end. The post Sheffield Wednesday should rekindle transfer interest in Portsmouth man in January: Opinion appeared first on The72 - Footbal",
+        "link": "https://the72.co.uk/2026/10/13/sheffield-wednesday-should-rekindle-interest-colby-bishop-portsmouth-opinion/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sheffield-wednesday-should-rekindle-interest-colby-bishop-portsmouth-opinion",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T08:58:17.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Sheffield United"
+        ],
+        "title": "&#8220;Huge for Blades&#8221;: Sheffield United player can play big role this season, says EFL expert",
+        "summary": "Sheffield United signed the attacker last year but he struggled to make an impact at Bramall Lane during his first season. The post &#8220;Huge for Blades&#8221;: Sheffield United player can play big role this season, says EFL expert appeared first on The72 - ",
+        "link": "https://the72.co.uk/2026/10/13/sheffield-united-tahith-chong-verdict-ali-maxwell/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sheffield-united-tahith-chong-verdict-ali-maxwell",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T08:12:21.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Norwich City",
+          "Southampton"
+        ],
+        "title": "&#8220;Alarm bells ringing&#8221;: Norwich City vs Southampton predictions",
+        "summary": "The72's writers offer their Norwich City vs Southampton predictions ahead of the Championship clash on Wednesday. The post &#8220;Alarm bells ringing&#8221;: Norwich City vs Southampton predictions appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/13/norwich-city-vs-southampton-predictions/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=norwich-city-vs-southampton-predictions",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T07:35:21.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Southampton",
+          "Wolverhampton Wanderers"
+        ],
+        "title": "Why Southampton must be laughing at £9m Wolves transfer",
+        "summary": "Southampton sold Adam Armstrong to Wolverhampton Wanderers for £9 million in January 2026",
+        "link": "https://footballleagueworld.co.uk/why-southampton-must-be-laughing-at-9m-wolves-transfer/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-13T07:15:12.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Portsmouth",
+          "Sheffield United"
+        ],
+        "title": "&#8220;Withered under the lights&#8221;: Portsmouth vs Sheffield United predictions",
+        "summary": "The72’s writers offer their Portsmouth vs Sheffield United predictions ahead of the Championship clash on Wednesday. The post &#8220;Withered under the lights&#8221;: Portsmouth vs Sheffield United predictions appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/13/portsmouth-vs-sheffield-united-predictions/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=portsmouth-vs-sheffield-united-predictions",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T07:08:53.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Middlesbrough",
+          "Stoke City"
+        ],
+        "title": "8 players set to miss Stoke City vs Middlesbrough ft £4.3m summer signing",
+        "summary": "Football League World takes a look at the seven players set to miss Stoke City's clash with Middlesbrough on Tuesday night",
+        "link": "https://footballleagueworld.co.uk/8-players-set-to-miss-stoke-city-vs-middlesbrough-ft-43m-summer-signing/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-13T06:45:11.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -19918,20 +20055,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Charlton Athletic",
-          "Sheffield Wednesday"
-        ],
-        "title": "Sheffield Wednesday Face League One Competition In Charlton Athletic Striker Chase - Football Lowdown",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOGlXanZDR1lMWlZfOWVZb2YyTXJUWUdxZTlTN2VDNU1zTUZ6SklBLVpYWmJYUUZYVmh3eE84aHZidWtqeVRFZjB5ZEpBeTVVWHY1UG5MZS1qSzhjbkZzMVJWUWZSVEYxdlZIenA0N0FkVWRFYlFmRHRBZUlfWDlLX2JSUkE2aFE4YVU0RzNpVVlVeTk0WWY4b3I3RkZYbmRMWVhoOXdRdjBHdXdEZGJKOA?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-06T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Bolton Wanderers",
           "Oldham Athletic"
         ],
@@ -19955,6 +20078,20 @@
         "source": "Google News League Two",
         "publishedAt": "2026-08-06T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Charlton Athletic",
+          "Sheffield Wednesday"
+        ],
+        "title": "Sheffield Wednesday Face League One Competition In Charlton Athletic Striker Chase - Football Lowdown",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOGlXanZDR1lMWlZfOWVZb2YyTXJUWUdxZTlTN2VDNU1zTUZ6SklBLVpYWmJYUUZYVmh3eE84aHZidWtqeVRFZjB5ZEpBeTVVWHY1UG5MZS1qSzhjbkZzMVJWUWZSVEYxdlZIenA0N0FkVWRFYlFmRHRBZUlfWDlLX2JSUkE2aFE4YVU0RzNpVVlVeTk0WWY4b3I3RkZYbmRMWVhoOXdRdjBHdXdEZGJKOA?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-06T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 2,
@@ -20337,7 +20474,7 @@
         "clubs": [
           "Burnley"
         ],
-        "title": "Burnley make loan offer to bring 27-year-old striker back to the Championship - The72",
+        "title": "Burnley make move to bring striker back to the Championship - The72",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KWDhvWnBLcmNwNVBHejRMNFBBVm9lXzlMR3g3RkQ3R2hNVXpqT0FDZE5CQ1FrS2J3MURXdktiX2ljV19faDhkZWJNM3lnZ3VGbDNzSGxFQS15aFNfcEEzLVd5LVdjbGduUVFsOTVMUURIRklGTENv?oc=5",
         "source": "Google News Championship",
@@ -21858,6 +21995,19 @@
       }
     ],
     "3": [
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Luton Town"
+        ],
+        "title": "Luton Town helping 21-year-old maximise potential after previous loan fails",
+        "summary": "Luton Town may have been concerned about Jamie Donley's last two loan spells but he is showing his true talent at Kenilworth Road. The post Luton Town helping 21-year-old maximise potential after previous loan fails appeared first on The72 - Football League Ne",
+        "link": "https://the72.co.uk/2026/10/13/luton-town-jamie-donley-thriving-in-latest-loan-spell/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=luton-town-jamie-donley-thriving-in-latest-loan-spell",
+        "source": "The 72",
+        "publishedAt": "2026-10-13T06:55:00.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 3,
         "divisionName": "League One",
@@ -23509,7 +23659,7 @@
           "Cambridge United",
           "Stockport County"
         ],
-        "title": "Owen Moxon: Cambridge United sign Stockport County midfielder on loan - BBC",
+        "title": "Cambridge sign Stockport midfielder Moxon on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93N011aXpyY2h0cy10Ry1IYU02TlBtN3p6ZnBjQUgyMVJCbi1VVjgxXzFPaGo1MGlZTk5CclpuUkdNa2tKejExaUpGWTB0WTZNNUpMQzdBRnkyUWdmb2dPLXhyTVB5Wks0enc?oc=5",
         "source": "Google News League One",
@@ -25699,6 +25849,17 @@
         "source": "Google News League Two",
         "publishedAt": "2026-01-10T08:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "When does the 2026 January transfer window open? Deadline day and time it closes - Wales Online",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdHktV1hqQzVUdjUzdS1vbkx3TDctME0ydnZocWRZcXRjc1ZEYUc5b29DMUplcXpQLXN4VzN4ZXFKVVJtdW45cU9WUjhDN093bG84MDZZWjVTQklCZ281QmhGTTN6cEpzem45U2tJR0ZqTlhOQ2ZQaTF6SjR0cWIzM3QzaTJyNEdBTmI5XzdXa1J6c1l1TEJGTFNGTzFDa0dMTFZIMTFyY9IBrAFBVV95cUxQZ05QVWk2a1lkdHhlNnozMExnOGhIaXg2WFpwa2ROQ3oyY2t6T2hTSEhoQVpPQlJZcHZRXzZPM1BMdXNDMFhoYmtOTVA4WVlWYlZiS29BOGJpVEhiblJLZGFVYWFrdG42ZTM5NUhnWnZKUVE0OEx5NzBVMTBvNVk3azBWM2Z6Z0RyczRUaS00MkZIa18zVnRhWG1HUFFyMEJHUU1zcHRIeTVNMkNV?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-01-01T08:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 4,
