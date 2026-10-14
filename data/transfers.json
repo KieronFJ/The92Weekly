@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-10-14T06:21:22.646Z",
+  "updatedAt": "2026-10-14T10:27:54.475Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Bournemouth"
+        ],
+        "title": "Papers: Bournemouth open to £100m Scott sale in January",
+        "summary": "The top stories and transfer rumours from Wednesday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13599140/alex-scott-transfer-news-bournemouth-open-to-100m-sale-of-england-international-in-january-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-14T10:27:54.182Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -14,6 +27,19 @@
         "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUGFqMmc1cWVSR01ncG52aklNclBteGpkR0NWVklhZ1Vjay1VMFFjY2Y5R3FQcVVhOFVoZjgySmEtcFpxTjNONWVXSlp4bVVnU1hKWE9NOHBHRVBnb2ZhX2NEOEpXVFUxWTJZZTdVR2JzcVllcjkyTHVNWmhMTlNEV0k3VTNjUXpvR2ZYVlNQcDluNE85UjFuODVaaGlRWjh2alFjN2FlNUpyYTQxdi1BaHNVbVVUR1gzWjlXWXljRUxXbHFqZ1loUEFrRS1ROVVmVkE3eVNKdl9Xd2FZX280aUExbDF0ZDZ3SmZ6Ug?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-10-14T04:10:04.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Man Utd transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVGxETjVqU2RwQ2J1N2o5MHliQkNSM2lLejh6TGN1UjIyTnZ3R3YyZVlQM0NBZ3dVOXF0Wk5yWHpvRl9zcmpmU2plOXRZeEhULTJuZGo3TDg2ai1SaUZObl9Md2IzUWUzNVU4LXhRWEhoeHhRZDFYb0x5T2F5dGFqZlZRWEhGZE5NTjNLdEpUSFV6bFJFM3BaQnZYU3p5OEJsMTJHS0xNbGlwbzZWM3o5a2FlUEZ1ZEtjaUIzdWxUaEdzNlcyNGMtTGE3N0FnN1pCZnk2TjBoZ1dnQUxyWUhLb0VFYWF0VC1VMDJiZQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-13T23:06:33.000Z",
         "status": "Loan"
       },
       {
@@ -74,6 +100,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-13T12:01:51.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Coventry City",
           "Newcastle United"
         ],
@@ -124,19 +163,6 @@
         "source": "BBC Sport",
         "publishedAt": "2026-10-13T10:13:34.000Z",
         "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-13T07:19:43.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -636,19 +662,6 @@
         "source": "BBC Sport",
         "publishedAt": "2026-10-08T07:04:50.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Man Utd transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVGxETjVqU2RwQ2J1N2o5MHliQkNSM2lLejh6TGN1UjIyTnZ3R3YyZVlQM0NBZ3dVOXF0Wk5yWHpvRl9zcmpmU2plOXRZeEhULTJuZGo3TDg2ai1SaUZObl9Md2IzUWUzNVU4LXhRWEhoeHhRZDFYb0x5T2F5dGFqZlZRWEhGZE5NTjNLdEpUSFV6bFJFM3BaQnZYU3p5OEJsMTJHS0xNbGlwbzZWM3o5a2FlUEZ1ZEtjaUIzdWxUaEdzNlcyNGMtTGE3N0FnN1pCZnk2TjBoZ1dnQUxyWUhLb0VFYWF0VC1VMDJiZQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-08T06:46:46.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -7683,6 +7696,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Manchester City"
+        ],
+        "title": "Manchester City confirm Bouaddi signing as Marmoush and González head out - The Guardian",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQXNzZG9ZWEtHMjZRWm9OSTI5SW5hdDBfV1paR3hQV3hDWnhSLWk3ZE5EOUFQa21SeGFGbFM5NVhJRU5PYllYOTVCcmxqMm9UNU5JLTVOMFUtQ2dfN1llOG5URWNyRGpkZzlYNFNKQnNPMFFVanJrWUp4NEVlZEozY2NzYUFrMDZOR2RsX2hYek50N01jTk1LcVVaelVjUEdUa2hyWEwwR1pNUzBVelA3ak9UeHdzM3M5cUNtek90MW5NUkVUdzdr?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City",
           "Tottenham"
         ],
@@ -7692,19 +7718,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-26T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Manchester City confirm Bouaddi signing as Marmoush and González head out - The Guardian",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQXNzZG9ZWEtHMjZRWm9OSTI5SW5hdDBfV1paR3hQV3hDWnhSLWk3ZE5EOUFQa21SeGFGbFM5NVhJRU5PYllYOTVCcmxqMm9UNU5JLTVOMFUtQ2dfN1llOG5URWNyRGpkZzlYNFNKQnNPMFFVanJrWUp4NEVlZEozY2NzYUFrMDZOR2RsX2hYek50N01jTk1LcVVaelVjUEdUa2hyWEwwR1pNUzBVelA3ak9UeHdzM3M5cUNtek90MW5NUkVUdzdr?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-26T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -7982,11 +7995,12 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Leeds United"
+          "Coventry City",
+          "Manchester City"
         ],
-        "title": "Mudryk loan agreed, £40m striker - Leeds United's dream attacking options if top transfer targets are signed - Yorkshire Evening Post",
+        "title": "FOOTBALL – Coventry City set to sign Manchester City defender on loan - The Coventry Observer",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWVpSVnhsR2JvNVliVHdzZGJKZjNPcDdYTUpDN3hkTjUwTXBHMTNocUpBTm5LRFVrdjJ3bkFYbENseVVrMEpUV1ppcjQ5VTAwRHFaVzhUZ3BJWFF0VXZxNmZnQ1hNMDB4OUlGRGFRTTg5NDJIMVpSVThTamZjZXVZT2E3d0hRbGkxUjdSb1FKT2FJNTJJU3ZENGFpY1VoQlVkSEpHOHFiLUhsamFqd21NY1htYUpjbGJWR3Z1REo4Rlc3NzNr?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcTJDZGFHdEdIQVpaVDBYaWNtdHBITGFrejJreVh6M3BiSWFfUGRzY0w3bGdEdElrZFRveFFvVXFSdmh2cnVqekpSM3A3c2E4amhWNXJaMFduRXJabWpvQVZsbnVERC1NbzBaY0dBaDNwcjFjM3cwXy1sbHJMN2diRWh1NElyQmJmcDVoN2luUWVLTjU4Y0NtWEU3WUVQNy1hc0RCbVU1eDg?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-23T07:00:00.000Z",
         "status": "Rumour"
@@ -7995,12 +8009,11 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Coventry City",
-          "Manchester City"
+          "Leeds United"
         ],
-        "title": "FOOTBALL – Coventry City set to sign Manchester City defender on loan - The Coventry Observer",
+        "title": "Mudryk loan agreed, £40m striker - Leeds United's dream attacking options if top transfer targets are signed - Yorkshire Evening Post",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcTJDZGFHdEdIQVpaVDBYaWNtdHBITGFrejJreVh6M3BiSWFfUGRzY0w3bGdEdElrZFRveFFvVXFSdmh2cnVqekpSM3A3c2E4amhWNXJaMFduRXJabWpvQVZsbnVERC1NbzBaY0dBaDNwcjFjM3cwXy1sbHJMN2diRWh1NElyQmJmcDVoN2luUWVLTjU4Y0NtWEU3WUVQNy1hc0RCbVU1eDg?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWVpSVnhsR2JvNVliVHdzZGJKZjNPcDdYTUpDN3hkTjUwTXBHMTNocUpBTm5LRFVrdjJ3bkFYbENseVVrMEpUV1ppcjQ5VTAwRHFaVzhUZ3BJWFF0VXZxNmZnQ1hNMDB4OUlGRGFRTTg5NDJIMVpSVThTamZjZXVZT2E3d0hRbGkxUjdSb1FKT2FJNTJJU3ZENGFpY1VoQlVkSEpHOHFiLUhsamFqd21NY1htYUpjbGJWR3Z1REo4Rlc3NzNr?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-23T07:00:00.000Z",
         "status": "Rumour"
@@ -8502,20 +8515,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea",
-          "Portsmouth"
-        ],
-        "title": "Pompey secure 9th summer signing after deal struck for Chelsea forward - Portsmouth News",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYktOS3NMU20xRENicW5qNlpYanBkUGlNeFlPTmJoUHZDQ192OGk3NWwtQkJkb0IweG90WTNJcDhmNnJoUjNXUHhlY0p0SS01NFRQdUxzN2dtLTFVb1dlY2pTNVNubkFQOVZ5aXEyYzRkQ3NDbjU3U3JPYWpwcFVrWjJoeHp6V2NuWnVYZTFHZEhmZTFIS2NFVTVYZ0FxUkRhLWFzUnU0M0s1VUtUMGVfNWNCUHNGRkVwT2tpVHpIcE9xd29aSVV5V19Gb0gxdEozTGRRV0FsYjdzZFN1?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Aston Villa",
           "Bolton Wanderers"
         ],
@@ -8525,6 +8524,20 @@
         "source": "Google News Championship",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Portsmouth"
+        ],
+        "title": "Pompey secure 9th summer signing after deal struck for Chelsea forward - Portsmouth News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYktOS3NMU20xRENicW5qNlpYanBkUGlNeFlPTmJoUHZDQ192OGk3NWwtQkJkb0IweG90WTNJcDhmNnJoUjNXUHhlY0p0SS01NFRQdUxzN2dtLTFVb1dlY2pTNVNubkFQOVZ5aXEyYzRkQ3NDbjU3U3JPYWpwcFVrWjJoeHp6V2NuWnVYZTFHZEhmZTFIS2NFVTVYZ0FxUkRhLWFzUnU0M0s1VUtUMGVfNWNCUHNGRkVwT2tpVHpIcE9xd29aSVV5V19Gb0gxdEozTGRRV0FsYjdzZFN1?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -10360,17 +10373,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Summer 2026 transfer window OPENS: All you need to know - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMmM0bzFSLU5jVGVHSkpuck5Ud2RVTFoxMXFqX01qdUdVdUhLRW5sTDNYRmFjX214U3Z3aHdtUFc0dUYwSU9GTTVBVTFZQzFta1ZLUTk4aGdEWmxsSEtWcnVJdWR0X1U3czNjdnNFY3VQNGhTT2d6cGdxcVRjRENiNUZob1RtVU5BYnk4Ym1MVFZ6Y05ydTBv?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-15T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Manchester United"
         ],
@@ -10605,6 +10607,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Liverpool"
+        ],
+        "title": "Inside Liverpool transfer deadline day plans as five deals done and one nears - Liverpool Echo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeUJ0ZnFjWldqUGFkMnZ2dGNvNDZudlFyTW85aFhJTnVnVE8xeVFfUndpYk9IZmM1VDRuYzFSTEVjemVfZDBiVXV6dGh4bmtlRF9ZMWRRVDlmR2VBQkdvMU1ueWlVVGE1Mjl6aXByQm82b1JYc1RJdGIzWDJoSDZDZm1RREQzQWFjdlhMVHNTajkyaHhLXzRkaC1xVTdKdFpLbzhsSjlpMW1kTkxV0gGyAUFVX3lxTE1hYWY4MC0yLWJpd1lZTXFjdkstZVVud0swcFBHeS1MXzluWVlCc0plRTlKclhMS0JoMzlWVDZwakkwX1FWTlVMTjQ4bHk1S0hxbXFrT2Y3UUo3WFVXV1FfMnk3czlwNDhjSk1pOHdFVHdCR21QRWtyeE1CWGVoblZSWU5FUWhlbGxXTXd6bDRtMDJIc2JmdHY1ZWxiQjlHM3hKWXBmaU56SmRmeE9ZWXNuUUE?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City"
         ],
         "title": "Forgotten Man City midfielder Kalvin Phillips seals shock loan transfer - The Sun",
@@ -10627,19 +10642,6 @@
         "source": "Google News Championship",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Liverpool"
-        ],
-        "title": "Inside Liverpool transfer deadline day plans as five deals done and one nears - Liverpool Echo",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeUJ0ZnFjWldqUGFkMnZ2dGNvNDZudlFyTW85aFhJTnVnVE8xeVFfUndpYk9IZmM1VDRuYzFSTEVjemVfZDBiVXV6dGh4bmtlRF9ZMWRRVDlmR2VBQkdvMU1ueWlVVGE1Mjl6aXByQm82b1JYc1RJdGIzWDJoSDZDZm1RREQzQWFjdlhMVHNTajkyaHhLXzRkaC1xVTdKdFpLbzhsSjlpMW1kTkxV0gGyAUFVX3lxTE1hYWY4MC0yLWJpd1lZTXFjdkstZVVud0swcFBHeS1MXzluWVlCc0plRTlKclhMS0JoMzlWVDZwakkwX1FWTlVMTjQ4bHk1S0hxbXFrT2Y3UUo3WFVXV1FfMnk3czlwNDhjSk1pOHdFVHdCR21QRWtyeE1CWGVoblZSWU5FUWhlbGxXTXd6bDRtMDJIc2JmdHY1ZWxiQjlHM3hKWXBmaU56SmRmeE9ZWXNuUUE?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -12377,6 +12379,90 @@
       }
     ],
     "2": [
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Derby County",
+          "Queens Park Rangers"
+        ],
+        "title": "QPR have selection headache vs Derby County between summer recruits: Opinion",
+        "summary": "QPR signed the duo ahead of this season as they look to challenge for a place in the Championship play-offs. The post QPR have selection headache vs Derby County between summer recruits: Opinion appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/14/qpr-have-boy-kemper-dennis-cirkin-selection-dilemma-derby-county/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=qpr-have-boy-kemper-dennis-cirkin-selection-dilemma-derby-county",
+        "source": "The 72",
+        "publishedAt": "2026-10-14T10:24:55.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Birmingham City",
+          "Preston North End"
+        ],
+        "title": "Birmingham City fans will love what Chris Davies has said about Jay Stansfield",
+        "summary": "Blues' club-record signing made his 150th appearance in their midweek rout over Preston",
+        "link": "https://footballleagueworld.co.uk/birmingham-city-what-chris-davies-has-said-jay-stansfield/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-14T10:19:28.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Derby County",
+          "Watford"
+        ],
+        "title": "Derby County must hand Watford man an escape route in January to fix problem position: Opinion",
+        "summary": "Derby County were linked with the defender in the summer and should rekindle their transfer interest ahead of January. The post Derby County must hand Watford man an escape route in January to fix problem position: Opinion appeared first on The72 - Football Le",
+        "link": "https://the72.co.uk/2026/10/14/derby-county-must-rekindle-interest-watford-mattie-pollock/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=derby-county-must-rekindle-interest-watford-mattie-pollock",
+        "source": "The 72",
+        "publishedAt": "2026-10-14T09:32:09.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Southampton"
+        ],
+        "title": "Top-flight clubs target defender after Southampton&#8217;s failed €9.5m bid and historic Champions League night",
+        "summary": "Southampton failed with a bid for Henrik Falchener in the summer, and his stock is growing as top clubs start to take notice. The post Top-flight clubs target defender after Southampton&#8217;s failed €9.5m bid and historic Champions League night appeared firs",
+        "link": "https://the72.co.uk/2026/10/14/southampton-summer-target-henrik-falchener-wanted-top-clubs/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=southampton-summer-target-henrik-falchener-wanted-top-clubs",
+        "source": "The 72",
+        "publishedAt": "2026-10-14T08:16:57.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Millwall",
+          "Swansea City"
+        ],
+        "title": "Swansea City release statement after issue in match with Millwall",
+        "summary": "Swansea City have released a statement after an alleged incident of racist abuse during their match against Millwall.",
+        "link": "https://footballleagueworld.co.uk/swansea-city-release-statement-after-issue-in-match-with-millwall/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-14T08:04:07.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Southampton",
+          "Wolverhampton Wanderers",
+          "Wrexham"
+        ],
+        "title": "Rangers, Wolves & Southampton have swerved clear £8m transfer bullet",
+        "summary": "Rangers, Southampton and Wolverhampton Wanderers dodged a bullet that Wrexham took with the signing of Anthony Patterson.",
+        "link": "https://footballleagueworld.co.uk/rangers-wolves-southampton-swerved-anthony-patterson-8m-transfer-bullet/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-14T07:00:12.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -23787,7 +23873,7 @@
           "Cambridge United",
           "Stockport County"
         ],
-        "title": "Cambridge sign Stockport midfielder Moxon on loan - BBC",
+        "title": "Owen Moxon: Cambridge United sign Stockport County midfielder on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93N011aXpyY2h0cy10Ry1IYU02TlBtN3p6ZnBjQUgyMVJCbi1VVjgxXzFPaGo1MGlZTk5CclpuUkdNa2tKejExaUpGWTB0WTZNNUpMQzdBRnkyUWdmb2dPLXhyTVB5Wks0enc?oc=5",
         "source": "Google News League One",
@@ -25586,7 +25672,7 @@
         "clubs": [
           "Bristol Rovers"
         ],
-        "title": "Bristol Rovers sign midfielders Gough and Russell-Denny on loan - BBC",
+        "title": "Bristol Rovers sign Gough and Russell-Denny on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pb1hmQjhMa2J3MlpTSTFKRmM4SEE0bE9IeGgtSWtPUmU2M1dydmJQVGxNclBXWkEyR1hKTWpBbHpiVzgtS1NSSUJpQjN4R242NmZXVGttV294ZENDRmpTQUpTZEsxb3M?oc=5",
         "source": "Google News League Two",
