@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T19:42:55.940Z",
+  "updatedAt": "2026-10-16T20:59:53.035Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -13,7 +13,38 @@
         "summary": "",
         "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-16T19:42:55.640Z",
+        "publishedAt": "2026-10-16T20:59:52.715Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Liverpool"
+        ],
+        "title": "Papers: Liverpool set to raid Aston Villa for Manzambi",
+        "summary": "The top stories and transfer rumours from Saturday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13600072/liverpool-set-to-raid-aston-villa-for-johan-manzambi-as-arsenal-eye-move-for-bayern-munich-defender-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-16T20:59:52.715Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal",
+          "Brentford",
+          "Chelsea",
+          "Liverpool",
+          "Manchester United"
+        ],
+        "title": "Bellingham agrees new Real deal - Saturday's gossip",
+        "summary": "Real Madrid midfielder Jude Bellingham ready to commit his future to La Liga club, Arsenal and Liverpool told price for Brentford's Kevin Schade, Man Utd and Chelsea among clubs monitoring Jules Kounde's future at Barcelona, plus more.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/ck7vprzqmr56o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-16T20:16:40.000Z",
         "status": "Rumour"
       },
       {
@@ -8802,20 +8833,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Aston Villa",
-          "Bolton Wanderers"
-        ],
-        "title": "Bolton Wanderers make a statement with Villa winger on season-long loan deal - The Bolton News",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYVpNbEk3TjNnbFhjbGdtRVFid3FQT29mbkEwTU9hdWljTnZVdEo1cmpUbUxZRFlmWDNOa29hNHFqWUtSMGgxRE5PR2JmZVFqRGVrMFljbGQyS2Ezb2ZmVWM1OG83SldCR0Y2TWJpNnFUbDNPeE5yd0JRUW1ucFBwLTFsUG5oRDFBdUo5SVU4OFNubTZWQlQtMFRCa2ZHUUN6MVhz?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Chelsea",
           "Portsmouth"
         ],
@@ -8825,6 +8842,20 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Bolton Wanderers"
+        ],
+        "title": "Bolton Wanderers make a statement with Villa winger on season-long loan deal - The Bolton News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYVpNbEk3TjNnbFhjbGdtRVFid3FQT29mbkEwTU9hdWljTnZVdEo1cmpUbUxZRFlmWDNOa29hNHFqWUtSMGgxRE5PR2JmZVFqRGVrMFljbGQyS2Ezb2ZmVWM1OG83SldCR0Y2TWJpNnFUbDNPeE5yd0JRUW1ucFBwLTFsUG5oRDFBdUo5SVU4OFNubTZWQlQtMFRCa2ZHUUN6MVhz?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -8913,20 +8944,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Brighton",
-          "Leicester City"
-        ],
-        "title": "Leicester sign Brighton teenager Howell on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FNnd3MGt2RUwxdWxSb2ZqT0pES2Fsblh0M1U4UnlrQ1dHZ0NJTzFMTG5SZGlHYkpCRlRWZ1NyYzVXM3ZHNWNjdDRKbG9zVVNNeXVmNnJ4a3hQSTN2TUx3SkI2SDVrZUU?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-13T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Chelsea"
         ],
         "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - London Evening Standard",
@@ -8935,6 +8952,20 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-13T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Brighton",
+          "Leicester City"
+        ],
+        "title": "Leicester sign Brighton teenager Howell on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FNnd3MGt2RUwxdWxSb2ZqT0pES2Fsblh0M1U4UnlrQ1dHZ0NJTzFMTG5SZGlHYkpCRlRWZ1NyYzVXM3ZHNWNjdDRKbG9zVVNNeXVmNnJ4a3hQSTN2TUx3SkI2SDVrZUU?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -11444,12 +11475,12 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal issue transfer statement as agreement officially reached before move - Daily Mirror",
+        "title": "Arsenal agree first deal of January transfer window after new contract signed - London Evening Standard",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3JCU1FYRDZfRkpseHZMMnBWUkxZTVdmUjhxMU5tdUNlaFQzWWZhTTNvdjRFMDQ1eGw5TUVvZjZGeS1VaExxajlCYnhjbVM2aEJkcV9COFE3LTRQdmJqVjVoa016Z2JrbnNJWnU2bkhCR2RfWlI3QTZuZEtWQnMyeHFuejdJLWFtWDRCV1p0MjU3ajJHWFVXWmdMblhIdFBoUFdOVUJn0gGrAUFVX3lxTE42RVhleHB5bXZJQkFIX1VYdFhZS3czRUNhSlVKdDRsM3VtcmxtcDBfQ2J2akVBTXFiNGxIS2VyczJ1RDZDLWJjQ1gwU1A5VHcwRTN0T2piRTFYdkg3LWN5RVUxUmR4RXoxTkY2aEE2ZVpUQzFnX0V6Rk1xTjV1Y0s5blRlYVEzazFSb1phUkRjRk5jTVkzOHdKbGFIaVhnTWpPcW4tUFJzNFJRTQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmhIbzN1UngwU1R1STFMRG03SnhSQjRLbXZ0MGJsekxxUEtua2RFbjBqR1lGei1BVU5aZ0hRbFZWdnNSZkhNQnd5VTNKWm1zMHU0ZFdMVl9VT1dNN0JVcXdOTDYtSm9pXzA4UjItWElXWlhGQWNrYktvZU1EeGVxXzZGTGZKVldVMFFBREIwczdhYnE2UmJhT0VKWTNuVU43V0U0?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-01-09T08:00:00.000Z",
-        "status": "Rumour"
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -11457,12 +11488,12 @@
         "clubs": [
           "Arsenal"
         ],
-        "title": "Arsenal agree first deal of January transfer window after new contract signed - London Evening Standard",
+        "title": "Arsenal issue transfer statement as agreement officially reached before move - Daily Mirror",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmhIbzN1UngwU1R1STFMRG03SnhSQjRLbXZ0MGJsekxxUEtua2RFbjBqR1lGei1BVU5aZ0hRbFZWdnNSZkhNQnd5VTNKWm1zMHU0ZFdMVl9VT1dNN0JVcXdOTDYtSm9pXzA4UjItWElXWlhGQWNrYktvZU1EeGVxXzZGTGZKVldVMFFBREIwczdhYnE2UmJhT0VKWTNuVU43V0U0?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3JCU1FYRDZfRkpseHZMMnBWUkxZTVdmUjhxMU5tdUNlaFQzWWZhTTNvdjRFMDQ1eGw5TUVvZjZGeS1VaExxajlCYnhjbVM2aEJkcV9COFE3LTRQdmJqVjVoa016Z2JrbnNJWnU2bkhCR2RfWlI3QTZuZEtWQnMyeHFuejdJLWFtWDRCV1p0MjU3ajJHWFVXWmdMblhIdFBoUFdOVUJn0gGrAUFVX3lxTE42RVhleHB5bXZJQkFIX1VYdFhZS3czRUNhSlVKdDRsM3VtcmxtcDBfQ2J2akVBTXFiNGxIS2VyczJ1RDZDLWJjQ1gwU1A5VHcwRTN0T2piRTFYdkg3LWN5RVUxUmR4RXoxTkY2aEE2ZVpUQzFnX0V6Rk1xTjV1Y0s5blRlYVEzazFSb1phUkRjRk5jTVkzOHdKbGFIaVhnTWpPcW4tUFJzNFJRTQ?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-01-09T08:00:00.000Z",
-        "status": "Confirmed"
+        "status": "Rumour"
       },
       {
         "division": 1,
