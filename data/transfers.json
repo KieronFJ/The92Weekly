@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-10-16T07:03:01.145Z",
+  "updatedAt": "2026-10-16T09:41:17.342Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Papers: Conte tells Man Utd he's ready to take over if Carrick sacked",
-        "summary": "The top stories and transfer rumours from Friday's newspapers...",
-        "link": "https://www.skysports.com/football/news/12040/13599794/manchester-united-latest-antonio-conte-tells-man-utd-hes-ready-to-take-over-if-michael-carrick-is-sacked-paper-talk",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-16T07:03:00.842Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,20 @@
         "summary": "Manchester United defender Lisandro Martinez has issued an apology for his outburst after Tuesday's Champions League loss at Atletico Madrid.",
         "link": "https://www.skysports.com/football/news/12040/13599725/lisandro-martinez-man-utd-defender-apologises-for-outburst-and-holds-talks-with-jason-wilcox-and-michael-carrick",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-16T07:03:00.842Z",
+        "publishedAt": "2026-10-16T09:41:17.144Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Papers: Conte tells Man Utd he's ready to take over if Carrick sacked",
+        "summary": "The top stories and transfer rumours from Friday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13599794/manchester-united-latest-antonio-conte-tells-man-utd-hes-ready-to-take-over-if-michael-carrick-is-sacked-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-16T09:41:17.143Z",
         "status": "Rumour"
       },
       {
@@ -6163,23 +6163,34 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Premier League Deadline Day 2026: Every Done Deal, Ins and Outs - football360.com.au",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
         "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYmFlbDlPS2o3V3lhSzVSdlZCZ2FZVTZfbU94a29DcnUxanRCem10M1pNVlJiZDItVGxqeFg4VEt0eHFKVG1GSE1sMWRralY1MzBIV2Y0UXluWmM0TEFFQkR4TjluUWdVSDJka1V4VU5jWDFRREJ5dDhBQVhDYVYwdjFXWkNwbDFzSVl1bm9obDQ?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Transfers 2026/2027: Every signing, departure, confirmed deal - football360.com.au",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWtqbG8yWXZGRGxTN0VLMDNNLTVaVGh5ZnBwa0Rwak5KaEJkZ3pTM3ZtVXJNWnZGUXRNZVFfd1lIWVVFTGhQZ2gxajN5NS1pTXRwTFR4a0dqUmJxZklhVmtlQ1c3bnRzUFBXdzEzZTZaU0c3cHhFUlp5YTJUU0FtcDB5dklVUmVWMVhQZ2M4eUFXUkpocVJtS0tsUm4tWjN4bHc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Deadline Day 2026: Every Done Deal, Ins and Outs - football360.com.au",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -12642,6 +12653,59 @@
       }
     ],
     "2": [
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "West Ham United"
+        ],
+        "title": "Agent of West Ham outcast meets with La Liga chief over potential winter transfer escape",
+        "summary": "Edson Alvarez has not been involved in a single West Ham squad in the Championship, prompting doubts over his future. The post Agent of West Ham outcast meets with La Liga chief over potential winter transfer escape appeared first on The72 - Football League Ne",
+        "link": "https://the72.co.uk/2026/10/16/west-ham-edson-alvarez-valencia-transfer-meeting/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=west-ham-edson-alvarez-valencia-transfer-meeting",
+        "source": "The 72",
+        "publishedAt": "2026-10-16T08:51:21.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Birmingham City",
+          "Blackburn Rovers"
+        ],
+        "title": "Birmingham City player exit would be blessing in disguise for 24-year-old: Opinion",
+        "summary": "Birmingham City loaned the midfielder out to fellow Championship side Blackburn Rovers last term but he could step up if Tomoki Iwata leaves. The post Birmingham City player exit would be blessing in disguise for 24-year-old: Opinion appeared first on The72 - ",
+        "link": "https://the72.co.uk/2026/10/16/birmingham-city-tomoki-iwata-exit-blessing-in-disguise-taylor-gardner-hickman/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=birmingham-city-tomoki-iwata-exit-blessing-in-disguise-taylor-gardner-hickman",
+        "source": "The 72",
+        "publishedAt": "2026-10-16T08:37:48.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Middlesbrough"
+        ],
+        "title": "Kim Hellberg reveals what's surprised him about Will Lankshear at Middlesbrough",
+        "summary": "The Reds' new signing has made an instant impression at the Riverside Stadium - and for more than just his goals",
+        "link": "https://footballleagueworld.co.uk/kim-hellberg-reveals-surprise-will-lankshear-middlesbrough/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-16T07:59:34.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Queens Park Rangers"
+        ],
+        "title": "QPR will be relieved 23-year-old didn&#8217;t leave following big injury blow: Opinion",
+        "summary": "QPR kept hold of the defender in the end over the summer despite transfer speculation linking him with a departure. The post QPR will be relieved 23-year-old didn&#8217;t leave following big injury blow: Opinion appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/16/qpr-liam-morrison-summer-exit-opinion/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=qpr-liam-morrison-summer-exit-opinion",
+        "source": "The 72",
+        "publishedAt": "2026-10-16T07:14:15.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -20226,6 +20290,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Transfer deadline day deals summer 2026 - confirmed moves across Premier League, Championship, EFL, Europe and more - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNMjVqTVBPaHNZTzJzX2hCbm45X2RXaTBzNkRPYXNJUDNhZ0pzb2kwWFJ5c18yMnFuZHhvcXdvUHJJUUpOcW1RTVJxa3dwRExIRlRwUVljWGVGaU5pWWlFbFA1c0JSY25CUEFIek9GRlhHWFJiYm4yMW1zVnlkdVdYUEVvVnVVTkxNZkNIekpCTU9vMTlqX0VWdWVsbk9CcmhiWmdsWlAzd1hrY0NpTW1sejRUTFcxMm04dHRneW50OVJIMGN0RV9kRjR4ZWM1MmNSYzVfeW9hb3RlTkxFSXU2T2M3TF9saUZPdXF0dEpvT00?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Swansea City"
         ],
@@ -21333,17 +21408,6 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [],
-        "title": "SUFC News: United transfer target seals £10m move to Championship rivals - thestar.co.uk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZE8tczZpdnFFN1hJQ3dTQ0xiN1gzVlU1NlhVODdzWkNuTkZFVUFlV0FFUmVBSGJsWk1jbzlPVVNvRjRYZFQ1T2FQQkttMlRDVk12WlRlWXpjMkRRNERUQ1VSRVFpNHV0OC00RlZ1R0t0LV8yRk8xLUw3SEsxRHNfWUVFa1c3QjFsYjB2WHZaZGZTcWhoeHl3TTNDczVNWTBMbFpGeTdKUTNEOUEwZ2ZJbG9uSkM3QQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-07-15T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
         "clubs": [
           "Wrexham"
         ],
@@ -22396,11 +22460,11 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Sheffield United"
+          "Wrexham"
         ],
-        "title": "Sheffield United transfer news: Mark McGuinness, Chiedozie Ogbene and Ben Mee join - BBC",
+        "title": "Wrexham transfer news: Club show intent with Sheaf, Hyam and Kabore signings - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1rNDZ0QTFZLTR6VjNBbUp1eDItbDl3VndMampfcUV3VUs0MC1ZRC1JRWIxZE90YmRLSUQycUJqaVdPSFZCQW1VbUZEckgyUHh0ZGN2Q2lXWGY0WHdaRm54M29XUkE0ZE0?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81QkhWWE90OXNpZHphdVVIdTVUSGV5MkZ0OFlaMHhsTHhCZlptMnNWeFJOZU9GbUwxeUJ5RTJFWU1jNERWMkQ5eG5XeWY2dU9BX3JRbnBnRmdOeXZxOC14aGkyMTN1MEU?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -22409,11 +22473,11 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Wrexham"
+          "Sheffield United"
         ],
-        "title": "Wrexham transfer news: Club show intent with Sheaf, Hyam and Kabore signings - BBC",
+        "title": "Sheffield United transfer news: Mark McGuinness, Chiedozie Ogbene and Ben Mee join - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81QkhWWE90OXNpZHphdVVIdTVUSGV5MkZ0OFlaMHhsTHhCZlptMnNWeFJOZU9GbUwxeUJ5RTJFWU1jNERWMkQ5eG5XeWY2dU9BX3JRbnBnRmdOeXZxOC14aGkyMTN1MEU?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1rNDZ0QTFZLTR6VjNBbUp1eDItbDl3VndMampfcUV3VUs0MC1ZRC1JRWIxZE90YmRLSUQycUJqaVdPSFZCQW1VbUZEckgyUHh0ZGN2Q2lXWGY0WHdaRm54M29XUkE0ZE0?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2025-09-01T07:00:00.000Z",
         "status": "Rumour"
