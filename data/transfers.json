@@ -1,8 +1,22 @@
 {
-  "updatedAt": "2026-10-17T20:29:19.455Z",
+  "updatedAt": "2026-10-17T20:56:38.732Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal",
+          "Liverpool"
+        ],
+        "title": "Gyokeres pushing for Arsenal exit - Sunday's gossip",
+        "summary": "Viktor Gyokeres wants to leave Arsenal, Xabi Alonso eyes Barcelona duo and Liverpool target Dortmund's Felix Nmecha.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9gkv34kezdko?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-17T20:37:25.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -191,6 +205,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Manchester City"
+        ],
+        "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-16T13:39:02.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Aston Villa"
         ],
         "title": "Aston Villa transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
@@ -359,19 +386,6 @@
         "source": "BBC Sport",
         "publishedAt": "2026-10-15T11:45:02.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City"
-        ],
-        "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-15T11:06:47.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -8288,19 +8302,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Tottenham"
-        ],
-        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-25T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City",
           "Wrexham"
         ],
@@ -8324,6 +8325,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-25T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -8466,20 +8480,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Aston Villa",
-          "West Ham United"
-        ],
-        "title": "Aaron Wan‑Bissaka: West Ham United defender joins Aston Villa on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4SXhTZm05X1NBRGxMdWkzcTZEMXZhRmpqNGFya3lDU2xMd1Q2dHNsRFZWbkJCUTE5SFVwYUxGWkE4WGtITWZrNWJKSC1nTTZ0R19ncGtvQzI5UzZVLWw3MnE5UDVWd0U?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-21T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [],
         "title": "Mykhailo Mudryk handed Premier League lifeline as loan deal explored - talkSPORT",
         "summary": "",
@@ -8513,6 +8513,20 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tS3RtVThBM0ZxNVJuRExZTGNUWlhYYkYzVlBneVRtLXV1YmlVc3AzS0xNaDVPWWJ6aVJ6cHltaHRGLXBja2puSHAyWm84c1JBSVFJUkJyTHlGeFJKRmN1aTVkbnhMTlE?oc=5",
         "source": "Google News League Two",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "West Ham United"
+        ],
+        "title": "Aaron Wan‑Bissaka: West Ham United defender joins Aston Villa on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4SXhTZm05X1NBRGxMdWkzcTZEMXZhRmpqNGFya3lDU2xMd1Q2dHNsRFZWbkJCUTE5SFVwYUxGWkE4WGtITWZrNWJKSC1nTTZ0R19ncGtvQzI5UzZVLWw3MnE5UDVWd0U?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-21T07:00:00.000Z",
         "status": "Loan"
       },
@@ -8782,7 +8796,7 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Rangers back Derek McInnes with 11th summer signing - footballtransfers.com",
+        "title": "Rangers back Derek McInnes with 11th summer signing - FootballTransfers.com",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQVm05dlJfcFV6ZnlhZDhpckFTN21OOVRWRThleXg3UWU0cWJHOWo4dWNhU2JsOVhEVmplRmR6UTVFVWFsQlNMQ2FZZ2JwYndlU3lWUEowTWlzSXBxMk56a0dEdXZRWW1mOGlzTzM5cXFSWXlGdTdVbHNIUFh2SUF0bVE3ZFJtcGR0T3huNzlnR3JQY1AwSlBnOEdKcHg5WGhsYWYycjRRTnJFTEpXbFJadWdJVU9LTFprWGNIMGtpWGdQcW1LTW1kOXA4VUwwbmZ6UEpPbl9jcHlTTVYxY0ZKbHRoaG1pejk0LW9jVkphR05ueXh4ZmJiTURfdkQ?oc=5",
         "source": "Google News Premier League",
@@ -9191,6 +9205,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Done Deals: Every official completed transfer around Europe today - FootballTransfers.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTlE4Z1pmeWxxbkVlWm8wZE9DOFdWRmExSmR5RVZ4Ulh4bkhWaFhrX2lnWVloWHZwNHJzSlVvR1VNZmpEa2I1S0NQMVRkcUhtNFB0b05iaWRDNUdKbXpJNUZGSVdOQzlBSGRla0oxZXBLdGxPblhtU1lJaVpDMnNyLUF3Nml1a2F6MFZQcE5GTW1ONElXM1FJZDhlbDY3TVozOElZTUNuSS1EWTEzbjFYVmprVkJNQ1lRNTR0RDQtRzdCdEN4UTNUeXdPeFJrU3FESTZuaXdSaHNEU1lOenM3aXlpVVR6cmh3bXlqNjRPMXgyZUtYNDQyV3lldTVKQ0lQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
