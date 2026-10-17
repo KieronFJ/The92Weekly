@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-10-17T18:01:10.718Z",
+  "updatedAt": "2026-10-17T18:39:50.178Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Boos and bananas on day of defiance at Man City",
+        "summary": "Manchester City fans boo the Premier League anthem before watching their side move six points clear at the top of the table.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c9vgr6vj4mnyo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-17T18:02:39.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -8286,6 +8299,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Tottenham"
+        ],
+        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City",
           "Wrexham"
         ],
@@ -8309,19 +8335,6 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-25T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Tottenham"
-        ],
-        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-25T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -23209,6 +23222,17 @@
       {
         "division": 3,
         "divisionName": "League One",
+        "clubs": [],
+        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two | Football News - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb2VkdWxmNGtNRDdpWXJfbDgwakQxYmV4eE1GNDdFbmdaVy0yeGJYQTQ5MXJETXVObW1xcW1FSUFOU2NxRU5ydzQzalk2REJ3YjRzdEFCNjRIbktsWmh5a1pGZ0JNUDdxa2ZYMW5qZnY0NGlBbE1PRFJ6NXpUWVJhUVpTUWhwOG1NRFQwamFpU0VMam9kakR3ZHRYSHhhajJBcGowSzgxTHJDYWxXRkFQbktRZFVfRW9xU18tQmt3bWtGVnpGcXRLVEFwa2o2REx3TVpWeDRrdE9hNmRIZ1lz?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-10-16T08:57:04.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
         "clubs": [
           "AFC Wimbledon",
           "Sheffield Wednesday"
@@ -25184,7 +25208,7 @@
         "title": "Leicester complete signing of Premier League winger for cheap five-figure fee - talkSPORT",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVmE1RmVud0NaUzZFUm9aaEl1MXE3dzZKbmZDR1dnTEFLOWV0UmZUTTA2Wk9kc0RCQm1IbUdIdDZrV1NsTC1Nal9obXl3S3NMdFR2aUJHRENiWGpweFp2NGR2U2hRZlFxY3dPR3BzanlGT0tnaUltb09QV3JLYm5LdjViUEVYRVZKVkQw?oc=5",
-        "source": "Google News Premier League",
+        "source": "Google News League One",
         "publishedAt": "2026-08-05T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -25233,11 +25257,11 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Leicester City"
+          "Sheffield Wednesday"
         ],
-        "title": "Leicester City set to complete statement deal for new winger - The72",
+        "title": "Mason Burstow & Ashley Maynard-Brewer: Sheffield Wednesday sign duo - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FWHluVnFZM2JCTnpkQUkwUTVfOThMbFJ5a0ZDdV9Ga05Va3lSdThRVVdybGMwUEVEVXQ4M0VwUTdXamlIRVBDRmNHSUZDSHQ5dE1KS0poU3JLSVQ3b254NjNZTG51OF9VQng3MDVEWFpOUQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBscGZHbW52VWFWLUsyc2lycmc1WHNZTTYwNEp0T2xQT3BZbDQxZ3BTM3o5QkEycXlPel91VWtLSkJlbWI3TFBjVXBXUzFQZVo0WWNIaDZmNGpwb09Icm9uckEwU0VJeE0?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-31T07:00:00.000Z",
         "status": "Rumour"
@@ -25246,11 +25270,11 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Sheffield Wednesday"
+          "Leicester City"
         ],
-        "title": "Mason Burstow & Ashley Maynard-Brewer: Sheffield Wednesday sign duo - BBC",
+        "title": "Leicester City set to complete statement deal for new winger - The72",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBscGZHbW52VWFWLUsyc2lycmc1WHNZTTYwNEp0T2xQT3BZbDQxZ3BTM3o5QkEycXlPel91VWtLSkJlbWI3TFBjVXBXUzFQZVo0WWNIaDZmNGpwb09Icm9uckEwU0VJeE0?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FWHluVnFZM2JCTnpkQUkwUTVfOThMbFJ5a0ZDdV9Ga05Va3lSdThRVVdybGMwUEVEVXQ4M0VwUTdXamlIRVBDRmNHSUZDSHQ5dE1KS0poU3JLSVQ3b254NjNZTG51OF9VQng3MDVEWFpOUQ?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-31T07:00:00.000Z",
         "status": "Rumour"
@@ -25649,17 +25673,6 @@
         "source": "Google News Championship",
         "publishedAt": "2026-04-22T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "EFL manager calls out emergency loan loophole as rivals delay possible promotion - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2RLMGxLY1RNc2FCaEtUTzB1WlQ0WS1pN01IMzFILWtRUVBCNHF4S0xMRV9mU3Z1YVh5WXZMUUpERWpCXzdNU19kQ1VQRkM1YjJod3l5Z1BNRzktUFJnOWZzWEdaLVdWdl9CWnlqd0doNGY4X1BDWUdWeEpSM013QmVBZHFGWHMxYjJfVGIzOEg3NEIz?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-04-17T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 3,
@@ -26992,6 +27005,17 @@
         "source": "Google News League Two",
         "publishedAt": "2026-05-07T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "EFL manager calls out emergency loan loophole as rivals delay possible promotion - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2RLMGxLY1RNc2FCaEtUTzB1WlQ0WS1pN01IMzFILWtRUVBCNHF4S0xMRV9mU3Z1YVh5WXZMUUpERWpCXzdNU19kQ1VQRkM1YjJod3l5Z1BNRzktUFJnOWZzWEdaLVdWdl9CWnlqd0doNGY4X1BDWUdWeEpSM013QmVBZHFGWHMxYjJfVGIzOEg3NEIz?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-04-17T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 4,
