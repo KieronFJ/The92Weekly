@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-18T09:13:34.152Z",
-  "sourceCount": 9,
+  "updatedAt": "2026-10-18T13:10:50.325Z",
+  "sourceCount": 8,
   "byDivision": {
     "1": [
       {
@@ -13,7 +13,21 @@
         "summary": "The top stories and transfer rumours from Sunday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13600491/viktor-gyokeres-keen-to-leave-arsenal-due-to-lack-of-first-team-opportunites-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-18T09:13:33.831Z",
+        "publishedAt": "2026-10-18T13:10:50.025Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Hull City",
+          "Birmingham City"
+        ],
+        "title": "Birmingham City star Liam Millar leaves Hull fans fuming as \"freedom\" claim issued",
+        "summary": "Birmingham City loanee, Liam Millar issues a recent claim which has raised eyebrows amongst some Hull City supporters.",
+        "link": "https://footballleagueworld.co.uk/birmingham-city-star-liam-millar-leaves-hull-supporters-fuming-as-freedom-claim-issued/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-18T10:28:22.000Z",
         "status": "Rumour"
       },
       {
@@ -9249,6 +9263,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Done Deals: Every official completed transfer around Europe today - FootballTransfers.com",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTlE4Z1pmeWxxbkVlWm8wZE9DOFdWRmExSmR5RVZ4Ulh4bkhWaFhrX2lnWVloWHZwNHJzSlVvR1VNZmpEa2I1S0NQMVRkcUhtNFB0b05iaWRDNUdKbXpJNUZGSVdOQzlBSGRla0oxZXBLdGxPblhtU1lJaVpDMnNyLUF3Nml1a2F6MFZQcE5GTW1ONElXM1FJZDhlbDY3TVozOElZTUNuSS1EWTEzbjFYVmprVkJNQ1lRNTR0RDQtRzdCdEN4UTNUeXdPeFJrU3FESTZuaXdSaHNEU1lOenM3aXlpVVR6cmh3bXlqNjRPMXgyZUtYNDQyV3lldTVKQ0lQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Manchester City"
         ],
@@ -9478,19 +9503,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City"
-        ],
-        "title": "Saints closing in on loan signing of Man City striker - Daily Echo",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNckVOVXhfYl96OGEtYlhHaElnRklkZk9xczR4MVZuUk93bjMyUTZ4LWZFNWNMRWtMdk1wck4tQXZJN0lNSHNtWHB6amN0M0w0UnNvOXZWaW9SVVdYN1lEZzl6SFpFTG85X1VHLUllQnhIMlEzOWo4bzNrQ1ota2ItRmVJR0FWclF6UDhkR0t3QW9DN0ZacXNLZHB3?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-09T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Chelsea"
         ],
         "title": "Chelsea transfer news: League One club 'in talks' to loan 20-year-old starlet for specific reason - Sports Mole",
@@ -9499,6 +9511,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-09T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City"
+        ],
+        "title": "Saints closing in on loan signing of Man City striker - Daily Echo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNckVOVXhfYl96OGEtYlhHaElnRklkZk9xczR4MVZuUk93bjMyUTZ4LWZFNWNMRWtMdk1wck4tQXZJN0lNSHNtWHB6amN0M0w0UnNvOXZWaW9SVVdYN1lEZzl6SFpFTG85X1VHLUllQnhIMlEzOWo4bzNrQ1ota2ItRmVJR0FWclF6UDhkR0t3QW9DN0ZacXNLZHB3?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -9937,10 +9962,12 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "What happened to the 'star' signings your club never made? - BBC",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Manchester United in talks for fifth summer transfer as agreement 'near' for loan deal - London Evening Standard",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vVmRUOXBEUnpyWUlDb3BIdHZEblptU3NGUWhHTWZQY2lubGF5V1BWX0pUTmxFR0xBcE9LTTlXSHJIMkNSajFxeDJVVlI3R3U5WjFHdk8yd0hhUXo0SDh0V0x5end4SXc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUU5RbDI2Vy1OUVZORGpnZlp0TmlmZ0I2QVBXa2loTzh6X2EyakFmUy1rTFNKbnE4NDRCY015RW9LSEN4ZEdiQXo4Z3lBZkJ4Wnk3dW1uSEpWRWJFbU9XNjduRTFjNVFZX0VwZzN6dlJKTEpoTFo1aDQwdjFoQ0hLV3JLeTMweGZwXzJMSEd2cw?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-02T07:00:00.000Z",
         "status": "Rumour"
@@ -9948,12 +9975,10 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Manchester United in talks for fifth summer transfer as agreement 'near' for loan deal - London Evening Standard",
+        "clubs": [],
+        "title": "What happened to the 'star' signings your club never made? - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUU5RbDI2Vy1OUVZORGpnZlp0TmlmZ0I2QVBXa2loTzh6X2EyakFmUy1rTFNKbnE4NDRCY015RW9LSEN4ZEdiQXo4Z3lBZkJ4Wnk3dW1uSEpWRWJFbU9XNjduRTFjNVFZX0VwZzN6dlJKTEpoTFo1aDQwdjFoQ0hLV3JLeTMweGZwXzJMSEd2cw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vVmRUOXBEUnpyWUlDb3BIdHZEblptU3NGUWhHTWZQY2lubGF5V1BWX0pUTmxFR0xBcE9LTTlXSHJIMkNSajFxeDJVVlI3R3U5WjFHdk8yd0hhUXo0SDh0V0x5end4SXc?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-02T07:00:00.000Z",
         "status": "Rumour"
@@ -11476,19 +11501,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Coventry City"
-        ],
-        "title": "Every Championship club's transfer state of play as Coventry City remain coy ahead of deadline day - Coventry Telegraph",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSVpfcmJOZzZUQm43NzZJWXNTNTRZMm12Y2dlMTN4MU4zTnN6azdSTXpRS2Vkb2xFdFM4Tlo0cHBTdHlFdG1XLWtMdTR2S2wwWlpGSFVPQ1VhTjdrQXhnSXNDVDg3Q0VkaVVlbFpNZmZNWDVsdmcwYVEzNVdLMWNmS2pUaGl6UnRUMkxXWWx4T2xYanpoRmZJeTdJbTZqdzFQUllfOHdTZk05NWVTbUxOZHFB0gG3AUFVX3lxTE01cXI2WXNtbTdDVWhUSDBuNWdsWE9pdE1QRWdLZEpGSFlOOHA2R1lSZDl4NkplWXRzX2tjZkt2dXFGT1V6a2xZaG1jcDg0QUNpbi1ObEdzYlM1MXFaeDh4U2lLOHUyenZfek80cmdUaTVfc0ExVS1OZVBqQjhXTlVzVWJ1MkEwSXBEWmFiNE05VTg4a3Vqcy1MbklCc1U2WU5XRDQwREFITkNuVUpmOXZhZUF0NHhUbw?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-01-27T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Ipswich Town",
           "Sunderland"
         ],
@@ -11498,6 +11510,19 @@
         "source": "Google News Championship",
         "publishedAt": "2026-01-27T08:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Coventry City"
+        ],
+        "title": "Every Championship club's transfer state of play as Coventry City remain coy ahead of deadline day - Coventry Telegraph",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSVpfcmJOZzZUQm43NzZJWXNTNTRZMm12Y2dlMTN4MU4zTnN6azdSTXpRS2Vkb2xFdFM4Tlo0cHBTdHlFdG1XLWtMdTR2S2wwWlpGSFVPQ1VhTjdrQXhnSXNDVDg3Q0VkaVVlbFpNZmZNWDVsdmcwYVEzNVdLMWNmS2pUaGl6UnRUMkxXWWx4T2xYanpoRmZJeTdJbTZqdzFQUllfOHdTZk05NWVTbUxOZHFB0gG3AUFVX3lxTE01cXI2WXNtbTdDVWhUSDBuNWdsWE9pdE1QRWdLZEpGSFlOOHA2R1lSZDl4NkplWXRzX2tjZkt2dXFGT1V6a2xZaG1jcDg0QUNpbi1ObEdzYlM1MXFaeDh4U2lLOHUyenZfek80cmdUaTVfc0ExVS1OZVBqQjhXTlVzVWJ1MkEwSXBEWmFiNE05VTg4a3Vqcy1MbklCc1U2WU5XRDQwREFITkNuVUpmOXZhZUF0NHhUbw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-27T08:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -12907,6 +12932,19 @@
       }
     ],
     "2": [
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Blackburn Rovers"
+        ],
+        "title": "Balazs Toth contract latest as Blackburn Rovers make renewed effort to keep star player",
+        "summary": "Balazs Toth has retained a key role at Blackburn Rovers despite uncertainty over his future heading into 2027. The post Balazs Toth contract latest as Blackburn Rovers make renewed effort to keep star player appeared first on The72 - Football League News .",
+        "link": "https://the72.co.uk/2026/10/18/blackburn-rovers-latest-balazs-toth-contract-talks/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=blackburn-rovers-latest-balazs-toth-contract-talks",
+        "source": "The 72",
+        "publishedAt": "2026-10-18T11:17:30.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 2,
         "divisionName": "Championship",
@@ -25199,6 +25237,20 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
+          "Leicester City",
+          "Stockport County"
+        ],
+        "title": "Tom Wilson-Brown: Stockport County sign Leicester City defender - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56LXR4UDdiQjg1NGtsMkd2Y0NlQ2JONWRENFh4SWUtaFJ2S1VDY1o3UU1LazRpSDhwZ0dqZ1F4WWJZaWJwNmpYN0t3aGRoOW4yTTVsNHJnUFkxTEtyZU9jam9qS2daR2plcFE?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
           "Mansfield Town",
           "Stockport County"
         ],
@@ -26175,6 +26227,19 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
+          "Chesterfield"
+        ],
+        "title": "League One clubs lurk as Chesterfield plan action over 27-year-old&#8217;s future",
+        "summary": "Lee Bonis has been one of Chesterfield's stronger performers this season, and his contract situation is drawing attention. The post League One clubs lurk as Chesterfield plan action over 27-year-old&#8217;s future appeared first on The72 - Football League News",
+        "link": "https://the72.co.uk/2026/10/18/chesterfield-new-lee-bonis-contract-league-one-clubs-lurk/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=chesterfield-new-lee-bonis-contract-league-one-clubs-lurk",
+        "source": "The 72",
+        "publishedAt": "2026-10-18T10:19:38.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
           "Crawley Town"
         ],
         "title": "Bashir and Pope given new England contracts",
@@ -27016,6 +27081,17 @@
         "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWxqYjNodmY5OUJsdmU4WmxvdmgxdHk2RHpfUVBWNG41LVNpUnZHWXRWZVM4YjRuanRjRVZyVTgtU0lucGtNNWtBYjU3V2lCdU44TU9hYVMtbDFKUG1OclhMM1V3Z1VRQUV5VXRiUnQ2Qy1Ud2h3OFY4Y08tYVVoenhFQUtacnh1VU13N0ZrOFhHV3dOTXFWRVZVcHhfZ0tuTHFZ?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-06-17T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "Summer 2026 transfer window OPENS: All you need to know - Premier League",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMmM0bzFSLU5jVGVHSkpuck5Ud2RVTFoxMXFqX01qdUdVdUhLRW5sTDNYRmFjX214U3Z3aHdtUFc0dUYwSU9GTTVBVTFZQzFta1ZLUTk4aGdEWmxsSEtWcnVJdWR0X1U3czNjdnNFY3VQNGhTT2d6cGdxcVRjRENiNUZob1RtVU5BYnk4Ym1MVFZ6Y05ydTBv?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-06-15T07:00:00.000Z",
         "status": "Rumour"
       },
       {
