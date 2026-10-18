@@ -1,8 +1,37 @@
 {
-  "updatedAt": "2026-10-18T16:35:46.467Z",
+  "updatedAt": "2026-10-18T18:52:17.701Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal",
+          "Manchester City",
+          "Nottingham Forest"
+        ],
+        "title": "Arsenal win with one shot on target as Forest sink into bottom three",
+        "summary": "Arsenal's only shot on target proved enough to snatch victory at Nottingham Forest through Noni Madueke's deflected strike, keeping the champions within touching distance of Premier League leaders Manchester City and condemning Forest to the relegation zone.",
+        "link": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/report/559512",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-18T18:52:17.393Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Leeds United",
+          "Manchester United"
+        ],
+        "title": "Mbeumo offers Carrick solace as Man Utd winless run goes on",
+        "summary": "Michael Carrick said he had his headphones on this week so didn't hear the noise around Manchester United, but a 1-1 draw at Leeds means it is six games without a win.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c699zmgmx9vzo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-18T17:24:45.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -8205,6 +8234,20 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Chelsea",
+          "Crystal Palace"
+        ],
+        "title": "Crystal Palace transfer news: Axel Disasi signs on loan from Chelsea - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LS21tUWZWMHlUSkNpdm1FMVo1TU50YkdnWTVieTF2VU13bDZ0Y3hJZjU3MU1MdGNVSGZDRmVWbFN2c1N1MzlIWVpNMVVJQ2sxM2RhNG5UcE1mNFF2TEQ4VG1HcWE0MkU?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City",
           "Tottenham"
         ],
@@ -8226,20 +8269,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8xdEJ4QnVad3FERXVvWUNJZnJkUERGM1VVcVJ6UTFJSy1QRjE4QWYtbzhSUEk0dmM4M3AxSG5aSE4xa0lpVHhFdzU4VkVFeUtVSUtBZEhwZlRVT0R3RWhkUnRNQ3FRRUU?oc=5",
         "source": "Google News League One",
-        "publishedAt": "2026-08-26T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Crystal Palace"
-        ],
-        "title": "Crystal Palace transfer news: Axel Disasi signs on loan from Chelsea - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LS21tUWZWMHlUSkNpdm1FMVo1TU50YkdnWTVieTF2VU13bDZ0Y3hJZjU3MU1MdGNVSGZDRmVWbFN2c1N1MzlIWVpNMVVJQ2sxM2RhNG5UcE1mNFF2TEQ4VG1HcWE0MkU?oc=5",
-        "source": "Google News Premier League",
         "publishedAt": "2026-08-26T07:00:00.000Z",
         "status": "Loan"
       },
@@ -8381,19 +8410,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Tottenham"
-        ],
-        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-25T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City",
           "Wrexham"
         ],
@@ -8417,6 +8433,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-25T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Omar Marmoush has Spurs medical for loan deal - The Telegraph",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVZBVFNPMGJ2N21reUZXN2RpUVR0OTk5TjhzVDRsRUI2YWE3UmdiZzlDWnNFeWEzUFdjMkROZnZUaDZTdE5jQnBjR3NRVFY5TU1VbGVVRDF6NVBpd3NDcDZRWVNtcHptWmJMTjJmYW5hU09sMndEOG9KQUVVVUlRbl9wSDFLWUxONnVJZFJIT2tWNmxTSjZWeV8yVEtzb1FCb2ZJ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -8573,20 +8602,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Ipswich Town",
-          "Stoke City"
-        ],
-        "title": "Ben Johnson: Stoke City sign Ipswich Town full-back on season-long loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxamtSSkt0SDltT2dmVm9FSlZtNk84LVRHT2J2ZkZMSENVbVFCRnpjOFdZNUhCSDI0WDZ1cjR0TEFtUFB5RUxLNFIzbGxsaXE3cnd0ZkppRWNEWFZnTGlBa0pJM1AtalE?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-21T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [],
         "title": "Mykhailo Mudryk handed Premier League lifeline as loan deal explored - talkSPORT",
         "summary": "",
@@ -8620,6 +8635,20 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tS3RtVThBM0ZxNVJuRExZTGNUWlhYYkYzVlBneVRtLXV1YmlVc3AzS0xNaDVPWWJ6aVJ6cHltaHRGLXBja2puSHAyWm84c1JBSVFJUkJyTHlGeFJKRmN1aTVkbnhMTlE?oc=5",
         "source": "Google News League Two",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Ipswich Town",
+          "Stoke City"
+        ],
+        "title": "Ben Johnson: Stoke City sign Ipswich Town full-back on season-long loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxamtSSkt0SDltT2dmVm9FSlZtNk84LVRHT2J2ZkZMSENVbVFCRnpjOFdZNUhCSDI0WDZ1cjR0TEFtUFB5RUxLNFIzbGxsaXE3cnd0ZkppRWNEWFZnTGlBa0pJM1AtalE?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-21T07:00:00.000Z",
         "status": "Loan"
       },
@@ -8881,6 +8910,20 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-18T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Newcastle United"
+        ],
+        "title": "Transfer roundup: Dedic completes £29.5m Newcastle move, Wan-Bissaka loaned to Villa - The Guardian",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNV1k0NzVUUkdpU3phVjlOYVRiTnFfcmpSMi1KTjQ2RHZ6R2FVQ2dvdThEN1Y2QTdWbVRQUjh3c3NJTnl1R05lUmlsOVVNUk05b3ZOcnlmc0k2YUVXRUN3YmxhdHdwcHE4N1RtWnJoMWpYbzRTOFB0Sm54eEM1aVMxOEhSVUhOM0pWN0J4OWo5WFVnbU9jb0FfazE1OE1CY2M?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-18T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -10453,7 +10496,7 @@
         ],
         "title": "Sam Proctor: Aston Villa goalkeeper joins Shrewsbury Town on season-long loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4dDljVEpYWHBuWHZCcWY2d2w0c0lvbWw0b0dPWnN0Y0U1OHNwWE1tME9mQmpkUnpNR01QTzlCcFZSQkpEYnpLLVZtTWVhbUw1b05HTk5QOXZTeGdUcHVZWWlZUUlaNnFaSUE?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LY2x2V1kxVW5tV1IzTGtwSGJiLWxsTGgwbzZwN2hzZW5JVWJRN2dWcVpTQjBlb1RrRkt6ZDhXak0za2dnb2hWcVhqb0lSMkJjaHlhRE5kYmdvR3FsQzFybVdTT3hiQ0k?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-07-17T07:00:00.000Z",
         "status": "Loan"
@@ -10467,7 +10510,7 @@
         ],
         "title": "Sam Proctor: Aston Villa goalkeeper joins Shrewsbury Town on season-long loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LY2x2V1kxVW5tV1IzTGtwSGJiLWxsTGgwbzZwN2hzZW5JVWJRN2dWcVpTQjBlb1RrRkt6ZDhXak0za2dnb2hWcVhqb0lSMkJjaHlhRE5kYmdvR3FsQzFybVdTT3hiQ0k?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4dDljVEpYWHBuWHZCcWY2d2w0c0lvbWw0b0dPWnN0Y0U1OHNwWE1tME9mQmpkUnpNR01QTzlCcFZSQkpEYnpLLVZtTWVhbUw1b05HTk5QOXZTeGdUcHVZWWlZUUlaNnFaSUE?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-07-17T07:00:00.000Z",
         "status": "Loan"
@@ -25387,7 +25430,7 @@
         "title": "Leicester complete signing of Premier League winger for cheap five-figure fee - talkSPORT",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVmE1RmVud0NaUzZFUm9aaEl1MXE3dzZKbmZDR1dnTEFLOWV0UmZUTTA2Wk9kc0RCQm1IbUdIdDZrV1NsTC1Nal9obXl3S3NMdFR2aUJHRENiWGpweFp2NGR2U2hRZlFxY3dPR3BzanlGT0tnaUltb09QV3JLYm5LdjViUEVYRVZKVkQw?oc=5",
-        "source": "Google News Premier League",
+        "source": "Google News League One",
         "publishedAt": "2026-08-05T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -25436,11 +25479,11 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Leicester City"
+          "Sheffield Wednesday"
         ],
-        "title": "Leicester City set to complete statement deal for new winger - The72",
+        "title": "Mason Burstow & Ashley Maynard-Brewer: Sheffield Wednesday sign duo - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FWHluVnFZM2JCTnpkQUkwUTVfOThMbFJ5a0ZDdV9Ga05Va3lSdThRVVdybGMwUEVEVXQ4M0VwUTdXamlIRVBDRmNHSUZDSHQ5dE1KS0poU3JLSVQ3b254NjNZTG51OF9VQng3MDVEWFpOUQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBscGZHbW52VWFWLUsyc2lycmc1WHNZTTYwNEp0T2xQT3BZbDQxZ3BTM3o5QkEycXlPel91VWtLSkJlbWI3TFBjVXBXUzFQZVo0WWNIaDZmNGpwb09Icm9uckEwU0VJeE0?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-31T07:00:00.000Z",
         "status": "Rumour"
@@ -25449,11 +25492,11 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Sheffield Wednesday"
+          "Leicester City"
         ],
-        "title": "Mason Burstow & Ashley Maynard-Brewer: Sheffield Wednesday sign duo - BBC",
+        "title": "Leicester City set to complete statement deal for new winger - The72",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBscGZHbW52VWFWLUsyc2lycmc1WHNZTTYwNEp0T2xQT3BZbDQxZ3BTM3o5QkEycXlPel91VWtLSkJlbWI3TFBjVXBXUzFQZVo0WWNIaDZmNGpwb09Icm9uckEwU0VJeE0?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FWHluVnFZM2JCTnpkQUkwUTVfOThMbFJ5a0ZDdV9Ga05Va3lSdThRVVdybGMwUEVEVXQ4M0VwUTdXamlIRVBDRmNHSUZDSHQ5dE1KS0poU3JLSVQ3b254NjNZTG51OF9VQng3MDVEWFpOUQ?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-31T07:00:00.000Z",
         "status": "Rumour"
@@ -26592,12 +26635,12 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
-          "Newport County"
+          "York City"
         ],
-        "title": "Newport County sign Michael Adu-Poku, Kion Etete and Matty Jacob - BBC",
+        "title": "Transfer Tracker 2026: Summer window updates, deals, talks and more from the Premier League and beyond - The New York Times",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByaFI1NnVQWDd5LVdxcmtWaWF4WWRYX2Itb0xfaWtBSzlKY2duRjFWQ1VfSnFWYXFKeUVDdU01RUFRc2JHOHRtZEpTR3lYTFZKSW5FaDQ1MTJBVTNCb1BFWGUwN1FIbDA?oc=5",
-        "source": "Google News League Two",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU2VjM2IyejV4ZkQ3QXNXY3o0MGVvbnJOTkJLVFlrbm14LWpWMXlZY1dVaEVJaHBUSURMeWtWb3Bja1RvVHE2ZW0xOXNIaW9sYVExTWVmZEtWVG9GSU1SeEFDTFN2SjdrQmpaSW5MRUpuVTdYbmgtNUVZTW0zckpiSkFuUmdXeUtvU3R2SF9ESDZKV200YlJIRG4xSDdBZ0thMUZycQ?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -26605,12 +26648,12 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
-          "York City"
+          "Newport County"
         ],
-        "title": "Transfer Tracker 2026: Summer window updates, deals, talks and more from the Premier League and beyond - The New York Times",
+        "title": "Newport County sign Michael Adu-Poku, Kion Etete and Matty Jacob - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU2VjM2IyejV4ZkQ3QXNXY3o0MGVvbnJOTkJLVFlrbm14LWpWMXlZY1dVaEVJaHBUSURMeWtWb3Bja1RvVHE2ZW0xOXNIaW9sYVExTWVmZEtWVG9GSU1SeEFDTFN2SjdrQmpaSW5MRUpuVTdYbmgtNUVZTW0zckpiSkFuUmdXeUtvU3R2SF9ESDZKV200YlJIRG4xSDdBZ0thMUZycQ?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByaFI1NnVQWDd5LVdxcmtWaWF4WWRYX2Itb0xfaWtBSzlKY2duRjFWQ1VfSnFWYXFKeUVDdU01RUFRc2JHOHRtZEpTR3lYTFZKSW5FaDQ1MTJBVTNCb1BFWGUwN1FIbDA?oc=5",
+        "source": "Google News League Two",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
       },
