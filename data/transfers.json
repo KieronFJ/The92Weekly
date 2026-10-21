@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T19:27:50.933Z",
+  "updatedAt": "2026-10-21T20:39:53.748Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -9081,20 +9081,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Manchester City",
-          "Wrexham"
-        ],
-        "title": "Wrexham complete deal to re-sign Man City player for £2m - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWUlhR1FaY3YwWXVDdEswS0RMLXY4dk9iTllQUGZfVDJ4MHQzYkx2NlNOUzdqaTNPYUEwVGpsX0JVVS12Z2NoU3U0UDdfdmxxNTdDNi1QOTAwN1RJU2w5S2Fya1JiT1JmTDM3YUU3dWZPVnFzX0ZqUFN5SklZZERpV2FMMXdETU1NQWxTejlZUl9lYzg1OXRVYzFIa2ZuTzQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-25T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Arsenal",
           "Liverpool",
           "Manchester United",
@@ -9104,6 +9090,20 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNa3YtdFp2Rk1NcUZJcjAwS2dGekNsWEJhMmRYeF9Od1c5eXRpYktZMHB2d2NVRkpKUVZWbWMwNXVOV3VqV1NwQTZILWhiVG5KdFdNRmcxcTUwMDJuZHdCeEg4MXhpU2FKM3pMR1dfeXhIN1R4Z2QzWEFTOFlWbWRhdEFTU3FtalNZdVNxUjBXYmlmS3hFbFBMNWV6TEpPUTg2dVBHcXhpNUY4dw?oc=5",
         "source": "Google News Premier League",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City",
+          "Wrexham"
+        ],
+        "title": "Wrexham complete deal to re-sign Man City player for £2m - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWUlhR1FaY3YwWXVDdEswS0RMLXY4dk9iTllQUGZfVDJ4MHQzYkx2NlNOUzdqaTNPYUEwVGpsX0JVVS12Z2NoU3U0UDdfdmxxNTdDNi1QOTAwN1RJU2w5S2Fya1JiT1JmTDM3YUU3dWZPVnFzX0ZqUFN5SklZZERpV2FMMXdETU1NQWxTejlZUl9lYzg1OXRVYzFIa2ZuTzQ?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-08-25T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -10708,6 +10708,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-01T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "One per club: Premier League players who need a loan move - Football365",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLXFqOElrX1A0dXI2QkhrYVFtanZPRzZaSlBBczVQa2ZDV2phYkZMSlJ0X0Z4WnRrVUMzaGoyQjlEZDI3Z19HOGFfVXUwQnNjSTZhRlhGbWdtTkxzNlFYY29McTJaQnZhNXVMV29nZEk2S3djYWxMYXZldTc5N2dTcjZHMGtaVjNYM1RR?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-01T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -24492,6 +24503,19 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
+          "AFC Wimbledon"
+        ],
+        "title": "Ex-England defender Bertrand eyes £87m AFC Wimbledon deal",
+        "summary": "Ryan Bertrand leading a consortium that has proposed an £87m minority investment into League One side AFC Wimbledon.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/cwdr8zxp884mo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-21T20:02:23.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
           "Sheffield Wednesday"
         ],
         "title": "Sheffield Wednesday receive fresh loan offer for defender",
@@ -26545,7 +26569,7 @@
         "clubs": [
           "Notts County"
         ],
-        "title": "Notts County sign Hindolo Mustapha and Ishe Samuels-Smith on loan - BBC",
+        "title": "Notts County sign Samuels-Smith and Mustapha on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BZEs1eV82NHl4YWwyZ3BMaFRLVnNvaDVZNjQ4UWx4SWR1c01JMUNPM2pIUThvNnJVMVB5U3cteWpITUZfc3E2ZHZNTlBUN0QyRlVJcVlHMXhoaFFKTnZXQzM4WHJaVXM?oc=5",
         "source": "Google News League One",
@@ -27038,7 +27062,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
@@ -27052,7 +27076,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
