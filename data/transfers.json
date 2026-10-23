@@ -1,21 +1,8 @@
 {
-  "updatedAt": "2026-10-23T01:52:17.499Z",
+  "updatedAt": "2026-10-23T05:32:01.937Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "'Need to move on together' - Fernandes to remain captain despite Carrick criticism",
-        "summary": "Rob Dorsett and Alan Pardew give their thoughts on Bruno Fernandes remaining Manchester United captain despite him calling out Michael Carrick&#8217;s tactical approach against Como.",
-        "link": "https://www.skysports.com/watch/video/13602411/bruno-fernandes-to-remain-captain-despite-clash-with-michael-carrick",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-23T01:52:17.166Z",
-        "status": "Rumour"
-      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -26,7 +13,7 @@
         "summary": "The top stories and transfer rumours from Friday's newspapers...",
         "link": "https://www.skysports.com/football/news/12040/13602435/manchester-united-draw-up-five-man-shortlist-to-replace-michael-carrick-paper-talk",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-23T01:52:17.165Z",
+        "publishedAt": "2026-10-23T05:32:01.598Z",
         "status": "Rumour"
       },
       {
@@ -39,7 +26,20 @@
         "summary": "Jean-Philippe Mateta scored his first goal since last season's UEFA Conference League final but Crystal Palace had to settle for a 2-2 draw away at 10-man Besiktas.",
         "link": "https://www.skysports.com/football/besiktas-vs-crystal-palace/report/577778",
         "source": "Sky Sports",
-        "publishedAt": "2026-10-23T01:52:17.165Z",
+        "publishedAt": "2026-10-23T05:32:01.598Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "'Need to move on together' - Fernandes to remain captain despite Carrick criticism",
+        "summary": "Rob Dorsett and Alan Pardew give their thoughts on Bruno Fernandes remaining Manchester United captain despite him calling out Michael Carrick&#8217;s tactical approach against Como.",
+        "link": "https://www.skysports.com/watch/video/13602411/bruno-fernandes-to-remain-captain-despite-clash-with-michael-carrick",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-23T05:32:01.598Z",
         "status": "Rumour"
       },
       {
@@ -6685,12 +6685,10 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea transfer news: Breaking down Blues' staggering 39 departures - BBC",
+        "clubs": [],
+        "title": "Cymru Leagues transfers: Every deal from 26/27 summer window - Y Clwb Pêl-droed",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ucVJEbHc1SE1ObWozaU1YUGlPYmswTzFMcDh4RDBhM1lFZnhrQVVROW03YWdnRmxIVGJvdDcxR01xQ2RtYmtqNjRLeEJldWVKLVMtSGxnaG54eHRBRzhZVm4xcUdmRlU?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WbXZOZC1pTl9MSlBWLWVmZ2I5aTYyZFFicjJsQmVnX2xSSDJodXRXUkZoeEtoRS1ySTlvN2NYSnk1MHBkYU5RRnlxYlVfOU9HYzFOQnVYTXdxTE5LcHlJeWlYSWNYVXlwT2g4Tms2aXJGMWRtbHc?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-03T07:00:00.000Z",
         "status": "Rumour"
@@ -6698,10 +6696,12 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Cymru Leagues transfers: Every deal from 26/27 summer window - Y Clwb Pêl-droed",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea transfer news: Breaking down Blues' staggering 39 departures - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WbXZOZC1pTl9MSlBWLWVmZ2I5aTYyZFFicjJsQmVnX2xSSDJodXRXUkZoeEtoRS1ySTlvN2NYSnk1MHBkYU5RRnlxYlVfOU9HYzFOQnVYTXdxTE5LcHlJeWlYSWNYVXlwT2g4Tms2aXJGMWRtbHc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ucVJEbHc1SE1ObWozaU1YUGlPYmswTzFMcDh4RDBhM1lFZnhrQVVROW03YWdnRmxIVGJvdDcxR01xQ2RtYmtqNjRLeEJldWVKLVMtSGxnaG54eHRBRzhZVm4xcUdmRlU?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-03T07:00:00.000Z",
         "status": "Rumour"
@@ -7091,13 +7091,16 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
+        "clubs": [
+          "Chelsea",
+          "Manchester City"
+        ],
+        "title": "Transfer Deadline Day: Man City sign Fernández, Camara to Chelsea deal collapses - as it happened - ESPN",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYmFlbDlPS2o3V3lhSzVSdlZCZ2FZVTZfbU94a29DcnUxanRCem10M1pNVlJiZDItVGxqeFg4VEt0eHFKVG1GSE1sMWRralY1MzBIV2Y0UXluWmM0TEFFQkR4TjluUWdVSDJka1V4VU5jWDFRREJ5dDhBQVhDYVYwdjFXWkNwbDFzSVl1bm9obDQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeXdyUEZsQ0ZlQ2tZTktRc0F5NXBCUmdzNFE5WmIwXzF2YzRPeWJ3SkhfMHBCSnVzREFrV19CZFE4U2YxNF9BRENEVFl3ZlFSa2h0X01GYTNvWTdiRmZNLVN4VEZTYl9JbHdtMUx0UEdHR3lLa2lvYUFmeXBrT2VTWVgyUVdSUVVDalplT2kwbUF1WHhBVDd6NkxaanNnWldZV0phd2pYU2RMX0JVUnJCak1KYmVqS2EzWlg4aGYyN0hOcGVjRjFzNkhVYUh4THBN?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Confirmed"
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -7111,6 +7114,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYmFlbDlPS2o3V3lhSzVSdlZCZ2FZVTZfbU94a29DcnUxanRCem10M1pNVlJiZDItVGxqeFg4VEt0eHFKVG1GSE1sMWRralY1MzBIV2Y0UXluWmM0TEFFQkR4TjluUWdVSDJka1V4VU5jWDFRREJ5dDhBQVhDYVYwdjFXWkNwbDFzSVl1bm9obDQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -7247,20 +7261,6 @@
         "title": "Premier League: Manchester City sign Fernandez on five-year deal - Sport Nation",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUDNfOEMyRXlqVmc3VkxmRW53bFhWVGVOb2xLaVNMNzFMN1ExVUk4WTBPQmxpeGh2QlFBUmZTci1DMGZMVkduUjBJNGV5amNHMlVjTkxnR3pfS21JN0xnWnZ0UGdKUnVSdm9pVlp3VG1VSFowekNYRm41cDVkYzdObUswRHVuRE1qQ0Z5YUpzb2M?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Manchester City"
-        ],
-        "title": "Transfer Deadline Day: Man City sign Fernández, Camara to Chelsea deal collapses - as it happened - ESPN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeXdyUEZsQ0ZlQ2tZTktRc0F5NXBCUmdzNFE5WmIwXzF2YzRPeWJ3SkhfMHBCSnVzREFrV19CZFE4U2YxNF9BRENEVFl3ZlFSa2h0X01GYTNvWTdiRmZNLVN4VEZTYl9JbHdtMUx0UEdHR3lLa2lvYUFmeXBrT2VTWVgyUVdSUVVDalplT2kwbUF1WHhBVDd6NkxaanNnWldZV0phd2pYU2RMX0JVUnJCak1KYmVqS2EzWlg4aGYyN0hOcGVjRjFzNkhVYUh4THBN?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
@@ -7965,6 +7965,44 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Chelsea",
+          "Manchester City"
+        ],
+        "title": "Enzo Fernandez transfer news: Man City pay £125m for Chelsea midfielder - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE11aE8tRUJRLWsta1h3ZlBmQjJWZFc5cXVOeS1OOFJ3TVBhLWUtWkRMb0JTY3Iwb09falpRUE5hNnhzeXZ6OHlvTmFrR0VuV2hITUtSMEJiNWM0RkJpa0ZteHdFLWtaRTg?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "OFFICIAL: Chelsea announce £40m Honest Ahanor signing, Premier League loan to follow soon - Talk Chelsea",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTUhLbE45eEZfY3NDNHRRNGVkaHFURHNFaXdIU0FWOFNWbnJ1el94c0dkckhKYl9qbU1YVDZ0ZTk1N0gzREptTW9qMkYwcnc2RDZTZnkxTVBIaW1Fa3hjUm81V1BScVBOeGhwTjlYelJQb09pTWhEdlZqVnI3NHpnMlhFUWxSZ2w4bW9ZLU9ESkXSAZYBQVVfeXFMUHl4elRPc3NHclZ3bTNZRHlodmlELUxlMm1yZGY3dDNEZ3FZQ2NRNnRFZWhCTGtQa0VpZV84SzktOFAwc3QwdkE0V1c4MW56cmRzaGdYckRubFVsQ3hXbXFBYU0tYlViaTc4SmhnNVJPS05BbjkyVWdLdkh3WnZOVl9hYmNzUUhaUllUc2pEQjl1RnBRN3pB?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "When is deadline day and what time does Premier League transfer window close? - Manchester Evening News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOWt6Vi1oTEtwbkZPaW5Ob2pNZ3JTdWd3ejdIX0RJNFlLVVFhSFFtbVJ5YURDZVNzbUN1WkItOEltNlZaREd5ZENmMGQybWt4bEV2V1IzQTZFY0xyNk1jbTh1a29oVTFkTURwejF1VTB1MEp6eEZJWERiQXRWTjJodEY0WU9ZNHVnRUc2VzNGajByeFFqMU0xNTFqUWttZ0kzanI4c29haC1tWGtRVU04?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Everton"
         ],
         "title": "Everton’s 2026 Summer Transfer Window Recap - Shambolic Deadline Day throws future in peril - Royal Blue Mersey",
@@ -8072,20 +8110,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWGNBNGtleVVIU3NiVHJzNGtSSUNEdFRVNFYyblpsZ21OaWRCci1IUUNKVkQ3VjRmVm5EU2NmQ2NoRjMyMWV0d2ROU0VKWlcycDhGOXhaQldrRE82ell2MlJnWjczTlQ3RDRoMTRsZkhQWG91anhORi1hZUU4VEp4Qw?oc=5",
         "source": "Google News League One",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Manchester City"
-        ],
-        "title": "Enzo Fernandez transfer news: Man City pay £125m for Chelsea midfielder - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE11aE8tRUJRLWsta1h3ZlBmQjJWZFc5cXVOeS1OOFJ3TVBhLWUtWkRMb0JTY3Iwb09falpRUE5hNnhzeXZ6OHlvTmFrR0VuV2hITUtSMEJiNWM0RkJpa0ZteHdFLWtaRTg?oc=5",
-        "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -8290,6 +8314,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-01T06:37:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Deadline Day LIVE: Keep up with every transfer rumour and done deal - Flashscore UK",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjRlUzdlM1N3bWZtb3hQRVJJMndZbjBjc3FFOXBxSzRyUzVlN2I1NktCcnM3R1R4NVpJQUMzMmNxNTFVc0RXNTVhbnFESTdQaU1QdlFkZFpkb1M4VHVVaE0wMDJlZzAtSk9tRkhSeDRTdEk3cEtNbFBEdGhkcXFxUU1DOURSVDhWMm9jdGI3M0lUUjRJVHlIUE45cEdhM2F0aWxrQUlCd2RJSzd1MjFPbzd3?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T05:28:38.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -9128,19 +9163,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Sunderland"
-        ],
-        "title": "Sunderland weigh up Jack Grealish loan with Marseille’s Igor Paixão also a target - The Guardian",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTm9Eb0Q2NTRxZTNtaVFSbmZIS1g3R21SaWdYQ1VtM0M4dm1OTnRSczE1T2JqdVRaX2hpZWVISlJoNXo2WWRNMWw2TVJwcGJkZDgxYkNDNXNHVHAzQzNHUmh1MDVFOW5nMW04MXc0U1MxS2JERUM5WDRXWVVtbDlPUWIzR0NIZzBtbkNZcHRvN08tdVplbENoUlJxRmotakxDczExd1Jna1JHa1gxSXlwSDF4RzZFT1JWRThXNmR3WU9BQWVVeTFtUXpQZkM?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-26T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Manchester City"
         ],
         "title": "Ayyoub Bouaddi: Manchester City sign Morocco midfielder from Lille in £86m deal - BBC",
@@ -9160,6 +9182,19 @@
         "title": "Tottenham set to sign another Man City star after Omar Marmoush deal agreed - The Independent",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS05VWDhJa1NkWFFYNlFoaE50eXpQdXYycGRKMzF4Y3REV1lBb2kzb0lKdlNqaXl5a255NjlpZ255bHlvLXVLenJ2cVVSZzdubl9CbzlPVlZhZlRMOWtNdHQ3Z1lxd0x3M0RlUnZqaE9zVllxTC1MUnZZVlFqMGotdlpvSXVqOGVZSlYwZDQ1LTlfN0kxUkI4TXJ5SjJaLUo4YUdldkhTSDc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Sunderland"
+        ],
+        "title": "Sunderland weigh up Jack Grealish loan with Marseille’s Igor Paixão also a target - The Guardian",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTm9Eb0Q2NTRxZTNtaVFSbmZIS1g3R21SaWdYQ1VtM0M4dm1OTnRSczE1T2JqdVRaX2hpZWVISlJoNXo2WWRNMWw2TVJwcGJkZDgxYkNDNXNHVHAzQzNHUmh1MDVFOW5nMW04MXc0U1MxS2JERUM5WDRXWVVtbDlPUWIzR0NIZzBtbkNZcHRvN08tdVplbENoUlJxRmotakxDczExd1Jna1JHa1gxSXlwSDF4RzZFT1JWRThXNmR3WU9BQWVVeTFtUXpQZkM?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-08-26T07:00:00.000Z",
         "status": "Rumour"
@@ -22399,12 +22434,10 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [
-          "Burnley"
-        ],
-        "title": "Burnley: Defender Igor Julio and forward Largie Ramazani arrive - BBC",
+        "clubs": [],
+        "title": "Deadline Day Live: All the latest Saints breaking transfer news and rumours - Daily Echo",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOVzRCLUpsNjlYaTVOQzFTcm5QUUJRU0hrU2tNeUJjcF9pQ1V1Q2ZPVmdSZi02VVNyZGFmYUNIX1M1TUJxRDF4OUhGdXRHOVpUbFlsQnJpVUNVV1RmQ2NWVmVZcU9UYlk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaGJYeGxXV251NDNUeEEzWmM0ZHh2U3JENkNNRVZpbkxHRUJFc004dm5mcFhLMzZ5THgwUzZQUnRpbEF1OGdzcmFpTVExSmNnQnU1MHdLdmJaT29tc0QyNmdyUkdvNEliUy1NeUltbnVCSEhzUl81akhQRzZOZUdZSHF6LW92R1NrNnRxeFU4V3hzQ3YtYWgxT0lXWnlLZEZqTUdZOQ?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -22412,10 +22445,12 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [],
-        "title": "Deadline Day Live: All the latest Saints breaking transfer news and rumours - Daily Echo",
+        "clubs": [
+          "Burnley"
+        ],
+        "title": "Burnley: Defender Igor Julio and forward Largie Ramazani arrive - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaGJYeGxXV251NDNUeEEzWmM0ZHh2U3JENkNNRVZpbkxHRUJFc004dm5mcFhLMzZ5THgwUzZQUnRpbEF1OGdzcmFpTVExSmNnQnU1MHdLdmJaT29tc0QyNmdyUkdvNEliUy1NeUltbnVCSEhzUl81akhQRzZOZUdZSHF6LW92R1NrNnRxeFU4V3hzQ3YtYWgxT0lXWnlLZEZqTUdZOQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOVzRCLUpsNjlYaTVOQzFTcm5QUUJRU0hrU2tNeUJjcF9pQ1V1Q2ZPVmdSZi02VVNyZGFmYUNIX1M1TUJxRDF4OUhGdXRHOVpUbFlsQnJpVUNVV1RmQ2NWVmVZcU9UYlk?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -27612,7 +27647,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
@@ -27626,7 +27661,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
@@ -28582,6 +28617,19 @@
       {
         "division": 4,
         "divisionName": "League Two",
+        "clubs": [
+          "Rotherham United"
+        ],
+        "title": "Klaidi Lolos and George Sebine join Rotherham United on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92UHlMdUJGdWhKMk5nNkpSNmQwWkl5V05BaWpvRHM4d25IdTVLVjBxZ3hKcXE2VG1PMnl6dUNNQWVnY1lDZlJfcWd0MmVSRzJMNWdhSF9MNnU2SV90dGppOWN0VzMxNm8?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
         "clubs": [],
         "title": "Every signing completed in League Two on transfer deadline day - Wilts and Gloucestershire Standard",
         "summary": "",
@@ -29275,7 +29323,7 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "What is an emergency loan and how do they work? - BBC",
+        "title": "What is an emergency loan and how does it work? - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ySGdLZ3RBY05iQkxyOEpVS0RLYWdiV1FJNV8weXlRdjl0MjJtZ1N2U0NMMGtBV3NrMXE4NmloWnQ2UFpiSzNtU1dkZ3J6eEdBNjlrQ00tWk5sRUYyQzdOVEtjdmoyeWM?oc=5",
         "source": "Google News League Two",
@@ -29307,28 +29355,6 @@
         "source": "Google News League Two",
         "publishedAt": "2025-09-02T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
-        "title": "LIVE: EFL Transfer Deadline Day - EFL",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53QzdZVnNMV3hKUHdkSjNsWVVwS2xoOVZKUkIxem5MbHBxdV8tcGluLXl4X3BSUnRlX3dVX0NBYXVPSlJiUmd0TWEzOXU0bk9FWGNHSlZpMGRlRUwwWVlIckx1R2xuakFuaC1KeWd1Z1Zvc3ZxT2pkR2Rn?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2025-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [],
-        "title": "Transfer Deadline Day: EFL Round Up - EFL",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMTA5c3dFZ1ViazRsanI3cTFFUGhUeFptS1RZcTM0dFY2UjQ2MFkxMWZjeFdtdGNsNll0NmxRX3VTNHl5QmlQN003Wm5xRzJhVkJWS09SbVkwdWFzSTc5X0VqVjFGTlhCZ3VCSU5CdTVCWDd3a3Z0WXNLUVNQWjg5dg?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2025-09-01T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 4,
