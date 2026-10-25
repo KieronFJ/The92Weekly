@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-10-25T21:18:22.013Z",
+  "updatedAt": "2026-10-25T21:56:42.651Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Crystal Palace"
+        ],
+        "title": "Papers: Dyche emerges as frontrunner for Palace job if Sage departs",
+        "summary": "The top stories and transfer rumours from Monday's newspapers...",
+        "link": "https://www.skysports.com/football/news/12040/13603802/crystal-palace-sean-dyche-emerges-as-frontrunner-for-eagles-job-if-pierre-sage-leaves-paper-talk",
+        "source": "Sky Sports",
+        "publishedAt": "2026-10-25T21:30:00.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -70,6 +83,20 @@
         "link": "https://footballleagueworld.co.uk/birmingham-city-must-sign-magic-anis-mehmeti-ipswich-town/",
         "source": "Football League World",
         "publishedAt": "2026-10-25T17:30:15.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Bournemouth",
+          "Manchester United"
+        ],
+        "title": "'It wasn't a farewell from me' - but horror start leaves Carrick on brink",
+        "summary": "Michael Carrick's future as Manchester United manager is under major threat following the home loss to Bournemouth on Sunday.",
+        "link": "https://www.bbc.co.uk/sport/football/articles/crgj9wnpd1lvo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Sport",
+        "publishedAt": "2026-10-25T16:51:48.000Z",
         "status": "Rumour"
       },
       {
@@ -577,6 +604,19 @@
         "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQN0xSQ1gwWDFfSVQyZUU2Ul8zaEplajRXbkN4bWFxNW9rMkNmbWFMQmxfWWpMemdnV0h6VGdzQnZaY0pFQ2xIVEV2RDNvcVN0TS1LZ2tHbEZKeDV4RFpOcTRHRlBGdjZhVXpfdHJPUGVfd04tckg3Q2pDWW1CdHNjS3psSGRtSlZ2cUREdzR2SXRZWjlBT0I1WTdVeFpWbUtVSkJYWkhVMmxUcTBwelR1NlNETUhjakFxYkdja0dUMmVHWFhfRTdfcG4yZVlvbnhNbTRNY2YyV1llY25qdVhybGh2eFh1T2J4SnpzU0FKcw?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-10-23T15:49:07.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Leeds United"
+        ],
+        "title": "Leeds United transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUlB5ck9MdGNZeWdtYUs3eHFqMWhWMXFQTk5nRk5fYjlEcDBJMWdOS2lmWFNxcVB1Skt1bVZyZUxpa1hqODBDYmdrYVMwWHU4dHpSWlpoWW5kcFJsTUoxWnFELTc2NUxPRlptOVcxN0VBRVBUSnpiUEhSdjlMVmxnNzRxX1hSSm5ZS1Q3dTdleVhnZTFZZ0c5LWZja1N6d3BSRmpsRFJGb0N0Uk1CVExwQkJMMUttS2s5SncwNktkU2w3cEZaSHF0VHIzbGoxUHZudDBNa0tNWFRjSklUdjFqRm5STnA0ZmRoMi0xZWxLeWpsSEU?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-23T14:03:12.000Z",
         "status": "Loan"
       },
       {
@@ -1216,19 +1256,6 @@
         "source": "Football League World",
         "publishedAt": "2026-10-19T16:45:57.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Leeds United"
-        ],
-        "title": "Leeds United transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUlB5ck9MdGNZeWdtYUs3eHFqMWhWMXFQTk5nRk5fYjlEcDBJMWdOS2lmWFNxcVB1Skt1bVZyZUxpa1hqODBDYmdrYVMwWHU4dHpSWlpoWW5kcFJsTUoxWnFELTc2NUxPRlptOVcxN0VBRVBUSnpiUEhSdjlMVmxnNzRxX1hSSm5ZS1Q3dTdleVhnZTFZZ0c5LWZja1N6d3BSRmpsRFJGb0N0Uk1CVExwQkJMMUttS2s5SncwNktkU2w3cEZaSHF0VHIzbGoxUHZudDBNa0tNWFRjSklUdjFqRm5STnA0ZmRoMi0xZWxLeWpsSEU?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-19T15:22:41.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -7728,17 +7755,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Premier League Transfers 2026/2027: Every signing, departure, confirmed deal - football360.com.au",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWtqbG8yWXZGRGxTN0VLMDNNLTVaVGh5ZnBwa0Rwak5KaEJkZ3pTM3ZtVXJNWnZGUXRNZVFfd1lIWVVFTGhQZ2gxajN5NS1pTXRwTFR4a0dqUmJxZklhVmtlQ1c3bnRzUFBXdzEzZTZaU0c3cHhFUlp5YTJUU0FtcDB5dklVUmVWMVhQZ2M4eUFXUkpocVJtS0tsUm4tWjN4bHc?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Chelsea",
           "Tottenham"
@@ -7774,6 +7790,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Transfers 2026/2027: Every signing, departure, confirmed deal - football360.com.au",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWtqbG8yWXZGRGxTN0VLMDNNLTVaVGh5ZnBwa0Rwak5KaEJkZ3pTM3ZtVXJNWnZGUXRNZVFfd1lIWVVFTGhQZ2gxajN5NS1pTXRwTFR4a0dqUmJxZklhVmtlQ1c3bnRzUFBXdzEzZTZaU0c3cHhFUlp5YTJUU0FtcDB5dklVUmVWMVhQZ2M4eUFXUkpocVJtS0tsUm4tWjN4bHc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -28767,17 +28794,6 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "League One transfer latest: Premier League additions and new U's link - This Is Oxfordshire",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaURYTGNKZjVSV2FMZVRXNVJGWVdSLW42YWs2cDY1dEF2d0VxNG95cU43TVBRWk5zQW1TQXhtdHBTZjBjMXJfTDFMcFB5b0lpUUNiVWV1UWhOckpvRW5LRUJOSVpFVnMzcVhyMTZfcWVLelMya0JDOFhraW02WUxjdzVDMDJEVXp1SlhOYTA5S0VzVENubGVhZnlWdWNoV2xfZmRjQkNPRWF6dw?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-07-07T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
         "clubs": [
           "Oxford United"
         ],
@@ -28850,7 +28866,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
@@ -28864,7 +28880,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
