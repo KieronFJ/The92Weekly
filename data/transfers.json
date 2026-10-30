@@ -1,8 +1,36 @@
 {
-  "updatedAt": "2026-10-30T18:14:31.566Z",
+  "updatedAt": "2026-10-30T21:41:58.180Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Leeds United",
+          "Southampton"
+        ],
+        "title": "'I wouldn't be desperate' - Southampton fired Leeds transfer warning",
+        "summary": "Southampton have been linked with Leeds United's Lukas Nmecha but a deal could prove to be complicated to complete in the summer transfer window.",
+        "link": "https://footballleagueworld.co.uk/southampton-fired-leeds-transfer-warning-nmecha/",
+        "source": "Football League World",
+        "publishedAt": "2026-10-30T21:01:13.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Leeds United",
+          "Southampton"
+        ],
+        "title": "'I wouldn't be desperate' - Southampton fired Leeds transfer warning - Football League World",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNN09YVU9xUWhITEtwREVsbTZSNndRMVZTcTZuTzVxQjVEWkI2VEtZOUtUQmRrcFNmWGxDUnlJN1F4VXdfaWE0clQ4QzN3NzVJdUR2TUxzWG1FRy15ZlZaSjg5ak4xQ3pVcFY1T2g1RHJ6UzFVb1l2Ukt3SHJjbTNhOU9sRXhrczFQaEE?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-10-30T21:01:13.000Z",
+        "status": "Rumour"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -16,6 +44,32 @@
         "source": "Football League World",
         "publishedAt": "2026-10-30T18:00:13.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Liverpool"
+        ],
+        "title": "Liverpool transfer news: Barcelona make 'approach' over early Ronald Araujo deal - Sports Mole",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeF9FVnd4OUszbHBtX2hsbUlJQXRxRVpRaTN0VXpLSGVnR1RPRmQ5TjRFX2hPZWk3TGJ2Z25xdWMzVWNnZGlGOWhhb3FoOUFqc2FJcHVlVDZsbkdOU0g1RXB1Uk5fOHNaMHI0MzhMd3NoT1FfSm1RVkx2ZkZiMWhjX0VlRDZPZWpQVGI1ZEZ2UkdKcEo5d3NLVjdHYWZpcS05cjU1MEk0OFd3Z3dDN2VfSkVBamFBaUpTSFpiNndkWXVDRm45SzhrVENn?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-30T17:30:50.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea manager Alonso dismisses talk of Estevao loan deal - Yahoo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORWNPcXQyUFhCV2Z4TGdSSjVqMndTVmFZcGdTaU9HVEIzNlJadG53djE0VktoVHV1dGVSWWt6cHJMb0F2UUE2czFPTUxfQW04dG5RbFlaUFdLSmZmOEt5WDlzaUdPb0RhWS11Tmh6SG1DZ01BMUF5ZU9vNzNPRlpuRlNmME1wZU4wWEdYU3NR?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-30T16:41:22.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -47,6 +101,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Liverpool"
+        ],
+        "title": "Liverpool and Barcelona in talks over Ronald Araujo transfer decision: report - FourFourTwo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUzdDZ3h5cmJENnlUVExqUWtFWHdJRFk4ZFh5YnYtV1QzVWNaNVRoOWpJWlpYNTdQMlNRcTZjaWg5Zm12TjRhdHU1X2RnVERRSnJUa0IwYTI5QkozejAxQkZRWU5pYnJ1WVJBeUdmemZZcnhIWFdNc1dkSUtuSXdXNEVLNzFKckZURmZWakVBSmk2amh4VEhfemhpd2F4Vk1fai02T3BwMGNTeTZ3bXZDM2hXbw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-30T16:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Chelsea"
         ],
         "title": "Xabi Alonso confirms Estevao transfer stance as Chelsea reach decision - FootballTransfers.com",
@@ -54,17 +121,6 @@
         "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOXzFkZmZ5dW1BLWtHSEZCNzc5VTVRSXZRSWxySHIxWVpfUHE5dldjWjYwalFuS0x1d2ltZ2RFRm0yemZKQ0ZOcXhiOUt6SUM2YzJPYlpKNkx2Q1RzQ0U3Vk5ra2JCTlZ6M0ttRVRHT0ZuMmxpYXdsTDBxU1llTmM4aUw1OHZiejEyTkZFUWFBRjEtMHBka2lkMVZ1X1VyX0FrWll2VW1GWXlEaXZ2Rmpqd3dKb04tV1RDNlpaTWxibGRvZVRlXy02VmxQcTkyQXU5WC1PdkVORHNsNUNIUWVfdTR6OGxXQQ?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-10-30T15:49:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer Centre LIVE! Football transfer news, updates and rumours - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeVdkVlNUdFpSOHJBeFZRaURCSmVRQVozM05xRTIxX0ZFWjdLQm1iWGlLcm5tLVFlRG10M2xjM3g0SUJFbGRld0ppMXNjN05KblBSVTZuSUdHMS1qWDJMQzRJaVI1elBmVG1KWWFQeHZja3VscDRaYnRjQmdRdmNRV0hxRnNzQ3I3dlVCQ251TGYxWnZJeGZaZHFraWxpTGRNaG5haVluQklnamtPYy1ZSlNSak1Ec1d6?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-30T15:23:38.000Z",
         "status": "Rumour"
       },
       {
@@ -104,6 +160,32 @@
         "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-10-30T14:09:28.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Newcastle United"
+        ],
+        "title": "Newcastle transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQektvRWxpTEZNU1Z4Yi0yOVJwYWdTc2hzbDFYT2I4eGhBVFEzQkNpTzFmUTgtRFVDQ2xfRTFaTldaQkFHblNjd0xmSXAybWpyNHFYaC1TbFppNV9BZDJ3SENqSVlDY1NIclNwTE85ZUszM25MeWZ0eTlrOWxXWDhOdEpDcEVxVDVjaU5tbzNkR085c1ZmMGduc3gybVdZMHgwUmxIR29aa3oyWEJxd2RrYzZoT19ub01CMktIWGFLYS1fUURieGtqRVJLMFAwME1UZ0Fhd1AwQW4xbTIycUJmWjRCY3B3RmtPS3NPLVB2Zw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-30T14:08:15.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal"
+        ],
+        "title": "Arsenal transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZE55eDRGUF9sdGtWcnF0MkNGU19ZYkpkQWN1U0dHakxncEpSQlpOTkFHMjYzQmk2MVdLZkZLeWtNRU4wb1ltX0w5bW4xdS11eVIwaVpvTzlUTUFSdUJPdDllYW1DaEdjbFJLaWozWUFoczg3Qm1Od2NMYUxOZnVrajBaWUljSm5PX2Zpb3d6VUNGRnRyX0pqQ0dqYWxJdGV1cmJtdGxJU1VleXRub2x1Rl9RY1QwTEZNXzlBUnR1TjFvaFltTHdtX3pHT3lTV3NNbHVDcnN5ZFNjY3lSMmdYLUplRDdONWE1Q2d4bA?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-30T13:58:33.000Z",
         "status": "Loan"
       },
       {
@@ -301,6 +383,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUGFqMmc1cWVSR01ncG52aklNclBteGpkR0NWVklhZ1Vjay1VMFFjY2Y5R3FQcVVhOFVoZjgySmEtcFpxTjNONWVXSlp4bVVnU1hKWE9NOHBHRVBnb2ZhX2NEOEpXVFUxWTJZZTdVR2JzcVllcjkyTHVNWmhMTlNEV0k3VTNjUXpvR2ZYVlNQcDluNE85UjFuODVaaGlRWjh2alFjN2FlNUpyYTQxdi1BaHNVbVVUR1gzWjlXWXljRUxXbHFqZ1loUEFrRS1ROVVmVkE3eVNKdl9Xd2FZX280aUExbDF0ZDZ3SmZ6Ug?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-10-29T15:44:59.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Leeds United"
         ],
         "title": "Leeds United transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
@@ -376,19 +471,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-10-29T11:42:05.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUGFqMmc1cWVSR01ncG52aklNclBteGpkR0NWVklhZ1Vjay1VMFFjY2Y5R3FQcVVhOFVoZjgySmEtcFpxTjNONWVXSlp4bVVnU1hKWE9NOHBHRVBnb2ZhX2NEOEpXVFUxWTJZZTdVR2JzcVllcjkyTHVNWmhMTlNEV0k3VTNjUXpvR2ZYVlNQcDluNE85UjFuODVaaGlRWjh2alFjN2FlNUpyYTQxdi1BaHNVbVVUR1gzWjlXWXljRUxXbHFqZ1loUEFrRS1ROVVmVkE3eVNKdl9Xd2FZX280aUExbDF0ZDZ3SmZ6Ug?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-29T11:18:56.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -528,19 +610,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Arsenal"
-        ],
-        "title": "Arsenal transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZE55eDRGUF9sdGtWcnF0MkNGU19ZYkpkQWN1U0dHakxncEpSQlpOTkFHMjYzQmk2MVdLZkZLeWtNRU4wb1ltX0w5bW4xdS11eVIwaVpvTzlUTUFSdUJPdDllYW1DaEdjbFJLaWozWUFoczg3Qm1Od2NMYUxOZnVrajBaWUljSm5PX2Zpb3d6VUNGRnRyX0pqQ0dqYWxJdGV1cmJtdGxJU1VleXRub2x1Rl9RY1QwTEZNXzlBUnR1TjFvaFltTHdtX3pHT3lTV3NNbHVDcnN5ZFNjY3lSMmdYLUplRDdONWE1Q2d4bA?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-28T16:09:16.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Liverpool"
         ],
         "title": "Spanish reporter’s claim on Ronald Araujo strengthens the case for permanent Liverpool move - LiveScore",
@@ -576,19 +645,6 @@
         "source": "Sky Sports",
         "publishedAt": "2026-10-28T10:39:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Newcastle United"
-        ],
-        "title": "Newcastle transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQektvRWxpTEZNU1Z4Yi0yOVJwYWdTc2hzbDFYT2I4eGhBVFEzQkNpTzFmUTgtRFVDQ2xfRTFaTldaQkFHblNjd0xmSXAybWpyNHFYaC1TbFppNV9BZDJ3SENqSVlDY1NIclNwTE85ZUszM25MeWZ0eTlrOWxXWDhOdEpDcEVxVDVjaU5tbzNkR085c1ZmMGduc3gybVdZMHgwUmxIR29aa3oyWEJxd2RrYzZoT19ub01CMktIWGFLYS1fUURieGtqRVJLMFAwME1UZ0Fhd1AwQW4xbTIycUJmWjRCY3B3RmtPS3NPLVB2Zw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-28T10:17:53.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -5692,17 +5748,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "The FULL list of every Premier League done deal this summer - TEAMtalk",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUGt2WW85LTZUbVFfTEtMMDgwc3plNUVaVm1jRDNlSG9ncmhtNllNT2kza2hfZmFYSVRLSW5MTktVbHU4cG5JUHVWUlh3N3p6SXRuTkhZOUc2TExTeVBKZU1aR1l6c0ZjMnh0Wk5FLVpEZ1Q3ODRSbHRXbFRadkctYWYzSQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-18T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Arsenal"
         ],
@@ -6015,17 +6060,6 @@
         "link": "https://footballleagueworld.co.uk/world-record-fee-middlesbrough-received-when-morgan-rogers-joined-chelsea/",
         "source": "Football League World",
         "publishedAt": "2026-09-16T08:00:11.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Every Premier League transfer confirmed in the summer of 2026 - Football365",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaTlqa1VjR09hSWpNUVZmanE4eUN5UEtieDZhUXNSZENRaUxQVjc0M3FNS25lX0dGN21Fbk1JQUd6aEhieTR2MTBadGQ3ODFmci1xSlNMTTJxMW9OUnZyQXhqSXk0WkN1ZWpZeUk4UUdCU3RCek5aZV8tWVVmcjJSOWpwd0JVUERiMkJucEc1RUdzQnJfVW9GUUVR?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-16T07:00:00.000Z",
         "status": "Confirmed"
       },
       {
@@ -8044,17 +8078,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Premier League 2026 summer transfers: All confirmed ins, outs for every club - ESPN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaVRSVUIzcC1tdlVQdUJjYWZVNVpIN0ZydXlfS1RFX1Zjb1k1MmV6Wnp2WTdaOTMtTVpwdlBRTjJEeE8tY25hN1BmWi1STjNpSjBVU3hBVFZiRUtncG11cGphZ3FueVVPcnN2WXdBSG5kM3N1eVhBekV0X2FKclZWTjJocVFUQmt5YjVOUEtYYmRUUzVCYWhOQXhTZkUyMTA1WEMtOVBJUzBWTkVLRTNOWnFPV0N6bWhjZ3c?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-04T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Liverpool"
         ],
@@ -8293,31 +8316,9 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUEhsQVljSWJlQVJYNjFsdXpXeWRGYXYwTmEzemhUaXV3S3hkOU45SV9rNmdYUW1mRmh6UkxNSkx0X00zdzM0NzF1OTdEZmZWLVc5bTVnNVFCLThyWW1NVEpuUkFDRndpODBOVjZTYlF0QkFNYjlnM0s3VW13SmFmMEk1LUlMa2F0VkhWS1RKRGZocURaaTJfMDh1NF9rZGJIdFBPUXhUeVl1YVhYeGVpcGpKTlo2ejZmdmwwU3lfVmkxQQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-03T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
         "title": "Rating every Premier League club’s transfer window after record deadline day - The Independent",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFA3aW5faGI1WXBLUnR3dmZuRUhnTFJCWHFfY1dZbjFheW9IZlNRME5vVk5pdExJSVR4dFlmcDNpc3dkV2JaVGpjOTBST3JaM1pLY0RsajBCTFU1cGd4NWdrZHo3Yl9DeElGb0htZ2tSb2o2QTB2WktXYTNtTXk4R2hJMWpmbzh3NkhLRmZock9paUxOTExUTUhfaDhvWnVidUtnRklFcHFDSXlyWm9ieS0wb2dRZzAzUkdPLQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-03T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Summer transfer window: Grading big signings in men's soccer - ESPN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb1daNEpKT1BOS2FabXhydVBlcHRwX0NSb1pjbTFwQ1YzZVp4UlRiR1FINDJXWW1nQXdBSnJHdFdzU2k4Nng4QVVleUotTEotMXJCZFgtR0ZodTF4SGo1cVltRWZBOElXNnJWOHpHaGpiVW1IdTlROUpGZzhmMzZnR01YT1RTbGF0V2d4cnZxWWVvS0p6NXFYU2NJejdaSXFmWkc2TjJPd09DUW8?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-03T07:00:00.000Z",
         "status": "Rumour"
@@ -8674,17 +8675,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [],
-        "title": "The Wrap: What happened on Transfer Deadline Day - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX1dxa0Rta3hBX3lYVmVTempFQ3lHblBkb0VnTTZMa2JLX0p2d093Umc1YldSdlNpNEVZcXRBcEN6cUJpLWh6RkFLX2IyeC1sVWp3YWdfVXhyUFYzY2VsNmlzellpYWF4OFQwUUdHUVBUT2VvLUUtZXdJcjh0Xzh5X1JSMFFWMFhhazZJSGJRNFFvampudEpucHJn?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
         "title": "Every Premier League club's biggest deals in summer transfer window - Premier League",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNN0xzdmpQcVg3SnFkS09OMXQwd1BFc2dyUjJEYTVtakZOQlZUUFlLNldwd2MwbTM2V3JYRF9SSG9SVzI0LV9CQVBJdklJM2lUdXRVY200Y0FEdzdsdGE2QjUzei1VS1FkR1pxSUo0eUk2b1k1aDRqMlVadjROZGZ5eThhZl9VV0hYeTdSeVVFOVNYdDV6Y1RUa05RRktIS1VDci1jM201NTlmSVdyTDJ5aUFIRQ?oc=5",
@@ -8699,17 +8689,6 @@
         "title": "Transfer deadline day deals summer 2026 - confirmed moves across Premier League, Championship, EFL, Europe and more - Sky Sports",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNMjVqTVBPaHNZTzJzX2hCbm45X2RXaTBzNkRPYXNJUDNhZ0pzb2kwWFJ5c18yMnFuZHhvcXdvUHJJUUpOcW1RTVJxa3dwRExIRlRwUVljWGVGaU5pWWlFbFA1c0JSY25CUEFIek9GRlhHWFJiYm4yMW1zVnlkdVdYUEVvVnVVTkxNZkNIekpCTU9vMTlqX0VWdWVsbk9CcmhiWmdsWlAzd1hrY0NpTW1sejRUTFcxMm04dHRneW50OVJIMGN0RV9kRjR4ZWM1MmNSYzVfeW9hb3RlTkxFSXU2T2M3TF9saUZPdXF0dEpvT00?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYmFlbDlPS2o3V3lhSzVSdlZCZ2FZVTZfbU94a29DcnUxanRCem10M1pNVlJiZDItVGxqeFg4VEt0eHFKVG1GSE1sMWRralY1MzBIV2Y0UXluWmM0TEFFQkR4TjluUWdVSDJka1V4VU5jWDFRREJ5dDhBQVhDYVYwdjFXWkNwbDFzSVl1bm9obDQ?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Confirmed"
@@ -8758,12 +8737,59 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYmFlbDlPS2o3V3lhSzVSdlZCZ2FZVTZfbU94a29DcnUxanRCem10M1pNVlJiZDItVGxqeFg4VEt0eHFKVG1GSE1sMWRralY1MzBIV2Y0UXluWmM0TEFFQkR4TjluUWdVSDJka1V4VU5jWDFRREJ5dDhBQVhDYVYwdjFXWkNwbDFzSVl1bm9obDQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Arsenal"
         ],
-        "title": "Are Arsenal taking a risk in not signing a world-class forward? - BBC",
+        "title": "Arsenal transfer window: Are the Gunners taking a risk in not signing a world class forward? - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5uekdKLTNTY1I4VGYwTUhTeHV0UXdscFF3OXNjUWNTenQ4M1o2T29JeHN5V291eGZ0SldxUzFMbWJRMVFpcUhXemQtRUtXSGlmYU00RGVLUEYzc2pRUnVNZTEtLVpkWlU?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League Deadline Day 2026: Every Done Deal, Ins and Outs - football360.com.au",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester City",
+          "Tottenham"
+        ],
+        "title": "Every confirmed Premier League summer transfer as Man City and Spurs seal deadline day deals - The Mirror",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFhVd3pKekJ1c1lTQ2ZLN085WU9QZ21kd21lX0NaT0l6OWVFSWpXVVFpdlV4dU5taWIwZlFFQWFtTkF6eGI5TDlvWFcwN1VNektlRFJaMDJmekJhNEUxNjBYT2dXYmRCOHN4RGs4amQwdmxrc0JoXzY0enJWXzhjbkNSay1MbUppVU1TWWgtdGlNN1pGNTIyb3J2TnF3d9IBowFBVV95cUxQTExfeEVmakx0Q0F0SHF1VUpheFQ0czJad29Ob2tpeHNKb1FSVmV2VVM2czg1Vm1BckpHcHExYWFzRDhOSUI2djI5a2o5YUwyM1NGNTljTzlXY2FnZGFmOFVYaG1VOFF1dTZFeVZIaEdnVS1tNjh4ZTJBVTJWeXJQaG5iODY4d0ljMms3NmtGWTZ1QUZuLXhxWHJRUV9CYldMUkdz?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "12 transfer deadline day deals you might’ve missed: Gimenez, Casado, Diaby… - Planet Football",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVm1iSUtuWEpSMEt2bklfc2FxRE1Ob3RZa2JfNl92b25zTkRkLTlyMllHY3cxZTZYdlU1dnQzSEljakpXdkRtTFpsMW1jZ3BWUXEtM21ZNU4xWWhvODc5U0pDdGI4VENpTHJLbHlVVFJUb0xQdXBHajktTjRuRWtXU2Vvb2hvUzk4TFV2ODJUajRCUkpKZmJKeGVSX2RpNHZmLVRlZmpn?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
@@ -8793,20 +8819,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester City",
-          "Tottenham"
-        ],
-        "title": "Every confirmed Premier League summer transfer as Man City and Spurs seal deadline day deals - The Mirror",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFhVd3pKekJ1c1lTQ2ZLN085WU9QZ21kd21lX0NaT0l6OWVFSWpXVVFpdlV4dU5taWIwZlFFQWFtTkF6eGI5TDlvWFcwN1VNektlRFJaMDJmekJhNEUxNjBYT2dXYmRCOHN4RGs4amQwdmxrc0JoXzY0enJWXzhjbkNSay1MbUppVU1TWWgtdGlNN1pGNTIyb3J2TnF3d9IBowFBVV95cUxQTExfeEVmakx0Q0F0SHF1VUpheFQ0czJad29Ob2tpeHNKb1FSVmV2VVM2czg1Vm1BckpHcHExYWFzRDhOSUI2djI5a2o5YUwyM1NGNTljTzlXY2FnZGFmOFVYaG1VOFF1dTZFeVZIaEdnVS1tNjh4ZTJBVTJWeXJQaG5iODY4d0ljMms3NmtGWTZ1QUZuLXhxWHJRUV9CYldMUkdz?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -9550,10 +9562,12 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer deadline day 2026: Every done deal on deadline day - BBC",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea close to agreeing deal for Roma's Kone - Sky Sports",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pamlBdTI5OVJBeWFkTktFR0ZUVnJiajFpVWZyOEl2RXV1blpEOU9CRlZRblhwYV9sR0FyRC1TV2FGMGxhTm5hRmNDVWV3ckRWanRvM1pCMmJVbjAtNllnRXY1NjhVZ1E?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxObk45dzZZRlRZeFNRS1hUWnNGcE5TdFZ0bWw0M2c3a3NScmNJYXVUNEprYnBLLUFkTFB6RmtQMFFRTjIwR2lzWGV4ZkR3dU5JZ1E3VTVxbUgwVmkwQjlSaHQxa1FGdk1yam1PbzFia3lxMnZiSS13ZklhZUFRdVR4ZndTQXNUcmdKZmVEX3hIbk5FLWE5UnNoa01mWnRZRUlOb29td1Z2OHNaQXAyNEp0MEVlTFUxWkpSTDRQYTczQVJLWmF0WE9PX0YyalhqTG54NTJCc3VuN0QzcklkOElzUlZ5SlZ2anYtRkZEMzNVcU5ZNFd2TUw2N0pRcHI?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -9561,12 +9575,10 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea close to agreeing deal for Roma's Kone - Sky Sports",
+        "clubs": [],
+        "title": "Transfer deadline day 2026: Every done deal on deadline day - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxObk45dzZZRlRZeFNRS1hUWnNGcE5TdFZ0bWw0M2c3a3NScmNJYXVUNEprYnBLLUFkTFB6RmtQMFFRTjIwR2lzWGV4ZkR3dU5JZ1E3VTVxbUgwVmkwQjlSaHQxa1FGdk1yam1PbzFia3lxMnZiSS13ZklhZUFRdVR4ZndTQXNUcmdKZmVEX3hIbk5FLWE5UnNoa01mWnRZRUlOb29td1Z2OHNaQXAyNEp0MEVlTFUxWkpSTDRQYTczQVJLWmF0WE9PX0YyalhqTG54NTJCc3VuN0QzcklkOElzUlZ5SlZ2anYtRkZEMzNVcU5ZNFd2TUw2N0pRcHI?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1pamlBdTI5OVJBeWFkTktFR0ZUVnJiajFpVWZyOEl2RXV1blpEOU9CRlZRblhwYV9sR0FyRC1TV2FGMGxhTm5hRmNDVWV3ckRWanRvM1pCMmJVbjAtNllnRXY1NjhVZ1E?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -9581,6 +9593,17 @@
         "title": "Enzo Fernandez transfer news: Man City pay £125m for Chelsea midfielder - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE11aE8tRUJRLWsta1h3ZlBmQjJWZFc5cXVOeS1OOFJ3TVBhLWUtWkRMb0JTY3Iwb09falpRUE5hNnhzeXZ6OHlvTmFrR0VuV2hITUtSMEJiNWM0RkJpa0ZteHdFLWtaRTg?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "When is deadline day and what time does Premier League transfer window close? - Manchester Evening News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOWt6Vi1oTEtwbkZPaW5Ob2pNZ3JTdWd3ejdIX0RJNFlLVVFhSFFtbVJ5YURDZVNzbUN1WkItOEltNlZaREd5ZENmMGQybWt4bEV2V1IzQTZFY0xyNk1jbTh1a29oVTFkTURwejF1VTB1MEp6eEZJWERiQXRWTjJodEY0WU9ZNHVnRUc2VzNGajByeFFqMU0xNTFqUWttZ0kzanI4c29haC1tWGtRVU04?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -9614,6 +9637,28 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Every Deadline Day transfer and the deals that could still happen - London Evening Standard",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVnU1SmQwbUc5WVZKOEtuVlhlSzhPa1dvX0hRNkpRbkVucFFYZ3Y5U09ITFJ6aFJrcjIxTmllTzBpN01RXzhmbHpWLS1aQUFKOWs4QzAtNEtXOG5hTV9HajhXaXFjbmYxUm9XYmhvRDJKYzdmdEhKb1JFMUx4MURuU3VJY3FIRVlDcXRSNVRIY1lia1ZlWjU3Vg?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Premier League deals to watch on Transfer Deadline Day - Yahoo Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUVNBSl9HeENKcm1yM1ZHdFp4RDY4MVF5Vnk2RjNqbEFWQm03UElIRk85dmhDeXhKcmtTLV9XX2V5MndEN2diaWQzbml5ZnZsMjBSU3Yxb1JZWXRBdDJuVjJvc1ZsdUZSVTBIWFZwY2dhOWlGdzBYRWtCeFExSkJxZUFWTWpvdHN3d0k0bw?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Arsenal"
         ],
@@ -9623,22 +9668,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Arsenal",
-          "Liverpool",
-          "Manchester United",
-          "York City"
-        ],
-        "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic - The New York Times",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTUd4VVA5eHlnRmZnWnE0QzkwWVpIdEx3WTgxU3A5bE15emdLczN2YU5MTTIzdFZvTDNqS2NxYU5sd2QteHFvMXBkekNEUzFyNDZfX0UzMFFaaDdQMG13aGRBSTVsNFBhS1NVdUVsQlhITW1Ia1hzZ2xueTlka2hRUHZWT3NsQ2NudU11S1VFSGtKQnVpZUl3ZUhvZUFkZ2xTd3d4TktQOE1QT1dNT2tGSmd4a0ZlZzQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -9690,6 +9719,22 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWGNBNGtleVVIU3NiVHJzNGtSSUNEdFRVNFYyblpsZ21OaWRCci1IUUNKVkQ3VjRmVm5EU2NmQ2NoRjMyMWV0d2ROU0VKWlcycDhGOXhaQldrRE82ell2MlJnWjczTlQ3RDRoMTRsZkhQWG91anhORi1hZUU4VEp4Qw?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Arsenal",
+          "Liverpool",
+          "Manchester United",
+          "York City"
+        ],
+        "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic - The New York Times",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTUd4VVA5eHlnRmZnWnE0QzkwWVpIdEx3WTgxU3A5bE15emdLczN2YU5MTTIzdFZvTDNqS2NxYU5sd2QteHFvMXBkekNEUzFyNDZfX0UzMFFaaDdQMG13aGRBSTVsNFBhS1NVdUVsQlhITW1Ia1hzZ2xueTlka2hRUHZWT3NsQ2NudU11S1VFSGtKQnVpZUl3ZUhvZUFkZ2xTd3d4TktQOE1QT1dNT2tGSmd4a0ZlZzQ?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -10110,6 +10155,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer deadline day 2026: What deals could still happen before window closes? - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yWFBYY3c0NEw0V3J3YUxSRk5RdXN5MTNPemxON21SMDZQU2VUeDJuWF9mRXI0R19BYm9IUFhTS25sSVFFTXQ3V2pzQjRSVHpnVWZ1VjZDSm5fUVV4YzVzeWVYVnYxdGpkTWc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Liverpool"
         ],
@@ -10119,6 +10175,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-31T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Latest transfer news and rumors ahead of deadline day - theScore",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWkg5cVB6dTVkRmhiSXlUT25QVktVdUR2dUQ5T2t4MkxjMVgtbE9HT2xuN3lnNnVIaWF6SU1SbFJ5RG11U1dzYTd1SnVHUzZJdHoxbm85Y1lUaHhfdFVBSmdsS1FHdU53ZndRT3g2TGRNZ3RDYk5yV1N5cmVWMFhsM25lNUs0ZURSRWVHamRvYnpUdGpkbGVBZWVENA?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -10529,27 +10596,11 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Preston North End"
-        ],
-        "title": "Caleb Wiley: Preston North End sign Chelsea defender on season-long loan - BBC",
+        "clubs": [],
+        "title": "Transfer rumors, news: Real Madrid eye move for Roma's Koné - ESPN",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85RzZvcm1DZm9WYUhMT1p3WVFUWXc1a2FYdlpKRTNWek1TT0xKMU8zeDU3UktHakZOeEdsallIQkd2T1AzYVBjb1VUSmN1Z3pPQlJ3MEd6ZjZadzJfdUEtcGlqOFduS0hrYlE?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-28T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United"
-        ],
-        "title": "Dan Gore: League Two club made ambitious bid to sign starlet permanently - Man United News And Transfer News - The Peoples Person",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOU1WeUhyekVsR1Y0clVmbDF5TENsWnpOZUF6bklRb2g4STZ4ZGlNUXpROGtRZlRuUS1Xd09zWnRvUXM3aTNLeXc4YTduNV9jQVhnTmQ0X3JKYUF1MEVkamhsbkxfVk5lSE44T0xHWDdVSkprRmtNVTFzcHhDYnFma3dQS1BWcnp5dTJVRkhjNlRvbGprX3diMlNuZzFtR3U2enJKNnk4cm9oeUs2S1BxeTVlNk9sMEVMZlJZ?oc=5",
-        "source": "Google News League Two",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQT0ZEUG42YlFReVpBVHI3NHc0eHlOb2M5NDRjN1d1Nkw1WHdrTy1tMUJ5dkZkUEp0ZTZyTXMxb0JPVW1DYk9kaGtFYXJTQkhBT1Z2clRxUDdiaVFMeV9EM1RYODl3eEI1Z1RBcjV2NEFOZ3E1QV9LU1FJeXRXZmxXWGlsOWtERWlYUHlNaGlBWGZzaFU1akx6cHBDNXh1YWc4cm5FYzctbnkwLWFabzIxSS1iUEg?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-28T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -10580,6 +10631,33 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-28T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Manchester United"
+        ],
+        "title": "Dan Gore: League Two club made ambitious bid to sign starlet permanently - Man United News And Transfer News - The Peoples Person",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOU1WeUhyekVsR1Y0clVmbDF5TENsWnpOZUF6bklRb2g4STZ4ZGlNUXpROGtRZlRuUS1Xd09zWnRvUXM3aTNLeXc4YTduNV9jQVhnTmQ0X3JKYUF1MEVkamhsbkxfVk5lSE44T0xHWDdVSkprRmtNVTFzcHhDYnFma3dQS1BWcnp5dTJVRkhjNlRvbGprX3diMlNuZzFtR3U2enJKNnk4cm9oeUs2S1BxeTVlNk9sMEVMZlJZ?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Preston North End"
+        ],
+        "title": "Caleb Wiley: Preston North End sign Chelsea defender on season-long loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85RzZvcm1DZm9WYUhMT1p3WVFUWXc1a2FYdlpKRTNWek1TT0xKMU8zeDU3UktHakZOeEdsallIQkd2T1AzYVBjb1VUSmN1Z3pPQlJ3MEd6ZjZadzJfdUEtcGlqOFduS0hrYlE?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -10691,6 +10769,17 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-27T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "10 Premier League deals that could be completed before transfer deadline - The Mirror",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTE1kR3dEZ1hDOHZkYVJQZEVFZ2VmZERmYlRpZmdpQkdUSm84RVJRQnRRMGZNOFdoRXByYnpQbVJ4NW05NGVoWm4zSE9feWJXRm9zS2hoMGxkZ2VmTTB5LXV1TDhYN0t3dlNnaUs1LUNTTTBnTHpNNExIYjQ0R2tZdzB6QzRXZUpZdW1DX3Nzb2pRbTNiTHVrNUNLOS1YRzVub0RaWnh3Uzk?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -11174,34 +11263,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Fulham",
-          "Wigan Athletic"
-        ],
-        "title": "Luke Harris: Wigan Athletic sign Fulham midfielder on season-long loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55eVg4QXE3bWF6S05adTBERnl2NWZ4X0hDbldDZDU3VHFIT3J3VFp3TzdVVVVFcWVmdFViQ2NQVnhTUlZWeURVaGo2cEtYUGN2cmVfVTVXYlBNSzFlUmx5Nng2a2RFU0U?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-21T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Aston Villa",
-          "Rochdale"
-        ],
-        "title": "Kane Taylor: Rochdale sign Aston Villa midfielder on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tS3RtVThBM0ZxNVJuRExZTGNUWlhYYkYzVlBneVRtLXV1YmlVc3AzS0xNaDVPWWJ6aVJ6cHltaHRGLXBja2puSHAyWm84c1JBSVFJUkJyTHlGeFJKRmN1aTVkbnhMTlE?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-08-21T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Crystal Palace",
           "Manchester City"
         ],
@@ -11239,6 +11300,34 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-21T07:00:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Fulham",
+          "Wigan Athletic"
+        ],
+        "title": "Luke Harris: Wigan Athletic sign Fulham midfielder on season-long loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55eVg4QXE3bWF6S05adTBERnl2NWZ4X0hDbldDZDU3VHFIT3J3VFp3TzdVVVVFcWVmdFViQ2NQVnhTUlZWeURVaGo2cEtYUGN2cmVfVTVXYlBNSzFlUmx5Nng2a2RFU0U?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Rochdale"
+        ],
+        "title": "Kane Taylor: Rochdale sign Aston Villa midfielder on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tS3RtVThBM0ZxNVJuRExZTGNUWlhYYkYzVlBneVRtLXV1YmlVc3AzS0xNaDVPWWJ6aVJ6cHltaHRGLXBja2puSHAyWm84c1JBSVFJUkJyTHlGeFJKRmN1aTVkbnhMTlE?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -11408,6 +11497,35 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Manchester United",
+          "Oxford United"
+        ],
+        "title": "U's star agrees deal as League One rivals secure Manchester United transfer - Oxford Mail",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ09KU2o4V1FXWlF4T1Z4cG1oUXVRck51VkRqcGdLd0tJQ3dCaklfRGdDMXlrMW9PVXNLWldzckJEVmVuNy1VOTFRaTFFN2x3bnB0emhSWHozWXdIZ0lOTGx0UHRYODZOc2Z3NGpwamJ5LXFaNGJ4QUloZ0lHdUlzRHBoeGFDckpHMmZTcktYRVgyX1VPUDhTLXptZkZRaUsyWFBIMThUeGI2MjBYNmc?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Manchester City",
+          "Wigan Athletic"
+        ],
+        "title": "Reggie Walsh & Charlie Gray: Wigan Athletic sign Chelsea and Manchester City midfielders on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Id1RfUWVHa1dSZXIxMk84VHY2Z1owdFNmOWdLUjhIWlIwS0NKMFY3ajRvMFU0R2pYS21WNTdHR2x2MG5JN1ZiM3M1Z09JT0NObnM1UE9jN0k4VUtraHk5UUNKQWlkb2c?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Leeds United",
           "West Ham United"
         ],
@@ -11436,21 +11554,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea",
-          "Manchester City",
-          "Wigan Athletic"
-        ],
-        "title": "Reggie Walsh & Charlie Gray: Wigan Athletic sign Chelsea and Manchester City midfielders on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Id1RfUWVHa1dSZXIxMk84VHY2Z1owdFNmOWdLUjhIWlIwS0NKMFY3ajRvMFU0R2pYS21WNTdHR2x2MG5JN1ZiM3M1Z09JT0NObnM1UE9jN0k4VUtraHk5UUNKQWlkb2c?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-19T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Ipswich Town",
           "Stoke City"
         ],
@@ -11458,20 +11561,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY01RZzZJVmo1eUJYVHRJWlNJajM3c2tiWU5QSmlCd2FLTDZkVWJIUUN4YUk5WkVZZl9vbVg4SVUyMDNpeUtzTkctTkc3dHJwb1VZeW1saFozdlZTS29CTXhfMklOOHltTWhYaVF3TXRJU052bmdYT0YxSGpMamV4eU14VUg?oc=5",
         "source": "Google News Championship",
-        "publishedAt": "2026-08-19T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Manchester United",
-          "Oxford United"
-        ],
-        "title": "U's star agrees deal as League One rivals secure Manchester United transfer - Oxford Mail",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ09KU2o4V1FXWlF4T1Z4cG1oUXVRck51VkRqcGdLd0tJQ3dCaklfRGdDMXlrMW9PVXNLWldzckJEVmVuNy1VOTFRaTFFN2x3bnB0emhSWHozWXdIZ0lOTGx0UHRYODZOc2Z3NGpwamJ5LXFaNGJ4QUloZ0lHdUlzRHBoeGFDckpHMmZTcktYRVgyX1VPUDhTLXptZkZRaUsyWFBIMThUeGI2MjBYNmc?oc=5",
-        "source": "Google News League One",
         "publishedAt": "2026-08-19T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -11699,34 +11788,6 @@
           "Aston Villa",
           "Bolton Wanderers"
         ],
-        "title": "Bolton Wanderers make a statement with Villa winger on season-long loan deal - The Bolton News",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYVpNbEk3TjNnbFhjbGdtRVFid3FQT29mbkEwTU9hdWljTnZVdEo1cmpUbUxZRFlmWDNOa29hNHFqWUtSMGgxRE5PR2JmZVFqRGVrMFljbGQyS2Ezb2ZmVWM1OG83SldCR0Y2TWJpNnFUbDNPeE5yd0JRUW1ucFBwLTFsUG5oRDFBdUo5SVU4OFNubTZWQlQtMFRCa2ZHUUN6MVhz?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Aston Villa",
-          "Bolton Wanderers"
-        ],
-        "title": "Samuel Iling-Junior: Bolton Wanderers sign Aston Villa winger on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SZGl2UWJCVTNPUDljY0FFQWdYZTlKQi13eEJ0amZBQWhhVllkeF9pSUZ4aHBPR192a0tKQ1VUQ3dQVHJwaV9US01JeGdTRWExM19GU3NWa3F5Sld5MmpMcmRBZ3pQUnc?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Aston Villa",
-          "Bolton Wanderers"
-        ],
         "title": "Samuel Iling-Junior: Bolton Wanderers sign Aston Villa winger on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ERmw1cUtId3ZpS29NNzhwTVlSd3JzejJ5RThPNl9qS2NWR1BaTzl4eHhzTEVGVUFiNm5rT0VFS3RMMTRWQzhFYkVjc1FKZWVwblU2cjZrWG5xU1VKaEYxWW05eThEWC1pNFE?oc=5",
@@ -11747,6 +11808,34 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-14T07:00:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Bolton Wanderers"
+        ],
+        "title": "Bolton Wanderers make a statement with Villa winger on season-long loan deal - The Bolton News",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYVpNbEk3TjNnbFhjbGdtRVFid3FQT29mbkEwTU9hdWljTnZVdEo1cmpUbUxZRFlmWDNOa29hNHFqWUtSMGgxRE5PR2JmZVFqRGVrMFljbGQyS2Ezb2ZmVWM1OG83SldCR0Y2TWJpNnFUbDNPeE5yd0JRUW1ucFBwLTFsUG5oRDFBdUo5SVU4OFNubTZWQlQtMFRCa2ZHUUN6MVhz?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa",
+          "Bolton Wanderers"
+        ],
+        "title": "Samuel Iling-Junior: Bolton Wanderers sign Aston Villa winger on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SZGl2UWJCVTNPUDljY0FFQWdYZTlKQi13eEJ0amZBQWhhVllkeF9pSUZ4aHBPR192a0tKQ1VUQ3dQVHJwaV9US01JeGdTRWExM19GU3NWa3F5Sld5MmpMcmRBZ3pQUnc?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -11807,19 +11896,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - London Evening Standard",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGNMSXBnWmltRVowT3ZQMkhZWWR2VGc0U3VRSVVmV05lamJMajhCSkdpT09oT000cW9sM2FJNGpOR2tjLXdwVk1OWENOd3g2YzZROUx5VVZNR2JETjl6MlRRVzhYcjZwMnFfRURPQTE3V3ZxWEEzZ3VUX0tFY2plYklFNWxpVS1TWmxVQzRPRHJMLXlCb1E?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-13T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Brighton",
           "Leicester City"
         ],
@@ -11829,6 +11905,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-13T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea reach agreement for latest transfer after sealing £16.3m deal - London Evening Standard",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGNMSXBnWmltRVowT3ZQMkhZWWR2VGc0U3VRSVVmV05lamJMajhCSkdpT09oT000cW9sM2FJNGpOR2tjLXdwVk1OWENOd3g2YzZROUx5VVZNR2JETjl6MlRRVzhYcjZwMnFfRURPQTE3V3ZxWEEzZ3VUX0tFY2plYklFNWxpVS1TWmxVQzRPRHJMLXlCb1E?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -11926,6 +12015,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Chelsea"
+        ],
+        "title": "Chelsea Sanction Latest League One Loan Exit Following Ishe Samuels-Smith Deal - Football Lowdown",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1hoWUIyVVh5amdoTV8xYmEtX3d6NVlxbW1VUjNaOWhJNkJVdFdfQ0QzUU05OHdJZEV4eDQ0UF80MmZBRWpLV3IwdXExb1lteDI1bUktaTJvbjFjRFY2eVpZUW51UWNiODNSc19UeFVHSGRVX2ZNZjFBSTd6clEzS3R3c2hYNmZSWmRZQWlwLVpDV3NYWHFzOUc0UXFiMHB6NVRvSWtNTW4zT1k?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester City",
           "Sheffield United"
         ],
@@ -11946,19 +12048,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYUxnblBzaWxTa3g5b1BvdTNrQTh6M3F2TWNONGZkdjdYTU8xakxVOXFtYV9BWmtZdTJ1dFRvejMxcVg1NGJsRW1nME8ySVRLQmZOS2s2RHJBeWpvSFNxY0hVTUwwLWxUZnNwUXBlRTdMOWhWaElVRnFRdVJ3ZjNUWmVaOFJZbXJhem5ROWVodUl0RGV2d2szb0htM0NJVUV5bEZCbTZGM3hhRXJ5S3RnaGlNeEZkVi1JWGlRbUpOcnNNVWpPNTJ2WWsydnJMdE0zUERTclNYaEdvSm9UcnVZ?oc=5",
         "source": "Google News Championship",
-        "publishedAt": "2026-08-11T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea"
-        ],
-        "title": "Chelsea Sanction Latest League One Loan Exit Following Ishe Samuels-Smith Deal - Football Lowdown",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1hoWUIyVVh5amdoTV8xYmEtX3d6NVlxbW1VUjNaOWhJNkJVdFdfQ0QzUU05OHdJZEV4eDQ0UF80MmZBRWpLV3IwdXExb1lteDI1bUktaTJvbjFjRFY2eVpZUW51UWNiODNSc19UeFVHSGRVX2ZNZjFBSTd6clEzS3R3c2hYNmZSWmRZQWlwLVpDV3NYWHFzOUc0UXFiMHB6NVRvSWtNTW4zT1k?oc=5",
-        "source": "Google News League One",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -12255,19 +12344,6 @@
         "clubs": [
           "Liverpool"
         ],
-        "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlhKVlBjWmh5SGxKSDVRTVhZV2FVeTNTT3Y5SUs0Uk94R3plMkE1dFhGTnJkWGJocF9KRzl6M0xETVNLLU53WjhEX05ucHl1WUdFbU8xRWN2dk1wRmRlWmpjN1p1eDdkQy1iNUltVDRwa0JxekpydHBxRlk5UHFsbnMtc1RBMVh5THZ2aWxnaDZxZzdsNV9uVTJ2eVlPTS1SY3FWZEFB?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-08-07T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Liverpool"
-        ],
         "title": "Liverpool transfers: Ronald Araujo close to season-long loan from Barcelona - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlTllIeEdNT0cxS2w5Wk1uQkJPenVEN2dyTktyc2czYW5FV3B1WTQwMlBxUlBaLW44cWh4OHJkeWdZY2lXQ0htV3NsRGd0OVh2RFBOUmpSaWNvRzVSNzhINHpPaHMtWUNJN3c?oc=5",
@@ -12288,6 +12364,19 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-07T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Liverpool"
+        ],
+        "title": "Liverpool in surprise loan deal to sign Barcelona centre-back as Ibrahima Konate replacement - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlhKVlBjWmh5SGxKSDVRTVhZV2FVeTNTT3Y5SUs0Uk94R3plMkE1dFhGTnJkWGJocF9KRzl6M0xETVNLLU53WjhEX05ucHl1WUdFbU8xRWN2dk1wRmRlWmpjN1p1eDdkQy1iNUltVDRwa0JxekpydHBxRlk5UHFsbnMtc1RBMVh5THZ2aWxnaDZxZzdsNV9uVTJ2eVlPTS1SY3FWZEFB?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -12453,6 +12542,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "The BIGGEST transfers from Real Madrid to the Premier League - Premier League",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTW0xOXNqcmJvb0ludVpwdTUteHFfRV9aMUVBdGFLTTktV1VxRVo5VVFFSXYxMjZ0RExwT1VYUG80Y25FcFhOdkxqRmhBVzktR0RHRUZnVzhzTmE5ZF94VEF6R2stNG1ISms1MHNUZDdtYmNnb3pTanNWbUhOdTBPV2hiY3JYOUoxMWc2ZEQ1Z1p4WVRQMGJmYkZhaGNNemFpSmxyT1AzRmVaQQ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-04T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Chelsea",
           "Portsmouth"
@@ -12520,13 +12620,11 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [
-          "Tottenham"
-        ],
-        "title": "Tottenham agree £7m deal to sell Manor Solomon to Championship club - talkSPORT",
+        "clubs": [],
+        "title": "Premier League summer transfer window: What your club still needs to do with just under a month to go | Football News - Sky Sports",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcHZVMFJmaWFaZFBxcmVTTnUtTTJRejZITG9aZGRyd1hPVkFGRk04X2RvMXBJaHVkUkNIdF84LXhkaTlNaXJoQVFyZVg1NTEtVjBMdlZScEo0dnJRRmQ4aHlWb1JReThWVFlabUQwel82WmczeHdNY0FpX1VidHNoV0RxVi1TWm9iN1cyNERQZw?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWDVab0NLa1gtb3c5Y2RfUjFETUktbk9Nb0ZlaWlkWjJ6bDRwRjRVZGg3aVpNVVZ0VUM2S25XUVBUOHZ2UGM0akR1ZVdIZTdPZ3JfR1F6dS1vVGotSWlwRUFZd0FIWGdoNDhFMU0weUpabk1EX3VHMWYtN25CZGxXTHBBVjJPV0Y2RmNJRTBfZFRCWm05Z24zMmFoY1h1Y0ZQemZpREtka2lkb05ONTF4V1R0dnh1TlhXdm1rR0Q2b2VmUW80cG95NTdTTXZ0ZGFnVnFudndkRQ?oc=5",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-03T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -12540,6 +12638,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQS1CQ3M3REtXTnFUUEhTNkJ4T2VobUc2QjJWREpYdzY4Z19CWllvVGQ1cTdBNGdKMUs0dUZwSi1yd2tpdWRzOGgyWGtYQmpnTzJDRXYxSnB4VktQY29TWWNHRWYycDJ0LUtRdldQLVBsbXhNWlNPWUt4MnRCdHNjTVBnSi1qNEp1S01FeVppNWo3TS1xZXhKOHViRHZwOW93ekhmVEk2ZVV2MTJsaFk2RDNDdFMtM2s?oc=5",
         "source": "Google News Premier League",
+        "publishedAt": "2026-08-03T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Tottenham"
+        ],
+        "title": "Tottenham agree £7m deal to sell Manor Solomon to Championship club - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcHZVMFJmaWFaZFBxcmVTTnUtTTJRejZITG9aZGRyd1hPVkFGRk04X2RvMXBJaHVkUkNIdF84LXhkaTlNaXJoQVFyZVg1NTEtVjBMdlZScEo0dnJRRmQ4aHlWb1JReThWVFlabUQwel82WmczeHdNY0FpX1VidHNoV0RxVi1TWm9iN1cyNERQZw?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-08-03T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -12598,6 +12709,17 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [],
+        "title": "What happened to the 'star' signings your club never made? - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9vVmRUOXBEUnpyWUlDb3BIdHZEblptU3NGUWhHTWZQY2lubGF5V1BWX0pUTmxFR0xBcE9LTTlXSHJIMkNSajFxeDJVVlI3R3U5WjFHdk8yd0hhUXo0SDh0V0x5end4SXc?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-08-02T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [
           "Manchester United"
         ],
@@ -12618,17 +12740,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-01T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "How many loans are allowed for Premier League clubs? - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5DT19hRk5QQ3dhbFBJMnVjemdIX01SWVN4TXZQbE1fMnp6eXJvel9kM1RDVU1pNUFVd2R6cUtHNFUwS0JOVjZsR1RnQlNpemlYTUZPUldLRQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-08-01T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -12690,20 +12801,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Crystal Palace",
-          "Preston North End"
-        ],
-        "title": "Preston North End target loan deal for Crystal Palace talent - The72",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSTN4QzlMbC13c3JSaWpIeHRaeGRaQzB1UFNpczVsWThLSHVZU0FWWUJrcG1RRG1RTmlRNTBVMlJ0WlZoN0tqRmdRMGVISklLM0J2d3AwZ01tc0ZTMlRJR21wbkdiTWpMRFJpTTN6LTRxTUJpVDQ1U04ySDFPaDc5T255Zw?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-07-29T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Ipswich Town",
           "Leyton Orient"
         ],
@@ -12713,6 +12810,20 @@
         "source": "Google News League One",
         "publishedAt": "2026-07-29T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Crystal Palace",
+          "Preston North End"
+        ],
+        "title": "Preston North End target loan deal for Crystal Palace talent - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSTN4QzlMbC13c3JSaWpIeHRaeGRaQzB1UFNpczVsWThLSHVZU0FWWUJrcG1RRG1RTmlRNTBVMlJ0WlZoN0tqRmdRMGVISklLM0J2d3AwZ01tc0ZTMlRJR21wbkdiTWpMRFJpTTN6LTRxTUJpVDQ1U04ySDFPaDc5T255Zw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 1,
@@ -12919,6 +13030,17 @@
         "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0tnZXlMZ0diTnVoQ0dmMklMeEhTYW5YUTFnVHdyNXcxa1dOd2tGRkRKR2RkZVBseFhRNUZ6bGUtb2s2ckhNOEZSeW44MDh2cFNXX1ZEZHZIaW1COFFvQ2hqTDNwRnU4cHJJeUFOdWZwUjRtWEtCOFJHRS1Xa2JmTlhDR2U3X0dKZl9KcUtINUNGajMwUjR0RlptWHF3S0E5YU400gGoAUFVX3lxTE1hUzNLS3czaTVlLUxCRmRRS1dLa2d0SXV1WXZtZjlVWVBtVXhLSHpYTkZaM0R1NHRqb2hMWTkzMnQ1bEhDZkFrVW1lSDdfRlNzbDIyc1JKaGw4ZkdYUzJZYTRvWUFVeVVTZ3pIbEVYMUxxdkdfNEM0UHYtOGpqNVBadDVUVWRqN1FQSW5QVWgxODZLaUs2TDNITnRrand4Y0NObUdwRnVZSA?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-07-23T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [],
+        "title": "Transfer news: The players who could move before Deadline Day now the World Cup is over - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRnVYQTM4QlZqR1JKX2hCODVfMWVhMDFIRnJ4SS04UnpUMU9fcUxGX21xUFBCRmp4bnoyTFRwYlAwa0hTajdjdi1RcmQtSS1xVkpxVkV2cnVKYWJEUThFZzJKaVZON3RtclMtWXowT2ptOU9GWXY4aEtLQU01dVlDdF8xNk9CQXlxbnlPajhKMWVLNzJxeE5pOTNxZFlvaGU0Tk1KVE1zMEZTYjdxOVFFaThsTzR3Qk5XeXFnNnJnRzJmdHpubUN2RXZqTW5DWjVJ?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -13141,7 +13263,7 @@
         "title": "Yusuf Akhamrich: Tottenham Hotspur winger joins Leyton Orient on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kZDlVNnMtQm9qY2J3OFJzY2RWME9XUE1wcHdHeW9UNDRibmx4R21PRUtabjVlaUJTWlFONEUtaDg4a24yV2FyOHNobUpDRmoyZXA2Q1phRUFaY3Q0d3huTjI4NmprVm8?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News League One",
         "publishedAt": "2026-07-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -13446,28 +13568,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Full list of all done deals in July 2026 - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2UTlKY1NPS3hCZkswbUJ1VDZsUGJtM2d1cTVpSWo2VkdFSjRsYVJpWEVReTZHZTZLLU04RWFMUF9sVWlSSXRDbGYxUmtKMEJ5WGVUTE42VkVzNjlKV2tMSWxiR0NlM0E?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-07-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Top Premier League players available on a free transfer this summer - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUlBqX1FIODU4VWttcm02U20xVmdLOGVSdjkxejJXVTBUYW5Qb0p3VmZuS0Q1amN3MGFrbzV0TkdzV1ZOTGhhTzhQUzhUQjVrbXBTWjVRb294Q01BQUFZRmNHbndnTXBKY2lZREdTWlVGWjJRU3A4bkxkUkNVRDJlZUNUZE5oNGJRMDVRTVdPU2xjalc5VHBNYXB1RnloYnVKeHRXb2d6MU9TX05kelE?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-07-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Manchester City",
           "Stockport County"
@@ -13483,19 +13583,6 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
-          "Coventry City"
-        ],
-        "title": "Coventry City confirm first summer signing from Premier League rival - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZHhtaF9lRzlKX3ZRLUxGcFlDX0lvQ1pKMzV0OF9FR28zYkdfclRsZVc3OHRILWxjcVEyczVITE9lcHBhYkdGaHNnb0h0VGx3NWNJbnhmMUhTZTN0WGlxRWxkQ0lpc2d6NFZwSF9WR1d3TXhaV05SNHVRc3Bjb1N1ODlpbUpISTI4Mk9Kcg?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-06-29T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
           "Fulham",
           "Barnet"
         ],
@@ -13503,6 +13590,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QQkdSTThuUHI2bWtZcHA3UDRZdUdjdlBzeFNNS2RVTC1aRU5tZmpzcFpsZDFsNWJBNlRpOXA5SUE0RHJxeGJCY1BiTmVrVkFFQUZUMDcyWm5RSnNuVmlIdlZIWXFQSzk2c3c?oc=5",
         "source": "Google News League Two",
+        "publishedAt": "2026-06-29T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Coventry City"
+        ],
+        "title": "Coventry City confirm first summer signing from Premier League rival - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZHhtaF9lRzlKX3ZRLUxGcFlDX0lvQ1pKMzV0OF9FR28zYkdfclRsZVc3OHRILWxjcVEyczVITE9lcHBhYkdGaHNnb0h0VGx3NWNJbnhmMUhTZTN0WGlxRWxkQ0lpc2d6NFZwSF9WR1d3TXhaV05SNHVRc3Bjb1N1ODlpbUpISTI4Mk9Kcg?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-06-29T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -13606,28 +13706,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Every Premier League club's plans for summer window 2026 - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjZ1c21FNDF0Y2VPYmRTVzNnZUNpZWpmS1pMX0QwaXNtc093Q2xVVk1OU092UzdDdDk5emRSWWJOZ25HZ2hmaE1GZmZFVzg2SGRaS1Vjb1QzdW81cVBoa3RsVmZiYWJudUV3RFROOEc1dzZpc0NLNi1rYXhSX0p3RW5PemdYZlhQMFVJYVdCLVp4ZTgzVkw0Tl9ZNnBFM0htaUY4MFctNTJOUVB6WnQwWi15NkpzeHBVUWc?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-16T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Summer 2026 transfer window OPENS: All you need to know - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMmM0bzFSLU5jVGVHSkpuck5Ud2RVTFoxMXFqX01qdUdVdUhLRW5sTDNYRmFjX214U3Z3aHdtUFc0dUYwSU9GTTVBVTFZQzFta1ZLUTk4aGdEWmxsSEtWcnVJdWR0X1U3czNjdnNFY3VQNGhTT2d6cGdxcVRjRENiNUZob1RtVU5BYnk4Ym1MVFZ6Y05ydTBv?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-15T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Manchester United"
         ],
@@ -13636,17 +13714,6 @@
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0hTOVdNbWZUNUFmMTBncUdRNlNHRGRfeEs0VDNqcDZicmpIUm81WHNBTkppVnJXZmRwVlIyc2hhMFZrVV8wMmhRb1puazlWUDFqd3NtdEgwMXkzVG5pMTdwVURxUXlmYl81X0VWQ0VGQlFYaEU0bS1GaW9wNjEwQ0pMZmw1NjRHM002S3RpVHR3QWdFUW9EaU1VUHplWVpkTGR2VV9hVEZ4M29U?oc=5",
         "source": "Google News Premier League",
         "publishedAt": "2026-06-10T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Full list of all done deals in June 2026 - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VSFRldTFTRzdZLXVnS1V1WmpuSWtpNl9wTEViZzRUNnIwdl83QU9GYWZySXdlMmxndk5DRzJiNmtjMUZpWktBcjV4akI2czJjTDc4SVZFNm5zbnlxQTdEVFoxVDhUZzg?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-06-05T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -13749,17 +13816,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: January transfer window 2026 | Premier League deals, ins and outs - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcnBLajhoelVuWDlGQkxmVm5LQ2xWeGw4Y1dqSGlXaERiUFVEM0p0YVJWRkVDbjRuMkpHSVFJUG9yREpzM2NEbk9ZUkJOdnNlc2RKV0dxVkZKWlRSeUNUM1pHbTJFVGNadEgxRXIyU2MxREU2UER5MkZGa3o0dU15TlRRdGRZcGdWR2dtZjVhaGFRRld6dHVxWEpIRnNnQ1AxN1JPc0I4d2llRHloZkJtS0pUa1JLNXhhbE5JeTJWOGxUUWc?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-02-07T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Hull City"
         ],
@@ -13831,13 +13887,15 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "January transfer window 2026: Every Premier League done deal - TNT Sports",
+        "clubs": [
+          "Nottingham Forest"
+        ],
+        "title": "Nottingham Forest transfer deadline day: Signings, exits and loan deals - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQWUV4QWx2dUpYR3ZBdU1ZWE9wRlBTLVVHVGpTYXA5bFpUY0xSN2xUTFBRTUJLSWZMMGhmc21SbFcxMFkzRlRnU3FnLW0yaU9wQWRiWVRxM2lMelRnQzZlV0JYeW9EeTFEM0R4RnpLcDBDZ1hOUnhCUThWYU1scWJ0M0xKNW9WaFl2TTBKY19NYU5qY2FLNWl0RGF5S0xIaUNucXF4UmRUV2U4dXQ0TXpyV1ZqM3h3THVzOUNuZW10aEhkX2NZdm85NVljNmNCLTRULWtqYUJXOEZGNS1BUHhIVjVabVdfYWlwXzM3UUR0VkhXeGdxU1NJcG9iYXM1b0ZtdlZWSjZydUp3bTJsZTBTdlM0UUtFNVh2S1QwS181dmJJbGFrWEtRemo4aVA?oc=5",
-        "source": "Google News Premier League",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9iUnR2WVVSNXQ1cm1icFlHTGNfYjdMQ21RQVFnWG54ZVREaXhycGpFdmNMWEVJUF9NVVJpSlR4WXAwSllvNTMwOUtjU2VTdmd6N0I2X25wWXJGUG5tbVNZSzRNYmU2MlNqRmc?oc=5",
+        "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Rumour"
+        "status": "Loan"
       },
       {
         "division": 1,
@@ -13855,17 +13913,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer deadline day: How many players are clubs allowed to loan out? - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xU0h5Q05feWlpMHBNUFhTejVkMFhYcFlpZ2pESTNsNzdTd1FLOTZKanJwUi1XN0VnaGVaem5EWEVGWVg1UXZSM0R3V1NadnFKNWlXbHE1UzMyQ1dCS1hhVXhYbEUzMnc?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Manchester City"
         ],
@@ -13873,19 +13920,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNXzBDaTdiLVNfNUlsR01CVWtNYllRazBNMHlnUmhqQkt5LWE4VG5SS3hfQjRvaWF2eFVFVThiMUdzLUZJbW5rbWJGWkVNZlE5ZHFFLUdQZ2lEdXpyaHlPNmd5WjVWVUM3NWV4MktpRU96eVJVQjdhV1JMMi1TOU5wVC1hVkpyeXlFS2dYVXhKTUxmSHFPZ2dvODVNajhoOUY1ZkJz?oc=5",
         "source": "Google News Championship",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Nottingham Forest"
-        ],
-        "title": "Nottingham Forest transfer deadline day: Signings, exits and loan deals - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9iUnR2WVVSNXQ1cm1icFlHTGNfYjdMQ21RQVFnWG54ZVREaXhycGpFdmNMWEVJUF9NVVJpSlR4WXAwSllvNTMwOUtjU2VTdmd6N0I2X25wWXJGUG5tbVNZSzRNYmU2MlNqRmc?oc=5",
-        "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
       },
@@ -14580,28 +14614,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "January 2026 transfer window OPENS: All you need to know - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmh4cnpDRy16Z1hvYVJubmRIbDUxQ2FHQkp1Ni1lSGtRdEs2MlpNMFdVOTlUR0gteU14RWZMV0twSm96Vm9wVVRiUzcxR01GckVtSXdtdTNxdEhtUFd1bVAtdnBHc0htS2cyRU5MUUU3RHlzWk5UejFxdkZVOTlsMzhYVmVJUDdVNXFaMUZidU16aXBfSjQ0a0VpNk1GYW5CUFkw?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-01-01T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Full list of all done deals in January 2026 - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94dzZDa3cxeTBrR1V5UlBGSlFsRlRYb3J3bVhzUmRvbVlZalQyQWJObjA3SWNHNlFNQldQNjFDNFdxZV9pcWxxbFlKM2I3dDJtS1hRQWRMQlR1RUhzOUg0OTloQV9UQWc?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-01-01T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Chelsea"
         ],
@@ -14663,17 +14675,6 @@
         "source": "Google News League Two",
         "publishedAt": "2025-09-26T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Summer transfer window 2025 | Premier League ins, outs and confirmed deals - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNWJ5cTBDTTQxSk5lUjJSb0duRW0wT1VqSzJYY1hzRm81eWV0VzF4Wk5vMEE3Mzc0RzhxTjJyWHNhVUVhNWF4NkVWbHgzUjBJdkpWSldJQlY5Z3ZJN01TMzc4YTEySU9mdDRlWUVSMDZtYU93OThRdnFtblVjNFpheXN1dDZYTTR0eXlsdGZ6YWI3eURuSGczMXkycHdieVN6VEpQVURtel9XdlVkTGt5ajZwdXJ3Zjg3aVFEQUlPT05YTmg1MHJZc0taLTBjTXM?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2025-09-11T07:00:00.000Z",
-        "status": "Confirmed"
       },
       {
         "division": 1,
@@ -14745,17 +14746,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "All the completed deals: What every Premier League club did in the summer window - TNT Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUGtLTmNydFVXQVBwbTBhVUNJN3c2aGx2SjRNT2VrRkZ3RGlsTHRTZy0xRUlXSzVsbDdIcm1pbV9ZRUpKUzIzV2VTX0tfRlNCY0dpMVU4UUJhbHZMdlU2SW1yLWRrS0dacElUaDhwdXUwQm1jYWVKZE9qdjFLMlhxYldyR2FfY3RtWEFTbWd1Ni1IdThnOHd6ZllLVnR2SjUwenpWTXkzQmNuN0hJWGp2d3pSQ3NrOWxTaEp6VlhEeUJ1NUJfcE92b1NEM2VkOWFpWk1JYXk3NVMySUE?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2025-09-02T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Ipswich Town",
           "Portsmouth"
@@ -14806,17 +14796,6 @@
         "source": "Google News Championship",
         "publishedAt": "2025-09-02T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "The Wrap: What happened on Transfer Deadline Day? - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDRFVkc5bks3MU51RGJBOGF4XzNRNEJFd0prWmU4azRhUU9aR1NvSVlhalRvSEtIcms1blpoM21aS3k3TFUzS3lwZ3JzajdpcG1BWnZhREh1b3RQYnA4TnlabFotWUwwOXRrTVBqZkdRdUtfRUpvc085UHpaWGRVUHVuVDhqU3p3WUZXU0NYX0xUdUUyMzNQMg?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2025-09-01T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -15313,17 +15292,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "How Premier League transfer deals get done - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR2lzd3gxaXlpOE1xcTJCcFBpeXdYRnZkYWxramhsQnRpSVBldW5HT3JROXA4OXg0QllwSzFvZ2VaUUlkWDBDOXYwdXR5WUNmajBQZElQaVM5OHQ0Q1BJMlBSMFlFYXowa1VlSVFPMnpJS1ZUcWRPUjFLNzNjLTJUOUtucHd3OWI4X21kSHNhQlNvUQ?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2025-07-09T15:46:35.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Bournemouth",
           "Preston North End"
@@ -15347,17 +15315,6 @@
         "source": "Google News League One",
         "publishedAt": "2025-06-20T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "All you need to know as summer 2025 transfer window opens - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmYVpRWTczN2dlcjNmUE9NSEJscXNkS1JLUW5XdXZianJlZGI5TlBSUGltTjJ1WGNSMnFVT0MwbXpOSFVHVHZqSm9CdUJ1T0ktUTJkYXFzSnY?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2025-06-02T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -15498,17 +15455,6 @@
       {
         "division": 1,
         "divisionName": "Premier League",
-        "clubs": [],
-        "title": "January transfer window: how do transfers work? Are there rules? - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WYU9OeTY3MEtPVXpPZ1ZUZkRyLU1qcjFMQ0dVMXU3UFRRVkVIOHIyYW56eGJXaFNOVEF3S0xubWV5ZmstelFYQk5Kb1dzakozLVVIQVZITThUTjZzNkhUY0JlVEx2alk?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2025-01-01T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
         "clubs": [
           "Leeds United",
           "Derby County"
@@ -15518,17 +15464,6 @@
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAtSmhXdU54aThHZ2VMcmx5M1JTc2ZRXzZwV1FCVWNCcVpBM0MybXhKVDRkbjJlSHZSWVJtbldnTDlWNHg1WHdoSk1ZODdkVXQxNFNLQm9HZlVwRXY4SW1WXzZ3U0xrd3lmZUE?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2024-12-27T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [],
-        "title": "Transfer news: Summer transfer window 2024 | Premier League ins and outs - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR3d3ejJRQjFPc05kUE81eVdjaG9vakVhVHFFVU1RQklHdUlKc2lRTGt0ZmJuMkVhbW02SWpUSEdIWGFoeHpCU19jWjFIV0hVcnQ3RkRVTXdSRlRIRWl2VFo3WU9SNTlYai1DUHdnQ3Y2X3FsQlE1aEJ3NnMwcEx2ZVJYV0IwYUZsSm9nUnhFaWw5M2NESkh3WXJMYnpkaERBcEJoVlBkb2FJV1BsUGFLXzFDbUZJVnVnc0E?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2024-08-31T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -15879,6 +15814,41 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Club Confirms Scottish Midfielder’s Departure on Loan - roundtable.io",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPXzBaemFlaElMNE42bzJnVWhXMkJ0NWZZblpmdE9PMG42NldXTEtaWFU3ZXVyM0ZYQmwzY0hhUHNwZ2kyUnhBcUdLQUo1b2hfMUlLYmltZG1XMWhHMTZZQkhSSndQaGcxSlpaakx0Tkp6cmpxOUhTcmV3ZnotMl9fcEV6U3NqNmUtZ1ktVkdDVVg2cG1hQzhFOXFVRUVtQm1YVjZVa3ktQVpaTlkwWFQ1VllJOVN5dlRxX05vSDl5dlhpUXdE?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-10-30T19:36:25.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "West Ham United"
+        ],
+        "title": "West Ham transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LODVoNDJlVGo3VXEwWDhqY29zQXVUTnpGdFdkSktReGxmRlRlZ3BmRDFkeTczMnBLOHBjdGJaZjJSeU5qMnhNMXF1MUtBc3ZDSGRZUks5WTNiLWVWVWt5bVVlZTNGRTZkc21zd2Y5Sjcybl9pNWNhWWQ2UDlrM0k?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-10-30T17:11:08.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Transfer Centre LIVE! Football transfer news, updates and rumours - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeVdkVlNUdFpSOHJBeFZRaURCSmVRQVozM05xRTIxX0ZFWjdLQm1iWGlLcm5tLVFlRG10M2xjM3g0SUJFbGRld0ppMXNjN05KblBSVTZuSUdHMS1qWDJMQzRJaVI1elBmVG1KWWFQeHZja3VscDRaYnRjQmdRdmNRV0hxRnNzQ3I3dlVCQ251TGYxWnZJeGZaZHFraWxpTGRNaG5haVluQklnamtPYy1ZSlNSak1Ec1d6?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-10-30T15:23:38.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Sheffield United"
         ],
@@ -15886,6 +15856,19 @@
         "summary": "Jimmy-Jay Morgan had interest from plenty of clubs earlier in 2026, including Sheffield United. And, he's been quite the hit at his new side. The post Nine goal contributions in 14 games: 20-year-old stars with Championship rivals after 2026 interest from Shef",
         "link": "https://the72.co.uk/2026/10/30/sheffield-united-past-target-jimmy-jay-morgan-starring-west-brom/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sheffield-united-past-target-jimmy-jay-morgan-starring-west-brom",
         "source": "The 72",
+        "publishedAt": "2026-10-30T14:26:29.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Sheffield United"
+        ],
+        "title": "Nine goal contributions in 14 games: 20-year-old stars with Championship rivals after 2026 interest from Sheffield United - Yahoo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOb0V0YkY0aTRYZnIzT3phRExzTWFScHdkTmoxcElHdE1YOUt4ZmZDYlhQT2hvZUNjb1lpamN5amgyOWFCUUQyZU9EVklZSXVrV3JQQUxOMllQUDZvS0lSMlRtMTdQVjVXanJJcUVJMEptYmZ5Zy05UGxqYW9jS19GU0ItMnA1VEU?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-10-30T14:26:29.000Z",
         "status": "Rumour"
       },
@@ -15926,6 +15909,17 @@
         "link": "https://the72.co.uk/2026/10/30/southampton-new-deal-talks-ryan-manning-cam-bragg/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=southampton-new-deal-talks-ryan-manning-cam-bragg",
         "source": "The 72",
         "publishedAt": "2026-10-30T11:38:38.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb2VkdWxmNGtNRDdpWXJfbDgwakQxYmV4eE1GNDdFbmdaVy0yeGJYQTQ5MXJETXVObW1xcW1FSUFOU2NxRU5ydzQzalk2REJ3YjRzdEFCNjRIbktsWmh5a1pGZ0JNUDdxa2ZYMW5qZnY0NGlBbE1PRFJ6NXpUWVJhUVpTUWhwOG1NRFQwamFpU0VMam9kakR3ZHRYSHhhajJBcGowSzgxTHJDYWxXRkFQbktRZFVfRW9xU18tQmt3bWtGVnpGcXRLVEFwa2o2REx3TVpWeDRrdE9hNmRIZ1lz?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-10-30T09:46:08.000Z",
         "status": "Rumour"
       },
       {
@@ -16616,6 +16610,19 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "West Ham United"
+        ],
+        "title": "West Ham offered chance to sign former £73m winger on a free transfer - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvMDFlV2JJZVo4UjVMNktMZUZxeUtPU2Y4UFpPQmF6dGlBbDN4Nmp6QVgyYlEzUzcxUWNTVW1Jc0xOeVZ6RE03TzZTUWVMSE1NcTJSTi1LSmtKMGtVUEtCTnVYSHJ6N0xmQ2huLXhFYnZzMFBVLUEzWA?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-10-27T10:03:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Burnley"
         ],
         "title": "Burnley snubbed by managerial target as Nicky Hayen replacement search makes stuttering start",
@@ -16933,19 +16940,6 @@
         "source": "Football League World",
         "publishedAt": "2026-10-24T18:30:15.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "West Ham United"
-        ],
-        "title": "West Ham transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LODVoNDJlVGo3VXEwWDhqY29zQXVUTnpGdFdkSktReGxmRlRlZ3BmRDFkeTczMnBLOHBjdGJaZjJSeU5qMnhNMXF1MUtBc3ZDSGRZUks5WTNiLWVWVWt5bVVlZTNGRTZkc21zd2Y5Sjcybl9pNWNhWWQ2UDlrM0k?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-10-24T17:29:06.000Z",
-        "status": "Loan"
       },
       {
         "division": 2,
@@ -25416,6 +25410,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "All 24 EFL Championship clubs' summer transfer window ranked from worst to best - Football League World",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdVA5STFWMU5Ycmg0bi1NNmVJTldhVi00TExhNUJSc0ZMVE1KeE1LMENXS3EwWWlpT3l3RUhBVW13R2FzOXp3QW5DSGM2NGdFVWtrQ094VXM0RS12UVVpVjlUVXFGSGl3SzFoaUhYR0xzWkYzOUJvNkRlSUZpbm5ucng3WTZMOXdILW9FRVM4cnM1LUxpcVJoS0RRZmxpbmxKSTFmRlNqVkZaR1FydnB1eXE4QQ?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-09-03T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Portsmouth",
           "West Ham United"
@@ -25498,6 +25503,19 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Wrexham"
+        ],
+        "title": "Seven Signed, 13 Leave: The Story of Wrexham’s Crazy Summer Transfer Window - Sports Illustrated",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc19mbVpSX1BJYjR5TGtqcjBfUzdJQnhqTmU1WmI0ZXIzM0x0b0hYWS1TaEpXZ1ZqRkNNVjY0LU9ZZWxlRnhVNkF5OVM3NHN0UkdrNEJ2ZUE1eThPWm9qcEw4WEFqUVp1d2kzOVJwRG9WQ05wWmYtTWo5eDdGdVpCdmhtSWFDVC1mNTJEeQ?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Swansea City"
         ],
         "title": "Swansea City transfer news: Jeremy Monga deal set to go through despite Ronald and Inoussa deals collapsing - BBC",
@@ -25519,19 +25537,6 @@
         "source": "Google News Championship",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Wrexham"
-        ],
-        "title": "Seven Signed, 13 Leave: The Story of Wrexham’s Crazy Summer Transfer Window - Sports Illustrated",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc19mbVpSX1BJYjR5TGtqcjBfUzdJQnhqTmU1WmI0ZXIzM0x0b0hYWS1TaEpXZ1ZqRkNNVjY0LU9ZZWxlRnhVNkF5OVM3NHN0UkdrNEJ2ZUE1eThPWm9qcEw4WEFqUVp1d2kzOVJwRG9WQ05wWmYtTWo5eDdGdVpCdmhtSWFDVC1mNTJEeQ?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Confirmed"
       },
       {
         "division": 2,
@@ -25721,33 +25726,11 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Burnley"
+          "Bolton Wanderers"
         ],
-        "title": "Burnley: Defender Igor Julio and forward Largie Ramazani arrive - BBC",
+        "title": "TRANSFER TRACKER | Every done deal in the Championship so far this summer - The Bolton News",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOVzRCLUpsNjlYaTVOQzFTcm5QUUJRU0hrU2tNeUJjcF9pQ1V1Q2ZPVmdSZi02VVNyZGFmYUNIX1M1TUJxRDF4OUhGdXRHOVpUbFlsQnJpVUNVV1RmQ2NWVmVZcU9UYlk?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "Deadline Day Live: All the latest Saints breaking transfer news and rumours - Daily Echo",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaGJYeGxXV251NDNUeEEzWmM0ZHh2U3JENkNNRVZpbkxHRUJFc004dm5mcFhLMzZ5THgwUzZQUnRpbEF1OGdzcmFpTVExSmNnQnU1MHdLdmJaT29tc0QyNmdyUkdvNEliUy1NeUltbnVCSEhzUl81akhQRzZOZUdZSHF6LW92R1NrNnRxeFU4V3hzQ3YtYWgxT0lXWnlLZEZqTUdZOQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "Rangers star Connor Barron wanted by Championship side hours before EFL deadline - The Scottish Sun",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUC02ai1qSUtVOGhWOGZ1d1k0dGM0TWVZS21JUks3bnRsX25uWkZVTlluMmpEYmVPWTVOQzc4N2ZCb0U2RWZJaWowdEp0ZEwxTzBfVjhDY3RmZW01Q1l3Y0R4OGJseUthdnEwbVRrajRkLVVfSUx0aUlIMDN1Q3k5d1o3SUFXLWtWdHBTY3ZKdE05TkFjUmt3S1NUN2ZMYktwdUlrSmFn?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSG1ldkhvNGhBYzIzNmd3WFFGSXBCeFpsLTI2RHljazNXaVAtUlhGN3lBNVBJcE9fOGF1di02dGlva1RsczhlZXY1eTQ0YXk2LTd4V1JfMTNVaWpCa284N24wTFlVN0ZaeXROX0lvRHU5LWc1UWFOVU0wMElibEJCTXdYcWxMZ2VyVWxVMFhreFI0czlmdllvdk9XYmV5UlQ2S2c?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -25756,11 +25739,11 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Bolton Wanderers"
+          "Burnley"
         ],
-        "title": "TRANSFER TRACKER | Every done deal in the Championship so far this summer - The Bolton News",
+        "title": "Burnley: Defender Igor Julio and forward Largie Ramazani arrive - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSG1ldkhvNGhBYzIzNmd3WFFGSXBCeFpsLTI2RHljazNXaVAtUlhGN3lBNVBJcE9fOGF1di02dGlva1RsczhlZXY1eTQ0YXk2LTd4V1JfMTNVaWpCa284N24wTFlVN0ZaeXROX0lvRHU5LWc1UWFOVU0wMElibEJCTXdYcWxMZ2VyVWxVMFhreFI0czlmdllvdk9XYmV5UlQ2S2c?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOVzRCLUpsNjlYaTVOQzFTcm5QUUJRU0hrU2tNeUJjcF9pQ1V1Q2ZPVmdSZi02VVNyZGFmYUNIX1M1TUJxRDF4OUhGdXRHOVpUbFlsQnJpVUNVV1RmQ2NWVmVZcU9UYlk?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
@@ -25841,7 +25824,7 @@
         "title": "Henrik Meister: Derby sign Danish forward on loan from Pisa - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB3ajJOdDREeUJGUUdveXA5WXBEX3lVbmZ3ZE5CYXItQWZ2b3BBTVZFeEtZcHIyNFdLU2F1cVBkNjJQeEdYY0pWazFGam9ZZS10eksxWFVMWEVkU096UkoxZFFJOVNRMTdvbHc?oc=5",
-        "source": "Google News Championship",
+        "source": "Google News Premier League",
         "publishedAt": "2026-08-30T07:00:00.000Z",
         "status": "Loan"
       },
@@ -26067,12 +26050,12 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [],
-        "title": "SWFC News: Championship club 'agrees' loan deal to sign former Wednesday star Musaba - The Star",
+        "title": "Championship 2026-27 season preview: Club-by-club guide to new campaign - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT0ZPSnlNbFpmcFV6Q2ZIUEs2YzhockZNd0lLTF9OZ3BvX2xNUDJtWlhKY1h3MlRpQ3FPQnFjeHVjNlhQWUh3RU5LaWtPZ2xnTFVXQVJkVnZUcDhPcWxIU3liWkcxVTVDRkhpNEh3MzVCYmxuaHJDb2V1bTU1amVreGxLU09lZTBCa2RwSW1kZVlzRGZFT2NVRmhuRlYyQTNMcmptaTFucGprelEzRFBrNG1XdHlaOUNnV19UX1FpQXg?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKMktXT0dSZTZkOHdFejV5WDRDbkkxdTR2T3pJQzlPNHprUWNPY2g4ZEM0X0QxSUlsT29oRERDSVJGdUNibXc0QlhMN0taVEJBTXJIdHpEOUJFaFpmT1NLbEpCTDJoeGs?oc=5",
         "source": "Google News Championship",
-        "publishedAt": "2026-08-17T07:00:00.000Z",
-        "status": "Loan"
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 2,
@@ -26186,6 +26169,19 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Middlesbrough"
+        ],
+        "title": "Middlesbrough set to sanction League One loan exit for winter signing - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CcFExc2JLbmNzZW5DdHlVNTdNRXctZHo5WUpGWHJ2SzM2eGYzVFBMcGNDeFNPWnRrWXBudUdPdXNPMEF6V0ZFQi1xZEstaXBobWdydzRlaTNqa3ozTFJ4TnlxU0JYLXVzZXdSZGk0S3RqNERrSzVxeGhTbTdWSUk?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-10T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Wolverhampton Wanderers",
           "Exeter City"
         ],
@@ -26251,19 +26247,6 @@
         "source": "Google News Premier League",
         "publishedAt": "2026-08-10T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Middlesbrough"
-        ],
-        "title": "Middlesbrough set to sanction League One loan exit for winter signing - The72",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CcFExc2JLbmNzZW5DdHlVNTdNRXctZHo5WUpGWHJ2SzM2eGYzVFBMcGNDeFNPWnRrWXBudUdPdXNPMEF6V0ZFQi1xZEstaXBobWdydzRlaTNqa3ozTFJ4TnlxU0JYLXVzZXdSZGk0S3RqNERrSzVxeGhTbTdWSUk?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-08-10T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 2,
@@ -26487,19 +26470,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Swansea City"
-        ],
-        "title": "Swansea City transfer news: Swans seal loan swoop for Benfica's Tiago Parente - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45dmlNdUFncGxzbmVXNmRwSDZNX3BFYmVMRjlSenJBQTUtd0FhRFYteU41aktmSGxWMWNyWUdqbF9oQTFJNF9aTmNWbzZDbFBtd0EtbVQydDREaTR5QzdhV0VUQW5kWkE?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-03T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Middlesbrough",
           "Preston North End",
           "Leicester City"
@@ -26510,6 +26480,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-08-03T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Swansea City"
+        ],
+        "title": "Swansea City transfer news: Swans seal loan swoop for Benfica's Tiago Parente - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45dmlNdUFncGxzbmVXNmRwSDZNX3BFYmVMRjlSenJBQTUtd0FhRFYteU41aktmSGxWMWNyWUdqbF9oQTFJNF9aTmNWbzZDbFBtd0EtbVQydDREaTR5QzdhV0VUQW5kWkE?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-08-03T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 2,
@@ -26674,13 +26657,12 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Swansea City",
-          "Wycombe Wanderers"
+          "Portsmouth"
         ],
-        "title": "Sam Parker: Wycombe Wanderers sign defender on loan from Swansea City - BBC",
+        "title": "Report: Pompey defender to join League One side as loan deal 'agreed' - Portsmouth News",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUTGo4S2VrQkhjTFoyVXh2OWVEaU5VOEhpYXJDSFdvcDNYaWNPd0gzWHQyRTVIczRKRFQ3ODBINUZlSXp0XzVOZXl4aFRoUWhReWtWOWE4ckwtZ2lqdTU0NWtzd0JaUUk?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTDBVaFZ6T1BsLWF1ZVdSZ1V0OVpwM056R1NBczFuYjdlTXN3S1NQaS1yeWp3RWJrTExEdXBYaVBPbGlGa1Fnd0tVOUdyTWdUTzdzWVBwckZJMEF3RC1Kc20tNm9CMzhaWmJDZ2hhcmp6dmwtQXZCSkJSXzkxZTVCSTluNE5sRlVZT1p5a0NOTlBIeFRZVzFaa0poSEc2dk5jUldGUU1tSXA3MHhQYmtCQzZZd2gybFN5RzJFY0w0bUxOMGlD?oc=5",
+        "source": "Google News League One",
         "publishedAt": "2026-07-28T07:00:00.000Z",
         "status": "Loan"
       },
@@ -26688,12 +26670,13 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Portsmouth"
+          "Swansea City",
+          "Wycombe Wanderers"
         ],
-        "title": "Report: Pompey defender to join League One side as loan deal 'agreed' - Portsmouth News",
+        "title": "Sam Parker: Wycombe Wanderers sign defender on loan from Swansea City - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTDBVaFZ6T1BsLWF1ZVdSZ1V0OVpwM056R1NBczFuYjdlTXN3S1NQaS1yeWp3RWJrTExEdXBYaVBPbGlGa1Fnd0tVOUdyTWdUTzdzWVBwckZJMEF3RC1Kc20tNm9CMzhaWmJDZ2hhcmp6dmwtQXZCSkJSXzkxZTVCSTluNE5sRlVZT1p5a0NOTlBIeFRZVzFaa0poSEc2dk5jUldGUU1tSXA3MHhQYmtCQzZZd2gybFN5RzJFY0w0bUxOMGlD?oc=5",
-        "source": "Google News League One",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUTGo4S2VrQkhjTFoyVXh2OWVEaU5VOEhpYXJDSFdvcDNYaWNPd0gzWHQyRTVIczRKRFQ3ODBINUZlSXp0XzVOZXl4aFRoUWhReWtWOWE4ckwtZ2lqdTU0NWtzd0JaUUk?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-07-28T07:00:00.000Z",
         "status": "Loan"
       },
@@ -26795,26 +26778,13 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Burnley"
-        ],
-        "title": "Burnley make loan offer to bring 27-year-old striker back to the Championship - The72",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KWDhvWnBLcmNwNVBHejRMNFBBVm9lXzlMR3g3RkQ3R2hNVXpqT0FDZE5CQ1FrS2J3MURXdktiX2ljV19faDhkZWJNM3lnZ3VGbDNzSGxFQS15aFNfcEEzLVd5LVdjbGduUVFsOTVMUURIRklGTENv?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-07-23T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Stoke City",
           "Wycombe Wanderers"
         ],
         "title": "Emre Tezgel: Wycombe Wanderers sign Stoke City forward on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41R05Id2pvRWQ1b3ZEc19oV0JySm9kQ056Z2dYS0kyNHd4X2xzNU5yWFNTakZTd2hSSzFwWEdEcVRaSDBQRWZ0eW1HRmhyWEhHQW9mQTV4dHBlRFNtZGxHVmhZRGZVSGs?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News League One",
         "publishedAt": "2026-07-23T07:00:00.000Z",
         "status": "Loan"
       },
@@ -26829,6 +26799,19 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5NY3VYSlpBWVMweGs5R0FGamxhRkU1OVVsUUg5RnZEWF9VVGRrcWdyWW5NbHZGaVlrRk4tanRxQlFCYi1ORi15ekhvUDZtZjRBMmlvaUVRUnhsRjJrNDZzbUJRSVBUWlU?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Burnley"
+        ],
+        "title": "Burnley make loan offer to bring 27-year-old striker back to the Championship - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KWDhvWnBLcmNwNVBHejRMNFBBVm9lXzlMR3g3RkQ3R2hNVXpqT0FDZE5CQ1FrS2J3MURXdktiX2ljV19faDhkZWJNM3lnZ3VGbDNzSGxFQS15aFNfcEEzLVd5LVdjbGduUVFsOTVMUURIRklGTENv?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-07-23T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -26956,6 +26939,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Who has your Championship club brought in & let go? - Summer 2026 - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Wc09UYmRwXzlWX3VZYkgyMGFIa2RkOFZrWFVtdThENDRoT2xlUlhaeW9NOWV6QmNkMEFsLU5YNVV3cHdHVG5hMFBjTE9sSlJTMDJwWFlnVG5FWUFVZG50MnBGRjBhbWc?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-07-05T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Birmingham City",
           "Middlesbrough"
@@ -27019,17 +27013,6 @@
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ta2FRMHBkYmdYdXVUbHBWWlZrQ2lCWE0yQ2Y0WnZhU0tZemRvX1Nnd0x1ZExzbEkxMTh1OHhvZ1NybjY0SzdsVzJ6SV9LZXF1enl5TTBBdlRXckpGQ1RvS2Vmd2pRYVZtaGc?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-06-26T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "SUFC News United set for Soumare reunion after Championship transfer return - The Star",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPb0hWNjQ1eWZUcHVFaGNRaG5CR0tjU3piamYyYzk0blVkMkJWbkN5NVQ5THJmVHMzMFM1SmlCclowMV9tbGtMZ1pmUE94OEVVUUJIMjA3TFRxOU05VnJSQmt0eVV2Y0xQYW9iX2V0RWRMbGhDSDhOWkpGWnlsUDBmMG4zZGV1N2luWENfOWdPa24zS2hKM1ZUS1ltZkJYU0RBSXQ3cjctMW9CNmdXZkIyUHExZ3hCa2RydUxWNDBSOW5TaUdHd0lwVHRXd0xudTMyYXZYT3E5SGZVZTdmU05oSkt3V1dyTzJqdW1GT1R3dFA5QS1Mbm1qVmdsZlhudVNXWXgtNEZIRQ?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-06-25T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -27133,6 +27116,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Summer transfer window 2026 dates: When is Deadline Day for Premier League and EFL clubs to sign players? - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZmtWWlR6OENzblJ1VE1LRHdUeXY3N3gtZDZLaF9zZU9jbkRPZF9QTEpHLUJVYkJPRWF2N2QxWEw0aklsYzhySkhaNjVyOEhIa0E0UFdjY2dubExoZVl0ZGZRODVsQ3N3cVZMVDI5NXBPSXpua3VONXRTTm5iWVVlNUswSmI1bS1IYVI0bDk1SWRmWmVEYUx5WG1lYmhIcGdTblNMR2c1WUR0UVdjc1ZRWkU0LXRKYUhUX01OQnE5TUdSdF8xOVRIVTd6WGZYZzdrRHg5TElHMEwzN2JnU2RJNEFCd20zWjg?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-06-15T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Middlesbrough"
         ],
@@ -27195,6 +27189,17 @@
         "source": "Google News Championship",
         "publishedAt": "2026-05-31T07:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Transfer window dates confirmed for Season 2026/27 - EFL",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRlRMVnE1VzItNkJtbi14QUNiYTlmRkhGOFJIdFRsZVJWZ212cVFlVjRtVEg1dV9RV1A1Y25ndFROakVHVDdHeFZhcXRHd2FsQTFQbWh5RHEyR1dHQ0Z0OG9rUGhONnlUUF9YQUl4U21OaUlQdU9LR1NmazV6enFsbFRYM1pNUXl4akU0dw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-05-26T07:00:00.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 2,
@@ -27280,23 +27285,25 @@
         "clubs": [
           "Cardiff City"
         ],
+        "title": "Cardiff City's priorities as Bluebirds return to Championship - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE90UFNjY09VcDV0V2hWRWpnbm45dlQ0aXJ6LTRuNkg1aGppWDFqejd1cnVCWGV3cEJmLVJyX0l3R1FqT3lIaWJHMVlvcHhya2JWX3FyVVZWRDdqQ2xuN0xfUGFRc0tQWDQ?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-04-20T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Cardiff City"
+        ],
         "title": "Championship clubs interested in Cardiff City star amid loan success - The72",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSU5FTWdzeFdFcVVCYnYzR3pQdU1WUUtycXVubml5SG5yQ1VkUjFIelVYVEd1MmNvbXFwa29QbE9aTXlyWjdBbV9Gam0xT3hIZW5Wdm0yVkEyT0E5R3ZYY3plYkJqdkRSZzAtSGNmaDA4cDc1ZFFsRTVNMFV1TGp2VlM5U0lTdktZbFNrOGR5SnQ?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-04-16T07:00:00.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "EFL club announce emergency loan deal ahead of title showdown - talkSPORT",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWpBeUk5TDhRaEE4anV4VFpBd2NHM2RSTWZHU1FCeEJMSklsek4tTFh3Vi1KV1JXamc1dGFyYTZLcTlNejdYamZwR2VkZ1FKbk5KMDFFblFPR1k2N25wVUpXQVFJZ2ppc0ZTanlXU3NFLWFIc05OX0N2ejl2SjVGX3Z6X1hCVW5vZ1RiX2FDSEc1RVRwenc?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-04-15T07:00:00.000Z",
-        "status": "Loan"
       },
       {
         "division": 2,
@@ -27367,6 +27374,21 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Derby County",
+          "Middlesbrough",
+          "Wrexham"
+        ],
+        "title": "Championship transfer window winners and losers: Middlesbrough, Derby County and Wrexham's business analysed - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE82MzZYUDQ4Qk1fLWdmTGtIWkZ4STV1QXY2cllMODFjVFZMY3hSZTR6WUFCSzY0eWllMm1rTkgtSzZMM2o4OUY2Q0VZcWROa2xfLTRWR2VLMWZjdnp6bmpfS2RYTHpBUUk?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-02-03T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
           "Wrexham"
         ],
         "title": "Wrexham transfer news: Deadline day flurry for Red Dragons - BBC",
@@ -27394,21 +27416,6 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
-          "Derby County",
-          "Middlesbrough",
-          "Wrexham"
-        ],
-        "title": "Championship transfer window winners and losers: Middlesbrough, Derby County and Wrexham's business analysed - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE82MzZYUDQ4Qk1fLWdmTGtIWkZ4STV1QXY2cllMODFjVFZMY3hSZTR6WUFCSzY0eWllMm1rTkgtSzZMM2o4OUY2Q0VZcWROa2xfLTRWR2VLMWZjdnp6bmpfS2RYTHpBUUk?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-02-03T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
           "Middlesbrough"
         ],
         "title": "Every Championship move in the January transfer window as Middlesbrough's rivals strengthen - Teesside Live",
@@ -27417,6 +27424,20 @@
         "source": "Google News Championship",
         "publishedAt": "2026-02-03T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "Southampton",
+          "Colchester United"
+        ],
+        "title": "Romeo Akachukwu: Southampton midfielder joins Colchester United on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWQkhEcnhacElBbUg5dVZXNVhaNzlwSFdadzk3WXdwazZXV3BFc25ha243dGdaOHdydWZxUUUyTnBrMmJqci1Zc1E1NXNPcVowa19WeDdrQlZMcFlnMnNGamMyWmhWQmM?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 2,
@@ -27443,20 +27464,6 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBiWGpGS2tQa3A1T0NYaWVyWXphRzFFOURDa2d2U2NqcjhrN0czMGs1NTdJYzFkVWlsR09hMVcxTC1OR0RXcERWTFplZGs0LXBwQXhYb2E1NEZ0aGZ5UnJuSTlfci1OM2Npc2c?oc=5",
         "source": "Google News League One",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [
-          "Southampton",
-          "Colchester United"
-        ],
-        "title": "Romeo Akachukwu: Southampton midfielder joins Colchester United on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWQkhEcnhacElBbUg5dVZXNVhaNzlwSFdadzk3WXdwazZXV3BFc25ha243dGdaOHdydWZxUUUyTnBrMmJqci1Zc1E1NXNPcVowa19WeDdrQlZMcFlnMnNGamMyWmhWQmM?oc=5",
-        "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
       },
@@ -27571,6 +27578,28 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Who has your Championship club brought in & let go? - January 2026 - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBnYVdYU3o2N0tHQ29jSDdnNmtOTkdSV3lIcGxaSDl0TE5KYXNvSWZYamZORW9VTy1aWldFOElrUk1fZXRJMGkzS2s3aC1tMXMtM1NoNVg3QXYwaUNuMEN0Y2lPZEtUQTA?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-27T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Championship January transfers: Confirmed deals and net spend for 2026 winter window - Sports Mole",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxON0NzdjZ4d1lWRjFBTjl2U25RQm9kOWpidEwzVjZGMUFaVjFmS1QxanE1UVF3czdjUGRic3RoUWdSLUdfcXljM1lnOTVCQ24xdFhJYkNQaHFMc1k3UW1pSEk0aTkxVjlTS2pXdG1jYkhvUm9XN0Q4dHlEX1ZBTWpuT0JjYTh0d051WVRuRU5abE9DOWIwbE5KQ0ViNTlMNFkzYzJEN0FOR1FYLWl6WXkxaEdKNG5SWGdIak1CUmpRMjNGcEczWnJxWGFYQXNqVHUzZ0phNXRyZTBxelIxa3BqUENn?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-27T08:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Bolton Wanderers",
           "Charlton Athletic",
@@ -27620,17 +27649,6 @@
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZC1wNWJnOFJodzhfS1QtT3RrN1dkSjlvWXhqcFpTOEdPbndsU0JodHFHR2czYjZ4YXpEUzRKVEdyUTVtcUJMMDdCdkVVS2ZCUUNwT1pHdGhyUEx2ZEJnRXZZY0NQOUZiaDVYNlBrdGJERWNGd1hvUVF3QXhjYkYtaThLOHpGSkRkNlB5UjRtR2p1XzBZcVV4M3Q2ZkNVUzI1M0d5X1pBQVREeVlpNEhiclNLTjU?oc=5",
         "source": "Google News Championship",
         "publishedAt": "2026-01-26T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "EFL transfer news: Championship, League One, League Two clubs get 'Deal Sheet' to help January Deadline Day deals - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNExTQm9JU0JhMk5fdW9ZSVFrS1V0YVJUaGN0VFVXUDJHSURRa0tQTXBITW82cTFoVDByYmN1SEk1Z2RZV3ZUWHgxVXMtbkNnSUk5TG55bFJJY2FmTXp2U3Awa0kwUU50eWMzXzYwNHNURjZmUkxGdmZqV1U4WEdzVHZzcF8zT21lRWFMOGctUzVYejc3amtIQXVneHRGTkg3TFRwUVhtSG9WS3JhdHhhMG1DalBiaTBLeUpWY3VNQWVIeEJiRVM5ZFVqclNSS3Rmdmg0bm80WUNhOEw3azgxaXdyQVJ3VzlsamFhT2l3?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-01-23T08:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -27849,6 +27867,28 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "11 EFL players who could be on the move in January - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TT202Ykc1aTZja0xVS2QwY28ybUxiYWl6S19sU1ZPRkIySC1MMVFDWGtQVW5EVm4zejBtT0ZBdzB3Q1lNUk9RbHdiNFJZWTRYRktBYklaLUJWYXpEa1BIRmFjS1J3eFk?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-02T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Michail Antonio's Championship transfer edges closer as potential club terminates striker's loan spell - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSW1kOVZHd3l2OUs1QzR4ZlktLWpRdFFoMHlTYnA5aFhyNzk0dHFiZExINlJCeEJpdk0zaXRRRGQzRkJCR0U1RnEtUUhXZ0VKXzJHbVhNWDJ3SUdsWVU5bXBXSUJxYWxKdzdLbTRvZ3RubTBBWWpyQ1ZteVVUWGMwcnlUZ3N5czJIaVJWMFNPWWQtQ3gtVy1fWnljcw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-01-02T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Derby County",
           "Bradford City",
@@ -27860,6 +27900,17 @@
         "source": "Google News League One",
         "publishedAt": "2026-01-02T08:00:00.000Z",
         "status": "Confirmed"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "'Absolutely pivotal' - Championship transfer window preview - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SYS1pd0FzNGE4RGFkVWU3ak9hTWs3Z2VkdVp1WGN5aDNpOHlnSHRMaUlBYS1IQkVfb3JSZjdoc1FLYURyMkhSUnpZTmZValRZNE56VVdueEdaakx4ZFJJUW82YVVhcFdrZEE?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2025-12-30T08:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 2,
@@ -27928,6 +27979,28 @@
         "source": "Google News Championship",
         "publishedAt": "2025-10-23T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Ranking: The 12 most expensive transfers in Championship history - Squawka",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOTRURlRfQXRtTEgxaGNidjdHdU1RTl8xSWJ0X3lYb1p6Z0FnV1ViQXhBWGd5NUQxVG5BVXNHMFp2R0lTWWNCUm0xUmp3bGFZdXJkYmpPQ2dPNEpaM0JaSjNxNVU2bFhVUGtWWFUwZm1rMHBpbHBrY3RJZUo2QTlMdA?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2025-09-16T16:55:12.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [],
+        "title": "Championship transfers: 11 brilliant free agents still available to sign - Planet Football",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSkc3Z1RSelFfeFh2TXN1TTRtQzdkWG5ZS29OQzk5a29YUUgwaWVGQXNzTnFnN3VEcUpZRDNpMDdMZHBDMjZlUWw2Ml9SR1ZoTnVDZy0taG9lblQxS2tiYW81SE9PazhWdlV4VVhrRFRNanRBb2twdWQ5c1dOZTNCZjJWWmQxX3ZWYlJmdWR2MFJESkdDNkZWMkZNLVVXSF94a1c4?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2025-09-03T07:00:00.000Z",
+        "status": "Rumour"
       },
       {
         "division": 2,
@@ -28177,6 +28250,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Transfer news: January transfer window 2025 | Championship deals, ins and outs - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOS1STkQycVFFQUp4VWdYdzNqRE93bDJkblFjWVc5aFlabnhpU0FIVTRmcFFMZDZBU21kY1N1a2JRSzREV2xPMFNLN2J5Skc3NU1VWVlaRjJtZGZHUmFUSjNLblNtRWpMTFExa2psN0N5TDlOb3ZXRDBjS2NqbWM4YUVQS3VMTkhsVG1yYmh0bzExdlNRbEFJRGt3aFJ6X0RKemZEWkl2NHdjbmQ4Q2pHY1RqbGNCWU5zMmdFWi1tMVc?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2025-02-04T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Middlesbrough"
         ],
@@ -28270,6 +28354,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "EFL Championship transfers of the season - OneFootball",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hSlZnLXNpcVhZRXd4R1Q3N2szVC01Z1c3LXJUd2lZRjhTQWY5cE1QMGZyZU9uaU9hN2FYeEZiNTdkQVh5SDdlVzN3aGRiWERIQndfM256c0xYZUdsaG1FaVNLNmVFeDREbWpwMzZwQWU1bkEyUWFn?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2023-02-10T16:03:55.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Norwich City",
           "Gillingham"
@@ -28340,6 +28435,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "When does the EFL Championship loan window close - all you need to know - Bristol Live",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSTlZaWhpQ3F5T1V3aGVHWWxDNzVYM28xaFFfMG10MnNtVk5SdklWbGdIZEZyVE5Ba3FpTXc4a1F2TmFfREZOVU5HTmV2cU1hLS0yWmtFbUwwRHpiYkgzU1M2OFdTMlBLemRwZnBHS3pDVldHcDdhaEdJbHN6WndkbDlPRXJUVmVXS0lIVkF3Y0VLckpVZEU0SVB6dEkzVDg1clN4aA?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2018-08-27T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Portsmouth"
         ],
@@ -28392,6 +28498,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Scottish Championship - Transfers 26/27 - Transfermarkt",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbjZNcmJ3OE9GTzBnemE1T2lYX3dmaVdrUmJ6SlNGZzEyUXg2TU90TW9XWnBDbjRMZnRjSDBLUUpxT19VUEVOMkJFU1VRLU1OWGthR1N5RWQ1OFh1SXM3eFk3RTNlWG9VOGNtVlpLdTdyLW51c3M0TUlYLWppc2J1ZlVn?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2017-05-07T01:01:12.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Birmingham City",
           "Bradford City"
@@ -28418,17 +28535,6 @@
       }
     ],
     "3": [
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb2VkdWxmNGtNRDdpWXJfbDgwakQxYmV4eE1GNDdFbmdaVy0yeGJYQTQ5MXJETXVObW1xcW1FSUFOU2NxRU5ydzQzalk2REJ3YjRzdEFCNjRIbktsWmh5a1pGZ0JNUDdxa2ZYMW5qZnY0NGlBbE1PRFJ6NXpUWVJhUVpTUWhwOG1NRFQwamFpU0VMam9kakR3ZHRYSHhhajJBcGowSzgxTHJDYWxXRkFQbktRZFVfRW9xU18tQmt3bWtGVnpGcXRLVEFwa2o2REx3TVpWeDRrdE9hNmRIZ1lz?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-10-30T09:46:08.000Z",
-        "status": "Rumour"
-      },
       {
         "division": 3,
         "divisionName": "League One",
@@ -30657,32 +30763,6 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "Everything you need to know about transfer deadline day - EFL",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOLTdzaWFuUXY2SFlVTGhnelU3SnQxN2RtcWFOdG9XZW9KaHUxWC13TTN6SktGanFMRUFkbkxORkJGWlBZbWVkZklTN2hNdFJqQnV1SjVwYUMyZUlXVndtZU5XTHlrbnBpTzdPeWwxMHU5b1JtY1pwU1JlWmktTEFBVXZvdXNJRzhRX3FKRHdvSDJNMGF3S3ZVQ3UzSQ?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [
-          "Blackpool",
-          "Colchester United",
-          "Crawley Town"
-        ],
-        "title": "Colchester United sign Blackpool's Kouassi and Crawley's Williams - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TcnRja2kzN2N5aEtKVnNTSnhMZzMwYnNqWGpOR1JsN3B1SFM3ZjFQYlE2N0RrYUkxM0prUkFzclotUzg2Y3p6SHVjNW5NdDdjcmc4NkhqeTdWU2Y2YlZsN0g3NV9BQUk?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
         "clubs": [
           "Bradford City"
         ],
@@ -30729,6 +30809,21 @@
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jVlNsNDU1cmc5dm1DSm1iVUQzSUc2bmRqaGl1ZXRqV2EzSnJtNm0wN0p3cmQ0MW9BN3FXdzhCZXBNVXBIeFFvYUprLU1PWVl2NjhOSEJtNGJ4UDVVVW04WHd0dWlzOE0?oc=5",
         "source": "Google News League One",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Blackpool",
+          "Colchester United",
+          "Crawley Town"
+        ],
+        "title": "Colchester United sign Blackpool's Kouassi and Crawley's Williams - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TcnRja2kzN2N5aEtKVnNTSnhMZzMwYnNqWGpOR1JsN3B1SFM3ZjFQYlE2N0RrYUkxM0prUkFzclotUzg2Y3p6SHVjNW5NdDdjcmc4NkhqeTdWU2Y2YlZsN0g3NV9BQUk?oc=5",
+        "source": "Google News League Two",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -30884,25 +30979,15 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Leicester City"
+          "Burton Albion",
+          "Milton Keynes Dons"
         ],
-        "title": "Former Leicester City favourite close to completing £10m transfer to Championship giants - Leicester Mercury",
+        "title": "Will Collar: Burton Albion sign MK Dons midfielder on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRExnUzVLYkxxTnpPaHVydFkxa1V6UUpaVkFtamk3ZmV3UUg2S3lmYl9MRlctSFlNbzVOaXl6VXJtUXlIVkdmU29nNzIxS1k0ZkdfdVFpckRiaDNnUnlHTG1uSEx4ZUtLeHdSY0FHOHc1ZFBsTWJHY3N0aEc1SFd2d0VweHlKMVo2SmNhcF9uenFia1RDaHpaNmdjSTRJTFJ1cE9SWUhNNWPSAa4BQVVfeXFMTVZ6Q1VlNEhac0RDMEdoQzNDMjJ3cDJld2ZYb2M3RHRCaTZiMG9GOWh0QmdKX09IVWZzTkQtVDFVUktnbXkwMFdtYWlyOTZHY3d5R2VOakQ2dmdTcmdtcFh4VjVBeG9tRkZXZmVFSUhISUhsTXdwSDZqNzZ4VHpRVmswRUxuWV9tZ3VaNlBXS1FQSDVsTkk4dDNZTkpXTDlwa1BhMHFqdnlrLXk1c3F3?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "League One 2026-27 season preview: Club-by-club guide to new campaign - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1KTUF4UmtldFljdkluQnpnZnctWlVkcGpiNTBmYnNqUzZMSXJaN0NGRVU0REZXVG5qWUNKQnM4bEhZSElvOGI0MmpCU0NXQl9xcjVvaGM2eTM4RFVJZ21HbnJKN1NGbTQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ERGFyOV9wRVpDaWFPVXNxVy1OVElOVktOSzcwbnRDVzRUbF93Rkpoc3dtUTVjajFncEpJRWJJQ2JobURKZnV5ZzVjVGxna0VzSXhIaW5ZR25jTnBZaUVqa0tFbVM2TVk?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Rumour"
+        "status": "Loan"
       },
       {
         "division": 3,
@@ -30922,15 +31007,14 @@
         "division": 3,
         "divisionName": "League One",
         "clubs": [
-          "Burton Albion",
-          "Milton Keynes Dons"
+          "Leicester City"
         ],
-        "title": "Will Collar: Burton Albion sign MK Dons midfielder on loan - BBC",
+        "title": "Former Leicester City favourite close to completing £10m transfer to Championship giants - Leicester Mercury",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ERGFyOV9wRVpDaWFPVXNxVy1OVElOVktOSzcwbnRDVzRUbF93Rkpoc3dtUTVjajFncEpJRWJJQ2JobURKZnV5ZzVjVGxna0VzSXhIaW5ZR25jTnBZaUVqa0tFbVM2TVk?oc=5",
-        "source": "Google News League One",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRExnUzVLYkxxTnpPaHVydFkxa1V6UUpaVkFtamk3ZmV3UUg2S3lmYl9MRlctSFlNbzVOaXl6VXJtUXlIVkdmU29nNzIxS1k0ZkdfdVFpckRiaDNnUnlHTG1uSEx4ZUtLeHdSY0FHOHc1ZFBsTWJHY3N0aEc1SFd2d0VweHlKMVo2SmNhcF9uenFia1RDaHpaNmdjSTRJTFJ1cE9SWUhNNWPSAa4BQVVfeXFMTVZ6Q1VlNEhac0RDMEdoQzNDMjJ3cDJld2ZYb2M3RHRCaTZiMG9GOWh0QmdKX09IVWZzTkQtVDFVUktnbXkwMFdtYWlyOTZHY3d5R2VOakQ2dmdTcmdtcFh4VjVBeG9tRkZXZmVFSUhISUhsTXdwSDZqNzZ4VHpRVmswRUxuWV9tZ3VaNlBXS1FQSDVsTkk4dDNZTkpXTDlwa1BhMHFqdnlrLXk1c3F3?oc=5",
+        "source": "Google News Championship",
         "publishedAt": "2026-08-14T07:00:00.000Z",
-        "status": "Loan"
+        "status": "Rumour"
       },
       {
         "division": 3,
@@ -31071,6 +31155,17 @@
       {
         "division": 3,
         "divisionName": "League One",
+        "clubs": [],
+        "title": "SWFC News: Owls' rivals 'braced' for headline exit as defender 'set' for loan switch - The Star",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOU1BJTWNRZjVjMUVZVy1nZVpyWWxFeTFjLVE5STgwNkFNN3lUbnFQS1dKZGVBdXl5RTdvX25ZTTF4aGtnZjhwTzRzUEdOVGl6dk1iSG1yOG9OVUFkMmprODFYd0hackhWWTVZeUthemdGRGlqOTBLcU1FelQwY2EzRnRTUFFQaFIzUjloa1VDZ1RnMVVTYkZ6NTJVOGo3T1V5djNOZUxSWjM4V0hzZlFQbVVwQlc?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
         "clubs": [
           "Sheffield Wednesday"
         ],
@@ -31152,6 +31247,17 @@
       {
         "division": 3,
         "divisionName": "League One",
+        "clubs": [],
+        "title": "One per club: Premier League players who need a loan move - Football365",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLXFqOElrX1A0dXI2QkhrYVFtanZPRzZaSlBBczVQa2ZDV2phYkZMSlJ0X0Z4WnRrVUMzaGoyQjlEZDI3Z19HOGFfVXUwQnNjSTZhRlhGbWdtTkxzNlFYY29McTJaQnZhNXVMV29nZEk2S3djYWxMYXZldTc5N2dTcjZHMGtaVjNYM1RR?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-08-01T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
         "clubs": [
           "Leicester City"
         ],
@@ -31181,12 +31287,12 @@
         "clubs": [
           "Leicester City"
         ],
-        "title": "Leicester City agree loan deal to sign Premier League winger - news.bet365.com",
+        "title": "League One Leicester to sign Premier League player in major coup - talkSPORT",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMG1SakpZYnBkU2NiVFgzalBZUFkxbUJkZWxBaDY5VEhNUUViNnBGRjdVLV9KVVpTYjhHSzQ3Z0YtMXJ5cnV1Z2Vfdi1tVTVGWlhib25jdnZxWnUycnJFa3RQbVhwMGlJWmVXY0xxa3dWcXRTWXBpUDVPN29lX3ZyS1ZMY3pGeC1sT0RkVGNvSmlCVzlIcEk2Vnp0OXVKaDlMV0pvTXkwZlBieWpiQ3ZKWTdKZkZVVFY1VFE?oc=5",
-        "source": "Google News Championship",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQnZ4WEg5RHZ1RlcyTHd6SEI3bHpaZkhpOXJIazdSNkQ3UFJzd3lfdDRKQS1yTkdvZGpodkJjckJIcU5tSzVzbVc2eDRWSG83Z3hNSDVaTFdOSGFQd2lBTTROeGFPNERBaWNhSHQ5QmdSbHIxdi1tdkNoVmtxcDNwR2tOMHpvaWExdTNKcmpONkNueld3M2c?oc=5",
+        "source": "Google News League One",
         "publishedAt": "2026-07-30T07:00:00.000Z",
-        "status": "Loan"
+        "status": "Rumour"
       },
       {
         "division": 3,
@@ -31205,12 +31311,12 @@
         "clubs": [
           "Leicester City"
         ],
-        "title": "League One Leicester to sign Premier League player in major coup - talkSPORT",
+        "title": "Leicester City 'agree' loan deal for Premier League winger as Russell Martin gets transfer wish - Leicester Mercury",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQnZ4WEg5RHZ1RlcyTHd6SEI3bHpaZkhpOXJIazdSNkQ3UFJzd3lfdDRKQS1yTkdvZGpodkJjckJIcU5tSzVzbVc2eDRWSG83Z3hNSDVaTFdOSGFQd2lBTTROeGFPNERBaWNhSHQ5QmdSbHIxdi1tdkNoVmtxcDNwR2tOMHpvaWExdTNKcmpONkNueld3M2c?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYjhKa191TmVjLTFVWXZhUEFWSGFDeFlCSDRFUG5HZFNxczk2VENKOVNpZEZZcGNFdklHTFN3UWotWHIzOEFIQ2hGOF9xR2h5ejVCWFktaGtWTEk1Qm1XdXBRTm0yQXppWUtsaVBnNEhsNXVlaUhUU1gtWk93Nl9qOGJQYVJ2VkhfbVZqN3NTMWZ5NVFnalpsU0RJSWFLOW4tYXNmaG9jVGjSAa4BQVVfeXFMT1NDdzJMNE1vRGVrVGprTjVXbGRXSXBZNFNkZ0FRNDY4WHAwWWlNS2NydGxmN3F1WkN4Q1YyQ0d0QkJEUmNqSkdrWGoyam1sRXd4QU9IY3VWMFBxRFNPWDZSMEdkMGFJdk1CenhMdTJkX2tqenhpY0ozdEYwZFplNlNmOXhKb3dUZ1ZZckhZdmNrRjlGSEp2QXF3dG1mREN1aU1FcDhieEFLUVZoXzdn?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-30T07:00:00.000Z",
-        "status": "Rumour"
+        "status": "Loan"
       },
       {
         "division": 3,
@@ -31218,9 +31324,9 @@
         "clubs": [
           "Leicester City"
         ],
-        "title": "Leicester City 'agree' loan deal for Premier League winger as Russell Martin gets transfer wish - Leicester Mercury",
+        "title": "Leicester City agree loan deal to sign Premier League winger - news.bet365.com",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYjhKa191TmVjLTFVWXZhUEFWSGFDeFlCSDRFUG5HZFNxczk2VENKOVNpZEZZcGNFdklHTFN3UWotWHIzOEFIQ2hGOF9xR2h5ejVCWFktaGtWTEk1Qm1XdXBRTm0yQXppWUtsaVBnNEhsNXVlaUhUU1gtWk93Nl9qOGJQYVJ2VkhfbVZqN3NTMWZ5NVFnalpsU0RJSWFLOW4tYXNmaG9jVGjSAa4BQVVfeXFMT1NDdzJMNE1vRGVrVGprTjVXbGRXSXBZNFNkZ0FRNDY4WHAwWWlNS2NydGxmN3F1WkN4Q1YyQ0d0QkJEUmNqSkdrWGoyam1sRXd4QU9IY3VWMFBxRFNPWDZSMEdkMGFJdk1CenhMdTJkX2tqenhpY0ozdEYwZFplNlNmOXhKb3dUZ1ZZckhZdmNrRjlGSEp2QXF3dG1mREN1aU1FcDhieEFLUVZoXzdn?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMG1SakpZYnBkU2NiVFgzalBZUFkxbUJkZWxBaDY5VEhNUUViNnBGRjdVLV9KVVpTYjhHSzQ3Z0YtMXJ5cnV1Z2Vfdi1tVTVGWlhib25jdnZxWnUycnJFa3RQbVhwMGlJWmVXY0xxa3dWcXRTWXBpUDVPN29lX3ZyS1ZMY3pGeC1sT0RkVGNvSmlCVzlIcEk2Vnp0OXVKaDlMV0pvTXkwZlBieWpiQ3ZKWTdKZkZVVFY1VFE?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-07-30T07:00:00.000Z",
         "status": "Loan"
@@ -31550,7 +31656,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
@@ -31564,7 +31670,7 @@
         ],
         "title": "Alfie May: Doncaster Rovers re-sign striker from Huddersfield on loan - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaW9fejN0Qk45ckl5dlhSVlltVG1LTTdoTGNyMkF4a0xQMFMzU0Y5STFMUVRZUHFyMHkzcnNIaHY0QlQzVnBNUS1CYWNFZWN5dUljNnV4R1VqcWtCM1J1amREMFVaZW1FNGc?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOFp2SjJTb1I2ZFNlUUtEVUFaYVFmZFE4OWNmNHA2bzdmVmNfeHlSMEJmOVZIQU1Tck9KMG1tZHhBNkhvWXdyanQyVzlELWxFbEdqczF4TVMwSjRyV0dYaTNJSTNpYVk?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-06-19T07:00:00.000Z",
         "status": "Loan"
@@ -31652,6 +31758,28 @@
       {
         "division": 3,
         "divisionName": "League One",
+        "clubs": [],
+        "title": "EFL manager calls out emergency loan loophole as rivals delay possible promotion - talkSPORT",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2RLMGxLY1RNc2FCaEtUTzB1WlQ0WS1pN01IMzFILWtRUVBCNHF4S0xMRV9mU3Z1YVh5WXZMUUpERWpCXzdNU19kQ1VQRkM1YjJod3l5Z1BNRzktUFJnOWZzWEdaLVdWdl9CWnlqd0doNGY4X1BDWUdWeEpSM013QmVBZHFGWHMxYjJfVGIzOEg3NEIz?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-04-17T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [],
+        "title": "Sky Bet League One: January 2026 transfer deadline day round-up - EFL",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNEFySDNGR0JmclY5eF91TTVJZ1prSU9HSlVQSks2MnZLQkFiMGNCVDdadGRwbU5jRTZEMndkZ2NMYnZ3Q0xXTS1KZlZBd05pM0pvdy1fR21VUDZ0NVl2Wm1UZjc3OWZBU0FnVFU5U3l6YTgwXzdDZFVMRUpFSHNpNlRZT1FWNE5oR2FMSnRNd0xQTHYyM01uVEhJOEZfM0dLTmp1Tg?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-02-03T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
         "clubs": [
           "Peterborough United"
         ],
@@ -31673,17 +31801,6 @@
         "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQLTNFT3VHSGNuUGpCc1JIRi16LTFLSFIzVU4xNFNld2ZudG5kVDRIMEYyS1JsSFE5Ym9ZOFVtZ1JoSnJYZWxpOEp1Y25nM1lSbklVNDdfakEwQUs5eTV6RHhoVzdTSUp3ZEhJSkVGUGlyMFUwY1paSkxTSmRwZlU0eDFuRTBNUVFNZW9MZEljZEQtTFZUVUUyVDh0MDVRUDlHQ0RGV0trSmYwQlZiRm9EY0dEZWRhbHRhWEpEZlFDZjFHQzRzX3BhR0NqS2xPX3c?oc=5",
         "source": "Google News League One",
         "publishedAt": "2026-02-03T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "When is Transfer Deadline Day? - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUjU3M0J1QVRqVWU0MFd5NjZ5TkRmRnU0R3JZOVZYNTlkeUY0dFFiYTg3YkJqZEJNMFpZaFNJUnlPZ2FBT2dPMi1VLXYyRjlfMmFfS3M0cURBdm5KWEJzczI2TDgtTldEdUgxZ3VSTGJ1blNncmdFMl9ZdXotZ2JKZ1M5Y3ZRb0hzajNZbWhMY2tHYXBvdHJneUZDalZUNkM4Si1GSXIzMTZKUVpWYjlabWJiY0ZodTFjOTJoYmRHU3F0cUkwSlRGcmx0RVY3TjU3aG1pRWpTWHQ4dmltVnQyRUZQVnNQbWk2MWwxRFBYZnN4VGVmRExaag?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -31738,17 +31855,6 @@
         "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "Who is the best-ever signing on Deadline Day in the winter transfer window? - Premier League",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRzBmWjJrWkE1R3NLdzFkY0xRSElrSDNkVVBMUkdRa0tSc3hYRlMtUnhXTDJHc2xnN3lZRF9KQ3hHYkVkb1lLV1ZfdmxuUmtGWmNpb1d6b0FxaDlIRzUxMHBseEVxTF9XWkVKY2QtaVdXWFFSZENwOXNzeVQ3RWppOVVYX3NWcEt5ejFreEFvUGY3bTlQZ1JkV0M1SGplbXNqS2thR05PQk1TYUdZV3U4VW02eGxBSEZ0Z1NsNkZETFA?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-02-01T08:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 3,
@@ -31876,17 +31982,6 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "Does the National League have a January transfer window? - DAZN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQN01KZDdoVTVyU2VoVFMtWDhiQXRwMldTTTV6RHdtaTJiQ0VtOHRPeFpDU0pmV0Vvdm5pQXpCdlhGanRINms0aktEd0NTbzZHUzdrZFhiMVVWa1hkOEZQSnpfUktLdHg0YjdiUVVVSUgtOXg4SlNRaVJrRmtJaGsycjdnMUNyc0pxSXJZLURNcHlhNTJMcjI5UFY5THM3S2RONFUxcXRFU1hJdVk?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2025-12-30T08:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
         "clubs": [
           "Bradford City"
         ],
@@ -31926,17 +32021,6 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "What is an emergency loan and how does it work? - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ySGdLZ3RBY05iQkxyOEpVS0RLYWdiV1FJNV8weXlRdjl0MjJtZ1N2U0NMMGtBV3NrMXE4NmloWnQ2UFpiSzNtU1dkZ3J6eEdBNjlrQ00tWk5sRUYyQzdOVEtjdmoyeWM?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2025-10-21T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
         "clubs": [
           "Stockport County"
         ],
@@ -31971,17 +32055,6 @@
         "link": "https://www.90min.com/micah-richards-parties-hard-joleon-lescott-dj-set-reading-festival?utm_source=RSS",
         "source": "90min",
         "publishedAt": "2025-08-26T11:35:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
-        "clubs": [],
-        "title": "'Enormous expectation' - League One club-by-club preview - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKSy1iVG9FSGJOeFZXQVFqQS1namU0WENkLTZha1ZtS2FQLVVEM0dmbXhmUl9QZ214NDZuemNaenlKTWE5OUJMVFNvb3JEV0E0UVlOVUdtOHFPeng1SDdXbXhjWEhKRGs5RUE?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2025-08-01T07:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -32489,17 +32562,6 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [],
-        "title": "Premier League Deadline Day 2026: Every Done Deal, Ins and Outs - football360.com.au",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpdFl1VUNpMk9RQ25aa29xTFdUX09xNWNjTUNMOURKaU00aG51M2FldVV6bEYzdkNHZzgzS3htbW9CS21VdFlyN3ZWTzFMa3FndURYc0VWYzBRMzdISmp0cUM4QjQxSFhPOUhEMFNuR09NTzdtVEJmM0xQaw?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
         "clubs": [
           "York City"
         ],
@@ -32632,19 +32694,6 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [
-          "Grimsby Town"
-        ],
-        "title": "Grimsby Town transfer news: Midfielders Mark Shelton and Fin Cartwright join on loan - BBC",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HbExSUkMyUnhnSFVMdU1TYV9SeHNvd29oWWtmRm1GV3A0OHVQVHRLSTFmOXVJeHRLc195VEhpSjJvOEFOS2tIbUp5S2szT0R2aHQ1VmVSYkp2X05sRkVvU1VpUDZUdUU?oc=5",
-        "source": "Google News League Two",
-        "publishedAt": "2026-09-01T07:00:00.000Z",
-        "status": "Loan"
-      },
-      {
-        "division": 4,
-        "divisionName": "League Two",
-        "clubs": [
           "Swindon Town"
         ],
         "title": "Transfer deadline day live: Follow everything at Swindon and across League Two - Swindon Advertiser",
@@ -32663,6 +32712,19 @@
         "title": "Klaidi Lolos and George Sebine join Rotherham United on loan - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBBVEg1c2hjZld5TUJFd2Q0QnZQSV8zQU81bVhEMUt2dXdROTdVWF8wcUJtTHN5WGJGZ3pydkJUd2VmZWhHQ3VqNUctMGlLUHMzdWpzUkQxUWVESkZOOWdnUXE0YmlJWk5ycEE?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [
+          "Grimsby Town"
+        ],
+        "title": "Grimsby Town transfer news: Midfielders Mark Shelton and Fin Cartwright join on loan - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HbExSUkMyUnhnSFVMdU1TYV9SeHNvd29oWWtmRm1GV3A0OHVQVHRLSTFmOXVJeHRLc195VEhpSjJvOEFOS2tIbUp5S2szT0R2aHQ1VmVSYkp2X05sRkVvU1VpUDZUdUU?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-09-01T07:00:00.000Z",
         "status": "Loan"
@@ -32924,7 +32986,7 @@
         "title": "Rotherham United Line Up Premier League Goalkeeper Loan Deal - Football Lowdown",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcVpIQ0I0SVREVFA1WUZKeFBIZzdkX2UwYXJQVDNRY1dtaTZoM054bzR0U05NVUIydGxfbDkyTWwtMjl6cndMTldSLUV3a0ZlX1FINzZXbC05N05kbzBieHRkUTBmMHl1aThuUlRuSjNMY2FpbFNCYm1fUmZUM1R0V1RqNHpMM1hfRlNQbHBuNDFtUDA?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News League One",
         "publishedAt": "2026-08-11T07:00:00.000Z",
         "status": "Loan"
       },
@@ -33172,7 +33234,7 @@
         "title": "Kofi Balmer and Richie Smallwood to sign pre-contracts for Bristol Rovers - Bristol Live",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaGJUWV9kMFNSMzhhc2ZLY3pZeVpWT0lqVi12c0dXbFJiSDNEUmxLYnFwZUlRY3NyeEp0S0RFVTZ5OHYxZndNTE1QU3pPeFcxQWNJOTUwYmlFak9UZ3dPNzY3VXYxUng4Qll3UFJCd1BiUWYxR3g0aWlwT3Z0dThkX3ZHR0dOdVExVlFkOVdJUGMtemlVX2JJX2FXVGlrU3ZnT0xIclRGNl82YXct?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News League One",
         "publishedAt": "2026-05-11T07:00:00.000Z",
         "status": "Rumour"
       },
@@ -33191,11 +33253,11 @@
         "division": 4,
         "divisionName": "League Two",
         "clubs": [],
-        "title": "EFL manager calls out emergency loan loophole as rivals delay possible promotion - talkSPORT",
+        "title": "EFL club announce emergency loan deal ahead of title showdown - talkSPORT",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2RLMGxLY1RNc2FCaEtUTzB1WlQ0WS1pN01IMzFILWtRUVBCNHF4S0xMRV9mU3Z1YVh5WXZMUUpERWpCXzdNU19kQ1VQRkM1YjJod3l5Z1BNRzktUFJnOWZzWEdaLVdWdl9CWnlqd0doNGY4X1BDWUdWeEpSM013QmVBZHFGWHMxYjJfVGIzOEg3NEIz?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWpBeUk5TDhRaEE4anV4VFpBd2NHM2RSTWZHU1FCeEJMSklsek4tTFh3Vi1KV1JXamc1dGFyYTZLcTlNejdYamZwR2VkZ1FKbk5KMDFFblFPR1k2N25wVUpXQVFJZ2ppc0ZTanlXU3NFLWFIc05OX0N2ejl2SjVGX3Z6X1hCVW5vZ1RiX2FDSEc1RVRwenc?oc=5",
         "source": "Google News League Two",
-        "publishedAt": "2026-04-17T07:00:00.000Z",
+        "publishedAt": "2026-04-15T07:00:00.000Z",
         "status": "Loan"
       },
       {
@@ -33221,6 +33283,28 @@
         "source": "Google News League One",
         "publishedAt": "2026-02-03T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "When is Transfer Deadline Day? - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUjU3M0J1QVRqVWU0MFd5NjZ5TkRmRnU0R3JZOVZYNTlkeUY0dFFiYTg3YkJqZEJNMFpZaFNJUnlPZ2FBT2dPMi1VLXYyRjlfMmFfS3M0cURBdm5KWEJzczI2TDgtTldEdUgxZ3VSTGJ1blNncmdFMl9ZdXotZ2JKZ1M5Y3ZRb0hzajNZbWhMY2tHYXBvdHJneUZDalZUNkM4Si1GSXIzMTZKUVpWYjlabWJiY0ZodTFjOTJoYmRHU3F0cUkwSlRGcmx0RVY3TjU3aG1pRWpTWHQ4dmltVnQyRUZQVnNQbWk2MWwxRFBYZnN4VGVmRExaag?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "Transfer deadline day: How many players are clubs allowed to loan out? - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xU0h5Q05feWlpMHBNUFhTejVkMFhYcFlpZ2pESTNsNzdTd1FLOTZKanJwUi1XN0VnaGVaem5EWEVGWVg1UXZSM0R3V1NadnFKNWlXbHE1UzMyQ1dCS1hhVXhYbEUzMnc?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 4,
@@ -33285,6 +33369,17 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NV0NxQUlzc1JRM0QzU1doTnBwTzBPN1Vaa0ZncnhaMVV3Y3B4X2s3QlpEUWN3QmwtcXcwWHJmaEU2blI0MWhydHo5WlN4VTNuZ2F0WVVlcHhRLU9xWjUtRTVpRWFKeUU?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-02-02T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "EFL transfer news: Championship, League One, League Two clubs get 'Deal Sheet' to help January Deadline Day deals - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNExTQm9JU0JhMk5fdW9ZSVFrS1V0YVJUaGN0VFVXUDJHSURRa0tQTXBITW82cTFoVDByYmN1SEk1Z2RZV3ZUWHgxVXMtbkNnSUk5TG55bFJJY2FmTXp2U3Awa0kwUU50eWMzXzYwNHNURjZmUkxGdmZqV1U4WEdzVHZzcF8zT21lRWFMOGctUzVYejc3amtIQXVneHRGTkg3TFRwUVhtSG9WS3JhdHhhMG1DalBiaTBLeUpWY3VNQWVIeEJiRVM5ZFVqclNSS3Rmdmg0bm80WUNhOEw3azgxaXdyQVJ3VzlsamFhT2l3?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-01-23T08:00:00.000Z",
         "status": "Rumour"
       },
       {
@@ -33362,6 +33457,17 @@
         "source": "Google News League Two",
         "publishedAt": "2026-01-01T08:00:00.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "What is an emergency loan and how does it work? - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ySGdLZ3RBY05iQkxyOEpVS0RLYWdiV1FJNV8weXlRdjl0MjJtZ1N2U0NMMGtBV3NrMXE4NmloWnQ2UFpiSzNtU1dkZ3J6eEdBNjlrQ00tWk5sRUYyQzdOVEtjdmoyeWM?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2025-10-21T07:00:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 4,
