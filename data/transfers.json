@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T16:45:26.762Z",
+  "updatedAt": "2026-11-13T18:39:28.568Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -420,6 +420,19 @@
         "division": 1,
         "divisionName": "Premier League",
         "clubs": [
+          "Arsenal"
+        ],
+        "title": "Arsenal transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZE55eDRGUF9sdGtWcnF0MkNGU19ZYkpkQWN1U0dHakxncEpSQlpOTkFHMjYzQmk2MVdLZkZLeWtNRU4wb1ltX0w5bW4xdS11eVIwaVpvTzlUTUFSdUJPdDllYW1DaEdjbFJLaWozWUFoczg3Qm1Od2NMYUxOZnVrajBaWUljSm5PX2Zpb3d6VUNGRnRyX0pqQ0dqYWxJdGV1cmJtdGxJU1VleXRub2x1Rl9RY1QwTEZNXzlBUnR1TjFvaFltTHdtX3pHT3lTV3NNbHVDcnN5ZFNjY3lSMmdYLUplRDdONWE1Q2d4bA?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-11-12T11:00:01.000Z",
+        "status": "Loan"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
           "Manchester United"
         ],
         "title": "What does a Pochettino team look like?",
@@ -717,19 +730,6 @@
         "source": "Football League World",
         "publishedAt": "2026-11-11T11:24:35.000Z",
         "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Arsenal"
-        ],
-        "title": "Arsenal transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZE55eDRGUF9sdGtWcnF0MkNGU19ZYkpkQWN1U0dHakxncEpSQlpOTkFHMjYzQmk2MVdLZkZLeWtNRU4wb1ltX0w5bW4xdS11eVIwaVpvTzlUTUFSdUJPdDllYW1DaEdjbFJLaWozWUFoczg3Qm1Od2NMYUxOZnVrajBaWUljSm5PX2Zpb3d6VUNGRnRyX0pqQ0dqYWxJdGV1cmJtdGxJU1VleXRub2x1Rl9RY1QwTEZNXzlBUnR1TjFvaFltTHdtX3pHT3lTV3NNbHVDcnN5ZFNjY3lSMmdYLUplRDdONWE1Q2d4bA?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-11-11T11:17:15.000Z",
-        "status": "Loan"
       },
       {
         "division": 1,
@@ -19636,6 +19636,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Transfer Centre LIVE! Football transfer news, updates and rumours - Sky Sports",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wTjRESXdPR1l3a0ItLW5rZkJyQlRDbmJoVGI5ME9iTnFmeXRzdXNaSnRPdXhHcHQwNzJqWEF5MjZCb19zZGhwUGZuOFp0S0EwdmhB?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-11-13T16:53:03.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Burnley",
           "West Ham United"
@@ -19651,9 +19662,23 @@
         "division": 2,
         "divisionName": "Championship",
         "clubs": [
+          "Burnley",
           "West Ham United"
         ],
-        "title": "Yeovil Town: Glovers sign Mason Terry on loan from West Ham - BBC",
+        "title": "One league appearance despite trio of assists: How is former Burnley and West Ham target faring since failed summer move - Yahoo",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZHNZRlVJQXVtN0RtQm9FX2ZxR3JKVHZvYlRTeEQ3SzZTaXh6cVg2VGE1c2lfUndLWEJ6QnFUU3RpbWVOeWVaVVh3M3FpaGtZZ1hFcE1PMkpUbDk4WVY1S0VYRmhuaWQ4ZDBmMlk1UDRPclF0Y1JpbERpVUNwTWJUaTBzeU91QUF6Nnc?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-11-13T16:16:07.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "West Ham United"
+        ],
+        "title": "Yeovil sign goalkeeper Terry on loan from West Ham - BBC",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTQ2NOdGRET2xhVXNyYnBUbURaYWJidm9rV0NoVUdaaF85RVlqVnNLX3N0SnlYc3N1M2ItcmZzWlYtaXJXblVGQlJ5VGstRmpZcHZ3cl8tdEwxV1RkSHJxOXR0OUJKeGxQMmZV?oc=5",
         "source": "Google News League Two",
@@ -19671,17 +19696,6 @@
         "link": "https://the72.co.uk/2026/11/13/west-ham-adama-traore-goalless-run/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=west-ham-adama-traore-goalless-run",
         "source": "The 72",
         "publishedAt": "2026-11-13T15:26:45.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
-        "clubs": [],
-        "title": "Transfer Centre LIVE! Football transfer news, updates and rumours - Sky Sports",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wTjRESXdPR1l3a0ItLW5rZkJyQlRDbmJoVGI5ME9iTnFmeXRzdXNaSnRPdXhHcHQwNzJqWEF5MjZCb19zZGhwUGZuOFp0S0EwdmhB?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-11-13T14:41:15.000Z",
         "status": "Rumour"
       },
       {
@@ -19829,6 +19843,19 @@
         "link": "https://the72.co.uk/2026/11/12/west-ham-loan-daniel-cummings-aldershot-town/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=west-ham-loan-daniel-cummings-aldershot-town",
         "source": "The 72",
         "publishedAt": "2026-11-12T09:55:44.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
+        "clubs": [
+          "West Ham United"
+        ],
+        "title": "Five-goal West Ham prospect set to complete National League loan move - The72",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQXzFFNFBRVk5RVWJZNU9iTFp3Qkl5Z1ZpcWFLemg3UVJTVHNreHVaVDhHdVhZbmFUZmFkNjllWkdEQlRDRVNIbXA4UjAtOXZZdzZZYnFoVFRfYnAxLWVhcF8xOUVQTW9SUDhGQXZ6WDR1SktYYlBIRzF2cEJqMERuUExB?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-11-12T09:55:00.000Z",
         "status": "Rumour"
       },
       {
@@ -33487,6 +33514,17 @@
       {
         "division": 2,
         "divisionName": "Championship",
+        "clubs": [],
+        "title": "Transfer window dates confirmed for Season 2026/27 - EFL",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRlRMVnE1VzItNkJtbi14QUNiYTlmRkhGOFJIdFRsZVJWZ212cVFlVjRtVEg1dV9RV1A1Y25ndFROakVHVDdHeFZhcXRHd2FsQTFQbWh5RHEyR1dHQ0Z0OG9rUGhONnlUUF9YQUl4U21OaUlQdU9LR1NmazV6enFsbFRYM1pNUXl4akU0dw?oc=5",
+        "source": "Google News Championship",
+        "publishedAt": "2026-05-26T07:00:00.000Z",
+        "status": "Confirmed"
+      },
+      {
+        "division": 2,
+        "divisionName": "Championship",
         "clubs": [
           "Cardiff City"
         ],
@@ -34269,17 +34307,6 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [],
-        "title": "Championship transfers: 11 brilliant free agents still available to sign - Planet Football",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSkc3Z1RSelFfeFh2TXN1TTRtQzdkWG5ZS29OQzk5a29YUUgwaWVGQXNzTnFnN3VEcUpZRDNpMDdMZHBDMjZlUWw2Ml9SR1ZoTnVDZy0taG9lblQxS2tiYW81SE9PazhWdlV4VVhrRFRNanRBb2twdWQ5c1dOZTNCZjJWWmQxX3ZWYlJmdWR2MFJESkdDNkZWMkZNLVVXSF94a1c4?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2025-09-03T07:00:00.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
         "clubs": [
           "Wrexham",
           "York City"
@@ -34913,6 +34940,17 @@
         "source": "The 72",
         "publishedAt": "2026-11-12T08:00:03.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [],
+        "title": "Five clubs Real Madrid’s Endrick can join on loan in January transfer window - Khel Now",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OcE9GMldzMW1LUEQxVHhRR3hOc212bjZ2OUdHVk1pUGFRaXZSdVAtRGVYRy1QZUZLWWJGbkExRUFqUHZwM2twdHBFUUZxRjJHNDZtcHdXbS1wVlpSU1FIaVJSa2ROd3RIMlJQQlNkSy1RTUp5YUNiM1FiZktYajg?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-11-11T12:32:00.000Z",
+        "status": "Loan"
       },
       {
         "division": 3,
@@ -38469,17 +38507,6 @@
       {
         "division": 3,
         "divisionName": "League One",
-        "clubs": [],
-        "title": "Transfer window dates confirmed for Season 2026/27 - EFL",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRlRMVnE1VzItNkJtbi14QUNiYTlmRkhGOFJIdFRsZVJWZ212cVFlVjRtVEg1dV9RV1A1Y25ndFROakVHVDdHeFZhcXRHd2FsQTFQbWh5RHEyR1dHQ0Z0OG9rUGhONnlUUF9YQUl4U21OaUlQdU9LR1NmazV6enFsbFRYM1pNUXl4akU0dw?oc=5",
-        "source": "Google News League One",
-        "publishedAt": "2026-05-26T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 3,
-        "divisionName": "League One",
         "clubs": [
           "Doncaster Rovers"
         ],
@@ -40154,10 +40181,12 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [],
-        "title": "The BIGGEST transfers between Premier League clubs - Premier League",
+        "clubs": [
+          "Shrewsbury Town"
+        ],
+        "title": "Shrewsbury Town handed EFL transfer restriction over late payment - BBC",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONlBKVEJSdllFbjVOWVFoMGFWUm5oX09PaXFUN0F0NjlkWnNjUkxteEdLUnl3NGxMMTlNem9kNkNHODZiTWlqQnU1NXFxbVVDcFJZNFhuS1Z0cjFDS29sUDl4VVhCZHhaay1PVWRMbHZxNV8weEZqNjVIVXlxbXlkWmlPM09CaTUxQ20wWDVnUnV4VE9KUFFmVjFBMDQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzc2VWR1lQQmVQSnR6dXdicExNUk9HcUNCZHZmOFhJZnJPaFNZNnlJWFlncndIZHFiYXYxbkwxcnF1RDdsYmpwSk5SZXBfUC1EeU1NVUJud0Y2T2ZkOE4wZktBbHFMaHM?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-07-06T07:00:00.000Z",
         "status": "Rumour"
@@ -40165,12 +40194,10 @@
       {
         "division": 4,
         "divisionName": "League Two",
-        "clubs": [
-          "Shrewsbury Town"
-        ],
-        "title": "Shrewsbury Town handed EFL transfer restriction over late payment - BBC",
+        "clubs": [],
+        "title": "The BIGGEST transfers between Premier League clubs - Premier League",
         "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzc2VWR1lQQmVQSnR6dXdicExNUk9HcUNCZHZmOFhJZnJPaFNZNnlJWFlncndIZHFiYXYxbkwxcnF1RDdsYmpwSk5SZXBfUC1EeU1NVUJud0Y2T2ZkOE4wZktBbHFMaHM?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONlBKVEJSdllFbjVOWVFoMGFWUm5oX09PaXFUN0F0NjlkWnNjUkxteEdLUnl3NGxMMTlNem9kNkNHODZiTWlqQnU1NXFxbVVDcFJZNFhuS1Z0cjFDS29sUDl4VVhCZHhaay1PVWRMbHZxNV8weEZqNjVIVXlxbXlkWmlPM09CaTUxQ20wWDVnUnV4VE9KUFFmVjFBMDQ?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-07-06T07:00:00.000Z",
         "status": "Rumour"
@@ -40199,6 +40226,17 @@
         "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4yNldlU090Nl9VWFQxOHNOWEU3dFRKbGhUSUJfZG55ZVhlaFVyOF9Yc1JNbHdsT29SaFRNNXF2NlZIOThZRV9wOG9UN24yYk1PejdDTWZJYUVYZERFVzQ2SlFreXZJSWdqSnNlSGtlbndzTmR4ZHhTMEtqQXo?oc=5",
         "source": "Google News League Two",
         "publishedAt": "2026-07-06T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 4,
+        "divisionName": "League Two",
+        "clubs": [],
+        "title": "Who has your Scottish League 2 club brought in & let go? - Summer 2026 - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LWWhSOWVsb2l4M2hYb0FUZ2xFdlhzbGR3LS1lTkh0NElPOXNkanN4Qm9CcHdldXlwcUsxaE9EQ2lNTE4xcGNIekFwZ21pYjg1dXVXS0FlYXhkLVM5alRQN0tpVGFzVWc?oc=5",
+        "source": "Google News League Two",
+        "publishedAt": "2026-07-05T07:00:00.000Z",
         "status": "Rumour"
       },
       {
