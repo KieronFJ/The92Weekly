@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T23:58:27.302Z",
+  "updatedAt": "2026-11-16T02:09:55.046Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
@@ -162,7 +162,7 @@
         "title": "Man Utd transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVGxETjVqU2RwQ2J1N2o5MHliQkNSM2lLejh6TGN1UjIyTnZ3R3YyZVlQM0NBZ3dVOXF0Wk5yWHpvRl9zcmpmU2plOXRZeEhULTJuZGo3TDg2ai1SaUZObl9Md2IzUWUzNVU4LXhRWEhoeHhRZDFYb0x5T2F5dGFqZlZRWEhGZE5NTjNLdEpUSFV6bFJFM3BaQnZYU3p5OEJsMTJHS0xNbGlwbzZWM3o5a2FlUEZ1ZEtjaUIzdWxUaEdzNlcyNGMtTGE3N0FnN1pCZnk2TjBoZ1dnQUxyWUhLb0VFYWF0VC1VMDJiZQ?oc=5",
-        "source": "Google News Premier League",
+        "source": "Google News League Two",
         "publishedAt": "2026-11-15T10:17:54.000Z",
         "status": "Loan"
       },
@@ -630,7 +630,7 @@
         "title": "Sunderland transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNmxZaHNHekZGb1hRNjR3bVkwRHBzd0V5OUZPT05YNG5WZVhaNTdPcU9Wa1BCZks3S2VianpqWUJOOGlBYjJRS1F0YUhRcC1BOWZGaTNQMWNkVF9IclJzUzJVVlQ3amxEQlJIOE1OTDQtVGpsN0dsWGs1bXJpd0dUdVIya3M2VmdGV2I2Wi1JcVhoTV8wbGVJRHBNY1ZmTGRHSTE4cFc0WHBwM0RyZk9HQmZIU0hlblZuT0Z3RTdWMWxlaFFZQlNYOFdTenhXeHoyUHlJeHJxN0lMU2E0cmRqY0lzcWVOMDdhMUdVVnRxNUs?oc=5",
-        "source": "Google News League One",
+        "source": "Google News Premier League",
         "publishedAt": "2026-11-13T08:00:00.000Z",
         "status": "Loan"
       },
@@ -1741,7 +1741,7 @@
         "title": "Man City transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT3h4Z0lUOUN1emVYVTI2SXlXXzh0MG5GUFNHWVE4bFluS0UzYU5nWmE4aVlsNnlaUlk5bUw2TlpsdU44QmYtY1BEOExjRXdlOW9xd3lDVlBKWWZmZVllNWdxdWlYS2oyYzd5TFExTGdBeGxaNnQ2YWlnSUM3d3hLOTdfMEM4ZVJHRkQ3SWZDWGtMVkFoS0JUSnA2Skp5ckNRd3M5NDgtUEpJd210UWw0a0NtUmNqS0o3RFZtYVlXZ1JxQUJZelZtZVVrWngwNmJmWFh0bmJwc0huR2psVVdiYy05VW1rYU1Xd0o3eTN3?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News Championship",
         "publishedAt": "2026-11-09T12:50:51.000Z",
         "status": "Loan"
       },
@@ -12660,6 +12660,20 @@
       {
         "division": 1,
         "divisionName": "Premier League",
+        "clubs": [
+          "Chelsea",
+          "Manchester City"
+        ],
+        "title": "Transfer Deadline Day: Man City sign Fernández, Camara to Chelsea deal collapses - as it happened - ESPN",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeXdyUEZsQ0ZlQ2tZTktRc0F5NXBCUmdzNFE5WmIwXzF2YzRPeWJ3SkhfMHBCSnVzREFrV19CZFE4U2YxNF9BRENEVFl3ZlFSa2h0X01GYTNvWTdiRmZNLVN4VEZTYl9JbHdtMUx0UEdHR3lLa2lvYUFmeXBrT2VTWVgyUVdSUVVDalplT2kwbUF1WHhBVDd6NkxaanNnWldZV0phd2pYU2RMX0JVUnJCak1KYmVqS2EzWlg4aGYyN0hOcGVjRjFzNkhVYUh4THBN?oc=5",
+        "source": "Google News Premier League",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 1,
+        "divisionName": "Premier League",
         "clubs": [],
         "title": "Premier League done deals: Every completed transfer in 2026 summer window plus deadline day moves - talkSPORT",
         "summary": "",
@@ -12705,20 +12719,6 @@
         "source": "Google News League One",
         "publishedAt": "2026-09-02T07:00:00.000Z",
         "status": "Loan"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Chelsea",
-          "Manchester City"
-        ],
-        "title": "Transfer Deadline Day: Man City sign Fernández, Camara to Chelsea deal collapses - as it happened - ESPN",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeXdyUEZsQ0ZlQ2tZTktRc0F5NXBCUmdzNFE5WmIwXzF2YzRPeWJ3SkhfMHBCSnVzREFrV19CZFE4U2YxNF9BRENEVFl3ZlFSa2h0X01GYTNvWTdiRmZNLVN4VEZTYl9JbHdtMUx0UEdHR3lLa2lvYUFmeXBrT2VTWVgyUVdSUVVDalplT2kwbUF1WHhBVDd6NkxaanNnWldZV0phd2pYU2RMX0JVUnJCak1KYmVqS2EzWlg4aGYyN0hOcGVjRjFzNkhVYUh4THBN?oc=5",
-        "source": "Google News Premier League",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Rumour"
       },
       {
         "division": 1,
@@ -32608,17 +32608,6 @@
       {
         "division": 2,
         "divisionName": "Championship",
-        "clubs": [],
-        "title": "Every completed Championship transfer this summer & who has spent the most money - Sports & Betting News - bet365",
-        "summary": "",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNDBkUnVESWtiQWVBaUdDN29idmg2MnVRQk1uNmIwUDhhdzBMT2hHN20yaWs3MFhXaURPZ2oxMy1WTFdPT0ZZa0VGaE9YNTRDdURuTGZLd2I3QzVaazZLaWQ2VzR0TVlOOWZJTGZDcGtnVElULU0yWW0yUm5QQkRsbkw0bV92RkdEZzYxdEprRUkzdW5DZ0RGV3VvVnBQZmRHVDdETlJUY2s2XzdfQUVjRjU2QWZEd3hPSzEwX3Z6SS1ONnJkX1RwaHlTQWZXQnkzV2Zjb3pFcw?oc=5",
-        "source": "Google News Championship",
-        "publishedAt": "2026-09-02T07:00:00.000Z",
-        "status": "Confirmed"
-      },
-      {
-        "division": 2,
-        "divisionName": "Championship",
         "clubs": [
           "Wrexham"
         ],
@@ -35858,6 +35847,19 @@
         "source": "Google News League One",
         "publishedAt": "2026-11-15T09:52:38.000Z",
         "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [
+          "Plymouth Argyle"
+        ],
+        "title": "Blackett-Taylor signs – What Plymouth Argyle’s perfect January transfer window looks like - Football League World",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdVZxSWZfY1JOdTQwdF9obElZY3ZyRUxsOHdUUjhmZFdjaTRQRE4yekt5bUtweGVaLVRXUkJEamw1WWtfcXpnQzFGOVFKVzVhaDdYT1U5c255UzgxRkdkdmxYQzl2cU4zZHgyNFNPMzctcEJLdFpPdmxsSU5GbHNKYjFOdkNVaXNYMnhROGRpLUZDVE1pcm90MTF6Smk2a09vMmZqODlrUFdLOExsSk02UWRrMVF6d200VVBxVQ?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-11-15T08:16:13.000Z",
+        "status": "Confirmed"
       },
       {
         "division": 3,
