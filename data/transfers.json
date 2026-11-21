@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-11-21T16:24:26.337Z",
+  "updatedAt": "2026-11-21T18:14:37.567Z",
   "sourceCount": 9,
   "byDivision": {
     "1": [
+      {
+        "division": 1,
+        "divisionName": "Premier League",
+        "clubs": [
+          "Aston Villa"
+        ],
+        "title": "Aston Villa latest: 'Replacements were signed - but not for Tielemans'",
+        "summary": "",
+        "link": "https://www.skysports.com/football/live-blog/12040/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+        "source": "Sky Sports",
+        "publishedAt": "2026-11-21T17:52:00.000Z",
+        "status": "Confirmed"
+      },
       {
         "division": 1,
         "divisionName": "Premier League",
@@ -467,7 +480,7 @@
         "title": "Man Utd transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVGxETjVqU2RwQ2J1N2o5MHliQkNSM2lLejh6TGN1UjIyTnZ3R3YyZVlQM0NBZ3dVOXF0Wk5yWHpvRl9zcmpmU2plOXRZeEhULTJuZGo3TDg2ai1SaUZObl9Md2IzUWUzNVU4LXhRWEhoeHhRZDFYb0x5T2F5dGFqZlZRWEhGZE5NTjNLdEpUSFV6bFJFM3BaQnZYU3p5OEJsMTJHS0xNbGlwbzZWM3o5a2FlUEZ1ZEtjaUIzdWxUaEdzNlcyNGMtTGE3N0FnN1pCZnk2TjBoZ1dnQUxyWUhLb0VFYWF0VC1VMDJiZQ?oc=5",
-        "source": "Google News League Two",
+        "source": "Google News Premier League",
         "publishedAt": "2026-11-19T21:26:06.000Z",
         "status": "Loan"
       },
@@ -7779,19 +7792,6 @@
         "link": "https://the72.co.uk/2026/10/20/derby-county-rekindle-interest-jake-bidwell-coventry-city-opinion/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=derby-county-rekindle-interest-jake-bidwell-coventry-city-opinion",
         "source": "The 72",
         "publishedAt": "2026-10-20T07:50:57.000Z",
-        "status": "Rumour"
-      },
-      {
-        "division": 1,
-        "divisionName": "Premier League",
-        "clubs": [
-          "Aston Villa"
-        ],
-        "title": "Aston Villa latest: 'Buendia close to agreeing new contract'",
-        "summary": "",
-        "link": "https://www.skysports.com/football/live-blog/12040/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-        "source": "Sky Sports",
-        "publishedAt": "2026-10-20T06:31:15.275Z",
         "status": "Rumour"
       },
       {
@@ -43296,6 +43296,17 @@
       {
         "division": 3,
         "divisionName": "League One",
+        "clubs": [],
+        "title": "Who is the best-ever signing on Deadline Day in the winter transfer window? - Premier League",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRzBmWjJrWkE1R3NLdzFkY0xRSElrSDNkVVBMUkdRa0tSc3hYRlMtUnhXTDJHc2xnN3lZRF9KQ3hHYkVkb1lLV1ZfdmxuUmtGWmNpb1d6b0FxaDlIRzUxMHBseEVxTF9XWkVKY2QtaVdXWFFSZENwOXNzeVQ3RWppOVVYX3NWcEt5ejFreEFvUGY3bTlQZ1JkV0M1SGplbXNqS2thR05PQk1TYUdZV3U4VW02eGxBSEZ0Z1NsNkZETFA?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2026-02-01T08:00:00.000Z",
+        "status": "Rumour"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
         "clubs": [
           "Sheffield Wednesday"
         ],
@@ -43583,6 +43594,17 @@
         "source": "Google News League One",
         "publishedAt": "2018-08-28T07:00:00.000Z",
         "status": "Loan"
+      },
+      {
+        "division": 3,
+        "divisionName": "League One",
+        "clubs": [],
+        "title": "National League - BBC",
+        "summary": "",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9tM3hlQXBqUFd0Zi1mVjFUeWlwWlBvSVMwY1ZEOHd3elBsMUZWVVpPeU5na0ZLT1hDWVFzamM0aFRZN0RGVEpJWldGOV9rRFVidkpUalFONGlIVEszWmJmNTFR?oc=5",
+        "source": "Google News League One",
+        "publishedAt": "2018-04-17T13:31:49.000Z",
+        "status": "Rumour"
       },
       {
         "division": 3,
@@ -45349,7 +45371,7 @@
         "title": "League One loan rules explained - who can Bristol Rovers sign now? - Bristol Live",
         "summary": "",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZnk4WkRvaWlVdWc0TTVLc1c3cnMycWxJUVBLWS1udjE5WFNqZmdUcVhoZnVmQ2xmSlRmNm1VRUtLTjdaYm5WUlQtZndMNmlUTVk1TVh5bWNoMjF1QTM5LWV0UFlUblFsdWVRSHVJTjBBMGxZREFaX3BHdzUteXp2cGl1RFFBc0Y5R015dkduUnB0akdhZWI3YVBPejRSZw?oc=5",
-        "source": "Google News League One",
+        "source": "Google News League Two",
         "publishedAt": "2018-08-09T07:00:00.000Z",
         "status": "Loan"
       }
